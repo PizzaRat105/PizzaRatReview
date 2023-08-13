@@ -1,0 +1,2819 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain of the rat</title>
+    <link rel="icon" type="image/x-icon" href="POINTRAT.png">
+    <link id="stylesheet" rel="stylesheet" type="text/css" href="dd_map.css">
+     <script src="https://kit.fontawesome.com/0acaa7a2b0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class = map_main>
+        <a href = "index.html" id = "back_arrow"> <img src ="images/back_arrow.png" class = "back_arrow"></a>
+
+        <div class = "backdrop cc_backdrop"></div>
+        <div class = mission_btn> <img src = "images/mission_icons/cc_button.png" class = "cc_btn button_long" id = "ccbtn"> </div>
+        <img src = "images/mission_boxes/cc_textbox.png" class= "quest_box" id = "cc_txtbox">
+        
+        <div class = "backdrop com_backdrop"> </div>
+        <div class = mission_btn> <img src = "images/mission_icons/com_button.png" class = "com_btn button_long" id = "combtn"></div>
+        <img src = "images/mission_boxes/com_textbox.png" class= "quest_box" id = "com_txtbox">
+
+        <div class = "backdrop dds_backdrop "></div>
+        <div class = mission_btn> <img src = "images/mission_icons/dd_questbg.png" class = "dds_btn button_short" id = "ddsbtn"> </div>
+        <img src = "images/mission_boxes/dds_box.png" class= "quest_box" id = "dds_txtbox">
+
+        <div class = "backdrop app_cleanse_backdrop"></div>
+        <div class = "mission_btn"> <img src = "images/mission_icons/early_btn1.png" class = "app_cleanse_btn button_short" id = "early1"> </div>
+        <img src = "images/mission_boxes/Humble_start.png" class= "quest_box" id = "earlybox1">
+        
+        <div class = "backdrop app_boss_backdrop"></div>
+        <div class = "mission_btn"> <img src = "images/mission_icons/early_btn3.png" class = "app_boss_btn button_medium" id = "early2"></div>
+        <img src = "images/mission_boxes/early_game.png" class= "quest_box" id = "earlybox2">
+
+        <div class = "backdrop app_gather_backdrop"></div>
+        <div class = "mission_btn"> <img src= "images/mission_icons/gather_btn.png" class= "app_gather_btn button_medium" id = "early3"> </div>
+        <img src = "images/mission_boxes/look_for.png" class= "quest_box" id = "earlybox3">
+        
+        <div class = "backdrop visuals_backdrop"></div>
+        <div class = mission_btn> <img src = "images/mission_icons/visuals_btn.png" class = "visuals_btn button_medium" id = "visualsbtn"> </div>
+        <img src = "images/mission_boxes/visuals.png" class= "quest_box" id = "visuals_box">
+
+        <div class = "backdrop music_backdrop"></div>
+        <div class = mission_btn> <img src = "images/mission_icons/music_btn.png" class= "music_btn button_medium" id = "musicbtn"> </div>
+        <img src = "images/mission_boxes/Music.png" class= "quest_box" id = "music_box">
+
+        <div class = "backdrop champ_gather_backdrop"></div>
+        <div class = "mission_btn"> <img src= "images/mission_icons/late_gather.png" class= "champ_gather_btn button_medium" id = "late1"> </div>
+        <img src = "images/mission_boxes/real_challenge.png" class= "quest_box" id = "latebox1">
+
+        <div class = "backdrop champ_boss_backdrop"></div>
+        <div class = "mission_btn"> <img src= "images/mission_icons/late_boss.png" class= "champ_boss_btn button_medium" id = "late2"> </div>
+        <img src = "images/mission_boxes/cocky.png" class= "quest_box" id = "latebox2">
+
+        <div class = "backdrop champ_cleanse_backdrop"></div>
+        <div class = "mission_btn"> <img src= "images/mission_icons/late_cleanse.png" class= "champ_cleanse_btn button_long" id = "late3"> </div>
+        <img src = "images/mission_boxes/ready.png" class= "quest_box" id = "latebox3">
+       
+
+
+        
+        <img src = "images/portraits/necro.png" class = "boss_button" id = "boss1">
+        <img src = "images/Boss_Boxes/boss_box_necro.png" class = "boss_box" id = "bossbox1">
+        
+        <img src = "images/portraits/prophet.png" class = "boss_button" id = "boss2"> 
+        <img src = "images/Boss_Boxes/boss_box_prophet.png" class = "boss_box" id = "bossbox2">
+
+        <img src = "images/portraits/Collector.png" class = "boss_button" id = "miniboss1">
+        <img src = "images/Boss_Boxes/boss_box_collector.png" class = "boss_box" id = "minibossbox1">
+        
+        <img src = "images/portraits/hag.png" class = "boss_button" id = "boss3">
+        <img src = "images/Boss_Boxes/boss_box_hag.png" class = "boss_box" id = "bossbox3">
+
+        <img src = "images/portraits/pounder.png" class = "boss_button" id = "boss4">
+        <img src = "images/Boss_Boxes/boss_box_pounder.png" class = "boss_box" id = "bossbox4">
+
+        <img src = "images/portraits/Shambler.png" class = "boss_button" id = "miniboss2">
+        <img src = "images/Boss_Boxes/boss_box_shambler.png" class = "boss_box" id = "minibossbox2">
+
+        <img src = "images/portraits/fishgirl.png" class = "boss_button" id  = "boss5">
+        <img src = "images/Boss_Boxes/boss_box_siren.png" class = "boss_box" id = "bossbox5">
+
+        <img src = "images/portraits/crew.png" class = "boss_button" id = "boss6">
+        <img src = "images/Boss_Boxes/boss_box_crew.png" class = "boss_box" id = "bossbox6">
+
+        <img src = "images/portraits/Crow.png" class = "boss_button" id = "miniboss3">
+        <img src = "images/Boss_Boxes/boss_box_shrieker.png" class = "boss_box" id = "minibossbox3">
+
+        <img src = "images/portraits/pigboss.png" class = "boss_button" id = "boss7">
+        <img src = "images/Boss_Boxes/boss_box_pig.png" class = "boss_box" id = "bossbox7">
+
+        <img src = "images/portraits/flesh.png" class = "boss_button" id = "boss8">
+        <img src = "images/Boss_Boxes/boss_box_flesh.png" class = "boss_box" id = "bossbox8">
+
+
+        <img src = "images/mission_icons/bc_button.png" class = "button_long bc_button" id = "circus">
+        <img src = "images/mission_boxes/bc_textbox.png" class = "quest_box" id = "circusbox">
+
+        <img src = "images/mission_icons/hero_btn.png" class = "button_long hero_button" id = "hero_btn">
+        
+
+        <div id = "embark_button">
+            <img src = "images/dd_button.png" class= "dd_button" id = "embarkbtn">
+            <img src = "images/dd_buttontop.png" class = "dd_buttontop" id  = "embarktop">
+        </div>
+
+        <div id = "embark_cc" class= "embark_btn">
+            <a href = "cc.html" id = "cclink">
+                <img src = "images/cc_button.png" class = "dd_button" id = "cc_embark">
+                <img src = "images/dd_buttontop.png" class = "dd_buttontop" id  = "embarktop">
+            </a>
+
+        </div>
+
+        <div id = "embark_dds" class = "embark_btn">
+            <a href = "dds.html" id = "ddslink">
+                <img src = "images/finale_btn.png" class = "dd_button" id = "dds_embark">
+                <img src = "images/dd_buttontop.png" class = "dd_buttontop" id  = "embarktop">
+            </a>
+
+        </div>
+
+        <div id = "embark_com" class = embark_btn>
+            <a href = "com.html" id = "comlink"> 
+                <img src = "images/com_embark.png" class= "dd_button" id = "com_embark">
+                <img src = "images/com_embarktop.png" class = "dd_buttontop" id = "com_embarktop">
+            </a>
+            
+        </div>
+        
+        
+       
+    
+    </div>
+    <div class = empty_space></div>
+    <div class = "heroes_main">
+        <div class = "hero_port_container">
+            <img src = "images/hero_port/abom.png" class = "hero_port" id = "Abombtn">
+            <img src = "images/hero_port/anti.png" class= "hero_port" id = "Antibtn">
+            <img src = "images/hero_port/arb.png" class= "hero_port" id = "Arbbtn">
+            <img src = "images/hero_port/bh.png" class= "hero_port" id = "BHbtn">
+            <img src = "images/hero_port/crus.png" class= "hero_port" id = "Crusbtn">
+            <img src = "images/hero_port/flag.png" class= "hero_port" id = "Flagbtn">
+            <img src = "images/hero_port/gr.png" class= "hero_port" id = "GRbtn">
+            <img src = "images/hero_port/hell.png" class= "hero_port" id = Hellbtn>
+            <img src = "images/hero_port/hwm.png" class= "hero_port" id = HWMbtn>
+            <img src = "images/hero_port/hm.png" class= "hero_port" id = HMbtn>
+            <img src = "images/hero_port/jes.png" class= "hero_port" id = Jesbtn>
+            <img src = "images/hero_port/lep.png" class= "hero_port" id = Lepbtn>
+            <img src = "images/hero_port/maa.png" class= "hero_port" id = MAAbtn>
+            <img src = "images/hero_port/musk.png" class= "hero_port" id = Muskbtn>
+            <img src = "images/hero_port/occ.png" class= "hero_port" id = Occbtn>
+            <img src = "images/hero_port/pd.png" class= "hero_port" id = PDbtn>
+            <img src = "images/hero_port/sb.png" class= "hero_port" id = SBbtn>
+            <img src = "images/hero_port/ves.png" class= "hero_port" id = Vesbtn>
+        </div>
+
+        <img src = "images/up_arrow.png" class = "back_hero1 backup" id ="upbtn1">
+        <img src = "images/up_arrow.png" class = "back_hero2 backup" id = "upbtn2">
+        
+        
+
+        <div class = hero_panel id = herobox>
+            <img src = "images/Hero_boxes/panel_edit.png" class = char_panel>
+
+            <div class = 'shared_text'>
+                <div class = 'quirk_header'> Strengths & Weaknesses</div>
+                <div class = 'char_review'> Character Overview</div>
+                <div class = "skill_header"> Combat Skills </div>
+                <div class = "camp_header"> Camping Skills </div>
+                <div class = "resist_header"> Resistances & Stats </div>
+
+            </div>
+
+
+            <div class =  "box_text" id = Abombox>
+                <div class = header_bg id = abombg></div>
+                <div class = "hero_header" id = "edit_abom" contenteditable="false">The Abomination</div>
+                <img src = "images/Hero_boxes/rename_btn.png" class= "rename_button" id = rename_abom>
+                <div class = quotebox>Tortured and reclusive... <br> This man is more dangerous than he seems...</div>
+                
+                <div class = posquirk_text> 
+                    Good Stuns <br> 
+                    High Speed & Dmg <br> 
+                    Decent Reach <br> 
+                    Self-Sustain
+                </div>
+
+                <div class = negquirk_text>
+                    <div class = negflex>
+                        Not very flexible <br>
+                        Beast Form stress penalties
+                    </div> 
+                </div>
+
+                <div class = canon_name> Bigby</div>
+                
+                <div class = resist_text>
+                    <ul class="resist1">
+                        <li>40%</li>
+                        <li class = "highres">60%</li>
+                        <li class = "lowres lowest" >20%</li>
+                        <li>67%</li>
+                      </ul>
+                      
+                      <ul class="resist2">
+                        <li>40%</li>
+                        <li>30%</li>
+                        <li class = "lowres lowest">20%</li>
+                        <li>10%</li>
+                      </ul>
+                </div>
+
+
+                
+                 <div class = "camping_skill_container">
+                    <div class = "sharedcamp" id = sharedcamp1>
+                        <img src = "images/Camp_Icons/camp_shared1.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid1>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp1>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> ENCOURAGE </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li>-15 <span class = stress>Stress</span></li>
+                        </ul>
+                    </div>
+
+                    <div class = "sharedcamp" id = sharedcamp2>
+                        <img src = "images/Camp_Icons/camp_shared2.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid2>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp2>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> WOUND CARE </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li> <span class = heal> Heal</span> 15% HP </li>
+                            <li> Remove <span class = lowres> Bleeding</span> </li>
+                            <li> Remove <span class = blight> Blight </span> </li>
+                        </ul>
+                    </div>
+
+                    <div class = "sharedcamp" id = sharedcamp3>
+                        <img src = "images/Camp_Icons/camp_shared3.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid3>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp3>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> PEP TALK </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li>-15% <span class = stress> Stress </span> (4 Battles) </li>
+                        </ul>
+                    </div>
+
+                    <div class = abomcamp id = abomcamp1>
+                        <img src = "images/Camp_Icons/Abom_camp1.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid4>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom1>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> ANGER MANAGEMENT </li>
+                            <li class = "attack_type"> Time Cost : 3 </li>
+                            <li> Self Only: </li>
+                            <li> +20 <span class = stress> Stress </span></li>
+                            <li> All Companions: </li>
+                            <li> -10 <span class = stress> Stress </span> </li>
+                        </ul>
+                    </div>
+
+                    <div class = abomcamp id = abomcamp2>
+                        <img src = "images/Camp_Icons/Abom_camp2.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid5>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom2>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> PSYCH UP </li>
+                            <li class = "attack_type"> Time Cost : 3 </li>
+                            <li> Self Only: </li>
+                            <li> +25% DMG (4 Battles)</li>
+                            <li> All Companions: </li>
+                            <li>If not religious: +10 <span class = stress> Stress</span> </li>
+                            <li>If religious: +20 <span class = stress> Stress </span> </li>
+                        </ul>
+                    </div>
+
+                    <div class = abomcamp id = abomcamp3>
+                        <img src = "images/Camp_Icons/Abom_camp3.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid6>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom3>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> ELDRITCH BLOOD </li>
+                            <li class = "attack_type"> Time Cost : 3 </li>
+                            <li> Self Only: </li>
+                            <li> +40% <span class = blight> Blight </span> Resist (4 Battles)</li>
+                            <li> +40% <span class = bleed> Bleed </span> Resist (4 Battles)</li>
+                            <li> +40% <span class = disease> Disease </span> Resist (4 Battles)</li>
+                            <li>+20% <span class = stress> Stress </span> (4 Battles) </li>
+                        </ul>
+                    </div>
+
+                    <div class = abomcamp id = abomcamp4>
+                        <img src = "images/Camp_Icons/Abom_camp4.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid7>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom4>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> THE QUICKENING </li>
+                            <li class = "attack_type"> Time Cost : 3 </li>
+                            <li> Self Only: </li>
+                            <li> +4 SPD (4 Battles) </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+
+                <div class = combat_skill_container>
+                    <div class = abomcombat id = abomcbt1>
+                        <img src = "images/Skill_icons/Abom1.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = combatgrid1>  
+                    </div>
+                    <div class = desc_box id = combatabom1> 
+                        <div class = uses_text>Uses Per Battle: 2</div>
+                        <div class = pos_container>
+                        <div class = "pos_ally"> </div> <div class = "pos_ally"> </div> <div class = "pos_ally"> </div> <div class = "pos_ally"> </div>
+                        </div>
+                    <ul class = desc_text>
+                        <li class = highres>Transform</li>
+                        <li>As Human:</li>
+                        <li>Self:</li>
+                        <li>Change to mode: Beast / +5 SPD</li>
+                        <li>+30% <span class = "blight">Blight</span> Resist / +25% DMG</li>
+                        <li><span class = 'heal'>Heal</span> 10 HP</li>
+                        <li>Other Heroes:</li>
+                        <li><span class = stress>Stress</span> + 8</li>
+                        <li>As Beast:</li>
+                        <li>Self:</li>
+                        <li>Change to mode: Human</li>
+                        <li>Other Heroes: </li> 
+                        <li><span class = "stress">Stress</span> -2</li>
+                    </ul>
+                    
+
+                    </div>
+
+                    <div class = abomcombat id = abomcbt2>
+                        <img src = "images/Skill_icons/Abom2.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = combatgrid2>
+                    </div>
+                        <div class = desc_box id = combatabom2> 
+                    
+                            <div class = pos_container>
+                                <div class = "pos_dot"> </div> <div class = "pos_ally"> </div> <div class = "pos_ally"> </div> <div class = "pos_dot"> </div>
+                                <div class = blank_space></div>
+                                <div class = "pos_enemy"> </div> <div class = "pos_enemy"> </div> <div class = "pos_enemy"> </div> <div class = "pos_dot"> </div>
+                            </div>
+                            <ul class = desc_text>
+                                <li class = highres>Manacles</li>
+                                <li class = attack_type>Ranged</li>
+                                <li>ACC Base: 115%</li>
+                                <li>DMG mod: -60%</li>
+                                <li>CRIT mod: +5.0% </li> 
+                                <li><span class = "stun"> Stun</span><span class = chance> (130% Base)</span></li>
+                            </ul>
+                        </div>
+                    
+
+                    <div class = abomcombat id = abomcbt3>
+                        <img src = "images/Skill_icons/Abom3.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = combatgrid3>
+                    </div>
+
+                        <div class = desc_box id = combatabom3> 
+                            <div class = pos_container>
+                                <div class = "pos_dot"> </div> <div class = "pos_ally"> </div> <div class = "pos_ally"> </div> <div class = "pos_dot"> </div>
+                                <div class = blank_space></div>
+                                <div class = "pos_dot"> </div> <div class = "pos_enemy"> </div> <div class = "pos_enemy"> </div> <div class = "pos_dot"></div> <div class = "cleave_double pos2_3"></div>
+                            </div>
+                            <ul class = desc_text>
+                                <li class = highres>Beast's Bile</li>
+                                <li class = attack_type>Ranged</li>
+                                <li> ACC Base: 115% DMG mod: -90% CRIT mod: +6.0%</li>
+                                <li><span class = "blight">Blight</span><span class = "chance"> (140% Base)</span> </li>
+                                <li>5pts/rd for 3 rds</li> 
+                                <li class = debuff>Debuff Target:</li> 
+                                <li>-33% <span class = "blight"> Blight</span> Resist <span class = chance>(140% Base)</span></li>
+                            </ul>
+                        </div>
+
+
+                    <div class = abomcombat id = abomcbt4>
+                        <img src = "images/Skill_icons/Abom4.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = combatgrid4>
+                    </div>
+
+                        <div class = desc_box id = combatabom4> 
+                            <div class = pos_container>
+                                <div class = "pos_ally"> </div> <div class = "pos_ally"> </div> <div class = "pos_ally"> </div> <div class = "pos_ally"> </div>
+                            </div>
+                            <ul class = desc_text>
+                                <li class = highres>Absolution</li>
+                                <li>Self:</li>
+                                <li><span class = stress>Stress</span> -10 </li>
+                                <li><span class = "heal">Heal</span> 5 HP</li>
+                            </ul>
+                        </div>
+
+
+                    <div class = abomcombat id = abomcbt5>
+                        <img src = "images/Skill_icons/Abom5.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = combatgrid5>
+                    </div>
+
+                        <div class = desc_box id = combatabom5>
+                            <div class = pos_container>
+                                <div class = "pos_dot"> </div> <div class = "pos_dot"> </div> <div class = "pos_ally"> </div> <div class = "pos_ally"> </div>
+                                <div class = blank_space></div>
+                                <div class = "pos_enemy"> </div> <div class = "pos_enemy"> </div> <div class = "pos_dot"> </div> <div class = "pos_dot"> <div class = "cleave_double pos1_2"></div> </div>
+                            </div>
+                            <ul class = desc_text>
+                                <li class = highres>Rake</li>
+                                <li class = attack_type>Melee</li>
+                                <li>ACC Base: 110%</li>
+                                <li>DMG mod: -50%</li>
+                                <li>CRIT mod: +1.0% </li> 
+                                <li class = buff>Buff Self:</li>
+                                <li>Rake: +25% DMG</li>
+                            </ul>
+                        </div>
+
+
+                    <div class = abomcombat id = abomcbt6>
+                        <img src = "images/Skill_icons/Abom6.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = combatgrid6>
+                    </div>
+
+                        <div class = desc_box id = combatabom6> 
+                            <div class = pos_container>
+                                <div class = "pos_dot"> </div> <div class = "pos_dot"> </div> <div class = "pos_ally"> </div> <div class = "pos_ally"> </div>
+                                <div class = blank_space></div>
+                                <div class = "pos_enemy"> </div> <div class = "pos_enemy"> </div> <div class = "pos_enemy"> </div> <div class = "pos_dot"> </div>
+                            </div>
+                            <ul class = desc_text>
+                                <li class = highres>Rage</li>
+                                <li class = attack_type>Melee</li>
+                                <li>ACC Base: 105%</li>
+                                <li>CRIT mod: +11.5% </li> 
+                            </ul>
+                        </div>
+
+
+                    <div class = abomcombat id = abomcbt7>
+                        <img src = "images/Skill_icons/Abom7.png" class = "skill_icon">  
+                        <img src ="images/ability_grid.png" class = ability_grid id = combatgrid7> 
+                    </div> 
+                        <div class = desc_box id = combatabom7> 
+                        <div class = pos_container>
+                            <div class = "pos_dot"> </div> <div class = "pos_ally"> </div> <div class = "pos_ally"> </div> <div class = "pos_ally"> </div>
+                            <div class = blank_space></div>
+                            <div class = "pos_enemy"> </div> <div class = "pos_enemy"> </div> <div class = "pos_dot"> </div> <div class = "pos_dot"> </div>
+                        </div>
+                        <ul class = desc_text>
+                            <li class = highres>Slam</li>
+                            <li class = attack_type>Melee</li>
+                            <li><span class = move> Forward </span> 1</li>
+                            <li>ACC Base: 100%/ DMG mod: -25%/ CRIT mod: +5.0%</li>
+                            <li><span class = "move">Knockback</span> 2 <span class = "chance">(140% Base)</span></li>
+                            <li class = debuff> Debuff Target: </li> 
+                            <li> -20 DODGE <span class = "chance">(140% Base)</span></li> 
+                            <li> -6 SPD <span class = "chance">(140% Base)</span></li>
+                        </ul>
+                    </div>
+   
+
+                </div>
+
+                
+
+
+                <img src = "images/Hero_boxes/skinswap.png" class = "swapskin_btn" id = palette_Abom>
+                <img src = "images/Hero_boxes/abom1.webp" class= "sprite_abom" id = Abom1>
+                <img src = "images/Hero_boxes/abom2.webp" class = "sprite_abom" id = Abom2>
+                <img src = "images/Hero_boxes/abom3.webp" class = "sprite_abom" id = Abom3>
+                <img src = "images/Hero_boxes/abom4.webp" class = "sprite_abom" id = Abom4>
+
+                <img src = "images/Hero_boxes/hero_before.png" class = "prev_btn" id = prev_Abom>
+                <img src = "images/Hero_boxes/hero_after.png" class= "next_btn" id = next_Abom>
+            </div>
+
+            <div class =  "box_text" id = Antibox>
+                <div class = header_bg id = antibg></div>
+                <div class = "hero_header" id = "edit_anti" contenteditable="false">The Antiquarian</div>
+                <img src = "images/Hero_boxes/rename_btn.png" class= "rename_button" id = rename_anti>
+                <div class = quotebox>She searches where others will not go...<br> And sees what others will not see.</div>
+ 
+                <div class = posquirk_text> 
+                    Can hit all Positions <br> 
+                    High Dodge <br> 
+                    Rakes in the cash <br> 
+                    Good support skills
+                </div>
+
+                <div class = negquirk_text>
+                    <div class = negflex>
+                        Very Fragile<br>
+                        Lacking in DPS <br>
+                        Low resistances
+                    </div> 
+                </div>
+                
+                <div class = canon_name> Josephine </div>
+
+                <div class = "camping_skill_container">
+                    <div class = "sharedcamp" id = sharedcamp1>
+                        <img src = "images/Camp_Icons/camp_shared1.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid1>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp1>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> ENCOURAGE </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li>-15 <span class = stress>Stress</span></li>
+                        </ul>
+                    </div>
+
+                    <div class = "sharedcamp" id = sharedcamp2>
+                        <img src = "images/Camp_Icons/camp_shared2.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid2>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp2>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> WOUND CARE </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li> <span class = heal> Heal</span> 15% HP </li>
+                            <li> Remove <span class = lowres> Bleeding</span> </li>
+                            <li> Remove <span class = blight> Blight </span> </li>
+                        </ul>
+                    </div>
+
+                    <div class = "sharedcamp" id = sharedcamp3>
+                        <img src = "images/Camp_Icons/camp_shared3.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid3>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp3>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> PEP TALK </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li>-15% <span class = stress> Stress </span> (4 Battles) </li>
+                        </ul>
+                    </div>
+
+                    <div class = abomcamp id = abomcamp1>
+                        <img src = "images/Camp_Icons/Abom_camp1.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid4>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom1>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp2>
+                        <img src = "images/Camp_Icons/Abom_camp2.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid5>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom2>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp3>
+                        <img src = "images/Camp_Icons/Abom_camp3.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid6>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom3>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp4>
+                        <img src = "images/Camp_Icons/Abom_camp4.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid7>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom4>
+                        
+                    </div>
+
+                </div>
+
+                <div class = resist_text>
+                    <ul class="resist1">
+                        <li class = "lowres lowest">20%</li>
+                        <li class = "lowres lowest">20%</li>
+                        <li class = "lowres lowest" >20%</li>
+                        <li>67%</li>
+                    </ul>
+                  
+                    <ul class="resist2">
+                        <li class = "lowres lowest">20%</li>
+                        <li class = "lowres lowest">20%</li>
+                        <li class = "lowres lowest">20%</li>
+                        <li>10%</li>
+                    </ul>
+                </div>
+
+
+                <img src = "images/Hero_boxes/skinswap.png" class = "swapskin_btn" id = palette_Anti>
+                <img src = "images/Hero_boxes/anti1.webp" class= "sprite_anti" id = Anti1>
+                <img src = "images/Hero_boxes/anti2.webp" class= "sprite_anti" id = Anti2>
+                <img src = "images/Hero_boxes/anti3.webp" class= "sprite_anti" id = Anti3>
+                <img src = "images/Hero_boxes/anti4.webp" class= "sprite_anti" id = Anti4>
+
+                <img src = "images/Hero_boxes/hero_before.png" class = "prev_btn" id = prev_Anti>
+                <img src = "images/Hero_boxes/hero_after.png" class= "next_btn" id = next_Anti>
+            </div>
+
+            <div class =  "box_text" id = Arbbox>
+                <div class = header_bg id = arbbg></div>
+                <div class = "hero_header" id = "edit_arb" contenteditable="false">The Arbalest</div>
+                <img src = "images/Hero_boxes/rename_btn.png" class= "rename_button" id = rename_arb>
+                <div class = quotebox>Shoot, bandage and pillage: <br> The dancing steps of war.</div>
+                
+                <div class = posquirk_text> 
+                    Good backline-reach <br> 
+                    Mark synergy <br> 
+                    Good off-healer <br> 
+                    Good vs bosses <br>
+                </div>
+
+                <div class = negquirk_text>
+                    <div class = negflex>
+                    Useless in front<br>
+                    DPS Relies on mark <br>
+                    Limited pos 1 targetting
+                    </div> 
+                </div>
+                
+                <div class = canon_name> Missandei</div>
+
+                <div class = "camping_skill_container">
+                    <div class = "sharedcamp" id = sharedcamp1>
+                        <img src = "images/Camp_Icons/camp_shared1.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid1>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp1>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> ENCOURAGE </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li>-15 <span class = stress>Stress</span></li>
+                        </ul>
+                    </div>
+
+                    <div class = "sharedcamp" id = sharedcamp2>
+                        <img src = "images/Camp_Icons/camp_shared2.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid2>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp2>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> WOUND CARE </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li> <span class = heal> Heal</span> 15% HP </li>
+                            <li> Remove <span class = lowres> Bleeding</span> </li>
+                            <li> Remove <span class = blight> Blight </span> </li>
+                        </ul>
+                    </div>
+
+                    <div class = "sharedcamp" id = sharedcamp3>
+                        <img src = "images/Camp_Icons/camp_shared3.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid3>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp3>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> PEP TALK </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li>-15% <span class = stress> Stress </span> (4 Battles) </li>
+                        </ul>
+                    </div>
+
+                    <div class = abomcamp id = abomcamp1>
+                        <img src = "images/Camp_Icons/Abom_camp1.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid4>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom1>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp2>
+                        <img src = "images/Camp_Icons/Abom_camp2.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid5>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom2>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp3>
+                        <img src = "images/Camp_Icons/Abom_camp3.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid6>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom3>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp4>
+                        <img src = "images/Camp_Icons/Abom_camp4.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid7>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom4>
+                        
+                    </div>
+
+                </div>
+
+                <div class = resist_text>
+                    <ul class="resist1">
+                        <li>40%</li>
+                        <li >30%</li>
+                        <li >30%</li>
+                        <li>67%</li>
+                      </ul>
+                      
+                      <ul class="resist2">
+                        <li>40%</li>
+                        <li>30%</li>
+                        <li>30%</li>
+                        <li>10%</li>
+                      </ul>
+                </div>
+
+
+                <img src = "images/Hero_boxes/skinswap.png" class = "swapskin_btn" id = palette_Arb>
+                
+                <img src = "images/Hero_boxes/arb1.webp" class= "sprite_arb" id = Arb1>
+                <img src = "images/Hero_boxes/Arb2.gif" class= "sprite_arb" id = Arb2>
+                <img src = "images/Hero_boxes/arb3.gif" class= "sprite_arb" id = Arb3>
+                <img src = "images/Hero_boxes/arb4.gif" class= "sprite_arb" id = Arb4>
+
+                <img src = "images/Hero_boxes/hero_before.png" class = "prev_btn" id = prev_Arb>
+                <img src = "images/Hero_boxes/hero_after.png" class= "next_btn" id = next_Arb>
+
+            </div>
+
+            <div class =  "box_text" id = BHbox>
+                <div class = header_bg id = bhbg></div>
+                <div class = "hero_header" id = "edit_bh" contenteditable="false">The Bounty Hunter</div>
+                <img src = "images/Hero_boxes/rename_btn.png" class= "rename_button" id = rename_bh>
+                <div class = quotebox>The thrill of the hunt, <br> The promise of payment.</div>
+
+                <div class = posquirk_text> 
+                    Good Stuns & Shuffles <br> 
+                    Quite Flexible <br> 
+                    Good Trap Disarm <br> 
+                    Mark Synergy <br>
+                    Good DPS and Reach
+                </div>
+
+                <div class = negquirk_text>
+                    <div class = negflex>
+                        No sustain <br>
+                        Limited stun chance
+                    </div> 
+                </div>
+                
+                <div class = canon_name> Tardif </div>
+
+                <div class = "camping_skill_container">
+                    <div class = "sharedcamp" id = sharedcamp1>
+                        <img src = "images/Camp_Icons/camp_shared1.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid1>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp1>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> ENCOURAGE </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li>-15 <span class = stress>Stress</span></li>
+                        </ul>
+                    </div>
+
+                    <div class = "sharedcamp" id = sharedcamp2>
+                        <img src = "images/Camp_Icons/camp_shared2.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid2>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp2>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> WOUND CARE </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li> <span class = heal> Heal</span> 15% HP </li>
+                            <li> Remove <span class = lowres> Bleeding</span> </li>
+                            <li> Remove <span class = blight> Blight </span> </li>
+                        </ul>
+                    </div>
+
+                    <div class = "sharedcamp" id = sharedcamp3>
+                        <img src = "images/Camp_Icons/camp_shared3.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid3>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp3>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> PEP TALK </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li>-15% <span class = stress> Stress </span> (4 Battles) </li>
+                        </ul>
+                    </div>
+
+                    <div class = abomcamp id = abomcamp1>
+                        <img src = "images/Camp_Icons/Abom_camp1.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid4>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom1>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp2>
+                        <img src = "images/Camp_Icons/Abom_camp2.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid5>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom2>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp3>
+                        <img src = "images/Camp_Icons/Abom_camp3.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid6>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom3>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp4>
+                        <img src = "images/Camp_Icons/Abom_camp4.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid7>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom4>
+                        
+                    </div>
+
+                </div>
+
+                <div class = resist_text>
+                    <ul class="resist1">
+                        <li>40%</li>
+                        <li>30%</li>
+                        <li class = lowres>20%</li>
+                        <li>67%</li>
+                      </ul>
+                      
+                      <ul class="resist2">
+                        <li>40%</li>
+                        <li>30%</li>
+                        <li>30%</li>
+                        <li class = highres>40%</li>
+                      </ul>
+                </div>
+
+
+                <img src = "images/Hero_boxes/skinswap.png" class = "swapskin_btn" id = palette_BH>
+    
+                <img src = "images/Hero_boxes/bh1.webp" class= "sprite_bh" id = BH1>
+                <img src = "images/Hero_boxes/bh2.webp" class= "sprite_bh" id = BH2>
+                <img src = "images/Hero_boxes/bh3.webp" class= "sprite_bh" id = BH3>
+                <img src = "images/Hero_boxes/bh4.webp" class= "sprite_bh" id = BH4>
+
+                <img src = "images/Hero_boxes/hero_before.png" class = "prev_btn" id = prev_BH>
+                <img src = "images/Hero_boxes/hero_after.png" class= "next_btn" id = next_BH>
+            </div>
+
+            <div class =  "box_text" id = Crusbox>
+                <div class = header_bg id = crusbg></div>
+                <div class = "hero_header" id = "edit_crus" contenteditable="false">The Crusader</div>
+                <img src = "images/Hero_boxes/rename_btn.png" class= "rename_button" id = rename_crus>
+                <div class = quotebox>A mighty sword arm anchored by holy purpose. <br> A zealous warrior.</div>
+
+                <div class = posquirk_text> 
+                    Very Flexible <br> 
+                    Durable <br> 
+                    Can hit all positions <br> 
+                    Great off-healer <br>
+                    Torch-increasing skills
+                </div>
+
+                <div class = negquirk_text>
+                    <div class = negflex>
+                        Very Slow <br>
+                        DPS Suffers vs Prot <br> 
+                    </div> 
+                </div>
+                
+                <div class = canon_name> Reynauld </div>
+
+                <div class = "camping_skill_container">
+                    <div class = "sharedcamp" id = sharedcamp1>
+                        <img src = "images/Camp_Icons/camp_shared1.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid1>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp1>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> ENCOURAGE </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li>-15 <span class = stress>Stress</span></li>
+                        </ul>
+                    </div>
+
+                    <div class = "sharedcamp" id = sharedcamp2>
+                        <img src = "images/Camp_Icons/camp_shared2.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid2>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp2>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> WOUND CARE </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li> <span class = heal> Heal</span> 15% HP </li>
+                            <li> Remove <span class = lowres> Bleeding</span> </li>
+                            <li> Remove <span class = blight> Blight </span> </li>
+                        </ul>
+                    </div>
+
+                    <div class = "sharedcamp" id = sharedcamp3>
+                        <img src = "images/Camp_Icons/camp_shared3.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid3>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp3>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> PEP TALK </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li>-15% <span class = stress> Stress </span> (4 Battles) </li>
+                        </ul>
+                    </div>
+
+                    <div class = abomcamp id = abomcamp1>
+                        <img src = "images/Camp_Icons/Abom_camp1.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid4>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom1>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp2>
+                        <img src = "images/Camp_Icons/Abom_camp2.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid5>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom2>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp3>
+                        <img src = "images/Camp_Icons/Abom_camp3.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid6>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom3>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp4>
+                        <img src = "images/Camp_Icons/Abom_camp4.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid7>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom4>
+                        
+                    </div>
+
+                </div>
+
+                <div class = resist_text>
+                    <ul class="resist1">
+                        <li><span class = highres>50%*</span> / 40%</li>
+                        <li>30%</li>
+                        <li>30%</li>
+                        <li>67%</li>
+                      </ul>
+                      
+                      <ul class="resist2">
+                        <li>40%</li>
+                        <li>30%</li>
+                        <li>30%</li>
+                        <li>10%</li>
+                      </ul>
+                </div>
+
+
+                <img src = "images/Hero_boxes/skinswap.png" class = "swapskin_btn" id = palette_Crus>
+                
+                <img src = "images/Hero_boxes/crus1.webp" class= "sprite_crus" id = Crus1>
+                <img src = "images/Hero_boxes/crus2.webp" class= "sprite_crus" id = Crus2>
+                <img src = "images/Hero_boxes/crus3.webp" class= "sprite_crus" id = Crus3>
+                <img src = "images/Hero_boxes/crus4.webp" class= "sprite_crus" id = Crus4>
+
+                <img src = "images/Hero_boxes/hero_before.png" class = "prev_btn" id = prev_Crus>
+                <img src = "images/Hero_boxes/hero_after.png" class= "next_btn" id = next_Crus>
+            </div>
+
+            <div class =  "box_text" id = Flagbox>
+                <div class = header_bg id = flagbg></div>
+                <div class = "hero_header" id = "edit_flag" contenteditable="false">The Flagellant</div>
+                <img src = "images/Hero_boxes/rename_btn.png" class= "rename_button" id = rename_flag>
+                <div class = quotebox>There is power in the Blood, <br> For those with the fortitude to pay the price.</div>
+
+                <div class = posquirk_text> 
+                    Great Support Skills <br> 
+                    Fast & good reach <br> 
+                    Self Sustain + + <br> 
+                    DoT dealer(Bleed) <br>
+                    High resists <br>
+                </div>
+
+                <div class = negquirk_text>
+                    <div class = negflex>
+                        DPS only usable in front <br>
+                        Cannot Virtue<br>
+                        Low base dmg <br>
+                        Lacking personal trinkets <br>
+                        Mediocre Offense/Defense
+                    </div> 
+                </div>
+                
+                <div class = canon_name> Damian </div>
+
+                <div class = "camping_skill_container">
+                    <div class = "sharedcamp" id = sharedcamp1>
+                        <img src = "images/Camp_Icons/camp_shared1.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid1>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp1>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> ENCOURAGE </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li>-15 <span class = stress>Stress</span></li>
+                        </ul>
+                    </div>
+
+                    <div class = "sharedcamp" id = sharedcamp2>
+                        <img src = "images/Camp_Icons/camp_shared2.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid2>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp2>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> WOUND CARE </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li> <span class = heal> Heal</span> 15% HP </li>
+                            <li> Remove <span class = lowres> Bleeding</span> </li>
+                            <li> Remove <span class = blight> Blight </span> </li>
+                        </ul>
+                    </div>
+
+                    <div class = "sharedcamp" id = sharedcamp3>
+                        <img src = "images/Camp_Icons/camp_shared3.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid3>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp3>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> PEP TALK </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li>-15% <span class = stress> Stress </span> (4 Battles) </li>
+                        </ul>
+                    </div>
+
+                    <div class = abomcamp id = abomcamp1>
+                        <img src = "images/Camp_Icons/Abom_camp1.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid4>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom1>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp2>
+                        <img src = "images/Camp_Icons/Abom_camp2.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid5>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom2>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp3>
+                        <img src = "images/Camp_Icons/Abom_camp3.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid6>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom3>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp4>
+                        <img src = "images/Camp_Icons/Abom_camp4.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid7>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom4>
+                        
+                    </div>
+
+                </div>
+
+                <div class = resist_text>
+                    <ul class="resist1">
+                        <li class = "highres"> <span class = highest>60%*</span> / 50</li>
+                        <li>30%</li>
+                        <li>30%</li>
+                        <li class = "highres highest">73%</li>
+                      </ul>
+                      
+                      <ul class="resist2">
+                        <li class = highres>50%</li>
+                        <li class = "highres highest">65%</li>
+                        <li class = highres>40%</li>
+                        <li class = "lowres lowest">0%</li>
+                      </ul>
+                </div>
+
+
+                <img src = "images/Hero_boxes/skinswap.png" class = "swapskin_btn" id = palette_Flag>
+                
+                <img src = "images/Hero_boxes/flag1.webp" class= "sprite_flag" id = Flag1>
+                <img src = "images/Hero_boxes/flag2.webp" class= "sprite_flag" id = Flag2>
+                <img src = "images/Hero_boxes/flag3.webp" class= "sprite_flag" id = Flag3>
+                <img src = "images/Hero_boxes/flag4.webp" class= "sprite_flag" id = Flag4>
+
+                <img src = "images/Hero_boxes/hero_before.png" class = "prev_btn" id = prev_Flag>
+                <img src = "images/Hero_boxes/hero_after.png" class= "next_btn" id = next_Flag>
+            </div>
+
+            <div class =  "box_text" id = GRbox>
+                <div class = header_bg id = grbg></div>
+                <div class = "hero_header" id = "edit_gr" contenteditable="false">The Grave Robber</div>
+                <img src = "images/Hero_boxes/rename_btn.png" class= "rename_button" id = rename_gr>
+                <div class = quotebox>To those with a keen eye, <br> Gold gleams like a dagger's point.</div>
+
+                <div class = posquirk_text> 
+                    High Spd and Dodge <br> 
+                    Flexible and good reach <br> 
+                    Good Trap Disarm <br> 
+                    Good personal trinkets<br>
+                    Disease Removal
+                </div>
+
+                <div class = negquirk_text>
+                    <div class = negflex>
+                        Low HP Pool <br>
+                        No sustain <br>
+                        Lacks Utility
+                    </div> 
+                </div>
+                
+                <div class = canon_name> Audrey </div>
+
+                <div class = "camping_skill_container">
+                    <div class = "sharedcamp" id = sharedcamp1>
+                        <img src = "images/Camp_Icons/camp_shared1.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid1>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp1>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> ENCOURAGE </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li>-15 <span class = stress>Stress</span></li>
+                        </ul>
+                    </div>
+
+                    <div class = "sharedcamp" id = sharedcamp2>
+                        <img src = "images/Camp_Icons/camp_shared2.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid2>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp2>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> WOUND CARE </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li> <span class = heal> Heal</span> 15% HP </li>
+                            <li> Remove <span class = lowres> Bleeding</span> </li>
+                            <li> Remove <span class = blight> Blight </span> </li>
+                        </ul>
+                    </div>
+
+                    <div class = "sharedcamp" id = sharedcamp3>
+                        <img src = "images/Camp_Icons/camp_shared3.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid3>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp3>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> PEP TALK </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li>-15% <span class = stress> Stress </span> (4 Battles) </li>
+                        </ul>
+                    </div>
+
+                    <div class = abomcamp id = abomcamp1>
+                        <img src = "images/Camp_Icons/Abom_camp1.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid4>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom1>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp2>
+                        <img src = "images/Camp_Icons/Abom_camp2.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid5>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom2>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp3>
+                        <img src = "images/Camp_Icons/Abom_camp3.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid6>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom3>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp4>
+                        <img src = "images/Camp_Icons/Abom_camp4.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid7>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom4>
+                        
+                    </div>
+
+                </div>
+
+                <div class = resist_text>
+                    <ul class="resist1">
+                        <li class = "lowres lowest">20%</li>
+                        <li class = "highres">50%</li>
+                        <li>30%</li>
+                        <li>67%</li>
+                      </ul>
+                      
+                      <ul class="resist2">
+                        <li class = "lowres lowest">20%</li>
+                        <li>30%</li>
+                        <li>30%</li>
+                        <li class = "highres highest">50%</li>
+                      </ul>
+                </div>
+
+
+                <img src = "images/Hero_boxes/skinswap.png" class = "swapskin_btn" id = palette_GR>
+                
+                <img src = "images/Hero_boxes/gr1.webp" class= "sprite_gr" id = GR1>
+                <img src = "images/Hero_boxes/gr2.webp" class= "sprite_gr" id = GR2>
+                <img src = "images/Hero_boxes/gr3.webp" class= "sprite_gr" id = GR3>
+                <img src = "images/Hero_boxes/gr4.webp" class= "sprite_gr" id = GR4>
+
+                <img src = "images/Hero_boxes/hero_before.png" class = "prev_btn" id = prev_GR>
+                <img src = "images/Hero_boxes/hero_after.png" class= "next_btn" id = next_GR>
+            </div>
+
+            <div class =  "box_text" id = Hellbox>
+                <div class = header_bg id = hellbg></div>
+                <div class = "hero_header" id = "edit_hell" contenteditable="false">The Hellion</div>
+                <img src = "images/Hero_boxes/rename_btn.png" class= "rename_button" id = rename_hell>
+                <div class = quotebox>Barbaric rage and unrelenting savagery <br> Make for a powerful ally.</div>
+
+                <div class = posquirk_text> 
+                    Burst Damage <br> 
+                    Bleeds and Frontline Stun <br> 
+                    Can hit all positions <br> 
+                    Minor Self Sustain <br>
+                    Good Personal Trinkets
+                </div>
+
+                <div class = negquirk_text>
+                    <div class = negflex>
+                        Position Dependant <br>
+                    </div> 
+                </div>
+                
+                <div class = canon_name> Boudica </div>
+
+                <div class = "camping_skill_container">
+                    <div class = "sharedcamp" id = sharedcamp1>
+                        <img src = "images/Camp_Icons/camp_shared1.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid1>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp1>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> ENCOURAGE </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li>-15 <span class = stress>Stress</span></li>
+                        </ul>
+                    </div>
+
+                    <div class = "sharedcamp" id = sharedcamp2>
+                        <img src = "images/Camp_Icons/camp_shared2.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid2>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp2>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> WOUND CARE </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li> <span class = heal> Heal</span> 15% HP </li>
+                            <li> Remove <span class = lowres> Bleeding</span> </li>
+                            <li> Remove <span class = blight> Blight </span> </li>
+                        </ul>
+                    </div>
+
+                    <div class = "sharedcamp" id = sharedcamp3>
+                        <img src = "images/Camp_Icons/camp_shared3.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid3>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp3>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> PEP TALK </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li>-15% <span class = stress> Stress </span> (4 Battles) </li>
+                        </ul>
+                    </div>
+
+                    <div class = abomcamp id = abomcamp1>
+                        <img src = "images/Camp_Icons/Abom_camp1.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid4>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom1>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp2>
+                        <img src = "images/Camp_Icons/Abom_camp2.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid5>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom2>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp3>
+                        <img src = "images/Camp_Icons/Abom_camp3.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid6>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom3>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp4>
+                        <img src = "images/Camp_Icons/Abom_camp4.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid7>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom4>
+                        
+                    </div>
+
+                </div>
+
+                <div class = resist_text>
+                    <ul class="resist1">
+                        <li>40%</li>
+                        <li class = "highres">40%</li>
+                        <li>30%</li>
+                        <li>67%</li>
+                      </ul>
+                      
+                      <ul class="resist2">
+                        <li>40%</li>
+                        <li class = highres>40%</li>
+                        <li>30%</li>
+                        <li>20%</li>
+                      </ul>
+                </div>
+
+
+                <img src = "images/Hero_boxes/skinswap.png" class = "swapskin_btn" id = palette_Hell>
+                
+                <img src = "images/Hero_boxes/hell1.webp" class= "sprite_hell" id = Hell1>
+                <img src = "images/Hero_boxes/hell2.webp" class= "sprite_hell" id = Hell2>
+                <img src = "images/Hero_boxes/hell3.webp" class= "sprite_hell" id = Hell3>
+                <img src = "images/Hero_boxes/hell4.webp" class= "sprite_hell" id = Hell4>
+
+                <img src = "images/Hero_boxes/hero_before.png" class = "prev_btn" id = prev_Hell>
+                <img src = "images/Hero_boxes/hero_after.png" class= "next_btn" id = next_Hell>
+            </div>
+
+            <div class =  "box_text" id = HWMbox>
+                <div class = header_bg id = hwmbg></div>
+                <div class = "hero_header" id = "edit_hwm" contenteditable="false">The Highwayman</div>
+                <img src = "images/Hero_boxes/rename_btn.png" class= "rename_button" id = rename_hwm>
+                <div class = quotebox>Elusive, evasive, persistent. <br> Righteous traits for a rogue.</div>
+
+                <div class = posquirk_text> 
+                    Very Flexible & Good Reach <br> 
+                    High Dodge + Riposte <br> 
+                    Good Camping Skills <br> 
+                    Good Trap Disarm
+                </div>
+
+                <div class = negquirk_text>
+                    <div class = negflex>
+                        Dmg can suffer vs Prot<br>
+                        Lacks Utility<br>
+                        No Self-Sustain
+                    </div> 
+                </div>
+                
+                <div class = canon_name> Dismas </div>
+
+                <div class = "camping_skill_container">
+                    <div class = "sharedcamp" id = sharedcamp1>
+                        <img src = "images/Camp_Icons/camp_shared1.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid1>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp1>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> ENCOURAGE </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li>-15 <span class = stress>Stress</span></li>
+                        </ul>
+                    </div>
+
+                    <div class = "sharedcamp" id = sharedcamp2>
+                        <img src = "images/Camp_Icons/camp_shared2.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid2>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp2>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> WOUND CARE </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li> <span class = heal> Heal</span> 15% HP </li>
+                            <li> Remove <span class = lowres> Bleeding</span> </li>
+                            <li> Remove <span class = blight> Blight </span> </li>
+                        </ul>
+                    </div>
+
+                    <div class = "sharedcamp" id = sharedcamp3>
+                        <img src = "images/Camp_Icons/camp_shared3.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid3>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp3>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> PEP TALK </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li>-15% <span class = stress> Stress </span> (4 Battles) </li>
+                        </ul>
+                    </div>
+
+                    <div class = abomcamp id = abomcamp1>
+                        <img src = "images/Camp_Icons/Abom_camp1.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid4>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom1>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp2>
+                        <img src = "images/Camp_Icons/Abom_camp2.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid5>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom2>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp3>
+                        <img src = "images/Camp_Icons/Abom_camp3.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid6>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom3>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp4>
+                        <img src = "images/Camp_Icons/Abom_camp4.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid7>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom4>
+                        
+                    </div>
+
+                </div>
+
+                <div class = resist_text>
+                    <ul class="resist1">
+                        <li class = lowres>30%</li>
+                        <li>30%</li>
+                        <li>30%</li>
+                        <li>67%</li>
+                      </ul>
+                      
+                      <ul class="resist2">
+                        <li class="lowres">30%</li>
+                        <li>30%</li>
+                        <li>30%</li>
+                        <li class = highres>40%</li>
+                      </ul>
+                </div>
+
+
+                <img src = "images/Hero_boxes/skinswap.png" class = "swapskin_btn" id = palette_HWM>
+            
+                <img src = "images/Hero_boxes/hwm1.webp" class = "sprite_hwm" id = HWM1>
+                <img src = "images/Hero_boxes/hwm2.webp" class = "sprite_hwm" id = HWM2>
+                <img src = "images/Hero_boxes/hwm3.webp" class = "sprite_hwm" id = HWM3>
+                <img src = "images/Hero_boxes/hwm4.webp" class = "sprite_hwm" id = HWM4>
+
+                <img src = "images/Hero_boxes/hero_before.png" class = "prev_btn" id = prev_HWM>
+                <img src = "images/Hero_boxes/hero_after.png" class= "next_btn" id = next_HWM>
+            </div>
+
+            <div class =  "box_text" id = HMbox>
+                <div class = header_bg id = hmbg></div>
+                <div class = "hero_header" id = "edit_hm" contenteditable="false">The Houndmaster</div>
+                <img src = "images/Hero_boxes/rename_btn.png" class= "rename_button" id = rename_hm>
+                <div class = quotebox>A lawman and his faithful beast. <br> A bond formed by battle and bloodshed.</div>
+
+                <div class = posquirk_text> 
+                    Good Flexibility & Reach <br>
+                    Stress Healer + Self Sustain <br>
+                    Mark Synergy & Front Stun <br>
+                    Good Trap Disarm <br>
+                    Good Dodge + Guard
+                </div>
+
+                <div class = negquirk_text>
+                    <div class = negflex>
+                        Relies on Mark for Dmg <br>
+                        Avoid Position 1 <br>
+                    </div> 
+                </div>
+                
+                <div class = canon_name> William </div>
+
+                <div class = "camping_skill_container">
+                    <div class = "sharedcamp" id = sharedcamp1>
+                        <img src = "images/Camp_Icons/camp_shared1.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid1>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp1>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> ENCOURAGE </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li>-15 <span class = stress>Stress</span></li>
+                        </ul>
+                    </div>
+
+                    <div class = "sharedcamp" id = sharedcamp2>
+                        <img src = "images/Camp_Icons/camp_shared2.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid2>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp2>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> WOUND CARE </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li> <span class = heal> Heal</span> 15% HP </li>
+                            <li> Remove <span class = lowres> Bleeding</span> </li>
+                            <li> Remove <span class = blight> Blight </span> </li>
+                        </ul>
+                    </div>
+
+                    <div class = "sharedcamp" id = sharedcamp3>
+                        <img src = "images/Camp_Icons/camp_shared3.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid3>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp3>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> PEP TALK </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li>-15% <span class = stress> Stress </span> (4 Battles) </li>
+                        </ul>
+                    </div>
+
+                    <div class = abomcamp id = abomcamp1>
+                        <img src = "images/Camp_Icons/Abom_camp1.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid4>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom1>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp2>
+                        <img src = "images/Camp_Icons/Abom_camp2.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid5>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom2>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp3>
+                        <img src = "images/Camp_Icons/Abom_camp3.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid6>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom3>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp4>
+                        <img src = "images/Camp_Icons/Abom_camp4.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid7>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom4>
+                        
+                    </div>
+
+                </div>
+
+                <div class = resist_text>
+                    <ul class="resist1">
+                        <li>40%</li>
+                        <li class = "highres">40%</li>
+                        <li>30%</li>
+                        <li>67%</li>
+                      </ul>
+                      
+                      <ul class="resist2">
+                        <li>40%</li>
+                        <li class = highres>40%</li>
+                        <li>30%</li>
+                        <li class = highres>40%</li>
+                      </ul>
+                </div>
+
+
+                <img src = "images/Hero_boxes/skinswap.png" class = "swapskin_btn" id = palette_HM>
+                
+                <img src = "images/Hero_boxes/hm1.webp" class= "sprite_hm" id = HM1>
+                <img src = "images/Hero_boxes/hm2.webp" class= "sprite_hm" id = HM2>
+                <img src = "images/Hero_boxes/hm3.gif" class= "sprite_hm" id = HM3>
+                <img src = "images/Hero_boxes/hm4.webp" class= "sprite_hm" id = HM4>
+
+                <img src = "images/Hero_boxes/hero_before.png" class = "prev_btn" id = prev_HM>
+                <img src = "images/Hero_boxes/hero_after.png" class= "next_btn" id = next_HM>
+            </div>
+
+            <div class =  "box_text" id = Jesbox>
+                <div class = header_bg id = jesbg></div>
+                <div class = "hero_header" id = "edit_jes" contenteditable="false">The Jester</div>
+                <img src = "images/Hero_boxes/rename_btn.png" class= "rename_button" id = rename_jes>
+                <div class = quotebox>He will be laughing still <br> At the end.</div>
+
+                <div class = posquirk_text> 
+                    High Speed and Dodge <br> 
+                    Burst Dmg (Finale) <br> 
+                    Great Support <br> 
+                    Great Stress Healer<br>
+                    Can be flexible
+                </div>
+
+                <div class = negquirk_text>
+                    <div class = negflex>
+                        No self sustain <br>
+                    </div> 
+                </div>
+                
+                <div class = canon_name> Sarmenti</div>
+
+                <div class = "camping_skill_container">
+                    <div class = "sharedcamp" id = sharedcamp1>
+                        <img src = "images/Camp_Icons/camp_shared1.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid1>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp1>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> ENCOURAGE </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li>-15 <span class = stress>Stress</span></li>
+                        </ul>
+                    </div>
+
+                    <div class = "sharedcamp" id = sharedcamp2>
+                        <img src = "images/Camp_Icons/camp_shared2.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid2>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp2>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> WOUND CARE </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li> <span class = heal> Heal</span> 15% HP </li>
+                            <li> Remove <span class = lowres> Bleeding</span> </li>
+                            <li> Remove <span class = blight> Blight </span> </li>
+                        </ul>
+                    </div>
+
+                    <div class = "sharedcamp" id = sharedcamp3>
+                        <img src = "images/Camp_Icons/camp_shared3.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid3>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp3>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> PEP TALK </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li>-15% <span class = stress> Stress </span> (4 Battles) </li>
+                        </ul>
+                    </div>
+
+                    <div class = abomcamp id = abomcamp1>
+                        <img src = "images/Camp_Icons/Abom_camp1.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid4>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom1>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp2>
+                        <img src = "images/Camp_Icons/Abom_camp2.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid5>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom2>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp3>
+                        <img src = "images/Camp_Icons/Abom_camp3.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid6>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom3>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp4>
+                        <img src = "images/Camp_Icons/Abom_camp4.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid7>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom4>
+                        
+                    </div>
+
+                </div>
+
+                <div class = resist_text>
+                    <ul class="resist1">
+                        <li class = "lowres lowest">20%</li>
+                        <li class = "highres">40%</li>
+                        <li class = "lowres lowest">20%</li>
+                        <li>67%</li>
+                      </ul>
+                      
+                      <ul class="resist2">
+                        <li class="lowres lowest">20%</li>
+                        <li>30%</li>
+                        <li class = highres>40%</li>
+                        <li class = highres>30%</li>
+                      </ul>
+                </div>
+
+
+                <img src = "images/Hero_boxes/skinswap.png" class = "swapskin_btn" id = palette_Jes>
+                
+                <img src = "images/Hero_boxes/jes1.webp" class= "sprite_jes" id = Jes1>
+                <img src = "images/Hero_boxes/jes2.webp" class= "sprite_jes" id = Jes2>
+                <img src = "images/Hero_boxes/jes3.gif" class= "sprite_jes" id = Jes3>
+                <img src = "images/Hero_boxes/jes4.gif" class= "sprite_jes" id = Jes4>
+
+                <img src = "images/Hero_boxes/hero_before.png" class = "prev_btn" id = prev_Jes>
+                <img src = "images/Hero_boxes/hero_after.png" class= "next_btn" id = next_Jes>
+            </div>
+
+            <div class =  "box_text" id = Lepbox>
+                <div class = header_bg id = lepbg></div>
+                <div class = "hero_header" id = "edit_lep" contenteditable="false">The Leper</div>
+                <img src = "images/Hero_boxes/rename_btn.png" class= "rename_button" id = rename_lep>
+                <div class = quotebox>This man understands that adversity <br> And existence are one and the same.</div>
+
+                <div class = posquirk_text> 
+                    High Stun & Move Resist <br> 
+                    Very Durable <br> 
+                    Very good Damage <br> 
+                    Self-Sustain <br>
+                    Great Debuff
+                </div>
+
+                <div class = negquirk_text>
+                    <div class = negflex>
+                        Frontline Dpenedant <br>
+                        Main Dmg Lacks reach/acc <br> 
+                        Very Slow <br>
+                        Suffers vs Prot <br>
+                    </div> 
+                </div>
+                
+                <div class = canon_name> Baldwin </div>
+
+                <div class = "camping_skill_container">
+                    <div class = "sharedcamp" id = sharedcamp1>
+                        <img src = "images/Camp_Icons/camp_shared1.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid1>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp1>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> ENCOURAGE </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li>-15 <span class = stress>Stress</span></li>
+                        </ul>
+                    </div>
+
+                    <div class = "sharedcamp" id = sharedcamp2>
+                        <img src = "images/Camp_Icons/camp_shared2.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid2>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp2>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> WOUND CARE </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li> <span class = heal> Heal</span> 15% HP </li>
+                            <li> Remove <span class = lowres> Bleeding</span> </li>
+                            <li> Remove <span class = blight> Blight </span> </li>
+                        </ul>
+                    </div>
+
+                    <div class = "sharedcamp" id = sharedcamp3>
+                        <img src = "images/Camp_Icons/camp_shared3.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid3>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp3>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> PEP TALK </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li>-15% <span class = stress> Stress </span> (4 Battles) </li>
+                        </ul>
+                    </div>
+
+                    <div class = abomcamp id = abomcamp1>
+                        <img src = "images/Camp_Icons/Abom_camp1.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid4>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom1>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp2>
+                        <img src = "images/Camp_Icons/Abom_camp2.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid5>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom2>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp3>
+                        <img src = "images/Camp_Icons/Abom_camp3.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid6>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom3>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp4>
+                        <img src = "images/Camp_Icons/Abom_camp4.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid7>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom4>
+                        
+                    </div>
+
+                </div>
+
+                <div class = resist_text>
+                    <ul class="resist1">
+                        <li class = "highres highest">60%</li>
+                        <li class = "highres">50%</li>
+                        <li class = "lowres lowest" >20%</li>
+                        <li>67%</li>
+                      </ul>
+                      
+                      <ul class="resist2">
+                        <li class = "highres highest">60%</li>
+                        <li class = "lowres lowest">10%</li>
+                        <li class = highres>40%</li>
+                        <li>10%</li>
+                      </ul>
+                </div>
+
+
+                <img src = "images/Hero_boxes/skinswap.png" class = "swapskin_btn" id = palette_Lep>
+                
+                <img src = "images/Hero_boxes/lep1.webp" class= "sprite_lep" id = Lep1>
+                <img src = "images/Hero_boxes/lep2.webp" class= "sprite_lep" id = Lep2>
+                <img src = "images/Hero_boxes/lep3.gif" class= "sprite_lep" id = Lep3>
+                <img src = "images/Hero_boxes/lep4.webp" class= "sprite_lep" id = Lep4>
+
+                <img src = "images/Hero_boxes/hero_before.png" class = "prev_btn" id = prev_Lep>
+                <img src = "images/Hero_boxes/hero_after.png" class= "next_btn" id = next_Lep>
+            </div>
+
+            <div class =  "box_text" id = MAAbox>
+                <div class = header_bg id = maabg></div>
+                <div class = "hero_header" id = "edit_maa" contenteditable="false">The Man-At-Arms</div>
+                <img src = "images/Hero_boxes/rename_btn.png" class= "rename_button" id = rename_maa>
+                <div class = quotebox>The raw strength of youth may be spent, <br> But his eye holds the secrets of a hundred campaigns.</div>
+
+                <div class = posquirk_text> 
+                    Very Durable + Guard <br> 
+                    Great Support Skills <br> 
+                    Decent Reach + Stun <br> 
+                    Camping Skill King <br>
+                    Riposte
+                </div>
+
+                <div class = negquirk_text>
+                    <div class = negflex>
+                        No self Sustain <br>
+                        Relatively Slow <br>
+                        Unimpressive Damage
+                    </div> 
+                </div>
+                
+                <div class = canon_name> Barristan </div>
+
+                <div class = "camping_skill_container">
+                    <div class = "sharedcamp" id = sharedcamp1>
+                        <img src = "images/Camp_Icons/camp_shared1.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid1>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp1>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> ENCOURAGE </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li>-15 <span class = stress>Stress</span></li>
+                        </ul>
+                    </div>
+
+                    <div class = "sharedcamp" id = sharedcamp2>
+                        <img src = "images/Camp_Icons/camp_shared2.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid2>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp2>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> WOUND CARE </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li> <span class = heal> Heal</span> 15% HP </li>
+                            <li> Remove <span class = lowres> Bleeding</span> </li>
+                            <li> Remove <span class = blight> Blight </span> </li>
+                        </ul>
+                    </div>
+
+                    <div class = "sharedcamp" id = sharedcamp3>
+                        <img src = "images/Camp_Icons/camp_shared3.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid3>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp3>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> PEP TALK </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li>-15% <span class = stress> Stress </span> (4 Battles) </li>
+                        </ul>
+                    </div>
+
+                    <div class = abomcamp id = abomcamp1>
+                        <img src = "images/Camp_Icons/Abom_camp1.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid4>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom1>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp2>
+                        <img src = "images/Camp_Icons/Abom_camp2.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid5>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom2>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp3>
+                        <img src = "images/Camp_Icons/Abom_camp3.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid6>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom3>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp4>
+                        <img src = "images/Camp_Icons/Abom_camp4.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid7>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom4>
+                        
+                    </div>
+
+                </div>
+
+                <div class = resist_text>
+                    <ul class="resist1">
+                        <li>40%</li>
+                        <li>30%</li>
+                        <li>30%</li>
+                        <li>67%</li>
+                      </ul>
+                      
+                      <ul class="resist2">
+                        <li>40%</li>
+                        <li class = highres>40%</li>
+                        <li>30%</li>
+                        <li>10%</li>
+                      </ul>
+                </div>
+
+
+                <img src = "images/Hero_boxes/skinswap.png" class = "swapskin_btn" id = palette_MAA>
+                
+                <img src = "images/Hero_boxes/maa1.webp" class = sprite_maa id = MAA1>
+                <img src = "images/Hero_boxes/maa2.gif" class = sprite_maa id = MAA2> 
+                <img src = "images/Hero_boxes/maa3.gif" class = sprite_maa id = MAA3>
+                <img src = "images/Hero_boxes/maa4.gif" class = sprite_maa id = MAA4>
+
+                <img src = "images/Hero_boxes/hero_before.png" class = "prev_btn" id = prev_MAA>
+                <img src = "images/Hero_boxes/hero_after.png" class= "next_btn" id = next_MAA>
+            </div>
+
+            <div class =  "box_text" id = Muskbox>
+                <div class = header_bg id = muskbg></div>
+                <div class = "hero_header" id = "edit_musk" contenteditable="false">The Musketeer</div>
+                <img src = "images/Hero_boxes/rename_btn.png" class= "rename_button" id = rename_musk>
+                <div class = quotebox>A champion markswoman, <br> Keen for a new kind of challenge</div>
+
+                <div class = posquirk_text> 
+                    Good backline-reach <br> 
+                    Mark synergy <br> 
+                    Good off-healer <br> 
+                    Good vs bosses <br>
+                </div>
+
+                <div class = negquirk_text>
+                    <div class = negflex>
+                    Useless in front<br>
+                    DPS Relies on mark <br>
+                    Limited pos 1 targetting
+                    </div> 
+                </div>
+                
+                <div class = canon_name> Margaret </div>
+
+                <div class = "camping_skill_container">
+                    <div class = "sharedcamp" id = sharedcamp1>
+                        <img src = "images/Camp_Icons/camp_shared1.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid1>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp1>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> ENCOURAGE </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li>-15 <span class = stress>Stress</span></li>
+                        </ul>
+                    </div>
+
+                    <div class = "sharedcamp" id = sharedcamp2>
+                        <img src = "images/Camp_Icons/camp_shared2.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid2>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp2>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> WOUND CARE </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li> <span class = heal> Heal</span> 15% HP </li>
+                            <li> Remove <span class = lowres> Bleeding</span> </li>
+                            <li> Remove <span class = blight> Blight </span> </li>
+                        </ul>
+                    </div>
+
+                    <div class = "sharedcamp" id = sharedcamp3>
+                        <img src = "images/Camp_Icons/camp_shared3.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid3>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp3>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> PEP TALK </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li>-15% <span class = stress> Stress </span> (4 Battles) </li>
+                        </ul>
+                    </div>
+
+                    <div class = abomcamp id = abomcamp1>
+                        <img src = "images/Camp_Icons/Abom_camp1.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid4>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom1>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp2>
+                        <img src = "images/Camp_Icons/Abom_camp2.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid5>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom2>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp3>
+                        <img src = "images/Camp_Icons/Abom_camp3.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid6>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom3>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp4>
+                        <img src = "images/Camp_Icons/Abom_camp4.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid7>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom4>
+                        
+                    </div>
+
+                </div>
+
+                <div class = resist_text>
+                    <ul class="resist1">
+                        <li>40%</li>
+                        <li>30%</li>
+                        <li>30%</li>
+                        <li>67%</li>
+                      </ul>
+                      
+                      <ul class="resist2">
+                        <li>40%</li>
+                        <li>30%</li>
+                        <li>30%</li>
+                        <li>10%</li>
+                      </ul>
+                </div>
+
+
+                <img src = "images/Hero_boxes/skinswap.png" class = "swapskin_btn" id = palette_Musk>
+                
+                <img src = "images/Hero_boxes/musk1.webp" class= "sprite_musk" id = Musk1>
+                <img src = "images/Hero_boxes/musk2.webp" class= "sprite_musk" id = Musk2>
+                <img src = "images/Hero_boxes/musk3.webp" class= "sprite_musk" id = Musk3>
+                <img src = "images/Hero_boxes/musk4.webp" class= "sprite_musk" id = Musk4>
+
+                <img src = "images/Hero_boxes/hero_before.png" class = "prev_btn" id = prev_Musk>
+                <img src = "images/Hero_boxes/hero_after.png" class= "next_btn" id = next_Musk>
+            </div>
+
+            <div class =  "box_text" id = Occbox>
+                <div class = header_bg id = occbg></div>
+                <div class = "hero_header" id = "edit_occ" contenteditable="false">The Occultist</div>
+                <img src = "images/Hero_boxes/rename_btn.png" class= "rename_button" id = rename_occ>
+                <div class = quotebox>To fight the abyss, one must know it.</div>
+
+                <div class = posquirk_text> 
+                    High Spd with a Mark Skill <br> 
+                    Amazing Stun & Good Debuff  <br> 
+                    Very Flexible & Good Reach <br>
+                    Great personal trinkets
+                </div>
+
+                <div class = negquirk_text>
+                    <div class = negflex>
+                        Somewhat low HP Pool<br>
+                        Low Stun resist <br>
+                        Inconsistant Healing
+                    </div> 
+                </div>
+                
+                <div class = canon_name> Alhazred</div>
+
+                <div class = "camping_skill_container">
+                    <div class = "sharedcamp" id = sharedcamp1>
+                        <img src = "images/Camp_Icons/camp_shared1.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid1>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp1>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> ENCOURAGE </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li>-15 <span class = stress>Stress</span></li>
+                        </ul>
+                    </div>
+
+                    <div class = "sharedcamp" id = sharedcamp2>
+                        <img src = "images/Camp_Icons/camp_shared2.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid2>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp2>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> WOUND CARE </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li> <span class = heal> Heal</span> 15% HP </li>
+                            <li> Remove <span class = lowres> Bleeding</span> </li>
+                            <li> Remove <span class = blight> Blight </span> </li>
+                        </ul>
+                    </div>
+
+                    <div class = "sharedcamp" id = sharedcamp3>
+                        <img src = "images/Camp_Icons/camp_shared3.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid3>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp3>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> PEP TALK </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li>-15% <span class = stress> Stress </span> (4 Battles) </li>
+                        </ul>
+                    </div>
+
+                    <div class = abomcamp id = abomcamp1>
+                        <img src = "images/Camp_Icons/Abom_camp1.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid4>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom1>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp2>
+                        <img src = "images/Camp_Icons/Abom_camp2.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid5>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom2>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp3>
+                        <img src = "images/Camp_Icons/Abom_camp3.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid6>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom3>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp4>
+                        <img src = "images/Camp_Icons/Abom_camp4.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid7>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom4>
+                        
+                    </div>
+
+                </div>
+
+                <div class = resist_text>
+                    <ul class="resist1">
+                        <li class = "lowres lowest">20%</li>
+                        <li>30%</li>
+                        <li class = highres >40%</li>
+                        <li>67%</li>
+                      </ul>
+                      
+                      <ul class="resist2">
+                        <li class = "lowres lowest">20%</li>
+                        <li class = highres>40%</li>
+                        <li class = "highres highest">60%</li>
+                        <li>10%</li>
+                      </ul>
+                </div>
+
+
+                <img src = "images/Hero_boxes/skinswap.png" class = "swapskin_btn" id = palette_Occ>
+                
+                <img src = "images/Hero_boxes/occ1.webp" class= "sprite_occ" id = Occ1>
+                <img src = "images/Hero_boxes/occ2.webp" class= "sprite_occ" id = Occ2>
+                <img src = "images/Hero_boxes/occ3.webp" class= "sprite_occ" id = Occ3>
+                <img src = "images/Hero_boxes/occ4.webp" class= "sprite_occ" id = Occ4>
+
+                <img src = "images/Hero_boxes/hero_before.png" class = "prev_btn" id = prev_Occ>
+                <img src = "images/Hero_boxes/hero_after.png" class= "next_btn" id = next_Occ>
+            </div>
+
+            <div class =  "box_text" id = PDbox>
+                <div class = header_bg id = pdbg></div>
+                <div class = "hero_header" id = "edit_pd" contenteditable="false">The Plague Doctor</div>
+                <img src = "images/Hero_boxes/rename_btn.png" class= "rename_button" id = rename_pd>
+                <div class = quotebox>What better laboratory than <br> The blood-soaked battlefield?</div>
+
+                <div class = posquirk_text> 
+                    Omnireach Stuns <br> 
+                    High Speed & acc <br> 
+                    DoT Dealer (Blight & Bleed) <br> 
+                    DoT Cure Heal & Disease Cure
+                </div>
+
+                <div class = negquirk_text>
+                    <div class = negflex>
+                        Backline Dependant <br>
+                        Low Base Dmg <br>
+                        Somewhat Flimsy
+                    </div> 
+                </div>
+                
+                <div class = canon_name> Paracelsus </div>
+
+                <div class = "camping_skill_container">
+                    <div class = "sharedcamp" id = sharedcamp1>
+                        <img src = "images/Camp_Icons/camp_shared1.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid1>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp1>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> ENCOURAGE </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li>-15 <span class = stress>Stress</span></li>
+                        </ul>
+                    </div>
+
+                    <div class = "sharedcamp" id = sharedcamp2>
+                        <img src = "images/Camp_Icons/camp_shared2.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid2>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp2>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> WOUND CARE </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li> <span class = heal> Heal</span> 15% HP </li>
+                            <li> Remove <span class = lowres> Bleeding</span> </li>
+                            <li> Remove <span class = blight> Blight </span> </li>
+                        </ul>
+                    </div>
+
+                    <div class = "sharedcamp" id = sharedcamp3>
+                        <img src = "images/Camp_Icons/camp_shared3.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid3>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp3>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> PEP TALK </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li>-15% <span class = stress> Stress </span> (4 Battles) </li>
+                        </ul>
+                    </div>
+
+                    <div class = abomcamp id = abomcamp1>
+                        <img src = "images/Camp_Icons/Abom_camp1.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid4>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom1>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp2>
+                        <img src = "images/Camp_Icons/Abom_camp2.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid5>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom2>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp3>
+                        <img src = "images/Camp_Icons/Abom_camp3.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid6>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom3>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp4>
+                        <img src = "images/Camp_Icons/Abom_camp4.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid7>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom4>
+                        
+                    </div>
+
+                </div>
+
+                <div class = resist_text>
+                    <ul class="resist1">
+                        <li class = "lowres lowest">20%</li>
+                        <li class = "highres">60%</li>
+                        <li class = "highres highest" >50%</li>
+                        <li>67%</li>
+                      </ul>
+                      
+                      <ul class="resist2">
+                        <li class = "lowres lowest">20%</li>
+                        <li class = lowres>20%</li>
+                        <li class = highres>50%</li>
+                        <li>20%</li>
+                      </ul>
+                </div>
+
+
+                <img src = "images/Hero_boxes/skinswap.png" class = "swapskin_btn" id = palette_PD>
+                
+                <img src = "images/Hero_boxes/pd1.webp" class= "sprite_pd" id = PD1>
+                <img src = "images/Hero_boxes/pd2.webp" class= "sprite_pd" id = PD2>
+                <img src = "images/Hero_boxes/pd3.gif" class= "sprite_pd" id = PD3>
+                <img src = "images/Hero_boxes/pd4.webp" class= "sprite_pd" id = PD4>
+
+                <img src = "images/Hero_boxes/hero_before.png" class = "prev_btn" id = prev_PD>
+                <img src = "images/Hero_boxes/hero_after.png" class= "next_btn" id = next_PD>
+            </div>
+
+            <div class =  "box_text" id = SBbox>
+                <div class = header_bg id = sbbg></div>
+                <div class = "hero_header" id = "edit_sb" contenteditable="false">The Shieldbreaker</div>
+                <img src = "images/Hero_boxes/rename_btn.png" class= "rename_button" id = rename_sb>
+                <div class = quotebox>Shifting, swaying - <br> She mesmerizes her prey before the final strike.</div>
+
+                <div class = posquirk_text> 
+                    Can hit all positions <br> 
+                    Quite flexible <br> 
+                    Guardbreak & Blocks                 
+                </div>
+
+                <div class = negquirk_text>
+                    <div class = negflex>
+                        Avoid Pos 4 <br>
+                        No self-sustain<br>
+
+                    </div> 
+                </div>
+                
+                <div class = canon_name> Amani </div>
+
+                <div class = "camping_skill_container">
+                    <div class = "sharedcamp" id = sharedcamp1>
+                        <img src = "images/Camp_Icons/camp_shared1.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid1>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp1>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> ENCOURAGE </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li>-15 <span class = stress>Stress</span></li>
+                        </ul>
+                    </div>
+
+                    <div class = "sharedcamp" id = sharedcamp2>
+                        <img src = "images/Camp_Icons/camp_shared2.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid2>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp2>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> WOUND CARE </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li> <span class = heal> Heal</span> 15% HP </li>
+                            <li> Remove <span class = lowres> Bleeding</span> </li>
+                            <li> Remove <span class = blight> Blight </span> </li>
+                        </ul>
+                    </div>
+
+                    <div class = "sharedcamp" id = sharedcamp3>
+                        <img src = "images/Camp_Icons/camp_shared3.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid3>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp3>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> PEP TALK </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li>-15% <span class = stress> Stress </span> (4 Battles) </li>
+                        </ul>
+                    </div>
+
+                    <div class = abomcamp id = abomcamp1>
+                        <img src = "images/Camp_Icons/Abom_camp1.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid4>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom1>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp2>
+                        <img src = "images/Camp_Icons/Abom_camp2.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid5>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom2>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp3>
+                        <img src = "images/Camp_Icons/Abom_camp3.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid6>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom3>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp4>
+                        <img src = "images/Camp_Icons/Abom_camp4.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid7>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom4>
+                        
+                    </div>
+
+                </div>
+
+                <div class = resist_text>
+                    <ul class="resist1">
+                        <li class = highres>50%</li>
+                        <li class = "lowres lowest">20%</li>
+                        <li>30%</li>
+                        <li>67%</li>
+                      </ul>
+                      
+                      <ul class="resist2">
+                        <li class = highres>50%</li>
+                        <li>30%</li>
+                        <li class = lowres>30%</li>
+                        <li>20%</li>
+                      </ul>
+                </div>
+
+                <img src = "images/Hero_boxes/skinswap.png" class = "swapskin_btn" id = palette_SB>
+                
+                <img src = "images/Hero_boxes/sb1.webp" class = sprite_sb id = SB1>
+                <img src = "images/Hero_boxes/sb2.webp" class = sprite_sb id = SB2>
+                <img src = "images/Hero_boxes/sb3.webp" class = sprite_sb id = SB3>
+                <img src = "images/Hero_boxes/sb4.webp" class = sprite_sb id = SB4>
+
+                <img src = "images/Hero_boxes/hero_before.png" class = "prev_btn" id = prev_SB>
+                <img src = "images/Hero_boxes/hero_after.png" class= "next_btn" id = next_SB>
+            </div>
+
+            <div class =  "box_text" id = Vesbox>
+                <div class = header_bg id = vesbg></div>
+                <div class = "hero_header" id = "edit_ves" contenteditable="false">The Vestal</div>
+                <img src = "images/Hero_boxes/rename_btn.png" class= "rename_button" id = rename_ves>
+                <div class = quotebox>A sister of battle, <br> Pious and unrelenting!</div>
+
+                <div class = posquirk_text> 
+                    AoE Healing <br> 
+                    Has a stun <br> 
+                    Decent Reach <br>
+                    Torch-increasing skills
+                </div>
+
+                <div class = negquirk_text>
+                    <div class = negflex>
+                        Backline Dependant <br>
+                        Low Dmg <br>
+                        Illumination
+                    </div> 
+                </div>
+                
+                <div class = canon_name> Junia</div>
+
+                <div class = "camping_skill_container">
+                    <div class = "sharedcamp" id = sharedcamp1>
+                        <img src = "images/Camp_Icons/camp_shared1.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid1>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp1>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> ENCOURAGE </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li>-15 <span class = stress>Stress</span></li>
+                        </ul>
+                    </div>
+
+                    <div class = "sharedcamp" id = sharedcamp2>
+                        <img src = "images/Camp_Icons/camp_shared2.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid2>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp2>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> WOUND CARE </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li> <span class = heal> Heal</span> 15% HP </li>
+                            <li> Remove <span class = lowres> Bleeding</span> </li>
+                            <li> Remove <span class = blight> Blight </span> </li>
+                        </ul>
+                    </div>
+
+                    <div class = "sharedcamp" id = sharedcamp3>
+                        <img src = "images/Camp_Icons/camp_shared3.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid3>
+                    </div>
+
+                    <div class = "camp_desc" id = genericamp3>
+                        <ul class = desc_text>
+                            <li class = "highres camp_title"> PEP TALK </li>
+                            <li class = "attack_type"> Time Cost : 2 </li>
+                            <li> One Companion: </li>
+                            <li>-15% <span class = stress> Stress </span> (4 Battles) </li>
+                        </ul>
+                    </div>
+
+                    <div class = abomcamp id = abomcamp1>
+                        <img src = "images/Camp_Icons/Abom_camp1.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid4>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom1>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp2>
+                        <img src = "images/Camp_Icons/Abom_camp2.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid5>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom2>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp3>
+                        <img src = "images/Camp_Icons/Abom_camp3.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid6>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom3>
+                        
+                    </div>
+
+                    <div class = abomcamp id = abomcamp4>
+                        <img src = "images/Camp_Icons/Abom_camp4.png" class = "skill_icon">
+                        <img src ="images/ability_grid.png" class = ability_grid id = campgrid7>
+                    </div>
+
+                    <div class = "camp_desc" id = restabom4>
+                        
+                    </div>
+
+                </div>
+
+                <div class = resist_text>
+                    <ul class="resist1">
+                        <li>40%* / <span class = lowres>30%</span></li>
+                        <li>30%</li>
+                        <li>30%</li>
+                        <li>67%</li>
+                      </ul>
+                      
+                      <ul class="resist2">
+                        <li class = lowres>30%</li>
+                        <li>40%</li>
+                        <li class = lowres>30%</li>
+                        <li>10%</li>
+                      </ul>
+                </div>
+
+
+                <img src = "images/Hero_boxes/skinswap.png" class = "swapskin_btn" id = palette_Ves>
+                
+                <img src = "images/Hero_boxes/ves1.webp" class= "sprite_ves" id = Ves1>
+                <img src = "images/Hero_boxes/ves2.webp" class= "sprite_ves" id = Ves2>
+                <img src = "images/Hero_boxes/ves3.webp" class= "sprite_ves" id = Ves3>
+                <img src = "images/Hero_boxes/ves4.webp" class= "sprite_ves" id = Ves4>
+
+                <img src = "images/Hero_boxes/hero_before.png" class = "prev_btn" id = prev_Ves>
+                <img src = "images/Hero_boxes/hero_after.png" class= "next_btn" id = next_Ves>
+            </div>
+
+            <img src = "images/Hero_boxes/char_shadow.png" class = "shadow">
+            <img src = "images/Hero_boxes/char_shadow.png" class = "shadow_big">
+
+            <img src = "images/Hero_boxes/panel_close.png" class = "close_btn" id = close>
+            <img src = "images/Hero_boxes/resolve6alt.png" class = "resolve">
+
+            
+        </div>
+
+    </div>
+
+
+    <audio id = "mission_select_sfx" src="sfx/btn_select.wav"></audio>
+        <audio id = "back_button_sfx" src = "sfx/btn_back.wav"></audio>
+        <audio id = "embark_sfx" src = "sfx/embark_btn.wav"></audio>
+        <audio id = "bc_enter" src= "sfx/bc_enter.wav"></audio>
+        <audio id = "boss_sfx" src = "sfx/boss_sfx.wav"></audio>
+        <audio id = "hero_sfx" src = "sfx/hero_button.wav"></audio>
+        <audio id = "dungeon_embark" src = "sfx/dungeon_embark.wav"></audio>
+        <audio id = "page_close" src = "sfx/page_close.wav"></audio>
+        <audio id = "page_open" src= "sfx/page_open.wav"></audio>
+        <audio id = "btn_press" src ="sfx/gen_btn_sel.wav"></audio>
+
+        <script src = "textbox_toggle.js"></script>
+        <script src = "btn_sound_toggle.js"></script>
+        <script src = "backdrop_toggle.js"></script>
+        <script src = "scroll_hero.js"></script>
+        <script src = "edit_text.js"></script>
+        <script src = "hero_toggle.js"></script>
+        <script src = "page_toggle.js"></script>
+        <script src = "icon_toggle.js"></script>
+
+</body>
+
+</html>

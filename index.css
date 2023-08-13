@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Roboto|Lobster|Oswald|Raleway|Inter|Open+Sans|Inconsolata|Shadows+Into+Light|Josefin+Sans:ital,wght@0,100;0,200;0,400;0,500;1,100;1,400;1,500&display=swap");
+@font-face {font-family: bitter; src: url(fonts/Bitter-Regular.otf);}
+@font-face {font-family:concord ;src: url(fonts/Concord\ W00\ Light.ttf);}
+
+/*Blanket Styling*/
+*{box-sizing: border-box;}
+body{margin: 0; padding: 0; background-color: black;}
+a{text-decoration: none; color: black;}
+ul{list-style-type: none; margin:0; padding: 0;}
+
+/*Flexbox styling*/
+.flex-container{display:flex; justify-content: center; background-color: azure; width:100%;}
+
+.flex-item{display: flex;}
+
+.flex-item a {
+    font-family: bitter; font-size: 2vw;
+    margin: 0 2vw; padding: 0.6vw 0.6vw 0 0.6vw;
+    border-bottom: solid 0.4vw transparent;}
+
+.flex-item a:hover{border-bottom: 0.4vw rgba(199, 61, 61, 0.5) solid;}
+
+/*Icon styling*/
+.nav_text{line-height: 3vw;}
+.fa-solid{font-size: 2.3vw; padding-right: 1vw;}
+
+/*Nav Bar bottom line styling*/
+.nav_hr{margin-top:-0.4vw; height:0.4vw; background-color: rgb(225, 218, 209); border:none;}
+
+.games_flex{display: flex; flex-direction: column;}
+.dd_main{display:flex; font-family: concord ;color: white; justify-content: center; flex-direction: column; text-align: center; }
+.dd_title{width:100%; background-color: black; display: flex; justify-content: center;}
+.ddlogo{width: 100%; background-color: black; padding: 0 5vw 5vw 5vw; }
+.dd_summary_main {
+    width: 100%; height: 93vw; background-image: url(images/bg_elements_dd/dd_bg1.png); background-repeat: no-repeat; background-size: 100vw; 
+    border: rgb(196, 185, 136) 0.5vw solid;vertical-align: middle; padding-bottom: 20vw;
+}
+.actbg{width: 80vw; margin-bottom: 6vw;}
+.summarytitle{display:flex;height: 10vw; width: 50vw; margin: 3vw 25vw 0 25vw;}
+
+.embark_btn {width: 30vw; margin-top: 22.8vw; height:5vw}
+.embark_btn:hover{filter: brightness(150%)}
+
