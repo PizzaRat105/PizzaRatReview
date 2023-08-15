@@ -1,58 +1,77 @@
 document.addEventListener("DOMContentLoaded", function() {
-  var abmcbtElements = document.querySelectorAll("[id^='abomcbt']");
-  var combatabomElements = document.querySelectorAll("[id^='combatabom']");
+  attachHoverListeners("[id^='sharedcamp']", "[id^='genericamp']");
+  
+  attachHoverListeners("[id^='abomcombat']", "[id^='combatabom']");
+  attachHoverListeners("[id^='abomcamp']", "[id^='restabom']");
 
-  for (var i = 0; i < abmcbtElements.length; i++) {
-    attachHoverListener(abmcbtElements[i], combatabomElements[i]);
-  }
+  attachHoverListeners("[id^='anticombat']", "[id^='combatanti']");
+  attachHoverListeners("[id^='anticamp']", "[id^='restanti']");
+
+  attachHoverListeners("[id^='arbcombat']", "[id^='combatarb']");
+  attachHoverListeners("[id^='arbcamp']", "[id^='restarb']");
+
+  attachHoverListeners("[id^='bhcombat']", "[id^='combatbh']");
+  attachHoverListeners("[id^='bhcamp']", "[id^='restbh']");
+
+  attachHoverListeners("[id^='cruscombat']", "[id^='combatcrus']");
+  attachHoverListeners("[id^='cruscamp']", "[id^='restcrus']");
+
+  attachHoverListeners("[id^='flagcombat']", "[id^='combatflag']");
+  attachHoverListeners("[id^='flagcamp']", "[id^='restflag']");
+
+  attachHoverListeners("[id^='grcombat']", "[id^='combatgr']");
+  attachHoverListeners("[id^='grcamp']", "[id^='restgr']");
+
+  attachHoverListeners("[id^='hellcombat']", "[id^='combathell']");
+  attachHoverListeners("[id^='hellcamp']", "[id^='resthell']");
+
+  attachHoverListeners("[id^='hwmcombat']", "[id^='combathwm']");
+  attachHoverListeners("[id^='hwmcamp']", "[id^='resthwm']");
+
+  attachHoverListeners("[id^='hmcombat']", "[id^='combathm']");
+  attachHoverListeners("[id^='hmcamp']", "[id^='resthm']");
+
+  attachHoverListeners("[id^='jescombat']", "[id^='combatjes']");
+  attachHoverListeners("[id^='jescamp']", "[id^='restjes']");
+
+  attachHoverListeners("[id^='lepcombat']", "[id^='combatlep']");
+  attachHoverListeners("[id^='lepcamp']", "[id^='restlep']");
+
+  attachHoverListeners("[id^='maacombat']", "[id^='combatmaa']");
+  attachHoverListeners("[id^='maacamp']", "[id^='restmaa']");
+
+  attachHoverListeners("[id^='muskcombat']", "[id^='combatmusk']");
+  attachHoverListeners("[id^='muskcamp']", "[id^='restmusk']");
+
+  attachHoverListeners("[id^='occcombat']", "[id^='combatocc']");
+  attachHoverListeners("[id^='occcamp']", "[id^='restocc']");
+
+  attachHoverListeners("[id^='pdcombat']", "[id^='combatpd']");
+  attachHoverListeners("[id^='pdcamp']", "[id^='restpd']");
+
+  attachHoverListeners("[id^='sbcombat']", "[id^='combatsb']");
+  attachHoverListeners("[id^='sbcamp']", "[id^='restsb']");
+
+  attachHoverListeners("[id^='vescombat']", "[id^='combatves']");
+  attachHoverListeners("[id^='vescamp']", "[id^='restves']");
+
 });
 
-function attachHoverListener(abmcbt, combatabom) {
-  abmcbt.addEventListener("mouseenter", function() {
-    combatabom.style.display = "block";
-  });
+function attachHoverListeners(triggerSelector, targetSelector) {
+  var triggerElements = document.querySelectorAll(triggerSelector);
+  var targetElements = document.querySelectorAll(targetSelector);
 
-  abmcbt.addEventListener("mouseleave", function() {
-    combatabom.style.display = "none";
-  });
+  for (var i = 0; i < triggerElements.length; i++) {
+    attachHoverListener(triggerElements[i], targetElements[i]);
+  }
 }
 
-
-document.addEventListener("DOMContentLoaded", function() {
-  var sharedCampElements = document.querySelectorAll("[id^='sharedcamp']");
-  var genericAmpElements = document.querySelectorAll("[id^='genericamp']");
-
-  for (var i = 0; i < sharedCampElements.length; i++) {
-    attachHoverListener(sharedCampElements[i], genericAmpElements[i]);
-  }
-});
-
-function attachHoverListener(sharedCamp, genericAmp) {
-  sharedCamp.addEventListener("mouseenter", function() {
-    genericAmp.style.display = "block";
+function attachHoverListener(trigger, target) {
+  trigger.addEventListener("mouseenter", function() {
+    target.style.display = "block";
   });
 
-  sharedCamp.addEventListener("mouseleave", function() {
-    genericAmp.style.display = "none";
-  });
-}
-// Get all the sharedcamp elements
-
-document.addEventListener("DOMContentLoaded", function() {
-  var abomcampElements = document.querySelectorAll("[id^='abomcamp']");
-  var restabomElements = document.querySelectorAll("[id^='restabom']");
-
-  for (var i = 0; i < abomcampElements.length; i++) {
-    attachHoverListener(abomcampElements[i], restabomElements[i]);
-  }
-});
-
-function attachHoverListener(abomcamp, restabom) {
-  abomcamp.addEventListener("mouseenter", function() {
-    restabom.style.display = "block";
-  });
-
-  abomcamp.addEventListener("mouseleave", function() {
-    restabom.style.display = "none";
+  trigger.addEventListener("mouseleave", function() {
+    target.style.display = "none";
   });
 }
