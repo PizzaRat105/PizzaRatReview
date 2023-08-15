@@ -253,9 +253,14 @@ button{background: white; border: none; width:20px}
 .chance {color: rgb(94, 95, 94)}
 .debuff{color:rgb(177, 108, 49)}
 .buff{color:rgb(117, 190, 197)}
-.bleed{color:red}
+.bleed{color:rgb(141, 14, 16)}
 .move{color:rgb(92, 129, 145)}
 .disease{color:rgb(116, 125, 78)}
+.mark{color:rgb(141, 15, 26)}
+.stealth{color: rgb(79, 71, 124)}
+.scouting {color: rgb(69, 123, 112)}
+.block{color: rgb(93, 83, 43)}
+.aegis{width: 1.5vw; margin: 0;  margin-top:-0.25vw; padding:0; position: absolute;}
 
 .attack_type{color:rgb(140, 123, 95)}
 .camp_title{font-size: 1vw; line-height: 1.2vw;}
@@ -276,64 +281,60 @@ button{background: white; border: none; width:20px}
 .desc_box{position: absolute; top: 4.4vw; left: -3vw;
          height: fit-content; width:max-content; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.8);
          font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 0.8vw; line-height: 1.5vw; font-weight: 500;
-         text-align: center; padding: 0 0.6vw 0.3vw 0.6vw; 
+         text-align: center; padding: 0 0.6vw 0.3vw 0.6vw; display: none;
 }
 
 .camp_desc{position: absolute; top: 4.4vw; left:2vw;
     height: fit-content; width:max-content; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.8);
     font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 0.8vw; line-height: 1.5vw; font-weight: 500;
-    text-align: center; padding: 0.2vw 0.6vw 0.3vw 0.6vw; 
+    text-align: center; padding: 0.2vw 0.6vw 0.3vw 0.6vw; display: none;
 }
-.uses_text{font-family: 'Ubuntu', sans-serif; color: rgb(199, 179, 107); line-height: 1vw; margin-top: 0.2vw;}
+.uses_text{font-family: 'Ubuntu', sans-serif; color: rgb(199, 179, 107); line-height: 1vw; margin-top: 0.3vw;}
 
 
-.ability_grid{width: 4.4vw; height:4.8vw} 
-.ability_grid:hover{filter: brightness(150%);}
-.abomcombat:hover .skill_icon {filter: brightness(150%);}
-.abomcamp:hover .skill_icon {filter: brightness(150%);}
-.sharedcamp:hover .skill_icon{filter: brightness(150%);}
+.ability_grid{width: 4.4vw; height:4.8vw; position: absolute; top: -0.6vw;} 
+.skill:hover .skill_icon {filter: brightness(150%);}
 
 
 
 
-#combatgrid1{position: absolute; left: 1.5vw; top: -0.6vw}
-#combatgrid2{position: absolute; left: 6.1vw; top: -0.6vw}
-#combatgrid3{position: absolute; left: 10.7vw; top: -0.6vw}
-#combatgrid4{position: absolute; left: 15.3vw; top: -0.6vw}
-#combatgrid5{position: absolute; left: 19.85vw; top: -0.6vw}
-#combatgrid6{position: absolute; left: 24.45vw; top: -0.6vw}
-#combatgrid7{position: absolute; left: 29.1vw; top: -0.6vw}
-#campgrid1{position: absolute; left: 1.5vw; top: -0.6vw}
-#campgrid2{position: absolute; left: 6.1vw; top: -0.6vw}
-#campgrid3{position: absolute; left: 10.7vw; top: -0.6vw}
-#campgrid4{position: absolute; left: 15.3vw; top: -0.6vw}
-#campgrid5{position: absolute; left: 19.85vw; top: -0.6vw}
-#campgrid6{position: absolute; left: 24.45vw; top: -0.6vw}
-#campgrid7{position: absolute; left: 29.1vw; top: -0.6vw}
+#grid1{ left: 1.5vw; }
+#grid2{ left: 6.1vw; }
+#grid3{ left: 10.7vw; }
+#grid4{ left: 15.3vw; }
+#grid5{left: 19.85vw;}
+#grid6{ left: 24.45vw; }
+#grid7{ left: 29.1vw; }
 
+#FlagGrid1{left:8.4vw;}
+#FlagGrid2{left:13vw;}
+#FlagGrid3{left:17.6vw;}
+#FlagGrid4{left:22.2vw;}
 
-#combatabom1{display: none;}
-#combatabom2{display: none; left: 3.5vw;}
-#combatabom3{display: none; left: 2.8vw}
-#combatabom4{display: none; left: 14.7vw}
-#combatabom5{display: none; left: 17.4vw}
-#combatabom6{display: none; left: 22vw}
-#combatabom7{display: none; left: 20.7vw}
+#combatabom1{left: -5.3vw}
+#combatabom2{ left: 3.5vw;}
+#combatabom3{ left: 2.9vw}
+#combatabom4{ left: 14.7vw}
+#combatabom5{ left: 17vw}
+#combatabom6{ left: 22vw}
+#combatabom7{ left: 21.3vw}
 
-#genericamp1{display: none; left: 0vw}
-#genericamp2{display: none; left: 4.5vw}
-#genericamp3{display: none; left: 7.9vw}
-#restabom1{display: none; left: 11.6vw;}
-#restabom2{display: none; left: 16.5vw;}
-#restabom3{display: none; left: 20vw;}
-#restabom4{display: none; left: 26.3vw;}
+#restabom1{ left: 11.6vw;}
+#restabom2{ left: 16.5vw;}
+#restabom3{ left: 20vw;}
+#restabom4{ left: 26.3vw;}
+
+#genericamp1{ left: 0vw}
+#genericamp2{ left: 4.5vw}
+#genericamp3{left: 7.9vw}
+
 
 
 .pos_dot{width: 0.5vw; height: 0.5vw; background-color: rgb(54, 54, 55); border-radius: 0.5vw; margin: 0 0.15vw;}
-.pos_container{display: flex; justify-content: center; margin-top: 0.4vw; margin-bottom: 0.1vw;}
+.pos_container{display: flex; justify-content: center; margin-top: 0.4vw; margin-bottom: 0.2vw;}
 .blank_space{width: 1.5vw}
 .desc_text{line-height: 1vw;}
 .cleave_double{border-top:0.18vw solid rgb(160, 43, 32); width:1.2vw;
     position: absolute; top: 0.6vw;}
 .pos2_3{left: 11.55vw}
-.pos1_2{left: 5.5vw}
+.pos1_2{left: 6vw}
