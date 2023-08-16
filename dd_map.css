@@ -145,24 +145,24 @@ button{background: white; border: none; width:20px}
 #sbbg{background-image: url(images/Hero_boxes/sb_header.png); background-size: 44vw;}
 #vesbg{background-image: url(images/Hero_boxes/ves_header.png); background-size: 44vw;}
 
-.sprite_abom{position: absolute; top: 75.4vw; left: 7vw; width: 7.5vw; height: 16vw; display: none;}
-.sprite_anti{position: absolute; top: 75.9vw; left: 7.2vw; width: 8.4vw; height: 16vw; display: none;}
-.sprite_arb{position: absolute; top: 74.5vw; left: 4.7vw;  width: 10.5vw; height: 17vw; display: none;}
-.sprite_bh{position: absolute; top: 74.9vw; left: 6.7vw; width: 9vw; height: 16.7vw; display: none;}
-.sprite_crus{position: absolute; top: 72.7vw; left: 6.7vw; width: 9.5vw; height: 19vw; display: none;}
-.sprite_flag{position: absolute; top: 75vw; left: 6vw; width: 11vw; height: 16.5vw;  display: none;} 
-.sprite_gr{position: absolute; top: 74vw; left: 6.8vw; width: 8.3vw; height: 17.5vw; display: none;}
-.sprite_hell{position: absolute; top: 71.5vw; left: 7.8vw; width: 10vw; height: 20vw; display: none;}
-.sprite_hwm{position: absolute; top: 74.5vw; left: 7.3vw; width: 10vw; height: 17.1vw; display: none;}
-.sprite_hm{position: absolute; top: 75.7vw; left: 4.5vw; width: 15vw; height: 16vw; display: none;}
-.sprite_jes{position: absolute; top: 75.3vw; left: 6.5vw; width: 12vw; height: 16vw; display: none;}
-.sprite_lep{position: absolute; top: 74vw; left: 6vw; width: 9.2vw; height: 17.5vw; display: none;}
-.sprite_maa{position: absolute; top: 75.3vw; left: 6vw; width: 12vw; height: 16vw; display: none;}
-.sprite_musk{position: absolute; top: 72.5vw; left: 7vw; width: 8.1vw; height: 19vw; display: none;}
-.sprite_occ{position: absolute; top: 75.2vw; left: 6.8vw;  width: 10vw; height: 16.8vw; display: none;}
-.sprite_pd{position: absolute; top: 75.6vw; left: 5.8vw; width: 11vw; height: 16vw; display: none;}
-.sprite_sb{position: absolute; top: 74.5vw; left: 6.7vw; width: 8.5vw; height: 16.8vw;  display:none;}
-.sprite_ves{position: absolute; top: 75.1vw; left: 6.5vw; width: 10vw; height: 16.5vw; display: none;}
+.sprite_abom{position: absolute; top: 76.4vw; left: 7vw; width: 7.5vw; height: 16vw; display: none;}
+.sprite_anti{position: absolute; top: 76.9vw; left: 7.2vw; width: 8.4vw; height: 16vw; display: none;}
+.sprite_arb{position: absolute; top: 75.5vw; left: 4.7vw;  width: 10.5vw; height: 17vw; display: none;}
+.sprite_bh{position: absolute; top: 75.9vw; left: 6.7vw; width: 9vw; height: 16.7vw; display: none;}
+.sprite_crus{position: absolute; top: 73.7vw; left: 6.7vw; width: 9.5vw; height: 19vw; display: none;}
+.sprite_flag{position: absolute; top: 76vw; left: 6vw; width: 11vw; height: 16.5vw;  display: none;} 
+.sprite_gr{position: absolute; top: 75vw; left: 6.8vw; width: 8.3vw; height: 17.5vw; display: none;}
+.sprite_hell{position: absolute; top: 72.5vw; left: 7.8vw; width: 10vw; height: 20vw; display: none;}
+.sprite_hwm{position: absolute; top: 75.5vw; left: 7.3vw; width: 10vw; height: 17.1vw; display: none;}
+.sprite_hm{position: absolute; top: 76.7vw; left: 4.5vw; width: 15vw; height: 16vw; display: none;}
+.sprite_jes{position: absolute; top: 76.3vw; left: 6.5vw; width: 12vw; height: 16vw; display: none;}
+.sprite_lep{position: absolute; top: 75vw; left: 6vw; width: 9.2vw; height: 17.5vw; display: none;}
+.sprite_maa{position: absolute; top: 76.3vw; left: 6vw; width: 12vw; height: 16vw; display: none;}
+.sprite_musk{position: absolute; top: 73.5vw; left: 7vw; width: 8.1vw; height: 19vw; display: none;}
+.sprite_occ{position: absolute; top: 76.2vw; left: 6.8vw;  width: 10vw; height: 16.8vw; display: none;}
+.sprite_pd{position: absolute; top: 76.6vw; left: 5.8vw; width: 11vw; height: 16vw; display: none;}
+.sprite_sb{position: absolute; top: 75.5vw; left: 6.7vw; width: 8.5vw; height: 16.8vw;  display:none;}
+.sprite_ves{position: absolute; top: 76.1vw; left: 6.5vw; width: 10vw; height: 16.5vw; display: none;}
 
 
 .shadow{position: absolute; top: 90.5vw; left: 6.6vw; width: 10vw; height: 4vw; } 
@@ -277,13 +277,13 @@ button{background: white; border: none; width:20px}
                          width: 35vw; height: 5vw;
                          display: flex; justify-content: center;}
 
-.desc_box{position: absolute; top: 4.4vw; left: -3vw;
+.desc_box{position: absolute; top: 5.4vw; left: -3vw;
          height: fit-content; width:max-content; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.8);
          font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 0.8vw; line-height: 1.5vw; font-weight: 500;
          text-align: center; padding: 0 0.6vw 0.3vw 0.6vw; display: none;
 }
 
-.camp_desc{position: absolute; top: 4.4vw; left:2vw;
+.camp_desc{position: absolute; top: 5.4vw; left:2vw;
     height: fit-content; width:max-content; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.8);
     font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 0.8vw; line-height: 1.5vw; font-weight: 500;
     text-align: center; padding: 0.2vw 0.6vw 0.3vw 0.6vw; display: none;
