@@ -33,7 +33,7 @@ button{background: white; border: none; width:20px}
 }
 
 .map_main{
-    height: 50vw; background-image: url(images/backgrounds/dd_cln_aff.png); 
+    height: 51vw; background-image: url(images/backgrounds/dd_cln_aff.png); 
     background-size: 100vw; background-clip: content-box; 
 }
 
