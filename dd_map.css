@@ -277,13 +277,13 @@ button{background: white; border: none; width:20px}
                          width: 35vw; height: 5vw;
                          display: flex; justify-content: center;}
 
-.desc_box{position: absolute; top: 5.4vw; left: -3vw;
+.desc_box{position: absolute; top: 4.4vw; left: -3vw;
          height: fit-content; width:max-content; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.8);
          font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 0.8vw; line-height: 1.5vw; font-weight: 500;
          text-align: center; padding: 0 0.6vw 0.3vw 0.6vw; display: none;
 }
 
-.camp_desc{position: absolute; top: 5.4vw; left:2vw;
+.camp_desc{position: absolute; top: 4.4vw; left:2vw;
     height: fit-content; width:max-content; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.8);
     font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 0.8vw; line-height: 1.5vw; font-weight: 500;
     text-align: center; padding: 0.2vw 0.6vw 0.3vw 0.6vw; display: none;
