@@ -11,6 +11,7 @@ body{margin: 0; padding: 0; background-color: black; cursor: url(images/dd_curso
 a{text-decoration: none; color: black;}
 ul{list-style-type: none; margin:0; padding: 0;}
 button{background: white; border: none; width:20px}
+.hidden{visibility: hidden;}
 
 /*body {
     user-select: none;
@@ -101,6 +102,7 @@ button{background: white; border: none; width:20px}
 .dd_button{position: absolute;  width: 16vw; height: 2.3vw; margin-top: 1.1vw; }
 .dd_buttontop{position: absolute; width: 16vw; margin-top: 0.4vw; }
 
+.padding{height:10vw; width: 100vw; background-color: black;}
 
 
 .heroes_main{
@@ -176,7 +178,8 @@ button{background: white; border: none; width:20px}
 .rename_button:hover{filter: brightness(150%);}
 .close_btn:hover{filter: brightness(150%);}
 .swapskin_btn:hover{filter: brightness(150%);}
-
+.info{position: absolute; top: 87.6vw; left: 90vw;width: 1.7vw;} 
+.info:hover{filter: brightness(150%);}
 
 .prev_btn{position: absolute; top: 94vw; left: 85vw; width: 5vw; height: 2.6vw; display: none;}
 .next_btn{position: absolute; top: 94vw; left: 90vw; width: 5vw; height: 2.6vw; display: none;}
@@ -240,6 +243,28 @@ button{background: white; border: none; width:20px}
 
 .resist1{height: 6.5vw; width: 17vw; display: flex; direction: rtl; flex-direction: column;}
 .resist2{height: 6.5vw; width: 19vw;  display: flex; direction: rtl; flex-direction: column;}
+
+.equipment{height: 7vw; margin: 0 0.2vw; padding: 0;}
+.equipment:hover{filter: brightness(150%);}
+.equip_box{display: flex;margin-left: 1vw;}
+
+.statline_container{position: absolute; top: 97vw; left: 65vw;
+    height:7.2vw; width:40vw;
+    display: flex; justify-content: start; flex-direction: row;}
+
+
+.stat_box{position: absolute; top: 96.2vw; left: 55vw;
+             height:7.2vw; width:40vw;
+             display: flex; justify-content: start; flex-direction: row;}
+
+.stats_box1{position: absolute;}
+.stats_box2{position: absolute; left: 16vw}
+
+.numbers_container{position:absolute; width: 25vw;}
+.numbers_box1{height:7vw; position:absolute; left: 19vw; top: 0.8vw; width: 12vw}
+.numbers_box2{height: 7vw;position: absolute; left: 33vw; top: 0.8vw; width:15vw}
+.statline{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1.6vw;
+     line-height: 1.8vw; text-align: start;}
 
 .highres{color: rgb(199, 179, 107); }
 .highest{filter: brightness(150%); color: yellow;}
