@@ -229,7 +229,7 @@ button{background: white; border: none; width:20px}
 .resolve{position:absolute; top: 60vw; left: 9.4vw; width: 2.7vw }
 
 .canon_name{color: rgb(199, 179, 107); font-family:  dd_logo; font-size: 1.5vw; 
-    position:absolute; top: 65.8vw; left: 7.5vw; transform: scaleX(1.2);
+    position:absolute; top: 65.9vw; left: 7.5vw; transform: scaleX(1.2);
     width: 7vw; height: 2vw; ; text-align: center;}
 
 .res_icon {width: 1.5vw}
