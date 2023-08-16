@@ -124,7 +124,7 @@ button{background: white; border: none; width:20px}
 
 .empty_space{ height: 47vw; width: 30vw; position: absolute;}
 
-.header_bg{position: absolute; left: 6vw; top: 58.5vw;  width: 60vw; height: 6vw;}
+.header_bg{position: absolute; left: 6vw; top: 56.5vw;  width: 60vw; height: 6vw;}
 
 #abombg{background-image: url(images/Hero_boxes/abomheader3.png); background-size: 44vw;}
 #antibg{background-image: url(images/Hero_boxes/anti_header.png); background-size: 44vw;}
