@@ -110,7 +110,7 @@ button{background: white; border: none; width:20px}
 
 .hero_port_container{
     display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap; 
-    position: absolute; top:50vw; width: 99%; margin-left: 0.4vw
+    position: absolute; top:50.4vw; width: 99%; margin-left: 0.4vw
 }
 .hero_port{width: 4.5%; display: flex; margin: -0.9vw 0.4vw 1vw 0.4vw}
 .hero_port:hover{filter: brightness(150%);}
