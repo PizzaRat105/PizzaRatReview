@@ -291,7 +291,7 @@ button{background: white; border: none; width:20px}
 .uses_text{font-family: 'Ubuntu', sans-serif; color: rgb(199, 179, 107); line-height: 1vw; margin-top: 0.3vw;}
 
 
-.ability_grid{width: 4.4vw; height:4.8vw; position: absolute; top: -0.6vw;} 
+.ability_grid{width: 4.4vw; height:4.8vw; position: absolute; top: 0.4vw;} 
 .skill_icon{height: 4vw; width: 4vw; margin: 0 0.3vw; position: relative}
 .skill:hover .skill_icon {filter: brightness(150%);}
 
