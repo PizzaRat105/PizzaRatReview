@@ -225,7 +225,7 @@ button{background: white; border: none; width:20px}
 }
 .negflex {display: flex;}
 
-.resolve{position:absolute; top: 61vw; left: 9.4vw; width: 2.7vw }
+.resolve{position:absolute; top: 61.5vw; left: 9.4vw; width: 2.7vw }
 
 .canon_name{color: rgb(199, 179, 107); font-family:  dd_logo; font-size: 1.5vw; 
     position:absolute; top: 66.8vw; left: 7.5vw; transform: scaleX(1.2);
