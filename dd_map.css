@@ -96,6 +96,7 @@ button{background: white; border: none; width:20px}
 
 #embark_button{height: 3vw; position: absolute; top: 45vw; left: 45vw; display: none;}
 #embark_button:hover{filter: brightness(170%);}
+
 .embark_btn{height: 5vw; position: absolute; top: 45vw; left: 45vw; display: none;}
 .embark_btn:hover{filter: brightness(170%);}
 .dd_button{position: absolute;  width: 16vw; height: 2.3vw; margin-top: 1.1vw; }
