@@ -211,6 +211,14 @@ button{background: white; border: none; width:20px}
 .strong_pref{filter: brightness(165%);}
 .med_pref{filter: brightness(90%);}
 
+.pref_pos_header{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1.1vw; line-height: 1.5vw;
+    position: absolute; top: 68.8vw; left: 46.2vw;
+   height: 2vw; width: 25vw; text-align: center;} 
+
+.pref_target_header{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1.1vw; line-height: 1.5vw;
+    position: absolute; top: 68.8vw; left: 78.7vw;
+   height: 2vw; width: 25vw; text-align: center;} 
+
 
 .prev_btn{position: absolute; top: 104vw; left: 85vw; width: 5vw; height: 2.6vw; display: none;}
 .next_btn{position: absolute; top: 104vw; left: 90vw; width: 5vw; height: 2.6vw; display: none;}
