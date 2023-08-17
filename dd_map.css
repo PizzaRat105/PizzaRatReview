@@ -209,7 +209,7 @@ button{background: white; border: none; width:20px}
 
 .barely_pref{filter: brightness(40%)}
 .strong_pref{filter: brightness(165%);}
-.med_pref{filter: brightness(90%);}
+.med_pref{filter: brightness(75%);}
 
 .pref_pos_header{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1.1vw; line-height: 1.5vw;
     position: absolute; top: 68.8vw; left: 46.2vw;
