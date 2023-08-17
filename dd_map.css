@@ -190,7 +190,7 @@ button{background: white; border: none; width:20px}
     height: fit-content; width:max-content; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.8);}
 
 
-.pref_position_container{position:absolute; top: 70vw; left: 58.45vw;  
+.pref_position_container{position:absolute; top: 70vw; left: 58.3vw;  
     height: 2.9vw; width: 13.3vw; display: flex; justify-content: space-evenly; } 
 
 .pref_target_container{position:absolute; top: 70vw; left: 79.25vw;  
