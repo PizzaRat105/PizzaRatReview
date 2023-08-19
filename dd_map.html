@@ -162,21 +162,24 @@
         
         
 
-        <div class = hero_panel id = herobox>
+         <div class = hero_panel id = herobox>
             <img src = "images/Hero_boxes/panel_edit.png" class = char_panel>
 
             <div class = 'shared_text'>
                 <div class = 'quirk_header'> Strengths & Weaknesses</div>
-                <div class = 'char_review'> Character Overview</div>
+                <div class = 'stat_header'> Base Stats</div>
+                <div class = 'overview_header'> Hero Overview </div>
                 <div class = "skill_header"> Combat Skills </div>
                 <div class = "camp_header"> Camping Skills </div>
-                <div class = "resist_header"> Resistances & Stats </div>
+                <div class = "resist_header"> Resistances  </div>
                 <div class = "pref_pos_header"> Preferred Position</div>
                 <div class = "pref_target_header">Preferred Target</div>
+                <div class = "misc_stat_header"> Misc Stats </div>
+
             </div>
-  <div class = infobox> <img src = "images/more_info_icon.png" class = info id = infobtn> </div>
+
+            <div class = infobox> <img src = "images/more_info_icon.png" class = info id = infobtn> </div>
             <div class = infodesc id = infotxt> (*): District Buffs</div>
-            
 
             <div class = statline_container>
 
@@ -185,21 +188,32 @@
                         <li>MAX HP </li>
                         <li>DODGE </li> 
                         <li>SPD </li>
-                        <li>MOVEMENT</li>
-                        <li>CRIT BUFF</li>
-                        <li>PROVISIONS</li>
+                        
                     </ul>
                 </div>
 
                 <div class = stats_box2>
                     <ul class = "statline">
                         <li>CRIT</li>
-                        <li class = hidden> Yeet</li>
                         <li>DMG </li>
-                        <li> RELIGIOUS? </li>
                     </ul>
                 </div>
 
+            </div>
+
+            <div class = misc_container>
+                <div class = misc_box1>
+                    <ul class = ' statline misc_statline'>
+                        <li>Movement</li>
+                        <li>CRIT Buffs</li>
+                    </ul>
+                </div>
+
+                <div class = misc_box2>
+                    <ul class = 'statline misc_statline'>
+                        <li> Provisions </li>
+                    </ul>
+                </div>
             </div>
 
 
@@ -241,15 +255,8 @@
                       </ul>
                 </div>
 
-                               <div class = stat_box>
-
-                    <div class = equip_box>
-                        <img src = "images/Hero_equip/Abom_weapon.png" class = equipment id = abomweapon>
-                        <div class = "equip_desc" id =  weaponabom> Damnation's Gift </div>
-                        <img src = "images/Hero_equip/Abom_armor.png" class = equipment id = abomarmor>
-                        <div class = "equip_desc" id =  armorabom> Inhuman Bondage </div>
-                    </div>
-
+                    <div class = stat_box>
+                        
                     <div class = numbers_container>
 
                         <div class = numbers_box1>
@@ -257,22 +264,43 @@
                                 <li>46 </li>
                                 <li>27.5 </li> 
                                 <li>9 </li>
-                                <li> 1 Front 1 Back</li>
-                                <li> +20% DMG </li>
-                                <li> None</li>
+                                
                             </ul>
                         </div>
 
                         <div class = numbers_box2>
                             <ul class = "statline">
                                 <li>6.0%</li>
-                                <li class = hidden>Hi</li>
                                 <li>11-20 </li>
-                                <li> NO </li>
                             </ul>
                         </div>
 
                     </div>
+                </div>
+
+                <div class = "numbers_container misc">
+
+                    <div class = misc_numbers_box1>
+                        <ul class = "statline misc_statline">
+                            <li> <span class = "move"> Front </span> 1 <span class = "move"> Back </span> 2 </li>
+                            <li>+20% DMG</li> 
+                        </ul>
+                    </div>
+
+                    <div class = misc_numbers_box2>
+                        <ul class = "statline misc_statline">
+                            <li>None</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+                <div class = equip_box>
+                        <img src = "images/Hero_equip/Abom_weapon.png" class = equipment id = abomweapon>
+                        <div class = "equip_desc" id =  weaponabom> Damnation's Gift </div>
+                        <img src = "images/Hero_equip/Abom_armor.png" class = equipment id = abomarmor>
+                        <div class = "equip_desc" id =  armorabom> Inhuman Bondage </div>
                 </div>
 
                 <div class = pref_position_container>
@@ -613,7 +641,28 @@
                     </ul>
                 </div>
 
-                                <div class = stat_box>
+                <div class = stat_box>
+
+                    <div class = numbers_container>
+
+                        <div class = numbers_box1>
+                            <ul class = "statline">
+                                <li>29 </li>
+                                <li>30 </li> 
+                                <li>7 </li>
+                            </ul>
+                        </div>
+
+                        <div class = numbers_box2>
+                            <ul class = "statline">
+                                <li>5.0%</li>
+                                <li>5-9 </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
 
                     <div class = equip_box>
                         <img src = "images/Hero_equip/anti_weapon.png" class = equipment id = antiweapon>
@@ -623,32 +672,22 @@
                         <div class = "equip_desc" id =  armoranti> Timurik's Bottomless Bag </div>
                     </div>
 
-                    <div class = numbers_container>
+                <div class = "numbers_container misc">
 
-                        <div class = numbers_box1>
-                            <ul class = "statline">
-                                <li>29 </li>
-                                <li>30 </li> 
-                                <li>7 </li>
-                                <li>2 Front 2 Back</li>
-                                <li> +10 DODGE </li>
-                                <li> Skeleton Key </li>
-                            </ul>
-                        </div>
-
-                        <div class = numbers_box2>
-                            <ul class = "statline">
-                                <li>5.0%</li>
-                                <li class = hidden>Hi</li>
-                                <li>5-9 </li>
-                                <li>NO</li>
-                            </ul>
-                        </div>
-
+                    <div class = misc_numbers_box1>
+                        <ul class = "statline misc_statline">
+                            <li><span class = "move"> Front </span> 2 <span class = "move"> Back </span> 2 </li>
+                            <li> +10 DODGE </li>
+                        </ul>
                     </div>
 
+                    <div class = misc_numbers_box2>
+                        <ul class = "statline misc_statline">
+                            <li class = highres>Skeleton Key</li>
+                        </ul>
+                    </div>
+                    
                 </div>
-
                 <div class = pref_position_container>
                     
                     <div class = "pref_pos pos4_1 strong_pref"></div>
@@ -1010,15 +1049,7 @@
                       </ul>
                 </div>
 
-                  <div class = stat_box>
-
-                    <div class = equip_box>
-                        <img src = "images/Hero_equip/arb_weapon.png" class = equipment id = arbweapon>
-                        <div class = "equip_desc" id =  weaponarb> Millicent </div>
-                        
-                        <img src = "images/Hero_equip/arb_armor.png" class = equipment id = arbarmor>
-                        <div class = "equip_desc" id =  armorarb> Survivor </div>
-                    </div>
+                 <div class = stat_box>
 
                     <div class = numbers_container>
 
@@ -1026,17 +1057,13 @@
                             <ul class = "statline">
                                 <li>47/ *52 </li>
                                 <li>20 </li> 
-                                <li>5 </li>
-                                <li>0 Front 2 Back</li>
-                                <li> +33% DMG vs <span class = mark> Marked </span> </li>
-                                <li> Bandage </li>
+                                <li>5 </li>                                                              
                             </ul>
                         </div>
 
                         <div class = numbers_box2>
                             <ul class = "statline">
                                 <li>10.0%</li>
-                                <li class = hidden>Hi</li>
                                 <li>7-14 </li>
                                 <li> NO </li>
                             </ul>
@@ -1046,6 +1073,30 @@
 
                 </div>
 
+                   <div class = equip_box>
+                        <img src = "images/Hero_equip/arb_weapon.png" class = equipment id = arbweapon>
+                        <div class = "equip_desc" id =  weaponarb> Millicent </div>
+                        
+                        <img src = "images/Hero_equip/arb_armor.png" class = equipment id = arbarmor>
+                        <div class = "equip_desc" id =  armorarb> Survivor </div>
+                    </div>
+
+                <div class = "numbers_container misc">
+
+                    <div class = misc_numbers_box1>
+                        <ul class = "statline misc_statline">
+                            <li> <span class = "move"> Front </span> 2 <span class = "move"> Back </span> 0 </li>
+                            <li> +33% DMG vs <span class = mark> Marked </span> </li> 
+                        </ul>
+                    </div>
+
+                    <div class = misc_numbers_box2>
+                        <ul class = "statline misc_statline">
+                            <li class = highres>Bandage</li>
+                        </ul>
+                    </div>
+                    
+                </div>
                 <div class = pref_position_container>
                     
                     <div class = "pref_pos pos4_1 strong_pref"></div>
@@ -1442,7 +1493,28 @@
                       </ul>
                 </div>
 
-               <div class = stat_box>
+            <div class = stat_box>
+
+                    <div class = numbers_container>
+
+                        <div class = numbers_box1>
+                            <ul class = "statline">
+                                <li>45 </li>
+                                <li>25 </li> 
+                                <li>7 </li>   
+                            </ul>
+                        </div>
+
+                        <div class = numbers_box2>
+                            <ul class = "statline">
+                                <li>8.0% / *12.0%</li>
+                                <li>8-16 </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
 
                     <div class = equip_box>
                         <img src = "images/Hero_equip/bh_weapon.png" class = equipment id = bhweapon>
@@ -1452,29 +1524,21 @@
                         <div class = "equip_desc" id =  armorbh> Death's Head </div>
                     </div>
 
-                    <div class = numbers_container>
+                <div class = "numbers_container misc">
 
-                        <div class = numbers_box1>
-                            <ul class = "statline">
-                                <li>45 </li>
-                                <li>25 </li> 
-                                <li>7 </li>
-                                <li>2 Front 2 Back</li>
-                                <li> +33% DMG vs <span class = mark> Marked </span> </li>
-                                <li> None </li>
-                            </ul>
-                        </div>
-
-                        <div class = numbers_box2>
-                            <ul class = "statline">
-                                <li>8.0%/ <br> *12.0%</li>
-                                <li>8-16 </li>
-                                <li>NO</li>
-                            </ul>
-                        </div>
-
+                    <div class = misc_numbers_box1>
+                        <ul class = "statline misc_statline">
+                            <li> <span class = "move"> Front </span> 2 <span class = "move"> Back </span> 2 </li>
+                            <li> +33% DMG vs <span class = mark> Marked </span> </li> 
+                        </ul>
                     </div>
 
+                    <div class = misc_numbers_box2>
+                        <ul class = "statline misc_statline">
+                            <li>None</li>
+                        </ul>
+                    </div>
+                    
                 </div>
 
                 <div class = pref_position_container>
@@ -1879,6 +1943,28 @@
 
                 <div class = stat_box>
 
+
+                    <div class = numbers_container>
+
+                        <div class = numbers_box1>
+                            <ul class = "statline">
+                                <li>61 </li>
+                                <li>25 </li> 
+                                <li>3 </li>                              
+                            </ul>
+                        </div>
+
+                        <div class = numbers_box2>
+                            <ul class = "statline">
+                                <li>7.0%</li>
+                                <li>10-19 </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
                     <div class = equip_box>
                         <img src = "images/Hero_equip/crus_weapon.png" class = equipment id = crusweapon>
                         <div class = "equip_desc" id =  weaponcrus> The Long Crusade </div>
@@ -1887,31 +1973,23 @@
                         <div class = "equip_desc" id =  armorcrus> Zealous Conviction </div>
                     </div>
 
-                    <div class = numbers_container>
+                <div class = "numbers_container misc">
 
-                        <div class = numbers_box1>
-                            <ul class = "statline">
-                                <li>61 </li>
-                                <li>25 </li> 
-                                <li>3 </li>
-                                <li>1 Front 1 Back</li>
-                                <li> +15% PROT </li>
-                                <li> Holy Water </li>
-                            </ul>
-                        </div>
-
-                        <div class = numbers_box2>
-                            <ul class = "statline">
-                                <li>7.0%</li>
-                                <li class = hidden>Hi</li>
-                                <li>10-19 </li>
-                                <li>YES</li>
-                            </ul>
-                        </div>
-
+                    <div class = misc_numbers_box1>
+                        <ul class = "statline misc_statline">
+                            <li> <span class = "move"> Front </span> 1 <span class = "move"> Back </span> 1 </li>
+                            <li>+15% PROT</li> 
+                        </ul>
                     </div>
 
+                    <div class = misc_numbers_box2>
+                        <ul class = "statline misc_statline">
+                            <li class = stress>Holy Water</li>
+                        </ul>
+                    </div>
+                    
                 </div>
+
 
                 <div class = pref_position_container>
                     
@@ -2288,7 +2366,30 @@
                       </ul>
                 </div>
 
-                  <div class = stat_box>
+                                <div class = stat_box>
+
+ 
+
+                    <div class = numbers_container>
+
+                        <div class = numbers_box1>
+                            <ul class = "statline">
+                                <li>38 </li>
+                                <li>20 </li> 
+                                <li>9</li>
+                            </ul>
+                        </div>
+
+                        <div class = numbers_box2>
+                            <ul class = "statline">
+                                <li>6.0% </li>
+                                <li>5-11 </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
 
                     <div class = equip_box>
                         <img src = "images/Hero_equip/flag_weapon.png" class = equipment id = flagweapon>
@@ -2298,30 +2399,21 @@
                         <div class = "equip_desc" id =  armorflag> The Testament </div>
                     </div>
 
-                    <div class = numbers_container>
+                <div class = "numbers_container misc">
 
-                        <div class = numbers_box1>
-                            <ul class = "statline">
-                                <li>38 </li>
-                                <li>20 </li> 
-                                <li>9</li>
-                                <li>3 Front 1 Back</li>
-                                <li> +20% <span class = bleed> Bleed </span> Skill Chance </li>
-                                <li> None </li>
-                            </ul>
-                        </div>
-
-                        <div class = numbers_box2>
-                            <ul class = "statline">
-                                <li>6.0% </li>
-                                <li class = hidden>Hi</li>
-                                <li>5-11 </li>
-                                <li> YES </li>
-                            </ul>
-                        </div>
-
+                    <div class = misc_numbers_box1>
+                        <ul class = "statline misc_statline">
+                            <li><span class = "move"> Front </span> 3 <span class = "move"> Back </span> 1</li>
+                             <li> +20% <span class = bleed> Bleed </span> Skill Chance </li>
+                        </ul>
                     </div>
 
+                    <div class = misc_numbers_box2>
+                        <ul class = "statline misc_statline">
+                            <li>None</li>
+                        </ul>
+                    </div>
+                    
                 </div>
 
                 <div class = pref_position_container>
@@ -2662,15 +2754,9 @@
                       </ul>
                 </div>
 
-                <div class = stat_box>
+                               <div class = stat_box>
 
-                    <div class = equip_box>
-                        <img src = "images/Hero_equip/GR_weapon.png" class = equipment id = grweapon>
-                        <div class = "equip_desc" id =  weapongr> The Razor's Edge </div>
-                        
-                        <img src = "images/Hero_equip/GR_armor.png" class = equipment id = grarmor>
-                        <div class = "equip_desc" id =  armorgr> Shadowlace </div>
-                    </div>
+ 
 
                     <div class = numbers_container>
 
@@ -2679,17 +2765,13 @@
                                 <li>36 </li>
                                 <li>30 </li> 
                                 <li>10 </li>
-                                <li>2 Front 2 Back</li>
-                                <li> +10 DODGE </li>
-                                <li> Shovel </li>
                             </ul>
                         </div>
 
                         <div class = numbers_box2>
                             <ul class = "statline">
-                                <li>10.0% /<br> *14.0%</li>
+                                <li>10.0% / *14.0%</li>
                                 <li>11-20 </li>
-                                <li>NO</li>
                             </ul>
                         </div>
 
@@ -2697,6 +2779,30 @@
 
                 </div>
 
+                   <div class = equip_box>
+                        <img src = "images/Hero_equip/GR_weapon.png" class = equipment id = grweapon>
+                        <div class = "equip_desc" id =  weapongr> The Razor's Edge </div>
+                        
+                        <img src = "images/Hero_equip/GR_armor.png" class = equipment id = grarmor>
+                        <div class = "equip_desc" id =  armorgr> Shadowlace </div>
+                    </div>
+
+                <div class = "numbers_container misc">
+
+                    <div class = misc_numbers_box1>
+                        <ul class = "statline misc_statline">
+                            <li> <span class = "move"> Front </span> 2 <span class = "move"> Back </span> 2 </li>
+                            <li> +10 DODGE </li>
+                        </ul>
+                    </div>
+
+                    <div class = misc_numbers_box2>
+                        <ul class = "statline misc_statline">
+                            <li class = grey>Shovel</li>
+                        </ul>
+                    </div>
+                    
+                </div>
                 <div class = pref_position_container>
                     
                     <div class = "pref_pos pos4_1 strong_pref"></div>
@@ -3088,7 +3194,30 @@
                       </ul>
                 </div>
 
-               <div class = stat_box>
+                             <div class = stat_box>
+
+
+
+                    <div class = numbers_container>
+
+                        <div class = numbers_box1>
+                            <ul class = "statline">
+                                <li>46 </li>
+                                <li>30 </li> 
+                                <li>6 </li>
+                            </ul>
+                        </div>
+
+                        <div class = numbers_box2>
+                            <ul class = "statline">
+                                <li>9.0%</li>
+                                <li>10-19 </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
 
                     <div class = equip_box>
                         <img src = "images/Hero_equip/Hell_weapon.png" class = equipment id = hellweapon>
@@ -3098,30 +3227,21 @@
                         <div class = "equip_desc" id =  armorhell> Wolf's Pelt </div>
                     </div>
 
-                    <div class = numbers_container>
+                <div class = "numbers_container misc">
 
-                        <div class = numbers_box1>
-                            <ul class = "statline">
-                                <li>46 </li>
-                                <li>30 </li> 
-                                <li>6 </li>
-                                <li>1 Front 0 Back</li>
-                                <li> +33% DMG vs <span class = bleed> Bleeding </span> </li>
-                                <li> None </li>
-                            </ul>
-                        </div>
-
-                        <div class = numbers_box2>
-                            <ul class = "statline">
-                                <li>9.0%</li>
-                                <li class = hidden>Hi</li>
-                                <li>10-19 </li>
-                                <li> NO </li>
-                            </ul>
-                        </div>
-
+                    <div class = misc_numbers_box1>
+                        <ul class = "statline misc_statline">
+                            <li> <span class = "move"> Front </span> 1 <span class = "move"> Back </span> 0 </li>
+                            <li> +33% DMG vs <span class = bleed> Bleeding </span> </li>
+                        </ul>
                     </div>
 
+                    <div class = misc_numbers_box2>
+                        <ul class = "statline misc_statline">
+                            <li>None</li>
+                        </ul>
+                    </div>
+                    
                 </div>
 
                 <div class = pref_position_container>
@@ -3520,7 +3640,28 @@
                       </ul>
                 </div>
 
-                             <div class = stat_box>
+                <div class = stat_box>
+
+                    <div class = numbers_container>
+
+                        <div class = numbers_box1>
+                            <ul class = "statline">
+                                <li>43 </li>
+                                <li>30 </li> 
+                                <li>7 </li>
+                            </ul>
+                        </div>
+
+                        <div class = numbers_box2>
+                            <ul class = "statline">
+                                <li>9.0% /<br> *13.0%</li>
+                                <li>9-16 </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
 
                     <div class = equip_box>
                         <img src = "images/Hero_equip/HWM_weapon.png" class = equipment id = hwmweapon>
@@ -3530,29 +3671,21 @@
                         <div class = "equip_desc" id =  armorhwm> The Uncatchable </div>
                     </div>
 
-                    <div class = numbers_container>
+                <div class = "numbers_container misc">
 
-                        <div class = numbers_box1>
-                            <ul class = "statline">
-                                <li>43 </li>
-                                <li>30 </li> 
-                                <li>7 </li>
-                                <li>2 Front 2 Back</li>
-                                <li> +2 SPD </li>
-                                <li> None </li>
-                            </ul>
-                        </div>
-
-                        <div class = numbers_box2>
-                            <ul class = "statline">
-                                <li>9.0% /<br> *13.0%</li>
-                                <li>9-16 </li>
-                                <li>NO</li>
-                            </ul>
-                        </div>
-
+                    <div class = misc_numbers_box1>
+                        <ul class = "statline misc_statline">
+                            <li> <span class = "move"> Front </span> 2 <span class = "move"> Back </span> 2 </li>
+                            <li>+2 SPD</li> 
+                        </ul>
                     </div>
 
+                    <div class = misc_numbers_box2>
+                        <ul class = "statline misc_statline">
+                            <li>None</li>
+                        </ul>
+                    </div>
+                    
                 </div>
 
                 <div class = pref_position_container>
@@ -3968,7 +4101,31 @@
                       </ul>
                 </div>
 
-              <div class = stat_box>
+                            <div class = stat_box>
+
+                   
+
+                    <div class = numbers_container>
+
+                        <div class = numbers_box1>
+                            <ul class = "statline">
+                                <li>37 / *41 </li>
+                                <li>30 </li> 
+                                <li>7 </li> 
+                            </ul>
+                        </div>
+
+                        <div class = numbers_box2>
+                            <ul class = "statline">
+                                <li>8.0%</li>
+                                <li class = hidden>Hi</li>
+                                <li>7-13 </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
 
                     <div class = equip_box>
                         <img src = "images/Hero_equip/HM_Weapon.png" class = equipment id = hmweapon>
@@ -3978,30 +4135,21 @@
                         <div class = "equip_desc" id =  armorhm> Gendarme's Pride </div>
                     </div>
 
-                    <div class = numbers_container>
+                <div class = "numbers_container misc">
 
-                        <div class = numbers_box1>
-                            <ul class = "statline">
-                                <li>37 / *41 </li>
-                                <li>30 </li> 
-                                <li>7 </li>
-                                <li>2 Front 2 Back</li>
-                                <li> +20% <span class = bleed> Bleed </span> Skill Chance </li>
-                                <li> 2 Dog Treats </li>
-                            </ul>
-                        </div>
-
-                        <div class = numbers_box2>
-                            <ul class = "statline">
-                                <li>8.0%</li>
-                                <li class = hidden>Hi</li>
-                                <li>7-13 </li>
-                                <li> NO</li>
-                            </ul>
-                        </div>
-
+                    <div class = misc_numbers_box1>
+                        <ul class = "statline misc_statline">
+                            <li> <span class = "move"> Front </span> 2 <span class = "move"> Back </span> 2 </li>
+                            <li> +20% <span class = bleed> Bleed </span> Skill Chance </li>
+                        </ul>
                     </div>
 
+                    <div class = misc_numbers_box2>
+                        <ul class = "statline misc_statline">
+                           <li> 2 <span class = debuff> Dog Treats</span> </li>
+                        </ul>
+                    </div>
+                    
                 </div>
 
                 <div class = pref_position_container>
@@ -4374,7 +4522,31 @@
                       </ul>
                 </div>
 
-                 <div class = stat_box>
+                                 <div class = stat_box>
+
+ 
+
+                    <div class = numbers_container>
+
+                        <div class = numbers_box1>
+                            <ul class = "statline">
+                                <li>35 </li>
+                                <li>35 </li> 
+                                <li>9 / *11 </li>
+                            </ul>
+                        </div>
+
+                        <div class = numbers_box2>
+                            <ul class = "statline">
+                                <li>8.0%</li>
+                                <li class = hidden>Hi</li>
+                                <li>7-13 </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>      
 
                     <div class = equip_box>
                         <img src = "images/Hero_equip/Jes_weapon.png" class = equipment id = jesweapon>
@@ -4384,30 +4556,21 @@
                         <div class = "equip_desc" id =  armorjes> The Cruelest Crown </div>
                     </div>
 
-                    <div class = numbers_container>
+                <div class = "numbers_container misc">
 
-                        <div class = numbers_box1>
-                            <ul class = "statline">
-                                <li>35 </li>
-                                <li>35 </li> 
-                                <li>9 / *11 </li>
-                                <li>3 Front 3 Back</li>
-                                <li> +40% <span class = stress> Stress </span> Healing Skills </li>
-                                <li> Medicinal Herbs </li>
-                            </ul>
-                        </div>
-
-                        <div class = numbers_box2>
-                            <ul class = "statline">
-                                <li>8.0%</li>
-                                <li class = hidden>Hi</li>
-                                <li>7-13 </li>
-                                <li> NO</li>
-                            </ul>
-                        </div>
-
+                    <div class = misc_numbers_box1>
+                        <ul class = "statline misc_statline">
+                            <li> <span class = "move"> Front </span> 3 <span class = "move"> Back </span> 3 </li>
+                            <li> +40% <span class = stress> Stress </span> Healing Skills </li>
+                        </ul>
                     </div>
 
+                    <div class = misc_numbers_box2>
+                        <ul class = "statline misc_statline">
+                            <li class = debuff>Medicinal Herbs</li>
+                        </ul>
+                    </div>
+                    
                 </div>
 
                 <div class = pref_position_container>
@@ -4809,15 +4972,9 @@
                       </ul>
                 </div>
 
-                <div class = stat_box>
+                              <div class = stat_box>
 
-                    <div class = equip_box>
-                        <img src = "images/Hero_equip/Lep_weapon.png" class = equipment id = lepweapon>
-                        <div class = "equip_desc" id =  weaponlep> The Broken Blade </div>
-                        
-                        <img src = "images/Hero_equip/Lep_armor.png" class = equipment id = leparmor>
-                        <div class = "equip_desc" id =  armorlep> Indomitable </div>
-                    </div>
+ 
 
                     <div class = numbers_container>
 
@@ -4826,9 +4983,6 @@
                                 <li>63 </li>
                                 <li>20 </li> 
                                 <li>4 </li>
-                                <li>1 Front 0 Back</li>
-                                <li> +10 ACC </li>
-                                <li> Medicinal Herbs </li>
                             </ul>
                         </div>
 
@@ -4837,13 +4991,38 @@
                                 <li>5.0%</li>
                                 <li class = hidden>Hi</li>
                                 <li>13-26 </li>
-                                <li>YES</li>
                             </ul>
                         </div>
 
                     </div>
 
                 </div>
+
+                   <div class = equip_box>
+                        <img src = "images/Hero_equip/Lep_weapon.png" class = equipment id = lepweapon>
+                        <div class = "equip_desc" id =  weaponlep> The Broken Blade </div>
+                        
+                        <img src = "images/Hero_equip/Lep_armor.png" class = equipment id = leparmor>
+                        <div class = "equip_desc" id =  armorlep> Indomitable </div>
+                    </div>
+
+                <div class = "numbers_container misc">
+
+                    <div class = misc_numbers_box1>
+                        <ul class = "statline misc_statline">
+                            <li> <span class = "move"> Front </span> 1 <span class = "move"> Back </span> 0 </li>
+                            <li> +10 ACC </li>
+                        </ul>
+                    </div>
+
+                    <div class = misc_numbers_box2>
+                        <ul class = "statline misc_statline">
+                            <li class = debuff>Medicinal Herbs</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+
 
                 <div class = pref_position_container>
                     
@@ -5233,15 +5412,7 @@
                       </ul>
                 </div>
 
- <div class = stat_box>
-
-                    <div class = equip_box>
-                        <img src = "images/Hero_equip/MAA_Weapon.png" class = equipment id = maaweapon>
-                        <div class = "equip_desc" id =  weaponmaa> Bludgeon </div>
-                        
-                        <img src = "images/Hero_equip/MAA_armor.png" class = equipment id = maaarmor>
-                        <div class = "equip_desc" id =  armormaa> The Bulwark </div>
-                    </div>
+                <div class = stat_box>
 
                     <div class = numbers_container>
 
@@ -5250,9 +5421,6 @@
                                 <li>55 / *61 </li>
                                 <li>25 </li> 
                                 <li>5 </li>
-                                <li>2 Front 2 Back</li>
-                                <li> -33% <span class = stress> Stress </span> </li>
-                                <li> None </li>
                             </ul>
                         </div>
 
@@ -5261,13 +5429,38 @@
                                 <li>6.0%</li>
                                 <li class = hidden>Hi</li>
                                 <li>8-14 </li>
-                                <li>NO</li>
                             </ul>
                         </div>
 
                     </div>
 
+                </div>                    
+                
+                    <div class = equip_box>
+                        <img src = "images/Hero_equip/MAA_Weapon.png" class = equipment id = maaweapon>
+                        <div class = "equip_desc" id =  weaponmaa> Bludgeon </div>
+                        
+                        <img src = "images/Hero_equip/MAA_armor.png" class = equipment id = maaarmor>
+                        <div class = "equip_desc" id =  armormaa> The Bulwark </div>
+                    </div>
+
+                <div class = "numbers_container misc">
+
+                    <div class = misc_numbers_box1>
+                        <ul class = "statline misc_statline">
+                            <li> <span class = "move"> Front </span> 2 <span class = "move"> Back </span> 2 </li>
+                            <li> -33% <span class = stress> Stress </span> </li>
+                        </ul>
+                    </div>
+
+                    <div class = misc_numbers_box2>
+                        <ul class = "statline misc_statline">
+                            <li>None</li>
+                        </ul>
+                    </div>
+                    
                 </div>
+
 
                 <div class = pref_position_container>
                     
@@ -5643,7 +5836,31 @@
                       </ul>
                 </div>
 
-                 <div class = stat_box>
+                    <div class = stat_box>
+
+
+
+                    <div class = numbers_container>
+
+                        <div class = numbers_box1>
+                            <ul class = "statline">
+                                <li>47/ *52 </li>
+                                <li>20 </li> 
+                                <li>5 </li>
+                            </ul>
+                        </div>
+
+                        <div class = numbers_box2>
+                            <ul class = "statline">
+                                <li>10.0%</li>
+                                <li class = hidden>Hi</li>
+                                <li>7-14 </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
 
                     <div class = equip_box>
                         <img src = "images/Hero_equip/Musk_weapon.png" class = equipment id = muskweapon>
@@ -5653,31 +5870,23 @@
                         <div class = "equip_desc" id =  armormusk> The Champion's Regalia </div>
                     </div>
 
-                    <div class = numbers_container>
+                <div class = "numbers_container misc">
 
-                        <div class = numbers_box1>
-                            <ul class = "statline">
-                                <li>47/ *52 </li>
-                                <li>20 </li> 
-                                <li>5 </li>
-                                <li>0 Front 2 Back</li>
-                                <li> +33% DMG vs <span class = mark> Marked </span> </li>
-                                <li> Bandage </li>
-                            </ul>
-                        </div>
-
-                        <div class = numbers_box2>
-                            <ul class = "statline">
-                                <li>10.0%</li>
-                                <li class = hidden>Hi</li>
-                                <li>7-14 </li>
-                                <li> NO </li>
-                            </ul>
-                        </div>
-
+                    <div class = misc_numbers_box1>
+                        <ul class = "statline misc_statline">
+                            <li> <span class = "move"> Front </span> 0 <span class = "move"> Back </span> 2 </li>
+                            <li> +33% DMG vs <span class = mark> Marked </span> </li>
+                        </ul>
                     </div>
 
+                    <div class = misc_numbers_box2>
+                        <ul class = "statline misc_statline">
+                            <li class = highres>Bandage</li>
+                        </ul>
+                    </div>
+                    
                 </div>
+
 
                 <div class = pref_position_container>
                     
@@ -6073,7 +6282,31 @@
                       </ul>
                 </div>
 
-               <div class = stat_box>
+                  <div class = stat_box>
+
+
+
+                    <div class = numbers_container>
+
+                        <div class = numbers_box1>
+                            <ul class = "statline">
+                                <li>35 </li>
+                                <li>30 </li> 
+                                <li>8 </li>
+                            </ul>
+                        </div>
+
+                        <div class = numbers_box2>
+                            <ul class = "statline">
+                                <li>10.0%</li>
+                                <li class = hidden>Hi</li>
+                                <li>7-13 </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
 
                     <div class = equip_box>
                         <img src = "images/Hero_equip/Occ_Weapon.png" class = equipment id = occweapon>
@@ -6083,32 +6316,22 @@
                         <div class = "equip_desc" id =  armorocc> Dark Inquisition </div>
                     </div>
 
-                    <div class = numbers_container>
+                <div class = "numbers_container misc">
 
-                        <div class = numbers_box1>
-                            <ul class = "statline">
-                                <li>35 </li>
-                                <li>30 </li> 
-                                <li>8 </li>
-                                <li>2 Front 2 Back</li>
-                                <li> +25% <span class = heal> Healing </span> Skills </li>
-                                <li> None </li>
-                            </ul>
-                        </div>
-
-                        <div class = numbers_box2>
-                            <ul class = "statline">
-                                <li>10.0%</li>
-                                <li class = hidden>Hi</li>
-                                <li>7-13 </li>
-                                <li>NO</li>
-                            </ul>
-                        </div>
-
+                    <div class = misc_numbers_box1>
+                        <ul class = "statline misc_statline">
+                            <li> <span class = "move"> Front </span> 2 <span class = "move"> Back </span> 2 </li>
+                            <li> +25% <span class = heal> Healing </span> Skills </li>
+                        </ul>
                     </div>
 
+                    <div class = misc_numbers_box2>
+                        <ul class = "statline misc_statline">
+                            <li>None</li>
+                        </ul>
+                    </div>
+                    
                 </div>
-
                 <div class = pref_position_container>
                     
                     <div class = "pref_pos pos4_1 "></div>
@@ -6511,7 +6734,31 @@
                       </ul>
                 </div>
 
-                 <div class = stat_box>
+                               <div class = stat_box>
+
+
+
+                    <div class = numbers_container>
+
+                        <div class = numbers_box1>
+                            <ul class = "statline">
+                                <li>38 </li>
+                                <li>20 </li> 
+                                <li>9 </li>
+                            </ul>
+                        </div>
+
+                        <div class = numbers_box2>
+                            <ul class = "statline">
+                                <li>6.0%</li>
+                                <li class = hidden>Hi</li>
+                                <li>7-13 </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
 
                     <div class = equip_box>
                         <img src = "images/Hero_equip/PD_Weapon.png" class = equipment id = pdweapon>
@@ -6521,31 +6768,23 @@
                         <div class = "equip_desc" id =  armorpd> The Malignant Mantle </div>
                     </div>
 
-                    <div class = numbers_container>
+                <div class = "numbers_container misc">
 
-                        <div class = numbers_box1>
-                            <ul class = "statline">
-                                <li>38 </li>
-                                <li>20 </li> 
-                                <li>9 </li>
-                                <li>1 Front 1 Back</li>
-                                <li> +20% <span class = blight> Blight </span> Skill Chance </li>
-                                <li> Antivenom </li>
-                            </ul>
-                        </div>
-
-                        <div class = numbers_box2>
-                            <ul class = "statline">
-                                <li>6.0%</li>
-                                <li class = hidden>Hi</li>
-                                <li>7-13 </li>
-                                <li>NO</li>
-                            </ul>
-                        </div>
-
+                    <div class = misc_numbers_box1>
+                        <ul class = "statline misc_statline">
+                            <li> <span class = "move"> Front </span> 1 <span class = "move"> Back </span> 1 </li>
+                            <li>+20% <span class = blight> Blight </span> Skill Chance</li> 
+                        </ul>
                     </div>
 
+                    <div class = misc_numbers_box2>
+                        <ul class = "statline misc_statline">
+                            <li class = blight>Antivenom</li>
+                        </ul>
+                    </div>
+                    
                 </div>
+
 
                 <div class = pref_position_container>
                     
@@ -6937,15 +7176,9 @@
                       </ul>
                 </div>
 
-                <div class = stat_box>
+                   <div class = stat_box>
 
-                    <div class = equip_box>
-                        <img src = "images/Hero_equip/SB_weap.png" class = equipment id = sbweapon>
-                        <div class = "equip_desc" id =  weaponsb> The Adder's Fang </div>
-                        
-                        <img src = "images/Hero_equip/SB_armor (1).png" class = equipment id = sbarmor>
-                        <div class = "equip_desc" id =  armorsb> Sirocco </div>
-                    </div>
+
 
                     <div class = numbers_container>
 
@@ -6954,9 +7187,6 @@
                                 <li>36 / *40 </li>
                                 <li>33 </li> 
                                 <li>9 </li>
-                                <li>2 Front 2 Back</li>
-                                <li> +15% PROT </li>
-                                <li> None </li>
                             </ul>
                         </div>
 
@@ -6965,7 +7195,6 @@
                                 <li>10.0%</li>
                                 <li class = hidden>Hi</li>
                                 <li>9-18 </li>
-                                <li>NO</li>
                             </ul>
                         </div>
 
@@ -6973,6 +7202,30 @@
 
                 </div>
 
+                <div class = equip_box>
+                    <img src = "images/Hero_equip/SB_weap.png" class = equipment id = sbweapon>
+                    <div class = "equip_desc" id =  weaponsb> The Adder's Fang </div>
+                    
+                    <img src = "images/Hero_equip/SB_armor (1).png" class = equipment id = sbarmor>
+                    <div class = "equip_desc" id =  armorsb> Sirocco </div>
+                </div>
+
+                <div class = "numbers_container misc">
+
+                    <div class = misc_numbers_box1>
+                        <ul class = "statline misc_statline">
+                            <li> <span class = "move"> Front </span> 2 <span class = "move"> Back </span> 2</li>
+                            <li> +15% PROT </li>
+                        </ul>
+                    </div>
+
+                    <div class = misc_numbers_box2>
+                        <ul class = "statline misc_statline">
+                            <li>None</li>
+                        </ul>
+                    </div>
+                    
+                </div>
                 <div class = pref_position_container>
                     
                     <div class = "pref_pos pos4_1 barely_pref"></div>
@@ -7375,7 +7628,31 @@
                       </ul>
                 </div>
 
-                  <div class = stat_box>
+                                <div class = stat_box>
+
+                    
+
+                    <div class = numbers_container>
+
+                        <div class = numbers_box1>
+                            <ul class = "statline">
+                                <li>44 </li>
+                                <li>20 </li> 
+                                <li>6 </li>
+                            </ul>
+                        </div>
+
+                        <div class = numbers_box2>
+                            <ul class = "statline">
+                                <li>5.0%</li>
+                                <li class = hidden>Hi</li>
+                                <li>7-14 </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
 
                     <div class = equip_box>
                         <img src = "images/Hero_equip/Vestal_weapon.png" class = equipment id = vestweapon>
@@ -7385,32 +7662,22 @@
                         <div class = "equip_desc" id =  armorves> The Blessed Bulwark </div>
                     </div>
 
-                    <div class = numbers_container>
+                <div class = "numbers_container misc">
 
-                        <div class = numbers_box1>
-                            <ul class = "statline">
-                                <li>44 </li>
-                                <li>20 </li> 
-                                <li>6 </li>
-                                <li>1 Front 1 Back</li>
-                                <li> +25% <span class = heal> Healing </span> Skills </li>
-                                <li> None </li>
-                            </ul>
-                        </div>
-
-                        <div class = numbers_box2>
-                            <ul class = "statline">
-                                <li>5.0%</li>
-                                <li class = hidden>Hi</li>
-                                <li>7-14 </li>
-                                <li> YES</li>
-                            </ul>
-                        </div>
-
+                    <div class = misc_numbers_box1>
+                        <ul class = "statline misc_statline">
+                            <li> <span class = "move"> Front </span> 1 <span class = "move"> Back </span> 1</li>
+                            <li> +25% <span class = heal> Healing </span> Skills </li>
+                        </ul>
                     </div>
 
+                    <div class = misc_numbers_box2>
+                        <ul class = "statline misc_statline">
+                            <li>None</li>
+                        </ul>
+                    </div>
+                    
                 </div>
-
                 <div class = pref_position_container>
                     
                     <div class = "pref_pos pos4_1 strong_pref"></div>
