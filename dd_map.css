@@ -237,7 +237,7 @@ button{background: white; border: none; width:20px}
      position: absolute; top: 70.5vw; left: 17.7vw;
     height: 2vw; width: 34.3vw; text-align: center;} 
 
-.char_review{font-family: dd_logo; color: rgb(199, 179, 107); font-size: 1.6vw;
+.stat_header{font-family: dd_logo; color: rgb(199, 179, 107); font-size: 1.6vw;
     position: absolute; top: 81.8vw; left: 17.7vw;
     height: 2vw; width: 34.3vw; text-align: center;}
 
@@ -253,10 +253,9 @@ button{background: white; border: none; width:20px}
     position: absolute; top: 87.4vw; left: 57.5vw; 
     height: 2vw; width: 35vw; text-align: center;}
 
-.stat_header{font-family: dd_logo; color: rgb(199, 179, 107); font-size: 1.6vw;
-    position: absolute; top: 96.1vw; left: 57.5vw; 
-    height: 2vw; width: 35vw; text-align: center;}
-
+.misc_stat_header{font-family: dd_logo; color: rgb(199, 179, 107); font-size: 1.6vw;
+        position: absolute; top:96.5vw; left: 57.5vw; 
+        height: 2vw; width: 35vw; text-align: center;}
 
 .posquirk_text{ color: rgb(199, 179, 107); font-family:  'Ubuntu', sans-serif; font-size: 1vw; font-weight: 500; line-height: 1.5vw;
             position:absolute; top: 73vw; left: 18.5vw;  transform: scaleX(1.1);
@@ -283,54 +282,6 @@ button{background: white; border: none; width:20px}
 .resist1{height: 6.5vw; width: 17vw; display: flex; direction: rtl; flex-direction: column;}
 .resist2{height: 6.5vw; width: 19vw;  display: flex; direction: rtl; flex-direction: column;}
 
-.equipment{height: 7vw; margin: 0 0.2vw; padding: 0;}
-.equipment:hover{filter: brightness(150%);}
-.equip_box{display: flex;margin-left: 1vw;}
-
-.statline_container{position: absolute; top: 96vw; left: 65vw;
-    height:7.2vw; width:40vw;
-    display: flex; justify-content: start; flex-direction: row;}
-
-
-.stat_box{position: absolute; top: 96.2vw; left: 55vw;
-             height:7.2vw; width:40vw;
-             display: flex; justify-content: start; flex-direction: row;}
-
-.stats_box1{position: absolute;}
-.stats_box2{position: absolute; left: 17vw}
-
-.numbers_container{position:absolute; width: 25vw;}
-.numbers_box1{height:7vw; position:absolute; left: 19vw; top: -0.2vw; width: 35vw}
-.numbers_box2{height: 7vw;position: absolute; left: 34vw; top: -0.2vw; width:15vw}
-.statline{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1vw;
-     line-height: 1.2vw; text-align: start;}
-
-.equip_desc{position: absolute; top: -2.6vw;
-    height: fit-content; width:max-content; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.8);
-    font-family: 'Ubuntu', sans-serif; color: rgb(206, 58, 33); font-size: 1vw; line-height: 1.5vw; font-weight: 500;
-    text-align: center; padding:0.2vw; display: none;
-}
-
-#weaponabom{left:-1vw}  #armorabom{left:2vw}
-#weaponanti{left:-1.2vw}  #armoranti{left:0.5vw}
-#weaponarb{left:0.5vw}  #armorarb{left:4.3vw}
-#weaponbh{left:-1.3vw}  #armorbh{left:3.3vw}
-#weaponcrus{left:-1vw}  #armorcrus{left:2vw}
-#weaponflag{left:0vw}  #armorflag{left:3vw}
-#weapongr{left:-1vw}  #armorgr{left:3.6vw}
-#weaponhell{left:-1.1vw}  #armorhell{left:3.7vw}
-#weaponhwm{left:-2.6vw}  #armorhwm{left:2.5vw}
-#weaponhm{left:0.1vw}  #armorhm{left:2.4vw}
-#weaponjes{left:-0.6vw}  #armorjes{left:2vw}
-#weaponlep{left:-1.3vw}  #armorlep{left:3.6vw}
-#weaponmaa{left:0.4vw}  #armormaa{left:3.5vw}
-#weaponmusk{left:0.4vw}  #armormusk{left:1vw}
-#weaponocc{left:-1.3vw}  #armorocc{left:2.7vw}
-#weaponpd{left:-1.9vw}  #armorpd{left:1.3vw}
-#weaponsb{left:-1vw}  #armorsb{left:4.8vw}
-#weaponves{left:-1.3vw}  #armorves{left:1.6vw}
-
-
 
 
 
@@ -354,6 +305,7 @@ button{background: white; border: none; width:20px}
 .scouting {color: rgb(69, 123, 112)}
 .block{color: rgb(93, 83, 43)}
 .aegis{width: 1.5vw; margin: 0;  margin-top:-0.25vw; padding:0; position: absolute;}
+.grey{color:grey}
 
 .attack_type{color:rgb(140, 123, 95)}
 .camp_title{font-size: 1vw; line-height: 1.2vw;}
@@ -388,6 +340,68 @@ button{background: white; border: none; width:20px}
 .ability_grid{width: 4.4vw; height:4.8vw; position: absolute; top: -0.6vw;} 
 .skill_icon{height: 4vw; width: 4vw; margin: 0 0.3vw; position: relative}
 .skill:hover .skill_icon {filter: brightness(150%);}
+
+.equipment{height: 8.3vw; margin-right: 0.35vw; padding: 0;}
+.equipment:hover{filter: brightness(150%);}
+
+.equip_box{position: absolute; top: 94.5vw; left:23.15vw; }
+
+.statline_container{position: absolute; top: 84.3vw; left: 18vw;
+    height:7.2vw; width:40vw; 
+    display: flex; justify-content: start; flex-direction: row;}
+
+
+.stat_box{position: absolute; top: 84.4vw; left: 9vw;
+             height:7.2vw; width:53vw;
+             display: flex; justify-content: start; flex-direction: row;}
+
+.stats_box1{position: absolute; left: 5vw;}
+.stats_box2{position: absolute; left: 19.5vw}
+
+.numbers_container{position:absolute; width: 40vw;}
+.numbers_box1{height:7vw; position:absolute; left: 21.5vw; top: -0.1vw; width: 35vw}
+.numbers_box2{height: 7vw;position: absolute; left: 34vw; top: -0.1vw; width:15vw}
+
+.statline{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1.3vw;
+     line-height: 1.5vw; text-align: start;}
+
+.equip_desc{position: absolute; top: -2.6vw;
+    height: fit-content; width:max-content; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.8);
+    font-family: 'Ubuntu', sans-serif; color: rgb(206, 58, 33); font-size: 1vw; line-height: 1.5vw; font-weight: 500;
+    text-align: center; padding:0.2vw; display: none;
+}
+
+
+.misc_container {position: absolute; top: 99.2vw; left: 52vw;
+                height:7.2vw; width:40vw; 
+                display: flex; justify-content: start; flex-direction: row;}
+
+.misc_box1{position: absolute; left: 4.5vw;}
+.misc_box2{position: absolute; left: 24vw}
+.misc{top: 99.3vw; left: 46vw}
+.misc_numbers_box1{height:7vw; position:absolute; left: 19vw; top: -0.1vw; width: 35vw}
+.misc_numbers_box2{height: 7vw;position: absolute; left: 38vw; top: -0.1vw; width:15vw}
+.misc_statline{line-height: 1.8vw; }
+
+#weaponabom{left:-1.9vw}  #armorabom{left:2.8vw}
+#weaponanti{left:-2.1vw}  #armoranti{left:0.8vw}
+#weaponarb{left:-0.2vw}  #armorarb{left:4.75vw}
+#weaponbh{left:-2.2vw}  #armorbh{left:3.7vw}
+#weaponcrus{left:-2.1vw}  #armorcrus{left:2.45vw}
+#weaponflag{left:-0.83vw}  #armorflag{left:3.25vw}
+#weapongr{left:-1.9vw}  #armorgr{left:4vw}
+#weaponhell{left:-1.85vw}  #armorhell{left:4.15vw}
+#weaponhwm{left:-3.3vw}  #armorhwm{left:2.9vw}
+#weaponhm{left:-0.8vw}  #armorhm{left:2.9vw}
+#weaponjes{left:-1.3vw}  #armorjes{left:2.35vw}
+#weaponlep{left:-2.15vw}  #armorlep{left:4vw}
+#weaponmaa{left:-0.4vw}  #armormaa{left:3.8vw}
+#weaponmusk{left:-0.3vw}  #armormusk{left:1.4vw}
+#weaponocc{left:-2.3vw}  #armorocc{left:3.1vw}
+#weaponpd{left:-2.65vw}  #armorpd{left:1.9vw}
+#weaponsb{left:-2vw}  #armorsb{left:5vw}
+#weaponves{left:-2vw}  #armorves{left:2vw}
+
 
 #grid1{ left: 1.5vw; }
 #grid2{ left: 6.1vw; }
