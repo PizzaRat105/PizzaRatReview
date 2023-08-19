@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
   attachHoverListeners("[id^='sharedcamp']", "[id^='genericamp']");
-  attachHoverListeners("[id^='infobtn']", "[id^='infotxt']");
+  attachHoverListeners("[id^='infobtn1']", "[id^='infotxt1']");
+  attachHoverListeners("[id^='infobtn2']", "[id^='infotxt2']");
   
   attachHoverListeners("[id^='abomcombat']", "[id^='combatabom']");
   attachHoverListeners("[id^='abomcamp']", "[id^='restabom']");
