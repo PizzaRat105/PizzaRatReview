@@ -174,8 +174,8 @@ button{background: white; border: none; width:20px}
 
 
 .rename_button{position: absolute; top: 65.3vw; left: 4.4vw; width: 1.6vw;} 
-.close_btn{position: absolute; top: 64.5vw; right: 3.6vw; width: 1.6vw;} 
-.swapskin_btn{position:absolute; left: 3.6vw; top: 101.5vw; width: 1.6vw;}
+.close_btn{position: absolute; top: 64.6vw; right: 3.6vw; width: 1.6vw;} 
+.swapskin_btn{position:absolute; left: 3.6vw; top: 101.8vw; width: 1.6vw;}
 .rename_button:hover{filter: brightness(150%);}
 .close_btn:hover{filter: brightness(150%);}
 .swapskin_btn:hover{filter: brightness(150%);}
@@ -241,8 +241,12 @@ button{background: white; border: none; width:20px}
     position: absolute; top: 81.8vw; left: 17.7vw;
     height: 2vw; width: 34.3vw; text-align: center;}
 
+.equip_header{font-family: dd_logo; color: rgb(199, 179, 107); font-size: 1.6vw;
+        position: absolute; top: 89.5vw; left: 17.7vw;
+        height: 2vw; width: 34.3vw; text-align: center;}
+
 .skill_header{font-family: dd_logo; color: rgb(199, 179, 107); font-size: 1.6vw;
-    position: absolute; top: 66.5vw; left: 57.5vw; 
+    position: absolute; top: 66.6vw; left: 57.5vw; 
     height: 2vw; width: 35vw; text-align: center;}
 
 .camp_header{font-family: dd_logo; color: rgb(199, 179, 107); font-size: 1.6vw;
@@ -250,11 +254,11 @@ button{background: white; border: none; width:20px}
     height: 2vw; width: 35vw; text-align: center;}
 
 .resist_header{font-family: dd_logo; color: rgb(199, 179, 107); font-size: 1.6vw;
-    position: absolute; top: 87.4vw; left: 57.5vw; 
+    position: absolute; top: 87.5vw; left: 57.5vw; 
     height: 2vw; width: 35vw; text-align: center;}
 
 .misc_stat_header{font-family: dd_logo; color: rgb(199, 179, 107); font-size: 1.6vw;
-        position: absolute; top:96.5vw; left: 57.5vw; 
+        position: absolute; top:96.4vw; left: 57.5vw; 
         height: 2vw; width: 35vw; text-align: center;}
 
 .posquirk_text{ color: rgb(199, 179, 107); font-family:  'Ubuntu', sans-serif; font-size: 1vw; font-weight: 500; line-height: 1.5vw;
@@ -380,7 +384,7 @@ button{background: white; border: none; width:20px}
 .misc_box2{position: absolute; left: 24vw}
 .misc{top: 99.3vw; left: 46vw}
 .misc_numbers_box1{height:7vw; position:absolute; left: 19vw; top: -0.1vw; width: 35vw}
-.misc_numbers_box2{height: 7vw;position: absolute; left: 38vw; top: -0.1vw; width:15vw}
+.misc_numbers_box2{height: 7vw;position: absolute; left: 37vw; top: -0.1vw; width:15vw}
 .misc_statline{line-height: 1.8vw; }
 
 #weaponabom{left:-1.9vw}  #armorabom{left:2.8vw}
