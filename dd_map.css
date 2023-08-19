@@ -189,6 +189,8 @@ button{background: white; border: none; width:20px}
     font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 0.8vw; line-height: 1.4vw;
     height: fit-content; width:max-content; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.8);}
 
+.box2{top: 81.9vw; left: 17.4vw;}
+.desc2{top: 81.8vw; left: 19.5vw;}
 
 .pref_position_container{position:absolute; top: 70vw; left: 58.3vw;  
     height: 2.9vw; width: 13.3vw; display: flex; justify-content: space-evenly; } 
@@ -196,10 +198,8 @@ button{background: white; border: none; width:20px}
 .pref_target_container{position:absolute; top: 70vw; left: 79.25vw;  
     height: 2.9vw; width: 13.3vw; display: flex; justify-content: space-evenly; } 
 
-
 .pref_pos{height: 0.8vw; width:1vw;  border-radius: 2vw; background-color:rgb(199, 179, 107); }
 .pref_target{height: 0.8vw; width:1vw;  border-radius: 2vw; background-color:red;}
-
 
 .pos4_1{position:absolute; left: 1.2vw; top: 0.97vw;}
 .pos3_2{position: absolute; left: 4.45vw; top: 0.97vw}
