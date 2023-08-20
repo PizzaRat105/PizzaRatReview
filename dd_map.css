@@ -345,10 +345,25 @@ button{background: white; border: none; width:20px}
 .skill_icon{height: 4vw; width: 4vw; margin: 0 0.3vw; position: relative}
 .skill:hover .skill_icon {filter: brightness(150%);}
 
-.equipment{height: 8.3vw; margin-right: 0.35vw; padding: 0;}
+.trinket1{margin-left: 6.5vw;}
+.trinket2{margin-left: 0vw;}
+
+.equipment{height: 8.3vw; margin-right: 0.5vw; padding: 0;}
 .equipment:hover{filter: brightness(150%);}
 
-.equip_box{position: absolute; top: 94.5vw; left:23.15vw; }
+.equip_box{position: absolute; top: 94.5vw; left:23.2vw; width: 35vw; display: flex;}
+.trinket_box{top: 0vw;padding: 0.3vw;}
+
+.left1{left: 20.3vw;}  .left2{left: 24.9vw;}
+
+.common{color: white}
+.uncommon{color:rgb(108, 149, 85)}
+.rare{color: rgb(68, 97, 163)}
+.very_rare{color: rgb(180, 78, 31)}
+.crystal{color: rgb(184, 253, 238)}
+.crimson_court{color:rgb(162, 42, 23)}
+.cc_text{color:rgb(92, 50, 58)}
+.set_bonus{color:rgb(128, 191, 116)}
 
 .statline_container{position: absolute; top: 84.3vw; left: 18vw;
     height:7.2vw; width:40vw; 
