@@ -1,13 +1,13 @@
 const BtnTop = document.getElementById('embarktop');
-const CCBtn = document.getElementById('ccbtn');
-const CCEmbark = document.getElementById('cc_embark');
-const CoMBtn = document.getElementById('combtn');
-const CoMEmbark = document.getElementById('com_embark');
-const CoMEmbarkTop = document.getElementById('com_embarktop');
-const DDsBtn = document.getElementById('ddsbtn');
+const CrimsonBtn = document.getElementById('crimsonbtn');
+const CrimsonEmbark = document.getElementById('crimson_embark');
+const MadnessBtn = document.getElementById('madnessbtn');
+const MadnessEmbark = document.getElementById('madness_embark');
+const MadnessEmbarkTop = document.getElementById('madness_embarktop');
+const GauntletBtn = document.getElementById('gauntletbtn');
 
 function ToggleEmbarkBtn(selectedquestbtn){
-const allQuestBtn = [CCBtn, CoMBtn, DDsBtn]
+const allQuestBtn = [CrimsonBtn, MadnessBtn, GauntletBtn]
 allQuestBtn.forEach(questbtn => {
     questbtn.style.display = 'none';
  });
