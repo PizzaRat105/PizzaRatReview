@@ -1,6 +1,6 @@
 function toggleMissionBox(selectedQuestBox){
     const allQuestBox = 
-    [CCBox, CoMBox, DDsBox, EarlyBox1, EarlyBox2, EarlyBox3, VisualsBox, MusicBox, LateBox1, LateBox2, LateBox3,
+    [CrimsonBox, MadnessBox, GauntletBox, EarlyBox1, EarlyBox2, EarlyBox3, VisualsBox, MusicBox, LateBox1, LateBox2, LateBox3,
      BossBox1, BossBox2, MiniBossBox1, BossBox3, BossBox4, MiniBossBox2, BossBox5, BossBox6, MiniBossBox3, BossBox7, BossBox8, CircusBox
      
     ];
@@ -10,39 +10,13 @@ function toggleMissionBox(selectedQuestBox){
     selectedQuestBox.style.visibility = 'visible';
 }
 
-function toggleEmbarkBtn1() {
-    EmbarkCC.style.display = 'none';
-    EmbarkCoM.style.display = 'none';
-    EmbarkDDs.style.display = 'none';
-    EmbarkDefault.style.display = 'block';
-}
-
-function toggleEmbarkBtnCC() {
-    EmbarkCC.style.display = 'block';
-    EmbarkCoM.style.display = 'none';
-    EmbarkDDs.style.display = 'none';
-    EmbarkDefault.style.display = 'none';
-}
-
-function toggleEmbarkBtnCoM() {
-    EmbarkCC.style.display = 'none';
-    EmbarkCoM.style.display = 'block';
-    EmbarkDDs.style.display = 'none';
-    EmbarkDefault.style.display = 'none';
-}
-
-function toggleEmbarkBtnDDs() {
-    EmbarkCC.style.display = 'none';
-    EmbarkCoM.style.display = 'none';
-    EmbarkDDs.style.display = 'block';
-    EmbarkDefault.style.display = 'none';
-}
 
 
 
-  const CCBtn = document.getElementById('ccbtn');
-  const ComBtn = document.getElementById('combtn');
-  const DDsBtn = document.getElementById('ddsbtn');
+
+  const CrimsonBtn = document.getElementById('crimsonbutton');
+  const MadnessBtn = document.getElementById('madnessbtn');
+  const GauntletBtn = document.getElementById('gauntletbtn');
   const EarlyBtn1 = document.getElementById('early1');
   const EarlyBtn2 = document.getElementById('early2');
   const EarlyBtn3 = document.getElementById('early3');
@@ -65,9 +39,9 @@ function toggleEmbarkBtnDDs() {
   const CircusBtn = document.getElementById('circus');
 
 
-  const CCBox = document.getElementById('cc_txtbox');
-  const CoMBox = document.getElementById('com_txtbox');
-  const DDsBox = document.getElementById('dds_txtbox');
+  const CrimsonBox = document.getElementById('crimson_txtbox');
+  const MadnessBox = document.getElementById('madness_txtbox');
+  const GauntletBox = document.getElementById('gauntlet_txtbox');
   const EarlyBox1 = document.getElementById('earlybox1');
   const EarlyBox2 = document.getElementById('earlybox2');
   const EarlyBox3 = document.getElementById('earlybox3');
@@ -89,17 +63,13 @@ function toggleEmbarkBtnDDs() {
   const BossBox8 = document.getElementById("bossbox8");
   const CircusBox = document.getElementById("circusbox");
 
-  const EmbarkDefault = document.getElementById('embark_button');
-  const EmbarkCC = document.getElementById('embark_cc');
-  const EmbarkCoM = document.getElementById('embark_com');
-  const EmbarkDDs = document.getElementById('embark_dds');
 
-  CCBtn.addEventListener('click', () => toggleMissionBox(CCBox));
-  CCBtn.addEventListener('click', () => toggleEmbarkBtnCC());
-  ComBtn.addEventListener('click', () => toggleMissionBox(CoMBox));
-  ComBtn.addEventListener('click', () => toggleEmbarkBtnCoM());
-  DDsBtn.addEventListener('click', () => toggleMissionBox(DDsBox));
-  DDsBtn.addEventListener('click', () => toggleEmbarkBtnDDs());
+  CrimsonBtn.addEventListener('click', () => toggleMissionBox(CrimsonBox));
+  CrimsonBtn.addEventListener('click', () => toggleEmbarkBtnCC());
+  MadnessBtn.addEventListener('click', () => toggleMissionBox(MadnessBox));
+  MadnessBtn.addEventListener('click', () => toggleEmbarkBtnCoM());
+  GauntletBtn.addEventListener('click', () => toggleMissionBox(GauntletBox));
+  GauntletBtn.addEventListener('click', () => toggleEmbarkBtnDDs());
   EarlyBtn1.addEventListener('click', () => toggleMissionBox(EarlyBox1));
   EarlyBtn2.addEventListener('click', () => toggleMissionBox(EarlyBox2));
   EarlyBtn3.addEventListener('click', () => toggleMissionBox(EarlyBox3));
@@ -128,5 +98,40 @@ function toggleEmbarkBtnDDs() {
   LateBtn1.addEventListener('click', toggleEmbarkBtn1);
   LateBtn2.addEventListener('click', toggleEmbarkBtn1);
   LateBtn3.addEventListener('click', toggleEmbarkBtn1);
+  
+
+  const EmbarkDefault = document.getElementById('embark_button');
+  const EmbarkCrimson = document.getElementById('embark_crimson');
+  const EmbarkMadness = document.getElementById('embark_madness');
+  const EmbarkGauntlet = document.getElementById('embark_gauntlet');
+
+  
+function toggleEmbarkBtn1() {
+    EmbarkCrimson.style.display = 'none';
+    EmbarkMadness.style.display = 'none';
+    EmbarkGauntlet.style.display = 'none';
+    EmbarkDefault.style.display = 'block';
+}
+
+function toggleEmbarkBtnCC() {
+    EmbarkCrimson.style.display = 'block';
+    EmbarkMadness.style.display = 'none';
+    EmbarkGauntlet.style.display = 'none';
+    EmbarkDefault.style.display = 'none';
+}
+
+function toggleEmbarkBtnCoM() {
+    EmbarkCrimson.style.display = 'none';
+    EmbarkMadness.style.display = 'block';
+    EmbarkGauntlet.style.display = 'none';
+    EmbarkDefault.style.display = 'none';
+}
+
+function toggleEmbarkBtnDDs() {
+    EmbarkCrimson.style.display = 'none';
+    EmbarkMadness.style.display = 'none';
+    EmbarkGauntlet.style.display = 'block';
+    EmbarkDefault.style.display = 'none';
+}
   
 
