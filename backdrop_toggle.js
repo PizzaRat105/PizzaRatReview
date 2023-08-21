@@ -10,7 +10,8 @@ function toggleBackdropVisibility(selectedBackdrop) {
     // Show the selected backdrop
     selectedBackdrop.style.visibility = 'visible';
   }
-  
+
+
   // Get references to the buttons and backdrop elements
   const CrimsonBtn = document.querySelector('.crimson_btn');
   const MadnessBtn = document.querySelector('.madness_btn');
