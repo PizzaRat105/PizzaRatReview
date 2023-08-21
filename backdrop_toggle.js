@@ -1,6 +1,6 @@
 // Function to toggle the visibility of a backdrop element
 function toggleBackdropVisibility(selectedBackdrop) {
-    const allBackdrops = [ccBackdrop, comBackdrop, ddsBackdrop, visualsBackdrop, musicBackdrop, appcleanseBackdrop, appbossBackdrop, appgatherBackdrop, champgatherBackdrop, champbossBackdrop, champcleanseBackdrop];
+    const allBackdrops = [CrimsonBackdrop, MadnessBackdrop, GauntletBackdrop, visualsBackdrop, musicBackdrop, appcleanseBackdrop, appbossBackdrop, appgatherBackdrop, champgatherBackdrop, champbossBackdrop, champcleanseBackdrop];
   
     // Hide all backdrops
     allBackdrops.forEach(backdrop => {
@@ -12,9 +12,9 @@ function toggleBackdropVisibility(selectedBackdrop) {
   }
   
   // Get references to the buttons and backdrop elements
-  const ccBtn = document.querySelector('.cc_btn');
-  const comBtn = document.querySelector('.com_btn');
-  const ddsBtn = document.querySelector('.dds_btn');
+  const CrimsonBtn = document.querySelector('.crimson_btn');
+  const MadnessBtn = document.querySelector('.madness_btn');
+  const GauntletBtn = document.querySelector('.gauntlet_btn');
   const visualsBtn = document.querySelector('.visuals_btn');
   const musicBtn = document.querySelector('.music_btn');
   const appcleanseBtn = document.querySelector('.app_cleanse_btn');
@@ -24,9 +24,9 @@ function toggleBackdropVisibility(selectedBackdrop) {
   const champbossBtn = document.querySelector('.champ_boss_btn');
   const champcleanseBtn = document.querySelector('.champ_cleanse_btn');
   
-  const ccBackdrop = document.querySelector('.cc_backdrop');
-  const comBackdrop = document.querySelector('.com_backdrop');
-  const ddsBackdrop = document.querySelector('.dds_backdrop');
+  const CrimsonBackdrop = document.querySelector('.crimson_backdrop');
+  const MadnessBackdrop = document.querySelector('.madness_backdrop');
+  const GauntletBackdrop = document.querySelector('.gauntlet_backdrop');
   const visualsBackdrop = document.querySelector('.visuals_backdrop');
   const musicBackdrop = document.querySelector('.music_backdrop');
   const appcleanseBackdrop = document.querySelector('.app_cleanse_backdrop')
@@ -37,9 +37,9 @@ function toggleBackdropVisibility(selectedBackdrop) {
   const champcleanseBackdrop = document.querySelector('.champ_cleanse_backdrop');
   
   // Add click event listeners to the buttons
-  ccBtn.addEventListener('click', () => toggleBackdropVisibility(ccBackdrop));
-  comBtn.addEventListener('click', () => toggleBackdropVisibility(comBackdrop));
-  ddsBtn.addEventListener('click', () => toggleBackdropVisibility(ddsBackdrop));
+  CrimsonBtn.addEventListener('click', () => toggleBackdropVisibility(CrimsonBackdrop));
+  MadnessBtn.addEventListener('click', () => toggleBackdropVisibility(MadnessBackdrop));
+  GauntletBtn.addEventListener('click', () => toggleBackdropVisibility(GauntletBackdrop));
   visualsBtn.addEventListener('click', () => toggleBackdropVisibility(visualsBackdrop));
   musicBtn.addEventListener('click', () => toggleBackdropVisibility(musicBackdrop));
   appcleanseBtn.addEventListener('click', () => toggleBackdropVisibility(appcleanseBackdrop));
