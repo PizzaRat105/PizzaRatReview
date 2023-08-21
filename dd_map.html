@@ -11,20 +11,30 @@
 
     
 <body>
-    <div class = map_main>
-        <a href = "index.html" id = "back_arrow"> <img src ="images/back_arrow.png" class = "back_arrow"></a>
-
-        <div class = "backdrop cc_backdrop"></div>
-        <div class = mission_btn> <img src = "images/mission_icons/cc_button.png" class = "cc_btn button_long" id = "ccbtn"> </div>
-        <img src = "images/mission_boxes/cc_textbox.png" class= "quest_box" id = "cc_txtbox">
+       <div class = map_main>
+        <img src = "images/bg elements/dungeon_progressionbar_crimson.png" class = "dungeon_label crimson_label">
+        <img src = "images/bg elements/cc_invite.png" class = crimson_label_right>
+        <img src = "images/bg elements/dungeon_progress.png" class = "dungeon_label madness_label">
+        <img src = "images/bg elements/dungeon_progressionbar_gauntlet.png" class = "dungeon_label final_gauntlet_label">
+        <img src = "images/bg elements/dungeon_progressionbar_early.png" class = "dungeon_label early_game_label">
+        <img src = "images/bg elements/dungeon_progressionbar_visual.png" class = "dungeon_label visuals_label">
+        <img src = "images/bg elements/dungeon_progressionbar_late.png" class = "dungeon_label late_game_label">
+        <img src = "images/bg elements/dungeon_progressionbar_boss.png" class = "dungeon_label bosses_label">
+        <img src = "images/bg elements/dungeon_progressionbar_hero.png" class = "dungeon_label circus_label">
+        <div class  = madness_labeltxt> Color of Madness </div>
         
-        <div class = "backdrop com_backdrop"> </div>
-        <div class = mission_btn> <img src = "images/mission_icons/com_button.png" class = "com_btn button_long" id = "combtn"></div>
-        <img src = "images/mission_boxes/com_textbox.png" class= "quest_box" id = "com_txtbox">
 
-        <div class = "backdrop dds_backdrop "></div>
-        <div class = mission_btn> <img src = "images/mission_icons/dd_questbg.png" class = "dds_btn button_short" id = "ddsbtn"> </div>
-        <img src = "images/mission_boxes/dds_box.png" class= "quest_box" id = "dds_txtbox">
+        <div class = "backdrop crimson_backdrop"></div>
+        <div class = mission_btn> <img src = "images/mission_icons/cc_button.png" class = "crimson_btn button_long" id = "crimsonbutton"> </div>
+        <img src = "images/mission_boxes/cc_textbox.png" class= "quest_box" id = "crimson_txtbox">
+        
+        <div class = "backdrop madness_backdrop"> </div>
+        <div class = mission_btn> <img src = "images/mission_icons/com_button.png" class = "madness_btn button_long" id = "madnessbtn"></div>
+        <img src = "images/mission_boxes/com_textbox.png" class= "quest_box" id = "madness_txtbox">
+
+        <div class = "backdrop gauntlet_backdrop "></div>
+        <div class = mission_btn> <img src = "images/mission_icons/dd_questbg.png" class = "gauntlet_btn button_short" id = "gauntletbtn"> </div>
+        <img src = "images/mission_boxes/dds_box.png" class= "quest_box" id = "gauntlet_txtbox">
 
         <div class = "backdrop app_cleanse_backdrop"></div>
         <div class = "mission_btn"> <img src = "images/mission_icons/early_btn1.png" class = "app_cleanse_btn button_short" id = "early1"> </div>
@@ -40,7 +50,7 @@
         
         <div class = "backdrop visuals_backdrop"></div>
         <div class = mission_btn> <img src = "images/mission_icons/visuals_btn.png" class = "visuals_btn button_medium" id = "visualsbtn"> </div>
-        <img src = "images/mission_boxes/visuals.png" class= "quest_box" id = "visuals_box">
+        <img src = "images/quest_textbox.png" class= "quest_box" id = "visuals_box">
 
         <div class = "backdrop music_backdrop"></div>
         <div class = mission_btn> <img src = "images/mission_icons/music_btn.png" class= "music_btn button_medium" id = "musicbtn"> </div>
@@ -95,7 +105,7 @@
         <img src = "images/Boss_Boxes/boss_box_flesh.png" class = "boss_box" id = "bossbox8">
 
 
-        <img src = "images/mission_icons/bc_button.png" class = "button_long bc_button" id = "circus">
+        <img src = "images/circus_btn.png" class = " bc_button" id = "circus">
         <img src = "images/mission_boxes/bc_textbox.png" class = "quest_box" id = "circusbox">
 
         <img src = "images/mission_icons/hero_btn.png" class = "button_long hero_button" id = "hero_btn">
@@ -106,30 +116,33 @@
             <img src = "images/dd_buttontop.png" class = "dd_buttontop" id  = "embarktop">
         </div>
 
-        <div id = "embark_cc" class= "embark_btn">
-            <a href = "cc.html" id = "cclink">
-                <img src = "images/cc_button.png" class = "dd_button" id = "cc_embark">
+        <div id = "embark_crimson" class= "embark_btn embark_branch">
+            <a href = "crimson_court.html" id = "cclink">
+                <img src = "images/cc_button.png" class = "dd_button" id = "crimson_embark">
                 <img src = "images/dd_buttontop.png" class = "dd_buttontop" id  = "embarktop">
             </a>
 
         </div>
 
-        <div id = "embark_dds" class = "embark_btn">
-            <a href = "dds.html" id = "ddslink">
-                <img src = "images/finale_btn.png" class = "dd_button" id = "dds_embark">
+        <div id = "embark_gauntlet" class = "embark_btn embark_branch">
+            <a href = "gauntlet.html" id = "ddslink">
+                <img src = "images/finale_btn.png" class = "dd_button" id = "gauntlet_embark">
                 <img src = "images/dd_buttontop.png" class = "dd_buttontop" id  = "embarktop">
             </a>
 
         </div>
 
-        <div id = "embark_com" class = embark_btn>
-            <a href = "com.html" id = "comlink"> 
-                <img src = "images/com_embark.png" class= "dd_button" id = "com_embark">
-                <img src = "images/com_embarktop.png" class = "dd_buttontop" id = "com_embarktop">
+        <div id = "embark_madness" class = "embark_btn embark_branch">
+            <a href = "color_of_madness.html" id = "comlink"> 
+                <img src = "images/com_embark.png" class= "dd_button" id = "madness_embark">
+                <img src = "images/com_embarktop.png" class = "dd_buttontop" id = "madness_embarktop">
             </a>
             
         </div>
         
+        <img src = "images/bg elements/CC_infestation.png" class = crimson_banner>
+        <img src = "images/bg elements/estate_title.png" class = estate_title>
+        <a href = "index.html" id = "back_arrow"> <img src ="images/back_arrow.png" class = "back_arrow"></a>
        
     
     </div>
