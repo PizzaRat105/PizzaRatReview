@@ -703,7 +703,7 @@ button{background: white; border: none; width:20px}
 .pos_container{display: flex; justify-content: center; margin-top: 0.4vw; margin-bottom: 0.2vw;}
 .blank_space{width: 1.5vw}
 .desc_text{line-height: 1vw;}
-.cleave_double{border-top:0.18vw solid rgb(160, 43, 32); width:1.2vw;
+.cleave_double{border-top:0.18vw solid rgb(160, 43, 32); width:0.8vw;
     position: absolute; top: 0.6vw;}
 
 .cleave_triple{border-top:0.18vw solid rgb(160, 43, 32); width:1.8vw;
