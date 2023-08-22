@@ -53,12 +53,11 @@ button{background: white; border: none; width:20px}
 .bosses_label{top: 17.4vw; left: 78vw;}
 .heroes_label{top: 34.5vw; left: 79vw}
 
+.crimson_backdrop{top: 16vw; left: 34vw;visibility: hidden;}
+.crimson_btn{top: 17.2vw; left: 35.4vw;}
 
-.crimson_backdrop{top: 16vw; left: 33.8vw;visibility: hidden;}
-.crimson_btn{top: 17.2vw; left: 35.2vw;}
-
-.madness_backdrop{top: 28.6vw; left: 32.7vw;visibility: hidden;}
-.madness_btn{top: 29.7vw; left: 34vw;}
+.madness_backdrop{top: 28.3vw; left: 32.9vw;visibility: hidden;}
+.madness_btn{top: 29.4vw; left: 34.2vw;}
 
 .gauntlet_backdrop{top: 5.7vw; left: 76.5vw; visibility: hidden;}
 .gauntlet_btn{top: 7.6vw; left: 78.2vw; }
@@ -87,8 +86,8 @@ button{background: white; border: none; width:20px}
 .champ_cleanse_backdrop{top: 25.1vw; left: 69vw; visibility: hidden;}
 .champ_cleanse_btn{top: 26.2vw; left: 70.3vw;}
 
-
-.boss_box{width: 24.1vw;height: 39.7vw; position: absolute; visibility: hidden; left: 9vw; top: 5.6vw;}
+.quest_box{width: 24vw;height: 38.4vw; position: absolute; visibility: hidden; left: 9vw; top: 6.9vw;}
+.boss_box{width: 24vw;height: 38.4vw; position: absolute; visibility: hidden; left: 9vw; top: 6.9vw;}
 
 #boss1{left: 80vw; top: 20.7vw;}
 #boss2{left: 83.6vw; top: 20.7vw;}
@@ -102,25 +101,30 @@ button{background: white; border: none; width:20px}
 #boss7{left: 80vw; top: 31.5vw;}
 #boss8{left: 83.6vw; top: 31.5vw;}
 
-.bc_button{left:3.3vw; position: absolute; top: 29vw; width: 5.5vw;}
+.bc_button{left:2.8vw; position: absolute; top: 29vw; width: 5.5vw;}
 .bc_button:hover{filter: brightness(150%);}
 .hero_button{left: 81vw; top: 37.5vw;}
 .mod_btn{width: 5vw; position: absolute; top: 35vw; left: 3vw}
 
-.quest_box{width: 24.1vw;height: 39.7vw; position: absolute; visibility: hidden; left: 9vw; top: 5.6vw;}
 
-.back_arrow{position: absolute; top: 3.2vw; left: 12.3vw; height: 2vw;}
+
+.back_arrow{position: absolute; top: 4.3vw; left: 11.8vw; height: 2vw;}
 .back_arrow:hover{filter: brightness(150%);}
-.crimson_banner{width: 9.5vw; position: absolute; top: 5vw; left: 1.7vw;}
-.estate_title{height: 12vw; position: absolute; left: 0.5vw; width: 48vw}
+.crimson_banner{width: 9.5vw; position: absolute; top: 5vw; left: 1.2vw;}
+.estate_title{height: 15vw; position: absolute;  width: 48vw}
 
-#embark_button{height: 3vw; position: absolute; top: 44.7vw; left: 48vw; display: none;}
+#embark_button{height: 3vw; position: absolute; top: 44.7vw; left: 49.3vw; display: none;}
 #embark_button:hover{filter: brightness(170%);}
-.embark_btn{height: 5vw; position: absolute; top: 45vw; left: 48vw; display: none;}
+.embark_btn{height: 5vw; position: absolute; top: 45vw; left: 49.3vw; display: none;}
 .embark_btn:hover{filter: brightness(170%);}
 .dd_button{position: absolute;  width: 16vw; height: 2.3vw; margin-top: 1.1vw; }
 .dd_buttontop{position: absolute; width: 16vw; margin-top: 0.4vw; }
 .embark_branch{top: 44.7vw}
+
+.opinion_header{position: absolute; top: 37.7vw;left:50vw;
+    font-family: 'Ubuntu', sans-serif; color:rgb(93, 91, 79);font-size: 1.6vw; font-weight: 700;}
+.opinion_box{width: 25vw; height:6vw;
+    position: absolute; top: 39.8vw; left:45vw}
 
 .padding{height:10vw; width: 100vw; background-color: black;}
 
