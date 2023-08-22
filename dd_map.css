@@ -709,7 +709,7 @@ button{background: white; border: none; width:20px}
 .cleave_double{border-top:0.18vw solid rgb(160, 43, 32); width:0.8vw;
     position: absolute; top: 0.6vw;}
 
-.cleave_triple{border-top:0.18vw solid rgb(160, 43, 32); width:1.8vw;
+.cleave_triple{border-top:0.18vw solid rgb(160, 43, 32); width:1.6vw;
         position: absolute; top: 0.6vw;}
 
 .quad_cleave{border-top:0.18vw solid rgb(160, 43, 32); width:2.4vw;
