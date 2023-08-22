@@ -425,24 +425,27 @@ button{background: white; border: none; width:20px}
 .misc_numbers_box2{height: 7vw;position: absolute; left: 37vw; top: -0.1vw; width:15vw}
 .misc_statline{line-height: 1.8vw; }
 
-#weaponabom{left:-1.9vw}  #armorabom{left:2.8vw}
-#weaponanti{left:-2.1vw}  #armoranti{left:0.8vw}
-#weaponarb{left:-0.2vw}  #armorarb{left:4.75vw}
-#weaponbh{left:-2.2vw}  #armorbh{left:3.7vw}
-#weaponcrus{left:-2.1vw}  #armorcrus{left:2.45vw}
-#weaponflag{left:-0.83vw}  #armorflag{left:3.25vw}
-#weapongr{left:-1.9vw}  #armorgr{left:4vw}
-#weaponhell{left:-1.85vw}  #armorhell{left:4.15vw}
-#weaponhwm{left:-3.3vw}  #armorhwm{left:2.9vw}
-#weaponhm{left:-0.8vw}  #armorhm{left:2.9vw}
-#weaponjes{left:-1.3vw}  #armorjes{left:2.35vw}
-#weaponlep{left:-2.15vw}  #armorlep{left:4vw}
-#weaponmaa{left:-0.4vw}  #armormaa{left:3.8vw}
+#weaponabom{left:-2vw}  #armorabom{left:2.5vw}
+#weaponanti{left:-2vw}  #armoranti{left:0.8vw}
+#weaponarb{left:-0.2vw}  #armorarb{left:4.55vw}
+#weaponbh{left:-2.1vw}  #armorbh{left:3.4vw}
+#weaponcrus{left:-2.1vw}  #armorcrus{left:2.1vw}
+#weaponflag{left:-0.83vw}  #armorflag{left:3.1vw}
+#weapongr{left:-1.9vw}  #armorgr{left:3.8vw}
+#weaponhell{left:-1.85vw}  #armorhell{left:4vw}
+#weaponhwm{left:-3.3vw}  #armorhwm{left:2.7vw}
+#weaponhm{left:-0.8vw}  #armorhm{left:2.7vw}
+#weaponjes{left:-1.3vw}  #armorjes{left:2.2vw}
+#weaponlep{left:-2.15vw}  #armorlep{left:3.8vw}
+#weaponmaa{left:-0.4vw}  #armormaa{left:3.7vw}
 #weaponmusk{left:-0.3vw}  #armormusk{left:1.4vw}
-#weaponocc{left:-2.3vw}  #armorocc{left:3.1vw}
-#weaponpd{left:-2.65vw}  #armorpd{left:1.9vw}
-#weaponsb{left:-2vw}  #armorsb{left:5vw}
-#weaponves{left:-2vw}  #armorves{left:2vw}
+#weaponocc{left:-2vw}  #armorocc{left:3vw}
+#weaponpd{left:-2.6vw}  #armorpd{left:1.7vw}
+#weaponsb{left:-1.95vw}  #armorsb{left:4.85vw}
+#weaponves{left:-2vw}  #armorves{left:1.9vw}
+
+
+
 
 
 #grid1{ left: 1.5vw; }
@@ -458,244 +461,244 @@ button{background: white; border: none; width:20px}
 #FlagGrid3{left:17.6vw;}
 #FlagGrid4{left:22.2vw;}
 
-#combatabom1{left: -5.3vw}
-#combatabom2{ left: 3.5vw;}
-#combatabom3{ left: 2.9vw}
-#combatabom4{ left: 14.7vw}
-#combatabom5{ left: 17vw}
+#combatabom1{left: -4.8vw}
+#combatabom2{ left: 3.6vw;}
+#combatabom3{ left: 3.4vw}
+#combatabom4{ left: 14.8vw}
+#combatabom5{ left: 17.15vw}
 #combatabom6{ left: 22vw}
-#combatabom7{ left: 21.3vw}
+#combatabom7{ left: 21.8vw}
 
 #restabom1{ left: 11.6vw;}
-#restabom2{ left: 16.5vw;}
-#restabom3{ left: 20vw;}
-#restabom4{ left: 26.3vw;}
+#restabom2{ left: 16.8vw;}
+#restabom3{ left: 20.45vw;}
+#restabom4{ left: 26.5vw;}
 
 #combatanti1{left:-1vw}
-#combatanti2{ left:-1.6vw;}
-#combatanti3{ left: 6.3vw}
-#combatanti4{ left: 11.5vw}
+#combatanti2{ left:-1.2vw;}
+#combatanti3{ left: 6.6vw}
+#combatanti4{ left: 11.9vw}
 #combatanti5{ left: 17vw}
-#combatanti6{ left: 22.2vw}
-#combatanti7{ left: 25.7vw}
+#combatanti6{ left: 22.35vw}
+#combatanti7{ left: 26.1vw}
 
 #restanti1{ left: 11.1vw;}
 #restanti2{ left: 16.5vw;}
-#restanti3{ left: 20.1vw;}
+#restanti3{ left: 20.5vw;}
 #restanti4{ left: 25.2vw;}
 
-#combatarb1{left: -1.3vw;}
-#combatarb2{ left: 2.1vw;}
-#combatarb3{ left: 6.4vw}
-#combatarb4{ left: 12vw}
+#combatarb1{left: -1.2vw;}
+#combatarb2{ left: 2.4vw;}
+#combatarb3{ left: 6.55vw}
+#combatarb4{ left: 12.3vw}
 #combatarb5{ left: 17.3vw}
-#combatarb6{ left: 20vw}
-#combatarb7{ left: 24.5vw}
+#combatarb6{ left: 20.65vw}
+#combatarb7{ left: 24.8vw}
 
-#restarb1{ left: 11.6vw;}
-#restarb2{ left: 17.4vw;}
-#restarb3{ left: 18.8vw;}
+#restarb1{ left: 11.9vw;}
+#restarb2{ left: 17.35vw;}
+#restarb3{ left: 19.6vw;}
 #restarb4{ left: 27.7vw;}
 
-#combatmusk1{left: -1.3vw;}
-#combatmusk2{ left: 2.1vw;}
-#combatmusk3{ left: 6.4vw}
-#combatmusk4{ left: 12vw}
+#combatmusk1{left: -1.1vw;}
+#combatmusk2{ left: 2.4vw;}
+#combatmusk3{ left: 6.55vw}
+#combatmusk4{ left: 12.3vw}
 #combatmusk5{ left: 17.3vw}
-#combatmusk6{ left: 20vw}
-#combatmusk7{ left: 24.5vw}
+#combatmusk6{ left: 20.65vw}
+#combatmusk7{ left: 24.8vw}
 
-#restmusk1{ left: 11.6vw;}
-#restmusk2{ left: 17.4vw;}
-#restmusk3{ left: 18.8vw;}
+#restmusk1{ left: 11.9vw;}
+#restmusk2{ left: 17.35vw;}
+#restmusk3{ left: 19.6vw;}
 #restmusk4{ left: 27.7vw;}
 
 
 #combatbh1{left: -1.1vw}
-#combatbh2{ left: 1.3vw;}
+#combatbh2{ left: 2.1vw;}
 #combatbh3{ left: 8.2vw}
-#combatbh4{ left: 11.8vw}
+#combatbh4{ left: 12.2vw}
 #combatbh5{ left: 17.5vw}
-#combatbh6{ left: 21.8vw}
-#combatbh7{ left: 21.2vw}
+#combatbh6{ left: 22vw}
+#combatbh7{ left: 21.8vw}
 
-#restbh1{ left: 11.4vw;}
-#restbh2{ left: 12.5vw;}
-#restbh3{ left: 20vw;}
-#restbh4{ left: 24vw;}
+#restbh1{ left: 11.5vw;}
+#restbh2{ left: 13.5vw;}
+#restbh3{ left: 20.5vw;}
+#restbh4{ left: 24.5vw;}
 
 #combatcrus1{left: -1vw}
-#combatcrus2{ left: 3.35vw;}
+#combatcrus2{ left: 3.7vw;}
 #combatcrus3{ left: 8.2vw}
-#combatcrus4{ left: 12.7vw}
-#combatcrus5{ left: 18.8vw}
-#combatcrus6{ left: 21.8vw}
+#combatcrus4{ left: 12.85vw}
+#combatcrus5{ left: 19vw}
+#combatcrus6{ left: 22vw}
 #combatcrus7{ left: 28.2vw}
 
-#restcrus1{ left: 11.4vw;}
-#restcrus2{ left: 16.2vw;}
-#restcrus3{ left: 21.5vw;}
-#restcrus4{ left: 25vw;}
+#restcrus1{ left: 11.5vw;}
+#restcrus2{ left: 16.5vw;}
+#restcrus3{ left: 21.9vw;}
+#restcrus4{ left: 25.4vw;}
 
-#combatflag1{left: -4.1vw}
-#combatflag2{ left: -2vw;}
-#combatflag3{ left: -1.2vw}
-#combatflag4{ left: 10vw}
-#combatflag5{ left: 8.1vw}
-#combatflag6{ left: 23.5vw}
-#combatflag7{ left: 21vw}
+#combatflag1{left: -3.7vw}
+#combatflag2{ left: -1.3vw;}
+#combatflag3{ left: -0.5vw}
+#combatflag4{ left: 10.5vw}
+#combatflag5{ left: 8.8vw}
+#combatflag6{ left: 23.7vw}
+#combatflag7{ left: 21.6vw}
 
-#restflag1{ left: 6.4vw;}
+#restflag1{ left: 6.5vw;}
 #restflag2{ left: 10.9vw;}
-#restflag3{ left: 16vw;}
-#restflag4{ left: 20.6vw;}
+#restflag3{ left: 15.9vw;}
+#restflag4{ left: 20.8vw;}
 
 #combatgr1{left: -1vw}
-#combatgr2{ left: 3.4vw;}
-#combatgr3{ left: 5.3vw}
-#combatgr4{ left: 5.7vw}
-#combatgr5{ left: 12.6vw}
-#combatgr6{ left: 16.3vw}
+#combatgr2{ left: 3.5vw;}
+#combatgr3{ left: 5.6vw}
+#combatgr4{ left: 6.7vw}
+#combatgr5{ left: 13.3vw}
+#combatgr6{ left: 16.9vw}
 #combatgr7{ left: 26.9vw}
 
-#restgr1{ left: 13.5vw;}
-#restgr2{ left: 16.7vw;}
-#restgr3{ left: 19.6vw;}
-#restgr4{ left: 24.7vw;}
+#restgr1{ left: 13.65vw;}
+#restgr2{ left: 17vw;}
+#restgr3{ left: 19.8vw;}
+#restgr4{ left: 24.9vw;}
 
 #combathell1{left: -1vw}
-#combathell2{ left: 3.8vw;}
-#combathell3{ left: 6vw}
-#combathell4{ left: 12.9vw}
-#combathell5{ left: 11.7vw}
-#combathell6{ left: 22.55vw}
-#combathell7{ left: 20.65vw}
+#combathell2{ left: 3.7vw;}
+#combathell3{ left: 6.45vw}
+#combathell4{ left: 12.8vw}
+#combathell5{ left: 12.4vw}
+#combathell6{ left: 22.6vw}
+#combathell7{ left: 21.2vw}
 
-#resthell1{ left: 9.1vw;}
-#resthell2{ left: 17vw;}
-#resthell3{ left: 21vw;}
-#resthell4{ left: 26.5vw;}
+#resthell1{ left: 9.7vw;}
+#resthell2{ left: 17.3vw;}
+#resthell3{ left: 21.5vw;}
+#resthell4{ left: 26.8vw;}
 
-#combathwm1{left: -1.2vw}
-#combathwm2{ left: 3.5vw;}
-#combathwm3{ left: 7.2vw}
-#combathwm4{ left: 8.2vw}
-#combathwm5{ left: 11.75vw}
-#combathwm6{ left: 14.2vw}
-#combathwm7{ left: 21.1vw}
+#combathwm1{left: -1vw}
+#combathwm2{ left: 3.6vw;}
+#combathwm3{ left: 7.6vw}
+#combathwm4{ left: 10.8vw}
+#combathwm5{ left: 12.5vw}
+#combathwm6{ left: 14.7vw}
+#combathwm7{ left: 21.7vw}
 
-#resthwm1{ left: 12.1vw;}
-#resthwm2{ left: 14.7vw;}
-#resthwm3{ left: 19.5vw;}
-#resthwm4{ left: 22.3vw;}
+#resthwm1{ left: 12.3vw;}
+#resthwm2{ left: 15.3vw;}
+#resthwm3{ left: 19.8vw;}
+#resthwm4{ left: 22.6vw;}
 
-#combathm1{left: -1vw}
-#combathm2{ left: 3.5vw;}
-#combathm3{ left: 6.3vw}
-#combathm4{ left: 12.5vw}
-#combathm5{ left: 17.9vw}
-#combathm6{ left: 23.5vw}
+#combathm1{left: -1.05vw}
+#combathm2{ left: 3.55vw;}
+#combathm3{ left: 6.7vw}
+#combathm4{ left: 12.6vw}
+#combathm5{ left: 18.2vw}
+#combathm6{ left: 23.7vw}
 #combathm7{ left: 26.7vw}
 
-#resthm1{ left: 8.6vw;}
-#resthm2{ left: 17.2vw;}
+#resthm1{ left: 8.9vw;}
+#resthm2{ left: 17.5vw;}
 #resthm3{ left: 21.5vw;}
 #resthm4{ left: 24.7vw;}
 
-#combatjes1{left: -0.9vw}
-#combatjes2{ left: 1vw;}
-#combatjes3{ left: 0.6vw}
-#combatjes4{ left: 3.5vw}
-#combatjes5{ left: 11.7vw;}
-#combatjes6{ left: 21.4vw}
-#combatjes7{ left: 26vw}
+#combatjes1{left: -0.8vw}
+#combatjes2{ left: 1.3vw;}
+#combatjes3{ left: 0.9vw}
+#combatjes4{ left: 4.4vw}
+#combatjes5{ left: 12.1vw;}
+#combatjes6{ left: 21.5vw}
+#combatjes7{ left: 26.2vw}
 
-#restjes1{ left: 13vw;}
-#restjes2{ left: 14.9vw;}
-#restjes3{ left: 22.2vw;}
-#restjes4{ left: 26.9vw;}
+#restjes1{ left: 12.7vw;}
+#restjes2{ left: 14.95vw;}
+#restjes3{ left: 22.5vw;}
+#restjes4{ left: 27vw;}
 
-#combatlep1{left: -1.1vw}
-#combatlep2{ left: 3.5vw;}
-#combatlep3{ left: 2.5vw}
-#combatlep4{ left: 5.1vw}
-#combatlep5{ left: 19.3vw}
-#combatlep6{ left: 16.1vw}
-#combatlep7{ left: 24.7vw}
+#combatlep1{left: -0.9vw}
+#combatlep2{ left: 3.55vw;}
+#combatlep3{ left: 3.3vw}
+#combatlep4{ left: 5.7vw}
+#combatlep5{ left: 19.4vw}
+#combatlep6{ left: 16.6vw}
+#combatlep7{ left: 25vw}
 
-#restlep1{ left: 11.6vw;}
-#restlep2{ left: 15.7vw;}
-#restlep3{ left: 22.3vw;}
+#restlep1{ left: 11.8vw;}
+#restlep2{ left: 16.2vw;}
+#restlep3{ left: 22.4vw;}
 #restlep4{ left: 26.1vw;}
 
-#combatmaa1{left: -1vw}
-#combatmaa2{ left: 2.8vw;}
-#combatmaa3{ left: 0.7vw}
-#combatmaa4{ left: 13.6vw}
-#combatmaa5{ left: 5.4vw}
-#combatmaa6{ left: 19.9vw}
-#combatmaa7{ left: 26.7vw}
+#combatmaa1{left: -0.8vw}
+#combatmaa2{ left: 3vw;}
+#combatmaa3{ left: 1.35vw}
+#combatmaa4{ left: 13.85vw}
+#combatmaa5{ left: 6.3vw}
+#combatmaa6{ left: 20.1vw}
+#combatmaa7{ left: 26.9vw}
 
 #restmaa1{ left: 11.4vw;}
-#restmaa2{ left: 17.2vw;}
-#restmaa3{ left: 22.5vw;}
-#restmaa4{ left: 24.2vw;}
+#restmaa2{ left: 17.3vw;}
+#restmaa3{ left: 22.7vw;}
+#restmaa4{ left: 24.6vw;}
 
 #combatocc1{left: -1.1vw}
-#combatocc2{ left: 3.5vw;}
-#combatocc3{ left: 6.2vw}
+#combatocc2{ left: 3.6vw;}
+#combatocc3{ left: 6.7vw}
 #combatocc4{ left: 13vw}
-#combatocc5{ left: 15.5vw}
+#combatocc5{ left: 15.8vw}
 #combatocc6{ left: 22.1vw}
 #combatocc7{ left: 26.8vw}
 
-#restocc1{ left: 12vw;}
-#restocc2{ left: 14.2vw;}
-#restocc3{ left: 21.9vw;}
-#restocc4{ left: 24.5vw;}
+#restocc1{ left: 12.4vw;}
+#restocc2{ left: 14.8vw;}
+#restocc3{ left: 22.4vw;}
+#restocc4{ left: 24.6vw;}
 
-#combatpd1{left: -3.7vw}
-#combatpd2{ left: 3.6vw;}
+#combatpd1{left: -3.4vw}
+#combatpd2{ left: 3.7vw;}
 #combatpd3{ left: 8.3vw}
-#combatpd4{ left: 12.8vw}
-#combatpd5{ left: 17.2vw}
-#combatpd6{ left: 22vw}
-#combatpd7{ left: 24.4vw}
+#combatpd4{ left: 12.9vw}
+#combatpd5{ left: 17.4vw}
+#combatpd6{ left: 22.1vw}
+#combatpd7{ left: 24.6vw}
 
-#restpd1{ left: 10.3vw;}
-#restpd2{ left: 18.3vw;}
-#restpd3{ left: 20vw;}
+#restpd1{ left: 10.6vw;}
+#restpd2{ left: 18.5vw;}
+#restpd3{ left: 20.4vw;}
 #restpd4{ left: 26.3vw;}
 
-#combatsb1{left: -1.1vw}
-#combatsb2{ left: -0.9vw;}
+#combatsb1{left: -1vw}
+#combatsb2{ left: -0.5vw;}
 #combatsb3{ left: 8.3vw}
 #combatsb4{ left: 12.9vw}
-#combatsb5{ left: 12vw}
-#combatsb6{ left: 22vw}
-#combatsb7{ left: 27.3vw}
+#combatsb5{ left: 12.5vw}
+#combatsb6{ left: 22.1vw}
+#combatsb7{ left: 27.5vw}
 
-#restsb1{ left: 10.2vw;}
-#restsb2{ left: 16.7vw;}
-#restsb3{ left: 20.1vw;}
+#restsb1{ left: 10.6vw;}
+#restsb2{ left: 17vw;}
+#restsb3{ left: 20.2vw;}
 #restsb4{ left: 25.7vw;}
 
 #combatves1{left: -1vw}
-#combatves2{ left: 3.5vw;}
+#combatves2{ left: 3.6vw;}
 #combatves3{ left: 8.4vw}
 #combatves4{ left: 14.5vw}
 #combatves5{ left: 18.7vw}
-#combatves6{ left: 20.2vw}
+#combatves6{ left: 20.5vw}
 #combatves7{ left: 26.7vw}
 
 #restves1{ left: 12.7vw;}
-#restves2{ left: 14.1vw;}
-#restves3{ left: 19.1vw;}
+#restves2{ left: 14.6vw;}
+#restves3{ left: 19.4vw;}
 #restves4{ left: 25.7vw;}
 
 #genericamp1{ left: 0vw}
-#genericamp2{ left: 4.5vw}
-#genericamp3{left: 7.9vw}
+#genericamp2{ left: 4.3vw}
+#genericamp3{left: 8.1vw}
 
 
 
@@ -720,23 +723,23 @@ button{background: white; border: none; width:20px}
 
 .pos1_2crus{left:5.5vw}
 
-.pos3_4flag{left:12.6vw}
+.pos3_4flag{left:12.4vw}
 
 .pos2_3gr{left: 9.3vw;}
 
 .pos1_2hell{left:7.6vw; top: 1.9vw}
 .pos1_2_3hell{left:11vw;}
 
-.pos1_2_3hwm{left:10.2vw;}
+.pos1_2_3hwm{left:9.9vw;}
 
 .quad_hm{left:5.5vw;}
 
-.quad_jes{left:15.1vw; top: 1.9vw;}
+.quad_jes{left:14vw; top: 1.9vw;}
 .pos2_3jes{left:9vw;}
 
 .pos1_2lep{left:5.5vw;}
 
-.quad_maa{left:13vw}
+.quad_maa{left:12.7vw}
 
 .pos3_4occ{left: 7.2vw;}
 
