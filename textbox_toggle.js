@@ -14,9 +14,9 @@ function toggleMissionBox(selectedQuestBox){
 
 
 
-  const CrimsonBtn = document.getElementById('crimsonbutton');
-  const MadnessBtn = document.getElementById('madnessbtn');
-  const GauntletBtn = document.getElementById('gauntletbtn');
+  const CrimsonButton = document.getElementById('crimsonbutton');
+  const MadnessButton = document.getElementById('madnessbtn');
+  const GauntletButton = document.getElementById('gauntletbtn');
   const EarlyBtn1 = document.getElementById('early1');
   const EarlyBtn2 = document.getElementById('early2');
   const EarlyBtn3 = document.getElementById('early3');
@@ -64,12 +64,12 @@ function toggleMissionBox(selectedQuestBox){
   const CircusBox = document.getElementById("circusbox");
 
 
-  CrimsonBtn.addEventListener('click', () => toggleMissionBox(CrimsonBox));
-  CrimsonBtn.addEventListener('click', () => toggleEmbarkBtnCC());
-  MadnessBtn.addEventListener('click', () => toggleMissionBox(MadnessBox));
-  MadnessBtn.addEventListener('click', () => toggleEmbarkBtnCoM());
-  GauntletBtn.addEventListener('click', () => toggleMissionBox(GauntletBox));
-  GauntletBtn.addEventListener('click', () => toggleEmbarkBtnDDs());
+  CrimsonButton.addEventListener('click', () => toggleMissionBox(CrimsonBox));
+  CrimsonButton.addEventListener('click', () => toggleEmbarkBtnCC());
+  MadnessButton.addEventListener('click', () => toggleMissionBox(MadnessBox));
+  MadnessButton.addEventListener('click', () => toggleEmbarkBtnCoM());
+  GauntletButton.addEventListener('click', () => toggleMissionBox(GauntletBox));
+  GauntletButton.addEventListener('click', () => toggleEmbarkBtnDDs());
   EarlyBtn1.addEventListener('click', () => toggleMissionBox(EarlyBox1));
   EarlyBtn2.addEventListener('click', () => toggleMissionBox(EarlyBox2));
   EarlyBtn3.addEventListener('click', () => toggleMissionBox(EarlyBox3));
