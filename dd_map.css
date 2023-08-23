@@ -104,7 +104,7 @@ button{background: white; border: none; width:20px}
 .circus_btn_label{font-family: dd_logo;  color: rgb(199, 179, 107); font-size: 1.9vw;
     position: absolute; top: 27vw;left: 2vw;}
 
-.provison_btn:hover{filter: brightness(150%);}
+.provision_btn:hover{filter: brightness(150%);}
 .money_btn:hover{filter: brightness(150%);}
 .bc_button:hover{filter: brightness(150%);}
 .mod_btn:hover{filter: brightness(150%);}
