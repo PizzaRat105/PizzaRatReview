@@ -9,15 +9,44 @@ const HeroPorts = document.getElementsByClassName('hero_port');
 const OpenAudio = document.getElementById('page_open');
 OpenAudio.volume = 0.6;
 const ProvisionerBtn = document.getElementById('provisioner')
+const MoneyBtn = document.getElementById('Money')
+const BlueprintOpen = document.getElementById('blueprint_btn_open')
+const BlueprintClosed = document.getElementById('blueprint_btn_closed')
+const BlueprintFrame = document.getElementById('blueprint_frame')
 
 ProvisionerBtn.addEventListener('click' , function() {
   PlayPageOpn()
 })
 
+MoneyBtn.addEventListener('click' , function() {
+  PlayPageOpn()
+})
+
+BlueprintOpen.addEventListener('click' , function() {
+  CloseAudio.currentTime = 0;
+  CloseAudio.play();
+  BlueprintClosed.style.display = 'block'
+  BlueprintOpen.style.display = 'none'
+  BlueprintFrame.style.display = 'block'
+})
+
+BlueprintClosed.addEventListener('click' , function() {
+  PlayPageOpn()
+  BlueprintClosed.style.display = 'none'
+  BlueprintOpen.style.display = 'block'
+  BlueprintFrame.style.display = 'none'
+})
+
+function PlayPageOpn() {
+  OpenAudio.currentTime = 0;
+  OpenAudio.play();
+}
+
 function PlayBtnPress() {
   BtnSelectAudio.currentTime = 0; // Reset the playback position to the beginning
   BtnSelectAudio.play();
 }
+
 
 for (const renameBtn of renameBtns) {
   renameBtn.addEventListener('click', function() {PlayBtnPress();})}
@@ -30,11 +59,6 @@ for (const PastHeroBtn of PastHeroBtns) {
 
 for (const NextHeroBtn of NextHeroBtns) {
   NextHeroBtn.addEventListener('click', function() {PlayBtnPress();})};
-
-function PlayPageOpn() {
-  OpenAudio.currentTime = 0;
-  OpenAudio.play();
-}
 
 for (const HeroPort of HeroPorts) {
   HeroPort.addEventListener('click', function() {
