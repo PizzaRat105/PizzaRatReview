@@ -10,21 +10,30 @@
 </head>
 
 <body>
-       <div class = map_main>
+     <div class = map_main>
         <img src = "images/bg_elements/dungeon_progressionbar_crimson.png" class = "dungeon_label crimson_label">
         <img src = "images/bg_elements/cc_invite.png" class = crimson_label_right>
         <img src = "images/bg_elements/dungeon_progress.png" class = "dungeon_label madness_label">
         <img src = "images/bg_elements/dungeon_progressionbar_gauntlet.png" class = "dungeon_label final_gauntlet_label">
-        <img src = "images/bg_elements/dungeon_progressionbar_early.png" class = "dungeon_label early_game_label">
-        <img src = "images/bg_elements/dungeon_progressionbar_visual.png" class = "dungeon_label visuals_label">
-        <img src = "images/bg_elements/dungeon_progressionbar_late.png" class = "dungeon_label late_game_label">
-        <img src = "images/bg_elements/dungeon_progressionbar_boss.png" class = "dungeon_label bosses_label">
-        <img src = "images/bg_elements/dungeon_progressionbar_hero.png" class = "dungeon_label heroes_label">
+        <img src = "images/bg_elements/dungeon_progressionbar_ruins.png" class = "dungeon_label ruins_label">
+        <img src = "images/bg_elements/dungeon_progressionbar_warrens.png" class = "dungeon_label warrens_label">
+        <img src = "images/bg_elements/dungeon_progressionbar_weald.png" class = "dungeon_label weald_label">
+        <img src = "images/bg_elements/dungeon_progressionbar_cove.png" class = "dungeon_label cove_label">
+        <img src = "images/bg_elements/dungeon_progressionbar_hamlet.png" class = "dungeon_label hamlet_label">
         <div class  = madness_labeltxt> Color of Madness </div>
-           
+
         <div class = opinion_header>The Opinion Section</div>
+
         <img src = "images/bg_elements/embark_bg.png" class = opinion_box>
-           
+        <div class = opinion_container> 
+            <img src = "images/bg_elements/early_game.png" class = opinion_bg>
+            <img src = "images/bg_elements/late_game.png" class = opinion_bg>
+            <img src = "images/bg_elements/general_tips.png" class = opinion_bg>
+            <img src = "images/bg_elements/overall_thoughts.png" class = opinion_bg>
+
+        </div>
+        
+        
 
         <div class = "backdrop crimson_backdrop"></div>
         <div class = mission_btn> <img src = "images/mission_icons/cc_button.png" class = "crimson_btn button_long" id = "crimsonbutton"> </div>
@@ -41,7 +50,7 @@
         <div class = "backdrop app_cleanse_backdrop"></div>
         <div class = "mission_btn"> <img src = "images/mission_icons/early_btn1.png" class = "app_cleanse_btn button_short" id = "early1"> </div>
         <img src = "images/Boxes/Humble_start.png" class= "quest_box" id = "earlybox1">
-        
+
         <div class = "backdrop app_boss_backdrop"></div>
         <div class = "mission_btn"> <img src = "images/mission_icons/early_btn3.png" class = "app_boss_btn button_medium" id = "early2"></div>
         <img src = "images/Boxes/early_game.png" class= "quest_box" id = "earlybox2">
@@ -107,12 +116,23 @@
         <img src = "images/Boxes/boss_box_flesh.png" class = "boss_box" id = "bossbox8">
 
 
-        <img src = "images/estate_icons/circus_btn.png" class = " bc_button" id = "circus">
+        
         <img src = "images/Boxes/bc_textbox.png" class = "quest_box" id = "circusbox">
-
+        
+        <img src = "images/estate_icons/mod_box.png" class = "mod_btn mission_btn"> 
+        <div class = money_btn_label>Gems & Relics</div>
+        <img src = "images/estate_icons/provision.icon.png" class = provision_btn id = provisioner>
+        <div class = provision_btn_label>Provisions </div>
         <img src = "images/mission_icons/hero_btn.png" class = "button_long hero_button" id = "hero_btn">
+        <div class = hero_btn_label>The Heroes</div>
+        <img src = "images/estate_icons/gold.icon.png" class = money_btn id = Money>
+        <div class = money_btn_label>Gems & Relics</div>
 
-        <div class = "mission_btn"><img src = "images/estate_icons/mod_box.png" class = mod_btn> </div>
+        <img src = "images/estate_icons/District_Open.png" class = "button_long district_open" id = blueprint_btn_open>
+        <img src = "images/estate_icons/blueprint_frame.png" class = " district_frame" id  = blueprint_frame>
+       <img src = "images/estate_icons/blueprint_closed.png" class = "button_long district_closed" id = blueprint_btn_closed>
+        
+        
         
 
         <div id = "embark_button">
@@ -145,6 +165,7 @@
         </div>
         
         <img src = "images/bg_elements/CC_infestation.png" class = crimson_banner>
+        <img src = "images/estate_icons/circus_btn.png" class = " bc_button" id = "circus">
         <img src = "images/bg_elements/estate_title.png" class = estate_title>
         <a href = "index.html" id = "back_arrow"> <img src ="images/estate_icons/back_arrow.png" class = "back_arrow"></a>
        
