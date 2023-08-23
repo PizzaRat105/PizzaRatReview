@@ -22,6 +22,7 @@ MoneyBtn.addEventListener('click' , function() {
   PlayPageOpn()
 })
 
+
 BlueprintOpen.addEventListener('click' , function() {
   CloseAudio.currentTime = 0;
   CloseAudio.play();
