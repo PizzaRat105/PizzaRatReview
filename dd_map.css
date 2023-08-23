@@ -47,11 +47,13 @@ button{background: white; border: none; width:20px}
      font-family: dd_logo;  color: rgb(199, 179, 107); font-size: 1.7vw;}
 
 .final_gauntlet_label{top: 4vw; left: 78.5vw; }
-.early_game_label{top: 9.5vw; left: 58.3vw}
-.visuals_label{ top: 17.5vw; left: 50vw;}
-.late_game_label{ top:23vw; left:62vw}
-.bosses_label{top: 17.4vw; left: 78vw;}
-.heroes_label{top: 34.5vw; left: 79vw}
+.ruins_label{top: 9.5vw; left: 58.3vw}
+.warrens_label{ top: 17.5vw; left: 50vw;}
+.weald_label{ top:23vw; left:62vw}
+.cove_label{top: 17.4vw; left: 78vw;}
+.hamlet_label{top: 34.5vw; left: 79vw}
+
+
 
 .crimson_backdrop{top: 16vw; left: 34vw;visibility: hidden;}
 .crimson_btn{top: 17.2vw; left: 35.4vw;}
@@ -86,6 +88,27 @@ button{background: white; border: none; width:20px}
 .champ_cleanse_backdrop{top: 25.1vw; left: 69vw; visibility: hidden;}
 .champ_cleanse_btn{top: 26.2vw; left: 70.3vw;}
 
+.hero_button{width: 5vw;height: 5vw;left: 33.7vw; top: 40.4vw;}
+.provision_btn{width:5vw; position: absolute; top: 40.4vw; left: 41vw;}
+.money_btn{position: absolute; width: 5.5vw;height: 5.5vw;left: 2.9vw; top: 40vw;}
+.bc_button{left:2.8vw; position: absolute; top: 28vw; width: 5.5vw;}
+.mod_btn{width: 5vw; height: 4.5vw; position: absolute; top: 34.5vw; left: 3vw}
+
+
+.hero_btn_label{font-family: dd_logo;  color: rgb(199, 179, 107); font-size: 1.9vw;
+    position: absolute; top: 45.7vw; left: 32.7vw;}
+.provision_btn_label{font-family: dd_logo;  color: rgb(199, 179, 107); font-size: 1.9vw;
+        position: absolute; top: 45.7vw;left: 40.7vw;}
+.money_btn_label{font-family: dd_logo;  color: rgb(199, 179, 107); font-size: 1.9vw;
+    position: absolute; top: 45.7vw;left: 1.5vw;}
+.circus_btn_label{font-family: dd_logo;  color: rgb(199, 179, 107); font-size: 1.9vw;
+    position: absolute; top: 27vw;left: 2vw;}
+
+.provison_btn:hover{filter: brightness(150%);}
+.money_btn:hover{filter: brightness(150%);}
+.bc_button:hover{filter: brightness(150%);}
+.mod_btn:hover{filter: brightness(150%);}
+
 .quest_box{width: 24vw;height: 38.4vw; position: absolute; visibility: hidden; left: 9vw; top: 6.9vw;}
 .boss_box{width: 24vw;height: 38.4vw; position: absolute; visibility: hidden; left: 9vw; top: 6.9vw;}
 
@@ -101,11 +124,9 @@ button{background: white; border: none; width:20px}
 #boss7{left: 80vw; top: 31.5vw;}
 #boss8{left: 83.6vw; top: 31.5vw;}
 
-.bc_button{left:2.8vw; position: absolute; top: 29vw; width: 5.5vw;}
-.bc_button:hover{filter: brightness(150%);}
-.hero_button{left: 81vw; top: 37.5vw;}
-.mod_btn{width: 5vw; position: absolute; top: 35vw; left: 3vw}
-
+.district_frame{position: absolute; top: 44.6vw; left: 71vw; width: 2.5vw; height: 3.2vw; }
+.district_closed{position:absolute; top: 45vw; left: 71.9vw; width: 2.2vw; height: 2vw}
+.district_open{position:absolute; top: 44vw; left: 70.5vw; width: 3.5vw; height: 4vw; display: none;}
 
 
 .back_arrow{position: absolute; top: 4.3vw; left: 11.8vw; height: 2vw;}
@@ -121,10 +142,15 @@ button{background: white; border: none; width:20px}
 .dd_buttontop{position: absolute; width: 16vw; margin-top: 0.4vw; }
 .embark_branch{top: 44.7vw}
 
-.opinion_header{position: absolute; top: 37.7vw;left:50vw;
-    font-family: 'Ubuntu', sans-serif; color:rgb(93, 91, 79);font-size: 1.6vw; font-weight: 700;}
-.opinion_box{width: 25vw; height:6vw;
-    position: absolute; top: 39.8vw; left:45vw}
+
+.opinion_container{width: 21.5vw; height:5.2vw; 
+    position: absolute; top: 40.2vw; left:47vw; display: flex; justify-content: center;}
+.opinion_header{position: absolute; top: 38vw;left:51.55vw;
+    font-family: 'Ubuntu', sans-serif; color:rgb(93, 91, 79);font-size: 1.3vw; font-weight: 800;}
+.opinion_box{width: 23vw; height:6vw;
+    position: absolute; top: 39.8vw; left:46.3vw}
+
+.opinion_bg{width:5vw; height: 5vw; display: flex; padding: 0.5vw 0.2vw 0.2vw 0.4vw;}
 
 .padding{height:10vw; width: 100vw; background-color: black;}
 
