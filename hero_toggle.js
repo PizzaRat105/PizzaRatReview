@@ -8,6 +8,11 @@ const HeroBox = document.getElementById('herobox');
 const HeroPorts = document.getElementsByClassName('hero_port');
 const OpenAudio = document.getElementById('page_open');
 OpenAudio.volume = 0.6;
+const ProvisionerBtn = document.getElementById('provisioner')
+
+ProvisionerBtn.addEventListener('click' , function() {
+  PlayPageOpn()
+})
 
 function PlayBtnPress() {
   BtnSelectAudio.currentTime = 0; // Reset the playback position to the beginning
