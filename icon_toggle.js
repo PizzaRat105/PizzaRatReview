@@ -129,6 +129,17 @@ document.addEventListener("DOMContentLoaded", function() {
   attachHoverListeners("[id^='trinketves1']", "[id^='vestrinket1']");
   attachHoverListeners("[id^='trinketves2']", "[id^='vestrinket2']");
 
+  attachHoverListeners("[id^='food_box']", "[id^='food_desc']");
+  attachHoverListeners("[id^='shovel_box']", "[id^='shovel_desc']");
+  attachHoverListeners("[id^='antivenom_box']", "[id^='antivenom_desc']");
+  attachHoverListeners("[id^='bandage_box']", "[id^='bandage_desc']");
+  attachHoverListeners("[id^='herb_box']", "[id^='herb_desc']");
+  attachHoverListeners("[id^='key_box']", "[id^='key_desc']");
+  attachHoverListeners("[id^='holy_water_box']", "[id^='holy_water_desc']");
+  attachHoverListeners("[id^='laudanum_box']", "[id^='laudanum_desc']");
+  attachHoverListeners("[id^='torch_box']", "[id^='torch_desc']");
+  attachHoverListeners("[id^='dog_treat_box']", "[id^='dog_treat_desc']");
+  attachHoverListeners("[id^='firewood_box']", "[id^='firewood_desc']");
 });
 function attachHoverListeners(triggerSelector, targetSelector) {
   var triggerElements = document.querySelectorAll(triggerSelector);
