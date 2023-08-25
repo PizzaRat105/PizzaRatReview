@@ -13,6 +13,8 @@ a{text-decoration: none; color: black;}
 ul{list-style-type: none; margin:0; padding: 0;}
 button{background: white; border: none; width:20px}
 .hidden{visibility: hidden;}
+.visible{display: block;}
+.nondisplay{display: none;}
 
 /*body {
     user-select: none;
@@ -124,7 +126,38 @@ button{background: white; border: none; width:20px}
 #boss7{left: 80vw; top: 31.5vw;}
 #boss8{left: 83.6vw; top: 31.5vw;}
 
-.district_frame{position: absolute; top: 44.6vw; left: 71vw; width: 2.5vw; height: 3.2vw; }
+
+.provision_container{position: absolute; left: 8.5vw; top: 6.75vw; height: 38.5vw; width: 75.2vw; display: none; 
+                    background-image: url("images/estate_icons/provision.character_background_long.png"); background-size: 75.2vw;}
+.provision_close{position:absolute; right: 0.8vw; top:0.8vw; width: 2vw}
+.provision_close:hover{filter: brightness(150%);}
+.provisions_itembox{display: flex; position: absolute; left: 43vw; top: 1.5vw; width: 30vw; height: 17.5vw; 
+                    flex-wrap: wrap; }
+.supply_item{width: 3.9vw; height: 7.2vw; margin: 0.25vw 0.3vw 0.25vw 0.3vw; display: flex;}
+.supply_item:hover{filter: brightness(150%);}
+.provision_desc{position: absolute; width:max-content; display: none;
+    border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.8);
+    font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1vw; line-height: 1.3vw; font-weight: 500;
+    text-align: center; padding: 0.3vw 0.6vw 0.6vw 0.6vw;
+}
+.desctop_space{margin-top: 0.3vw;}
+.descbtm_space{margin-bottom: 0.2vw;}
+#food_desc{left:-8.7vw}
+#shovel_desc{left:-1vw}
+#antivenom_desc{left:3.3vw}
+#bandage_desc{left:7.8vw}
+#herb_desc{left:12.2vw}
+#key_desc{left:17.3vw}
+#holy_water_desc{left:-5.3vw}
+#laudanum_desc{left:-0.9vw}
+#torch_desc{left:2.5vw}
+#dog_treat_desc{left:6.8vw}
+#firewood_desc{left:13vw}
+
+
+
+
+.district_frame{position: absolute; top: 44.8vw; left: 71vw; width: 2.2vw; height: 3vw; }
 .district_closed{position:absolute; top: 45vw; left: 71.9vw; width: 2.2vw; height: 2vw}
 .district_open{position:absolute; top: 44vw; left: 70.5vw; width: 3.5vw; height: 4vw; display: none;}
 
@@ -132,11 +165,11 @@ button{background: white; border: none; width:20px}
 .back_arrow{position: absolute; top: 4.3vw; left: 11.8vw; height: 2vw;}
 .back_arrow:hover{filter: brightness(150%);}
 .crimson_banner{width: 9.5vw; position: absolute; top: 5vw; left: 1.2vw;}
-.estate_title{height: 15vw; position: absolute;  width: 48vw}
+.estate_title{height: 15vw; position: absolute;  width: 48vw;}
 
-#embark_button{height: 3vw; position: absolute; top: 44.7vw; left: 49.3vw; display: none;}
+#embark_button{height: 3vw; position: absolute; top: 44.7vw; left: 49.7vw; display: none;}
 #embark_button:hover{filter: brightness(170%);}
-.embark_btn{height: 5vw; position: absolute; top: 45vw; left: 49.3vw; display: none;}
+.embark_btn{height: 5vw; position: absolute; top: 45vw; left: 49.7vw; display: none;}
 .embark_btn:hover{filter: brightness(170%);}
 .dd_button{position: absolute;  width: 16vw; height: 2.3vw; margin-top: 1.1vw; }
 .dd_buttontop{position: absolute; width: 16vw; margin-top: 0.4vw; }
@@ -151,8 +184,9 @@ button{background: white; border: none; width:20px}
     position: absolute; top: 39.8vw; left:46.3vw}
 
 .opinion_bg{width:5vw; height: 5vw; display: flex; padding: 0.5vw 0.2vw 0.2vw 0.4vw;}
-
+.opinion_bg:hover{filter: brightness(150%);}
 .padding{height:10vw; width: 100vw; background-color: black;}
+
 
 
 .heroes_main{
