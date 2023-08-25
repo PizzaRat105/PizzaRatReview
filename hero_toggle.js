@@ -9,6 +9,7 @@ const HeroPorts = document.getElementsByClassName('hero_port');
 const OpenAudio = document.getElementById('page_open');
 OpenAudio.volume = 0.6;
 const ProvisionerBtn = document.getElementById('provisioner')
+const ProvisionerBox = document.getElementById('provisionbox')
 const MoneyBtn = document.getElementById('Money')
 const BlueprintOpen = document.getElementById('blueprint_btn_open')
 const BlueprintClosed = document.getElementById('blueprint_btn_closed')
@@ -16,12 +17,12 @@ const BlueprintFrame = document.getElementById('blueprint_frame')
 
 ProvisionerBtn.addEventListener('click' , function() {
   PlayPageOpn()
+  ProvisionerBox.style.display = 'block'
 })
 
 MoneyBtn.addEventListener('click' , function() {
   PlayPageOpn()
 })
-
 
 BlueprintOpen.addEventListener('click' , function() {
   CloseAudio.currentTime = 0;
@@ -68,6 +69,7 @@ for (const HeroPort of HeroPorts) {
   })
 }
 const CloseBtn = document.getElementById('close');
+const CloseProvisions = document.getElementById('food_close')
 const CloseAudio = document.getElementById('page_close');
 CloseAudio.volume = 0.6;
 
@@ -75,6 +77,12 @@ CloseBtn.addEventListener('click', function() {
   CloseAudio.currentTime = 0;
   CloseAudio.play();
   HeroBox.style.display = 'none'
+})
+
+CloseProvisions.addEventListener('click', function() {
+  CloseAudio.currentTime = 0;
+  CloseAudio.play();
+  ProvisionerBox.style.display = 'none'
 })
 
 function HideAllBox() {
