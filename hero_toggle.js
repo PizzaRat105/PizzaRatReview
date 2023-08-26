@@ -8,12 +8,25 @@ const HeroBox = document.getElementById('herobox');
 const HeroPorts = document.getElementsByClassName('hero_port');
 const OpenAudio = document.getElementById('page_open');
 OpenAudio.volume = 0.6;
-const ProvisionerBtn = document.getElementById('provisioner')
-const ProvisionerBox = document.getElementById('provisionbox')
+
 const MoneyBtn = document.getElementById('Money')
 const BlueprintOpen = document.getElementById('blueprint_btn_open')
 const BlueprintClosed = document.getElementById('blueprint_btn_closed')
 const BlueprintFrame = document.getElementById('blueprint_frame')
+
+
+
+
+const ProvisionerBtn = document.getElementById('provisioner')
+const ProvisionerBox = document.getElementById('provisionbox')
+const RuinsNavigate = document.getElementById('ruins_nav')
+const WealdNavigate = document.getElementById('weald_nav')
+const WarrensNavigate = document.getElementById('warrens_nav')
+const CoveNavigate = document.getElementById('cove_nav')
+const RuinsArea = document.getElementById('ruins_area')
+const WealdArea = document.getElementById('weald_area')
+const WarrensArea = document.getElementById('warrens_area')
+const CoveArea = document.getElementById('cove_area')
 
 ProvisionerBtn.addEventListener('click' , function() {
   PlayPageOpn()
@@ -22,6 +35,35 @@ ProvisionerBtn.addEventListener('click' , function() {
 
 MoneyBtn.addEventListener('click' , function() {
   PlayPageOpn()
+})
+
+RuinsNavigate.addEventListener('click', function() {
+  PlayPageOpn()
+  RuinsArea.style.display = 'flex'
+  WealdArea.style.display = 'none'
+  WarrensArea.style.display = 'none'
+  CoveArea.style.display = 'none'
+})
+WealdNavigate.addEventListener('click', function() {
+  PlayPageOpn()
+  RuinsArea.style.display = 'none'
+  WealdArea.style.display = 'flex'
+  WarrensArea.style.display = 'none'
+  CoveArea.style.display = 'none'
+})
+WarrensNavigate.addEventListener('click', function() {
+  PlayPageOpn()
+  RuinsArea.style.display = 'none'
+  WealdArea.style.display = 'none'
+  WarrensArea.style.display = 'flex'
+  CoveArea.style.display = 'none'
+})
+CoveNavigate.addEventListener('click', function() {
+  PlayPageOpn()
+  RuinsArea.style.display = 'none'
+  WealdArea.style.display = 'none'
+  WarrensArea.style.display = 'none'
+  CoveArea.style.display = 'flex'
 })
 
 BlueprintOpen.addEventListener('click' , function() {
