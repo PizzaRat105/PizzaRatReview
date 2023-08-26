@@ -167,7 +167,7 @@ button{background: white; border: none; width:20px}
 .cove_provision{  background-image: url("images/backgrounds/Cove.webp");}
 
 .dungeon_category{width: 12.5vw; height: 16vw; padding-top: 1.8vw; }
-.provisions_title{font-size: 2vw; font-family: dd_logo; color: rgb(199, 179, 107); position: absolute; left: 15.7vw}
+.provisions_title{font-size: 2vw; font-family: dd_logo; color: rgb(199, 179, 107); position: absolute; display: flex;justify-content: center; width: 36vw; height: 3vw;}
 .provisions_list{text-align: center; line-height: 1.5vw;}
 .dungeon_header{font-family: dd_logo; color: rgb(199, 179, 107); font-size: 1.5vw; margin-top: 0.5vw;}
 
