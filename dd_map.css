@@ -152,12 +152,11 @@ button{background: white; border: none; width:20px}
 #firewood_desc{left:13vw}
 
 
-.provision_areabox{position: absolute; top: 19.3vw; right: 0.5vw;
-                   height: 19vw; width: 38.5vw; border: 0.3vw rgb(54, 54, 55) solid;}
+.provision_areabox{position: absolute; top: 19.3vw; right: 0.5vw; height: 19vw; width: 38.5vw;}
+.provisions_navigation{position: absolute; top: 18.5vw; left: -11vw}
+.provisions_navbtn{width: 4vw;}
+.provisions_navbtn:hover{filter: brightness(150%);}
 
-.provisions_navigation{position: absolute; top: 19.3vw; left: 28.5vw;
-    height: 11.3vw; width: 8vw; border: 0.3vw rgb(54, 54, 55) solid;}
-.provisions_navbtn{font-size: 2.2vw; font-family: dd_logo; color: rgb(199, 179, 107); height: 2.75vw; width: 7.5vw; text-align: center; border-bottom: 0.3vw rgb(54, 54, 55) solid;}
 
 .areabox{position: absolute; width: 37.9vw; height:18.4vw; background-size: 38.5vw;  padding: 1vw;}
 .area_provisions_text{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1vw; line-height: 1.3vw; font-weight: 300;}
