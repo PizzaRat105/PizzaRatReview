@@ -15,6 +15,7 @@ button{background: white; border: none; width:20px}
 .hidden{visibility: hidden;}
 .visible{display: block;}
 .nondisplay{display: none;}
+.ddlogo_text{font-family: dd_logo; color: rgb(199, 179, 107); font-weight: 400;}
 
 /*body {
     user-select: none;
@@ -97,14 +98,10 @@ button{background: white; border: none; width:20px}
 .mod_btn{width: 5vw; height: 4.5vw; position: absolute; top: 34.5vw; left: 3vw}
 
 
-.hero_btn_label{font-family: dd_logo;  color: rgb(199, 179, 107); font-size: 1.9vw;
-    position: absolute; top: 45.7vw; left: 32.7vw;}
-.provision_btn_label{font-family: dd_logo;  color: rgb(199, 179, 107); font-size: 1.9vw;
-        position: absolute; top: 45.7vw;left: 40.7vw;}
-.money_btn_label{font-family: dd_logo;  color: rgb(199, 179, 107); font-size: 1.9vw;
-    position: absolute; top: 45.7vw;left: 1.5vw;}
-.circus_btn_label{font-family: dd_logo;  color: rgb(199, 179, 107); font-size: 1.9vw;
-    position: absolute; top: 27vw;left: 2vw;}
+.hero_btn_label{ font-size: 1.9vw; position: absolute; top: 45.7vw; left: 32.7vw;}
+.provision_btn_label{ font-size: 1.9vw; position: absolute; top: 45.7vw;left: 40.7vw;}
+.money_btn_label{ font-size: 1.9vw;position: absolute; top: 45.7vw;left: 1.5vw;}
+.circus_btn_label{ font-size: 1.9vw;position: absolute; top: 27vw;left: 2vw;}
 
 .provision_btn:hover{filter: brightness(150%);}
 .money_btn:hover{filter: brightness(150%);}
@@ -154,6 +151,30 @@ button{background: white; border: none; width:20px}
 #dog_treat_desc{left:6.8vw}
 #firewood_desc{left:13vw}
 
+
+.provision_areabox{position: absolute; top: 19.3vw; right: 0.5vw;
+                   height: 19vw; width: 38.5vw; border: 0.3vw rgb(54, 54, 55) solid;}
+
+.provisions_navigation{position: absolute; top: 19.3vw; left: 28.5vw;
+    height: 11.3vw; width: 8vw; border: 0.3vw rgb(54, 54, 55) solid;}
+.provisions_navbtn{font-size: 2.2vw; font-family: dd_logo; color: rgb(199, 179, 107); height: 2.75vw; width: 7.5vw; text-align: center; border-bottom: 0.3vw rgb(54, 54, 55) solid;}
+
+.areabox{position: absolute; width: 37.9vw; height:18.4vw; background-size: 38.5vw;  padding: 1vw;}
+.area_provisions_text{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1vw; line-height: 1.3vw; font-weight: 300;}
+.ruins_provision{background-image: url("images/backgrounds/ruins_bg.webp"); }
+.weald_provision{ background-image: url("images/backgrounds/Weald.webp");}
+.warrens_provision{ background-image: url("images/backgrounds/Warrens.webp"); }
+.cove_provision{  background-image: url("images/backgrounds/Cove.webp");}
+
+.dungeon_category{width: 12.5vw; height: 16vw; padding-top: 1.8vw; }
+.provisions_title{font-size: 2vw; font-family: dd_logo; color: rgb(199, 179, 107); position: absolute; left: 15.7vw}
+.provisions_list{text-align: center; line-height: 1.5vw;}
+.dungeon_header{font-family: dd_logo; color: rgb(199, 179, 107); font-size: 1.5vw; margin-top: 0.5vw;}
+
+#ruins_area{display: flex;}
+#weald_area{display:none}
+#warrens_area{display:none}
+#cove_area{display: none;}
 
 
 
@@ -315,34 +336,28 @@ button{background: white; border: none; width:20px}
          position: absolute; top: 67.1vw; left: 6.7vw;} 
 .box_text{display: none;}
 
-
-.quirk_header{font-family: dd_logo; color: rgb(199, 179, 107); font-size: 1.6vw;
-     position: absolute; top: 70.5vw; left: 17.7vw;
+.title_header{font-family: dd_logo; color: rgb(199, 179, 107); font-size: 1.6vw;}
+.quirk_header{position: absolute; top: 70.5vw; left: 17.7vw;
     height: 2vw; width: 34.3vw; text-align: center;} 
 
-.stat_header{font-family: dd_logo; color: rgb(199, 179, 107); font-size: 1.6vw;
-    position: absolute; top: 81.8vw; left: 17.7vw;
+.stat_header{position: absolute; top: 81.8vw; left: 17.7vw;
     height: 2vw; width: 34.3vw; text-align: center;}
 
-.equip_header{font-family: dd_logo; color: rgb(199, 179, 107); font-size: 1.6vw;
-        position: absolute; top: 89.5vw; left: 17.7vw;
-        height: 2vw; width: 34.3vw; text-align: center;}
+.equip_header{position: absolute; top: 89.5vw; left: 17.7vw;
+    height: 2vw; width: 34.3vw; text-align: center;}
 
-.skill_header{font-family: dd_logo; color: rgb(199, 179, 107); font-size: 1.6vw;
-    position: absolute; top: 66.6vw; left: 57.5vw; 
+.skill_header{position: absolute; top: 66.6vw; left: 57.5vw; 
     height: 2vw; width: 35vw; text-align: center;}
 
-.camp_header{font-family: dd_logo; color: rgb(199, 179, 107); font-size: 1.6vw;
-    position: absolute; top: 78.9vw; left: 57.5vw; 
+.camp_header{position: absolute; top: 78.9vw; left: 57.5vw; 
     height: 2vw; width: 35vw; text-align: center;}
 
-.resist_header{font-family: dd_logo; color: rgb(199, 179, 107); font-size: 1.6vw;
-    position: absolute; top: 87.5vw; left: 57.5vw; 
+.resist_header{position: absolute; top: 87.5vw; left: 57.5vw; 
     height: 2vw; width: 35vw; text-align: center;}
 
-.misc_stat_header{font-family: dd_logo; color: rgb(199, 179, 107); font-size: 1.6vw;
-        position: absolute; top:96.4vw; left: 57.5vw; 
+.misc_stat_header{position: absolute; top:96.4vw; left: 57.5vw; 
         height: 2vw; width: 35vw; text-align: center;}
+    
 
 .posquirk_text{ color: rgb(199, 179, 107); font-family:  'Ubuntu', sans-serif; font-size: 1vw; font-weight: 500; line-height: 1.5vw;
             position:absolute; top: 73vw; left: 18.5vw;  transform: scaleX(1.1);
