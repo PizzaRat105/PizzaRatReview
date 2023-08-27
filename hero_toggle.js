@@ -9,7 +9,16 @@ const HeroPorts = document.getElementsByClassName('hero_port');
 const OpenAudio = document.getElementById('page_open');
 OpenAudio.volume = 0.6;
 
-const MoneyBtn = document.getElementById('Money')
+const LootBtn = document.getElementById('Loot');
+const LootBox = document.getElementById('lootbox');
+
+
+LootBtn.addEventListener('click' , function() {
+  PlayPageOpn()
+  LootBox.style.display = 'block'
+})
+
+
 const BlueprintOpen = document.getElementById('blueprint_btn_open')
 const BlueprintClosed = document.getElementById('blueprint_btn_closed')
 const BlueprintFrame = document.getElementById('blueprint_frame')
@@ -33,9 +42,7 @@ ProvisionerBtn.addEventListener('click' , function() {
   ProvisionerBox.style.display = 'block'
 })
 
-MoneyBtn.addEventListener('click' , function() {
-  PlayPageOpn()
-})
+
 
 RuinsNavigate.addEventListener('click', function() {
   PlayPageOpn()
@@ -65,6 +72,8 @@ CoveNavigate.addEventListener('click', function() {
   WarrensArea.style.display = 'none'
   CoveArea.style.display = 'flex'
 })
+
+
 
 BlueprintOpen.addEventListener('click' , function() {
   CloseAudio.currentTime = 0;
@@ -112,6 +121,7 @@ for (const HeroPort of HeroPorts) {
 }
 const CloseBtn = document.getElementById('close');
 const CloseProvisions = document.getElementById('food_close')
+const CloseLoot = document.getElementById('lootclose')
 const CloseAudio = document.getElementById('page_close');
 CloseAudio.volume = 0.6;
 
@@ -126,6 +136,12 @@ CloseProvisions.addEventListener('click', function() {
   CloseAudio.play();
   ProvisionerBox.style.display = 'none'
 })
+CloseLoot.addEventListener('click', function() {
+  CloseAudio.currentTime = 0;
+  CloseAudio.play();
+  LootBox.style.display = 'none'
+})
+
 
 function HideAllBox() {
   const AllCharBox = [AbomBox, AntiBox, ArbBox, BHBox, CrusBox, FlagBox, GRBox, HellBox, HWMBox, HMBox, JesBox, LepBox, MAABox, MuskBox, OccBox, PDBox, SBBox, VesBox]
