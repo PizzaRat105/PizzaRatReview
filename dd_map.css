@@ -56,7 +56,27 @@ button{background: white; border: none; width:20px}
 .cove_label{top: 17.4vw; left: 78vw;}
 .hamlet_label{top: 34.5vw; left: 79vw}
 
+.hero_button{width: 5vw;height: 5vw;left: 33.7vw; top: 40.4vw;}
+.provision_btn{width:5vw; position: absolute; top: 40.4vw; left: 41vw;}
+.loot_btn{position: absolute; width: 5.5vw;height: 5.5vw;left: 2.9vw; top: 40vw;}
+.bc_button{left:2.8vw; position: absolute; top: 28vw; width: 5.5vw;}
+.mod_btn{width: 5vw; height: 4.5vw; position: absolute; top: 34.5vw; left: 3vw}
 
+
+.hero_btn_label{ font-size: 1.9vw; position: absolute; top: 45.7vw; left: 32.7vw;}
+.provision_btn_label{ font-size: 1.9vw; position: absolute; top: 45.7vw;left: 40.7vw;}
+.loot_btn_label{ font-size: 1.9vw;position: absolute; top: 45.7vw;left: 0.5vw;}
+.circus_btn_label{ font-size: 1.9vw;position: absolute; top: 27vw;left: 2vw;}
+
+.provision_btn:hover{filter: brightness(150%);}
+.loot_btn:hover{filter: brightness(150%);}
+.bc_button:hover{filter: brightness(150%);}
+.mod_btn:hover{filter: brightness(150%);}
+
+
+
+.quest_box{width: 24vw;height: 38.4vw; position: absolute; visibility: hidden; left: 9vw; top: 6.9vw;}
+.boss_box{width: 24vw;height: 38.4vw; position: absolute; visibility: hidden; left: 9vw; top: 6.9vw;}
 
 .crimson_backdrop{top: 16vw; left: 34vw;visibility: hidden;}
 .crimson_btn{top: 17.2vw; left: 35.4vw;}
@@ -91,25 +111,6 @@ button{background: white; border: none; width:20px}
 .champ_cleanse_backdrop{top: 25.1vw; left: 69vw; visibility: hidden;}
 .champ_cleanse_btn{top: 26.2vw; left: 70.3vw;}
 
-.hero_button{width: 5vw;height: 5vw;left: 33.7vw; top: 40.4vw;}
-.provision_btn{width:5vw; position: absolute; top: 40.4vw; left: 41vw;}
-.money_btn{position: absolute; width: 5.5vw;height: 5.5vw;left: 2.9vw; top: 40vw;}
-.bc_button{left:2.8vw; position: absolute; top: 28vw; width: 5.5vw;}
-.mod_btn{width: 5vw; height: 4.5vw; position: absolute; top: 34.5vw; left: 3vw}
-
-
-.hero_btn_label{ font-size: 1.9vw; position: absolute; top: 45.7vw; left: 32.7vw;}
-.provision_btn_label{ font-size: 1.9vw; position: absolute; top: 45.7vw;left: 40.7vw;}
-.money_btn_label{ font-size: 1.9vw;position: absolute; top: 45.7vw;left: 1.5vw;}
-.circus_btn_label{ font-size: 1.9vw;position: absolute; top: 27vw;left: 2vw;}
-
-.provision_btn:hover{filter: brightness(150%);}
-.money_btn:hover{filter: brightness(150%);}
-.bc_button:hover{filter: brightness(150%);}
-.mod_btn:hover{filter: brightness(150%);}
-
-.quest_box{width: 24vw;height: 38.4vw; position: absolute; visibility: hidden; left: 9vw; top: 6.9vw;}
-.boss_box{width: 24vw;height: 38.4vw; position: absolute; visibility: hidden; left: 9vw; top: 6.9vw;}
 
 #boss1{left: 80vw; top: 20.7vw;}
 #boss2{left: 83.6vw; top: 20.7vw;}
@@ -176,6 +177,57 @@ button{background: white; border: none; width:20px}
 #cove_area{display: none;}
 
 
+.loot_container{position: absolute; top: 22vw;left: 2vw; width: 36vw; height: 18vw; 
+               background-image: url('images/loot/inventory_panel.png'); background-size: 36vw; display: none;}
+#lootclose{width: 1.5vw; position: absolute; right: 0.45vw; top: 0.45vw;}
+#lootclose:hover{filter: brightness(150%);}
+.lootflex{width: 36vw; height: 16.7vw;  margin: 0.3vw 0 0 0.3vw; display:flex;flex-wrap: wrap; }
+.loot_item{position: absolute; width: 3.4vw; height: 7vw; }
+.loot_item:hover{filter: brightness(150%);}
+.slot1{ top: 0.9vw; left: 1vw}
+.slot2{top: 0.9vw; left: 5.1vw}
+.slot3{top: 0.9vw; left: 9.15vw}
+.slot4{top: 0.9vw; left: 13.2vw}
+.slot5{top: 0.9vw; left: 17.28vw}
+.slot6{top: 0.9vw; left: 21.35vw}
+.slot7{top: 0.9vw; left: 25.4vw}
+.slot8{top: 0.9vw; left: 29.4vw}
+.slot9{top: 9.2vw; left: 1vw}
+.slot10{top: 9.2vw; left: 5.1vw}
+.slot11{top: 9.2vw; left: 9.15vw}
+.slot12{top:9.2vw; left: 13.2vw}
+.slot13{top:9.2vw; left: 17.28vw}
+.slot14{top:9.2vw; left: 21.35vw}
+.slot15{top:9.2vw; left: 25.4vw}
+.slot16{top:9.2vw; left: 29.4vw}
+
+.loot_desc{position: absolute; width:max-content; display: none;
+    border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.8);
+    font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1vw; line-height: 1.4vw; font-weight: 500;
+    text-align: center; padding: 0.3vw 0.6vw 0.6vw 0.6vw; 
+}
+#citrine_desc{top: 0.95vw; left: 5.1vw;}
+#jade_desc{top: 0.95vw; left: 9.15vw}
+#onyx_desc{top: 0.95vw; left: 13.2vw}
+#emerald_desc{top: 0.95vw; left: 17.28vw}
+#sapphire_desc{top: 0.95vw; left: 21.35vw}
+#ruby_desc{top: 0.95vw; left: 25.4vw}
+#trapezohedron_desc{top: 0.95vw; left: 29.4vw}
+#goldbag_desc{top: 8.5vw; left: 24vw}
+#pew_desc{top: 9.25vw; left: 5.1vw}
+#minor_antique_desc{top: 9.25vw; left: 9.15vw}
+#major_antique_desc{top: 9.25vw; left: 13.2vw}
+#tapestry_desc{top: 9.25vw; left: 17.28vw}
+#crest_desc{top: 17.5vw; left:11vw}
+#bust_desc{top: 17.5vw; left: 15vw}
+#deed_desc{top: 17.5vw; left: 19.2vw}
+#portrait_desc{top: 17.5vw; left:23.3vw}
+
+
+
+.apprentice{color:rgb(108, 149, 85)}
+.veteran{color:rgb(209, 136, 46)}
+.champion{color: rgb(149, 48, 48)}
 
 .district_frame{position: absolute; top: 44.8vw; left: 71vw; width: 2.2vw; height: 3vw; }
 .district_closed{position:absolute; top: 45vw; left: 71.9vw; width: 2.2vw; height: 2vw}
