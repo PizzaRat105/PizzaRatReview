@@ -140,6 +140,24 @@ document.addEventListener("DOMContentLoaded", function() {
   attachHoverListeners("[id^='torch_box']", "[id^='torch_desc']");
   attachHoverListeners("[id^='dog_treat_box']", "[id^='dog_treat_desc']");
   attachHoverListeners("[id^='firewood_box']", "[id^='firewood_desc']");
+
+  
+  attachHoverListeners("[id^='citrine_box']", "[id^='citrine_desc']");
+  attachHoverListeners("[id^='jade_box']", "[id^='jade_desc']");
+  attachHoverListeners("[id^='onyx_box']", "[id^='onyx_desc']");
+  attachHoverListeners("[id^='emerald_box']", "[id^='emerald_desc']");
+  attachHoverListeners("[id^='sapphire_box']", "[id^='sapphire_desc']");
+  attachHoverListeners("[id^='ruby_box']", "[id^='ruby_desc']");
+  attachHoverListeners("[id^='trapezohedron_box']", "[id^='trapezohedron_desc']");
+  attachHoverListeners("[id^='goldbag_box']", "[id^='goldbag_desc']");
+  attachHoverListeners("[id^='pew_box']", "[id^='pew_desc']");
+  attachHoverListeners("[id^='minor_antique_box']", "[id^='minor_antique_desc']");
+  attachHoverListeners("[id^='major_antique_box']", "[id^='major_antique_desc']");
+  attachHoverListeners("[id^='tapestry_box']", "[id^='tapestry_desc']");
+  attachHoverListeners("[id^='crest_box']", "[id^='crest_desc']");
+  attachHoverListeners("[id^='bust_box']", "[id^='bust_desc']");
+  attachHoverListeners("[id^='deed_box']", "[id^='deed_desc']");
+  attachHoverListeners("[id^='portrait_box']", "[id^='portrait_desc']");
 });
 function attachHoverListeners(triggerSelector, targetSelector) {
   var triggerElements = document.querySelectorAll(triggerSelector);
