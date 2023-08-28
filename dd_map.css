@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Roboto|Lobster|Oswald|Raleway|Inter|Open+Sans|Inconsolata|Shadows+Into+Light|Josefin+Sans:ital,wght@0,100;0,200;0,400;0,500;1,100;1,400;1,500&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-
 @font-face {font-family: bitter; src: url(fonts/Bitter-Regular.otf);}
 @font-face {font-family:concord ;src: url(fonts/Concord\ W00\ Light.ttf);}
 @font-face {font-family:dd_logo ;src: url(fonts/DwarvenAxe\ BB\ W00\ Regular.ttf);}
+
 
 
 /*Blanket Styling*/
@@ -21,6 +21,7 @@ button{background: white; border: none; width:20px}
     user-select: none;
 }*/
 
+/*General Button Styling*/
 .button_long{position: absolute; height: 4vw;}
 .button_long:hover{filter: brightness(150%);}
 .button_medium{position: absolute; height: 3.8vw;}
@@ -31,6 +32,8 @@ button{background: white; border: none; width:20px}
 .boss_button{position: absolute; height: 3.2vw;}
 .boss_button:hover{filter: brightness(150%);}
 
+
+/*Map Styling*/
 .backdrop{
     width: 7vw; height: 6.6vw; position: absolute; top: -1.5vw; left: -2.2vw;
     background-image: url(images/mission_icons/quest_select_bg_fin.png);  
@@ -42,6 +45,7 @@ button{background: white; border: none; width:20px}
     background-size: 100vw; background-clip: content-box; 
 }
 
+/*Label Styling*/
 .dungeon_label{width: 17vw; height:4.5vw; position: absolute;}
 .crimson_label{top: 14vw; left: 36vw;}
 .crimson_label_right{position: absolute; top: 13.3vw; left: 47.5vw; width: 5.5vw;}
@@ -55,6 +59,8 @@ button{background: white; border: none; width:20px}
 .weald_label{ top:23vw; left:62vw}
 .cove_label{top: 17.4vw; left: 78vw;}
 .hamlet_label{top: 34.5vw; left: 79vw}
+
+/*Side/Bottom Button Styling*/
 
 .hero_button{width: 5vw;height: 5vw;left: 33.7vw; top: 40.4vw;}
 .provision_btn{width:5vw; position: absolute; top: 40.4vw; left: 41vw;}
@@ -74,7 +80,7 @@ button{background: white; border: none; width:20px}
 .mod_btn:hover{filter: brightness(150%);}
 
 
-
+/*General Box, Button and Backdrop Styling*/
 .quest_box{width: 24vw;height: 38.4vw; position: absolute; visibility: hidden; left: 9vw; top: 6.9vw;}
 .boss_box{width: 24vw;height: 38.4vw; position: absolute; visibility: hidden; left: 9vw; top: 6.9vw;}
 
@@ -124,10 +130,13 @@ button{background: white; border: none; width:20px}
 #boss7{left: 80vw; top: 31.5vw;}
 #boss8{left: 83.6vw; top: 31.5vw;}
 
+
+/*Provision Box Styling*/
+
 .provision_backdrop{position:absolute; width: 90vw; height: 45vw}
 .provision_container{position: absolute; left: 8.5vw; top: 6.75vw; height: 38.5vw; width: 75.2vw; display: none; 
                     background-image: url("images/estate_icons/provision.character_background_long.png"); background-size: 75.2vw;}
-.provision_close{position:absolute; right: 0.8vw; top:0.8vw; width: 2vw}
+.provision_close{position:absolute; right: 0.8vw; top:0.8vw; width: 1.6vw}
 .provision_close:hover{filter: brightness(150%);}
 .provisions_itembox{display: flex; position: absolute; left: 43vw; top: 1.5vw; width: 30vw; height: 17.5vw; 
                     flex-wrap: wrap; }
@@ -138,26 +147,26 @@ button{background: white; border: none; width:20px}
     font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1vw; line-height: 1.3vw; font-weight: 500;
     text-align: center; padding: 0.3vw 0.6vw 0.6vw 0.6vw;
 }
-.desctop_space{margin-top: 0.3vw;}
-.descbtm_space{margin-bottom: 0.2vw;}
-#food_desc{left:-8.7vw}
-#shovel_desc{left:-1vw}
-#antivenom_desc{left:3.3vw}
-#bandage_desc{left:7.8vw}
-#herb_desc{left:12.2vw}
+
+.desctop_space{margin-top: 0.3vw;} .descbtm_space{margin-bottom: 0.2vw;}
+#food_desc{left:-8.7vw} 
+#shovel_desc{left:-1vw} 
+#antivenom_desc{left:3.3vw} 
+#bandage_desc{left:7.8vw} 
+#herb_desc{left:12.2vw} 
 #key_desc{left:17.3vw}
-#holy_water_desc{left:-5.3vw}
-#laudanum_desc{left:-0.9vw}
-#torch_desc{left:2.5vw}
-#dog_treat_desc{left:6.8vw}
+#holy_water_desc{left:-5.3vw} 
+#laudanum_desc{left:-0.9vw} 
+#torch_desc{left:2.5vw} 
+#dog_treat_desc{left:6.8vw} 
 #firewood_desc{left:13vw}
 
+.provision_areabox{position: absolute; top: 19.3vw; right: 0.5vw;
+                   height: 19vw; width: 38.5vw;}
 
-.provision_areabox{position: absolute; top: 19.3vw; right: 0.5vw; height: 19vw; width: 38.5vw;}
 .provisions_navigation{position: absolute; top: 18.5vw; left: -11vw}
 .provisions_navbtn{width: 4vw;}
 .provisions_navbtn:hover{filter: brightness(150%);}
-
 
 .areabox{position: absolute; width: 37.9vw; height:18.4vw; background-size: 38.5vw;  padding: 1vw;}
 .area_provisions_text{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1vw; line-height: 1.3vw; font-weight: 300;}
@@ -176,6 +185,7 @@ button{background: white; border: none; width:20px}
 #warrens_area{display:none}
 #cove_area{display: none;}
 
+/*Loot Box Styling*/
 
 .loot_container{position: absolute; top: 22vw;left: 2vw; width: 36vw; height: 18vw; 
                background-image: url('images/loot/inventory_panel.png'); background-size: 36vw; display: none;}
@@ -229,6 +239,8 @@ button{background: white; border: none; width:20px}
 .veteran{color:rgb(209, 136, 46)}
 .champion{color: rgb(149, 48, 48)}
 
+/*Lower Right Button Styling*/
+
 .district_frame{position: absolute; top: 44.8vw; left: 71vw; width: 2.4vw; height: 3vw; }
 .district_closed{position:absolute; top: 45vw; left: 71.7vw; width: 2.2vw; height: 2vw}
 .district_open{position:absolute; top: 44vw; left: 70.5vw; width: 3.5vw; height: 4vw; display: none;}
@@ -237,11 +249,13 @@ button{background: white; border: none; width:20px}
 .district_overlay2{top: 42.7vw; left: 70vw; height: 6.6vw}
 
 
+/*Background element Styling*/
 .back_arrow{position: absolute; top: 4.3vw; left: 11.8vw; height: 2vw;}
 .back_arrow:hover{filter: brightness(150%);}
 .crimson_banner{width: 9.5vw; position: absolute; top: 5vw; left: 1.2vw;}
 .estate_title{height: 15vw; position: absolute;  width: 48vw;}
 
+/*Embark Button Styling*/
 #embark_button{height: 3vw; position: absolute; top: 44.7vw; left: 49.7vw; display: none;}
 #embark_button:hover{filter: brightness(170%);}
 .embark_btn{height: 5vw; position: absolute; top: 45vw; left: 49.7vw; display: none;}
@@ -250,7 +264,7 @@ button{background: white; border: none; width:20px}
 .dd_buttontop{position: absolute; width: 16vw; margin-top: 0.4vw; }
 .embark_branch{top: 44.7vw}
 
-
+/*Opinion Container Styling*/
 .opinion_container{width: 21.5vw; height:5.2vw; 
     position: absolute; top: 40.2vw; left:47vw; display: flex; justify-content: center;}
 .opinion_header{position: absolute; top: 38vw;left:51.55vw;
@@ -262,8 +276,7 @@ button{background: white; border: none; width:20px}
 .opinion_bg:hover{filter: brightness(150%);}
 .padding{height:10vw; width: 100vw; background-color: black;}
 
-
-
+/*Hero Portion Styling*/
 .heroes_main{
     background-image: url(images/backgrounds/circus.png); background-size: 100vw; 
     height: 43vw; background-clip: content-box; background-position: top;
@@ -281,10 +294,18 @@ button{background: white; border: none; width:20px}
 .back_hero1:hover{filter: brightness(150%);} 
 .back_hero2:hover{filter: brightness(150%);}
 
+/*Hero Panel Styling*/
 .hero_panel{ margin: 0; padding:0; margin-top: 4vw; display: none;}
 .char_panel{width: 94vw; height: 40vw; position: relative; margin-left: 3vw;}
 
 .empty_space{ height: 47vw; width: 30vw; position: absolute;}
+
+/*Hero Header Styling*/
+.hero_header{color: rgb(199, 179, 107); font-family: dd_logo ; font-size: 2.6vw;
+             position: absolute; top: 64.6vw; left: 6.7vw;}
+.quotebox{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1.1vw; font-weight: bold;
+         position: absolute; top: 67.1vw; left: 6.7vw;} 
+.box_text{display: none;}
 
 .header_bg{position: absolute; left: 6vw; top: 64.7vw;  width: 60vw; height: 6vw;}
 
@@ -307,6 +328,7 @@ button{background: white; border: none; width:20px}
 #sbbg{background-image: url(images/Hero_boxes/sb_header.png); background-size: 44vw;}
 #vesbg{background-image: url(images/Hero_boxes/ves_header.png); background-size: 44vw;}
 
+/*Hero Sprite Styling*/
 .sprite_abom{position: absolute; top: 85.4vw; left: 7vw; width: 7.5vw; height: 16vw; display: none;}
 .sprite_anti{position: absolute; top: 85.9vw; left: 7.2vw; width: 8.4vw; height: 16vw; display: none;}
 .sprite_arb{position: absolute; top: 84.5vw; left: 4.7vw;  width: 10.5vw; height: 17vw; display: none;}
@@ -330,7 +352,7 @@ button{background: white; border: none; width:20px}
 .shadow{position: absolute; top: 99.5vw; left: 6.6vw; width: 10vw; height: 4vw; } 
 .shadow_big{position: absolute; top: 89.5vw; left: 5vw; width: 12vw; height: 4.2vw; display: none;} 
 
-
+/*Hero Panel Button Styling*/
 .rename_button{position: absolute; top: 65.3vw; left: 4.4vw; width: 1.6vw;} 
 .close_btn{position: absolute; top: 64.6vw; right: 3.6vw; width: 1.6vw;} 
 .swapskin_btn{position:absolute; left: 3.6vw; top: 101.8vw; width: 1.6vw;}
@@ -338,17 +360,28 @@ button{background: white; border: none; width:20px}
 .close_btn:hover{filter: brightness(150%);}
 .swapskin_btn:hover{filter: brightness(150%);}
 
+.prev_btn{position: absolute; top: 104vw; left: 85vw; width: 5vw; height: 2.6vw; display: none;}
+.next_btn{position: absolute; top: 104vw; left: 90vw; width: 5vw; height: 2.6vw; display: none;}
+.prev_btn:hover{filter: brightness(150%);}
+.next_btn:hover{filter: brightness(150%);}
+
+
+/*Info Button Styling*/
 .info{position: absolute; width: 1.7vw;} 
 .info:hover{filter: brightness(150%);}
+
 .infobox{display: flex; justify-content: center;
         position: absolute; top: 87.6vw;left: 89.8vw; height: 2.2vw; width: 2.4vw;}
-
+    
 .infodesc{position: absolute;top: 87.5vw ; left: 83.3vw; padding: 0.1vw 0.2vw; display: none;
     font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 0.8vw; line-height: 1.4vw;
     height: fit-content; width:max-content; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.8);}
 
 .box2{top: 81.9vw; left: 17.4vw;}
 .desc2{top: 81.8vw; left: 19.5vw;}
+
+
+/*Preferred Target Styling*/
 
 .pref_position_container{position:absolute; top: 70vw; left: 58.3vw;  
     height: 2.9vw; width: 13.3vw; display: flex; justify-content: space-evenly; } 
@@ -364,13 +397,12 @@ button{background: white; border: none; width:20px}
 .pos2_3{position: absolute; left: 7.65vw; top: 0.97vw}
 .pos1_4{position:absolute; left: 10.9vw; top: 0.97vw}
 
-
 .barely_pref{filter: brightness(40%)}
 .strong_pref{filter: brightness(165%);}
-.med_pref{filter: brightness(75%);}
+.med_pref{filter: brightness(90%);}
 
 .pref_pos_header{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1.1vw; line-height: 1.5vw;
-    position: absolute; top: 68.8vw; left: 46.2vw;
+    position: absolute; top: 68.8vw; left: 46.3vw;
    height: 2vw; width: 25vw; text-align: center;} 
 
 .pref_target_header{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1.1vw; line-height: 1.5vw;
@@ -378,17 +410,8 @@ button{background: white; border: none; width:20px}
    height: 2vw; width: 25vw; text-align: center;} 
 
 
-.prev_btn{position: absolute; top: 104vw; left: 85vw; width: 5vw; height: 2.6vw; display: none;}
-.next_btn{position: absolute; top: 104vw; left: 90vw; width: 5vw; height: 2.6vw; display: none;}
-.prev_btn:hover{filter: brightness(150%);}
-.next_btn:hover{filter: brightness(150%);}
 
-
-.hero_header{color: rgb(199, 179, 107); font-family: dd_logo ; font-size: 2.6vw;
-             position: absolute; top: 64.6vw; left: 6.7vw;}
-.quotebox{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1.1vw; font-weight: bold;
-         position: absolute; top: 67.1vw; left: 6.7vw;} 
-.box_text{display: none;}
+/*Hero Panel Category Styling*/
 
 .title_header{font-family: dd_logo; color: rgb(199, 179, 107); font-size: 1.6vw;}
 .quirk_header{position: absolute; top: 70.5vw; left: 17.7vw;
@@ -412,6 +435,7 @@ button{background: white; border: none; width:20px}
 .misc_stat_header{position: absolute; top:96.4vw; left: 57.5vw; 
         height: 2vw; width: 35vw; text-align: center;}
     
+/*Quirk Category Styling*/
 
 .posquirk_text{ color: rgb(199, 179, 107); font-family:  'Ubuntu', sans-serif; font-size: 1vw; font-weight: 500; line-height: 1.5vw;
             position:absolute; top: 73vw; left: 18.5vw;  transform: scaleX(1.1);
@@ -423,11 +447,15 @@ button{background: white; border: none; width:20px}
 }
 .negflex {display: flex;}
 
+
+/*Resolve and name Styling*/
 .resolve{position:absolute; top: 70vw; left: 9.4vw; width: 2.7vw }
 
 .canon_name{color: rgb(199, 179, 107); font-family:  dd_logo; font-size: 1.5vw; 
     position:absolute; top: 75.8vw; left: 7.5vw; transform: scaleX(1.2);
     width: 7vw; height: 2vw; ; text-align: center;}
+
+/*Resist Styling*/
 
 .res_icon {width: 1.5vw}
 
@@ -438,8 +466,7 @@ button{background: white; border: none; width:20px}
 .resist1{height: 6.5vw; width: 17vw; display: flex; direction: rtl; flex-direction: column;}
 .resist2{height: 6.5vw; width: 19vw;  display: flex; direction: rtl; flex-direction: column;}
 
-
-
+/*General Tooltip Colorcoding*/
 
 .highres{color: rgb(199, 179, 107); }
 .highest{filter: brightness(150%); color: yellow;}
@@ -462,8 +489,43 @@ button{background: white; border: none; width:20px}
 .block{color: rgb(93, 83, 43)}
 .aegis{width: 1.5vw; margin: 0;  margin-top:-0.25vw; padding:0; position: absolute;}
 .grey{color:grey}
-
 .attack_type{color:rgb(140, 123, 95)}
+
+/*Statline Styling*/
+.statline_container{position: absolute; top: 84.3vw; left: 18vw;
+    height:7.2vw; width:40vw; 
+    display: flex; justify-content: start; flex-direction: row;}
+
+
+.stat_box{position: absolute; top: 84.4vw; left: 9vw;
+             height:7.2vw; width:53vw;
+             display: flex; justify-content: start; flex-direction: row;}
+
+.stats_box1{position: absolute; left: 5vw;}
+.stats_box2{position: absolute; left: 19.5vw}
+
+.numbers_container{position:absolute; width: 40vw;}
+.numbers_box1{height:7vw; position:absolute; left: 21.5vw; top: -0.1vw; width: 35vw}
+.numbers_box2{height: 7vw;position: absolute; left: 34vw; top: -0.1vw; width:15vw}
+
+.statline{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1.3vw;
+     line-height: 1.5vw; text-align: start;}
+
+/*Misc Stats Styling*/
+
+.misc_container {position: absolute; top: 99.2vw; left: 52vw;
+                height:7.2vw; width:40vw; 
+                display: flex; justify-content: start; flex-direction: row;}
+.misc_box1{position: absolute; left: 4.5vw;}
+.misc_box2{position: absolute; left: 24vw}
+.misc{top: 99.3vw; left: 46vw}
+.misc_numbers_box1{height:7vw; position:absolute; left: 19vw; top: -0.1vw; width: 35vw}
+.misc_numbers_box2{height: 7vw;position: absolute; left: 37vw; top: -0.1vw; width:15vw}
+.misc_statline{line-height: 1.8vw; }
+
+
+/*Camping and Combat Styling*/
+
 .camp_title{font-size: 1vw; line-height: 1.2vw;}
 .skill_title{font-size: 1vw; font-weight: 400;}
 
@@ -484,7 +546,6 @@ button{background: white; border: none; width:20px}
          font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 0.9vw; line-height: 1.1vw; font-weight: 500;
          text-align: center; padding: 0 0.6vw 0.3vw 0.6vw; display: none;
 }
-.desc_text{line-height: 1vw; font-size: 0.8vw}
 
 .camp_desc{position: absolute; top: 4.4vw; left:2vw;
     height: fit-content; width:max-content; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.8);
@@ -498,6 +559,13 @@ button{background: white; border: none; width:20px}
 .skill_icon{height: 4vw; width: 4vw; margin: 0 0.3vw; position: relative}
 .skill:hover .skill_icon {filter: brightness(150%);}
 
+.pos_dot{width: 0.5vw; height: 0.5vw; background-color: rgb(54, 54, 55); border-radius: 0.5vw; margin: 0 0.15vw;}
+.pos_container{display: flex; justify-content: center; margin-top: 0.4vw; margin-bottom: 0.2vw;}
+.blank_space{width: 1.5vw}
+.desc_text{line-height: 1vw; font-size: 0.8vw;}
+
+/*Equipment and Trinket Styling*/
+
 .trinket1{margin-left: 6.5vw;}
 .trinket2{margin-left: 0vw;}
 
@@ -509,6 +577,8 @@ button{background: white; border: none; width:20px}
 
 .left1{left: 20.3vw;}  .left2{left: 24.9vw;}
 
+/*Tooltip Colorcoding*/
+
 .common{color: white}
 .uncommon{color:rgb(108, 149, 85)}
 .rare{color: rgb(68, 97, 163)}
@@ -518,42 +588,13 @@ button{background: white; border: none; width:20px}
 .cc_text{color:rgb(92, 50, 58)}
 .set_bonus{color:rgb(128, 191, 116)}
 
-.statline_container{position: absolute; top: 84.3vw; left: 18vw;
-    height:7.2vw; width:40vw; 
-    display: flex; justify-content: start; flex-direction: row;}
-
-
-.stat_box{position: absolute; top: 84.4vw; left: 9vw;
-             height:7.2vw; width:53vw;
-             display: flex; justify-content: start; flex-direction: row;}
-
-.stats_box1{position: absolute; left: 5vw;}
-.stats_box2{position: absolute; left: 19.5vw}
-
-.numbers_container{position:absolute; width: 40vw;}
-.numbers_box1{height:7vw; position:absolute; left: 21.5vw; top: -0.1vw; width: 35vw}
-.numbers_box2{height: 7vw;position: absolute; left: 34vw; top: -0.1vw; width:15vw}
-
-.statline{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1.3vw;
-     line-height: 1.5vw; text-align: start;}
-
 .equip_desc{position: absolute; top: -2.6vw;
     height: fit-content; width:max-content; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.8);
     font-family: 'Ubuntu', sans-serif; color: rgb(206, 58, 33); font-size: 1vw; line-height: 1.5vw; font-weight: 500;
     text-align: center; padding:0.2vw; display: none;
 }
 
-
-.misc_container {position: absolute; top: 99.2vw; left: 52vw;
-                height:7.2vw; width:40vw; 
-                display: flex; justify-content: start; flex-direction: row;}
-
-.misc_box1{position: absolute; left: 4.5vw;}
-.misc_box2{position: absolute; left: 24vw}
-.misc{top: 99.3vw; left: 46vw}
-.misc_numbers_box1{height:7vw; position:absolute; left: 19vw; top: -0.1vw; width: 35vw}
-.misc_numbers_box2{height: 7vw;position: absolute; left: 37vw; top: -0.1vw; width:15vw}
-.misc_statline{line-height: 1.8vw; }
+/*Equipment Positioning */
 
 #weaponabom{left:-2vw}  #armorabom{left:2.5vw}
 #weaponanti{left:-2vw}  #armoranti{left:0.8vw}
@@ -575,8 +616,50 @@ button{background: white; border: none; width:20px}
 #weaponves{left:-2vw}  #armorves{left:1.9vw}
 
 
+/*AoE Skills*/
+.cleave_double{border-top:0.18vw solid rgb(160, 43, 32); width:0.8vw;
+    position: absolute; top: 0.6vw;}
 
+.cleave_triple{border-top:0.18vw solid rgb(160, 43, 32); width:1.6vw;
+        position: absolute; top: 0.6vw;}
 
+.quad_cleave{border-top:0.18vw solid rgb(160, 43, 32); width:2.4vw;
+    position: absolute; top: 0.6vw;}
+.pos2_3abom{left: 11.55vw}
+.pos1_2abom{left: 6vw}
+
+.pos1_2arbmusk{left: 6.2vw}
+.pos3_4arbmusk{left: 8.7vw}
+.quad_arbmusk{left:7.7vw}
+
+.pos1_2crus{left:5.5vw}
+
+.pos3_4flag{left:12.4vw}
+
+.pos2_3gr{left: 9.3vw;}
+
+.pos1_2hell{left:7.6vw; top: 1.9vw}
+.pos1_2_3hell{left:11vw;}
+
+.pos1_2_3hwm{left:9.9vw;}
+
+.quad_hm{left:5.5vw;}
+
+.quad_jes{left:14vw; top: 1.9vw;}
+.pos2_3jes{left:9vw;}
+
+.pos1_2lep{left:5.5vw;}
+
+.quad_maa{left:12.7vw}
+
+.pos3_4occ{left: 7.2vw;}
+
+.pos3_4pd1{left:7.1vw}
+.pos3_4pd2{left:7.1vw; top: 1.9vw;}
+
+.quad_sb{left: 5.6vw}
+
+/*Combat and Camping skill positioning*/
 
 #grid1{ left: 1.5vw; }
 #grid2{ left: 6.1vw; }
@@ -832,48 +915,3 @@ button{background: white; border: none; width:20px}
 
 
 
-.pos_dot{width: 0.5vw; height: 0.5vw; background-color: rgb(54, 54, 55); border-radius: 0.5vw; margin: 0 0.15vw;}
-.pos_container{display: flex; justify-content: center; margin-top: 0.4vw; margin-bottom: 0.2vw;}
-.blank_space{width: 1.5vw}
-
-.cleave_double{border-top:0.18vw solid rgb(160, 43, 32); width:0.8vw;
-    position: absolute; top: 0.6vw;}
-
-.cleave_triple{border-top:0.18vw solid rgb(160, 43, 32); width:1.6vw;
-        position: absolute; top: 0.6vw;}
-
-.quad_cleave{border-top:0.18vw solid rgb(160, 43, 32); width:2.4vw;
-    position: absolute; top: 0.6vw;}
-.pos2_3abom{left: 11.55vw}
-.pos1_2abom{left: 6vw}
-
-.pos1_2arbmusk{left: 6.2vw}
-.pos3_4arbmusk{left: 8.7vw}
-.quad_arbmusk{left:7.7vw}
-
-.pos1_2crus{left:5.5vw}
-
-.pos3_4flag{left:12.4vw}
-
-.pos2_3gr{left: 9.3vw;}
-
-.pos1_2hell{left:7.6vw; top: 1.9vw}
-.pos1_2_3hell{left:11vw;}
-
-.pos1_2_3hwm{left:9.9vw;}
-
-.quad_hm{left:5.5vw;}
-
-.quad_jes{left:14vw; top: 1.9vw;}
-.pos2_3jes{left:9vw;}
-
-.pos1_2lep{left:5.5vw;}
-
-.quad_maa{left:12.7vw}
-
-.pos3_4occ{left: 7.2vw;}
-
-.pos3_4pd1{left:7.1vw}
-.pos3_4pd2{left:7.1vw; top: 1.9vw;}
-
-.quad_sb{left: 5.6vw}
