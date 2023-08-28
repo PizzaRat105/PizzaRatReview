@@ -16,6 +16,12 @@ button{background: white; border: none; width:20px}
 .visible{display: block;}
 .nondisplay{display: none;}
 .ddlogo_text{font-family: dd_logo; color: rgb(199, 179, 107); font-weight: 400;}
+.general_desc{position: absolute; width:max-content; display: none;
+    border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.8);
+    font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1vw; line-height: 1.3vw; font-weight: 500;
+    text-align: center; padding: 0.3vw 0.6vw 0.6vw 0.6vw;
+}
+.hoverable:hover{filter: brightness(150%);}
 
 /*body {
     user-select: none;
@@ -142,11 +148,7 @@ button{background: white; border: none; width:20px}
                     flex-wrap: wrap; }
 .supply_item{width: 3.9vw; height: 7.2vw; margin: 0.25vw 0.3vw 0.25vw 0.3vw; display: flex;}
 .supply_item:hover{filter: brightness(150%);}
-.provision_desc{position: absolute; width:max-content; display: none;
-    border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.8);
-    font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1vw; line-height: 1.3vw; font-weight: 500;
-    text-align: center; padding: 0.3vw 0.6vw 0.6vw 0.6vw;
-}
+.provision_desc{ font-size: 1vw; line-height: 1.3vw; font-weight: 500;}
 
 .desctop_space{margin-top: 0.3vw;} .descbtm_space{margin-bottom: 0.2vw;}
 #food_desc{left:-8.7vw} 
@@ -211,11 +213,7 @@ button{background: white; border: none; width:20px}
 .slot15{top:9.2vw; left: 25.4vw}
 .slot16{top:9.2vw; left: 29.4vw}
 
-.loot_desc{position: absolute; width:max-content; display: none;
-    border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.8);
-    font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1vw; line-height: 1.4vw; font-weight: 500;
-    text-align: center; padding: 0.3vw 0.6vw 0.6vw 0.6vw; 
-}
+.loot_desc{font-size: 1vw; line-height: 1.4vw; font-weight: 500;}
 #citrine_desc{top: 0.95vw; left: 5.1vw;}
 #jade_desc{top: 0.95vw; left: 9.15vw}
 #onyx_desc{top: 0.95vw; left: 13.2vw}
