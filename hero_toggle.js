@@ -9,20 +9,44 @@ const HeroPorts = document.getElementsByClassName('hero_port');
 const OpenAudio = document.getElementById('page_open');
 OpenAudio.volume = 0.6;
 
+
+function PlayPageOpn() {
+  OpenAudio.currentTime = 0;
+  OpenAudio.play();
+}
+
+function PlayBtnPress() {
+  BtnSelectAudio.currentTime = 0; 
+  BtnSelectAudio.play();
+}
+
+
+for (const renameBtn of renameBtns) {
+  renameBtn.addEventListener('click', function() {PlayBtnPress();})}
+
+for (const skinchangeBtn of skinchangeBtns) {
+  skinchangeBtn.addEventListener('click', function() {PlayBtnPress();})}
+
+for (const PastHeroBtn of PastHeroBtns) {
+  PastHeroBtn.addEventListener('click', function() {PlayBtnPress();})};
+
+for (const NextHeroBtn of NextHeroBtns) {
+  NextHeroBtn.addEventListener('click', function() {PlayBtnPress();})};
+
+for (const HeroPort of HeroPorts) {
+  HeroPort.addEventListener('click', function() {
+    PlayPageOpn();
+    HeroBox.style.display = 'block';
+  })
+}
+
 const LootBtn = document.getElementById('Loot');
 const LootBox = document.getElementById('lootbox');
-
 
 LootBtn.addEventListener('click' , function() {
   PlayPageOpn()
   LootBox.style.display = 'block'
 })
-
-
-const BlueprintOpen = document.getElementById('blueprint_btn_open')
-const BlueprintClosed = document.getElementById('blueprint_btn_closed')
-const BlueprintFrame = document.getElementById('blueprint_frame')
-
 
 
 
@@ -73,52 +97,48 @@ CoveNavigate.addEventListener('click', function() {
   CoveArea.style.display = 'flex'
 })
 
+const BlueprintOpen = document.getElementById('blueprint_btn_open')
+const BlueprintClosed = document.getElementById('blueprint_btn_closed')
+const BlueprintFrame = document.getElementById('blueprint_frame')
+const DistrictOpenAudio = document.getElementById('district_open')
+const DistrictCloseAudio = document.getElementById('district_close')
+const DistrictOverlay1 = document.getElementById('blueprint_overlay1')
+const DistrictOverlay2 = document.getElementById('blueprint_overlay2')
+DistrictCloseAudio.volume = 0.6;
+DistrictOpenAudio.volume = 0.6;
 
 
 BlueprintOpen.addEventListener('click' , function() {
-  CloseAudio.currentTime = 0;
-  CloseAudio.play();
+  DistrictCloseAudio.currentTime = 0;
+  DistrictCloseAudio.play();
   BlueprintClosed.style.display = 'block'
   BlueprintOpen.style.display = 'none'
   BlueprintFrame.style.display = 'block'
 })
 
+BlueprintOpen.addEventListener('mouseover' , function() {
+  DistrictOverlay2.style.display = 'block'
+})
+BlueprintClosed.addEventListener('mouseover' , function() {
+  DistrictOverlay1.style.display = 'block'
+})
+BlueprintOpen.addEventListener('mouseleave', function() {
+  DistrictOverlay2.style.display = 'none'; // Assuming you want to hide the overlay
+});
+
+BlueprintClosed.addEventListener('mouseleave', function() {
+  DistrictOverlay1.style.display = 'none'; // Assuming you want to hide the overlay
+});
+
 BlueprintClosed.addEventListener('click' , function() {
-  PlayPageOpn()
+  DistrictOpenAudio.currentTime - 0;
+  DistrictOpenAudio.play();
   BlueprintClosed.style.display = 'none'
   BlueprintOpen.style.display = 'block'
   BlueprintFrame.style.display = 'none'
 })
 
-function PlayPageOpn() {
-  OpenAudio.currentTime = 0;
-  OpenAudio.play();
-}
 
-function PlayBtnPress() {
-  BtnSelectAudio.currentTime = 0; // Reset the playback position to the beginning
-  BtnSelectAudio.play();
-}
-
-
-for (const renameBtn of renameBtns) {
-  renameBtn.addEventListener('click', function() {PlayBtnPress();})}
-
-for (const skinchangeBtn of skinchangeBtns) {
-  skinchangeBtn.addEventListener('click', function() {PlayBtnPress();})}
-
-for (const PastHeroBtn of PastHeroBtns) {
-  PastHeroBtn.addEventListener('click', function() {PlayBtnPress();})};
-
-for (const NextHeroBtn of NextHeroBtns) {
-  NextHeroBtn.addEventListener('click', function() {PlayBtnPress();})};
-
-for (const HeroPort of HeroPorts) {
-  HeroPort.addEventListener('click', function() {
-    PlayPageOpn();
-    HeroBox.style.display = 'block';
-  })
-}
 const CloseBtn = document.getElementById('close');
 const CloseProvisions = document.getElementById('food_close')
 const CloseLoot = document.getElementById('lootclose')
@@ -141,8 +161,6 @@ CloseLoot.addEventListener('click', function() {
   CloseAudio.play();
   LootBox.style.display = 'none'
 })
-
-
 function HideAllBox() {
   const AllCharBox = [AbomBox, AntiBox, ArbBox, BHBox, CrusBox, FlagBox, GRBox, HellBox, HWMBox, HMBox, JesBox, LepBox, MAABox, MuskBox, OccBox, PDBox, SBBox, VesBox]
   AllCharBox.forEach(charbox => {
