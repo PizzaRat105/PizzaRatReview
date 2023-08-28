@@ -124,7 +124,7 @@ button{background: white; border: none; width:20px}
 #boss7{left: 80vw; top: 31.5vw;}
 #boss8{left: 83.6vw; top: 31.5vw;}
 
-
+.provision_backdrop{position:absolute; width: 90vw; height: 45vw}
 .provision_container{position: absolute; left: 8.5vw; top: 6.75vw; height: 38.5vw; width: 75.2vw; display: none; 
                     background-image: url("images/estate_icons/provision.character_background_long.png"); background-size: 75.2vw;}
 .provision_close{position:absolute; right: 0.8vw; top:0.8vw; width: 2vw}
@@ -229,9 +229,12 @@ button{background: white; border: none; width:20px}
 .veteran{color:rgb(209, 136, 46)}
 .champion{color: rgb(149, 48, 48)}
 
-.district_frame{position: absolute; top: 44.8vw; left: 71vw; width: 2.2vw; height: 3vw; }
-.district_closed{position:absolute; top: 45vw; left: 71.9vw; width: 2.2vw; height: 2vw}
+.district_frame{position: absolute; top: 44.8vw; left: 71vw; width: 2.4vw; height: 3vw; }
+.district_closed{position:absolute; top: 45vw; left: 71.7vw; width: 2.2vw; height: 2vw}
 .district_open{position:absolute; top: 44vw; left: 70.5vw; width: 3.5vw; height: 4vw; display: none;}
+.estate_overlay{position: absolute; width: 4.5vw;height: 5.6vw; display: none;}
+.district_overlay1{ top: 43.5vw; left: 70vw;}
+.district_overlay2{top: 42.7vw; left: 70vw; height: 6.6vw}
 
 
 .back_arrow{position: absolute; top: 4.3vw; left: 11.8vw; height: 2vw;}
