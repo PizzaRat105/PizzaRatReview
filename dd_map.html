@@ -4,13 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Domain of the rat</title>
-    <link rel="icon" type="image/x-icon" href="*">
+    <link rel="icon" type="image/x-icon" href="POINTRAT.png">
     <link id="stylesheet" rel="stylesheet" type="text/css" href="dd_map.css">
      <script src="https://kit.fontawesome.com/0acaa7a2b0.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
     <div class = map_main>
+        <!--Dungeon area labels-->
         <img src = "images/bg_elements/dungeon_progressionbar_crimson.png" class = "dungeon_label crimson_label">
         <img src = "images/bg_elements/cc_invite.png" class = crimson_label_right>
         <img src = "images/bg_elements/dungeon_progress.png" class = "dungeon_label madness_label">
@@ -22,6 +24,7 @@
         <img src = "images/bg_elements/dungeon_progressionbar_hamlet.png" class = "dungeon_label hamlet_label">
         <div class  = madness_labeltxt> Color of Madness </div>
 
+        <!--The opinion section-->
         <div class = opinion_header>The Opinion Section</div>
 
         <img src = "images/bg_elements/embark_bg.png" class = opinion_box>
@@ -33,7 +36,7 @@
 
         </div>
         
-        
+        <!--Mission Boxes-->
 
         <div class = "backdrop crimson_backdrop"></div>
         <div class = mission_btn> <img src = "images/mission_icons/cc_button.png" class = "crimson_btn button_long" id = "crimsonbutton"> </div>
@@ -79,9 +82,8 @@
         <div class = "mission_btn"> <img src= "images/mission_icons/late_cleanse.png" class= "champ_cleanse_btn button_long" id = "late3"> </div>
         <img src = "images/Boxes/ready.png" class= "quest_box" id = "latebox3">
        
+        <!--Boss Boxes-->
 
-
-        
         <img src = "images/portraits/necro.png" class = "boss_button" id = "boss1">
         <img src = "images/Boxes/boss_box_necro.png" class = "boss_box" id = "bossbox1">
         
@@ -116,9 +118,9 @@
         <img src = "images/Boxes/boss_box_flesh.png" class = "boss_box" id = "bossbox8">
 
 
-        
-       
-       <img src = "images/Boxes/bc_textbox.png" class = "quest_box" id = "circusbox">
+        <!--Left buttons-->
+
+        <img src = "images/Boxes/bc_textbox.png" class = "quest_box" id = "circusbox">
         
         <img src = "images/estate_icons/mod_box.png" class = "mod_btn mission_btn"> 
         <img src = "images/estate_icons/provision.icon.png" class = provision_btn id = provisioner>
@@ -128,13 +130,17 @@
         <img src = "images/estate_icons/gold.icon.png" class = loot_btn id = Loot>
         <div class = "ddlogo_text loot_btn_label">Gold & Heirlooms</div>
 
+        <!--Lower right buttons-->
+
         <img src  = "images/estate_icons/estate_overlay.png" class = "estate_overlay district_overlay1" id = blueprint_overlay1>
         <img src  = "images/estate_icons/estate_overlay.png" class = "estate_overlay district_overlay2" id = blueprint_overlay2>
         <img src = "images/estate_icons/District_Open.png" class = "button_long district_open" id = blueprint_btn_open>
         <img src = "images/estate_icons/blueprint_frame.png" class = " district_frame" id  = blueprint_frame>
        <img src = "images/estate_icons/blueprint_closed.png" class = "button_long district_closed" id = blueprint_btn_closed>
-
         
+       
+        <!--Embark Buttons-->
+
         <div id = "embark_button">
             <img src = "images/estate_icons/dd_button.png" class= "dd_button" id = "embarkbtn">
             <img src = "images/estate_icons/dd_buttontop.png" class = "dd_buttontop" id  = "embarktop">
@@ -162,15 +168,17 @@
             </a>
             
         </div>
-        
+        <!--Top left background elements-->
         <img src = "images/bg_elements/CC_infestation.png" class = crimson_banner>
         <img src = "images/estate_icons/circus_btn.png" class = " bc_button" id = "circus">
         <img src = "images/bg_elements/estate_title.png" class = estate_title>
         <a href = "index.html" id = "back_arrow"> <img src ="images/estate_icons/back_arrow.png" class = "back_arrow"></a>
 
-    <div class = provision_container id = provisionbox>
-        <div class = "provision_backdrop"></div>
+        <!--Provision Box-->
+        <div class = provision_container id = provisionbox>
+            <div class = "provision_backdrop"></div>
         <img src = "images/Hero_boxes/panel_close.png" class = provision_close id = food_close>
+        
         
             <div class = provision_areabox>
                 <div class = " ruins_provision area_provisions_text areabox" id = ruins_area>
@@ -423,10 +431,10 @@
                             <li class ="highres descbtm_space"> Holy Water (6 per Stack) </li>
                             <li>Used to buff a hero's resistances </li>
                             <li class = buff>Buff Hero</li>
-                            <li> +33% <span class = bleed> Bleed</span> Resist (4 rds) </li>
-                            <li> +33% <span class = blight> Blight</span> Resist (4 rds) </li>
-                            <li> +33% <span class = debuff> Debuff</span> Resist (4 rds) </li>
-                            <li> +33% <span class = disease> Disease </span> Resist (4 rds) </li>
+                            <li> +33% <span class = bleed> Bleed</span> Resist (4 rds)</li>
+                            <li> +33% <span class = blight> Blight</span> Resist (4 rds)</li>
+                            <li> +33% <span class = debuff> Debuff</span> Resist (4 rds)</li>
+                            <li> +33% <span class = disease> Disease </span> Resist (4 rds)</li>
                             <li>Used in many curio interactions</li>
                             <li class = "desctop_space attack_type"> [Short: 6 / Medium: 9 / Long: 12]  </li>
                         </ul>
@@ -482,6 +490,8 @@
             </div>
             
         </div>
+
+        <!--Loot Box-->
         <div class = "loot_container" id = lootbox>
             <img src = "images/Hero_boxes/panel_close.png" id = lootclose>
             <div class = lootflex>
@@ -666,11 +676,15 @@
             </div>
         </div>
         
+    
     </div>
 
+    <!--Making space for hero panels and boxes-->
     <div class = padding></div>
     <div class = empty_space></div>
-    <div class = "heroes_main">
+   
+    <div class = "heroes_main"> 
+        <!--Hero Portrait Container-->
         <div class = "hero_port_container">
             <img src = "images/hero_port/abom.png" class = "hero_port" id = "Abombtn">
             <img src = "images/hero_port/anti.png" class= "hero_port" id = "Antibtn">
@@ -697,9 +711,10 @@
         
         
 
-         <div class = hero_panel id = herobox>
+        <div class = hero_panel id = herobox>
             <img src = "images/Hero_boxes/panel_edit.png" class = char_panel>
-             <div class = 'shared_text'>
+
+            <div class = 'shared_text'>
                 <div class = 'quirk_header title_header'> Strengths & Weaknesses</div>
                 <div class = 'stat_header title_header'> Base Stats</div>
                 <div class = 'equip_header title_header'> Equipment & Trinkets </div>
@@ -712,11 +727,13 @@
 
             </div>
 
-            <div class = infobox> <img src = "images/Hero_boxes/more_info_icon.png" class = info id = infobtn1> </div>
-            <div class = infodesc id = infotxt1> (*): District Buffs</div>
-              <div class = "infobox box2"> <img src = "images/Hero_boxes/more_info_icon.png" class = info id = infobtn2> </div>
-            <div class = "infodesc desc2" id = infotxt2> (*): District Buffs</div>
+        <!--Info Button-->
+        <div class = infobox> <img src = "images/Hero_boxes/more_info_icon.png" class = info id = infobtn1> </div>
+        <div class = infodesc id = infotxt1> (*): District Buffs</div>
+        <div class = "infobox box2"> <img src = "images/Hero_boxes/more_info_icon.png" class = info id = infobtn2> </div>
+        <div class = "infodesc desc2" id = infotxt2> (*): District Buffs</div>
 
+        <!--Statline-->
             <div class = statline_container>
 
                 <div class = stats_box1>
