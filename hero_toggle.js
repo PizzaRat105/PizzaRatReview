@@ -97,47 +97,46 @@ CoveNavigate.addEventListener('click', function() {
   CoveArea.style.display = 'flex'
 })
 
-const BlueprintOpen = document.getElementById('blueprint_btn_open')
-const BlueprintClosed = document.getElementById('blueprint_btn_closed')
-const BlueprintFrame = document.getElementById('blueprint_frame')
+const DistrictOpen = document.getElementById('district_btn_open')
+const DistrictClosed = document.getElementById('district_btn_closed')
+const DistrictFrame = document.getElementById('district_frame')
 const DistrictOpenAudio = document.getElementById('district_open')
 const DistrictCloseAudio = document.getElementById('district_close')
-const DistrictOverlay1 = document.getElementById('blueprint_overlay1')
-const DistrictOverlay2 = document.getElementById('blueprint_overlay2')
+const DistrictOverlay1 = document.getElementById('district_overlay1')
+const DistrictOverlay2 = document.getElementById('district_overlay2')
 DistrictCloseAudio.volume = 0.6;
 DistrictOpenAudio.volume = 0.6;
 
 
-BlueprintOpen.addEventListener('click' , function() {
+DistrictOpen.addEventListener('click' , function() {
   DistrictCloseAudio.currentTime = 0;
   DistrictCloseAudio.play();
-  BlueprintClosed.style.display = 'block'
-  BlueprintOpen.style.display = 'none'
-  BlueprintFrame.style.display = 'block'
+  DistrictClosed.style.display = 'block'
+  DistrictOpen.style.display = 'none'
+  DistrictFrame.style.display = 'block'
 })
 
-BlueprintOpen.addEventListener('mouseover' , function() {
+DistrictOpen.addEventListener('mouseover' , function() {
   DistrictOverlay2.style.display = 'block'
 })
-BlueprintClosed.addEventListener('mouseover' , function() {
+DistrictClosed.addEventListener('mouseover' , function() {
   DistrictOverlay1.style.display = 'block'
 })
-BlueprintOpen.addEventListener('mouseleave', function() {
+DistrictOpen.addEventListener('mouseleave', function() {
   DistrictOverlay2.style.display = 'none'; // Assuming you want to hide the overlay
 });
 
-BlueprintClosed.addEventListener('mouseleave', function() {
+DistrictClosed.addEventListener('mouseleave', function() {
   DistrictOverlay1.style.display = 'none'; // Assuming you want to hide the overlay
 });
 
-BlueprintClosed.addEventListener('click' , function() {
+DistrictClosed.addEventListener('click' , function() {
   DistrictOpenAudio.currentTime - 0;
   DistrictOpenAudio.play();
-  BlueprintClosed.style.display = 'none'
-  BlueprintOpen.style.display = 'block'
-  BlueprintFrame.style.display = 'none'
+  DistrictClosed.style.display = 'none'
+  DistrictOpen.style.display = 'block'
+  DistrictFrame.style.display = 'none'
 })
-
 
 const CloseBtn = document.getElementById('close');
 const CloseProvisions = document.getElementById('food_close')
