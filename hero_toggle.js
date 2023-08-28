@@ -20,7 +20,6 @@ function PlayBtnPress() {
   BtnSelectAudio.play();
 }
 
-
 for (const renameBtn of renameBtns) {
   renameBtn.addEventListener('click', function() {PlayBtnPress();})}
 
