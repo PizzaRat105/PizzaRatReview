@@ -239,12 +239,29 @@ button{background: white; border: none; width:20px}
 
 /*Lower Right Button Styling*/
 
-.district_frame{position: absolute; top: 44.8vw; left: 71vw; width: 2.4vw; height: 3vw; }
-.district_closed{position:absolute; top: 45vw; left: 71.7vw; width: 2.2vw; height: 2vw}
-.district_open{position:absolute; top: 44vw; left: 70.5vw; width: 3.5vw; height: 4vw; display: none;}
-.estate_overlay{position: absolute; width: 4.5vw;height: 5.6vw; display: none;}
-.district_overlay1{ top: 43.5vw; left: 70vw;}
-.district_overlay2{top: 42.7vw; left: 70vw; height: 6.6vw}
+.district_closed{position:absolute; top: 44.2vw; left: 69.3vw; width: 4vw; height: 4.7vw}
+.district_open{position:absolute; top: 44.2vw; left: 69.3vw; width: 4vw; height: 4.7vw; display: none;}
+.estate_overlay{position: absolute; height: 6.4vw; width: 5vw; display: none;}
+.district_overlay{ top: 43.2vw; left: 69.3vw;}
+
+.event_closed{position: absolute; top: 44.5vw; left: 74.6vw; width: 4.5vw; }
+.event_open{position: absolute; top: 44.5vw; left: 74.6vw; width: 4.5vw; display: none}
+.event_overlay{ top: 43.2vw; left: 74.3vw}
+
+.activity_closed{position: absolute; top: 44.9vw; left: 79.4vw; width: 5vw; height: 3.5vw}
+.activity_open{position: absolute; top: 44.4vw; left: 79.4vw; width: 5vw; height: 5vw;display: none}
+.activity_overlay{ top: 43.2vw; left: 79.3vw}
+
+.trinketbox_closed{position: absolute; top: 43.5vw; left: 84.5vw; width: 4.9vw; height: 5vw}
+.trinketbox_open{position: absolute; top: 43.5vw; left: 84.5vw; width: 4.9vw; height: 5vw;display: none}
+.trinketbox_overlay{ top: 43.2vw; left: 84.3vw}
+
+.glossary_closed{position: absolute; top: 44.3vw; left: 89.7vw; width: 4.1vw; height: 4.3vw}
+.glossary_open{position: absolute; top: 44.3vw; left: 89.3vw; width: 5vw; height: 4.3vw;display: none}
+.glossary_overlay{ top: 43.2vw; left: 89.3vw}
+
+.setting_icon{position: absolute; top: 44.2vw; left: 95.2vw; width: 3.1vw;height: 4.1vw}
+.setting_overlay{ top: 43.2vw; left: 94.3vw}
 
 
 /*Background element Styling*/
