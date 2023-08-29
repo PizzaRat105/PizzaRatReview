@@ -20,6 +20,14 @@ function PlayBtnPress() {
   BtnSelectAudio.play();
 }
 
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && HeroBox.style.display === 'block') {
+    CloseAudio.currentTime = 0;
+    CloseAudio.play();
+    HeroBox.style.display = 'none';
+  }
+});
+
 
 for (const renameBtn of renameBtns) {
   renameBtn.addEventListener('click', function() {PlayBtnPress();})}
@@ -48,7 +56,13 @@ LootBtn.addEventListener('click' , function() {
   LootBox.style.display = 'block'
 })
 
-
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && LootBox.style.display === 'block') {
+    CloseAudio.currentTime = 0;
+    CloseAudio.play();
+    LootBox.style.display = 'none';
+  }
+});
 
 const ProvisionerBtn = document.getElementById('provisioner')
 const ProvisionerBox = document.getElementById('provisionbox')
@@ -65,9 +79,13 @@ ProvisionerBtn.addEventListener('click' , function() {
   PlayPageOpn()
   ProvisionerBox.style.display = 'block'
 })
-
-
-
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && ProvisionerBox.style.display === 'block') {
+    CloseAudio.currentTime = 0;
+    CloseAudio.play();
+    ProvisionerBox.style.display = 'none';
+  }
+});
 RuinsNavigate.addEventListener('click', function() {
   PlayPageOpn()
   RuinsArea.style.display = 'flex'
