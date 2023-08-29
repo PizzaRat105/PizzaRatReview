@@ -8,11 +8,56 @@ function toggleMissionBox(selectedQuestBox){
         questbox.style.visibility = 'hidden';
     });
     selectedQuestBox.style.visibility = 'visible';
+    
+   
 }
 
+const HideAudio = document.getElementById('page_close');
+HideAudio.volume = 0.6;
 
+document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') {
+      handleEscape(CrimsonBox, CrimsonBackdrop, EmbarkCrimson);
+      handleEscape(MadnessBox, MadnessBackdrop, EmbarkMadness);
+      handleEscape(GauntletBox, GauntletBackdrop, EmbarkGauntlet);
+      handleEscape(EarlyBox1, Early1Backdrop, EmbarkDefault);
+      handleEscape(EarlyBox2, Early2Backdrop, EmbarkDefault);
+      handleEscape(EarlyBox3, Early3Backdrop, EmbarkDefault);
+      handleEscape(LateBox1, Late1Backdrop, EmbarkDefault);
+      handleEscape(LateBox2, Late2Backdrop, EmbarkDefault);
+      handleEscape(LateBox3, Late3Backdrop, EmbarkDefault);
+      handleEscape(VisualsBox, VisualBackdrop, EmbarkDefault);
+      handleEscape(MusicBox, MusicBackdrop, EmbarkDefault);
+      handleEscape(BossBox1);
+      handleEscape(BossBox2);
+      handleEscape(BossBox3);
+      handleEscape(BossBox4);
+      handleEscape(BossBox5);
+      handleEscape(BossBox6);
+      handleEscape(BossBox7);
+      handleEscape(BossBox8);
+      handleEscape(MiniBossBox1);
+      handleEscape(MiniBossBox2);
+      handleEscape(MiniBossBox3);
+      handleEscape(CircusBox);
+      
+    }
+  });
+  
+  function handleEscape(keyElement, backdropElement, embarkElement) {
+    if (keyElement.style.visibility === 'visible') {
+      HideAudio.currentTime = 0;
+      HideAudio.play();
+      keyElement.style.visibility = 'hidden';
 
-
+      if(backdropElement) {
+      backdropElement.style.visibility = 'hidden';
+    }
+      if (embarkElement) {
+        embarkElement.style.display = 'none';
+    }
+  }
+}
 
   const CrimsonButton = document.getElementById('crimsonbutton');
   const MadnessButton = document.getElementById('madnessbtn');
@@ -105,7 +150,7 @@ function toggleMissionBox(selectedQuestBox){
   const EmbarkMadness = document.getElementById('embark_madness');
   const EmbarkGauntlet = document.getElementById('embark_gauntlet');
 
-  
+
 function toggleEmbarkBtn1() {
     EmbarkCrimson.style.display = 'none';
     EmbarkMadness.style.display = 'none';
@@ -133,5 +178,43 @@ function toggleEmbarkBtnDDs() {
     EmbarkGauntlet.style.display = 'block';
     EmbarkDefault.style.display = 'none';
 }
+
+
+function toggleBackdropVisibility(selectedBackdrop) {
+    const allBackdrops = [CrimsonBackdrop, MadnessBackdrop, GauntletBackdrop, VisualBackdrop, MusicBackdrop, Early1Backdrop, Early2Backdrop, Early3Backdrop, Late1Backdrop, Late2Backdrop, Late3Backdrop];
   
+    // Hide all backdrops
+    allBackdrops.forEach(backdrop => {
+        backdrop.style.visibility = 'hidden';
+    });
+  
+    // Show the selected backdrop
+    selectedBackdrop.style.visibility = 'visible';
+  }
+  
+  
+  const CrimsonBackdrop = document.querySelector('.crimson_backdrop');
+  const MadnessBackdrop = document.querySelector('.madness_backdrop');
+  const GauntletBackdrop = document.querySelector('.gauntlet_backdrop');
+  const VisualBackdrop = document.querySelector('.visuals_backdrop');
+  const MusicBackdrop = document.querySelector('.music_backdrop');
+  const Early1Backdrop = document.querySelector('.app_cleanse_backdrop')
+  const Early2Backdrop = document.querySelector('.app_boss_backdrop')
+  const Early3Backdrop = document.querySelector('.app_gather_backdrop')
+  const Late1Backdrop = document.querySelector('.champ_gather_backdrop')
+  const Late2Backdrop = document.querySelector('.champ_boss_backdrop')
+  const Late3Backdrop = document.querySelector('.champ_cleanse_backdrop');
+  
+  // Add click event listeners to the buttons
+CrimsonButton.addEventListener('click', () => toggleBackdropVisibility(CrimsonBackdrop));
+MadnessButton.addEventListener('click', () => toggleBackdropVisibility(MadnessBackdrop));
+GauntletButton.addEventListener('click', () => toggleBackdropVisibility(GauntletBackdrop));
+VisualsBtn.addEventListener('click', () => toggleBackdropVisibility(VisualBackdrop));
+MusicBtn.addEventListener('click', () => toggleBackdropVisibility(MusicBackdrop));
+EarlyBtn1.addEventListener('click', () => toggleBackdropVisibility(Early1Backdrop));
+EarlyBtn2.addEventListener('click', () => toggleBackdropVisibility(Early2Backdrop));
+EarlyBtn3.addEventListener('click', () => toggleBackdropVisibility(Early3Backdrop));
+LateBtn1.addEventListener('click', () => toggleBackdropVisibility(Late1Backdrop));
+LateBtn2.addEventListener('click', () => toggleBackdropVisibility(Late2Backdrop));
+LateBtn3.addEventListener('click', () => toggleBackdropVisibility(Late3Backdrop));
 
