@@ -3,7 +3,7 @@ const skinchangeBtns = document.getElementsByClassName('swapskin_btn');
 const PastHeroBtns = document.getElementsByClassName('prev_btn');
 const NextHeroBtns = document.getElementsByClassName('next_btn');
 const BtnSelectAudio = document.getElementById('btn_press');
-BtnSelectAudio.volume = 0.5;
+BtnSelectAudio.volume = 0.7;
 const HeroBox = document.getElementById('herobox');
 const HeroPorts = document.getElementsByClassName('hero_port');
 const OpenAudio = document.getElementById('page_open');
@@ -19,6 +19,7 @@ function PlayBtnPress() {
   BtnSelectAudio.currentTime = 0; 
   BtnSelectAudio.play();
 }
+
 
 for (const renameBtn of renameBtns) {
   renameBtn.addEventListener('click', function() {PlayBtnPress();})}
@@ -98,44 +99,156 @@ CoveNavigate.addEventListener('click', function() {
 
 const DistrictOpen = document.getElementById('district_btn_open')
 const DistrictClosed = document.getElementById('district_btn_closed')
-const DistrictFrame = document.getElementById('district_frame')
 const DistrictOpenAudio = document.getElementById('district_open')
 const DistrictCloseAudio = document.getElementById('district_close')
-const DistrictOverlay1 = document.getElementById('district_overlay1')
-const DistrictOverlay2 = document.getElementById('district_overlay2')
-DistrictCloseAudio.volume = 0.6;
-DistrictOpenAudio.volume = 0.6;
+const DistrictOverlay = document.getElementById('district_overlay')
+DistrictCloseAudio.volume = 0.4;
+DistrictOpenAudio.volume = 0.4;
 
 
 DistrictOpen.addEventListener('click' , function() {
   DistrictCloseAudio.currentTime = 0;
   DistrictCloseAudio.play();
+  PlayBtnPress()
   DistrictClosed.style.display = 'block'
   DistrictOpen.style.display = 'none'
-  DistrictFrame.style.display = 'block'
 })
-
-DistrictOpen.addEventListener('mouseover' , function() {
-  DistrictOverlay2.style.display = 'block'
-})
-DistrictClosed.addEventListener('mouseover' , function() {
-  DistrictOverlay1.style.display = 'block'
-})
-DistrictOpen.addEventListener('mouseleave', function() {
-  DistrictOverlay2.style.display = 'none'; // Assuming you want to hide the overlay
-});
-
-DistrictClosed.addEventListener('mouseleave', function() {
-  DistrictOverlay1.style.display = 'none'; // Assuming you want to hide the overlay
-});
-
 DistrictClosed.addEventListener('click' , function() {
   DistrictOpenAudio.currentTime - 0;
   DistrictOpenAudio.play();
+  PlayBtnPress()
   DistrictClosed.style.display = 'none'
   DistrictOpen.style.display = 'block'
-  DistrictFrame.style.display = 'none'
 })
+
+DistrictOpen.addEventListener('mouseover' , function() {DistrictOverlay.style.display = 'block'})
+DistrictOpen.addEventListener('mouseleave', function() {DistrictOverlay.style.display = 'none'; });
+DistrictClosed.addEventListener('mouseover' , function() {DistrictOverlay.style.display = 'block'})
+DistrictClosed.addEventListener('mouseleave', function() {DistrictOverlay.style.display = 'none'; });
+
+
+const EventOpen = document.getElementById('town_event_open')
+const EventClosed = document.getElementById('town_event_closed')
+const EventOverlay = document.getElementById('event_overlay')
+
+EventOpen.addEventListener('click' , function() {
+  PlayBtnPress()
+  EventClosed.style.display = 'block'
+  EventOpen.style.display = 'none'
+})
+EventClosed.addEventListener('click' , function() {
+  PlayBtnPress()
+  EventClosed.style.display = 'none'
+  EventOpen.style.display = 'block'
+})
+
+EventOpen.addEventListener('mouseover' , function() {EventOverlay.style.display = 'block'})
+EventOpen.addEventListener('mouseleave', function() {EventOverlay.style.display = 'none'; });
+EventClosed.addEventListener('mouseover' , function() {EventOverlay.style.display = 'block'})
+EventClosed.addEventListener('mouseleave', function() {EventOverlay.style.display = 'none'; });
+
+const ActivityOpen = document.getElementById('activity_log_open')
+const ActivityClosed = document.getElementById('activity_log_closed')
+const ActivityOverlay = document.getElementById('activity_overlay')
+
+ActivityOpen.addEventListener('click' , function() {
+  CloseAudio.currentTime = 0;
+  CloseAudio.play();
+  PlayBtnPress()
+  ActivityClosed.style.display = 'block'
+  ActivityOpen.style.display = 'none'
+})
+ActivityClosed.addEventListener('click' , function() {
+  PlayPageOpn() 
+  PlayBtnPress()
+  ActivityClosed.style.display = 'none'
+  ActivityOpen.style.display = 'block'
+})
+
+ActivityOpen.addEventListener('mouseover' , function() {ActivityOverlay.style.display = 'block'})
+ActivityOpen.addEventListener('mouseleave', function() {ActivityOverlay.style.display = 'none'; });
+ActivityClosed.addEventListener('mouseover' , function() {ActivityOverlay.style.display = 'block'})
+ActivityClosed.addEventListener('mouseleave', function() {ActivityOverlay.style.display = 'none'; });
+
+
+const TrinketBoxOpen = document.getElementById('trinketsbox_open')
+const TrinketBoxClosed = document.getElementById('trinketsbox_closed')
+const TrinketBoxOpenAudio = document.getElementById('trinketbox_open')
+const TrinketBoxCloseAudio = document.getElementById('trinketbox_close')
+const TrinketBoxOverlay = document.getElementById('trinketsbox_overlay')
+TrinketBoxCloseAudio.volume = 0.3;
+TrinketBoxOpenAudio.volume = 0.3;
+
+TrinketBoxOpen.addEventListener('click' , function() {
+  TrinketBoxCloseAudio.currentTime = 0;
+  TrinketBoxCloseAudio.play();
+  PlayBtnPress()
+  TrinketBoxClosed.style.display = 'block'
+  TrinketBoxOpen.style.display = 'none'
+})
+TrinketBoxClosed.addEventListener('click' , function() {
+  TrinketBoxOpenAudio.currentTime - 0;
+  TrinketBoxOpenAudio.play();
+  PlayBtnPress()
+  TrinketBoxClosed.style.display = 'none'
+  TrinketBoxOpen.style.display = 'block'
+})
+
+TrinketBoxOpen.addEventListener('mouseover' , function() {TrinketBoxOverlay.style.display = 'block'})
+TrinketBoxOpen.addEventListener('mouseleave', function() {TrinketBoxOverlay.style.display = 'none'; });
+TrinketBoxClosed.addEventListener('mouseover' , function() {TrinketBoxOverlay.style.display = 'block'})
+TrinketBoxClosed.addEventListener('mouseleave', function() {TrinketBoxOverlay.style.display = 'none'; });
+
+const GlossaryOpen = document.getElementById('glossary_open')
+const GlossaryClosed = document.getElementById('glossary_closed')
+const GlossaryOverlay = document.getElementById('glossary_overlay')
+
+GlossaryOpen.addEventListener('click' , function() {
+  CloseAudio.currentTime = 0;
+  CloseAudio.play();
+  PlayBtnPress()
+  GlossaryClosed.style.display = 'block'
+  GlossaryOpen.style.display = 'none'
+})
+GlossaryClosed.addEventListener('click' , function() {
+  PlayPageOpn() 
+  PlayBtnPress()
+  GlossaryClosed.style.display = 'none'
+  GlossaryOpen.style.display = 'block'
+})
+GlossaryOpen.addEventListener('mouseover' , function() {GlossaryOverlay.style.display = 'block'})
+GlossaryOpen.addEventListener('mouseleave', function() {GlossaryOverlay.style.display = 'none'; });
+GlossaryClosed.addEventListener('mouseover' , function() {GlossaryOverlay.style.display = 'block'})
+GlossaryClosed.addEventListener('mouseleave', function() {GlossaryOverlay.style.display = 'none'; });
+
+const SettingIcon1 = document.getElementById('setting1')
+const SettingIcon2 = document.getElementById('setting2')
+const SettingOpenAudio = document.getElementById('candle_open')
+const SettingCloseAudio = document.getElementById('candle_close')
+const SettingOverlay = document.getElementById('setting_overlay')
+SettingCloseAudio.volume = 0.6;
+SettingOpenAudio.volume = 0.6;
+
+SettingIcon2.addEventListener('click' , function() {
+  SettingCloseAudio.currentTime = 0;
+  SettingCloseAudio.play();
+  
+  SettingIcon1.style.display = 'block'
+  SettingIcon2.style.display = 'none'
+})
+SettingIcon1.addEventListener('click' , function() {
+  SettingOpenAudio.currentTime = 0;
+  SettingOpenAudio.play();
+  PlayBtnPress()
+  SettingIcon1.style.display = 'none'
+  SettingIcon2.style.display = 'block'
+})
+
+SettingIcon1.addEventListener('mouseover' , function() {SettingOverlay.style.display = 'block'})
+SettingIcon1.addEventListener('mouseleave', function() {SettingOverlay.style.display = 'none'; });
+SettingIcon2.addEventListener('mouseover' , function() {SettingOverlay.style.display = 'block'})
+SettingIcon2.addEventListener('mouseleave', function() {SettingOverlay.style.display = 'none'; });
+
 
 const CloseBtn = document.getElementById('close');
 const CloseProvisions = document.getElementById('food_close')
@@ -159,6 +272,8 @@ CloseLoot.addEventListener('click', function() {
   CloseAudio.play();
   LootBox.style.display = 'none'
 })
+
+
 function HideAllBox() {
   const AllCharBox = [AbomBox, AntiBox, ArbBox, BHBox, CrusBox, FlagBox, GRBox, HellBox, HWMBox, HMBox, JesBox, LepBox, MAABox, MuskBox, OccBox, PDBox, SBBox, VesBox]
   AllCharBox.forEach(charbox => {
