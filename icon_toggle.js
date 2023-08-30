@@ -158,6 +158,18 @@ document.addEventListener("DOMContentLoaded", function() {
   attachHoverListeners("[id^='bust_box']", "[id^='bust_desc']");
   attachHoverListeners("[id^='deed_box']", "[id^='deed_desc']");
   attachHoverListeners("[id^='portrait_box']", "[id^='portrait_desc']");
+
+  
+  attachHoverListeners("[id^='luminous']", "[id^='luminous_desc']");
+  attachHoverListeners("[id^='corvid_grace']", "[id^='corvid_grace_desc']");
+  attachHoverListeners("[id^='corvid_eye']", "[id^='corvid_eye_desc']");
+  attachHoverListeners("[id^='eldritch_slayer']", "[id^='eldritch_slayer_desc']");
+  attachHoverListeners("[id^='man_slayer']", "[id^='man_slayer_desc']");
+  attachHoverListeners("[id^='natural_swing']", "[id^='natural_swing_desc']");
+  attachHoverListeners("[id^='quick_reflexes']", "[id^='quick_reflexes_desc']");
+  attachHoverListeners("[id^='hippocratic']", "[id^='hippocratic_desc']");
+  attachHoverListeners("[id^='precise_striker']", "[id^='precise_striker_desc']");
+  attachHoverListeners("[id^='eagle_eye']", "[id^='eagle_eye_desc']")
 });
 function attachHoverListeners(triggerSelector, targetSelector) {
   var triggerElements = document.querySelectorAll(triggerSelector);
