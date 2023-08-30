@@ -220,17 +220,20 @@ TrinketBoxClosed.addEventListener('mouseleave', function() {TrinketBoxOverlay.st
 const GlossaryOpen = document.getElementById('glossary_open')
 const GlossaryClosed = document.getElementById('glossary_closed')
 const GlossaryOverlay = document.getElementById('glossary_overlay')
+const GlossaryBox = document.getElementById('glossarybox')
 
 GlossaryOpen.addEventListener('click' , function() {
   CloseAudio.currentTime = 0;
   CloseAudio.play();
   PlayBtnPress()
+  GlossaryBox.style.display = 'none'
   GlossaryClosed.style.display = 'block'
   GlossaryOpen.style.display = 'none'
 })
 GlossaryClosed.addEventListener('click' , function() {
   PlayPageOpn() 
   PlayBtnPress()
+  GlossaryBox.style.display = 'block'
   GlossaryClosed.style.display = 'none'
   GlossaryOpen.style.display = 'block'
 })
@@ -239,6 +242,28 @@ GlossaryOpen.addEventListener('mouseleave', function() {GlossaryOverlay.style.di
 GlossaryClosed.addEventListener('mouseover' , function() {GlossaryOverlay.style.display = 'block'})
 GlossaryClosed.addEventListener('mouseleave', function() {GlossaryOverlay.style.display = 'none'; });
 
+
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && GlossaryBox.style.display === 'block') {
+    CloseAudio.currentTime = 0;
+    CloseAudio.play();
+    GlossaryBox.style.display = 'none';
+    GlossaryOpen.style.display = 'none';
+    GlossaryClosed.style.display = 'block';
+  }
+});
+
+const PosNavBtns = document.getElementsByClassName('tier_btn_positive');
+const PosQuirkBtn = document.getElementById('glossarynav1')
+const NegQuirkBtn = document.getElementById('glossarynav2')
+
+PosQuirkBtn.addEventListener('click', function() {PlayPageOpn();})
+
+NegQuirkBtn.addEventListener('click', function() {PlayPageOpn();})
+
+
+for (const PosNavBtn of PosNavBtns) {
+  PosNavBtn.addEventListener('click', function() {PlayBtnPress();})}
 const SettingIcon1 = document.getElementById('setting1')
 const SettingIcon2 = document.getElementById('setting2')
 const SettingOpenAudio = document.getElementById('candle_open')
@@ -267,10 +292,10 @@ SettingIcon1.addEventListener('mouseleave', function() {SettingOverlay.style.dis
 SettingIcon2.addEventListener('mouseover' , function() {SettingOverlay.style.display = 'block'})
 SettingIcon2.addEventListener('mouseleave', function() {SettingOverlay.style.display = 'none'; });
 
-
 const CloseBtn = document.getElementById('close');
 const CloseProvisions = document.getElementById('food_close')
-const CloseLoot = document.getElementById('lootclose')
+const CloseLoot = document.getElementById('lootclose');
+const QuirkClose = document.getElementById('quirk_close')
 const CloseAudio = document.getElementById('page_close');
 CloseAudio.volume = 0.6;
 
@@ -291,6 +316,13 @@ CloseLoot.addEventListener('click', function() {
   LootBox.style.display = 'none'
 })
 
+QuirkClose.addEventListener('click', function() {
+  CloseAudio.currentTime = 0;
+  CloseAudio.play();
+  GlossaryBox.style.display = 'none';
+  GlossaryOpen.style.display = 'none';
+  GlossaryClosed.style.display = 'block';
+})
 
 function HideAllBox() {
   const AllCharBox = [AbomBox, AntiBox, ArbBox, BHBox, CrusBox, FlagBox, GRBox, HellBox, HWMBox, HMBox, JesBox, LepBox, MAABox, MuskBox, OccBox, PDBox, SBBox, VesBox]
