@@ -137,6 +137,44 @@ button{background: white; border: none; width:20px}
 #boss8{left: 83.6vw; top: 31.5vw;}
 
 
+/*Quirk Glossary Styling*/
+
+.glossary_container{position:absolute; left: 8.5vw; top: 6.75vw; width: 75.2vw; height: 39vw; 
+    background-image: url("images/estate_icons/glossary_background2.png"); background-size: 75.2vw 39vw; display: none; }
+.glossary_backdrop{position:absolute; width: 90vw; height: 37vw}
+.quirk_close{position:absolute; right: 0.8vw; top:0.8vw; width: 1.8vw}
+.quirk_close:hover{filter: brightness(150%);}
+
+.glossary_nav1{position:absolute; width: 10vw; top: -3.1vw; left:45vw}
+.glossary_nav2{position:absolute; width: 10vw; top: -3.1vw; left:57vw}
+.glossary_nav1:hover{filter: brightness(150%);}
+.glossary_nav2:hover{filter: brightness(150%);}
+
+.tier_nav{position: absolute; left: 74.5vw; width: 3vw; height: 39vw;  display: flex; flex-direction: column; justify-content: center;}
+.tier_btn_positive{width: 3vw; margin: 1vw 0vw}
+.tier_btn_positive:hover{filter: brightness(150%);}
+
+.quirk_tier_container{width:37vw; height: 39vw;  position: absolute; left: 36vw; }
+.tier_header_txt{position: absolute;left: 1vw;top: 2vw;  height: 4vw; width: 40vw;  font-size: 2.2vw;}
+
+.quirk_container{display:block; position: absolute;top: 8vw; width: 19vw; height: 31vw;  }
+.quirk_text{font-family: 'Ubuntu', sans-serif; color: rgb(199, 179, 107); font-size: 1.5vw; line-height: 2.5vw; font-weight: 500;}
+
+.quirk_desc{position: absolute; width:max-content; display: none;
+    border: 0.1vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.8);
+    font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167);padding: 0.2vw 0.6vw 0.2vw 0.3vw; font-size: 1.3vw; line-height: 1.6vw; font-weight: 500;}
+
+.row1num1{top: 10.5vw;}
+.row1num2{top:13vw; }
+.row1num3{top:15.5vw;}
+.row1num4{top: 18vw;}
+.row1num5{top: 20.5vw;}
+.row1num6{top: 23vw;}
+.row1num7{top: 25.5vw;}
+.row1num8{top: 28vw;}
+.row1num9{top: 30.5vw;}
+.row1num10{top: 33vw;}
+
 /*Provision Box Styling*/
 
 .provision_backdrop{position:absolute; width: 90vw; height: 45vw}
