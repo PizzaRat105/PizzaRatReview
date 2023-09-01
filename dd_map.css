@@ -150,30 +150,55 @@ button{background: white; border: none; width:20px}
 .glossary_nav1:hover{filter: brightness(150%);}
 .glossary_nav2:hover{filter: brightness(150%);}
 
-.tier_nav{position: absolute; left: 74.5vw; width: 3vw; height: 39vw;  display: flex; flex-direction: column; justify-content: center;}
-.tier_btn_positive{width: 3vw; margin: 1vw 0vw}
+.tier_nav{position: absolute; left: 74.8vw;top: 0.5vw; width: 3vw; height: 39vw;  display: flex; flex-direction: column; justify-content: center;}
+
+.tier_btn_positive{width: 4vw; margin: 1vw 0vw}
 .tier_btn_positive:hover{filter: brightness(150%);}
+.tier_btn_negative{width: 3.5vw; margin: 0.3vw 0vw}
+.tier_btn_negative:hover{filter: brightness(150%);}
+
+#neg_nav{display: none;}
 
 .quirk_tier_container{width:37vw; height: 39vw;  position: absolute; left: 36vw; }
 .tier_header_txt{position: absolute;left: 1vw;top: 2vw;  height: 4vw; width: 40vw;  font-size: 2.2vw;}
 
-.quirk_container{display:block; position: absolute;top: 8vw; width: 19vw; height: 31vw;  }
-.quirk_text{font-family: 'Ubuntu', sans-serif; color: rgb(199, 179, 107); font-size: 1.5vw; line-height: 2.5vw; font-weight: 500;}
+.quirk_container{display:block; position: absolute;top: 6vw; left:1vw; width:fit-content; height: 31vw;  }
+.quirk_text{font-family: 'Ubuntu', sans-serif; color: rgb(199, 179, 107); font-size: 1.6vw; line-height: 2.6vw; font-weight: 500; width: fit-content;}
+.quirk_name_line2{position: relative; left: 16.5vw; top: -31.2vw}
+.quirk_name_container{width: fit-content;}
 
-.quirk_desc{position: absolute; width:max-content; display: none;
-    border: 0.1vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.8);
-    font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167);padding: 0.2vw 0.6vw 0.2vw 0.3vw; font-size: 1.3vw; line-height: 1.6vw; font-weight: 500;}
+.negative{color: rgb(160, 43, 32);}
 
-.row1num1{top: 10.5vw;}
-.row1num2{top:13vw; }
-.row1num3{top:15.5vw;}
-.row1num4{top: 18vw;}
-.row1num5{top: 20.5vw;}
-.row1num6{top: 23vw;}
-.row1num7{top: 25.5vw;}
-.row1num8{top: 28vw;}
-.row1num9{top: 30.5vw;}
-.row1num10{top: 33vw;}
+.quirk_desc{position: absolute;  display: none;
+    border: 0.15vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.8);
+    font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167);padding: 0.2vw 0.6vw 0.2vw 0.3vw; font-size: 1.3vw; line-height: 1.8vw; font-weight: 500;}
+
+.row1num1{top: 8.5vw; left:0.9vw;}
+.row1num2{top:11.1vw; left:0.9vw;}
+.row1num3{top:13.7vw; left:0.9vw;}
+.row1num4{top: 16.3vw; left:0.9vw;}
+.row1num5{top: 18.9vw; left:0.9vw;}
+.row1num6{top: 21.5vw; left:0.9vw;}
+.row1num7{top: 24.1vw; left:0.9vw;}
+.row1num8{top: 26.7vw; left:0.9vw;}
+.row1num9{top: 29.3vw; left:0.9vw;}
+.row1num10{top: 31.9vw; left:0.9vw;}
+.row1num11{top: 34.5vw; left:0.9vw;}
+.row1num12{top: 37.1vw; left:0.9vw;}
+
+.row2num1{top: 8.5vw; left:17.4vw;}
+.row2num2{top:11.1vw; left:17.4vw;}
+.row2num3{top:13.7vw; left:17.4vw;}
+.row2num4{top: 16.3vw; left:17.4vw;}
+.row2num5{top: 18.9vw; left:17.4vw;}
+.row2num6{top: 21.5vw; left:17.4vw;}
+.row2num7{top: 24.1vw; left:17.4vw;}
+.row2num8{top: 26.7vw; left:17.4vw;}
+.row2num9{top: 29.3vw; left:17.4vw;}
+.row2num10{top: 31.9vw; left:17.4vw;}
+.row2num11{top: 34.5vw; left:17.4vw;}
+.row2num12{top: 37.1vw; left:17.4vw;}
+
 
 /*Provision Box Styling*/
 
