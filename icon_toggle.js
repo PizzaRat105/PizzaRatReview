@@ -362,7 +362,6 @@ document.addEventListener("DOMContentLoaded", function() {
   attachHoverListeners("[id^='deviant_tastes']", "[id^='deviant_tastes_desc']")
   attachHoverListeners("[id^='bad_gambler']", "[id^='bad_gambler_desc']");
 
-
 });
 function attachHoverListeners(triggerSelector, targetSelector) {
   var triggerElements = document.querySelectorAll(triggerSelector);
