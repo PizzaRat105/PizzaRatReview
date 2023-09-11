@@ -21,8 +21,10 @@ button{background: white; border: none; width:20px}
     font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1vw; line-height: 1.3vw; font-weight: 500;
     text-align: center; padding: 0.3vw 0.6vw 0.6vw 0.6vw;
 }
-.hoverable:hover{filter: brightness(150%);}
 
+.description{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1vw; line-height: 1.3vw;}
+.hoverable:hover{filter: brightness(150%);}
+.fit_width{width:fit-content}
 /*body {
     user-select: none;
 }*/
@@ -35,7 +37,7 @@ button{background: white; border: none; width:20px}
 .button_short{position: absolute; height: 3.3vw;}
 .button_short:hover{filter: brightness(150%);}
 
-.boss_button{position: absolute; height: 3.2vw;}
+.boss_button{position: absolute; height: 3.2vw; display: none;}
 .boss_button:hover{filter: brightness(150%);}
 
 
@@ -87,42 +89,127 @@ button{background: white; border: none; width:20px}
 
 
 /*General Box, Button and Backdrop Styling*/
-.quest_box{width: 24vw;height: 38.4vw; position: absolute; visibility: hidden; left: 9vw; top: 6.9vw;}
+.quest_box{width: 24vw;height: 38.4vw; position: absolute; display: none; left: 9vw; top: 6.9vw; padding-left:1vw;
+    background-image: url('images/Boxes/quest_textbox.png'); background-size: 24vw;}
+.enemy{background-image: url('images/Boxes/quest_textbox_enemy.png'); background-size: 24vw;
+    font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167);font-size: 1.3vw; line-height: 1.8vw; font-weight: 500;}
 .boss_box{width: 24vw;height: 38.4vw; position: absolute; visibility: hidden; left: 9vw; top: 6.9vw;}
 
-.crimson_backdrop{top: 16vw; left: 34vw;visibility: hidden;}
+.crimson_backdrop{top: 16vw; left: 34vw;display: none;}
 .crimson_btn{top: 17.2vw; left: 35.4vw;}
 
-.madness_backdrop{top: 28.3vw; left: 32.9vw;visibility: hidden;}
+.madness_backdrop{top: 28.3vw; left: 32.9vw;display: none;}
 .madness_btn{top: 29.4vw; left: 34.2vw;}
 
-.gauntlet_backdrop{top: 5.7vw; left: 76.5vw; visibility: hidden;}
+.gauntlet_backdrop{top: 5.7vw; left: 76.5vw; display: none;}
 .gauntlet_btn{top: 7.6vw; left: 78.2vw; }
 
-.app_cleanse_backdrop{top: 11.4vw; left: 56.3vw; visibility: hidden;}
-.app_cleanse_btn{top: 13.1vw; left: 58vw;}
 
-.app_boss_backdrop{top: 11.4vw; left: 60.4vw; visibility: hidden;}
-.app_boss_btn{top: 12.6vw; left: 62.2vw;}
+.ruins_enemy_backdrop{top: 11.4vw; left: 56.2vw; display: none;}
+.ruins_enemy_btn{top: 12.6vw; left: 58vw;}
 
-.app_gather_backdrop{top: 11.4vw; left: 64.6vw; visibility: hidden;}
-.app_gather_btn{top: 12.6vw; left: 66.4vw;}
+.ruins_curio_backdrop{top: 11.4vw; left: 60.4vw; display: none;}
+.ruins_curio_btn{top: 12.6vw; left: 62.2vw;}
 
-.visuals_backdrop{top: 19.5vw; left: 47.9vw; visibility: hidden;}
-.visuals_btn{top: 20.6vw; left: 49.6vw; }
+.ruins_boss_backdrop{top: 11.4vw; left: 64.6vw; display: none;}
+.ruins_boss_btn{top: 12.6vw; left: 66.4vw;}
 
-.music_backdrop{top: 19.5vw; left: 52.1vw; visibility: hidden;}
-.music_btn{top: 20.7vw; left: 53.7vw;}
 
-.champ_gather_backdrop{top: 25.1vw; left: 59.65vw; visibility: hidden;}
-.champ_gather_btn{top: 26.2vw; left: 61.5vw;}
+.weald_enemy_backdrop{top: 25vw; left: 59.7vw; display: none;}
+.weald_enemy_btn{top: 26.2vw; left: 61.5vw;}
 
-.champ_boss_backdrop{top: 25.1vw; left: 64.2vw; visibility: hidden;}
-.champ_boss_btn{top: 26.2vw; left: 66vw;}
+.weald_curio_backdrop{top: 25vw; left: 63.8vw; display: none;}
+.weald_curio_btn{top: 26.2vw; left: 65.6vw;}
 
-.champ_cleanse_backdrop{top: 25.1vw; left: 69vw; visibility: hidden;}
-.champ_cleanse_btn{top: 26.2vw; left: 70.3vw;}
+.weald_boss_backdrop{top: 25vw; left: 67.9vw; display: none;}
+.weald_boss_btn{top: 26.2vw; left: 69.7vw;}
 
+
+.warrens_enemy_backdrop{top: 19.5vw; left: 47.9vw; display: none;}
+.warrens_enemy_btn{top: 20.7vw; left: 49.7vw; }
+
+.warrens_curio_backdrop{top: 19.5vw; left: 52.1vw; display: none;}
+.warrens_curio_btn{top: 20.7vw; left: 53.9vw;}
+
+.warrens_boss_backdrop{top: 19.5vw; left: 56.3vw; display: none;}
+.warrens_boss_btn{top: 20.7vw; left: 58.1vw;}
+
+
+.cove_enemy_backdrop{top: 19.4vw; left: 76.2vw; display: none;}
+.cove_enemy_btn{top: 20.6vw; left: 78vw; }
+
+.cove_curio_backdrop{top: 19.4vw; left: 80.3vw; display: none;}
+.cove_curio_btn{top: 20.6vw; left: 82.1vw;}
+
+.cove_boss_backdrop{top: 19.4vw; left: 84.4vw; display: none;}
+.cove_boss_btn{top: 20.6vw; left: 86.2vw;}
+
+
+.shared_enemy_backdrop{top: 36.6vw; left: 77.2vw; display: none;}
+.shared_enemy_btn{top: 37.8vw; left: 79vw;}
+
+.shared_curio_backdrop{top: 36.6vw; left: 81.4vw; display: none;}
+.shared_curio_btn{top: 37.8vw; left: 83.2vw;}
+
+.shared_boss_backdrop{top: 36.6vw; left: 85.6vw; display: none;}
+.shared_boss_btn{top: 37.8vw; left: 87.4vw;}
+
+.enemy_sprite{position: absolute; top: 1.2vw ;max-width: 12vw;max-height: 14vw; left:1vw;}
+.enemy_small_sprite{position: absolute; top: 4.5vw ;max-width: 9vw;max-height: 9vw; left:1.3vw;}
+.enemy_tall_sprite{position: absolute; top: -1.2vw; max-width: 12vw; max-height: 15vw; left: 3vw}
+.enemy_medtall_sprite{position: absolute; top: 0vw; max-width: 12vw; max-height: 13.5vw; left: 1.2vw}
+.enemy_size2_sprite{position: absolute; top: 0.2vw; max-width: 16vw;max-height: 14vw; left: 0vw}
+
+.monster_name_veryshort{font-size: 2.1vw;  margin:0.3vw 0; position: absolute; top: 11.3vw; right:4.5vw }
+.monster_name_short{font-size: 2.1vw;  margin:0.3vw 0; position: absolute; top: 11.3vw; right:3vw ;}
+.monster_name_medium{font-size: 2.1vw;  margin:0.3vw 0; position: absolute; top: 11.3vw; right:2vw }
+
+.enemy_sprite_container{ display: none}
+.enemy_stats_container{position: absolute; top:14vw;  width: 23.7vw; height:15vw; left: -0.2vw; padding-left: 1vw;}
+    
+.desc_toggle{width: 9vw; margin-right: 2.5vw; margin-left: 0vw;}
+.enemy_strat {position: absolute; top:17.7vw;  width: 23.7vw; height:20.5vw; left: 0vw; background-color: black; 
+     display: none; font-size: 1.2vw; padding:0 0.2vw; text-align: center;}
+.stratslight_margin{margin-bottom: 0.2vw;}
+.enemy_skill_container{position:absolute; width: 23.7vw; top: 29.2vw; left: 1vw;line-height: 2.2vw; display: none}
+.enemy_skill_desc_container{position: absolute; top: 26.4vw; left: 23.8vw; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.8); padding:0.3vw 0.4vw 0.3vw 0.4vw;
+                            text-align: center; width:max-content; font-size: 1vw; line-height: 1.5vw; display: none;}
+
+.enemy_toggle_btn1{width: 8vw; position: absolute; left: 2vw; top:0.5vw; display: none}
+.enemy_toggle_btn2{width: 8vw; position: absolute; left: 13.5vw; top:0.5vw; display: none;}
+.enemy_toggle_btn1:hover{filter: brightness(150%);}
+.enemy_toggle_btn2:hover{filter: brightness(150%);}
+
+
+
+.position_icons{max-width: 10vw; height: 1vw;}
+
+.enemy_numbers1{position: absolute; top:3.45vw; left: 6.7vw; }
+.enemy_numbers2{position: absolute; top:3.53vw; left: 19.5vw; }
+
+.enemy_numbers3{position: absolute; top:9.15vw; left: 6.7vw; line-height: 1.9vw; }
+.enemy_numbers4{position: absolute; top:9.15vw; left: 19.5vw; line-height: 1.9vw; }
+
+.enemy_sidenav{position: absolute; left: 23vw; top:0vw; width: 10vw;height:20vw; 
+display: flex; flex-direction: row; flex-wrap: wrap; background-color: black; justify-content: center;}
+.sidenav9{height: 24.7vw}
+.sidenav13{height: 24.7vw; width: 15vw}
+
+.enemy_port{display: flex; height: 4vw; margin: 0.3vw}
+.enemy_port:hover{filter: brightness(150%);}
+.port_top{margin-top: 0.6vw;}
+.port_btm{margin-bottom: 0.6vw;}
+
+.lvl_btn{height: 2vw; position: absolute; left: 17vw; display: none;}
+.lvl_btn:hover{filter: brightness(150%);}
+.app_lvl{top: 1vw; left:19vw}
+.vet_lvl{top: 3.5vw;left:19vw}
+.champ_lvl{top: 6vw; left: 17.6vw;}
+.darkest_lvl{top: 1vw; left: 17vw;}
+
+.statskill_icon{width: 2vw;}
+
+.hide_headers{position: absolute; top: 15vw; left: -0.3vw;  width: 24vw; height: 23vw; background-color: black;}
 
 #boss1{left: 80vw; top: 20.7vw;}
 #boss2{left: 83.6vw; top: 20.7vw;}
