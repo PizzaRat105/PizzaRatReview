@@ -2817,7 +2817,7 @@ const wealdskills = [
 },
 
 { 
-    extrainfo: 'Requires 2 Corpses/Empty Spaces <br>',
+    extrainfo: 'Requires 2 Corpses/Empty Spaces <br> ',
     id: 'vet_ectoplasmic_profusion_desc',
     position: '1234cleaveally_1234enemy.png',
     name: 'Ectoplasmic Profusion',
