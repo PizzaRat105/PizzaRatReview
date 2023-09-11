@@ -10,6 +10,7 @@ const OpenAudio = document.getElementById('page_open');
 OpenAudio.volume = 0.6;
 
 
+
 function PlayPageOpn() {
   OpenAudio.currentTime = 0;
   OpenAudio.play();
@@ -48,6 +49,7 @@ for (const HeroPort of HeroPorts) {
   })
 }
 
+/*Lootbox*/ 
 const LootBtn = document.getElementById('Loot');
 const LootBox = document.getElementById('lootbox');
 
@@ -63,7 +65,7 @@ document.addEventListener('keydown', event => {
     LootBox.style.display = 'none';
   }
 });
-
+/*Provisions*/
 const ProvisionerBtn = document.getElementById('provisioner')
 const ProvisionerBox = document.getElementById('provisionbox')
 const RuinsNavigate = document.getElementById('ruins_nav')
@@ -86,6 +88,8 @@ document.addEventListener('keydown', event => {
     ProvisionerBox.style.display = 'none';
   }
 });
+
+
 RuinsNavigate.addEventListener('click', function() {
   PlayPageOpn()
   RuinsArea.style.display = 'flex'
@@ -115,6 +119,8 @@ CoveNavigate.addEventListener('click', function() {
   CoveArea.style.display = 'flex'
 })
 
+
+/*Districts*/
 const DistrictOpen = document.getElementById('district_btn_open')
 const DistrictClosed = document.getElementById('district_btn_closed')
 const DistrictOpenAudio = document.getElementById('district_open')
@@ -144,7 +150,7 @@ DistrictOpen.addEventListener('mouseleave', function() {DistrictOverlay.style.di
 DistrictClosed.addEventListener('mouseover' , function() {DistrictOverlay.style.display = 'block'})
 DistrictClosed.addEventListener('mouseleave', function() {DistrictOverlay.style.display = 'none'; });
 
-
+/*Town Event */
 const EventOpen = document.getElementById('town_event_open')
 const EventClosed = document.getElementById('town_event_closed')
 const EventOverlay = document.getElementById('event_overlay')
@@ -165,6 +171,8 @@ EventOpen.addEventListener('mouseleave', function() {EventOverlay.style.display 
 EventClosed.addEventListener('mouseover' , function() {EventOverlay.style.display = 'block'})
 EventClosed.addEventListener('mouseleave', function() {EventOverlay.style.display = 'none'; });
 
+
+/*Activity Section */
 const ActivityOpen = document.getElementById('activity_log_open')
 const ActivityClosed = document.getElementById('activity_log_closed')
 const ActivityOverlay = document.getElementById('activity_overlay')
@@ -188,7 +196,7 @@ ActivityOpen.addEventListener('mouseleave', function() {ActivityOverlay.style.di
 ActivityClosed.addEventListener('mouseover' , function() {ActivityOverlay.style.display = 'block'})
 ActivityClosed.addEventListener('mouseleave', function() {ActivityOverlay.style.display = 'none'; });
 
-
+/*Trinket Inv */
 const TrinketBoxOpen = document.getElementById('trinketsbox_open')
 const TrinketBoxClosed = document.getElementById('trinketsbox_closed')
 const TrinketBoxOpenAudio = document.getElementById('trinketbox_open')
@@ -216,147 +224,9 @@ TrinketBoxOpen.addEventListener('mouseover' , function() {TrinketBoxOverlay.styl
 TrinketBoxOpen.addEventListener('mouseleave', function() {TrinketBoxOverlay.style.display = 'none'; });
 TrinketBoxClosed.addEventListener('mouseover' , function() {TrinketBoxOverlay.style.display = 'block'})
 TrinketBoxClosed.addEventListener('mouseleave', function() {TrinketBoxOverlay.style.display = 'none'; });
-const GlossaryOpen = document.getElementById('glossary_open')
-const GlossaryClosed = document.getElementById('glossary_closed')
-const GlossaryOverlay = document.getElementById('glossary_overlay')
-const GlossaryBox = document.getElementById('glossarybox')
-
-GlossaryOpen.addEventListener('click' , function() {
-  CloseAudio.currentTime = 0;
-  CloseAudio.play();
-  PlayBtnPress()
-  GlossaryBox.style.display = 'none'
-  GlossaryClosed.style.display = 'block'
-  GlossaryOpen.style.display = 'none'
-})
-GlossaryClosed.addEventListener('click' , function() {
-  PlayPageOpn() 
-  PlayBtnPress()
-  GlossaryBox.style.display = 'block'
-  GlossaryClosed.style.display = 'none'
-  GlossaryOpen.style.display = 'block'
-})
-GlossaryOpen.addEventListener('mouseover' , function() {GlossaryOverlay.style.display = 'block'})
-GlossaryOpen.addEventListener('mouseleave', function() {GlossaryOverlay.style.display = 'none'; });
-GlossaryClosed.addEventListener('mouseover' , function() {GlossaryOverlay.style.display = 'block'})
-GlossaryClosed.addEventListener('mouseleave', function() {GlossaryOverlay.style.display = 'none'; });
 
 
-document.addEventListener('keydown', event => {
-  if (event.key === 'Escape' && GlossaryBox.style.display === 'block') {
-    CloseAudio.currentTime = 0;
-    CloseAudio.play();
-    GlossaryBox.style.display = 'none';
-    GlossaryOpen.style.display = 'none';
-    GlossaryClosed.style.display = 'block';
-  }
-});
-
-const PosNavBtns = document.getElementsByClassName('tier_btn_positive');
-const NegNavBtns = document.getElementsByClassName('tier_btn_negative');
-const PosQuirkBtn = document.getElementById('glossarynav1')
-const NegQuirkBtn = document.getElementById('glossarynav2')
-const NegQuirkNav = document.getElementById('neg_nav')
-const PosQuirkNav = document.getElementById('pos_nav')
-
-
-PosQuirkBtn.addEventListener('click', function() {
-  PlayPageOpn();
-  HideAllNegativeContent()
-  HideAllPositiveContent()
-  NegQuirkNav.style.display = 'none'
-  PosQuirkNav.style.display = 'block'
-  STierPositiveContent.style.display = 'block'
-})
-
-NegQuirkBtn.addEventListener('click', function() {
-  PlayPageOpn();
-  HideAllPositiveContent()
-  HideAllNegativeContent()
-  PosQuirkNav.style.display = 'none'
-  NegQuirkNav.style.display = 'block'
-  Tier1NegativeContent.style.display = 'block'
-  }
-  )
-
-for (const PosNavBtn of PosNavBtns) {
-  PosNavBtn.addEventListener('click', function() {PlayBtnPress();})}
-
-for (const NegNavBtn of NegNavBtns) {
-  NegNavBtn.addEventListener('click', function() {PlayBtnPress();})}
-
-const STierBtn = document.getElementById('stier_positive');
-const ATierBtn = document.getElementById('atier_positive');
-const BTierBtn = document.getElementById('btier_positive');
-const CTierBtn = document.getElementById('ctier_positive');
-const DTierBtn = document.getElementById('dtier_positive');
-const ETierBtn = document.getElementById('etier_positive');
-const FTierBtn = document.getElementById('ftier_positive');
-
-const STierPositiveContent = document.getElementById('positive_stier')
-const ATierPositiveContent = document.getElementById('positive_atier')
-const BTierPositiveContent = document.getElementById('positive_btier')
-const CTierPositiveContent = document.getElementById('positive_ctier')
-const DTierPositiveContent = document.getElementById('positive_dtier')
-const ETierPositiveContent = document.getElementById('positive_etier')
-const FTierPositiveContent = document.getElementById('positive_ftier')
-
-function HideAllPositiveContent() {
-  const AllPositiveContent = [STierPositiveContent, ATierPositiveContent, BTierPositiveContent, CTierPositiveContent, DTierPositiveContent, ETierPositiveContent, FTierPositiveContent]
-  AllPositiveContent.forEach(positivecontent =>{
-    positivecontent.style.display = 'none'
-  })
-}
-
-STierBtn.addEventListener('click', function() {HideAllPositiveContent(); STierPositiveContent.style.display = 'block'})
-ATierBtn.addEventListener('click', function() {HideAllPositiveContent(); ATierPositiveContent.style.display = 'block'})
-BTierBtn.addEventListener('click', function() {HideAllPositiveContent(); BTierPositiveContent.style.display = 'block'})
-CTierBtn.addEventListener('click', function() {HideAllPositiveContent(); CTierPositiveContent.style.display = 'block'})
-DTierBtn.addEventListener('click', function() {HideAllPositiveContent(); DTierPositiveContent.style.display = 'block'})
-ETierBtn.addEventListener('click', function() {HideAllPositiveContent(); ETierPositiveContent.style.display = 'block'})
-FTierBtn.addEventListener('click', function() {HideAllPositiveContent(); FTierPositiveContent.style.display = 'block'})
-
-
-const Tier1Btn = document.getElementById('tier1_negative');
-const Tier2Btn = document.getElementById('tier2_negative');
-const Tier3Btn = document.getElementById('tier3_negative');
-const Tier4Btn = document.getElementById('tier4_negative');
-const Tier5Btn = document.getElementById('tier5_negative');
-const Tier6Btn = document.getElementById('tier6_negative');
-const Tier7Btn = document.getElementById('tier7_negative');
-const Tier8Btn = document.getElementById('tier8_negative');
-const Tier9Btn = document.getElementById('tier9_negative');
-const Tier10Btn = document.getElementById('tier10_negative');
-
-const Tier1NegativeContent = document.getElementById('negative_tier1');
-const Tier2NegativeContent = document.getElementById('negative_tier2');
-const Tier3NegativeContent = document.getElementById('negative_tier3');
-const Tier4NegativeContent = document.getElementById('negative_tier4');
-const Tier5NegativeContent = document.getElementById('negative_tier5');
-const Tier6NegativeContent = document.getElementById('negative_tier6');
-const Tier7NegativeContent = document.getElementById('negative_tier7');
-const Tier8NegativeContent = document.getElementById('negative_tier8');
-const Tier9NegativeContent = document.getElementById('negative_tier9');
-const Tier10NegativeContent = document.getElementById('negative_tier10');
-
-Tier1Btn.addEventListener('click', function() {HideAllNegativeContent(); Tier1NegativeContent.style.display = 'block'})
-Tier2Btn.addEventListener('click', function() {HideAllNegativeContent(); Tier2NegativeContent.style.display = 'block'})
-Tier3Btn.addEventListener('click', function() {HideAllNegativeContent(); Tier3NegativeContent.style.display = 'block'})
-Tier4Btn.addEventListener('click', function() {HideAllNegativeContent(); Tier4NegativeContent.style.display = 'block'})
-Tier5Btn.addEventListener('click', function() {HideAllNegativeContent(); Tier5NegativeContent.style.display = 'block'})
-Tier6Btn.addEventListener('click', function() {HideAllNegativeContent(); Tier6NegativeContent.style.display = 'block'})
-Tier7Btn.addEventListener('click', function() {HideAllNegativeContent(); Tier7NegativeContent.style.display = 'block'})
-Tier8Btn.addEventListener('click', function() {HideAllNegativeContent(); Tier8NegativeContent.style.display = 'block'})
-Tier9Btn.addEventListener('click', function() {HideAllNegativeContent(); Tier9NegativeContent.style.display = 'block'})
-Tier10Btn.addEventListener('click', function() {HideAllNegativeContent(); Tier10NegativeContent.style.display = 'block'})
-
-function HideAllNegativeContent() {
-  const AllNegativeContent = [Tier1NegativeContent, Tier2NegativeContent, Tier3NegativeContent, Tier4NegativeContent, Tier5NegativeContent, Tier6NegativeContent, Tier7NegativeContent, Tier8NegativeContent, Tier9NegativeContent, Tier10NegativeContent]
-  AllNegativeContent.forEach(negativecontent =>{
-    negativecontent.style.display = 'none'
-  })
-}
-
+/*Credits? */
 const SettingIcon1 = document.getElementById('setting1')
 const SettingIcon2 = document.getElementById('setting2')
 const SettingOpenAudio = document.getElementById('candle_open')
@@ -384,6 +254,7 @@ SettingIcon1.addEventListener('mouseover' , function() {SettingOverlay.style.dis
 SettingIcon1.addEventListener('mouseleave', function() {SettingOverlay.style.display = 'none'; });
 SettingIcon2.addEventListener('mouseover' , function() {SettingOverlay.style.display = 'block'})
 SettingIcon2.addEventListener('mouseleave', function() {SettingOverlay.style.display = 'none'; });
+
 
 const CloseBtn = document.getElementById('close');
 const CloseProvisions = document.getElementById('food_close')
@@ -458,6 +329,11 @@ function HideAll() {
     element.style.display = 'none'
   })
 }
+
+
+
+
+
 
 const AbomBtn = document.getElementById('Abombtn');
 const AbomBox = document.getElementById('Abombox');
@@ -748,4 +624,6 @@ OccSwap.addEventListener('click', function() {handleSkinSwap(Occ1, Occ2, Occ3, O
 PDSwap.addEventListener('click', function() {handleSkinSwap(PD1, PD2, PD3, PD4)});
 SBSwap.addEventListener('click', function() {handleSkinSwap(SB1, SB2, SB3, SB4)});
 VesSwap.addEventListener('click', function() {handleSkinSwap(Ves1, Ves2, Ves3, Ves4)});
+
+
 
