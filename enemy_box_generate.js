@@ -1610,9 +1610,9 @@ const rabidGnasherAppSkills = ['Rabid Rush']
 const rabidGnasherVetSkills = ['Rabid Rush']
 const rabidGnasherChampSkills = ['Rabid Rush']
 
-const ectoplasmAppSkills = ['Slime(Small)', 'Cytokinesis(Small)', 'Ectoplasmic Profusion']
-const ectoplasmVetSkills = ['Slime(Small)', 'Cytokinesis(Small)', 'Ectoplasmic Profusion']
-const ectoplasmChampSkills = ['Slime(Small)', 'Cytokinesis(Small)', 'Ectoplasmic Profusion']
+const ectoplasmAppSkills = ['Slime', 'Cytokinesis(Small)', 'Ectoplasmic Profusion']
+const ectoplasmVetSkills = ['Slime', 'Cytokinesis(Small)', 'Ectoplasmic Profusion']
+const ectoplasmChampSkills = ['Slime', 'Cytokinesis(Small)', 'Ectoplasmic Profusion']
 
 const largeEctoplasmAppSkills = ['Big Slime', 'Slimesmack', 'Cytokinesis(Big)', ]
 const largeEctoplasmVetSkills = ['Big Slime', 'Slimesmack', 'Cytokinesis(Big)']
@@ -1915,8 +1915,8 @@ const boneRabbleChampSkills = ['Bump In The Night', 'Tic-Toc'];
 const gargoyleVetSkills = ['Flurry of Claws', 'Lash of the Tail'];
 const gargoyleChampSkills = ['Flurry of Claws', 'Lash of the Tail'];
 
-const ghoulVetSkills = ['Rend(Ghoul)', 'Skull Toss', 'Howl'];
-const ghoulChampSkills = ['Rend(Ghoul)', 'Skull Toss', 'Howl'];
+const ghoulVetSkills = ['Rend', 'Skull Toss', 'Howl'];
+const ghoulChampSkills = ['Rend', 'Skull Toss', 'Howl'];
 
 const brigandRaiderDarkestSkills = ['Slice and Dice', 'Uppercut Slice', 'Shank', 'Harmless Poke'];
 const brigandHunterDarkestSkills = ['Blanket Fire', 'Rushed Shot'];
@@ -2750,7 +2750,7 @@ const wealdskills = [
 //Ectoplasm 
 
 { 
-    id: 'app_slime(small)_desc',
+    id: 'app_slime_desc',
     position: '1234ally_1234enemy.png',
     name: 'Slime',
     type: 'Melee',
@@ -2760,7 +2760,7 @@ const wealdskills = [
 },
 
 { 
-    id: 'vet_slime(small)_desc',
+    id: 'vet_slime_desc',
     position: '1234ally_1234enemy.png',
     name: 'Slime',
     type: 'Melee',
@@ -2771,7 +2771,7 @@ const wealdskills = [
 },
 
 { 
-    id: 'champ_slime(small)_desc',
+    id: 'champ_slime_desc',
     position: '1234ally_1234enemy.png',
     name: 'Slime',
     type: 'Melee',
@@ -4949,7 +4949,7 @@ const sharedskills = [
 //Ghoul
 
     {
-        id: 'vet_rend(ghoul)_desc',
+        id: 'vet_rend_desc',
         position: '12ally_12enemy.png',
         name: 'Rend',
         type: 'Melee',
@@ -4985,7 +4985,7 @@ const sharedskills = [
     },
 
     {
-        id: 'champ_rend(ghoul)_desc',
+        id: 'champ_rend_desc',
         position: '12ally_12enemy.png',
         name: 'Rend',
         type: 'Melee',
