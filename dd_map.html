@@ -35,9 +35,32 @@
             <img src = "images/bg_elements/overall_thoughts.png" class = opinion_bg>
 
         </div>
-        
-        <!--Mission Boxes-->
 
+        <div id = "embark_button">
+            <img src = "images/estate_icons/dd_button.png" class= "dd_button" id = "embarkbtn">
+            <img src = "images/estate_icons/dd_buttontop.png" class = "dd_buttontop" id  = "embarktop">
+        </div>
+
+
+            <!--Left buttons-->
+
+        <img src = "images/Boxes/bc_textbox.png" class = "quest_box" id = "circusbox">
+        
+        <img src = "images/estate_icons/mod_box.png" class = "mod_btn mission_btn"> 
+        <img src = "images/estate_icons/provision.icon.png" class = provision_btn id = provisioner>
+        <div class = "ddlogo_text provision_btn_label">Provisions </div>
+        <img src = "images/mission_icons/hero_btn.png" class = "button_long hero_button" id = "hero_btn">
+        <div class = "ddlogo_text hero_btn_label">The Heroes</div>
+        <img src = "images/estate_icons/gold.icon.png" class = loot_btn id = Loot>
+        <div class = "ddlogo_text loot_btn_label">Gold & Heirlooms</div>
+        
+        <img src = "images/bg_elements/CC_infestation.png" class = crimson_banner>
+        <img src = "images/estate_icons/circus_btn.png" class = " bc_button" id = "circus">
+        <img src = "images/bg_elements/estate_title.png" class = estate_title>
+        <a href = "index.html" id = "back_arrow"> <img src ="images/estate_icons/back_arrow.png" class = "back_arrow"></a>
+    
+        <!--Mission Boxes-->
+    <div class = map_nav_container id = map_navigate>
         <div class = "backdrop crimson_backdrop"></div>
         <div class = mission_btn> <img src = "images/mission_icons/cc_button.png" class = "crimson_btn button_long" id = "crimsonbutton"> </div>
         <img src = "images/Boxes/cc_textbox.png" class= "quest_box" id = "crimson_txtbox">
@@ -50,38 +73,167 @@
         <div class = mission_btn> <img src = "images/mission_icons/dd_questbg.png" class = "gauntlet_btn button_short" id = "gauntletbtn"> </div>
         <img src = "images/Boxes/dds_box.png" class= "quest_box" id = "gauntlet_txtbox">
 
-        <div class = "backdrop app_cleanse_backdrop"></div>
-        <div class = "mission_btn"> <img src = "images/mission_icons/early_btn1.png" class = "app_cleanse_btn button_short" id = "early1"> </div>
-        <img src = "images/Boxes/Humble_start.png" class= "quest_box" id = "earlybox1">
 
-        <div class = "backdrop app_boss_backdrop"></div>
-        <div class = "mission_btn"> <img src = "images/mission_icons/early_btn3.png" class = "app_boss_btn button_medium" id = "early2"></div>
-        <img src = "images/Boxes/early_game.png" class= "quest_box" id = "earlybox2">
+        <div class = "backdrop ruins_enemy_backdrop"></div>
+        <div class = "mission_btn"> <img src = "images/mission_icons/ruins_enemy.png" class = "ruins_enemy_btn button_medium" id = "ruins1"> </div>
+        <div class  = "quest_box enemy" id = ruinsbox1 >
+            <div class = 'enemy_stats_container' id = enemy_stat_ruins></div>
+            <div class = hide_headers id = hide_headers_ruins></div>
 
-        <div class = "backdrop app_gather_backdrop"></div>
-        <div class = "mission_btn"> <img src= "images/mission_icons/gather_btn.png" class= "app_gather_btn button_medium" id = "early3"> </div>
-        <img src = "images/Boxes/look_for.png" class= "quest_box" id = "earlybox3">
+            <div class = "enemy_sidenav" id = ruins_enemy_nav>
+                <img src = 'images/portraits/Bone_Soldier.png' class = 'enemy_port port_top' id = bone_soldier_nav>
+                <img src = 'images/portraits/Bone_Defender.png' class = 'enemy_port port_top' id = bone_defender_nav>
+                <img src = 'images/portraits/Bone_Arbalest.png' class = enemy_port id = bone_arbalest_nav>
+                <img src = 'images/portraits/Bone_Courtier.png' class = enemy_port id = bone_courtier_nav>
+                <img src = 'images/portraits/Bone_Spearman.png' class = enemy_port id = bone_spearman_nav>
+                <img src = 'images/portraits/Bone_Captain.png' class = enemy_port id = bone_captain_nav>
+                <img src = 'images/portraits/Bone_Bearer.png' class = 'enemy_port port_btm' id = bone_bearer_nav>
+
+            </div>
+        </div>
+
+        <div class = "backdrop ruins_curio_backdrop"></div>
+        <div class = "mission_btn"> <img src= "images/mission_icons/ruins_curios.png" class= "ruins_curio_btn button_medium" id = "ruins2"> </div>
+        <img src = "images/Boxes/look_for.png" class= "quest_box" id = "ruinsbox2">
+
+        <div class = "backdrop ruins_boss_backdrop"></div>
+        <div class = "mission_btn"> <img src = "images/mission_icons/ruins_boss.png" class = "ruins_boss_btn button_medium" id = "ruins3"></div>
+        <img src = "images/Boxes/early_game.png" class= "quest_box" id = "ruinsbox3">
+
+
+        <div class = "backdrop weald_enemy_backdrop"></div>
+        <div class = "mission_btn"> <img src= "images/mission_icons/weald&cove_enemy.png" class= "weald_enemy_btn button_medium" id = "weald1"> </div>
+        <div class  = "quest_box enemy" id = wealdbox1 >
+            <div class = 'enemy_stats_container' id = enemy_stat_weald></div>
+            <div class = hide_headers id = hide_headers_weald></div>
+
+            <div class = "enemy_sidenav sidenav9" id = weald_enemy_nav>
+                <img src = 'images/portraits/Fungal_Scratcher.png' class = 'enemy_port port_top' id = fungal_scratcher_nav>
+                <img src = 'images/portraits/Fungal_Artillery.png' class = 'enemy_port port_top' id = fungal_artillery_nav>
+                <img src = 'images/portraits/Rabid_Gnasher.png' class = enemy_port id = rabid_gnasher_nav>
+                <img src = 'images/portraits/Ectoplasm.png' class = enemy_port id = ectoplasm_nav>
+                <img src = 'images/portraits/Large_Ectoplasm.png' class = enemy_port id = large_ectoplasm_nav>
+                <img src = 'images/portraits/Crone.png' class = enemy_port id = crone_nav>
+                <img src = 'images/portraits/Unclean_Giant.png' class = 'enemy_port' id = unclean_giant_nav>
+                <img src = 'images/portraits/Hateful_Virago.png' class = enemy_port id = hateful_virago_nav>
+                <img src = 'images/portraits/Necrotic_Fungus.png' class = 'enemy_port port_btm' id = necrotic_fungus_nav>
+
+
+            </div>
+        </div>
+
+        <div class = "backdrop weald_curio_backdrop"></div>
+        <div class = "mission_btn"> <img src= "images/mission_icons/weald&cove_curio.png" class= "weald_curio_btn button_medium" id = "weald2"> </div>
+        <img src = "images/Boxes/cocky.png" class= "quest_box" id = "wealdbox2">
+
+        <div class = "backdrop weald_boss_backdrop"></div>
+        <div class = "mission_btn"> <img src= "images/mission_icons/weald&cove_boss.png" class= "weald_boss_btn button_medium" id = "weald3"> </div>
+        <img src = "images/Boxes/ready.png" class= "quest_box" id = "wealdbox3">
+
         
-        <div class = "backdrop visuals_backdrop"></div>
-        <div class = mission_btn> <img src = "images/mission_icons/visuals_btn.png" class = "visuals_btn button_medium" id = "visualsbtn"> </div>
-        <img src = "images/Boxes/quest_textbox.png" class= "quest_box" id = "visuals_box">
 
-        <div class = "backdrop music_backdrop"></div>
-        <div class = mission_btn> <img src = "images/mission_icons/music_btn.png" class= "music_btn button_medium" id = "musicbtn"> </div>
-        <img src = "images/Boxes/Music.png" class= "quest_box" id = "music_box">
 
-        <div class = "backdrop champ_gather_backdrop"></div>
-        <div class = "mission_btn"> <img src= "images/mission_icons/late_gather.png" class= "champ_gather_btn button_medium" id = "late1"> </div>
-        <img src = "images/Boxes/real_challenge.png" class= "quest_box" id = "latebox1">
+        <div class = "backdrop warrens_enemy_backdrop"></div>
+        <div class = mission_btn> <img src = "images/mission_icons/warrens_enemy.png" class= "warrens_enemy_btn button_medium" id = "warrens1"> </div>
+            <!--Warrens enemy select-->
+        <div class  = "quest_box enemy" id = warrensbox1 >
+            <div class = 'enemy_stats_container' id = enemy_stat_warrens></div>
+            <div class = hide_headers id = hide_headers_warrens></div>
+            <div class = skill_desc_background></div>
+            <div class = "enemy_sidenav" id = warrens_enemy_nav>
+                <img src = 'images/portraits/Swine_Chopper.png' class = 'enemy_port port_top' id = swine_chopper_nav>
+                <img src = 'images/portraits/Swine_Wretch.png' class = 'enemy_port port_top' id = swine_wretch_nav>
+                <img src = 'images/portraits/Swine_Drummer.png' class = enemy_port id = swine_drummer_nav>
+                <img src = 'images/portraits/Swine_Hooker.png' class = enemy_port id = swine_slasher_nav>
+                <img src = 'images/portraits/Carrion_Small.png' class = enemy_port id = carrion_eater_nav>
+                <img src = 'images/portraits/Carrion_Large.png' class = enemy_port id = large_carrion_eater_nav>
+                <img src = 'images/portraits/Swinetaur.png' class = 'enemy_port port_btm' id = swinetaur_nav>
+                <img src = 'images/portraits/Swine_Skiver.png' class = 'enemy_port port_btm' id = swine_skiver_nav>
+            </div>
 
-        <div class = "backdrop champ_boss_backdrop"></div>
-        <div class = "mission_btn"> <img src= "images/mission_icons/late_boss.png" class= "champ_boss_btn button_medium" id = "late2"> </div>
-        <img src = "images/Boxes/cocky.png" class= "quest_box" id = "latebox2">
+           
 
-        <div class = "backdrop champ_cleanse_backdrop"></div>
-        <div class = "mission_btn"> <img src= "images/mission_icons/late_cleanse.png" class= "champ_cleanse_btn button_long" id = "late3"> </div>
-        <img src = "images/Boxes/ready.png" class= "quest_box" id = "latebox3">
+        </div>
+
+
+        
+
+        
+
+        <div class = "backdrop warrens_curio_backdrop"></div>
+        <div class = mission_btn> <img src = "images/mission_icons/warrens_curio.png" class= "warrens_curio_btn button_medium" id = "warrens2"> </div>
+        <img src = "images/Boxes/Music.png" class= "quest_box" id = "warrensbox2">
+
+        <div class = "backdrop warrens_boss_backdrop"></div>
+        <div class = mission_btn> <img src = "images/mission_icons/warrens_boss.png" class= "warrens_boss_btn button_medium" id = "warrens3"> </div>
+        <img src = "images/Boxes/Music.png" class= "quest_box" id = "warrensbox3">
+
+
+        <div class = "backdrop cove_enemy_backdrop"></div>
+        <div class = "mission_btn"> <img src= "images/mission_icons/weald&cove_enemy.png" class= "cove_enemy_btn button_medium" id = "cove1"> </div>
+        <div class  = "quest_box enemy" id = covebox1 >
+            <div class = 'enemy_stats_container' id = enemy_stat_cove></div>
+            <div class = hide_headers id = hide_headers_cove></div>
+
+            <div class = "enemy_sidenav" id = cove_enemy_nav>
+                <img src = 'images/portraits/Pelagic_Grouper.png' class = 'enemy_port port_top' id = pelagic_grouper_nav>
+                <img src = 'images/portraits/Pelagic_Guardian.png' class = 'enemy_port port_top' id = pelagic_guardian_nav>
+                <img src = 'images/portraits/Pelagic_Shaman.png' class = enemy_port id = pelagic_shaman_nav>
+                <img src = 'images/portraits/Deep_Stinger.png' class = enemy_port id = deep_stinger_nav>
+                <img src = 'images/portraits/Drowned_Thrall.png' class = enemy_port id = drowned_thrall_nav>
+                <img src = 'images/portraits/Sea_Maggot.png' class = enemy_port id = sea_maggot_nav>
+                <img src = 'images/portraits/Uca_Crusher.png' class = 'enemy_port port_btm' id = uca_crusher_nav>
+                <img src = 'images/portraits/Squiffy_Ghast.png' class = 'enemy_port port_btm' id = squiffy_ghast_nav>
+
+            </div>
+            <div class = skill_desc_background></div>
+        </div>
+        <div class = "backdrop cove_curio_backdrop"></div>
+        <div class = "mission_btn"> <img src= "images/mission_icons/weald&cove_curio.png" class= "cove_curio_btn button_medium" id = "cove2"> </div>
+        <img src = "images/Boxes/cocky.png" class= "quest_box" id = "covebox2">
+
+        <div class = "backdrop cove_boss_backdrop"></div>
+        <div class = "mission_btn"> <img src= "images/mission_icons/weald&cove_boss.png" class= "cove_boss_btn button_medium" id = "cove3"> </div>
+        <img src = "images/Boxes/ready.png" class= "quest_box" id = "covebox3">
        
+        <div class = "backdrop shared_enemy_backdrop"></div>
+        <div class = "mission_btn"> <img src = "images/mission_icons/ruins_enemy.png" class = "shared_enemy_btn button_medium" id = "shared1"> </div>
+        <div class  = "quest_box enemy" id = sharedbox1 >
+            <div class = 'enemy_stats_container' id = enemy_stat_shared></div>
+            <div class = hide_headers id = hide_headers_shared></div>
+
+            <div class = "enemy_sidenav sidenav13" id = shared_enemy_nav>
+                
+                <img src = 'images/portraits/Brigand_Cutthroat.png' class = 'enemy_port port_top' id = brigand_cutthroat_nav>
+                <img src = 'images/portraits/Brigand_Bloodletter.png' class = 'enemy_port port_top' id = brigand_bloodletter_nav>
+                <img src = 'images/portraits/Brigand_Fusilier.png' class = 'enemy_port port_top' id = brigand_fusilier_nav>
+                <img src = 'images/portraits/Cultist_Brawler.png' class = 'enemy_port' id = cultist_brawler_nav>
+                <img src = 'images/portraits/Cultist_Acolyte.png' class = 'enemy_port' id = cultist_acolyte_nav>
+                <img src = 'images/portraits/Madman.png' class = enemy_port id = madman_nav>
+                <img src = 'images/portraits/Webber.png' class = enemy_port id = webber_nav>
+                <img src = 'images/portraits/Spitter.png' class = enemy_port id = spitter_nav>
+                <img src = 'images/portraits/Maggot.png' class = enemy_port id = maggot_nav>
+                <img src = 'images/portraits/Bone_Rabble.png' class = enemy_port id = bone_rabble_nav>
+                <img src = 'images/portraits/Gargoyle.png' class = 'enemy_port' id = gargoyle_nav>
+                <img src = 'images/portraits/Ghoul.png' class = 'enemy_port ' id = ghoul_nav> 
+                <img src = 'images/portraits/Brigand_Raider.png' class = 'enemy_port port_btm' id = brigand_raider_nav>
+                <img src = 'images/portraits/Brigand_Hunter.png' class = 'enemy_port port_btm' id = brigand_hunter_nav>
+    
+
+            </div>
+        </div>
+       
+
+        <div class = "backdrop shared_curio_backdrop"></div>
+        <div class = "mission_btn"> <img src = "images/mission_icons/ruins_curios.png" class = "shared_curio_btn button_medium" id = "shared2"></div>
+        <img src = "images/Boxes/early_game.png" class= "quest_box" id = "sharedbox2">
+
+        <div class = "backdrop shared_boss_backdrop"></div>
+        <div class = "mission_btn"> <img src= "images/mission_icons/ruins_boss.png" class= "shared_boss_btn button_medium" id = "shared3"> </div>
+        <img src = "images/Boxes/look_for.png" class= "quest_box" id = "sharedbox3">
+        
+</div>
+
         <!--Boss Boxes-->
 
         <img src = "images/portraits/necro.png" class = "boss_button" id = "boss1">
@@ -118,17 +270,6 @@
         <img src = "images/Boxes/boss_box_flesh.png" class = "boss_box" id = "bossbox8">
 
 
-        <!--Left buttons-->
-
-        <img src = "images/Boxes/bc_textbox.png" class = "quest_box" id = "circusbox">
-        
-        <img src = "images/estate_icons/mod_box.png" class = "mod_btn mission_btn"> 
-        <img src = "images/estate_icons/provision.icon.png" class = provision_btn id = provisioner>
-        <div class = "ddlogo_text provision_btn_label">Provisions </div>
-        <img src = "images/mission_icons/hero_btn.png" class = "button_long hero_button" id = "hero_btn">
-        <div class = "ddlogo_text hero_btn_label">The Heroes</div>
-        <img src = "images/estate_icons/gold.icon.png" class = loot_btn id = Loot>
-        <div class = "ddlogo_text loot_btn_label">Gold & Heirlooms</div>
 
         <!--Lower right buttons-->
         <img src  = "images/estate_icons/estate_overlay.png" class = "estate_overlay district_overlay" id = district_overlay>
@@ -155,14 +296,12 @@
         <img src = "images/estate_icons/settingsicon.png" class = "button_long setting_icon" id = setting1>
         <img src = "images/estate_icons/settingsicon.png" class = "button_long setting_icon nondisplay" id = setting2>
 
-       
+
+
+
         <!--Embark Buttons-->
 
-        <div id = "embark_button">
-            <img src = "images/estate_icons/dd_button.png" class= "dd_button" id = "embarkbtn">
-            <img src = "images/estate_icons/dd_buttontop.png" class = "dd_buttontop" id  = "embarktop">
-        </div>
-
+ 
         <div id = "embark_crimson" class= "embark_btn embark_branch">
             <a href = "crimson_court.html" id = "cclink">
                 <img src = "images/estate_icons/cc_button.png" class = "dd_button" id = "crimson_embark">
@@ -186,139 +325,19 @@
             
         </div>
         <!--Top left background elements-->
-        <img src = "images/bg_elements/CC_infestation.png" class = crimson_banner>
-        <img src = "images/estate_icons/circus_btn.png" class = " bc_button" id = "circus">
-        <img src = "images/bg_elements/estate_title.png" class = estate_title>
-        <a href = "index.html" id = "back_arrow"> <img src ="images/estate_icons/back_arrow.png" class = "back_arrow"></a>
+       
 
-        
-  <!--Quirk/Glossary-->
+        <!--Quirk/Glossary-->
 
         <div class = glossary_container id = glossarybox>
             <div class = "glossary_backdrop"></div>
             <img src = "images/Hero_boxes/panel_close.png" class = quirk_close id = quirk_close>
             <img src = "images/estate_icons/posquirk_btn.png" class = glossary_nav1 id = glossarynav1>
             <img src = "images/estate_icons/negquirk_btn.png" class = glossary_nav2 id = glossarynav2>
-        
-            <div class = "quirk_tier_container" id = positive_stier>
-                <div class = "ddlogo_text tier_header_txt">S Tier: Very Noticable Improvements</div>
-                <div class = "quirk_container quirk_text" id = stier_names></div>
-            </div>
-
-            <div class = "quirk_tier_container nondisplay" id = positive_atier>
-                <div class = "ddlogo_text tier_header_txt">A Tier: Quirks that are Always Nice to Have</div>
-                <div class = "quirk_container quirk_text" id = atier_names></div>
-            </div>
-
-            <div class = "quirk_tier_container nondisplay" id = positive_btier>
-                <div class = "ddlogo_text tier_header_txt">B Tier: Pretty Ok Quirks, no Complaints </div>
-                <div class = "quirk_container quirk_text" id = btier_names></div>
-            </div>
-
-            <div class = "quirk_tier_container nondisplay" id = positive_ctier>
-                <div class = "ddlogo_text tier_header_txt">C Tier: Situational &  Lower Impact</div>
-                <div class = "quirk_container quirk_text" id = ctier_names></div>
-            </div>
-
-            <div class = "quirk_tier_container nondisplay" id = positive_dtier>
-                <div class = "ddlogo_text tier_header_txt">D Tier: Incredibly Niche at Best </div>
-                <div class = "quirk_container quirk_text" id = dtier_names></div>
-            </div>
-
-            <div class = "quirk_tier_container nondisplay" id = positive_etier>
-                <div class = "ddlogo_text tier_header_txt">E Tier: Quirks That Might as Well Do Nothing</div>
-                <div class = "quirk_container quirk_text" id = etier_names></div>
-            </div>
-
-            <div class = "quirk_tier_container nondisplay" id = positive_ftier>
-                <div class = "ddlogo_text tier_header_txt">F Tier: This Quirk Could Kill a Hero</div>
-                <div class = "quirk_container quirk_text" id = ftier_names></div>
-            </div>
-
-            <!--Negative Quirks-->
-
-            <div class = "quirk_tier_container nondisplay" id = negative_tier1>
-                <div class = "ddlogo_text tier_header_txt negative">Priority Lvl 1: The Worst of the Worst </div>
-                <div class = "quirk_container quirk_text negative" id = tier1_names></div>
-            </div>
-
-            <div class = "quirk_tier_container nondisplay" id = negative_tier2>
-                <div class = "ddlogo_text tier_header_txt negative">Priority Lvl 2: Forced Interaction Quirks </div>
-                <div class = "quirk_container quirk_text negative" id = tier2_names></div>
-            </div>
-
-            <div class = "quirk_tier_container nondisplay" id = negative_tier3>
-                <div class = "ddlogo_text tier_header_txt negative">Priority Lvl 3: Remove as Soon as Possible </div>
-                <div class = "quirk_container quirk_text negative" id = tier3_names></div>
-            </div>
-
-            <div class = "quirk_tier_container nondisplay" id = negative_tier4>
-                <div class = "ddlogo_text tier_header_txt negative">Priority Lvl 4: Bad but Removal can be Delayed</div>
-                <div class = "quirk_container quirk_text negative" id = tier4_names></div>
-            </div>
-
-            <div class = "quirk_tier_container nondisplay" id = negative_tier5>
-                <div class = "ddlogo_text tier_header_txt negative">Priority Lvl 5: Bad for Only Some Heroes </div>
-                <div class = "quirk_container quirk_text negative" id = tier5_names></div>
-            </div>
-
-            <div class = "quirk_tier_container nondisplay" id = negative_tier6>
-                <div class = "ddlogo_text tier_header_txt negative">Priority Lvl 6: Pretty Bad Negatives</div>
-                <div class = "quirk_container quirk_text negative" id = tier6_names></div>
-            </div>
-
-            <div class = "quirk_tier_container nondisplay" id =negative_tier7>
-                <div class = "ddlogo_text tier_header_txt negative">Priority Lvl 7: Annoying Negatives</div>
-                <div class = "quirk_container quirk_text negative" id = tier7_names></div>
-            </div>
-
-            <div class = "quirk_tier_container nondisplay" id = negative_tier8>
-                <div class = "ddlogo_text tier_header_txt negative">Priority Lvl 8: Annoying but Ignorable </div>
-                <div class = "quirk_container quirk_text negative" id = tier8_names></div>
-            </div>
-
-            <div class = "quirk_tier_container nondisplay" id = negative_tier9>
-                <div class = "ddlogo_text tier_header_txt negative">Priority Lvl 9: Negatives with Minimal Impact</div>
-                <div class = "quirk_container quirk_text negative " id = tier9_names></div>
-            </div>
-
-            <div class = "quirk_tier_container nondisplay" id = negative_tier10>
-                <div class = "ddlogo_text tier_header_txt negative">Priority Lvl 10: Unnoticable at Best</div>
-                <div class = "quirk_container quirk_text negative" id = tier10_names></div>
-            </div>
-
-
-
-
-            <div class = tier_nav id = pos_nav>
-                <img src = "images/Glossary/tier_s.png" class = tier_btn_positive id = stier_positive> 
-                <img src = "images/Glossary/tier_a.png" class = tier_btn_positive id = atier_positive> 
-                <img src = "images/Glossary/tier_b.png" class = tier_btn_positive id = btier_positive> 
-                <img src = "images/Glossary/tier_c.png" class = tier_btn_positive id = ctier_positive> 
-                <img src = "images/Glossary/tier_d.png" class = tier_btn_positive id = dtier_positive> 
-                <img src = "images/Glossary/tier_e.png" class = tier_btn_positive id = etier_positive> 
-                <img src = "images/Glossary/tier_f.png" class = tier_btn_positive id = ftier_positive> 
-
-            </div>
-
-            <div class = " tier_nav" id = neg_nav>
-                <img src = "images/Glossary/tier1.png" class = tier_btn_negative id = tier1_negative> 
-                <img src = "images/Glossary/tier2.png" class = tier_btn_negative id = tier2_negative> 
-                <img src = "images/Glossary/tier3.png" class = tier_btn_negative id = tier3_negative> 
-                <img src = "images/Glossary/tier4.png" class = tier_btn_negative id = tier4_negative> 
-                <img src = "images/Glossary/tier5.png" class = tier_btn_negative id = tier5_negative> 
-                <img src = "images/Glossary/tier6.png" class = tier_btn_negative id = tier6_negative> 
-                <img src = "images/Glossary/tier7.png" class = tier_btn_negative id = tier7_negative> 
-                <img src = "images/Glossary/tier8.png" class = tier_btn_negative id = tier8_negative> 
-                <img src = "images/Glossary/tier9.png" class = tier_btn_negative id = tier9_negative> 
-                <img src = "images/Glossary/tier10.png" class = tier_btn_negative id = tier10_negative>
-
-            </div>
         </div>
 
-
         <!--Provision Box-->
-             <div class = provision_container id = provisionbox>
+        <div class = provision_container id = provisionbox>
             <div class = "provision_backdrop"></div>
         <img src = "images/Hero_boxes/panel_close.png" class = provision_close id = food_close>
         
@@ -821,6 +840,7 @@
         
     
     </div>
+
 
     <!--Making space for hero panels and boxes-->
     <div class = padding></div>
@@ -9221,31 +9241,35 @@
     </div>
 
 
-    <audio id = "mission_select_sfx" src="sfx/btn_select.wav"></audio>
-    <audio id = "back_button_sfx" src = "sfx/btn_back.wav"></audio>
-    <audio id = "embark_sfx" src = "sfx/embark_btn.wav"></audio>
-    <audio id = "bc_enter" src= "sfx/bc_enter.wav"></audio>
-    <audio id = "boss_sfx" src = "sfx/boss_sfx.wav"></audio>
-    <audio id = "hero_sfx" src = "sfx/hero_button.wav"></audio>
-    <audio id = "dungeon_embark" src = "sfx/dungeon_embark.wav"></audio>
-    <audio id = "page_close" src = "sfx/page_close.wav"></audio>
-    <audio id = "page_open" src= "sfx/page_open.wav"></audio>
-    <audio id = "btn_press" src ="sfx/town_select.wav"></audio>
-    <audio id = "district_open" src ="sfx/district_open.wav"></audio>
-    <audio id = "district_close" src ="sfx/district_close.wav"></audio>
-    <audio id = "trinketbox_open" src ="sfx/trinketbox_open.wav"></audio>
-    <audio id = "trinketbox_close" src ="sfx/trinketbox_close.wav"></audio>       
-    <audio id = "candle_open" src ="sfx/candle_open.wav"></audio>
-    <audio id = "candle_close" src ="sfx/candle_close.wav"></audio>
 
+        <audio id = "mission_select_sfx" src="sfx/btn_select.wav"></audio>
+        <audio id = "back_button_sfx" src = "sfx/btn_back.wav"></audio>
+        <audio id = "embark_sfx" src = "sfx/embark_btn.wav"></audio>
+        <audio id = "bc_enter" src= "sfx/bc_enter.wav"></audio>
+        <audio id = "boss_sfx" src = "sfx/boss_sfx.wav"></audio>
+        <audio id = "hero_sfx" src = "sfx/hero_button.wav"></audio>
+        <audio id = "dungeon_embark" src = "sfx/dungeon_embark.wav"></audio>
+        <audio id = "page_close" src = "sfx/page_close.wav"></audio>
+        <audio id = "page_open" src= "sfx/page_open.wav"></audio>
+        <audio id = "btn_press" src ="sfx/town_select.wav"></audio>
+        <audio id = "district_open" src ="sfx/district_open.wav"></audio>
+        <audio id = "district_close" src ="sfx/district_close.wav"></audio>
+        <audio id = "trinketbox_open" src ="sfx/trinketbox_open.wav"></audio>
+        <audio id = "trinketbox_close" src ="sfx/trinketbox_close.wav"></audio>       
+        <audio id = "candle_open" src ="sfx/candle_open.wav"></audio>
+        <audio id = "candle_close" src ="sfx/candle_close.wav"></audio>
 
-    <script src = "textbox_toggle.js"></script>
-    <script src = "btn_sound_toggle.js"></script>
-    <script src = "scroll_hero.js"></script>
-    <script src = "edit_text.js"></script>
-    <script src = "hero_toggle.js"></script>
-    <script src = "quirk_desc_generation.js"></script>
-    <script src = "icon_toggle.js"></script>
+        <script src = "textbox_toggle.js"></script>
+        <script src = "btn_sound_toggle.js"></script>
+        <script src = "scroll_hero.js"></script>
+        <script src = "edit_text.js"></script>
+        <script src = "hero_toggle.js"></script>
+
+        <!--Handles Quirk/Glossary-->
+        <script src = "quirk_desc_generation.js"></script>
+        
+        <script src = "icon_toggle.js"></script>
+        <script src = 'enemy_box_generate.js'></script>
 
 
 </body>
