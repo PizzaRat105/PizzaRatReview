@@ -1,90 +1,354 @@
+function createTierContainer(id, id2, headerText, isNegative) {
+    const tierContainer = document.createElement('div');
+    tierContainer.className = 'quirk_tier_container nondisplay';
+    tierContainer.id = id;
+  
+    const header = document.createElement('div');
+    header.className = 'ddlogo_text tier_header_txt' + (isNegative ? ' negative' : '');
+    header.textContent = headerText;
+  
+    const quirkContainer = document.createElement('div');
+    quirkContainer.className = 'quirk_container quirk_text' + (isNegative ? ' negative' : '');
+    quirkContainer.id = id2 + '_names';
+  
+    tierContainer.appendChild(header);
+    tierContainer.appendChild(quirkContainer);
+  
+    return tierContainer;
+  }
+  
+  function appendTierContainers() {
+    const glossaryBox = document.getElementById('glossarybox');
+  
+    // Positive Quirks
+    const positiveTiers = [
+      { id: 'positive_stier', id2: 'stier', headerText: 'S Tier: Very Noticeable Improvements' },
+      { id: 'positive_atier', id2: 'atier', headerText: 'A Tier: Quirks that are Always Nice to Have' },
+      { id: 'positive_btier', id2: 'btier', headerText: 'B Tier: Pretty Ok Quirks, no Complaints' },
+      { id: 'positive_ctier', id2: 'ctier', headerText: 'C Tier: Situational &  Lower Impact' },
+      { id: 'positive_dtier', id2: 'dtier', headerText: 'D Tier: Incredibly Niche at Best' },
+      { id: 'positive_etier', id2: 'etier', headerText: 'E Tier: Quirks That Might as Well Do Nothing' },
+      { id: 'positive_ftier', id2: 'ftier', headerText: 'F Tier: This Quirk Could Kill a Hero' },
+    ];
+  
+    // Negative Quirks
+    const negativeTiers = [
+      { id: 'negative_tier1', id2: 'tier1', headerText: 'Priority Lvl 1: The Worst of the Worst' },
+      { id: 'negative_tier2', id2: 'tier2', headerText: 'Priority Lvl 2: Forced Interaction Quirks' },
+      { id: 'negative_tier3', id2: 'tier3', headerText: 'Priority Lvl 3: Remove as Soon as Possible' },
+      { id: 'negative_tier4', id2: 'tier4', headerText:  'Priority Lvl 4: Bad but Removal can be Delayed' },
+      { id: 'negative_tier5', id2: 'tier5', headerText:  'Priority Lvl 5: Bad for Only Some Heroes' },
+      { id: 'negative_tier6', id2: 'tier6', headerText:  'Priority Lvl 6: Pretty Bad Negatives' },
+      { id: 'negative_tier7', id2: 'tier7', headerText:  'Priority Lvl 7: Annoying Negatives' },
+      { id: 'negative_tier8', id2: 'tier8', headerText:  'Priority Lvl 8: Annoying but Ignorable' },
+      { id: 'negative_tier9', id2: 'tier9', headerText:  'Priority Lvl 9: Negatives with Minimal Impact' },
+      { id: 'negative_tier10', id2: 'tier10', headerText: 'Priority Lvl 10: Unnoticable at Best' },
+    ];
+  
+    positiveTiers.forEach((tier) => {
+      const tierContainer = createTierContainer(tier.id,tier.id2, tier.headerText, false);
+      glossaryBox.appendChild(tierContainer);
+    });
+  
+    negativeTiers.forEach((tier) => {
+      const tierContainer = createTierContainer(tier.id, tier.id2, tier.headerText, true);
+      glossaryBox.appendChild(tierContainer);
+    });
+  }
+  
+  appendTierContainers();
+
+
+function createTierNav() {
+    const posNav = document.createElement('div');
+    posNav.className = 'tier_nav';
+    posNav.id = 'pos_nav';
+  
+    const negNav = document.createElement('div');
+    negNav.className = 'tier_nav';
+    negNav.id = 'neg_nav';
+  
+    const glossaryBox = document.getElementById('glossarybox');
+    glossaryBox.appendChild(posNav);
+    glossaryBox.appendChild(negNav);
+  
+    const positiveTiers = ['s', 'a', 'b', 'c', 'd', 'e', 'f'];
+    positiveTiers.forEach(tier => {
+      const img = document.createElement('img');
+      img.src = `images/Glossary/tier_${tier}.png`;
+      img.className = 'tier_btn_positive';
+      img.id = `${tier}tier_positive`; 
+      posNav.appendChild(img);
+    });
+  
+    
+    const negativeTiers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    negativeTiers.forEach(tier => {
+      const img = document.createElement('img');
+      img.src = `images/Glossary/tier${tier}.png`;
+      img.className = 'tier_btn_negative';
+      img.id = `tier${tier}_negative`; 
+      negNav.appendChild(img);
+    });
+  }
+  
+
+  createTierNav();
+
+
+const BtnChooseAudio = document.getElementById('btn_press');
+BtnChooseAudio.volume = 0.7;
+const OpenSfx = document.getElementById('page_open');
+OpenSfx.volume = 0.6;
+const CloseSound = document.getElementById('page_close');
+CloseSound.volume = 0.6;
+
+
+function PlayPageOpn() {
+  OpenSfx.currentTime = 0;
+  OpenSfx.play();
+}
+
+function PlayBtnPress() {
+  BtnChooseAudio.currentTime = 0; 
+  BtnChooseAudio.play();
+}
+
+
+
+
+
+
+const GlossaryOpen = document.getElementById('glossary_open')
+const GlossaryClosed = document.getElementById('glossary_closed')
+const GlossaryOverlay = document.getElementById('glossary_overlay')
+const GlossaryBox = document.getElementById('glossarybox')
+
+GlossaryOpen.addEventListener('click' , function() {
+  CloseSound.currentTime = 0;
+  CloseSound.play();
+  PlayBtnPress()
+  GlossaryBox.style.display = 'none'
+  GlossaryClosed.style.display = 'block'
+  GlossaryOpen.style.display = 'none'
+})
+GlossaryClosed.addEventListener('click' , function() {
+  PlayPageOpn() 
+  PlayBtnPress()
+  GlossaryBox.style.display = 'block'
+  GlossaryClosed.style.display = 'none'
+  GlossaryOpen.style.display = 'block'
+})
+GlossaryOpen.addEventListener('mouseover' , function() {GlossaryOverlay.style.display = 'block'})
+GlossaryOpen.addEventListener('mouseleave', function() {GlossaryOverlay.style.display = 'none'; });
+GlossaryClosed.addEventListener('mouseover' , function() {GlossaryOverlay.style.display = 'block'})
+GlossaryClosed.addEventListener('mouseleave', function() {GlossaryOverlay.style.display = 'none'; });
+
+
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && GlossaryBox.style.display === 'block') {
+    CloseSound.currentTime = 0;
+    CloseSound.play();
+    GlossaryBox.style.display = 'none';
+    GlossaryOpen.style.display = 'none';
+    GlossaryClosed.style.display = 'block';
+  }
+});
+
+const PosNavBtns = document.getElementsByClassName('tier_btn_positive');
+const NegNavBtns = document.getElementsByClassName('tier_btn_negative');
+const PosQuirkBtn = document.getElementById('glossarynav1')
+const NegQuirkBtn = document.getElementById('glossarynav2')
+const NegQuirkNav = document.getElementById('neg_nav')
+const PosQuirkNav = document.getElementById('pos_nav')
+
+
+PosQuirkBtn.addEventListener('click', function() {
+  PlayPageOpn();
+  HideAllNegativeContent()
+  HideAllPositiveContent()
+  NegQuirkNav.style.display = 'none'
+  PosQuirkNav.style.display = 'block'
+  STierPositiveContent.style.display = 'block'
+})
+
+NegQuirkBtn.addEventListener('click', function() {
+  PlayPageOpn();
+  HideAllPositiveContent()
+  HideAllNegativeContent()
+  PosQuirkNav.style.display = 'none'
+  NegQuirkNav.style.display = 'block'
+  Tier1NegativeContent.style.display = 'block'
+  }
+  )
+
+for (const PosNavBtn of PosNavBtns) {
+  PosNavBtn.addEventListener('click', function() {PlayBtnPress();})}
+
+for (const NegNavBtn of NegNavBtns) {
+  NegNavBtn.addEventListener('click', function() {PlayBtnPress();})}
+
+const STierBtn = document.getElementById('stier_positive');
+const ATierBtn = document.getElementById('atier_positive');
+const BTierBtn = document.getElementById('btier_positive');
+const CTierBtn = document.getElementById('ctier_positive');
+const DTierBtn = document.getElementById('dtier_positive');
+const ETierBtn = document.getElementById('etier_positive');
+const FTierBtn = document.getElementById('ftier_positive');
+
+const STierPositiveContent = document.getElementById('positive_stier')
+const ATierPositiveContent = document.getElementById('positive_atier')
+const BTierPositiveContent = document.getElementById('positive_btier')
+const CTierPositiveContent = document.getElementById('positive_ctier')
+const DTierPositiveContent = document.getElementById('positive_dtier')
+const ETierPositiveContent = document.getElementById('positive_etier')
+const FTierPositiveContent = document.getElementById('positive_ftier')
+
+function HideAllPositiveContent() {
+  const AllPositiveContent = [STierPositiveContent, ATierPositiveContent, BTierPositiveContent, CTierPositiveContent, DTierPositiveContent, ETierPositiveContent, FTierPositiveContent]
+  AllPositiveContent.forEach(positivecontent =>{
+    positivecontent.style.display = 'none'
+  })
+}
+
+STierBtn.addEventListener('click', function() {HideAllPositiveContent(); STierPositiveContent.style.display = 'block'})
+ATierBtn.addEventListener('click', function() {HideAllPositiveContent(); ATierPositiveContent.style.display = 'block'})
+BTierBtn.addEventListener('click', function() {HideAllPositiveContent(); BTierPositiveContent.style.display = 'block'})
+CTierBtn.addEventListener('click', function() {HideAllPositiveContent(); CTierPositiveContent.style.display = 'block'})
+DTierBtn.addEventListener('click', function() {HideAllPositiveContent(); DTierPositiveContent.style.display = 'block'})
+ETierBtn.addEventListener('click', function() {HideAllPositiveContent(); ETierPositiveContent.style.display = 'block'})
+FTierBtn.addEventListener('click', function() {HideAllPositiveContent(); FTierPositiveContent.style.display = 'block'})
+
+
+const Tier1Btn = document.getElementById('tier1_negative');
+const Tier2Btn = document.getElementById('tier2_negative');
+const Tier3Btn = document.getElementById('tier3_negative');
+const Tier4Btn = document.getElementById('tier4_negative');
+const Tier5Btn = document.getElementById('tier5_negative');
+const Tier6Btn = document.getElementById('tier6_negative');
+const Tier7Btn = document.getElementById('tier7_negative');
+const Tier8Btn = document.getElementById('tier8_negative');
+const Tier9Btn = document.getElementById('tier9_negative');
+const Tier10Btn = document.getElementById('tier10_negative');
+
+const Tier1NegativeContent = document.getElementById('negative_tier1');
+const Tier2NegativeContent = document.getElementById('negative_tier2');
+const Tier3NegativeContent = document.getElementById('negative_tier3');
+const Tier4NegativeContent = document.getElementById('negative_tier4');
+const Tier5NegativeContent = document.getElementById('negative_tier5');
+const Tier6NegativeContent = document.getElementById('negative_tier6');
+const Tier7NegativeContent = document.getElementById('negative_tier7');
+const Tier8NegativeContent = document.getElementById('negative_tier8');
+const Tier9NegativeContent = document.getElementById('negative_tier9');
+const Tier10NegativeContent = document.getElementById('negative_tier10');
+
+Tier1Btn.addEventListener('click', function() {HideAllNegativeContent(); Tier1NegativeContent.style.display = 'block'})
+Tier2Btn.addEventListener('click', function() {HideAllNegativeContent(); Tier2NegativeContent.style.display = 'block'})
+Tier3Btn.addEventListener('click', function() {HideAllNegativeContent(); Tier3NegativeContent.style.display = 'block'})
+Tier4Btn.addEventListener('click', function() {HideAllNegativeContent(); Tier4NegativeContent.style.display = 'block'})
+Tier5Btn.addEventListener('click', function() {HideAllNegativeContent(); Tier5NegativeContent.style.display = 'block'})
+Tier6Btn.addEventListener('click', function() {HideAllNegativeContent(); Tier6NegativeContent.style.display = 'block'})
+Tier7Btn.addEventListener('click', function() {HideAllNegativeContent(); Tier7NegativeContent.style.display = 'block'})
+Tier8Btn.addEventListener('click', function() {HideAllNegativeContent(); Tier8NegativeContent.style.display = 'block'})
+Tier9Btn.addEventListener('click', function() {HideAllNegativeContent(); Tier9NegativeContent.style.display = 'block'})
+Tier10Btn.addEventListener('click', function() {HideAllNegativeContent(); Tier10NegativeContent.style.display = 'block'})
+
+function HideAllNegativeContent() {
+  const AllNegativeContent = [Tier1NegativeContent, Tier2NegativeContent, Tier3NegativeContent, Tier4NegativeContent, Tier5NegativeContent, Tier6NegativeContent, Tier7NegativeContent, Tier8NegativeContent, Tier9NegativeContent, Tier10NegativeContent]
+  AllNegativeContent.forEach(negativecontent =>{
+    negativecontent.style.display = 'none'
+  })
+}
+
+
+
 const STierquirkData = [
     //s tier
     { row: 1, num: 1, id: "luminous_desc", content: "+2 SPD <br> +5 DODGE" },
-    { row: 1, num: 2, id: "corvid_grace_desc", content: "+6 DODGE <br> +25% <span class='move'> Move</span> Resistance" },
-    { row: 1, num: 3, id: "corvid_eye_desc", content: "+8 ACC <br> +8% <span class='scouting'> Scouting </span> Chance" },
+    { row: 1, num: 2, id: "corvid_grace_desc", content: "+6 DODGE <br> +25%  Move Resistance" },
+    { row: 1, num: 3, id: "corvid_eye_desc", content: "+8 ACC <br> +8%  Scouting Chance" },
     { row: 1, num: 4, id: "eldritch_slayer_desc", content: "+10 ACC vs Eldritch <br> +5% CRIT vs Eldritch" },
     { row: 1, num: 5, id: "man_slayer_desc", content: "+10 ACC vs Human <br> +5% CRIT vs Human" },
     { row: 1, num: 6, id: "natural_swing_desc", content: "+5 ACC" },
     { row: 1, num: 7, id: "quick_reflexes_desc", content: "+2 SPD" },
-    { row: 1, num: 8, id: "hippocratic_desc", content: "+20% <span class = heal>Healing</span> Skills" },
-    { row: 1, num: 9, id: "precise_striker_desc", content: "+5% CRIT <span class = 'attack_type'> Melee </span> Skills" },
-    { row: 1, num: 10, id: "eagle_eye_desc", content: "+5% CRIT <span class = 'attack_type'> Ranged </span> Skills" },
+    { row: 1, num: 8, id: "hippocratic_desc", content: "+20% Healing Skills" },
+    { row: 1, num: 9, id: "precise_striker_desc", content: "+5% CRIT  Melee  Skills" },
+    { row: 1, num: 10, id: "eagle_eye_desc", content: "+5% CRIT Ranged Skills" },
 ];
 
 const ATierquirkData = [
 //a tier
 { row: 1, num: 1, id: "beast_slayer_desc", content: "+10 ACC vs Beast <br> +5% CRIT vs Beast" },
-{ row: 1, num: 2, id: "early_riser_desc", content: "+2 SPD if <span class = 'highres'> Torch </span> above 75" },
+{ row: 1, num: 2, id: "early_riser_desc", content: "+2 SPD if  Torch  above 75" },
 { row: 1, num: 3, id: "evasive_desc", content: "+5 DODGE" },
 { row: 1, num: 4, id: "hard_skinned_desc", content: "+10% PROT" },
-{ row: 1, num: 5, id: "slugger_desc", content: "+10% DMG <span class = 'attack_type'> Melee </span> Skills" },
-{ row: 1, num: 6, id: "unerring_desc", content: "+10% DMG <span class = 'attack_type'> Ranged </span> Skills" },
-{ row: 1, num: 7, id: "natural_eye_desc", content: "+5 ACC <span class = 'attack_type'> Ranged </span> Skills" },
+{ row: 1, num: 5, id: "slugger_desc", content: "+10% DMG  Melee  Skills" },
+{ row: 1, num: 6, id: "unerring_desc", content: "+10% DMG Ranged  Skills" },
+{ row: 1, num: 7, id: "natural_eye_desc", content: "+5 ACC  Ranged  Skills" },
 { row: 1, num: 8, id: "on_guard_desc", content: "+4 SPD and +5 DODGE on First Round" },
 { row: 1, num: 9, id: "quickdraw_desc", content: "+4 SPD on First Round" },
 { row: 1, num: 10, id: "hot_to_trot_desc", content: "+25% DMG, +20 ACC, +5% CRIT on First Round" },
 { row: 1, num: 11, id: "unholy_slayer_desc", content: "+10 ACC vs Unholy <br> +5% CRIT vs Unholy" },
 { row: 1, num: 12, id: "tough_desc", content: "+10% MAX HP" },
-{ row: 2, num: 1, id: "eldritch_hater_desc", content: "+15% DMG vs Eldritch <br> -15% <span class = 'stress'>Stress</span> vs Eldritch" },
-{ row: 2, num: 2, id: "mankind_hater_desc", content: "+15% DMG vs Human <br> -15% <span class = 'stress'>Stress</span> vs Human" },
-{ row: 2, num: 3, id: "beast_hater_desc", content: "+15% DMG vs Beast <br> -15% <span class = 'stress'>Stress</span> vs Beast" },
-{ row: 2, num: 4, id: "warrior_of_light_desc", content: "+10% DMG if <span class = 'highres'> Torch </span> above 75" },
+{ row: 2, num: 1, id: "eldritch_hater_desc", content: "+15% DMG vs Eldritch <br> -15% Stress vs Eldritch" },
+{ row: 2, num: 2, id: "mankind_hater_desc", content: "+15% DMG vs Human <br> -15% Stress vs Human" },
+{ row: 2, num: 3, id: "beast_hater_desc", content: "+15% DMG vs Beast <br> -15% Stress vs Beast" },
+{ row: 2, num: 4, id: "warrior_of_light_desc", content: "+10% DMG if  Torch  above 75" },
 ];
 
 const BTierquirkData = [
     //b tier
-    { row: 1, num: 1, id: "unholy_hater_desc", content: "+15% DMG vs Unholy <br> -15% <span class = 'stress'>Stress</span> vs Unholy" },
+    { row: 1, num: 1, id: "unholy_hater_desc", content: "+15% DMG vs Unholy <br> -15% Stress vs Unholy" },
     { row: 1, num: 2, id: "daredevil_desc", content: "+15 DODGE if HP below 25%" },
-    { row: 1, num: 3, id: "hard_noggin_desc", content: "+15% <span class = 'stun'> Stun </span> Resist" },
-    { row: 1, num: 4, id: "clotter_desc", content: "+15% <span class = 'bleed'> Bleed </span> Resist" },
-    { row: 1, num: 5, id: "thick_blooded_desc", content: "+15% <span class = 'blight'> Blight </span> Resist" },
-    { row: 1, num: 6, id: "photomania_desc", content: "-20% <span class = 'stress'> Stress </span> if <span class = 'highres'> Torch </span> above 75" },
-    { row: 1, num: 7, id: "balanced_desc", content: "+15% <span class = 'move'> Move </span> Resist" },
+    { row: 1, num: 3, id: "hard_noggin_desc", content: "+15% Stun  Resist" },
+    { row: 1, num: 4, id: "clotter_desc", content: "+15%  Bleed  Resist" },
+    { row: 1, num: 5, id: "thick_blooded_desc", content: "+15%  Blight  Resist" },
+    { row: 1, num: 6, id: "photomania_desc", content: "-20%  Stress  if Torch above 75" },
+    { row: 1, num: 7, id: "balanced_desc", content: "+15%  Move Resist" },
     ];
 
 const CTierquirkData = [
 //c tier
-{ row: 1, num: 1, id: "steady_desc", content: "-10% <span class = 'stress'> Stress </span>" },
+{ row: 1, num: 1, id: "steady_desc", content: "-10%  Stress " },
 { row: 1, num: 2, id: "deadly_desc", content: "+2% CRIT" },
 { row: 1, num: 3, id: "fairweather_fighter_desc", content: "+20% DMG if HP above 99%" },
 { row: 1, num: 4, id: "second_wind_desc", content: "+10% DMG if HP below 50%" },
 { row: 1, num: 5, id: "clutch_hitter_desc", content: "+5% CRIT if HP below 50%" },
-{ row: 1, num: 6, id: "natural_desc", content: "+20% MAX HP, +20% <span class = 'heal'> Healing </span> Received, <br> and +3 SPD when wearing no trinkets" },
-{ row: 1, num: 7, id: "corvid_resilience_desc", content: "+33% <span class = 'disease'> Disease </span> Resist" },
-{ row: 1, num: 8, id: "robust_desc", content: "+15% <span class = 'disease'> Disease </span> Resist" },
+{ row: 1, num: 6, id: "natural_desc", content: "+20% MAX HP, +20%  Healing Received, <br> and +3 SPD when wearing no trinkets" },
+{ row: 1, num: 7, id: "corvid_resilience_desc", content: "+33%  Disease Resist" },
+{ row: 1, num: 8, id: "robust_desc", content: "+15%  Disease  Resist" },
 { row: 1, num: 9, id: "tactician_quirks_desc", content: "+15% DMG in X region" },
-{ row: 1, num: 10, id: "explorer_quirks_desc", content: "+10%  <span class = 'scouting'> Scouting </span> Chance in X region" },
-{ row: 1, num: 11, id: "adventurer_quirks_desc", content: "-20% <span class = 'stress'> Stress </span> in X region" },
-{ row: 1, num: 12, id: "scrounger_quirks_desc", content: "+5%  <span class = 'scouting'> Scouting </span> Chance in X region" },
-{ row: 2, num: 1, id: "lurker_desc", content: "+10% DMG if <span class = 'highres'> Torch </span> below 26" },
-{ row: 2, num: 2, id: "night_owl_desc", content: "+2 SPD if <span class = 'highres'> Torch </span> below 26" },
+{ row: 1, num: 10, id: "explorer_quirks_desc", content: "+10%   Scouting  Chance in X region" },
+{ row: 1, num: 11, id: "adventurer_quirks_desc", content: "-20%  Stress  in X region" },
+{ row: 1, num: 12, id: "scrounger_quirks_desc", content: "+5%   Scouting  Chance in X region" },
+{ row: 2, num: 1, id: "lurker_desc", content: "+10% DMG if  Torch  below 26" },
+{ row: 2, num: 2, id: "night_owl_desc", content: "+2 SPD if  Torch below 26" },
 ];
 
 const DTierquirkData = [
     //d tier
-    { row: 1, num: 1, id: "irrepressible_desc", content: "+5% <span class = 'stress'> Virtue </span> Chance"  },
-    { row: 1, num: 2, id: "unyielding_desc", content: "+10%  <span class = 'mark'> Death Blow </span> Resist" },
-    { row: 1, num: 3, id: "resilient_desc", content: "+10% <span class = 'stress'> Stress </span> Heal Recieved" },
+    { row: 1, num: 1, id: "irrepressible_desc", content: "+5%  Virtue  Chance"  },
+    { row: 1, num: 2, id: "unyielding_desc", content: "+10%   Death Blow  Resist" },
+    { row: 1, num: 3, id: "resilient_desc", content: "+10%  Stress  Heal Recieved" },
     { row: 1, num: 4, id: "weapon_tinker_desc", content: "-20% Weapon Upgrade Cost at the Blacksmith" },
     { row: 1, num: 5, id: "armor_tinker_desc", content: "-20% Armor Upgrade Cost at the Blacksmith" },
-    { row: 1, num: 6, id: "stress_faster_desc", content: "-100% Food Consumed if <span class = 'stress'> Stress </span> above 50 " },
-    { row: 1, num: 7, id: "gifted_desc", content: "+20% <span class = 'heal'> Healing </span> Recieved" },
-    { row: 1, num: 8, id: "healer_gift_desc", content: "+20% <span class = 'heal'> Healing </span> Skills while Camping" },
-    { row: 1, num: 9, id: "stout_desc", content: "+15% <span class = 'heal'> Healing </span> Skills while Camping" },
-    { row: 1, num: 10, id: "fast_healer_desc", content: "+10% <span class = 'heal'> Healing </span> Skills while Camping" },
+    { row: 1, num: 6, id: "stress_faster_desc", content: "-100% Food Consumed if Stress  above 50 " },
+    { row: 1, num: 7, id: "gifted_desc", content: "+20% Healing  Recieved" },
+    { row: 1, num: 8, id: "healer_gift_desc", content: "+20% Healing Skills while Camping" },
+    { row: 1, num: 9, id: "stout_desc", content: "+15% Healing Skills while Camping" },
+    { row: 1, num: 10, id: "fast_healer_desc", content: "+10% Healing Skills while Camping" },
     ];
 
 
 const ETierquirkData = [
 //e tier
-{ row: 1, num: 1, id: "gothic_desc", content: "Wyrd Reconstruction: <br> +25% <span class = 'heal'> Healing </span> Recieved" },
-{ row: 1, num: 2, id: "spiritual_desc", content: "Divine Grace, Divine Comfort: <br> +25% <span class = 'heal'> Healing </span> Recieved " },
-{ row: 1, num: 3, id: "musical_desc", content: "Inspiring Tune: <br> +25% <span class = 'stress'> Stress </span> Heal Recieved" },
-{ row: 1, num: 4, id: "backtracker_desc", content: "No <span class = 'stress'> Stress </span> penalty when walking backwards" },
+{ row: 1, num: 1, id: "gothic_desc", content: "Wyrd Reconstruction: <br> +25% Healing Recieved" },
+{ row: 1, num: 2, id: "spiritual_desc", content: "Divine Grace, Divine Comfort: <br> +25% Healing Recieved " },
+{ row: 1, num: 3, id: "musical_desc", content: "Inspiring Tune: <br> +25%  Stress  Heal Recieved" },
+{ row: 1, num: 4, id: "backtracker_desc", content: "No  Stress  penalty when walking backwards" },
 { row: 1, num: 5, id: "fated_desc", content: "10% Chance to turn any MISS (not DODGE) into a HIT" },
-{ row: 1, num: 6, id: "nymphomania_desc", content: "+20% <span class = 'stress'> Stress </span> Heal Recieved from Brothel" },
-{ row: 1, num: 7, id: "meditator_desc", content: "+20% <span class = 'stress'> Stress </span> Heal Recieved from Meditation" },
+{ row: 1, num: 6, id: "nymphomania_desc", content: "+20% Stress  Heal Recieved from Brothel" },
+{ row: 1, num: 7, id: "meditator_desc", content: "+20%  Stress  Heal Recieved from Meditation" },
 { row: 1, num: 8, id: "skilled_gambler_desc", content: "+12.9% Chance of winning money while Gambling <br> +13.3% chance of winning trinkets while Gambling" },
 ];
 
@@ -125,13 +389,13 @@ const Tier3quirkData = [
     { row: 1, num: 1, id: "fading_desc", content: "-2 SPD <br> -5 DODGE" },
     { row: 1, num: 2, id: "off_guard_desc", content: "-4 SPD and -5 DODGE on First Round" },
     { row: 1, num: 3, id: "slowdraw_desc", content: "-4 SPD on First Round" },
-    { row: 1, num: 4, id: "corvid_blindness_desc", content: "-10 ACC if <span class = 'highres'> Torch </span> above 50" },
-    { row: 1, num: 5, id: "fear_of_eldritch_desc", content: "+15% <span class = 'stress'> Stress </span> vs Eldritch <br> -10 ACC vs Eldritch" },
-    { row: 1, num: 6, id: "fear_of_mankind_desc", content: "+15% <span class = 'stress'> Stress </span> vs Human <br> -10 ACC vs Human" },
-    { row: 1, num: 7, id: "fear_of_beasts_desc", content: "+15% <span class = 'stress'> Stress </span> vs Beast <br> -10 ACC vs Beast" },
-    { row: 1, num: 8, id: "fear_of_unholy_desc", content: "+15% <span class = 'stress'> Stress </span> vs Unholy <br> -10 ACC vs Unholy" },
+    { row: 1, num: 4, id: "corvid_blindness_desc", content: "-10 ACC if Torch above 50" },
+    { row: 1, num: 5, id: "fear_of_eldritch_desc", content: "+15% Stress vs Eldritch <br> -10 ACC vs Eldritch" },
+    { row: 1, num: 6, id: "fear_of_mankind_desc", content: "+15% Stress vs Human <br> -10 ACC vs Human" },
+    { row: 1, num: 7, id: "fear_of_beasts_desc", content: "+15% Stress vs Beast <br> -10 ACC vs Beast" },
+    { row: 1, num: 8, id: "fear_of_unholy_desc", content: "+15% Stress vs Unholy <br> -10 ACC vs Unholy" },
     { row: 1, num: 9, id: "the_yips_desc", content: "-5 ACC" },
-    { row: 1, num: 10, id: "nocturnal_desc", content: "-2 SPD if <span class = 'highres'> Torch </span> above 75" },
+    { row: 1, num: 10, id: "nocturnal_desc", content: "-2 SPD if Torch above 75" },
     { row: 1, num: 11, id: "fragile_desc", content: "-10% MAX HP" },
     { row: 1, num: 12, id: "imposter_syndrome_desc", content: "Consumed by thoughts of inadequacy <br> 4% Chance to pass turn" },
 ];
@@ -139,35 +403,35 @@ const Tier3quirkData = [
 const Tier4quirkData = [
 
     { row: 1, num: 1, id: "slow_reflexes_desc", content: "-1 SPD" },
-    { row: 1, num: 2, id: "ashen_desc", content: "-10% <span class = 'bleed'>Bleed</span> Resist <br> -10%  <span class = 'blight'>Blight </span> Resist" },
-    { row: 1, num: 3, id: "antsy_desc", content: "+20 <span class = 'stress'> Stress </span> when left Idle for the week" },
-    { row: 1, num: 4, id: "light_sensitive_desc", content: "-10% DMG if <span class = 'highres'> Torch </span> above 75" },
-    { row: 1, num: 5, id: "phengophobia_desc", content: "+20% <span class = 'stress'> Stress </span> if <span class = 'highres'> Torch </span> above 75" },
-    { row: 1, num: 6, id: "claustrophobia_desc", content: "+20% <span class = 'stress'> Stress </span> in Hallways" },
+    { row: 1, num: 2, id: "ashen_desc", content: "-10% Bleed Resist <br> -10%  Blight Resist" },
+    { row: 1, num: 3, id: "antsy_desc", content: "+20 Stress when left Idle for the week" },
+    { row: 1, num: 4, id: "light_sensitive_desc", content: "-10% DMG if Torch above 75" },
+    { row: 1, num: 5, id: "phengophobia_desc", content: "+20% Stress if Torch above 75" },
+    { row: 1, num: 6, id: "claustrophobia_desc", content: "+20% Stress in Hallways" },
 ];
 
 const Tier5quirkData = [
 
-    { row: 1, num: 1, id: "weak_grip_desc", content: "-5% CRIT <span class = 'attack_type'> Melee </span> Skills" },
-    { row: 1, num: 2, id: "flawed_release_desc", content: "-5% CRIT <span class = 'attack_type'> Ranged </span> Skills" },
-    { row: 1, num: 3, id: "lazy_eye_desc", content: "-5 ACC <span class = 'attack_type'> Ranged </span> Skills" },
-    { row: 1, num: 4, id: "torn_rotator_desc", content: "-5% DMG <span class = 'attack_type'> Melee </span> Skills" },
-    { row: 1, num: 5, id: "scattering_desc", content: "-5% DMG <span class = 'attack_type'> Ranged </span> Skills" },
-    { row: 1, num: 6, id: "bad_healer_desc", content: "-20% <span class = heal>Healing</span> Skills" },
+    { row: 1, num: 1, id: "weak_grip_desc", content: "-5% CRIT  Melee  Skills" },
+    { row: 1, num: 2, id: "flawed_release_desc", content: "-5% CRIT  Ranged  Skills" },
+    { row: 1, num: 3, id: "lazy_eye_desc", content: "-5 ACC  Ranged  Skills" },
+    { row: 1, num: 4, id: "torn_rotator_desc", content: "-5% DMG  Melee  Skills" },
+    { row: 1, num: 5, id: "scattering_desc", content: "-5% DMG  Ranged  Skills" },
+    { row: 1, num: 6, id: "bad_healer_desc", content: "-20% Healing Skills" },
     { row: 1, num: 7, id: "risktaker_desc", content: "+10% DMG <br> -10 DODGE" },
 ];
 
 const Tier6quirkData = [
 
-    { row: 1, num: 1, id: "automatonophobia_desc", content: "+20% <span class = 'stress'> Stress </span> vs Human" },
-    { row: 1, num: 2, id: "zoophobia_desc", content: "+20% <span class = 'stress'> Stress </span> vs Beast" },
-    { row: 1, num: 3, id: "satanophobia_desc", content: "+20% <span class = 'stress'> Stress </span> vs Unholy" },
+    { row: 1, num: 1, id: "automatonophobia_desc", content: "+20% Stress vs Human" },
+    { row: 1, num: 2, id: "zoophobia_desc", content: "+20% Stress vs Beast" },
+    { row: 1, num: 3, id: "satanophobia_desc", content: "+20% Stress vs Unholy" },
     { row: 1, num: 4, id: "soft_desc", content: "-5% MAX HP" },
-    { row: 1, num: 5, id: "infirm_desc", content: "-20% <span class = 'heal'> Healing </span> Recieved" },
-    { row: 1, num: 6, id: "anemic_desc", content: "-10% <span class = 'bleed'>Bleed</span> Resist" },
-    { row: 1, num: 7, id: "thin_blooded_desc", content: "-10%  <span class = 'blight'>Blight </span> Resist" },
-    { row: 1, num: 8, id: "shocker_desc", content: "-10% <span class = 'stun'> Stun </span> Resist" },
-    { row: 1, num: 9, id: "sickly_desc", content: "-10% <span class = 'disease'> Disease </span> Resist" },
+    { row: 1, num: 5, id: "infirm_desc", content: "-20% Healing Recieved" },
+    { row: 1, num: 6, id: "anemic_desc", content: "-10% Bleed Resist" },
+    { row: 1, num: 7, id: "thin_blooded_desc", content: "-10%  Blight  Resist" },
+    { row: 1, num: 8, id: "shocker_desc", content: "-10%  Stun  Resist" },
+    { row: 1, num: 9, id: "sickly_desc", content: "-10%  Disease  Resist" },
     { row: 1, num: 10, id: "calm_desc", content: "-15% DMG on First Round  " },
     { row: 1, num: 11, id: "clumsy_desc", content: "-5 DODGE" },
 ];
@@ -177,29 +441,29 @@ const Tier7quirkData = [
     { row: 1, num: 1, id: "dud_hitter_desc", content: "-5% CRIT if HP below 50%" },
     { row: 1, num: 2, id: "tuckered_out_desc", content: "-10% DMG if HP below 50%" },
     { row: 1, num: 3, id: "misses_the_spot_desc", content: "-2% CRIT" },
-    { row: 1, num: 4, id: "weak_grip_on_life_desc", content: "-10%  <span class = 'mark'> Death Blow </span> Resist" },
-    { row: 1, num: 5, id: "thanatophobia_desc", content: "+20% <span class = 'stress'> Stress </span> if HP below 50%" },
+    { row: 1, num: 4, id: "weak_grip_on_life_desc", content: "-10%   Death Blow  Resist" },
+    { row: 1, num: 5, id: "thanatophobia_desc", content: "+20%  Stress  if HP below 50%" },
 ];
 
 const Tier8quirkData = [
 
-    { row: 1, num: 1, id: "lygophobia_desc", content: "+20% <span class = 'stress'> Stress </span> if <span class = 'highres'> Torch </span> below 26" },
-    { row: 1, num: 2, id: "area_phobe_desc", content: "+20% <span class = 'stress'> Stress </span> in X region" },
-    { row: 1, num: 3, id: "germophobe_desc", content: "-10 ACC vs <span class = 'blight'>Blighted</span> " },
-    { row: 1, num: 4, id: "nervous_bleeder_desc", content: "-10 ACC while <span class = 'bleed'> Bleeding </span>" },
+    { row: 1, num: 1, id: "lygophobia_desc", content: "+20%  Stress  if  Torch below 26" },
+    { row: 1, num: 2, id: "area_phobe_desc", content: "+20%  Stress  in X region" },
+    { row: 1, num: 3, id: "germophobe_desc", content: "-10 ACC vs Blighted " },
+    { row: 1, num: 4, id: "nervous_bleeder_desc", content: "-10 ACC while  Bleeding " },
     { row: 1, num: 5, id: "tippler_desc", content: "In Town, will only visit the Bar for stress relief" },
     { row: 1, num: 6, id: "gambler_desc", content: "In Town, will only Gamble for stress relief	" },
     { row: 1, num: 7, id: "love_interest_desc", content: "In Town, will only visit the Brothel for stress relief" },
-    { row: 1, num: 8, id: "stress_eater_desc", content: "+100% Food Consumed if <span class = 'stress'> Stress </span> above 50 " },
-    { row: 1, num: 9, id: "night_blindness_desc", content: "-10% DMG if <span class = 'highres'> Torch </span> below 26" },
-    { row: 1, num: 10, id: "diurnal_desc", content: "-2 SPD if <span class = 'highres'> Torch </span> below 26" },
+    { row: 1, num: 8, id: "stress_eater_desc", content: "+100% Food Consumed if  Stress  above 50 " },
+    { row: 1, num: 9, id: "night_blindness_desc", content: "-10% DMG if  Torch  below 26" },
+    { row: 1, num: 10, id: "diurnal_desc", content: "-2 SPD if  Torch  below 26" },
 ];
 
 const Tier9quirkData = [
 
-    { row: 1, num: 1, id: "mercurial_desc", content: "-5% <span class = 'stress'> Virtue </span> Chance" },
-    { row: 1, num: 2, id: "perfectionist_desc", content: "On Attack Miss: +5 <span class = 'stress'> Stress </span>" },
-    { row: 1, num: 3, id: "ruminator_desc", content: "-10% <span class = 'stress'> Stress </span> Heal Recieved" },
+    { row: 1, num: 1, id: "mercurial_desc", content: "-5%  Virtue Chance" },
+    { row: 1, num: 2, id: "perfectionist_desc", content: "On Attack Miss: +5  Stress " },
+    { row: 1, num: 3, id: "ruminator_desc", content: "-10%  Stress  Heal Recieved" },
     { row: 1, num: 4, id: "enlightened_desc", content: "In Town, will only Meditate for stress relief" },
     { row: 1, num: 5, id: "god_fearing_desc", content: "In Town, will only Pray for stress relief" },
     { row: 1, num: 6, id: "flagellant_desc", content: "In Town, will only Flagellate for stress relief" },
@@ -208,12 +472,12 @@ const Tier9quirkData = [
 const Tier10quirkData = [
 
     { row: 1, num: 1, id: "winded_desc", content: "-1 SPD if HP below 50%" },
-    { row: 1, num: 2, id: "ascetic_desc", content: "Wyrd Reconstruction: <br> -20% <span class = 'heal'> Healing </span> Recieved" },
-    { row: 1, num: 3, id: "scientific_desc", content: "Divine Grace, Divine Comfort: <br> -20% <span class = 'heal'> Healing </span> Recieved " },
+    { row: 1, num: 2, id: "ascetic_desc", content: "Wyrd Reconstruction: <br> -20% Healing  Recieved" },
+    { row: 1, num: 3, id: "scientific_desc", content: "Divine Grace, Divine Comfort: <br> -20%  Healing  Recieved " },
     { row: 1, num: 4, id: "unquiet_mind_desc", content: "In Town, will not meditate in the Cloister for stress relief " },
     { row: 1, num: 5, id: "witness_desc", content: "Will not take part in Prayer activity in town, after certain traumatic events" },
     { row: 1, num: 6, id: "faithless_desc", content: "Will not Pray or Flagellate for stress relief. " },
-    { row: 1, num: 7, id: "tone_deaf_desc", content: "Inspiring Tune: <br> -20% <span class = 'stress'> Stress </span> Heal Recieved" },
+    { row: 1, num: 7, id: "tone_deaf_desc", content: "Inspiring Tune: <br> -20% Stress Heal Recieved" },
     { row: 1, num: 8, id: "resolution_desc", content: "In Town, will never Drink" },
     { row: 1, num: 9, id: "known_cheat_desc", content: "Is not allowed to visit the Gambling Hall" },
     { row: 1, num: 10, id: "deviant_tastes_desc", content: "Is not allowed to visit the Brothel" },
@@ -221,7 +485,7 @@ const Tier10quirkData = [
 ];
 
 
-// Get the container
+// Tier Containers
 const STierContainer = document.getElementById("positive_stier");
 const ATierContainer = document.getElementById("positive_atier");
 const BTierContainer = document.getElementById("positive_btier");
@@ -242,169 +506,58 @@ const Tier8Container = document.getElementById("negative_tier8");
 const Tier9Container = document.getElementById("negative_tier9");
 const Tier10Container = document.getElementById("negative_tier10");
 
+function createAndAppendQuirkContainers(quirkData, container) {
+    quirkData.forEach(quirk => {
+      const quirkTxT = document.createElement("div");
+      quirkTxT.className = `quirk_desc row${quirk.row}num${quirk.num}`;
+      quirkTxT.id = quirk.id;
+      quirk.content = quirk.content.replace(/Stress/g, '<span class="stress">Stress</span>');
+      quirk.content = quirk.content.replace(/Healing/g, '<span class="heal">Healing</span>');
+      quirk.content = quirk.content.replace(/Virtue/g, '<span class="stress">Virtue</span>');
+      quirk.content = quirk.content.replace(/Torch/g, '<span class = "highres"> Torch </span>');
+      quirk.content = quirk.content.replace(/Blighted/g, '<span class="blight">Blighted</span>');
+      quirk.content = quirk.content.replace(/Blight/g, '<span class="blight">Blight</span>');
+      quirk.content = quirk.content.replace(/Bleed/g, '<span class="bleed">Bleed</span>');
+      quirk.content = quirk.content.replace(/Bleeding/g, '<span class="bleed">Bleeding</span>');
+      quirk.content = quirk.content.replace(/Stun/g, '<span class="stun">Stun</span>');
+      quirk.content = quirk.content.replace(/Move/g, '<span class="move">Move</span>');
+      quirk.content = quirk.content.replace(/Death Blow/g, '<span class="mark">Death Blow</span>');
+      quirk.content = quirk.content.replace(/Scouting/g, '<span class="scouting">Scouting</span>');
+      quirk.content = quirk.content.replace(/Ranged/g, '<span class="attack_type">Ranged</span>');
+      quirk.content = quirk.content.replace(/Melee/g, '<span class="attack_type">Melee</span>');
+      quirk.content = quirk.content.replace(/Disease/g, '<span class="disease">Disease</span>');
 
-// Loop through the quirk data and create elements
-STierquirkData.forEach(quirk => {
-    const QuirkTxT = document.createElement("div");
-    QuirkTxT.className = `quirk_desc row${quirk.row}num${quirk.num}`;
-    QuirkTxT.id = quirk.id;
-    QuirkTxT.innerHTML = quirk.content;
-    STierContainer.appendChild(QuirkTxT);
-});
+      quirkTxT.innerHTML = quirk.content;
+      
 
-ATierquirkData.forEach(quirk => {
-    const QuirkTxT = document.createElement("div");
-    QuirkTxT.className = `quirk_desc row${quirk.row}num${quirk.num}`;
-    QuirkTxT.id = quirk.id;
-    QuirkTxT.innerHTML = quirk.content;
-    ATierContainer.appendChild(QuirkTxT);
-});
-
-BTierquirkData.forEach(quirk => {
-    const QuirkTxT = document.createElement("div");
-    QuirkTxT.className = `quirk_desc row${quirk.row}num${quirk.num}`;
-    QuirkTxT.id = quirk.id;
-    QuirkTxT.innerHTML = quirk.content;
-    BTierContainer.appendChild(QuirkTxT);
-});
-
-CTierquirkData.forEach(quirk => {
-    const QuirkTxT = document.createElement("div");
-    QuirkTxT.className = `quirk_desc row${quirk.row}num${quirk.num}`;
-    QuirkTxT.id = quirk.id;
-    QuirkTxT.innerHTML = quirk.content;
-    CTierContainer.appendChild(QuirkTxT);
-});
-
-DTierquirkData.forEach(quirk => {
-    const QuirkTxT = document.createElement("div");
-    QuirkTxT.className = `quirk_desc row${quirk.row}num${quirk.num}`;
-    QuirkTxT.id = quirk.id;
-    QuirkTxT.innerHTML = quirk.content;
-    DTierContainer.appendChild(QuirkTxT);
-});
-
-ETierquirkData.forEach(quirk => {
-    const QuirkTxT = document.createElement("div");
-    QuirkTxT.className = `quirk_desc row${quirk.row}num${quirk.num}`;
-    QuirkTxT.id = quirk.id;
-    QuirkTxT.innerHTML = quirk.content;
-    ETierContainer.appendChild(QuirkTxT);
-});
-
-FTierquirkData.forEach(quirk => {
-    const QuirkTxT = document.createElement("div");
-    QuirkTxT.className = `quirk_desc row${quirk.row}num${quirk.num}`;
-    QuirkTxT.id = quirk.id;
-    QuirkTxT.innerHTML = quirk.content;
-    FTierContainer.appendChild(QuirkTxT);
-});
-
-
-Tier1quirkData.forEach(quirk => {
-    const QuirkTxT = document.createElement("div");
-    QuirkTxT.className = `quirk_desc row${quirk.row}num${quirk.num}`;
-    QuirkTxT.id = quirk.id;
-    QuirkTxT.innerHTML = quirk.content;
-    Tier1Container.appendChild(QuirkTxT);
-});
-
-Tier2quirkData.forEach(quirk => {
-    const QuirkTxT = document.createElement("div");
-    QuirkTxT.className = `quirk_desc row${quirk.row}num${quirk.num}`;
-    QuirkTxT.id = quirk.id;
-    QuirkTxT.innerHTML = quirk.content;
-    Tier2Container.appendChild(QuirkTxT);
-});
-
-Tier3quirkData.forEach(quirk => {
-    const QuirkTxT = document.createElement("div");
-    QuirkTxT.className = `quirk_desc row${quirk.row}num${quirk.num}`;
-    QuirkTxT.id = quirk.id;
-    QuirkTxT.innerHTML = quirk.content;
-    Tier3Container.appendChild(QuirkTxT);
-});
-
-Tier4quirkData.forEach(quirk => {
-    const QuirkTxT = document.createElement("div");
-    QuirkTxT.className = `quirk_desc row${quirk.row}num${quirk.num}`;
-    QuirkTxT.id = quirk.id;
-    QuirkTxT.innerHTML = quirk.content;
-    Tier4Container.appendChild(QuirkTxT);
-});
-
-Tier5quirkData.forEach(quirk => {
-    const QuirkTxT = document.createElement("div");
-    QuirkTxT.className = `quirk_desc row${quirk.row}num${quirk.num}`;
-    QuirkTxT.id = quirk.id;
-    QuirkTxT.innerHTML = quirk.content;
-    Tier5Container.appendChild(QuirkTxT);
-});
-
-Tier6quirkData.forEach(quirk => {
-    const QuirkTxT = document.createElement("div");
-    QuirkTxT.className = `quirk_desc row${quirk.row}num${quirk.num}`;
-    QuirkTxT.id = quirk.id;
-    QuirkTxT.innerHTML = quirk.content;
-    Tier6Container.appendChild(QuirkTxT);
-});
-
-Tier7quirkData.forEach(quirk => {
-    const QuirkTxT = document.createElement("div");
-    QuirkTxT.className = `quirk_desc row${quirk.row}num${quirk.num}`;
-    QuirkTxT.id = quirk.id;
-    QuirkTxT.innerHTML = quirk.content;
-    Tier7Container.appendChild(QuirkTxT);
-});
-
-Tier8quirkData.forEach(quirk => {
-    const QuirkTxT = document.createElement("div");
-    QuirkTxT.className = `quirk_desc row${quirk.row}num${quirk.num}`;
-    QuirkTxT.id = quirk.id;
-    QuirkTxT.innerHTML = quirk.content;
-    Tier8Container.appendChild(QuirkTxT);
-});
-
-Tier9quirkData.forEach(quirk => {
-    const QuirkTxT = document.createElement("div");
-    QuirkTxT.className = `quirk_desc row${quirk.row}num${quirk.num}`;
-    QuirkTxT.id = quirk.id;
-    QuirkTxT.innerHTML = quirk.content;
-    Tier9Container.appendChild(QuirkTxT);
-});
-
-Tier10quirkData.forEach(quirk => {
-    const QuirkTxT = document.createElement("div");
-    QuirkTxT.className = `quirk_desc row${quirk.row}num${quirk.num}`;
-    QuirkTxT.id = quirk.id;
-    QuirkTxT.innerHTML = quirk.content;
-    Tier10Container.appendChild(QuirkTxT);
-});
+      container.appendChild(quirkTxT);
+    });
+  }
+  
+  // Positive Tier Containers
+  createAndAppendQuirkContainers(STierquirkData, STierContainer);
+  createAndAppendQuirkContainers(ATierquirkData, ATierContainer);
+  createAndAppendQuirkContainers(BTierquirkData, BTierContainer);
+  createAndAppendQuirkContainers(CTierquirkData, CTierContainer);
+  createAndAppendQuirkContainers(DTierquirkData, DTierContainer);
+  createAndAppendQuirkContainers(ETierquirkData, ETierContainer);
+  createAndAppendQuirkContainers(FTierquirkData, FTierContainer);
+  
+  // Negative Tier Containers
+  createAndAppendQuirkContainers(Tier1quirkData, Tier1Container);
+  createAndAppendQuirkContainers(Tier2quirkData, Tier2Container);
+  createAndAppendQuirkContainers(Tier3quirkData, Tier3Container);
+  createAndAppendQuirkContainers(Tier4quirkData, Tier4Container);
+  createAndAppendQuirkContainers(Tier5quirkData, Tier5Container);
+  createAndAppendQuirkContainers(Tier6quirkData, Tier6Container);
+  createAndAppendQuirkContainers(Tier7quirkData, Tier7Container);
+  createAndAppendQuirkContainers(Tier8quirkData, Tier8Container);
+  createAndAppendQuirkContainers(Tier9quirkData, Tier9Container);
+  createAndAppendQuirkContainers(Tier10quirkData, Tier10Container);
 
 
 
-// Quirk Names
-const STierquirkContainer = document.getElementById("stier_names");
-const ATierquirkContainer = document.getElementById("atier_names");
-const BTierquirkContainer = document.getElementById("btier_names");
-const CTierquirkContainer = document.getElementById("ctier_names");
-const DTierquirkContainer = document.getElementById("dtier_names");
-const ETierquirkContainer = document.getElementById("etier_names");
-const FTierquirkContainer = document.getElementById("ftier_names");
-
-
-const Tier1quirkContainer = document.getElementById("tier1_names");
-const Tier2quirkContainer = document.getElementById("tier2_names");
-const Tier3quirkContainer = document.getElementById("tier3_names");
-const Tier4quirkContainer = document.getElementById("tier4_names");
-const Tier5quirkContainer = document.getElementById("tier5_names");
-const Tier6quirkContainer = document.getElementById("tier6_names");
-const Tier7quirkContainer = document.getElementById("tier7_names");
-const Tier8quirkContainer = document.getElementById("tier8_names");
-const Tier9quirkContainer = document.getElementById("tier9_names");
-const Tier10quirkContainer = document.getElementById("tier10_names");
-
-
+//Quirk Names
 
 const STierquirkNameData = [
     { id: "luminous", content: "Luminous" },
@@ -445,7 +598,7 @@ const ATierquirkNameData2 = [
 const BTierquirkNameData = [
     { id: "unholy_hater", content: "Unholy Hater" },
     { id: "daredevil", content: "Daredevil" },
-    { id: "hard_noggin", content: "Haed Noggin" },
+    { id: "hard_noggin", content: "Hard Noggin" },
     { id: "clotter", content: "Clotter" },
     { id: "thick_blooded", content: "Thick Blooded" },
     { id: "photomania", content: "Photomania" },
@@ -619,166 +772,58 @@ const Tier10quirkNameData = [
     { id: "bad_gambler", content: "Bad Gambler" },
 ];
 
-STierquirkNameData.forEach(quirk => {
-    const QuirkName = document.createElement("div");
-    QuirkName.id = quirk.id;
-    QuirkName.className = 'fit_width';
-    QuirkName.textContent = quirk.content;
-    STierquirkContainer.appendChild(QuirkName);
-});
-
-ATierquirkNameData1.forEach(quirk => {
-    const QuirkName = document.createElement("div");
-    QuirkName.id = quirk.id;
-    QuirkName.className = 'fit_width';
-    QuirkName.textContent = quirk.content;
-    ATierquirkContainer.appendChild(QuirkName);
-});
-
-ATierquirkNameData2.forEach(quirk => {
-    const QuirkName = document.createElement("div");
-    QuirkName.id = quirk.id;
-    QuirkName.className = 'quirk_name_line2 fit_width';
-    QuirkName.textContent = quirk.content;
-    ATierquirkContainer.appendChild(QuirkName);
-});
-
-BTierquirkNameData.forEach(quirk => {
-    const QuirkName = document.createElement("div");
-    QuirkName.id = quirk.id;
-    QuirkName.className = 'fit_width';
-    QuirkName.textContent = quirk.content;
-    BTierquirkContainer.appendChild(QuirkName);
-});
-
-CTierquirkNameData1.forEach(quirk => {
-    const QuirkName = document.createElement("div");
-    QuirkName.id = quirk.id;
-    QuirkName.className = 'fit_width';
-    QuirkName.textContent = quirk.content;
-    CTierquirkContainer.appendChild(QuirkName);
-});
-
-CTierquirkNameData2.forEach(quirk => {
-    const QuirkName = document.createElement("div");
-    QuirkName.id = quirk.id;
-    QuirkName.className = 'quirk_name_line2 fit_width';
-    QuirkName.textContent = quirk.content;
-    CTierquirkContainer.appendChild(QuirkName);
-});
-
-DTierquirkNameData.forEach(quirk => {
-    const QuirkName = document.createElement("div");
-    QuirkName.id = quirk.id;
-    QuirkName.className = 'fit_width';
-    QuirkName.textContent = quirk.content;
-    DTierquirkContainer.appendChild(QuirkName);
-});
+// Quirk Name Container
+const STierquirkContainer = document.getElementById("stier_names");
+const ATierquirkContainer = document.getElementById("atier_names");
+const BTierquirkContainer = document.getElementById("btier_names");
+const CTierquirkContainer = document.getElementById("ctier_names");
+const DTierquirkContainer = document.getElementById("dtier_names");
+const ETierquirkContainer = document.getElementById("etier_names");
+const FTierquirkContainer = document.getElementById("ftier_names");
 
 
-ETierquirkNameData.forEach(quirk => {
-    const QuirkName = document.createElement("div");
-    QuirkName.id = quirk.id;
-    QuirkName.className = 'fit_width';
-    QuirkName.textContent = quirk.content;
-    ETierquirkContainer.appendChild(QuirkName);
-});
+const Tier1quirkContainer = document.getElementById("tier1_names");
+const Tier2quirkContainer = document.getElementById("tier2_names");
+const Tier3quirkContainer = document.getElementById("tier3_names");
+const Tier4quirkContainer = document.getElementById("tier4_names");
+const Tier5quirkContainer = document.getElementById("tier5_names");
+const Tier6quirkContainer = document.getElementById("tier6_names");
+const Tier7quirkContainer = document.getElementById("tier7_names");
+const Tier8quirkContainer = document.getElementById("tier8_names");
+const Tier9quirkContainer = document.getElementById("tier9_names");
+const Tier10quirkContainer = document.getElementById("tier10_names");
 
 
-FTierquirkNameData.forEach(quirk => {
-    const QuirkName = document.createElement("div");
-    QuirkName.id = quirk.id;
-    QuirkName.className = ' fit_width';
-    QuirkName.textContent = quirk.content;
-    FTierquirkContainer.appendChild(QuirkName);
-})
-
-Tier1quirkNameData.forEach(quirk => {
-    const QuirkName = document.createElement("div");
-    QuirkName.id = quirk.id;
-    QuirkName.className = ' fit_width';
-    QuirkName.textContent = quirk.content;
-    Tier1quirkContainer.appendChild(QuirkName);
-})
-
-Tier2quirkNameData1.forEach(quirk => {
-    const QuirkName = document.createElement("div");
-    QuirkName.id = quirk.id;
-    QuirkName.className = ' fit_width';
-    QuirkName.textContent = quirk.content;
-    Tier2quirkContainer.appendChild(QuirkName);
-})
-
-Tier2quirkNameData2.forEach(quirk => {
-    const QuirkName = document.createElement("div");
-    QuirkName.id = quirk.id;
-    QuirkName.className = 'quirk_name_line2 fit_width';
-    QuirkName.textContent = quirk.content;
-    Tier2quirkContainer.appendChild(QuirkName);
-})
-
-Tier3quirkNameData.forEach(quirk => {
-    const QuirkName = document.createElement("div");
-    QuirkName.id = quirk.id;
-    QuirkName.className = ' fit_width';
-    QuirkName.textContent = quirk.content;
-    Tier3quirkContainer.appendChild(QuirkName);
-})
-
-Tier4quirkNameData.forEach(quirk => {
-    const QuirkName = document.createElement("div");
-    QuirkName.id = quirk.id;
-    QuirkName.className = ' fit_width';
-    QuirkName.textContent = quirk.content;
-    Tier4quirkContainer.appendChild(QuirkName);
-})
-
-
-Tier5quirkNameData.forEach(quirk => {
-    const QuirkName = document.createElement("div");
-    QuirkName.id = quirk.id;
-    QuirkName.className = ' fit_width';
-    QuirkName.textContent = quirk.content;
-    Tier5quirkContainer.appendChild(QuirkName);
-})
-
-
-Tier6quirkNameData.forEach(quirk => {
-    const QuirkName = document.createElement("div");
-    QuirkName.id = quirk.id;
-    QuirkName.className = ' fit_width';
-    QuirkName.textContent = quirk.content;
-    Tier6quirkContainer.appendChild(QuirkName);
-})
-
-Tier7quirkNameData.forEach(quirk => {
-    const QuirkName = document.createElement("div");
-    QuirkName.id = quirk.id;
-    QuirkName.className = ' fit_width';
-    QuirkName.textContent = quirk.content;
-    Tier7quirkContainer.appendChild(QuirkName);
-})
-
-Tier8quirkNameData.forEach(quirk => {
-    const QuirkName = document.createElement("div");
-    QuirkName.id = quirk.id;
-    QuirkName.className = ' fit_width';
-    QuirkName.textContent = quirk.content;
-    Tier8quirkContainer.appendChild(QuirkName);
-})
-
-Tier9quirkNameData.forEach(quirk => {
-    const QuirkName = document.createElement("div");
-    QuirkName.id = quirk.id;
-    QuirkName.className = ' fit_width';
-    QuirkName.textContent = quirk.content;
-    Tier9quirkContainer.appendChild(QuirkName);
-})
-
-Tier10quirkNameData.forEach(quirk => {
-    const QuirkName = document.createElement("div");
-    QuirkName.id = quirk.id;
-    QuirkName.className = ' fit_width';
-    QuirkName.textContent = quirk.content;
-    Tier10quirkContainer.appendChild(QuirkName);
-})
+function createAndAppendQuirkNames(quirkNameData, container, className = '') {
+    quirkNameData.forEach(quirk => {
+      const quirkName = document.createElement("div");
+      quirkName.id = quirk.id;
+      quirkName.className = `fit_width ${className}`;
+      quirkName.textContent = quirk.content;
+      container.appendChild(quirkName);
+    });
+  }
+  
+  // Positive Tier Quirk Name Containers
+  createAndAppendQuirkNames(STierquirkNameData, STierquirkContainer);
+  createAndAppendQuirkNames(ATierquirkNameData1, ATierquirkContainer);
+  createAndAppendQuirkNames(ATierquirkNameData2, ATierquirkContainer, 'quirk_name_line2');
+  createAndAppendQuirkNames(BTierquirkNameData, BTierquirkContainer);
+  createAndAppendQuirkNames(CTierquirkNameData1, CTierquirkContainer);
+  createAndAppendQuirkNames(CTierquirkNameData2, CTierquirkContainer, 'quirk_name_line2');
+  createAndAppendQuirkNames(DTierquirkNameData, DTierquirkContainer);
+  createAndAppendQuirkNames(ETierquirkNameData, ETierquirkContainer);
+  createAndAppendQuirkNames(FTierquirkNameData, FTierquirkContainer);
+  
+  // Negative Tier Quirk Name Containers
+  createAndAppendQuirkNames(Tier1quirkNameData, Tier1quirkContainer);
+  createAndAppendQuirkNames(Tier2quirkNameData1, Tier2quirkContainer);
+  createAndAppendQuirkNames(Tier2quirkNameData2, Tier2quirkContainer, 'quirk_name_line2');
+  createAndAppendQuirkNames(Tier3quirkNameData, Tier3quirkContainer);
+  createAndAppendQuirkNames(Tier4quirkNameData, Tier4quirkContainer);
+  createAndAppendQuirkNames(Tier5quirkNameData, Tier5quirkContainer);
+  createAndAppendQuirkNames(Tier6quirkNameData, Tier6quirkContainer);
+  createAndAppendQuirkNames(Tier7quirkNameData, Tier7quirkContainer);
+  createAndAppendQuirkNames(Tier8quirkNameData, Tier8quirkContainer);
+  createAndAppendQuirkNames(Tier9quirkNameData, Tier9quirkContainer);
+  createAndAppendQuirkNames(Tier10quirkNameData, Tier10quirkContainer);
