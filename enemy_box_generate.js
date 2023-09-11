@@ -4,6 +4,7 @@ const WarrensEnemyBox = document.getElementById('warrensbox1');
 const CoveEnemyBox = document.getElementById('covebox1');
 const SharedEnemyBox = document.getElementById('sharedbox1');
 
+
 const RuinsEnemySpriteData = [
     { id: "bone_soldier", content: "Bone Soldier", useBigSprite: false,useTallSprite:false,useMediumSprite:false, useMedTallSprite: true,useSmallSprite: false, hasApprentice: true, hasVeteran: true, hasChampion:true, hasDarkest:false, hasShortName: false, hasMediumName:true, hasLongName: false, hasVeryShortName: false,},
     { id: "bone_defender", content: "Bone Defender",useBigSprite: false,useTallSprite:false,useMediumSprite:false, useMedTallSprite: true,useSmallSprite: false, hasApprentice: true, hasVeteran: true, hasChampion:true, hasDarkest:false, hasShortName: false, hasMediumName:true, hasLongName: false,  hasVeryShortName: false,},
