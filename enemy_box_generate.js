@@ -2817,7 +2817,7 @@ const wealdskills = [
 },
 
 { 
-    extrainfo: 'Requires 2 Corpses/Empty Spaces <br> Only way to encounter Apprentice Large Ectoplasm<br>',
+    extrainfo: 'Requires 2 Corpses/Empty Spaces <br>',
     id: 'vet_ectoplasmic_profusion_desc',
     position: '1234cleaveally_1234enemy.png',
     name: 'Ectoplasmic Profusion',
@@ -2842,7 +2842,7 @@ const wealdskills = [
 },
 
 { 
-    extrainfo: 'Requires 2 Corpses/Empty Spaces <br> Only way to encounter Apprentice Large Ectoplasm<br>',
+    extrainfo: 'Requires 2 Corpses/Empty Spaces <br>',
     id: 'champ_ectoplasmic_profusion_desc',
     position: '1234cleaveally_1234enemy.png',
     name: 'Ectoplasmic Profusion',
