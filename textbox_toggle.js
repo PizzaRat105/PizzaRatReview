@@ -1,33 +1,42 @@
+const HideAudio = document.getElementById('page_close');
+HideAudio.volume = 0.6;
+
+
 function toggleMissionBox(selectedQuestBox){
     const allQuestBox = 
-    [CrimsonBox, MadnessBox, GauntletBox, EarlyBox1, EarlyBox2, EarlyBox3, VisualsBox, MusicBox, LateBox1, LateBox2, LateBox3,
+    [CrimsonBox, MadnessBox, GauntletBox, RuinsBox1, RuinsBox2, RuinsBox3, WealdBox1, WealdBox2, WealdBox3, WarrensBox1, WarrensBox2, WarrensBox3, CoveBox1, CoveBox2, CoveBox3, HamletBox1, HamletBox2, HamletBox3,
      BossBox1, BossBox2, MiniBossBox1, BossBox3, BossBox4, MiniBossBox2, BossBox5, BossBox6, MiniBossBox3, BossBox7, BossBox8, CircusBox
-     
     ];
     allQuestBox.forEach(questbox => {
-        questbox.style.visibility = 'hidden';
+        questbox.style.display = 'none'
     });
-    selectedQuestBox.style.visibility = 'visible';
+    selectedQuestBox.style.display = 'block'
     
    
 }
 
-const HideAudio = document.getElementById('page_close');
-HideAudio.volume = 0.6;
+
 
 document.addEventListener('keydown', event => {
     if (event.key === 'Escape') {
       handleEscape(CrimsonBox, CrimsonBackdrop, EmbarkCrimson);
       handleEscape(MadnessBox, MadnessBackdrop, EmbarkMadness);
       handleEscape(GauntletBox, GauntletBackdrop, EmbarkGauntlet);
-      handleEscape(EarlyBox1, Early1Backdrop, EmbarkDefault);
-      handleEscape(EarlyBox2, Early2Backdrop, EmbarkDefault);
-      handleEscape(EarlyBox3, Early3Backdrop, EmbarkDefault);
-      handleEscape(LateBox1, Late1Backdrop, EmbarkDefault);
-      handleEscape(LateBox2, Late2Backdrop, EmbarkDefault);
-      handleEscape(LateBox3, Late3Backdrop, EmbarkDefault);
-      handleEscape(VisualsBox, VisualBackdrop, EmbarkDefault);
-      handleEscape(MusicBox, MusicBackdrop, EmbarkDefault);
+      handleEscape(RuinsBox1, Ruins1Backdrop, EmbarkDefault);
+      handleEscape(RuinsBox2, Ruins2Backdrop, EmbarkDefault);
+      handleEscape(RuinsBox3, Ruins3Backdrop, EmbarkDefault);
+      handleEscape(WealdBox1, Weald1Backdrop, EmbarkDefault);
+      handleEscape(WealdBox2, Weald2Backdrop, EmbarkDefault);
+      handleEscape(WealdBox3, Weald3Backdrop, EmbarkDefault);
+      handleEscape(WarrensBox1, Warrens1Backdrop, EmbarkDefault);
+      handleEscape(WarrensBox2, Warrens2Backdrop, EmbarkDefault);
+      handleEscape(WarrensBox3, Warrens3Backdrop, EmbarkDefault);
+      handleEscape(CoveBox1, Cove1Backdrop, EmbarkDefault);
+      handleEscape(CoveBox2, Cove2Backdrop, EmbarkDefault);
+      handleEscape(CoveBox3, Cove3Backdrop, EmbarkDefault);
+      handleEscape(HamletBox1, Hamlet1Backdrop, EmbarkDefault);
+      handleEscape(HamletBox2, Hamlet2Backdrop, EmbarkDefault);
+      handleEscape(HamletBox3, Hamlet3Backdrop, EmbarkDefault);
       handleEscape(BossBox1);
       handleEscape(BossBox2);
       handleEscape(BossBox3);
@@ -45,13 +54,13 @@ document.addEventListener('keydown', event => {
   });
   
   function handleEscape(keyElement, backdropElement, embarkElement) {
-    if (keyElement.style.visibility === 'visible') {
+    if (keyElement.style.display === 'block') {
       HideAudio.currentTime = 0;
       HideAudio.play();
-      keyElement.style.visibility = 'hidden';
+      keyElement.style.display = 'none';
 
       if(backdropElement) {
-      backdropElement.style.visibility = 'hidden';
+      backdropElement.style.display = 'none';
     }
       if (embarkElement) {
         embarkElement.style.display = 'none';
@@ -59,17 +68,166 @@ document.addEventListener('keydown', event => {
   }
 }
 
+const EmbarkDefault = document.getElementById('embark_button');
+const EmbarkCrimson = document.getElementById('embark_crimson');
+const EmbarkMadness = document.getElementById('embark_madness');
+const EmbarkGauntlet = document.getElementById('embark_gauntlet');
+
+
+function toggleEmbarkBtn() {
+  EmbarkCrimson.style.display = 'none';
+  EmbarkMadness.style.display = 'none';
+  EmbarkGauntlet.style.display = 'none';
+  EmbarkDefault.style.display = 'block';
+}
+
+function toggleEmbarkBtnCC() {
+  EmbarkCrimson.style.display = 'block';
+  EmbarkMadness.style.display = 'none';
+  EmbarkGauntlet.style.display = 'none';
+  EmbarkDefault.style.display = 'none';
+}
+
+function toggleEmbarkBtnCoM() {
+  EmbarkCrimson.style.display = 'none';
+  EmbarkMadness.style.display = 'block';
+  EmbarkGauntlet.style.display = 'none';
+  EmbarkDefault.style.display = 'none';
+}
+
+function toggleEmbarkBtnDDs() {
+  EmbarkCrimson.style.display = 'none';
+  EmbarkMadness.style.display = 'none';
+  EmbarkGauntlet.style.display = 'block';
+  EmbarkDefault.style.display = 'none';
+}
+
+
+function toggleBackdropVisibility(selectedBackdrop) {
+  const allBackdrops = [CrimsonBackdrop, MadnessBackdrop, GauntletBackdrop, Ruins1Backdrop, Ruins2Backdrop, Ruins3Backdrop, Weald1Backdrop, Weald2Backdrop, Weald3Backdrop, Warrens1Backdrop, Warrens2Backdrop, Warrens3Backdrop, Cove1Backdrop, Cove2Backdrop, Cove3Backdrop, Hamlet1Backdrop, Hamlet2Backdrop, Hamlet3Backdrop];
+
+  allBackdrops.forEach(backdrop => {
+      backdrop.style.display = 'none';
+  });
+
+  selectedBackdrop.style.display = 'block';
+}
+
+
+
   const CrimsonButton = document.getElementById('crimsonbutton');
   const MadnessButton = document.getElementById('madnessbtn');
   const GauntletButton = document.getElementById('gauntletbtn');
-  const EarlyBtn1 = document.getElementById('early1');
-  const EarlyBtn2 = document.getElementById('early2');
-  const EarlyBtn3 = document.getElementById('early3');
-  const VisualsBtn = document.getElementById('visualsbtn');
-  const MusicBtn = document.getElementById('musicbtn');
-  const LateBtn1 = document.getElementById('late1');
-  const LateBtn2 = document.getElementById('late2');
-  const LateBtn3 = document.getElementById('late3');
+
+  const RuinsBtn1 = document.getElementById('ruins1');
+  const RuinsBtn2 = document.getElementById('ruins2');
+  const RuinsBtn3 = document.getElementById('ruins3');
+
+  const WealdBtn1 = document.getElementById('weald1');
+  const WealdBtn2 = document.getElementById('weald2');
+  const WealdBtn3 = document.getElementById('weald3');
+
+  const WarrensBtn1 = document.getElementById('warrens1');
+  const WarrensBtn2 = document.getElementById('warrens2');
+  const WarrensBtn3 = document.getElementById('warrens3');
+
+  const CoveBtn1 = document.getElementById('cove1');
+  const CoveBtn2 = document.getElementById('cove2');
+  const CoveBtn3 = document.getElementById('cove3');
+
+  const HamletBtn1 = document.getElementById('shared1');
+  const HamletBtn2 = document.getElementById('shared2');
+  const HamletBtn3 = document.getElementById('shared3');
+
+
+  const CrimsonBackdrop = document.querySelector('.crimson_backdrop');
+  const MadnessBackdrop = document.querySelector('.madness_backdrop');
+  const GauntletBackdrop = document.querySelector('.gauntlet_backdrop');
+
+  const Ruins1Backdrop = document.querySelector('.ruins_enemy_backdrop')
+  const Ruins2Backdrop = document.querySelector('.ruins_curio_backdrop')
+  const Ruins3Backdrop = document.querySelector('.ruins_boss_backdrop')
+
+  const Weald1Backdrop = document.querySelector('.weald_enemy_backdrop');
+  const Weald2Backdrop = document.querySelector('.weald_curio_backdrop');
+  const Weald3Backdrop = document.querySelector('.weald_boss_backdrop');
+
+  const Warrens1Backdrop = document.querySelector('.warrens_enemy_backdrop');
+  const Warrens2Backdrop = document.querySelector('.warrens_curio_backdrop');
+  const Warrens3Backdrop = document.querySelector('.warrens_boss_backdrop');
+
+  const Cove1Backdrop = document.querySelector('.cove_enemy_backdrop');
+  const Cove2Backdrop = document.querySelector('.cove_curio_backdrop');
+  const Cove3Backdrop = document.querySelector('.cove_boss_backdrop');
+  
+  const Hamlet1Backdrop = document.querySelector('.shared_enemy_backdrop');
+  const Hamlet2Backdrop = document.querySelector('.shared_curio_backdrop');
+  const Hamlet3Backdrop = document.querySelector('.shared_boss_backdrop');
+  
+
+
+
+  const CrimsonBox = document.getElementById('crimson_txtbox');
+  const MadnessBox = document.getElementById('madness_txtbox');
+  const GauntletBox = document.getElementById('gauntlet_txtbox');
+
+  const RuinsBox1 = document.getElementById('ruinsbox1');
+  const RuinsBox2 = document.getElementById('ruinsbox2');
+  const RuinsBox3 = document.getElementById('ruinsbox3');
+
+  const WealdBox1 = document.getElementById('wealdbox1');
+  const WealdBox2 = document.getElementById('wealdbox2');
+  const WealdBox3 = document.getElementById('wealdbox3');
+
+  const WarrensBox1 = document.getElementById('warrensbox1');
+  const WarrensBox2 = document.getElementById('warrensbox2');
+  const WarrensBox3 = document.getElementById('warrensbox3');
+
+  const CoveBox1 = document.getElementById('covebox1');
+  const CoveBox2 = document.getElementById('covebox2');
+  const CoveBox3 = document.getElementById('covebox3');
+  
+  const HamletBox1 = document.getElementById('sharedbox1');
+  const HamletBox2 = document.getElementById('sharedbox2');
+  const HamletBox3 = document.getElementById('sharedbox3');
+  
+
+
+
+
+function attachClickListener(button, box, embarkFunction, backdrop) {
+  button.addEventListener('click', () => {
+    toggleMissionBox(box);
+    embarkFunction();
+    toggleBackdropVisibility(backdrop);
+  });
+}
+
+attachClickListener(CrimsonButton, CrimsonBox, toggleEmbarkBtnCC, CrimsonBackdrop);
+attachClickListener(GauntletButton, GauntletBox, toggleEmbarkBtnDDs, GauntletBackdrop);
+attachClickListener(MadnessButton, MadnessBox, toggleEmbarkBtnCoM, MadnessBackdrop);
+
+attachClickListener(RuinsBtn1, RuinsBox1, toggleEmbarkBtn, Ruins1Backdrop);
+attachClickListener(RuinsBtn2, RuinsBox2, toggleEmbarkBtn, Ruins2Backdrop);
+attachClickListener(RuinsBtn3, RuinsBox3, toggleEmbarkBtn, Ruins3Backdrop);
+
+attachClickListener(WealdBtn1, WealdBox1, toggleEmbarkBtn, Weald1Backdrop);
+attachClickListener(WealdBtn2, WealdBox2, toggleEmbarkBtn, Weald2Backdrop);
+attachClickListener(WealdBtn3, WealdBox3, toggleEmbarkBtn, Weald3Backdrop);
+
+attachClickListener(WarrensBtn1, WarrensBox1, toggleEmbarkBtn, Warrens1Backdrop);
+attachClickListener(WarrensBtn2, WarrensBox2, toggleEmbarkBtn, Warrens2Backdrop);
+attachClickListener(WarrensBtn3, WarrensBox3, toggleEmbarkBtn, Warrens3Backdrop);
+
+attachClickListener(CoveBtn1, CoveBox1, toggleEmbarkBtn, Cove1Backdrop);
+attachClickListener(CoveBtn2, CoveBox2, toggleEmbarkBtn, Cove2Backdrop);
+attachClickListener(CoveBtn3, CoveBox3, toggleEmbarkBtn, Cove3Backdrop);
+
+attachClickListener(HamletBtn1, HamletBox1, toggleEmbarkBtn, Hamlet1Backdrop);
+attachClickListener(HamletBtn2, HamletBox2, toggleEmbarkBtn, Hamlet2Backdrop);
+attachClickListener(HamletBtn3, HamletBox3, toggleEmbarkBtn, Hamlet3Backdrop);
+
+
   const BossBtn1 = document.getElementById("boss1");
   const BossBtn2 = document.getElementById("boss2");
   const MiniBossBtn1 = document.getElementById("miniboss1");
@@ -82,19 +240,7 @@ document.addEventListener('keydown', event => {
   const BossBtn7 = document.getElementById("boss7");
   const BossBtn8 = document.getElementById("boss8");
   const CircusBtn = document.getElementById('circus');
-
-
-  const CrimsonBox = document.getElementById('crimson_txtbox');
-  const MadnessBox = document.getElementById('madness_txtbox');
-  const GauntletBox = document.getElementById('gauntlet_txtbox');
-  const EarlyBox1 = document.getElementById('earlybox1');
-  const EarlyBox2 = document.getElementById('earlybox2');
-  const EarlyBox3 = document.getElementById('earlybox3');
-  const VisualsBox = document.getElementById('visuals_box');
-  const MusicBox = document.getElementById('music_box');
-  const LateBox1 = document.getElementById('latebox1');
-  const LateBox2 = document.getElementById('latebox2');
-  const LateBox3 = document.getElementById('latebox3');
+  
   const BossBox1 = document.getElementById("bossbox1");
   const BossBox2 = document.getElementById("bossbox2");
   const MiniBossBox1 = document.getElementById("minibossbox1");
@@ -107,22 +253,7 @@ document.addEventListener('keydown', event => {
   const BossBox7 = document.getElementById("bossbox7");
   const BossBox8 = document.getElementById("bossbox8");
   const CircusBox = document.getElementById("circusbox");
-
-
-  CrimsonButton.addEventListener('click', () => toggleMissionBox(CrimsonBox));
-  CrimsonButton.addEventListener('click', () => toggleEmbarkBtnCC());
-  MadnessButton.addEventListener('click', () => toggleMissionBox(MadnessBox));
-  MadnessButton.addEventListener('click', () => toggleEmbarkBtnCoM());
-  GauntletButton.addEventListener('click', () => toggleMissionBox(GauntletBox));
-  GauntletButton.addEventListener('click', () => toggleEmbarkBtnDDs());
-  EarlyBtn1.addEventListener('click', () => toggleMissionBox(EarlyBox1));
-  EarlyBtn2.addEventListener('click', () => toggleMissionBox(EarlyBox2));
-  EarlyBtn3.addEventListener('click', () => toggleMissionBox(EarlyBox3));
-  VisualsBtn.addEventListener('click', () => toggleMissionBox(VisualsBox));
-  MusicBtn.addEventListener('click', () => toggleMissionBox(MusicBox));
-  LateBtn1.addEventListener('click', () => toggleMissionBox(LateBox1));
-  LateBtn2.addEventListener('click', () => toggleMissionBox(LateBox2));
-  LateBtn3.addEventListener('click', () => toggleMissionBox(LateBox3));
+  
   BossBtn1.addEventListener('click', () => toggleMissionBox(BossBox1));
   BossBtn2.addEventListener('click', () => toggleMissionBox(BossBox2));
   MiniBossBtn1.addEventListener('click', () => toggleMissionBox(MiniBossBox1));
@@ -135,86 +266,3 @@ document.addEventListener('keydown', event => {
   BossBtn7.addEventListener('click', () => toggleMissionBox(BossBox7));
   BossBtn8.addEventListener('click', () => toggleMissionBox(BossBox8));
   CircusBtn.addEventListener('click', () => toggleMissionBox(CircusBox));
-  EarlyBtn1.addEventListener('click', () => toggleEmbarkBtn1());
-  EarlyBtn2.addEventListener('click', toggleEmbarkBtn1);
-  EarlyBtn3.addEventListener('click', toggleEmbarkBtn1);
-  VisualsBtn.addEventListener('click', toggleEmbarkBtn1);
-  MusicBtn.addEventListener('click', toggleEmbarkBtn1);
-  LateBtn1.addEventListener('click', toggleEmbarkBtn1);
-  LateBtn2.addEventListener('click', toggleEmbarkBtn1);
-  LateBtn3.addEventListener('click', toggleEmbarkBtn1);
-  
-
-  const EmbarkDefault = document.getElementById('embark_button');
-  const EmbarkCrimson = document.getElementById('embark_crimson');
-  const EmbarkMadness = document.getElementById('embark_madness');
-  const EmbarkGauntlet = document.getElementById('embark_gauntlet');
-
-
-function toggleEmbarkBtn1() {
-    EmbarkCrimson.style.display = 'none';
-    EmbarkMadness.style.display = 'none';
-    EmbarkGauntlet.style.display = 'none';
-    EmbarkDefault.style.display = 'block';
-}
-
-function toggleEmbarkBtnCC() {
-    EmbarkCrimson.style.display = 'block';
-    EmbarkMadness.style.display = 'none';
-    EmbarkGauntlet.style.display = 'none';
-    EmbarkDefault.style.display = 'none';
-}
-
-function toggleEmbarkBtnCoM() {
-    EmbarkCrimson.style.display = 'none';
-    EmbarkMadness.style.display = 'block';
-    EmbarkGauntlet.style.display = 'none';
-    EmbarkDefault.style.display = 'none';
-}
-
-function toggleEmbarkBtnDDs() {
-    EmbarkCrimson.style.display = 'none';
-    EmbarkMadness.style.display = 'none';
-    EmbarkGauntlet.style.display = 'block';
-    EmbarkDefault.style.display = 'none';
-}
-
-
-function toggleBackdropVisibility(selectedBackdrop) {
-    const allBackdrops = [CrimsonBackdrop, MadnessBackdrop, GauntletBackdrop, VisualBackdrop, MusicBackdrop, Early1Backdrop, Early2Backdrop, Early3Backdrop, Late1Backdrop, Late2Backdrop, Late3Backdrop];
-  
-    // Hide all backdrops
-    allBackdrops.forEach(backdrop => {
-        backdrop.style.visibility = 'hidden';
-    });
-  
-    // Show the selected backdrop
-    selectedBackdrop.style.visibility = 'visible';
-  }
-  
-  
-  const CrimsonBackdrop = document.querySelector('.crimson_backdrop');
-  const MadnessBackdrop = document.querySelector('.madness_backdrop');
-  const GauntletBackdrop = document.querySelector('.gauntlet_backdrop');
-  const VisualBackdrop = document.querySelector('.visuals_backdrop');
-  const MusicBackdrop = document.querySelector('.music_backdrop');
-  const Early1Backdrop = document.querySelector('.app_cleanse_backdrop')
-  const Early2Backdrop = document.querySelector('.app_boss_backdrop')
-  const Early3Backdrop = document.querySelector('.app_gather_backdrop')
-  const Late1Backdrop = document.querySelector('.champ_gather_backdrop')
-  const Late2Backdrop = document.querySelector('.champ_boss_backdrop')
-  const Late3Backdrop = document.querySelector('.champ_cleanse_backdrop');
-  
-  // Add click event listeners to the buttons
-CrimsonButton.addEventListener('click', () => toggleBackdropVisibility(CrimsonBackdrop));
-MadnessButton.addEventListener('click', () => toggleBackdropVisibility(MadnessBackdrop));
-GauntletButton.addEventListener('click', () => toggleBackdropVisibility(GauntletBackdrop));
-VisualsBtn.addEventListener('click', () => toggleBackdropVisibility(VisualBackdrop));
-MusicBtn.addEventListener('click', () => toggleBackdropVisibility(MusicBackdrop));
-EarlyBtn1.addEventListener('click', () => toggleBackdropVisibility(Early1Backdrop));
-EarlyBtn2.addEventListener('click', () => toggleBackdropVisibility(Early2Backdrop));
-EarlyBtn3.addEventListener('click', () => toggleBackdropVisibility(Early3Backdrop));
-LateBtn1.addEventListener('click', () => toggleBackdropVisibility(Late1Backdrop));
-LateBtn2.addEventListener('click', () => toggleBackdropVisibility(Late2Backdrop));
-LateBtn3.addEventListener('click', () => toggleBackdropVisibility(Late3Backdrop));
-
