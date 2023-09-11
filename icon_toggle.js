@@ -473,9 +473,9 @@ attachHoverListeners("[id^='champ_rabid_rush']", "[id^='champ_rabid_rush_desc']"
 
 //Ectoplasm Skills
 
-attachHoverListeners("[id^='app_slime']", "[id^='app_slime_desc']");
-attachHoverListeners("[id^='vet_slime']", "[id^='vet_slime_desc']");
-attachHoverListeners("[id^='champ_slime']", "[id^='champ_slime_desc']");
+attachHoverListeners("[id^='app_slime(small)']", "[id^='app_slime(small)_desc']");
+attachHoverListeners("[id^='vet_slime(small)']", "[id^='vet_slime(small)_desc']");
+attachHoverListeners("[id^='champ_slime(small)']", "[id^='champ_slime(small)_desc']");
 
 attachHoverListeners("[id^='app_cytokinesis(small)']", "[id^='app_cytokinesis(small)_desc']");
 attachHoverListeners("[id^='vet_cytokinesis(small)']", "[id^='vet_cytokinesis(small)_desc']");
@@ -799,8 +799,8 @@ attachHoverListeners("[id^='champ_lash_of_the_tail']", "[id^='champ_lash_of_the_
 
 //Ghoul Skills 
 
-attachHoverListeners("[id^='vet_rend']", "[id^='vet_rend_desc']");
-attachHoverListeners("[id^='champ_rend']", "[id^='champ_rend_desc']");
+attachHoverListeners("[id^='vet_rend(ghoul)']", "[id^='vet_rend(ghoul)_desc']");
+attachHoverListeners("[id^='champ_rend(ghoul)']", "[id^='champ_rend(ghoul)_desc']");
 
 attachHoverListeners("[id^='vet_skull_toss']", "[id^='vet_skull_toss_desc']");
 attachHoverListeners("[id^='champ_skull_toss']", "[id^='champ_skull_toss_desc']");
@@ -840,4 +840,6 @@ function attachHoverListener(trigger, target) {
     target.style.display = "none";
   });
 }
+
+
 
