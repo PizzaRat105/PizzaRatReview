@@ -841,5 +841,3 @@ function attachHoverListener(trigger, target) {
   });
 }
 
-
-
