@@ -259,7 +259,6 @@ SettingIcon2.addEventListener('mouseleave', function() {SettingOverlay.style.dis
 const CloseBtn = document.getElementById('close');
 const CloseProvisions = document.getElementById('food_close')
 const CloseLoot = document.getElementById('lootclose');
-const QuirkClose = document.getElementById('quirk_close')
 const CloseAudio = document.getElementById('page_close');
 CloseAudio.volume = 0.6;
 
@@ -280,13 +279,6 @@ CloseLoot.addEventListener('click', function() {
   LootBox.style.display = 'none'
 })
 
-QuirkClose.addEventListener('click', function() {
-  CloseAudio.currentTime = 0;
-  CloseAudio.play();
-  GlossaryBox.style.display = 'none';
-  GlossaryOpen.style.display = 'none';
-  GlossaryClosed.style.display = 'block';
-})
 
 function HideAllBox() {
   const AllCharBox = [AbomBox, AntiBox, ArbBox, BHBox, CrusBox, FlagBox, GRBox, HellBox, HWMBox, HMBox, JesBox, LepBox, MAABox, MuskBox, OccBox, PDBox, SBBox, VesBox]
