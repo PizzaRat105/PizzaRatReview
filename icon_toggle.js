@@ -767,7 +767,7 @@ attachHoverListeners("[id^='champ_bite(webber)']", "[id^='champ_bite(webber)_des
 
 attachHoverListeners("[id^='app_spit']", "[id^='app_spit_desc']");
 attachHoverListeners("[id^='vet_spit']", "[id^='vet_spit_desc']");
-attachHoverListeners("[id^='champ_spit']", "[id^='champ_spit_desc']");
+attachHoverListeners("[id='champ_spit']", "[id='champ_spit_desc']");
 
 attachHoverListeners("[id^='app_bite(spitter)']", "[id^='app_bite(spitter)_desc']");
 attachHoverListeners("[id^='vet_bite(spitter)']", "[id^='vet_bite(spitter)_desc']");
