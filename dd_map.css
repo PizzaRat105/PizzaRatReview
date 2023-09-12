@@ -153,11 +153,10 @@ button{background: white; border: none; width:20px}
 
 .shared_boss_backdrop{top: 36.6vw; left: 85.6vw; display: none;}
 .shared_boss_btn{top: 37.8vw; left: 87.4vw;}
-
 .enemy_sprite{position: absolute; top: 1.2vw ;max-width: 12vw;max-height: 14vw; left:1vw;}
-.enemy_small_sprite{position: absolute; top: 4.5vw ;max-width: 9vw;max-height: 9vw; left:1.3vw;}
-.enemy_tall_sprite{position: absolute; top: -1.2vw; max-width: 12vw; max-height: 15vw; left: 3vw}
-.enemy_medtall_sprite{position: absolute; top: 0vw; max-width: 12vw; max-height: 13.5vw; left: 1.2vw}
+.enemy_small_sprite{position: absolute; top: 4vw ;max-width: 10vw;max-height: 10vw; left:1.3vw;}
+.enemy_tall_sprite{position: absolute; top: -1.2vw; max-width: 12vw; max-height: 15vw; left: 2.2vw}
+.enemy_medtall_sprite{position: absolute; top: 0vw; max-width: 12vw; max-height: 13.5vw; left: 1.4vw}
 .enemy_size2_sprite{position: absolute; top: 0.2vw; max-width: 16vw;max-height: 14vw; left: 0vw}
 
 .monster_name_veryshort{font-size: 2.1vw;  margin:0.3vw 0; position: absolute; top: 11.3vw; right:4.5vw }
@@ -168,9 +167,9 @@ button{background: white; border: none; width:20px}
 .enemy_stats_container{position: absolute; top:14vw;  width: 23.7vw; height:15vw; left: -0.2vw; padding-left: 1vw;}
     
 .desc_toggle{width: 9vw; margin-right: 2.5vw; margin-left: 0vw;}
-.enemy_strat {position: absolute; top:17.7vw;  width: 23.7vw; height:20.5vw; left: 0vw; background-color: black; 
-     display: none; font-size: 1.2vw; padding:0 0.2vw; text-align: center;}
-.stratslight_margin{margin-bottom: 0.2vw;}
+.enemy_strat {position: absolute; top:17.7vw;  width: 23.7vw; height:20.5vw; left: -0.3vw; background-color: black; 
+     display: none; font-size: 1.15vw; padding:0 0.2vw; text-align: center;}
+.sentence_margin{margin-bottom: 13vw;}
 .enemy_skill_container{position:absolute; width: 23.7vw; top: 29.2vw; left: 1vw;line-height: 2.2vw; display: none}
 .enemy_skill_desc_container{position: absolute; top: 26.4vw; left: 23.8vw; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.8); padding:0.3vw 0.4vw 0.3vw 0.4vw;
                             text-align: center; width:max-content; font-size: 1vw; line-height: 1.5vw; display: none;}
