@@ -96,6 +96,7 @@ function createTierNav() {
   createTierNav();
 
 
+
 const BtnChooseAudio = document.getElementById('btn_press');
 BtnChooseAudio.volume = 0.7;
 const OpenSfx = document.getElementById('page_open');
@@ -114,7 +115,15 @@ function PlayBtnPress() {
   BtnChooseAudio.play();
 }
 
+const QuirkClose = document.getElementById('quirk_close')
 
+QuirkClose.addEventListener('click', function() {
+  CloseSound.currentTime = 0;
+  CloseSound.play();
+  GlossaryBox.style.display = 'none'
+  GlossaryOpen.style.display = 'none'
+  GlossaryClosed.style.display = 'block'
+})
 
 
 
