@@ -3752,7 +3752,7 @@ const coveskills = [
         position: '123enemy1234buff.png',
         name: 'Sea Breeze',
         type: 'Support',
-        effects: 'Target: <br> Heal 6-12'
+        effects: 'Target Ally: <br> Heal 6-12'
     },
 
     {    
@@ -3793,7 +3793,7 @@ const coveskills = [
         position: '123enemy1234buff.png',
         name: 'Sea Breeze',
         type: 'Support',
-        effects: 'Target: <br> Heal 8-14'
+        effects: 'Target Ally: <br> Heal 8-14'
     },
 
     {    
@@ -3834,7 +3834,7 @@ const coveskills = [
         position: '123enemy1234buff.png',
         name: 'Sea Breeze',
         type: 'Support',
-        effects: 'Target: <br> Heal 10-18'
+        effects: 'Target Ally: <br> Heal 10-18'
     },
     
     
@@ -5195,12 +5195,13 @@ sharedskills.forEach((skill) => {
     SharedEnemyBox.innerHTML += skillHTML;
 });
 
+
 const RuinsenemyStrategies = [
     {
         id: "bone_soldier_strat",
         content: [
             "The Bone Soldier is your typical bland frontliner, with decent damage and some PROT, albeit with a somewhat low HP Pool",
-            "From Veteran it gains Stealth, which helps it survive and deal some damage, but nothing much else",
+            "From Veteran it gains Stealth, which helps it survive and deal some damage, but nothing much else.",
         ],
     },
 
@@ -5216,9 +5217,9 @@ const RuinsenemyStrategies = [
     {
         id: "bone_arbalest_strat",
         content: [
-            "The Bone Arbalest is your typical backline damage dealer with a minor damage bonus vs Branded heroes",
-            "It can easily be shut down by moving it into the front 2 ranks, where it can only use Bayonet Jab",
-            "The fact that Quarrel cannot hit position 1 can be taken advantage of to ensure a hero's safety",
+            "The Bone Arbalest is your typical backline damage dealer with a minor damage bonus vs Marked heroes.",
+            "It can easily be shut down by moving it into the front 2 ranks, where it can only use Bayonet Jab.",
+            "The fact that Quarrel cannot hit position 1 can be taken advantage of to ensure a hero's safety.",
         ],
     },
 
@@ -5227,7 +5228,7 @@ const RuinsenemyStrategies = [
         content: [
             "The Bone Courtier is your typical backline Stress dealer with High Speed & DODGE.", 
             "It can be shut down by moving it into position 1, where it can only use its weak melee skill.",
-            "In Champion level Ruins dungeons, defeating this enemy may reward you the Tempting Goblet trinket.",
+            "In Champion level Ruins dungeons, defeating this enemy may reward you the Tempting Goblet trinket (About 4.5%).",
         ],
     },
 
@@ -5235,8 +5236,8 @@ const RuinsenemyStrategies = [
         id: "bone_spearman_strat",
         content: [
             "The Bone Spearman is the first of the Ruins enemies to be of real threat.",
-            "While Spear Thrust is nothing to write home about, Impale is an AoE damage move that can be spammed by the Spearman if it's in the front 2 positions.",
-            "This threat is amplified on Champion where it can be made more potent with support from the Bone Bearer",
+            "While Spear Thrust is somewhat of a threat, Impale is an AoE damage move that can be spammed by the Spearman if it's in the front 2 positions.",
+            "This threat is amplified on Champion where it can be made more potent with support from the Bone Bearer.",
             "Try to make sure it cannot be of much threat with Stuns and Shuffles.",
         ],
     },
@@ -5246,7 +5247,7 @@ const RuinsenemyStrategies = [
         content: [
             "The Bone Captain is a tanky High PROT & HP frontliner with a strong single target damage skill and a AoE Stun.",
             "It can pose a real threat especially with Bone Bearer Support and has a relatively high Stun Resist (Although Stuns are still a valid method of shutting it down).",
-            "Debuffs are good for nutering its damage dealing potential, even potentially making it Stalling material and Blight helps bypass its high PROT",
+            "Debuffs are good for nutering its damage dealing potential, even potentially making it Stalling material and Blight helps bypass its High PROT.",
         ],
     },
 
@@ -5255,8 +5256,8 @@ const RuinsenemyStrategies = [
         content: [
             "The Bone Bearer is a backliner with High Speed and DODGE and has a sky-high Stun Resist.",
             "It provides a passive +25% DMG Buff to all other enemies and Buffs them more with Wicked Surge.",
-            "It also automatically ressurects any enemy Corpses at the end of the round.",
-            "It can be somewhat hindered if pulled to the front but you want to actually kill it.",
+            "It also automatically resurrects any enemy Corpses at the end of the round.",
+            "It can be somewhat hindered if pulled to the front but you probably want to kill it.",
         ],
     },
 
@@ -5267,7 +5268,7 @@ const WealdenemyStrategies = [
         id: "fungal_scratcher_strat",
         content: [
             "The Fungal Scratcher is a tanky frontliner with High PROT.",
-            "The Scratcher itself doesn't deal much damage outside of Rend the Targetted and can inflict minor Blight with Groping Swipe from Veteran onwards.",
+            "The Scratcher itself doesn't deal much damage outside of Rend the Marked and can inflict minor Blight with Groping Swipe from Veteran onwards.",
             "It is quite position dependant, needing to be in positions 1 or 2 to function.",
             "All of these traits make it a low-priority target.",
         ],
@@ -5277,16 +5278,16 @@ const WealdenemyStrategies = [
         id: "fungal_artillery_strat",
         content: [
             "The Fungal Artillery is a decently sturdy backliner that can Mark and Blight.",
-            "While not dealing much actual damage, its Marks enables Fungal Scratchers to focus down Branded Heroes and Rain of Poison can inflict Diseases.",
-            "Bringing it to the front doesn't do much since it tends to Crit with Escape Cloud",
-            "It is usually easier and better to get rid of it before the frontliners",
+            "While not dealing much actual damage, its Marks enables Fungal Scratchers to focus down Marked Heroes and Rain of Blight can inflict Diseases.",
+            "Bringing it to the front doesn't do much since it tends to Crit with Escape Cloud.",
+            "It is usually easier and better to get rid of it before the frontliners.",
         ],
     },
 
     {
         id: "rabid_gnasher_strat",
         content: [
-            "The Rabid Gnasher is a High Speed and DODGE enemy that inflicts Bleeds and has a chance to give a Hero the Disease Rabies.",
+            "The Rabid Gnasher is a High Speed and DODGE enemy that inflicts Bleeds and has a chance to give a Hero the Rabies Disease.",
             "They can be a problem early on when you lack Accuracy boosting trinkets.",
             "Thankfully they are quite frail and only 1 or 2 hits will get rid of them.",            
         ],
@@ -5315,16 +5316,16 @@ const WealdenemyStrategies = [
         content: [
             "The Crone is a High Speed and DODGE backliner who starts Stealthed and deals Stress, Marks, & Debuffs.",
             "Its Debuffs and Marks enable hard hitting but less accurate threats to land heavy blows on your Party.",
-            "While you do want to focus it down since it's quite frail, be wary of bringing it to the front for Fetid Censer can be very nasty.",
+            "While you do want to focus it down since it's quite frail, be wary of bringing it to the front for Fetid Censer can be very nasty with a chance to inflict Diseases.",
         ],
     },
 
     {
         id: "unclean_giant_strat",
         content: [
-            "The Unclean Giant has a Massive HP Pool and has Treebranch Smackdown, which can be devestating.",
+            "The Unclean Giant has a Massive HP Pool and has Treebranch Smackdown, which can be devastating.",
             "It usually uses Confusion Spores on the first round (Which usually Crits), Shuffling and Debuffing your party.",
-            "You usually want to deal with the other enemies before the Giant itself.",
+            "You either choose to focus down the Giant or kill everything around it first.",
             "With Debuffs & Stuns (and preferrably a Guard), the Giant can be used for stalling.",
         ],
     },
@@ -5332,7 +5333,7 @@ const WealdenemyStrategies = [
    {
         id: "hateful_virago_strat",
         content: [
-            "The Virago is a backliner with High Resists with a High Speed and Dodge Stat",
+            "The Virago is a backliner with High Resists with a High Speed and Dodge Stat.",
             "It can inflict potent Debuffs and some Blight, but the real threat the Virago poses is the fact she can summon a Necrotic Fungus from a corpse that blocks all your Healing Skills, which can get your heroes in quite the pickle.",
             "Try to focus it down and take care to not give it a chance to have a corpse to summon a Necrotic Fungus from.",
 
@@ -5380,24 +5381,24 @@ const WarrensenemyStrategies = [
         content: [
             "The Swine Slasher has decent PROT which covers for its tiny HP Pool.",
             "Its only skill has high CRIT and gains a Disease & Bleed Resist Debuff from Veteran, which synergizes with its swine brethren.",
-            " The Slasher gains Stealth from Veteran, making it harder to get rid of early."
+            "The Slasher gains Stealth from Veteran, making it harder to get rid of early."
         ],
     },
 
     {
         id: "carrion_eater_strat",
         content: [
-            "The Carrion Eater has High Resists and deals hefty damage to Branded Heroes.",
+            "The Carrion Eater has High Resists and deals hefty damage to Marked Heroes.",
             "The Blight on Munch makes the skill more threatening since it can cause an Death's Door check and prove to be fatal.",
             "From Veteran, they gain a small chance to inflict a Disease as well.",
-            "Try to get rid of any markers or kill the worms outright, and mind how Munch cannot target position 4"
+            "Try to get rid of any Markers or kill the worms outright, and mind how Munch cannot target position 4."
         ],
     },
 
     {
         id: "large_carrion_eater_strat",
         content: [
-            "The Large Carrion Eater shares the High Resists of its cousins as well as their damage bonus vs Branded Heroes.",
+            "The Large Carrion Eater shares the High Resists of its cousins as well as their damage bonus vs Marked Heroes.",
             "They are able to Mark & Debuff heroes and hit them with Tentacle Devour, which can be devestating.",
             "Thankfully it can be Stunned reliably and cannot target position 4.",
             "Guards, Self-Brand PROT tanking or Mark clear via Arbalest or Musketeer helps significantly as well."
@@ -5407,7 +5408,7 @@ const WarrensenemyStrategies = [
    {
         id: "swinetaur_strat",
         content: [
-            "The Swinetaur is a tank with High Resists & PROT with a huge HP Pool.",
+            "The Swinetaur is a tank with High Resists & PROT with a Huge HP Pool.",
             "Make sure to keep it at rank 1 by eliminating any enemies/corpses it could stand behind after using Trot Retreat, for it can use two very threatening skills from the back.",
             "If left as the last enemy, it is an easy enemy to stall against."
         ],
@@ -5428,9 +5429,9 @@ const CoveenemyStrategies = [
     {
         id: "pelagic_grouper_strat",
         content: [
-            "The Pelagic Grouper is a frontliner with High Speed and Damage.",
-            "It targets the backline if it is in the back and the front 2 positions if it is in the front ranks.",
-            "It has made a name for itself when in the frontline with Seaward Slash's High Damage and Spearfishing does less damage but gains the ability to Pull Heroes from Veteran.",
+            "The Pelagic Grouper is a frontliner with High Speed and Damage albeit with a pitiful Stun Resist.",
+            "It targets the backline if in the back and the front 2 positions if in the front.",
+            "It can be a big threat in the front with Seaward Slash's High Damage and Spearfishing does less damage but gains the ability to Pull Heroes from Veteran.",
             "You can use its positional targetting to your advantage to keep heroes safe if need be."
         ],
     },
@@ -5464,7 +5465,7 @@ const CoveenemyStrategies = [
     {
         id: "drowned_thrall_strat",
         content: [
-            "The Drowned Thrall is a suicide frontliner who can deal a ton of damage to your entire party if left alive for too long.",
+            "The Drowned Thrall is a suicide frontliner who can deal a ton of damage to your entire party if it gets to act twice.",
             "You want to get rid of this enemy quickly and thankfully the Thrall is quite frail and slow.",
             "Do consider the fact that Pelagic Guardians can guard the Thrall and Shamans can Heal it, so make sure you are ready for those things happening.",
         ],
@@ -5491,8 +5492,8 @@ const CoveenemyStrategies = [
         id: "squiffy_ghast_strat",
         content: [
             "The Squiffy Ghast is a powerful Stress Dealer with High Speed & DODGE.",
-            "The Squiffy Ghast functions alike to a Solo Finale Jester, Maddening Shanty being in place of Solo and Offkilter Jig being in place of Finale  ",
-            "It also always targets Jester with Maddening Shanty if one is in your party.",
+            "It has a rivalry with the Jester shown in the fact that it will always target a Jester if present.  ",
+            "It should be noted Offkilter Jig is only used if there are 2 other living monsters.",
             "Since the Ghast has Low Move Resist, you can keep it in the backline using Skills with Knockback to deny it from using Offkilter Jig and try to get rid of it in the meantime.",
         ],
     },
@@ -5503,9 +5504,9 @@ const SharedenemyStrategies = [
     {
         id: "brigand_cutthroat_strat",
         content: [
-            "The Brigand Cutthroat is a enemy with decent Damage and some PROT.",
-            "It can inflict Minor Bleeds, disrupt formations, and hit your frontline with a decent AoE attack.",
-            "It is an enemy that is usually not an issue during your expeditions."
+            "The Brigand Cutthroat is a enemy with surprisingly High Damage and some PROT.",
+            "It can inflict Minor Bleeds, disrupt formations, and hit your frontline with a AoE attack which does a considerable amount of Damage.",
+            "They should be dealth with first via killing or Stunning when fighting Brigand Mashes."
         ],
     },
 
@@ -5553,7 +5554,7 @@ const SharedenemyStrategies = [
             "The Madman is a Stress Dealer with High Speed and DODGE ",
             "You want to be able to eliminate or at least Stun the Madman on round 1 to minimize the Stress it can dish out.",
             "Do mind that Accusation's + Stress Debuff is until camp although you can just use a medicinal herb to cure it.",
-            "The Madman has a small chance to drop 1 of 3 Music Box Trinkets, which can be helpful early on."
+            "The Madman has a small chance (about 4%) to drop 1 of 3 Music Box Trinkets which can be helpful."
         ],
     },
 
@@ -5561,9 +5562,9 @@ const SharedenemyStrategies = [
         id: "webber_strat",
         content: [
             "Webbers are High DODGE but frail enemies that Mark and Debuff Heroes with Web for their Spitter bretheren to take advantage of using Spit.",
-            "They do have Bite, which deals Double Damage to Marked Heroes, its Damage is too low to be of any real concern.",
+            "Bite deals Double Damage to Marked Heroes but its Damage is too low to be of any real concern.",
             "It's not too difficult to outspeed and kill these enemies, making them not much of a threat as long as you land your hits.",
-            "Both Spiders (Webber and Spitter) appear in every region but The Cove."
+            "Both Spiders appear in every region but The Cove."
         ],
     },
     {
@@ -5596,7 +5597,7 @@ const SharedenemyStrategies = [
         id: "gargoyle_strat",
         content: [
             "Gargoyles are one of the only Stonework enemies in the game as has High Speed and PROT but Low HP. They appear commonly in the Ruins with the other undead and rarely in the Weald alongside a Ghoul.",
-            "The Gargoyle essentially has no Damage Dealing capabilities and tries to disrupt your Party with its 2 skills.",
+            "The Gargoyle essentially has no Damage Dealing capabilities and tries to disrupt your Party with its 2 skills, which have a low Move Chance.",
             "Since they aren't threatening at all, you can mostly ignore them and go after the more threatening enemies.",
         ],
     },
@@ -5605,7 +5606,7 @@ const SharedenemyStrategies = [
         id: "ghoul_strat",
         content: [
             "The Ghoul is a durable enemy with decent PROT and Speed and Damage.",
-            "Skull Toss can hit your more soft backliners quite hard and Howl is famous for applying The Worries, a Disease.",
+            "Rend is a Bleed with can deal hefty Damage to your frontliners, Skull Toss can hit your more soft backliners quite hard and Howl is famous for applying The Worries, a Disease.",
             "That being said, if you don't mind the chance of getting the Worries, you can stall on the Ghoul quite easily.",
         ],
     },
@@ -5627,7 +5628,6 @@ const SharedenemyStrategies = [
     },
 
 ];
-
 
 function swapSpecificWords(description) {
     description = description.replace(/Stress/g, '<span class="stress">Stress</span>');
