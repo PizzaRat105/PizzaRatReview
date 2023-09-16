@@ -89,11 +89,41 @@ button{background: white; border: none; width:20px}
 
 
 /*General Box, Button and Backdrop Styling*/
+.boss_box{width: 24vw;height: 38.4vw; position: absolute; visibility: hidden; left: 9vw; top: 6.9vw;}
+
+
 .quest_box{width: 24vw;height: 38.4vw; position: absolute; display: none; left: 9vw; top: 6.9vw; padding-left:1vw;
     background-image: url('images/Boxes/quest_textbox.png'); background-size: 24vw;}
 .enemy{background-image: url('images/Boxes/quest_textbox_enemy.png'); background-size: 24vw;
     font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167);font-size: 1.3vw; line-height: 1.8vw; font-weight: 500;}
-.boss_box{width: 24vw;height: 38.4vw; position: absolute; visibility: hidden; left: 9vw; top: 6.9vw;}
+.curio{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167);font-size: 1.3vw; line-height: 1.9vw; font-weight: 500;}
+
+.curio_top_container{position: absolute; top: 0.6vw; left: 0vw;width: 23.7vw; height: 20vw; /*border: 1px solid red;*/
+text-align: center;}
+.bone_altar_container{border: 1px solid;}
+.curio_info{position: absolute; right: 0.5vw; top:0.1vw; width: 2vw;} 
+.curio_info:hover{filter: brightness(150%); width: 2.1vw; right: 0.4vw;}
+.result_icon{width: 1.4vw; position: absolute; padding-top: 0.2vw;}
+.provision_inter_icon{max-width: 1.4vw; max-height: 2vw;  position: absolute; padding-top: 0.3vw; left: 0.7vw}
+.result_desc{margin-left: 2vw;}
+
+.curio_result{left: 23.8vw; top: 27.7vw; text-align:start; padding-bottom:0.4vw; line-height: 2vw}
+.room_interact{top: 24.7vw;}
+
+.forced_universal{left: 23.6vw; top: -0.5vw}
+
+.interaction_desc{position: absolute; left: 23.8vw; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.8); padding:0.3vw 0.5vw 0.3vw 0.4vw;
+     width:max-content; font-size: 1.1vw; line-height: 1.8vw; display: none;}
+
+.curio_interaction_container{position: absolute; top: 27vw; left: 0vw;width: 23.7vw; height: 10vw;
+                             display: flex; justify-content: center;}
+.room_curio{top: 24vw;}
+.curio_sprite{max-height: 10vw; max-width: 16vw;}
+.room_sprite{max-height: 13vw; max-width: 20vw;}
+.curio_name{font-size: 2vw; padding-bottom: 0.3vw}
+
+.interact_item{width: 4vw; height: 8vw; margin: 1vw 1.5vw;}
+.interact_item:hover{filter: brightness(150%);}
 
 .crimson_backdrop{top: 16vw; left: 34vw;display: none;}
 .crimson_btn{top: 17.2vw; left: 35.4vw;}
@@ -153,6 +183,7 @@ button{background: white; border: none; width:20px}
 
 .shared_boss_backdrop{top: 36.6vw; left: 85.6vw; display: none;}
 .shared_boss_btn{top: 37.8vw; left: 87.4vw;}
+
 .enemy_sprite{position: absolute; top: 1.2vw ;max-width: 12vw;max-height: 14vw; left:1vw;}
 .enemy_small_sprite{position: absolute; top: 4vw ;max-width: 10vw;max-height: 10vw; left:1.3vw;}
 .enemy_tall_sprite{position: absolute; top: -1.2vw; max-width: 12vw; max-height: 15vw; left: 2.2vw}
@@ -189,15 +220,20 @@ button{background: white; border: none; width:20px}
 .enemy_numbers3{position: absolute; top:9.15vw; left: 6.7vw; line-height: 1.9vw; }
 .enemy_numbers4{position: absolute; top:9.15vw; left: 19.5vw; line-height: 1.9vw; }
 
-.enemy_sidenav{position: absolute; left: 23vw; top:0vw; width: 10vw;height:20vw; 
+.content_sidenav{position: absolute; left: 23vw; top:0vw; width: 10vw;height:20vw; 
 display: flex; flex-direction: row; flex-wrap: wrap; background-color: black; justify-content: center;}
-.sidenav9{height: 24.7vw}
-.sidenav13{height: 24.7vw; width: 15vw}
+
+.sidenav9_long{height: 15.3vw; width: 14.6vw}
+.sidenav9{height: 24.3vw}
+.sidenav13{height: 24.7vw; width: 14.6vw}
+.sidenav10{height: 19.5vw; width: 14.6vw}
 
 .enemy_port{display: flex; height: 4vw; margin: 0.3vw}
+.curio_port{display: flex; height: 4vw; margin: 0.3vw}
+
 .enemy_port:hover{filter: brightness(150%);}
-.port_top{margin-top: 0.6vw;}
-.port_btm{margin-bottom: 0.6vw;}
+.curio_port:hover{filter: brightness(150%);}
+
 
 .lvl_btn{height: 2vw; position: absolute; left: 17vw; display: none;}
 .lvl_btn:hover{filter: brightness(150%);}
