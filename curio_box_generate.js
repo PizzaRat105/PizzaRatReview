@@ -126,6 +126,8 @@ areaCurioData.forEach(curio => {
 
     const curioSpriteImg = document.createElement("img")
     curioSpriteImg.src = `images/curios/${curio.name}.png`
+    curioSpriteImg.loading = "lazy"; 
+
     
 
     if (curio.isCorridorCurio) {curioSpriteImg.className = "curio_sprite";} 
