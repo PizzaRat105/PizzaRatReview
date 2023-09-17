@@ -11,10 +11,6 @@ const bc_enter_button = document.getElementById('circus');
 const bc_audio = document.getElementById('bc_enter');
 bc_audio.volume = 0.5;
 
-const boss_btns = document.getElementsByClassName('boss_button');
-const boss_button_audio = document.getElementById('boss_sfx');
-boss_button_audio.volume = 0.3;
-
 const herobutton = document.getElementById('hero_btn');
 const herobutton_audio = document.getElementById('hero_sfx');
 herobutton_audio.volume = 0.8;
@@ -38,16 +34,7 @@ for (const backup of backups) {
   })
 }
 
-function playBossAudio() {
-  boss_button_audio.currentTime = 0;
-  boss_button_audio.play();
-}
 
-for (const boss_button of boss_btns) {
-  boss_button.addEventListener('click', function() {
-    playBossAudio();
-  })
-}
 
 function playAudioMission() {
     mission_button_audio.currentTime = 0; // Reset the playback position to the beginning
@@ -110,3 +97,18 @@ Embarkcom.addEventListener('click', function(event) {
       window.location.href = Embarkdds.href;
     }, 1500); 
   });
+
+//const boss_btns = document.getElementsByClassName('boss_button');
+//const boss_button_audio = document.getElementById('boss_sfx');
+//boss_button_audio.volume = 0.3;
+
+//function playBossAudio() {
+//  boss_button_audio.currentTime = 0;
+//  boss_button_audio.play();
+//}
+
+//for (const boss_button of boss_btns) {
+//  boss_button.addEventListener('click', function() {
+//    playBossAudio();
+//})
+//}
