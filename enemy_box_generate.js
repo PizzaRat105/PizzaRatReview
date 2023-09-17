@@ -94,6 +94,8 @@ ruinsEnemies.forEach(function(enemy) {
     img.src = enemy.src;
     img.className = "enemy_port";
     img.id = enemy.id;
+    img.loading = "lazy";
+
     RuinsenemySidenav.appendChild(img);
 });
 
@@ -102,6 +104,8 @@ wealdEnemies.forEach(function(enemy) {
     img.src = enemy.src;
     img.className = "enemy_port";
     img.id = enemy.id;
+    img.loading = "lazy";
+
     WealdenemySidenav.appendChild(img);
 });
 
@@ -110,6 +114,8 @@ warrensEnemies.forEach(function(enemy) {
     img.src = enemy.src;
     img.className = "enemy_port";
     img.id = enemy.id;
+    img.loading = "lazy";
+
     WarrensenemySidenav.appendChild(img);
 });
 
@@ -118,6 +124,8 @@ coveEnemies.forEach(function(enemy) {
     img.src = enemy.src;
     img.className = "enemy_port";
     img.id = enemy.id;
+    img.loading = "lazy";
+
     CoveenemySidenav.appendChild(img);
 });
 
@@ -126,6 +134,8 @@ sharedEnemies.forEach(function(enemy) {
     img.src = enemy.src;
     img.className = "enemy_port";
     img.id = enemy.id;
+    img.loading = "lazy";
+
     SharedenemySidenav.appendChild(img);
 });
 
@@ -209,6 +219,7 @@ function AddSpriteContainer(enemySpriteData, container) {
 
         const enemySpriteImage = document.createElement("img");
         enemySpriteImage.src = `images/monsters/${enemy.id}.webp`;
+        enemySpriteImage.loading = "lazy";
         if (enemy.useMedTallSprite) {
             enemySpriteImage.className = 'enemy_medtall_sprite';
           } else if (enemy.useBigSprite) {
@@ -266,6 +277,7 @@ function createLevelButton(imgSrc, className, id) {
     const button = document.createElement('img');
     button.src = `images/Boxes/${imgSrc}.png`;
     button.className = `lvl_btn ${className}`;
+    button.loading = "lazy";
     button.id = id;
     return button;
 }
@@ -358,11 +370,15 @@ function generateEnemyToggle() {
         img1.src = 'images/Boxes/enemy_stat.png';
         img1.classList.add('enemy_toggle_btn1');
         img1.id = enemy + '_toggle1';
+        img1.loading = "lazy";
+
 
         const img2 = document.createElement('img');
         img2.src = 'images/Boxes/enemy_strategy.png';
         img2.classList.add('enemy_toggle_btn2');
         img2.id = enemy + '_toggle2';
+        img2.loading = "lazy";
+
 
         enemyContainer.appendChild(img1);
         enemyContainer.appendChild(img2);
@@ -379,11 +395,13 @@ function generateEnemyToggle() {
         img1.src = 'images/Boxes/enemy_stat.png';
         img1.classList.add('enemy_toggle_btn1');
         img1.id = enemy + '_toggle1';
+        img1.loading = "lazy";
 
         const img2 = document.createElement('img');
         img2.src = 'images/Boxes/enemy_strategy.png';
         img2.classList.add('enemy_toggle_btn2');
         img2.id = enemy + '_toggle2';
+        img2.loading = "lazy";
 
         enemyContainer.appendChild(img1);
         enemyContainer.appendChild(img2);
@@ -400,11 +418,13 @@ function generateEnemyToggle() {
         img1.src = 'images/Boxes/enemy_stat.png';
         img1.classList.add('enemy_toggle_btn1');
         img1.id = enemy + '_toggle1';
+        img1.loading = "lazy";
 
         const img2 = document.createElement('img');
         img2.src = 'images/Boxes/enemy_strategy.png';
         img2.classList.add('enemy_toggle_btn2');
         img2.id = enemy + '_toggle2';
+        img2.loading = "lazy";
 
         enemyContainer.appendChild(img1);
         enemyContainer.appendChild(img2);
@@ -421,11 +441,13 @@ function generateEnemyToggle() {
         img1.src = 'images/Boxes/enemy_stat.png';
         img1.classList.add('enemy_toggle_btn1');
         img1.id = enemy + '_toggle1';
+        img1.loading = "lazy";
 
         const img2 = document.createElement('img');
         img2.src = 'images/Boxes/enemy_strategy.png';
         img2.classList.add('enemy_toggle_btn2');
         img2.id = enemy + '_toggle2';
+        img2.loading = "lazy";
 
         enemyContainer.appendChild(img1);
         enemyContainer.appendChild(img2);
@@ -442,11 +464,13 @@ function generateEnemyToggle() {
         img1.src = 'images/Boxes/enemy_stat.png';
         img1.classList.add('enemy_toggle_btn1');
         img1.id = enemy + '_toggle1';
+        img1.loading = "lazy";
 
         const img2 = document.createElement('img');
         img2.src = 'images/Boxes/enemy_strategy.png';
         img2.classList.add('enemy_toggle_btn2');
         img2.id = enemy + '_toggle2';
+        img2.loading = "lazy";
 
         enemyContainer.appendChild(img1);
         enemyContainer.appendChild(img2);
