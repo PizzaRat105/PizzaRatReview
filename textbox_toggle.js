@@ -4,8 +4,7 @@ HideAudio.volume = 0.6;
 
 function toggleMissionBox(selectedQuestBox){
     const allQuestBox = 
-    [CrimsonBox, MadnessBox, GauntletBox, RuinsBox1, RuinsBox2, RuinsBox3, WealdBox1, WealdBox2, WealdBox3, WarrensBox1, WarrensBox2, WarrensBox3, CoveBox1, CoveBox2, CoveBox3, HamletBox1, HamletBox2, HamletBox3,
-     BossBox1, BossBox2, MiniBossBox1, BossBox3, BossBox4, MiniBossBox2, BossBox5, BossBox6, MiniBossBox3, BossBox7, BossBox8, CircusBox
+    [CrimsonBox, MadnessBox, GauntletBox, RuinsBox1, RuinsBox2, RuinsBox3, WealdBox1, WealdBox2, WealdBox3, WarrensBox1, WarrensBox2, WarrensBox3, CoveBox1, CoveBox2, CoveBox3, HamletBox1, HamletBox2, HamletBox3, CircusBox
     ];
     allQuestBox.forEach(questbox => {
         questbox.style.display = 'none'
@@ -37,17 +36,7 @@ document.addEventListener('keydown', event => {
       handleEscape(HamletBox1, Hamlet1Backdrop, EmbarkDefault);
       handleEscape(HamletBox2, Hamlet2Backdrop, EmbarkDefault);
       handleEscape(HamletBox3, Hamlet3Backdrop, EmbarkDefault);
-      handleEscape(BossBox1);
-      handleEscape(BossBox2);
-      handleEscape(BossBox3);
-      handleEscape(BossBox4);
-      handleEscape(BossBox5);
-      handleEscape(BossBox6);
-      handleEscape(BossBox7);
-      handleEscape(BossBox8);
-      handleEscape(MiniBossBox1);
-      handleEscape(MiniBossBox2);
-      handleEscape(MiniBossBox3);
+
       handleEscape(CircusBox);
       
     }
@@ -228,41 +217,7 @@ attachClickListener(HamletBtn2, HamletBox2, toggleEmbarkBtn, Hamlet2Backdrop);
 attachClickListener(HamletBtn3, HamletBox3, toggleEmbarkBtn, Hamlet3Backdrop);
 
 
-  const BossBtn1 = document.getElementById("boss1");
-  const BossBtn2 = document.getElementById("boss2");
-  const MiniBossBtn1 = document.getElementById("miniboss1");
-  const BossBtn3 = document.getElementById("boss3");
-  const BossBtn4 = document.getElementById("boss4");
-  const MiniBossBtn2 = document.getElementById("miniboss2");
-  const BossBtn5 = document.getElementById("boss5");
-  const BossBtn6 = document.getElementById("boss6");
-  const MiniBossBtn3 = document.getElementById("miniboss3");
-  const BossBtn7 = document.getElementById("boss7");
-  const BossBtn8 = document.getElementById("boss8");
+
   const CircusBtn = document.getElementById('circus');
-  
-  const BossBox1 = document.getElementById("bossbox1");
-  const BossBox2 = document.getElementById("bossbox2");
-  const MiniBossBox1 = document.getElementById("minibossbox1");
-  const BossBox3 = document.getElementById("bossbox3");
-  const BossBox4 = document.getElementById("bossbox4");
-  const MiniBossBox2 = document.getElementById("minibossbox2");
-  const BossBox5 = document.getElementById("bossbox5");
-  const BossBox6 = document.getElementById("bossbox6");
-  const MiniBossBox3 = document.getElementById("minibossbox3");
-  const BossBox7 = document.getElementById("bossbox7");
-  const BossBox8 = document.getElementById("bossbox8");
   const CircusBox = document.getElementById("circusbox");
-  
-  BossBtn1.addEventListener('click', () => toggleMissionBox(BossBox1));
-  BossBtn2.addEventListener('click', () => toggleMissionBox(BossBox2));
-  MiniBossBtn1.addEventListener('click', () => toggleMissionBox(MiniBossBox1));
-  BossBtn3.addEventListener('click', () => toggleMissionBox(BossBox3));
-  BossBtn4.addEventListener('click', () => toggleMissionBox(BossBox4));
-  MiniBossBtn2.addEventListener('click', () => toggleMissionBox(MiniBossBox2));
-  BossBtn5.addEventListener('click', () => toggleMissionBox(BossBox5));
-  BossBtn6.addEventListener('click', () => toggleMissionBox(BossBox6));
-  MiniBossBtn3.addEventListener('click', () => toggleMissionBox(MiniBossBox3));
-  BossBtn7.addEventListener('click', () => toggleMissionBox(BossBox7));
-  BossBtn8.addEventListener('click', () => toggleMissionBox(BossBox8));
   CircusBtn.addEventListener('click', () => toggleMissionBox(CircusBox));
