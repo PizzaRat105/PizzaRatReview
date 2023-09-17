@@ -1,3 +1,5 @@
+
+
 const HideAudio = document.getElementById('page_close');
 HideAudio.volume = 0.6;
 
