@@ -1,12 +1,37 @@
+const bc_enter_button = document.getElementById('circus');
+const bc_audio = document.getElementById('bc_enter');
+bc_audio.volume = 0.5;
+
+bc_enter_button.addEventListener('click', function() {
+  bc_audio.currentTime = 0;
+  bc_audio.play();
+})
 
 
-const HideAudio = document.getElementById('page_close');
-HideAudio.volume = 0.6;
+const mission_btns = document.getElementsByClassName('mission_btn');
+const mission_button_audio = document.getElementById('mission_select_sfx');
+mission_button_audio.volume = 0.2;
+ 
+function playAudioMission() {
+    mission_button_audio.currentTime = 0; 
+    mission_button_audio.play();
+}
+
+for (const mission_btn of mission_btns) {
+    mission_btn.addEventListener('click', function() {
+    playAudioMission();});
+  };
 
 
 function toggleMissionBox(selectedQuestBox){
     const allQuestBox = 
-    [CrimsonBox, MadnessBox, GauntletBox, RuinsBox1, RuinsBox2, RuinsBox3, WealdBox1, WealdBox2, WealdBox3, WarrensBox1, WarrensBox2, WarrensBox3, CoveBox1, CoveBox2, CoveBox3, HamletBox1, HamletBox2, HamletBox3, CircusBox
+    [CrimsonBox, MadnessBox, GauntletBox, BossBoxHub, 
+      RuinsBox1, RuinsBox2, 
+      WealdBox1, WealdBox2, 
+      WarrensBox1, WarrensBox2, 
+      CoveBox1, CoveBox2,
+      HamletBox1, HamletBox2, 
+      CircusBox
     ];
     allQuestBox.forEach(questbox => {
         questbox.style.display = 'none'
@@ -15,6 +40,9 @@ function toggleMissionBox(selectedQuestBox){
     
    
 }
+
+const HideAudio = document.getElementById('page_close');
+HideAudio.volume = 0.6;
 
 
 
@@ -25,26 +53,27 @@ document.addEventListener('keydown', event => {
       handleEscape(GauntletBox, GauntletBackdrop, EmbarkGauntlet);
       handleEscape(RuinsBox1, Ruins1Backdrop, EmbarkDefault);
       handleEscape(RuinsBox2, Ruins2Backdrop, EmbarkDefault);
-      handleEscape(RuinsBox3, Ruins3Backdrop, EmbarkDefault);
+
+      handleEscape(BossBoxHub, Ruins3Backdrop, EmbarkDefault, Weald3Backdrop, Warrens3Backdrop, Cove3Backdrop, Hamlet3Backdrop);      
+
+
       handleEscape(WealdBox1, Weald1Backdrop, EmbarkDefault);
       handleEscape(WealdBox2, Weald2Backdrop, EmbarkDefault);
-      handleEscape(WealdBox3, Weald3Backdrop, EmbarkDefault);
+
       handleEscape(WarrensBox1, Warrens1Backdrop, EmbarkDefault);
       handleEscape(WarrensBox2, Warrens2Backdrop, EmbarkDefault);
-      handleEscape(WarrensBox3, Warrens3Backdrop, EmbarkDefault);
+      handleEscape(BossBoxHub, Warrens3Backdrop, EmbarkDefault);
       handleEscape(CoveBox1, Cove1Backdrop, EmbarkDefault);
       handleEscape(CoveBox2, Cove2Backdrop, EmbarkDefault);
-      handleEscape(CoveBox3, Cove3Backdrop, EmbarkDefault);
       handleEscape(HamletBox1, Hamlet1Backdrop, EmbarkDefault);
       handleEscape(HamletBox2, Hamlet2Backdrop, EmbarkDefault);
-      handleEscape(HamletBox3, Hamlet3Backdrop, EmbarkDefault);
 
       handleEscape(CircusBox);
       
     }
   });
   
-  function handleEscape(keyElement, backdropElement, embarkElement) {
+  function handleEscape(keyElement, backdropElement, embarkElement, backdropElement2, backdropElement3, backdropElement4) {
     if (keyElement.style.display === 'block') {
       HideAudio.currentTime = 0;
       HideAudio.play();
@@ -52,6 +81,15 @@ document.addEventListener('keydown', event => {
 
       if(backdropElement) {
       backdropElement.style.display = 'none';
+    }
+    if(backdropElement2) {
+      backdropElement2.style.display = 'none';
+    }
+    if(backdropElement3) {
+      backdropElement3.style.display = 'none';
+    }
+    if(backdropElement4) {
+      backdropElement4.style.display = 'none';
     }
       if (embarkElement) {
         embarkElement.style.display = 'none';
@@ -95,7 +133,13 @@ function toggleEmbarkBtnDDs() {
 
 
 function toggleBackdropVisibility(selectedBackdrop) {
-  const allBackdrops = [CrimsonBackdrop, MadnessBackdrop, GauntletBackdrop, Ruins1Backdrop, Ruins2Backdrop, Ruins3Backdrop, Weald1Backdrop, Weald2Backdrop, Weald3Backdrop, Warrens1Backdrop, Warrens2Backdrop, Warrens3Backdrop, Cove1Backdrop, Cove2Backdrop, Cove3Backdrop, Hamlet1Backdrop, Hamlet2Backdrop, Hamlet3Backdrop];
+  const allBackdrops = [
+    CrimsonBackdrop, MadnessBackdrop, GauntletBackdrop, 
+    Ruins1Backdrop, Ruins2Backdrop, Ruins3Backdrop, 
+    Weald1Backdrop, Weald2Backdrop, Weald3Backdrop, 
+    Warrens1Backdrop, Warrens2Backdrop, Warrens3Backdrop, 
+    Cove1Backdrop, Cove2Backdrop, Cove3Backdrop, 
+    Hamlet1Backdrop, Hamlet2Backdrop, Hamlet3Backdrop];
 
   allBackdrops.forEach(backdrop => {
       backdrop.style.display = 'none';
@@ -104,6 +148,9 @@ function toggleBackdropVisibility(selectedBackdrop) {
   selectedBackdrop.style.display = 'block';
 }
 
+  const CircusBtn = document.getElementById('circus');
+  const CircusBox = document.getElementById("circusbox");
+  CircusBtn.addEventListener('click', () => toggleMissionBox(CircusBox));
 
 
   const CrimsonButton = document.getElementById('crimsonbutton');
@@ -161,26 +208,26 @@ function toggleBackdropVisibility(selectedBackdrop) {
   const CrimsonBox = document.getElementById('crimson_txtbox');
   const MadnessBox = document.getElementById('madness_txtbox');
   const GauntletBox = document.getElementById('gauntlet_txtbox');
+  const BossBoxHub= document.getElementById('boss_box_hub');
 
   const RuinsBox1 = document.getElementById('ruinsbox1');
   const RuinsBox2 = document.getElementById('ruinsbox2');
-  const RuinsBox3 = document.getElementById('ruinsbox3');
+
 
   const WealdBox1 = document.getElementById('wealdbox1');
   const WealdBox2 = document.getElementById('wealdbox2');
-  const WealdBox3 = document.getElementById('wealdbox3');
+
 
   const WarrensBox1 = document.getElementById('warrensbox1');
   const WarrensBox2 = document.getElementById('warrensbox2');
-  const WarrensBox3 = document.getElementById('warrensbox3');
+
 
   const CoveBox1 = document.getElementById('covebox1');
   const CoveBox2 = document.getElementById('covebox2');
-  const CoveBox3 = document.getElementById('covebox3');
+
   
   const HamletBox1 = document.getElementById('sharedbox1');
   const HamletBox2 = document.getElementById('sharedbox2');
-  const HamletBox3 = document.getElementById('sharedbox3');
   
 
 
@@ -200,26 +247,23 @@ attachClickListener(MadnessButton, MadnessBox, toggleEmbarkBtnCoM, MadnessBackdr
 
 attachClickListener(RuinsBtn1, RuinsBox1, toggleEmbarkBtn, Ruins1Backdrop);
 attachClickListener(RuinsBtn2, RuinsBox2, toggleEmbarkBtn, Ruins2Backdrop);
-attachClickListener(RuinsBtn3, RuinsBox3, toggleEmbarkBtn, Ruins3Backdrop);
+attachClickListener(RuinsBtn3, BossBoxHub, toggleEmbarkBtn, Ruins3Backdrop);
 
 attachClickListener(WealdBtn1, WealdBox1, toggleEmbarkBtn, Weald1Backdrop);
 attachClickListener(WealdBtn2, WealdBox2, toggleEmbarkBtn, Weald2Backdrop);
-attachClickListener(WealdBtn3, WealdBox3, toggleEmbarkBtn, Weald3Backdrop);
+attachClickListener(WealdBtn3, BossBoxHub, toggleEmbarkBtn, Weald3Backdrop);
 
 attachClickListener(WarrensBtn1, WarrensBox1, toggleEmbarkBtn, Warrens1Backdrop);
 attachClickListener(WarrensBtn2, WarrensBox2, toggleEmbarkBtn, Warrens2Backdrop);
-attachClickListener(WarrensBtn3, WarrensBox3, toggleEmbarkBtn, Warrens3Backdrop);
+attachClickListener(WarrensBtn3, BossBoxHub, toggleEmbarkBtn, Warrens3Backdrop);
 
 attachClickListener(CoveBtn1, CoveBox1, toggleEmbarkBtn, Cove1Backdrop);
 attachClickListener(CoveBtn2, CoveBox2, toggleEmbarkBtn, Cove2Backdrop);
-attachClickListener(CoveBtn3, CoveBox3, toggleEmbarkBtn, Cove3Backdrop);
+attachClickListener(CoveBtn3, BossBoxHub, toggleEmbarkBtn, Cove3Backdrop);
 
 attachClickListener(HamletBtn1, HamletBox1, toggleEmbarkBtn, Hamlet1Backdrop);
 attachClickListener(HamletBtn2, HamletBox2, toggleEmbarkBtn, Hamlet2Backdrop);
-attachClickListener(HamletBtn3, HamletBox3, toggleEmbarkBtn, Hamlet3Backdrop);
+attachClickListener(HamletBtn3, BossBoxHub, toggleEmbarkBtn, Hamlet3Backdrop);
 
 
 
-  const CircusBtn = document.getElementById('circus');
-  const CircusBox = document.getElementById("circusbox");
-  CircusBtn.addEventListener('click', () => toggleMissionBox(CircusBox));
