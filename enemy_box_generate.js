@@ -2356,7 +2356,7 @@ const ruinskills = [
     position: '1234enemy.png',
     name: 'Foul Warding',
     type: 'Support',
-    effects: 'Guard Ally (3 rds) <br> Buff Self:<br> +25% PROT (3 rds)'
+    effects: 'Guard Ally (3 rds) <br> Buff Self:<br> +25% PROT (2 rds)'
 },
 
 {
@@ -2365,7 +2365,7 @@ const ruinskills = [
     position: '1234enemy.png',
     name: 'Foul Warding',
     type: 'Support',
-    effects: 'Guard Ally (3 rds) <br> Buff Self:<br> +25% PROT (3 rds)'
+    effects: 'Guard Ally (3 rds) <br> Buff Self:<br> +25% PROT (2 rds)'
 },
 
 
@@ -2614,7 +2614,7 @@ const ruinskills = [
         position: '1234enemy.png',
         name: 'Wicked Surge',
         type: 'Support',
-        effects: 'Buff Target: <br> +10 ACC (3 rds) <br> +20% DMG (3 rds)'
+        effects: 'Buff Target: <br> +10 ACC (2 rds) <br> +20% DMG (2 rds)'
     },
 
     { 
@@ -4295,7 +4295,7 @@ const sharedskills = [
         accuracy: 42.5,
         critRate: 'Cannot CRIT',
         damage: '2-4',
-        effects: 'Buff Self: <br> +2 SPD (3 rds)'
+        effects: 'On Attack Hit: <br> Buff Self: <br> +2 SPD (3 rds)'
     },
 
     {
@@ -4340,7 +4340,7 @@ const sharedskills = [
         accuracy: 52.5,
         critRate: 'Cannot CRIT',
         damage: '3-5',
-        effects: 'Buff Self: <br> +2 SPD (3 rds)'
+        effects: 'On Attack Hit: <br> Buff Self: <br> +2 SPD (3 rds)'
     },
 
 
@@ -4386,7 +4386,7 @@ const sharedskills = [
         accuracy: 60,
         critRate: 'Cannot CRIT',
         damage: '4-7',
-        effects: 'Buff Self: <br> +2 SPD (3 rds)'
+        effects: 'On Attack Hit: <br> Buff Self: <br> +2 SPD (3 rds)'
     },
 
 
@@ -5218,7 +5218,7 @@ const sharedskills = [
     accuracy: 62.5,
     critRate: 'Cannot CRIT',
     damage: '4-9',
-    effects: 'Buff Self: <br> +2 SPD (3 rds)'
+    effects: 'On Attack Hit: <br> Buff Self: <br> +2 SPD (3 rds)'
 },
 
 
