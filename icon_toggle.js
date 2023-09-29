@@ -985,6 +985,410 @@ attachHoverListeners("[id='unlocked_strongbox_touch']", "[id='unlocked_strongbox
 attachHoverListeners("[id='ancient_artifact_key']", "[id='ancient_artifact_key_result']");
 attachHoverListeners("[id='ancient_artifact_touch']", "[id='ancient_artifact_touch_result']");
 
+
+
+//Boss Shared Info
+attachHoverListeners("[id='boss_locate']", "[id='boss_locate_desc']");
+attachHoverListeners("[id='can_scroll']", "[id='can_scroll_desc']");
+attachHoverListeners("[id='lifelink_info']", "[id='lifelink_info_desc']");
+attachHoverListeners("[id='trophy_info']", "[id='trophy_info_desc']");
+
+//Boss Specific Info
+attachHoverListeners("[id='prophet_additional_info_app']", "[id='prophet_additional_info_desc']");
+attachHoverListeners("[id='prophet_additional_info_vet']", "[id='prophet_additional_info_desc']");
+attachHoverListeners("[id='prophet_additional_info_champ']", "[id='prophet_additional_info_desc']");
+
+attachHoverListeners("[id='brigand_pounder_additional_info_app']", "[id='brigand_pounder_additional_info_desc']");
+attachHoverListeners("[id='brigand_pounder_additional_info_vet']", "[id='brigand_pounder_additional_info_desc']");
+attachHoverListeners("[id='brigand_pounder_additional_info_champ']", "[id='brigand_pounder_additional_info_desc']");
+
+attachHoverListeners("[id='shrieker_additional_info_app']", "[id='shrieker_additional_info_desc']");
+attachHoverListeners("[id='shrieker_additional_info_vet']", "[id='shrieker_additional_info_desc']");
+attachHoverListeners("[id='shrieker_additional_info_champ']", "[id='shrieker_additional_info_desc']");
+
+attachHoverListeners("[id='swine_prince_additional_info_app']", "[id='swine_prince_additional_info_desc']");
+attachHoverListeners("[id='swine_prince_additional_info_vet']", "[id='swine_prince_additional_info_desc']");
+attachHoverListeners("[id='swine_prince_additional_info_champ']", "[id='swine_prince_additional_info_desc']");
+
+attachHoverListeners("[id='flesh_additional_info_app']", "[id='flesh_additional_info_desc']");
+attachHoverListeners("[id='flesh_additional_info_vet']", "[id='flesh_additional_info_desc']");
+attachHoverListeners("[id='flesh_additional_info_champ']", "[id='flesh_additional_info_desc']");
+
+attachHoverListeners("[id='siren_additional_info_app']", "[id='siren_additional_info_desc']");
+attachHoverListeners("[id='siren_additional_info_vet']", "[id='siren_additional_info_desc']");
+attachHoverListeners("[id='siren_additional_info_champ']", "[id='siren_additional_info_desc']");
+
+attachHoverListeners("[id='drowned_crew_additional_info_app']", "[id='drowned_crew_additional_info_desc']");
+attachHoverListeners("[id='drowned_crew_additional_info_vet']", "[id='drowned_crew_additional_info_desc']");
+attachHoverListeners("[id='drowned_crew_additional_info_champ']", "[id='drowned_crew_additional_info_desc']");
+
+attachHoverListeners("[id='collector_additional_info_app']", "[id='collector_additional_info_desc']");
+attachHoverListeners("[id='collector_additional_info_vet']", "[id='collector_additional_info_desc']");
+attachHoverListeners("[id='collector_additional_info_champ']", "[id='collector_additional_info_desc']");
+
+attachHoverListeners("[id='shambler_additional_info_app']", "[id='shambler_additional_info_desc']");
+attachHoverListeners("[id='shambler_additional_info_vet']", "[id='shambler_additional_info_desc']");
+attachHoverListeners("[id='shambler_additional_info_champ']", "[id='shambler_additional_info_desc']");
+
+
+attachHoverListeners("[id='shambler_additional_info']", "[id='shambler_additional_info_desc']");
+attachHoverListeners("[id='shambler_endless_info']", "[id='shambler_endless_info_desc']");
+attachHoverListeners("[id='shrieker_endless_info']", "[id='shrieker_endless_info_desc']");
+attachHoverListeners("[id='shrieker_quirk_info']", "[id='shrieker_quirk_info_desc']");
+
+
+
+//Boss Minion Info
+attachHoverListeners("[id='necromancer_minion_more_info_app']", "[id='necromancer_minion_more_info_desc']");
+attachHoverListeners("[id='necromancer_minion_more_info_vet']", "[id='necromancer_minion_more_info_desc']");
+attachHoverListeners("[id='necromancer_minion_more_info_champ']", "[id='necromancer_minion_more_info_desc']");
+
+attachHoverListeners("[id='prophet_minion_more_info_app']", "[id='prophet_minion_more_info_desc']");
+attachHoverListeners("[id='prophet_minion_more_info_vet']", "[id='prophet_minion_more_info_desc']");
+attachHoverListeners("[id='prophet_minion_more_info_champ']", "[id='prophet_minion_more_info_desc']");
+
+attachHoverListeners("[id='brigand_pounder_minion_more_info_app']", "[id='brigand_pounder_minion_more_info_desc']");
+attachHoverListeners("[id='brigand_pounder_minion_more_info_vet']", "[id='brigand_pounder_minion_more_info_desc']");
+attachHoverListeners("[id='brigand_pounder_minion_more_info_champ']", "[id='brigand_pounder_minion_more_info_desc']");
+
+attachHoverListeners("[id='shrieker_minion_more_info_app']", "[id='shrieker_minion_more_info_desc']");
+attachHoverListeners("[id='shrieker_minion_more_info_vet']", "[id='shrieker_minion_more_info_desc']");
+attachHoverListeners("[id='shrieker_minion_more_info_champ']", "[id='shrieker_minion_more_info_desc']");
+
+attachHoverListeners("[id='swine_prince_minion_more_info_app']", "[id='swine_prince_minion_more_info_desc']");
+attachHoverListeners("[id='swine_prince_minion_more_info_vet']", "[id='swine_prince_minion_more_info_desc']");
+attachHoverListeners("[id='swine_prince_minion_more_info_champ']", "[id='swine_prince_minion_more_info_desc']");
+
+attachHoverListeners("[id='siren_minion_more_info_app']", "[id='siren_minion_more_info_desc']");
+attachHoverListeners("[id='siren_minion_more_info_vet']", "[id='siren_minion_more_info_desc']");
+attachHoverListeners("[id='siren_minion_more_info_champ']", "[id='siren_minion_more_info_desc']");
+
+attachHoverListeners("[id='drowned_crew_minion_more_info_app']", "[id='drowned_crew_minion_more_info_desc']");
+attachHoverListeners("[id='drowned_crew_minion_more_info_vet']", "[id='drowned_crew_minion_more_info_desc']");
+attachHoverListeners("[id='drowned_crew_minion_more_info_champ']", "[id='drowned_crew_minion_more_info_desc']");
+
+attachHoverListeners("[id='collector_minion_more_info_app']", "[id='collector_minion_more_info_desc']");
+attachHoverListeners("[id='collector_minion_more_info_vet']", "[id='collector_minion_more_info_desc']");
+attachHoverListeners("[id='collector_minion_more_info_champ']", "[id='collector_minion_more_info_desc']");
+
+attachHoverListeners("[id='shambler_minion_more_info_app']", "[id='shambler_minion_more_info_desc']");
+attachHoverListeners("[id='shambler_minion_more_info_vet']", "[id='shambler_minion_more_info_desc']");
+attachHoverListeners("[id='shambler_minion_more_info_champ']", "[id='shambler_minion_more_info_desc']");
+
+attachHoverListeners("[id='shambler_minion_more_info']", "[id='shambler_minion_more_info_desc']");
+
+//Trophies
+attachHoverListeners("[id='necromancer\\'s_collar']", "[id='necromancer\\'s_collar_desc']");
+attachHoverListeners("[id='prophet\\'s_eye']", "[id='prophet\\'s_eye_desc']");
+attachHoverListeners("[id='hag\\'s_ladle']", "[id='hag\\'s_ladle_desc']");
+attachHoverListeners("[id='fuseman\\'s_matchstick']", "[id='fuseman\\'s_matchstick_desc']");
+
+attachHoverListeners("[id='callous_talon']", "[id='callous_talon_desc']");
+attachHoverListeners("[id='distended_crowseye']", "[id='distended_crowseye_desc']");
+attachHoverListeners("[id='molted_tailfeather']", "[id='molted_tailfeather_desc']");
+attachHoverListeners("[id='molted_wingfeather']", "[id='molted_wingfeather_desc']");
+
+attachHoverListeners("[id='wilbur\\'s_flag']", "[id='wilbur\\'s_flag_desc']");
+attachHoverListeners("[id='flesh\\'s_heart']", "[id='flesh\\'s_heart_desc']");
+attachHoverListeners("[id='siren\\'s_conch']", "[id='siren\\'s_conch_desc']");
+attachHoverListeners("[id='crew\\'s_bell']", "[id='crew\\'s_bell_desc']");
+
+
+attachHoverListeners("[id='dismas\\'_head']", "[id='dismas\\'_head_desc']");
+attachHoverListeners("[id='barristan\\'s_head']", "[id='barristan\\'s_head_desc']");
+attachHoverListeners("[id='junia\\'s_head']", "[id='junia\\'s_head_desc']");
+
+attachHoverListeners("[id='ancestor\\'s_map']", "[id='ancestor\\'s_map_desc']");
+attachHoverListeners("[id='ancestor\\'s_bottle']", "[id='ancestor\\'s_bottle_desc']");
+attachHoverListeners("[id='ancestor\\'s_candle']", "[id='ancestor\\'s_candle_desc']");
+attachHoverListeners("[id='ancestor\\'s_tentacle_idol']", "[id='ancestor\\'s_tentacle_idol_desc']");
+attachHoverListeners("[id='ancestor\\'s_scroll']", "[id='ancestor\\'s_scroll_desc']");
+
+
+//Boss Skills
+
+//Necromancer
+attachHoverListeners("[id='the_flesh_is_willing_app_lvl']", "[id='app_the_flesh_is_willing_desc']");
+attachHoverListeners("[id='the_flesh_is_willing_vet_lvl']", "[id='vet_the_flesh_is_willing_desc']");
+attachHoverListeners("[id='the_flesh_is_willing_champ_lvl']", "[id='champ_the_flesh_is_willing_desc']");
+
+attachHoverListeners("[id='the_clawing_dead_app_lvl']", "[id='app_the_clawing_dead_desc']");
+attachHoverListeners("[id='the_clawing_dead_vet_lvl']", "[id='vet_the_clawing_dead_desc']");
+attachHoverListeners("[id='the_clawing_dead_champ_lvl']", "[id='champ_the_clawing_dead_desc']");
+
+attachHoverListeners("[id='six_feet_under_app_lvl']", "[id='app_six_feet_under_desc']");
+attachHoverListeners("[id='six_feet_under_vet_lvl']", "[id='vet_six_feet_under_desc']");
+attachHoverListeners("[id='six_feet_under_champ_lvl']", "[id='champ_six_feet_under_desc']");
+
+//Prophet
+
+attachHoverListeners("[id='prognostication_app_lvl']", "[id='app_prognostication_desc']");
+attachHoverListeners("[id='prognostication_vet_lvl']", "[id='vet_prognostication_desc']");
+attachHoverListeners("[id='prognostication_champ_lvl']", "[id='champ_prognostication_desc']");
+
+attachHoverListeners("[id='rubble_of_ruin_app_lvl']", "[id='app_rubble_of_ruin_desc']");
+attachHoverListeners("[id='rubble_of_ruin_vet_lvl']", "[id='vet_rubble_of_ruin_desc']");
+attachHoverListeners("[id='rubble_of_ruin_champ_lvl']", "[id='champ_rubble_of_ruin_desc']");
+
+attachHoverListeners("[id='eye_on_you_app_lvl']", "[id='app_eye_on_you_desc']");
+attachHoverListeners("[id='eye_on_you_vet_lvl']", "[id='vet_eye_on_you_desc']");
+attachHoverListeners("[id='eye_on_you_champ_lvl']", "[id='champ_eye_on_you_desc']");
+
+attachHoverListeners("[id='fulminate_app_lvl']", "[id='app_fulminate_desc']");
+attachHoverListeners("[id='fulminate_vet_lvl']", "[id='vet_fulminate_desc']");
+attachHoverListeners("[id='fulminate_champ_lvl']", "[id='champ_fulminate_desc']");
+
+//Hag
+
+attachHoverListeners("[id='into_the_pot_app_lvl']", "[id='app_into_the_pot_desc']");
+attachHoverListeners("[id='into_the_pot_vet_lvl']", "[id='vet_into_the_pot_desc']");
+attachHoverListeners("[id='into_the_pot_champ_lvl']", "[id='champ_into_the_pot_desc']");
+
+attachHoverListeners("[id='meat_tenderizer_app_lvl']", "[id='app_meat_tenderizer_desc']");
+attachHoverListeners("[id='meat_tenderizer_vet_lvl']", "[id='vet_meat_tenderizer_desc']");
+attachHoverListeners("[id='meat_tenderizer_champ_lvl']", "[id='champ_meat_tenderizer_desc']");
+
+attachHoverListeners("[id='season_to_perfection_app_lvl']", "[id='app_season_to_perfection_desc']");
+attachHoverListeners("[id='season_to_perfection_vet_lvl']", "[id='vet_season_to_perfection_desc']");
+attachHoverListeners("[id='season_to_perfection_champ_lvl']", "[id='champ_season_to_perfection_desc']");
+
+attachHoverListeners("[id='taste_the_stew_app_lvl']", "[id='app_taste_the_stew_desc']");
+attachHoverListeners("[id='taste_the_stew_vet_lvl']", "[id='vet_taste_the_stew_desc']");
+attachHoverListeners("[id='taste_the_stew_champ_lvl']", "[id='champ_taste_the_stew_desc']");
+
+//Pounder
+
+attachHoverListeners("[id='booooooom_app_lvl']", "[id='app_booooooom_desc']");
+attachHoverListeners("[id='booooooom_vet_lvl']", "[id='vet_booooooom_desc']");
+attachHoverListeners("[id='booooooom_champ_lvl']", "[id='champ_booooooom_desc']");
+
+attachHoverListeners("[id='reinforcements_app_lvl']", "[id='app_reinforcements_desc']");
+attachHoverListeners("[id='reinforcements_vet_lvl']", "[id='vet_reinforcements_desc']");
+attachHoverListeners("[id='reinforcements_champ_lvl']", "[id='champ_reinforcements_desc']");
+
+attachHoverListeners("[id='misfire_app_lvl']", "[id='app_misfire_desc']");
+attachHoverListeners("[id='misfire_vet_lvl']", "[id='vet_misfire_desc']");
+attachHoverListeners("[id='misfire_champ_lvl']", "[id='champ_misfire_desc']");
+
+attachHoverListeners("[id='pounder_passive_app_lvl']", "[id='pounder_passive_desc']");
+attachHoverListeners("[id='pounder_passive_vet_lvl']", "[id='pounder_passive_desc']");
+attachHoverListeners("[id='pounder_passive_champ_lvl']", "[id='pounder_passive_desc']");
+//Shrieker
+
+attachHoverListeners("[id='peck_app_lvl']", "[id='app_peck_desc']");
+attachHoverListeners("[id='peck_vet_lvl']", "[id='vet_peck_desc']");
+attachHoverListeners("[id='peck_champ_lvl']", "[id='champ_peck_desc']");
+attachHoverListeners("[id='peck_darkest_lvl']", "[id='darkest_peck_desc']");
+
+attachHoverListeners("[id='caw_app_lvl']", "[id='app_caw_desc']");
+attachHoverListeners("[id='caw_vet_lvl']", "[id='vet_caw_desc']");
+attachHoverListeners("[id='caw_champ_lvl']", "[id='champ_caw_desc']");
+attachHoverListeners("[id='caw_darkest_lvl']", "[id='darkest_caw_desc']");
+
+attachHoverListeners("[id='call_the_murder_app_lvl']", "[id='app_call_the_murder_desc']");
+attachHoverListeners("[id='call_the_murder_vet_lvl']", "[id='vet_call_the_murder_desc']");
+attachHoverListeners("[id='call_the_murder_champ_lvl']", "[id='champ_call_the_murder_desc']");
+attachHoverListeners("[id='call_the_murder_darkest_lvl']", "[id='darkest_call_the_murder_desc']");
+
+attachHoverListeners("[id='regurgitate_app_lvl']", "[id='app_regurgitate_desc']");
+attachHoverListeners("[id='regurgitate_vet_lvl']", "[id='vet_regurgitate_desc']");
+attachHoverListeners("[id='regurgitate_champ_lvl']", "[id='champ_regurgitate_desc']");
+attachHoverListeners("[id='regurgitate_darkest_lvl']", "[id='darkest_regurgitate_desc']");
+
+attachHoverListeners("[id='shrieking_flight_app_lvl']", "[id='app_shrieking_flight_desc']");
+attachHoverListeners("[id='shrieking_flight_vet_lvl']", "[id='vet_shrieking_flight_desc']");
+attachHoverListeners("[id='shrieking_flight_champ_lvl']", "[id='champ_shrieking_flight_desc']");
+attachHoverListeners("[id='shrieking_flight_darkest_lvl']", "[id='darkest_shrieking_flight_desc']");
+
+//Swine Prince
+
+attachHoverListeners("[id='obliterate_body_app_lvl']", "[id='app_obliterate_body_desc']");
+attachHoverListeners("[id='obliterate_body_vet_lvl']", "[id='vet_obliterate_body_desc']");
+attachHoverListeners("[id='obliterate_body_champ_lvl']", "[id='champ_obliterate_body_desc']");
+
+attachHoverListeners("[id='obliterate_masses_app_lvl']", "[id='app_obliterate_masses_desc']");
+attachHoverListeners("[id='obliterate_masses_vet_lvl']", "[id='vet_obliterate_masses_desc']");
+attachHoverListeners("[id='obliterate_masses_champ_lvl']", "[id='champ_obliterate_masses_desc']");
+
+attachHoverListeners("[id='enraged_destruction_app_lvl']", "[id='app_enraged_destruction_desc']");
+attachHoverListeners("[id='enraged_destruction_vet_lvl']", "[id='vet_enraged_destruction_desc']");
+attachHoverListeners("[id='enraged_destruction_champ_lvl']", "[id='champ_enraged_destruction_desc']");
+
+attachHoverListeners("[id='wild_flailing_app_lvl']", "[id='app_wild_flailing_desc']");
+attachHoverListeners("[id='wild_flailing_vet_lvl']", "[id='vet_wild_flailing_desc']");
+attachHoverListeners("[id='wild_flailing_champ_lvl']", "[id='champ_wild_flailing_desc']");
+
+//Flesh
+
+attachHoverListeners("[id='maws_of_life_app_lvl']", "[id='app_maws_of_life_desc']");
+attachHoverListeners("[id='maws_of_life_vet_lvl']", "[id='vet_maws_of_life_desc']");
+attachHoverListeners("[id='maws_of_life_champ_lvl']", "[id='champ_maws_of_life_desc']");
+
+attachHoverListeners("[id='bone_zephyr_app_lvl']", "[id='app_bone_zephyr_desc']");
+attachHoverListeners("[id='bone_zephyr_vet_lvl']", "[id='vet_bone_zephyr_desc']");
+attachHoverListeners("[id='bone_zephyr_champ_lvl']", "[id='champ_bone_zephyr_desc']");
+
+attachHoverListeners("[id='sanguine_stroke_app_lvl']", "[id='app_sanguine_stroke_desc']");
+attachHoverListeners("[id='sanguine_stroke_vet_lvl']", "[id='vet_sanguine_stroke_desc']");
+attachHoverListeners("[id='sanguine_stroke_champ_lvl']", "[id='champ_sanguine_stroke_desc']");
+
+attachHoverListeners("[id='undulating_invasion_app_lvl']", "[id='app_undulating_invasion_desc']");
+attachHoverListeners("[id='undulating_invasion_vet_lvl']", "[id='vet_undulating_invasion_desc']");
+attachHoverListeners("[id='undulating_invasion_champ_lvl']", "[id='champ_undulating_invasion_desc']");
+
+//Siren
+
+attachHoverListeners("[id='song_of_desire_app_lvl']", "[id='app_song_of_desire_desc']");
+attachHoverListeners("[id='song_of_desire_vet_lvl']", "[id='vet_song_of_desire_desc']");
+attachHoverListeners("[id='song_of_desire_champ_lvl']", "[id='champ_song_of_desire_desc']");
+
+attachHoverListeners("[id='high_tide_app_lvl']", "[id='high_tide_desc']");
+attachHoverListeners("[id='high_tide_vet_lvl']", "[id='high_tide_desc']");
+attachHoverListeners("[id='high_tide_champ_lvl']", "[id='high_tide_desc']");
+
+attachHoverListeners("[id='pressure_crash_app_lvl']", "[id='app_pressure_crash_desc']");
+attachHoverListeners("[id='pressure_crash_vet_lvl']", "[id='vet_pressure_crash_desc']");
+attachHoverListeners("[id='pressure_crash_champ_lvl']", "[id='champ_pressure_crash_desc']");
+
+attachHoverListeners("[id='devour_app_lvl']", "[id='app_devour_desc']");
+attachHoverListeners("[id='devour_vet_lvl']", "[id='vet_devour_desc']");
+attachHoverListeners("[id='devour_champ_lvl']", "[id='champ_devour_desc']");
+
+//Drowned Crew
+
+attachHoverListeners("[id='all_hands_on_deck_app_lvl']", "[id='app_all_hands_on_deck_desc']");
+attachHoverListeners("[id='all_hands_on_deck_vet_lvl']", "[id='vet_all_hands_on_deck_desc']");
+attachHoverListeners("[id='all_hands_on_deck_champ_lvl']", "[id='champ_all_hands_on_deck_desc']");
+
+attachHoverListeners("[id='mutiny_app_lvl']", "[id='app_mutiny_desc']");
+attachHoverListeners("[id='mutiny_vet_lvl']", "[id='vet_mutiny_desc']");
+attachHoverListeners("[id='mutiny_champ_lvl']", "[id='champ_mutiny_desc']");
+
+attachHoverListeners("[id='drink_with_the_dead_app_lvl']", "[id='app_drink_with_the_dead_desc']");
+attachHoverListeners("[id='drink_with_the_dead_vet_lvl']", "[id='vet_drink_with_the_dead_desc']");
+attachHoverListeners("[id='drink_with_the_dead_champ_lvl']", "[id='champ_drink_with_the_dead_desc']");
+
+attachHoverListeners("[id='boarding_clutch_app_lvl']", "[id='app_boarding_clutch_desc']");
+attachHoverListeners("[id='boarding_clutch_vet_lvl']", "[id='vet_boarding_clutch_desc']");
+attachHoverListeners("[id='boarding_clutch_champ_lvl']", "[id='champ_boarding_clutch_desc']");
+
+//Collector
+
+attachHoverListeners("[id='collect_call_app_lvl']", "[id='collect_call_desc']");
+attachHoverListeners("[id='collect_call_vet_lvl']", "[id='collect_call_desc']");
+attachHoverListeners("[id='collect_call_champ_lvl']", "[id='collect_call_desc']");
+
+attachHoverListeners("[id='show_collection_app_lvl']", "[id='app_show_collection_desc']");
+attachHoverListeners("[id='show_collection_vet_lvl']", "[id='vet_show_collection_desc']");
+attachHoverListeners("[id='show_collection_champ_lvl']", "[id='champ_show_collection_desc']");
+
+attachHoverListeners("[id='life_steal_app_lvl']", "[id='app_life_steal_desc']");
+attachHoverListeners("[id='life_steal_vet_lvl']", "[id='vet_life_steal_desc']");
+attachHoverListeners("[id='life_steal_champ_lvl']", "[id='champ_life_steal_desc']");
+
+//Shambler
+
+attachHoverListeners("[id='obdurous_advancement_app_lvl']", "[id='app_obdurous_advancement_desc']");
+attachHoverListeners("[id='obdurous_advancement_vet_lvl']", "[id='vet_obdurous_advancement_desc']");
+attachHoverListeners("[id='obdurous_advancement_champ_lvl']", "[id='champ_obdurous_advancement_desc']");
+attachHoverListeners("[id='obdurous_advancement_darkest_lvl']", "[id='darkest_obdurous_advancement_desc']");
+
+attachHoverListeners("[id='undulating_withdrawal_app_lvl']", "[id='app_undulating_withdrawal_desc']");
+attachHoverListeners("[id='undulating_withdrawal_vet_lvl']", "[id='vet_undulating_withdrawal_desc']");
+attachHoverListeners("[id='undulating_withdrawal_champ_lvl']", "[id='champ_undulating_withdrawal_desc']");
+attachHoverListeners("[id='undulating_withdrawal_darkest_lvl']", "[id='darkest_undulating_withdrawal_desc']");
+
+attachHoverListeners("[id='stentorious_lament_app_lvl']", "[id='app_stentorious_lament_desc']");
+attachHoverListeners("[id='stentorious_lament_vet_lvl']", "[id='vet_stentorious_lament_desc']");
+attachHoverListeners("[id='stentorious_lament_champ_lvl']", "[id='champ_stentorious_lament_desc']");
+attachHoverListeners("[id='stentorious_lament_darkest_lvl']", "[id='darkest_stentorious_lament_desc']");
+
+//Full Cauldron
+
+attachHoverListeners("[id='cauldron_passive_app_lvl']", "[id='cauldron_passive_desc']");
+attachHoverListeners("[id='cauldron_passive_vet_lvl']", "[id='cauldron_passive_desc']");
+attachHoverListeners("[id='cauldron_passive_champ_lvl']", "[id='cauldron_passive_desc']");
+
+//Matchman
+
+attachHoverListeners("[id='fire_in_the_hole_app_lvl']", "[id='app_fire_in_the_hole_desc']");
+attachHoverListeners("[id='fire_in_the_hole_vet_lvl']", "[id='vet_fire_in_the_hole_desc']");
+attachHoverListeners("[id='fire_in_the_hole_champ_lvl']", "[id='champ_fire_in_the_hole_desc']");
+
+attachHoverListeners("[id='hot_shot_app_lvl']", "[id='app_hot_shot_desc']");
+attachHoverListeners("[id='hot_shot_vet_lvl']", "[id='vet_hot_shot_desc']");
+attachHoverListeners("[id='hot_shot_champ_lvl']", "[id='champ_hot_shot_desc']");
+
+//Wilbur Skills
+
+attachHoverListeners("[id='squeal_app_lvl']", "[id='app_squeal_desc']");
+attachHoverListeners("[id='squeal_vet_lvl']", "[id='vet_squeal_desc']");
+attachHoverListeners("[id='squeal_champ_lvl']", "[id='champ_squeal_desc']");
+
+attachHoverListeners("[id='end_this_one_app_lvl']", "[id='app_end_this_one_desc']");
+attachHoverListeners("[id='end_this_one_vet_lvl']", "[id='vet_end_this_one_desc']");
+attachHoverListeners("[id='end_this_one_champ_lvl']", "[id='champ_end_this_one_desc']");
+
+attachHoverListeners("[id='end_these_two_app_lvl']", "[id='app_end_these_two_desc']");
+attachHoverListeners("[id='end_these_two_vet_lvl']", "[id='vet_end_these_two_desc']");
+attachHoverListeners("[id='end_these_two_champ_lvl']", "[id='champ_end_these_two_desc']");
+
+attachHoverListeners("[id='bit_o_squeal_app_lvl']", "[id='app_bit_o_squeal_desc']");
+attachHoverListeners("[id='bit_o_squeal_vet_lvl']", "[id='vet_bit_o_squeal_desc']");
+attachHoverListeners("[id='bit_o_squeal_champ_lvl']", "[id='champ_bit_o_squeal_desc']");
+
+//Anchorman
+
+attachHoverListeners("[id='heave_to_app_lvl']", "[id='app_heave_to_desc']");
+attachHoverListeners("[id='heave_to_vet_lvl']", "[id='vet_heave_to_desc']");
+attachHoverListeners("[id='heave_to_champ_lvl']", "[id='champ_heave_to_desc']");
+
+attachHoverListeners("[id='innate_self_buff_app_lvl']", "[id='innate_self_buff_desc']");
+attachHoverListeners("[id='innate_self_buff_vet_lvl']", "[id='innate_self_buff_desc']");
+attachHoverListeners("[id='innate_self_buff_champ_lvl']", "[id='innate_self_buff_desc']");
+
+attachHoverListeners("[id='chained_passive_app_lvl']", "[id='app_chained_passive_desc']");
+attachHoverListeners("[id='chained_passive_vet_lvl']", "[id='vet_chained_passive_desc']");
+attachHoverListeners("[id='chained_passive_champ_lvl']", "[id='champ_chained_passive_desc']");
+
+//Collected HWM
+
+attachHoverListeners("[id='headhunt_app_lvl']", "[id='app_headhunt_desc']");
+attachHoverListeners("[id='headhunt_vet_lvl']", "[id='vet_headhunt_desc']");
+attachHoverListeners("[id='headhunt_champ_lvl']", "[id='champ_headhunt_desc']");
+
+//Collected MAA
+
+attachHoverListeners("[id='head_games_app_lvl']", "[id='head_games_desc']");
+attachHoverListeners("[id='head_games_vet_lvl']", "[id='head_games_desc']");
+attachHoverListeners("[id='head_games_champ_lvl']", "[id='head_games_desc']");
+
+attachHoverListeners("[id='head_knocker_app_lvl']", "[id='app_head_knocker_desc']");
+attachHoverListeners("[id='head_knocker_vet_lvl']", "[id='vet_head_knocker_desc']");
+attachHoverListeners("[id='head_knocker_champ_lvl']", "[id='champ_head_knocker_desc']");
+
+//Collected Vestal
+
+attachHoverListeners("[id='headstrong_app_lvl']", "[id='app_headstrong_desc']");
+attachHoverListeners("[id='headstrong_vet_lvl']", "[id='vet_headstrong_desc']");
+attachHoverListeners("[id='headstrong_champ_lvl']", "[id='champ_headstrong_desc']");
+
+attachHoverListeners("[id='headache_app_lvl']", "[id='headache_desc']");
+attachHoverListeners("[id='headache_vet_lvl']", "[id='headache_desc']");
+attachHoverListeners("[id='headache_champ_lvl']", "[id='headache_desc']");
+
+attachHoverListeners("[id='head_rush_app_lvl']", "[id='app_head_rush_desc']");
+attachHoverListeners("[id='head_rush_vet_lvl']", "[id='vet_head_rush_desc']");
+attachHoverListeners("[id='head_rush_champ_lvl']", "[id='champ_head_rush_desc']");
+
+//Shambler Tentacles
+
+attachHoverListeners("[id='clapperclaw_app_lvl']", "[id='app_clapperclaw_desc']");
+attachHoverListeners("[id='clapperclaw_vet_lvl']", "[id='vet_clapperclaw_desc']");
+attachHoverListeners("[id='clapperclaw_champ_lvl']", "[id='champ_clapperclaw_desc']");
+attachHoverListeners("[id='clapperclaw_darkest_lvl']", "[id='darkest_clapperclaw_desc']");
+
+
 });
 
 function attachHoverListeners(triggerSelector, targetSelector) {
