@@ -3818,7 +3818,7 @@ const MinionStatData = [
             class: "boss_skill_desc_container minion_skill_desc",
             id: "cauldron_passive_desc",
             name: "Cauldron Passive",
-            description:"The Hero inside The Cauldron takes 8.75% HP Dmg <br> after any action taken by your Heroes or The Hag <br> Once the Trapped Hero hits Death's Door, the Hero is released at position 1",
+            description:"The Hero inside The Cauldron takes 8.75% HP Dmg <br> after any action taken by your Heroes or The Hag <br> Once the Trapped Hero hits Death's Door,or the Cauldron hits 0 HP <br> the Hero is released at position 1",
         },
 
         //Matchman
