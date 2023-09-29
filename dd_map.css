@@ -1,7 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat|Roboto|Lobster|Oswald|Raleway|Inter|Open+Sans|Inconsolata|Shadows+Into+Light|Josefin+Sans:ital,wght@0,100;0,200;0,400;0,500;1,100;1,400;1,500&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-@font-face {font-family: bitter; src: url(fonts/Bitter-Regular.otf);}
-@font-face {font-family:concord ;src: url(fonts/Concord\ W00\ Light.ttf);}
 @font-face {font-family:dd_logo ;src: url(fonts/DwarvenAxe\ BB\ W00\ Regular.ttf);}
 
 
@@ -16,15 +13,18 @@ button{background: white; border: none; width:20px}
 .visible{display: block;}
 .nondisplay{display: none;}
 .ddlogo_text{font-family: dd_logo; color: rgb(199, 179, 107); font-weight: 400;}
-.general_desc{position: absolute; width:max-content; display: none;
+.general_desc{position: absolute; width:max-content; display:none;
     border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.8);
     font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1vw; line-height: 1.3vw; font-weight: 500;
     text-align: center; padding: 0.3vw 0.6vw 0.6vw 0.6vw;
 }
-
+.bordered{border: 1px solid red;}
 .description{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1vw; line-height: 1.3vw;}
 .hoverable:hover{filter: brightness(150%);}
 .fit_width{width:fit-content}
+.align_end{text-align: end;}
+
+
 /*body {
     user-select: none;
 }*/
@@ -89,41 +89,7 @@ button{background: white; border: none; width:20px}
 
 
 /*General Box, Button and Backdrop Styling*/
-.boss_box{width: 24vw;height: 38.4vw; position: absolute; visibility: hidden; left: 9vw; top: 6.9vw;}
 
-
-.quest_box{width: 24vw;height: 38.4vw; position: absolute; display: none; left: 9vw; top: 6.9vw; padding-left:1vw;
-    background-image: url('images/Boxes/quest_textbox.png'); background-size: 24vw;}
-.enemy{background-image: url('images/Boxes/quest_textbox_enemy.png'); background-size: 24vw;
-    font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167);font-size: 1.3vw; line-height: 1.8vw; font-weight: 500;}
-.curio{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167);font-size: 1.3vw; line-height: 1.9vw; font-weight: 500;}
-
-.curio_top_container{position: absolute; top: 0.6vw; left: 0vw;width: 23.7vw; height: 20vw; /*border: 1px solid red;*/
-text-align: center;}
-.bone_altar_container{border: 1px solid;}
-.curio_info{position: absolute; right: 0.5vw; top:0.1vw; width: 2vw;} 
-.curio_info:hover{filter: brightness(150%); width: 2.1vw; right: 0.4vw;}
-.result_icon{width: 1.4vw; position: absolute; padding-top: 0.2vw;}
-.provision_inter_icon{max-width: 1.4vw; max-height: 2vw;  position: absolute; padding-top: 0.3vw; left: 0.7vw}
-.result_desc{margin-left: 2vw;}
-
-.curio_result{left: 23.8vw; top: 27.7vw; text-align:start; padding-bottom:0.4vw; line-height: 2vw}
-.room_interact{top: 24.7vw;}
-
-.forced_universal{left: 23.6vw; top: -0.5vw}
-
-.interaction_desc{position: absolute; left: 23.8vw; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.8); padding:0.3vw 0.5vw 0.3vw 0.4vw;
-     width:max-content; font-size: 1.1vw; line-height: 1.8vw; display: none;}
-
-.curio_interaction_container{position: absolute; top: 27vw; left: 0vw;width: 23.7vw; height: 10vw;
-                             display: flex; justify-content: center;}
-.room_curio{top: 24vw;}
-.curio_sprite{max-height: 10vw; max-width: 16vw;}
-.room_sprite{max-height: 13vw; max-width: 20vw;}
-.curio_name{font-size: 2vw; padding-bottom: 0.3vw}
-
-.interact_item{width: 4vw; height: 8vw; margin: 1vw 1.5vw;}
-.interact_item:hover{filter: brightness(150%);}
 
 .crimson_backdrop{top: 16vw; left: 34vw;display: none;}
 .crimson_btn{top: 17.2vw; left: 35.4vw;}
@@ -184,6 +150,15 @@ text-align: center;}
 .shared_boss_backdrop{top: 36.6vw; left: 85.6vw; display: none;}
 .shared_boss_btn{top: 37.8vw; left: 87.4vw;}
 
+
+.quest_box{width: 24vw;height: 38.4vw; position: absolute; display: none; left: 9vw; top: 6.9vw; padding-left:1vw;
+    background-image: url('images/Boxes/quest_textbox.png'); background-size: 24vw;}
+
+
+/*Enemy Monster info*/
+.enemy{background-image: url('images/Boxes/quest_textbox_enemy.png'); background-size: 24vw;
+    font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167);font-size: 1.3vw; line-height: 1.8vw; font-weight: 500;}
+
 .enemy_sprite{position: absolute; top: 1.2vw ;max-width: 12vw;max-height: 14vw; left:1vw;}
 .enemy_small_sprite{position: absolute; top: 4vw ;max-width: 10vw;max-height: 10vw; left:1.3vw;}
 .enemy_tall_sprite{position: absolute; top: -1.2vw; max-width: 12vw; max-height: 15vw; left: 2.2vw}
@@ -211,12 +186,10 @@ text-align: center;}
 .enemy_toggle_btn2:hover{filter: brightness(150%);}
 
 
-
 .position_icons{max-width: 10vw; height: 1vw;}
 
 .enemy_numbers1{position: absolute; top:3.45vw; left: 6.7vw; }
 .enemy_numbers2{position: absolute; top:3.53vw; left: 19.5vw; }
-
 .enemy_numbers3{position: absolute; top:9.15vw; left: 6.7vw; line-height: 1.9vw; }
 .enemy_numbers4{position: absolute; top:9.15vw; left: 19.5vw; line-height: 1.9vw; }
 
@@ -229,11 +202,7 @@ display: flex; flex-direction: row; flex-wrap: wrap; background-color: black; ju
 .sidenav10{height: 19.5vw; width: 14.6vw}
 
 .enemy_port{display: flex; height: 4vw; margin: 0.3vw}
-.curio_port{display: flex; height: 4vw; margin: 0.3vw}
-
 .enemy_port:hover{filter: brightness(150%);}
-.curio_port:hover{filter: brightness(150%);}
-
 
 .lvl_btn{height: 2vw; position: absolute; left: 17vw; display: none;}
 .lvl_btn:hover{filter: brightness(150%);}
@@ -246,17 +215,229 @@ display: flex; flex-direction: row; flex-wrap: wrap; background-color: black; ju
 
 .hide_headers{position: absolute; top: 15vw; left: -0.3vw;  width: 24vw; height: 23vw; background-color: black;}
 
-#boss1{left: 80vw; top: 20.7vw;}
-#boss2{left: 83.6vw; top: 20.7vw;}
-#miniboss1{left: 87.2vw; top: 21.9vw;}
-#boss3{left: 80vw; top: 24.3vw;}
-#boss4{left: 83.6vw; top: 24.3vw;}
-#miniboss2 {left: 87.2vw; top: 25.9vw;}
-#boss5{left: 80vw; top: 27.9vw;}
-#boss6{left: 83.6vw; top: 27.9vw;}
-#miniboss3{left: 87.2vw; top: 29.9vw;}
-#boss7{left: 80vw; top: 31.5vw;}
-#boss8{left: 83.6vw; top: 31.5vw;}
+/*Curio info*/
+
+.curio{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167);font-size: 1.3vw; line-height: 1.9vw; font-weight: 500;}
+
+.curio_top_container{position: absolute; top: 0.6vw; left: 0vw;width: 23.7vw; height: 20vw; /*border: 1px solid red;*/
+text-align: center;}
+.curio_info{position: absolute; right: 0.5vw; top:0.1vw; width: 2vw;} 
+.curio_info:hover{filter: brightness(150%); width: 2.1vw; right: 0.4vw;}
+.result_icon{width: 1.4vw; position: absolute; padding-top: 0.2vw;}
+.provision_inter_icon{max-width: 1.4vw; max-height: 2vw;  position: absolute; padding-top: 0.3vw; left: 0.7vw}
+.result_desc{margin-left: 2vw;}
+
+.curio_result{left: 23.8vw; top: 27.7vw; text-align:start; padding-bottom:0.4vw; line-height: 2vw}
+.room_interact{top: 24.7vw;}
+
+.forced_universal{left: 23.6vw; top: -0.5vw}
+
+.interaction_desc{position: absolute; left: 23.8vw; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.8); padding:0.3vw 0.5vw 0.3vw 0.4vw;
+     width:max-content; font-size: 1.1vw; line-height: 1.8vw; display: none;}
+
+.curio_interaction_container{position: absolute; top: 27vw; left: 0vw;width: 23.7vw; height: 10vw;
+                             display: flex; justify-content: center;}
+.room_curio{top: 24vw;}
+.curio_sprite{max-height: 10vw; max-width: 16vw;}
+.room_sprite{max-height: 13vw; max-width: 20vw;}
+.curio_name{font-size: 2vw; padding-bottom: 0.3vw}
+
+.interact_item{width: 4vw; height: 8vw; margin: 1vw 1.5vw;}
+.interact_item:hover{filter: brightness(150%);}
+
+.curio_port{display: flex; height: 4vw; margin: 0.3vw}
+.curio_port:hover{filter: brightness(150%);}
+
+/*Boss Monster info*/
+.boss_box{width: 75vw; height: 40vw; position: absolute; left: 11vw; top: 6vw; display: none; font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167);
+    background-image: url(images/Boss_monsters/boss_panel_template.png);background-size: 75vw;}
+/*Boss Sprite Styling*/
+.boss_sprite{position:absolute;top: 2vw; left: 2.1vw; max-width: 16vw; max-height:14.5vw;}
+.tall_boss{max-width: 15vw; max-height: 18vw;}
+.med_short_boss{top: 3vw}
+.short_boss{top:4.5vw}
+.thin_boss{left: 6vw;}
+.medium_boss{left: 3.5vw}
+
+/*Flesh Sprite*/
+.flesh_sprite_container{position:absolute; left:1.5vw; top:3vw; height: 10vw; width: 19vw; }
+.quad_sprite{ position: absolute;max-height: 9vw; max-width: 5.5vw; }
+
+.heart_sprite{left: 3.8vw;top: 4.2vw;}
+.bone_sprite{left: 7.6vw;top:0vw}
+.head_sprite{left:11.8vw; top: 1.3vw}
+.flesh_parts_container{position: absolute; top:12.6vw; left:2vw; display:flex; justify-content: center;}
+.flesh_port{width: 3.5vw; height: 3.5vw; margin:0vw 0.3vw}
+.flesh_port:hover{filter: brightness(150%);}
+
+/*Boss Buttons*/
+
+.boss_lvl_btn{position: absolute; left: 1.3vw; height:2.5vw; }
+.app_boss{top:20vw;}
+.vet_boss{top:23.5vw;}
+.champ_boss{top:27vw;}
+
+.boss_close{position: absolute; top:0.8vw; right: 0.8vw; width: 1.5vw;}
+.boss_close:hover{filter: brightness(150%);}
+
+/*Info Icons*/
+
+/*Universal info*/
+.info{position: absolute; left: 1.2vw; top: 1.2vw; width: 2vw;} 
+.info:hover{filter: brightness(150%);}
+
+/*Shambler info*/
+.shambler_info{top:6.8vw;left: 46.5vw; width: 1.5vw;}
+.shambler_info_txt{top:12.8vw;left: 59.4vw;}
+.boss_quirk_info{top: 6.6vw; left: 38vw; width: 1.6vw;}
+.boss_quirk_info_txt{top: 12.5vw; left: 51vw; line-height: 1.5vw; max-width: 45vw;}
+
+/*Scrolling info*/
+.scroll_info{top: 9.2vw; left: 45vw;width: 1.5vw;filter: brightness(115%);} 
+.scrollable{top:14.9vw; left: 57.8vw; }
+
+/*Boss Locating info*/
+.find_boss{ left: 14.5vw; top: 6.9vw; line-height:1.5vw;}
+
+/*Additional Boss info*/
+.boss_additional_info{top: 6.6vw; left: 20vw; width: 1.6vw;}
+.boss_additional_info_txt{top: 12.5vw; left: 33vw; line-height: 1.5vw; max-width: 45vw;}
+
+/*Additional Boss Minion info*/
+.boss_minion_additional_info{top: 17.25vw; left: 2vw; width: 1.6vw;}
+.boss_minion_additional_info_txt{top: 23.1vw; left: 14.9vw; line-height: 1.6vw;}
+
+/*Additional Minion info*/
+.minion_additional_info{width: 1.5vw; left:0.8vw; top: 1vw;}
+
+/*Minion Shared Lifelink info*/
+.lifelink_info{top: 17.3vw; left: 15vw; width: 1.5vw;}
+.lifelink_info_txt{top: 23.1vw; left: 28vw;}
+
+/*Trophy Info*/
+.trophy_info{top: 25.8vw; left: 17vw; width: 1.5vw;}
+.trophy_info_txt{top: 31.6vw; left: 30vw;}
+
+/*Boss Header*/
+.boss_header_container{position:absolute; top: 1.3vw; left: 20vw; width: 20vw; height: 5.1vw;  text-align: center;
+                        font-family: dd_logo; color:rgb(199, 179, 107);font-size: 1.5vw; line-height: 2.3vw;}
+.main_boss_header{font-size:2vw;}
+.foretext{color:rgb(93, 90, 78);}
+
+/*Boss Nav*/
+
+.boss_nav_container{position:absolute; top: 1.3vw; left: 44.6vw; width: 28.8vw; height: 7.1vw;  text-align: center;
+    font-family: dd_logo; color:rgb(199, 179, 107);font-size: 1.5vw; line-height: 2.3vw; 
+    display: flex; justify-content: center;  align-items: center; flex-wrap: wrap;}
+.boss_port{display: flex; height: 3vw; width: 3vw; margin: 0.2vw 0.6vw;}
+.boss_port:hover{filter: brightness(150%);}
+
+/*Boss Difficulty Toggle*/
+
+.boss_app_btn{position:absolute; top: 1.1vw; left: 43.1vw; height: 2vw;}
+.boss_vet_btn{position:absolute; top: 3vw; left: 43.1vw; height: 2vw;}
+.boss_champ_btn{position:absolute; top: 4.9vw; left: 42.1vw; height: 2vw;}
+.boss_darkest_btn{position:absolute; top: 6.8vw; left: 41.3vw; height: 2vw;}
+.boss_diff_btn{position:absolute; height: 1.5vw;}
+.boss_diff_btn:hover{filter: brightness(150%);}
+
+/*Boss Stats*/
+.boss_stat_container{position: absolute; left: 20vw; width: 21.5vw; top: 9vw; height: 20vw; 
+    font-size: 1.4vw; line-height: 1.8vw; }
+.boss_resist_container{position: absolute; left: 20vw; width: 21.5vw; top:19.5vw; height: 20vw; 
+    font-size: 1.4vw; line-height: 1.8vw; font-weight: 500;}
+.boss_stats_header{position: absolute; left: 20vw; width: 20vw; top: 6.6vw;  text-align: center; font-size: 1.5vw;}
+.boss_resists_header{position: absolute; left: 20vw; width: 20vw; top: 17.3vw;  text-align: center; font-size: 1.5vw;}
+
+.stat_header1{position: absolute; left: 0.5vw; width: 10.5vw; top: 0vw; height: 10vw; }
+.stat_header2{position: absolute; left: 13vw; width: 10.5vw; top: 0vw; height: 10vw; }
+.statline1{position: absolute; left: 5.5vw; width: 10vw; top: 0vw; height: 10vw; }
+.statline2{position: absolute; left: 19vw; width: 10vw; top: 0vw; height: 10vw; }
+
+/*Boss Minions*/
+.boss_minion_port_container{position: absolute; top: 19.4vw; left: 2vw; width:15vw; height:6vw;
+                            display: flex; justify-content: center;  align-items: center;}
+.boss_minions_header{position: absolute; left: 2vw; width: 15vw; top: 17.35vw;  text-align: center; font-size: 1.5vw;}
+.minion_port_img{height: 3.5vw; width: 3.5vw;display: flex; vertical-align: middle; margin:0 0.3vw }
+.minion_port_img:hover{filter: brightness(150%);}
+
+/*Boss Trinkets*/
+
+.boss_trinket_container{position: absolute; top: 27.8vw; left: 2.4vw; width:17vw; height:10.5vw; 
+    display: flex; justify-content: center;  align-items: center; }
+.boss_trinkets_header{position: absolute; left: 2.5vw; width: 15vw; top: 25.8vw;  text-align: center; font-size: 1.5vw; }
+.boss_trinket{height: 7vw; width: 3.5vw;display: flex; vertical-align: middle; margin: 0 0.2vw;}
+.boss_trinket:hover{filter: brightness(150%);}
+
+
+.boss_trinket_desc{position: absolute; top: 29.55vw; left: 12.85vw; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.8); padding:0.3vw 0.4vw 0.3vw 0.4vw;
+    text-align: center; width:max-content; font-size: 1vw; line-height: 1.5vw; display: none;font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167);}
+
+.shrieker1{left:7vw;}
+.shrieker2{left:10.87vw;}
+.shrieker3{left:14.8vw;}
+.shrieker4{left:18.7vw;}
+.bosstrinket1{left:5.05vw;}
+.bosstrinket2{left:9vw;}
+.bosstrinket4{left:16.8vw;}
+.bosstrinket5{left:20.7vw;}
+/*Boss Skills*/
+
+.boss_skill_container{position: absolute; top: 27.9vw; left: 21.5vw; width:22vw; height:10vw; 
+    font-size: 1.3vw; line-height: 2vw; font-weight: 500;}
+.boss_skills_header{position: absolute; left: 21.1vw; width: 20vw; top: 25.8vw;  text-align: center; font-size: 1.5vw;  }
+
+.boss_skill_desc_container{position: absolute; top: 28vw; left: 40vw; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.8); padding:0.3vw 0.4vw 0.3vw 0.4vw;
+    text-align: center; width:max-content;font-size: 0.9vw; line-height: 1.4vw; display: none; font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167);}
+
+
+/*Boss Lore/Strategy Toggle*/
+
+.boss_lore_btn{position: absolute; left: 74.3vw; top: 11vw; width: 3vw}
+.boss_strategy_btn{position: absolute; left: 74.3vw; top: 18vw; width: 3vw}
+.boss_lore_btn:hover{filter: brightness(150%);}
+.boss_strategy_btn:hover{filter: brightness(150%);}
+/*Boss Lore and Strategy*/
+
+.boss_lore_header{position: absolute; left: 45.3vw; width: 28.5vw; top: 9.25vw;  text-align: center; font-size: 1.5vw; }
+.boss_side_text_container{position:absolute; left: 45vw; top: 11vw; width: 28.9vw; height: 26vw; font-size: 1.1vw; line-height: 1.6vw; font-weight: 500; padding: 0 0.3vw; text-align: center; overflow: auto;}
+.lore_headertxt{font-size: 1.6vw; text-align: center;  line-height: 2.2vw;padding-top: 0.7vw; }
+
+.boss_side_text_container::-webkit-scrollbar {width: 5px;}
+.boss_strategy{display: block; font-size: 1vw; line-height: 1.6vw;}
+
+
+/*Boss Minion Info*/
+.minion_stats{position:absolute;font-size: 1.4vw; line-height: 2.2vw; font-weight: 500; padding: 0.2vw; top: 1.4vw}
+.boss_minion_infobox{
+    position:absolute;top: 16.8vw; left:17vw; width: 39vw; height: 22vw;
+    background-image: url(images/Boss_monsters/minion_infobox_bg.png); background-size: contain;
+}
+.boss_minion_infobox_shared{position:absolute;top: 16.8vw; left:17vw; width: 39vw; height: 22vw; }
+
+.minion_close{position: absolute; top:0.7vw; right: 0.6vw; width: 1.3vw;}
+.minion_close:hover{filter: brightness(150%);}
+
+.boss_minion_sprite{position:absolute; top: 1vw; left: 1.5vw;  max-width: 8.5vw; max-height: 9vw; }
+.thin_minion{left: 3vw;}
+.small_thin_minion{left: 3vw; top: 1.5vw;}
+
+.boss_minion_name{position: absolute; top: 10.5vw;left:2vw; font-size: 2vw; line-height: 3vw; }
+
+.boss_minion_skill_container{position:absolute; top: 11.5vw; left: 23.5vw; }
+.minion_skill_desc{top: 28.6vw; left: 55.9vw;}
+
+.boss_minion_stat_header_container1{left: 11vw;}
+.boss_minion_stat_number_container1{left: 17.8vw;}
+
+.boss_minion_stat_header_container2{left: 25vw;}
+.boss_minion_stat_number_container2{left: 31.8vw;}
+
+.boss_minion_resist_header_container1{top: 13.7vw; left: 1vw;}
+.boss_minion_resist_header_container2{top: 13.7vw; left: 11vw;}
+
+.boss_minion_resist_number_container1{top: 13.7vw; left: 6vw;}
+.boss_minion_resist_number_container2{top: 13.7vw; left: 16.8vw;}
 
 
 /*Quirk Glossary Styling*/
@@ -322,6 +503,8 @@ display: flex; flex-direction: row; flex-wrap: wrap; background-color: black; ju
 .row2num12{top: 37.1vw; left:17.4vw;}
 
 
+
+
 /*Provision Box Styling*/
 
 .provision_backdrop{position:absolute; width: 90vw; height: 45vw}
@@ -333,9 +516,10 @@ display: flex; flex-direction: row; flex-wrap: wrap; background-color: black; ju
                     flex-wrap: wrap; }
 .supply_item{width: 3.9vw; height: 7.2vw; margin: 0.25vw 0.3vw 0.25vw 0.3vw; display: flex;}
 .supply_item:hover{filter: brightness(150%);}
-.provision_desc{ font-size: 1vw; line-height: 1.3vw; font-weight: 500;}
+.provision_desc{font-size: 1vw; line-height: 1.3vw; font-weight: 500;}
 
-.desctop_space{margin-top: 0.3vw;} .descbtm_space{margin-bottom: 0.2vw;}
+.desctop_space{margin-top: 0.3vw;} 
+.descbtm_space{margin-bottom: 0.2vw;}
 #food_desc{left:-8.7vw} 
 #shovel_desc{left:-1vw} 
 #antivenom_desc{left:3.3vw} 
@@ -381,6 +565,7 @@ display: flex; flex-direction: row; flex-wrap: wrap; background-color: black; ju
 .lootflex{width: 36vw; height: 16.7vw;  margin: 0.3vw 0 0 0.3vw; display:flex;flex-wrap: wrap; }
 .loot_item{position: absolute; width: 3.4vw; height: 7vw; }
 .loot_item:hover{filter: brightness(150%);}
+
 .slot1{ top: 0.9vw; left: 1vw}
 .slot2{top: 0.9vw; left: 5.1vw}
 .slot3{top: 0.9vw; left: 9.15vw}
@@ -398,7 +583,8 @@ display: flex; flex-direction: row; flex-wrap: wrap; background-color: black; ju
 .slot15{top:9.2vw; left: 25.4vw}
 .slot16{top:9.2vw; left: 29.4vw}
 
-.loot_desc{font-size: 1vw; line-height: 1.4vw; font-weight: 500;}
+.loot_desc{ font-size: 1vw; line-height: 1.4vw; font-weight: 500;}
+
 #citrine_desc{top: 0.95vw; left: 5.1vw;}
 #jade_desc{top: 0.95vw; left: 9.15vw}
 #onyx_desc{top: 0.95vw; left: 13.2vw}
@@ -423,7 +609,6 @@ display: flex; flex-direction: row; flex-wrap: wrap; background-color: black; ju
 .champion{color: rgb(149, 48, 48)}
 
 /*Lower Right Button Styling*/
-
 .district_closed{position:absolute; top: 44.2vw; left: 69.3vw; width: 4vw; height: 4.7vw}
 .district_open{position:absolute; top: 44.2vw; left: 69.3vw; width: 4vw; height: 4.7vw; display: none;}
 .estate_overlay{position: absolute; height: 6.4vw; width: 5vw; display: none;}
@@ -447,7 +632,6 @@ display: flex; flex-direction: row; flex-wrap: wrap; background-color: black; ju
 
 .setting_icon{position: absolute; top: 44.2vw; left: 95.2vw; width: 3.1vw;height: 4.1vw}
 .setting_overlay{ top: 43.2vw; left: 94.3vw}
-
 
 /*Background element Styling*/
 .back_arrow{position: absolute; top: 4.3vw; left: 11.8vw; height: 2vw;}
@@ -509,56 +693,14 @@ display: flex; flex-direction: row; flex-wrap: wrap; background-color: black; ju
 
 .header_bg{position: absolute; left: 6vw; top: 64.7vw;  width: 60vw; height: 6vw;}
 
-#abombg{background-image: url(images/Hero_boxes/abomheader3.png); background-size: 44vw;}
-#antibg{background-image: url(images/Hero_boxes/anti_header.png); background-size: 44vw;}
-#arbbg{background-image: url(images/Hero_boxes/arb_header.png); background-size: 44vw;}
-#bhbg{background-image: url(images/Hero_boxes/bh_header.png); background-size: 44vw;}
-#crusbg{background-image: url(images/Hero_boxes/crus_header.png); background-size: 44vw;}
-#flagbg{background-image: url(images/Hero_boxes/flag_header.png); background-size: 44vw;}
-#grbg{background-image: url(images/Hero_boxes/gr_header.png); background-size: 44vw;}
-#hellbg{background-image: url(images/Hero_boxes/hell_header.png); background-size: 44vw;}
-#hwmbg{background-image: url(images/Hero_boxes/hwm_header.png); background-size: 44vw;}
-#hmbg{background-image: url(images/Hero_boxes/hm_header.png); background-size: 44vw;}
-#jesbg{background-image: url(images/Hero_boxes/jes_header.png); background-size: 44vw;}
-#lepbg{background-image: url(images/Hero_boxes/lep_header.png); background-size: 44vw;}
-#maabg{background-image: url(images/Hero_boxes/maa_header.png); background-size: 44vw;}
-#muskbg{background-image: url(images/Hero_boxes/musk_header.png); background-size: 44vw;}
-#occbg{background-image: url(images/Hero_boxes/occ_header.png); background-size: 44vw;}
-#pdbg{background-image: url(images/Hero_boxes/pd_header.png); background-size: 44vw;}
-#sbbg{background-image: url(images/Hero_boxes/sb_header.png); background-size: 44vw;}
-#vesbg{background-image: url(images/Hero_boxes/ves_header.png); background-size: 44vw;}
-
-/*Hero Sprite Styling*/
-.sprite_abom{position: absolute; top: 85.4vw; left: 7vw; width: 7.5vw; height: 16vw; display: none;}
-.sprite_anti{position: absolute; top: 85.9vw; left: 7.2vw; width: 8.4vw; height: 16vw; display: none;}
-.sprite_arb{position: absolute; top: 84.5vw; left: 4.7vw;  width: 10.5vw; height: 17vw; display: none;}
-.sprite_bh{position: absolute; top: 84.9vw; left: 6.7vw; width: 9vw; height: 16.7vw; display: none;}
-.sprite_crus{position: absolute; top: 82.7vw; left: 6.7vw; width: 9.5vw; height: 19vw; display: none;}
-.sprite_flag{position: absolute; top: 85vw; left: 6vw; width: 11vw; height: 16.5vw;  display: none;} 
-.sprite_gr{position: absolute; top: 84vw; left: 6.8vw; width: 8.3vw; height: 17.5vw; display: none;}
-.sprite_hell{position: absolute; top: 81.5vw; left: 7.8vw; width: 10vw; height: 20vw; display: none;}
-.sprite_hwm{position: absolute; top: 84.5vw; left: 7.3vw; width: 10vw; height: 17.1vw; display: none;}
-.sprite_hm{position: absolute; top: 85.7vw; left: 4.5vw; width: 15vw; height: 16vw; display: none;}
-.sprite_jes{position: absolute; top: 85.3vw; left: 6.5vw; width: 12vw; height: 16vw; display: none;}
-.sprite_lep{position: absolute; top: 84vw; left: 6vw; width: 9.2vw; height: 17.5vw; display: none;}
-.sprite_maa{position: absolute; top: 85.3vw; left: 6vw; width: 12vw; height: 16vw; display: none;}
-.sprite_musk{position: absolute; top: 82.5vw; left: 7vw; width: 8.1vw; height: 19vw; display: none;}
-.sprite_occ{position: absolute; top: 85.2vw; left: 6.8vw;  width: 10vw; height: 16.8vw; display: none;}
-.sprite_pd{position: absolute; top: 85.6vw; left: 5.8vw; width: 11vw; height: 16vw; display: none;}
-.sprite_sb{position: absolute; top: 84.5vw; left: 6.7vw; width: 8.5vw; height: 16.8vw;  display:none;}
-.sprite_ves{position: absolute; top: 85.1vw; left: 6.5vw; width: 10vw; height: 16.5vw; display: none;}
 
 
 .shadow{position: absolute; top: 99.5vw; left: 6.6vw; width: 10vw; height: 4vw; } 
 .shadow_big{position: absolute; top: 89.5vw; left: 5vw; width: 12vw; height: 4.2vw; display: none;} 
 
 /*Hero Panel Button Styling*/
-.rename_button{position: absolute; top: 65.3vw; left: 4.4vw; width: 1.6vw;} 
 .close_btn{position: absolute; top: 64.6vw; right: 3.6vw; width: 1.6vw;} 
-.swapskin_btn{position:absolute; left: 3.6vw; top: 101.8vw; width: 1.6vw;}
-.rename_button:hover{filter: brightness(150%);}
 .close_btn:hover{filter: brightness(150%);}
-.swapskin_btn:hover{filter: brightness(150%);}
 
 .prev_btn{position: absolute; top: 104vw; left: 85vw; width: 5vw; height: 2.6vw; display: none;}
 .next_btn{position: absolute; top: 104vw; left: 90vw; width: 5vw; height: 2.6vw; display: none;}
@@ -567,8 +709,6 @@ display: flex; flex-direction: row; flex-wrap: wrap; background-color: black; ju
 
 
 /*Info Button Styling*/
-.info{position: absolute; width: 1.7vw;} 
-.info:hover{filter: brightness(150%);}
 
 .infobox{display: flex; justify-content: center;
         position: absolute; top: 87.6vw;left: 89.8vw; height: 2.2vw; width: 2.4vw;}
@@ -712,7 +852,6 @@ display: flex; flex-direction: row; flex-wrap: wrap; background-color: black; ju
      line-height: 1.5vw; text-align: start;}
 
 /*Misc Stats Styling*/
-
 .misc_container {position: absolute; top: 99.2vw; left: 52vw;
                 height:7.2vw; width:40vw; 
                 display: flex; justify-content: start; flex-direction: row;}
@@ -726,16 +865,6 @@ display: flex; flex-direction: row; flex-wrap: wrap; background-color: black; ju
 
 /*Camping and Combat Styling*/
 
-.camp_title{font-size: 1vw; line-height: 1.2vw;}
-.skill_title{font-size: 1vw; font-weight: 400;}
-
-.combat_skill_container{position: absolute; top: 73.5vw; left: 57.7vw;
-                        width: 35vw; height: 5vw;
-                        display: flex; justify-content: center;}
-
-.camping_skill_container{position: absolute; top: 82vw; left: 57.7vw;
-                         width: 35vw; height: 5vw;
-                         display: flex; justify-content: center;}
 
 .desc_box{position: absolute; top: 4.4vw; left: -3vw;
          height: fit-content; width:max-content; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.8);
@@ -743,38 +872,7 @@ display: flex; flex-direction: row; flex-wrap: wrap; background-color: black; ju
          text-align: center; padding: 0 0.6vw 0.3vw 0.6vw; display: none;
 }
 
-.camp_desc{position: absolute; top: 4.4vw; left:2vw;
-    height: fit-content; width:max-content; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.8);
-    font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 0.8vw; line-height: 1.5vw; font-weight: 500;
-    text-align: center; padding: 0.2vw 0.6vw 0.3vw 0.6vw; display: none;
-}
-.uses_text{font-family: 'Ubuntu', sans-serif; color: rgb(199, 179, 107); line-height: 1vw; margin-top: 0.3vw;}
 
-
-.ability_grid{width: 4.4vw; height:4.8vw; position: absolute; top: -0.6vw;} 
-.skill_icon{height: 4vw; width: 4vw; margin: 0 0.3vw; position: relative}
-.skill:hover .skill_icon {filter: brightness(150%);}
-
-/*Positioning*/
-.pos_ally{width: 0.5vw; height: 0.5vw;  border-radius: 0.5vw; margin: 0 0.15vw; background-color: rgb(199, 179, 107); }
-.pos_enemy {width: 0.5vw; height: 0.5vw;  border-radius: 0.5vw; margin: 0 0.15vw; background-color: rgb(160, 43, 32);}
-.pos_dot{width: 0.5vw; height: 0.5vw; background-color: rgb(54, 54, 55); border-radius: 0.5vw; margin: 0 0.15vw;}
-.pos_container{display: flex; justify-content: center; margin-top: 0.4vw; margin-bottom: 0.2vw;}
-.blank_space{width: 1.5vw}
-.desc_text{line-height: 1vw; font-size: 0.8vw;}
-
-/*Equipment and Trinket Styling*/
-
-.trinket1{margin-left: 6.5vw;}
-.trinket2{margin-left: 0vw;}
-
-.equipment{height: 8.3vw; margin-right: 0.5vw; padding: 0;}
-.equipment:hover{filter: brightness(150%);}
-
-.equip_box{position: absolute; top: 94.5vw; left:23.2vw; width: 35vw; display: flex;}
-.trinket_box{top: 0vw;padding: 0.3vw;}
-
-.left1{left: 20.3vw;}  .left2{left: 24.9vw;}
 
 /*Tooltip Colorcoding*/
 
@@ -786,331 +884,14 @@ display: flex; flex-direction: row; flex-wrap: wrap; background-color: black; ju
 .crimson_court{color:rgb(162, 42, 23)}
 .cc_text{color:rgb(92, 50, 58)}
 .set_bonus{color:rgb(128, 191, 116)}
+.trophy{color:rgb(217, 185, 116)}
+.ancestral{color:rgb(207, 59, 33);}
 
 .equip_desc{position: absolute; top: -2.6vw;
     height: fit-content; width:max-content; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.8);
     font-family: 'Ubuntu', sans-serif; color: rgb(206, 58, 33); font-size: 1vw; line-height: 1.5vw; font-weight: 500;
     text-align: center; padding:0.2vw; display: none;
 }
-
-/*Equipment Positioning */
-
-#weaponabom{left:-2vw}  #armorabom{left:2.5vw}
-#weaponanti{left:-2vw}  #armoranti{left:0.8vw}
-#weaponarb{left:-0.2vw}  #armorarb{left:4.55vw}
-#weaponbh{left:-2.1vw}  #armorbh{left:3.4vw}
-#weaponcrus{left:-2.1vw}  #armorcrus{left:2.1vw}
-#weaponflag{left:-0.83vw}  #armorflag{left:3.1vw}
-#weapongr{left:-1.9vw}  #armorgr{left:3.8vw}
-#weaponhell{left:-1.85vw}  #armorhell{left:4vw}
-#weaponhwm{left:-3.3vw}  #armorhwm{left:2.7vw}
-#weaponhm{left:-0.8vw}  #armorhm{left:2.7vw}
-#weaponjes{left:-1.3vw}  #armorjes{left:2.2vw}
-#weaponlep{left:-2.15vw}  #armorlep{left:3.8vw}
-#weaponmaa{left:-0.4vw}  #armormaa{left:3.7vw}
-#weaponmusk{left:-0.3vw}  #armormusk{left:1.4vw}
-#weaponocc{left:-2vw}  #armorocc{left:3vw}
-#weaponpd{left:-2.6vw}  #armorpd{left:1.7vw}
-#weaponsb{left:-1.95vw}  #armorsb{left:4.85vw}
-#weaponves{left:-2vw}  #armorves{left:1.9vw}
-
-
-/*AoE Skills*/
-.cleave_double{border-top:0.18vw solid rgb(160, 43, 32); width:0.8vw;
-    position: absolute; top: 0.6vw;}
-
-.cleave_triple{border-top:0.18vw solid rgb(160, 43, 32); width:1.6vw;
-        position: absolute; top: 0.6vw;}
-
-.quad_cleave{border-top:0.18vw solid rgb(160, 43, 32); width:2.4vw;
-    position: absolute; top: 0.6vw;}
-.pos2_3abom{left: 11.55vw}
-.pos1_2abom{left: 6vw}
-
-.pos1_2arbmusk{left: 6.2vw}
-.pos3_4arbmusk{left: 8.7vw}
-.quad_arbmusk{left:7.7vw}
-
-.pos1_2crus{left:5.5vw}
-
-.pos3_4flag{left:12.4vw}
-
-.pos2_3gr{left: 9.3vw;}
-
-.pos1_2hell{left:7.6vw; top: 1.9vw}
-.pos1_2_3hell{left:11vw;}
-
-.pos1_2_3hwm{left:9.9vw;}
-
-.quad_hm{left:5.5vw;}
-
-.quad_jes{left:14vw; top: 1.9vw;}
-.pos2_3jes{left:9vw;}
-
-.pos1_2lep{left:5.5vw;}
-
-.quad_maa{left:12.7vw}
-
-.pos3_4occ{left: 7.2vw;}
-
-.pos3_4pd1{left:7.1vw}
-.pos3_4pd2{left:7.1vw; top: 1.9vw;}
-
-.quad_sb{left: 5.6vw}
-
-/*Combat and Camping skill positioning*/
-
-#grid1{ left: 1.5vw; }
-#grid2{ left: 6.1vw; }
-#grid3{ left: 10.7vw; }
-#grid4{ left: 15.3vw; }
-#grid5{left: 19.85vw;}
-#grid6{ left: 24.45vw; }
-#grid7{ left: 29.1vw; }
-
-#FlagGrid1{left:8.4vw;}
-#FlagGrid2{left:13vw;}
-#FlagGrid3{left:17.6vw;}
-#FlagGrid4{left:22.2vw;}
-
-#combatabom1{left: -4.8vw}
-#combatabom2{ left: 3.6vw;}
-#combatabom3{ left: 3.4vw}
-#combatabom4{ left: 14.8vw}
-#combatabom5{ left: 17.15vw}
-#combatabom6{ left: 22vw}
-#combatabom7{ left: 21.8vw}
-
-#restabom1{ left: 11.6vw;}
-#restabom2{ left: 16.8vw;}
-#restabom3{ left: 20.45vw;}
-#restabom4{ left: 26.5vw;}
-
-#combatanti1{left:-1vw}
-#combatanti2{ left:-1.2vw;}
-#combatanti3{ left: 6.6vw}
-#combatanti4{ left: 11.9vw}
-#combatanti5{ left: 17vw}
-#combatanti6{ left: 22.35vw}
-#combatanti7{ left: 26.1vw}
-
-#restanti1{ left: 11.1vw;}
-#restanti2{ left: 16.5vw;}
-#restanti3{ left: 20.5vw;}
-#restanti4{ left: 25.2vw;}
-
-#combatarb1{left: -1.2vw;}
-#combatarb2{ left: 2.4vw;}
-#combatarb3{ left: 6.55vw}
-#combatarb4{ left: 12.3vw}
-#combatarb5{ left: 17.3vw}
-#combatarb6{ left: 20.65vw}
-#combatarb7{ left: 24.8vw}
-
-#restarb1{ left: 11.9vw;}
-#restarb2{ left: 17.35vw;}
-#restarb3{ left: 19.6vw;}
-#restarb4{ left: 27.7vw;}
-
-#combatmusk1{left: -1.1vw;}
-#combatmusk2{ left: 2.4vw;}
-#combatmusk3{ left: 6.55vw}
-#combatmusk4{ left: 12.3vw}
-#combatmusk5{ left: 17.3vw}
-#combatmusk6{ left: 20.65vw}
-#combatmusk7{ left: 24.8vw}
-
-#restmusk1{ left: 11.9vw;}
-#restmusk2{ left: 17.35vw;}
-#restmusk3{ left: 19.6vw;}
-#restmusk4{ left: 27.7vw;}
-
-
-#combatbh1{left: -1.1vw}
-#combatbh2{ left: 2.1vw;}
-#combatbh3{ left: 8.2vw}
-#combatbh4{ left: 12.2vw}
-#combatbh5{ left: 17.5vw}
-#combatbh6{ left: 22vw}
-#combatbh7{ left: 21.8vw}
-
-#restbh1{ left: 11.5vw;}
-#restbh2{ left: 13.5vw;}
-#restbh3{ left: 20.5vw;}
-#restbh4{ left: 24.5vw;}
-
-#combatcrus1{left: -1vw}
-#combatcrus2{ left: 3.7vw;}
-#combatcrus3{ left: 8.2vw}
-#combatcrus4{ left: 12.85vw}
-#combatcrus5{ left: 19vw}
-#combatcrus6{ left: 22vw}
-#combatcrus7{ left: 28.2vw}
-
-#restcrus1{ left: 11.5vw;}
-#restcrus2{ left: 16.5vw;}
-#restcrus3{ left: 21.9vw;}
-#restcrus4{ left: 25.4vw;}
-
-#combatflag1{left: -3.7vw}
-#combatflag2{ left: -1.3vw;}
-#combatflag3{ left: -0.5vw}
-#combatflag4{ left: 10.5vw}
-#combatflag5{ left: 8.8vw}
-#combatflag6{ left: 23.7vw}
-#combatflag7{ left: 21.6vw}
-
-#restflag1{ left: 6.5vw;}
-#restflag2{ left: 10.9vw;}
-#restflag3{ left: 15.9vw;}
-#restflag4{ left: 20.8vw;}
-
-#combatgr1{left: -1vw}
-#combatgr2{ left: 3.5vw;}
-#combatgr3{ left: 5.6vw}
-#combatgr4{ left: 6.7vw}
-#combatgr5{ left: 13.3vw}
-#combatgr6{ left: 16.9vw}
-#combatgr7{ left: 26.9vw}
-
-#restgr1{ left: 13.65vw;}
-#restgr2{ left: 17vw;}
-#restgr3{ left: 19.8vw;}
-#restgr4{ left: 24.9vw;}
-
-#combathell1{left: -1vw}
-#combathell2{ left: 3.7vw;}
-#combathell3{ left: 6.45vw}
-#combathell4{ left: 12.8vw}
-#combathell5{ left: 12.4vw}
-#combathell6{ left: 22.6vw}
-#combathell7{ left: 21.2vw}
-
-#resthell1{ left: 9.7vw;}
-#resthell2{ left: 17.3vw;}
-#resthell3{ left: 21.5vw;}
-#resthell4{ left: 26.8vw;}
-
-#combathwm1{left: -1vw}
-#combathwm2{ left: 3.6vw;}
-#combathwm3{ left: 7.6vw}
-#combathwm4{ left: 10.8vw}
-#combathwm5{ left: 12.5vw}
-#combathwm6{ left: 14.7vw}
-#combathwm7{ left: 21.7vw}
-
-#resthwm1{ left: 12.3vw;}
-#resthwm2{ left: 15.3vw;}
-#resthwm3{ left: 19.8vw;}
-#resthwm4{ left: 22.6vw;}
-
-#combathm1{left: -1.05vw}
-#combathm2{ left: 3.55vw;}
-#combathm3{ left: 6.7vw}
-#combathm4{ left: 12.6vw}
-#combathm5{ left: 18.2vw}
-#combathm6{ left: 23.7vw}
-#combathm7{ left: 26.7vw}
-
-#resthm1{ left: 8.9vw;}
-#resthm2{ left: 17.5vw;}
-#resthm3{ left: 21.5vw;}
-#resthm4{ left: 24.7vw;}
-
-#combatjes1{left: -0.8vw}
-#combatjes2{ left: 1.3vw;}
-#combatjes3{ left: 0.9vw}
-#combatjes4{ left: 4.4vw}
-#combatjes5{ left: 12.1vw;}
-#combatjes6{ left: 21.5vw}
-#combatjes7{ left: 26.2vw}
-
-#restjes1{ left: 12.7vw;}
-#restjes2{ left: 14.95vw;}
-#restjes3{ left: 22.5vw;}
-#restjes4{ left: 27vw;}
-
-#combatlep1{left: -0.9vw}
-#combatlep2{ left: 3.55vw;}
-#combatlep3{ left: 3.3vw}
-#combatlep4{ left: 5.7vw}
-#combatlep5{ left: 19.4vw}
-#combatlep6{ left: 16.6vw}
-#combatlep7{ left: 25vw}
-
-#restlep1{ left: 11.8vw;}
-#restlep2{ left: 16.2vw;}
-#restlep3{ left: 22.4vw;}
-#restlep4{ left: 26.1vw;}
-
-#combatmaa1{left: -0.8vw}
-#combatmaa2{ left: 3vw;}
-#combatmaa3{ left: 1.35vw}
-#combatmaa4{ left: 13.85vw}
-#combatmaa5{ left: 6.3vw}
-#combatmaa6{ left: 20.1vw}
-#combatmaa7{ left: 26.9vw}
-
-#restmaa1{ left: 11.4vw;}
-#restmaa2{ left: 17.3vw;}
-#restmaa3{ left: 22.7vw;}
-#restmaa4{ left: 24.6vw;}
-
-#combatocc1{left: -1.1vw}
-#combatocc2{ left: 3.6vw;}
-#combatocc3{ left: 6.7vw}
-#combatocc4{ left: 13vw}
-#combatocc5{ left: 15.8vw}
-#combatocc6{ left: 22.1vw}
-#combatocc7{ left: 26.8vw}
-
-#restocc1{ left: 12.4vw;}
-#restocc2{ left: 14.8vw;}
-#restocc3{ left: 22.4vw;}
-#restocc4{ left: 24.6vw;}
-
-#combatpd1{left: -3.4vw}
-#combatpd2{ left: 3.7vw;}
-#combatpd3{ left: 8.3vw}
-#combatpd4{ left: 12.9vw}
-#combatpd5{ left: 17.4vw}
-#combatpd6{ left: 22.1vw}
-#combatpd7{ left: 24.6vw}
-
-#restpd1{ left: 10.6vw;}
-#restpd2{ left: 18.5vw;}
-#restpd3{ left: 20.4vw;}
-#restpd4{ left: 26.3vw;}
-
-#combatsb1{left: -1vw}
-#combatsb2{ left: -0.5vw;}
-#combatsb3{ left: 8.3vw}
-#combatsb4{ left: 12.9vw}
-#combatsb5{ left: 12.5vw}
-#combatsb6{ left: 22.1vw}
-#combatsb7{ left: 27.5vw}
-
-#restsb1{ left: 10.6vw;}
-#restsb2{ left: 17vw;}
-#restsb3{ left: 20.2vw;}
-#restsb4{ left: 25.7vw;}
-
-#combatves1{left: -1vw}
-#combatves2{ left: 3.6vw;}
-#combatves3{ left: 8.4vw}
-#combatves4{ left: 14.5vw}
-#combatves5{ left: 18.7vw}
-#combatves6{ left: 20.5vw}
-#combatves7{ left: 26.7vw}
-
-#restves1{ left: 12.7vw;}
-#restves2{ left: 14.6vw;}
-#restves3{ left: 19.4vw;}
-#restves4{ left: 25.7vw;}
-
-#genericamp1{ left: 0vw}
-#genericamp2{ left: 4.3vw}
-#genericamp3{left: 8.1vw}
 
 
 
