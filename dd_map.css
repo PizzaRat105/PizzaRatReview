@@ -393,7 +393,7 @@ text-align: center;}
 
 /*Boss Lore/Strategy Toggle*/
 
-.boss_lore_btn{position: absolute; left: 74.3vw; top: 11vw; width: 3vw}
+.boss_lore_btn{position: absolute; left: 74.3vw; top: 11.4vw; width: 3vw}
 .boss_strategy_btn{position: absolute; left: 74.3vw; top: 18vw; width: 3vw}
 .boss_lore_btn:hover{filter: brightness(150%);}
 .boss_strategy_btn:hover{filter: brightness(150%);}
