@@ -242,8 +242,9 @@ const BossStrategy = [
         strategycontent:[
             "The Shrieker is an Event Boss that is fought in the Weald at the Shrieker's Nest. The Shrieker is accompanied by his Nest which he uses to shuffle himself to the front or the back ranks.",
             "The Nest can be destroyed for riches(See Icon to the Left of Related Enemies). And winning the encounter via surviving until the boss flees or killing it can grant unique Corvid's Quirks (See Icon to the Right of Stats)",
-            "In terms of actually slaying the boss, due to its sky-high DODGE Accuracy trinkets are highly recommended, with Heroes that can target both the front and back ranks with High Damage moves (Be it with Mark Synergy or not) due to the Shrieker moving to the front or back positions constantly..",
-            "In terms of surviving the encounter, the easiest/ most consistent way is to bring a Guarder with high PROT or DODGE with a Healer to Heal off any Damage the Guarder may take or using 1 Leper with PROT trinkets.",
+            "In terms of actually slaying the boss, due to its sky-high DODGE Accuracy trinkets are highly recommended, with Heroes that can target both the front and back ranks with High Damage moves (Be it with Mark Synergy or not) due to the Shrieker moving to the front or back positions constantly.",
+             "Riposte is also quite potent with the shrieker having a good few moves that target multiple Heroes. 1 or more Jesters can do well thanks to them being able to quickly charge up Finale and use it for good Damage with essentially no risk of Missing.",
+              "In terms of surviving the encounter, the easiest/ most consistent way is to bring a Guarder with high PROT or DODGE with a Healer to Heal off any Damage the Guarder may take or using 1 Leper with PROT trinkets.",
         ]
     },
     {
