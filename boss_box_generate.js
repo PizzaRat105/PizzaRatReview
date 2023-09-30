@@ -52,50 +52,52 @@ const BossLore = [
         containerid: "necromancer_lore_container",
         headertxt: " Towering. Fierce. Terrible. Nightmare Made Material.",
         lorecontent:[
-            "The Ancestor had been partaking in rituals involving blood sacrifice, which is difficult to master. To summon beings from beyond into our reality, an adequate physical vessel with the proper utterances at precise intervals is needed.",
-            "After failing  for a time, the Ancestor soon learned that the  condition of the host's meat was a critical factor, the best results coming from pigs, whose flesh is most like that of man.",
-            "In light of this discovery, the Ancestor at last succeeded to bring the Swine Prince into our reality, where it resided in the Warrens and required prodigious amounts of meat to sustain itself.",
-            "Thankfully, this was but a trifling concern thanks to the Ancestor having access to a village full of it in the form of the citizens of the Hamlet at the time.",
+            "Mastery over life and death being among the top of the Ancestor's to-do list, he invited a delegation of experts from overseas in order to plumb the depths of their knowledge and share with them certain techniques and alchemical processes he had found to yield wondrous and terrifying results. ",
+            "Having learned all he could from the scholars, the Ancestor murdered them in their sleep and brought them back from the dead with much of their inteklect intact.",
+            "Now freed from the trappings of their humanity, they plied their terrible trade anew: the dead reviving the dead, on and on, down the years. Forever.",
+            "The scholars now rule the Ruins as Necromancers, raising an endless number of undead soldiers.",
         ]
     },
     {
         containerid: "prophet_lore_container",
         headertxt: " The Madman Hides There, Behind the Pews, Spouting His Mindless Drivel.",
         lorecontent:[
-            "The Ancestor had been partaking in rituals involving blood sacrifice, which is difficult to master. To summon beings from beyond into our reality, an adequate physical vessel with the proper utterances at precise intervals is needed.",
-            "After failing  for a time, the Ancestor soon learned that the  condition of the host's meat was a critical factor, the best results coming from pigs, whose flesh is most like that of man.",
-            "In light of this discovery, the Ancestor at last succeeded to bring the Swine Prince into our reality, where it resided in the Warrens and required prodigious amounts of meat to sustain itself.",
-            "Thankfully, this was but a trifling concern thanks to the Ancestor having access to a village full of it in the form of the citizens of the Hamlet at the time.",
-        ]
+            "When excavations beneath the manor were well underway, the Prophet arrived in the hamlet, boasting an uncanny knowledge of the Ancestor's ambitions and prognosticated publicly that, left unchecked, He (The Ancestor) would soon unleash doom upon the world.",
+            "Hearing this, the Ancestor attempted to silence the Prophet, but doing so proved maddeningly impossible with him surviving the stockades, the icy waters, and the knives the Ancestor delivered so enthusiastically into his back.",
+            "Having yielded to the Prophet's inhuman resilience, the Ancestor lured him to the dig, where he showed him the THING and detailed the full extent of his plans. ",
+            "This caused the Prophet to tear his eyes from their sockets and ran shrieking into the shadows of the Ruina, wailing maniacally that the end was upon us all."
+        ]   
     },
     {
         containerid: "hag_lore_container",
         headertxt: " Twisted and Maniacal,  A Slathering Testament to the Powers Of Corruption.",
         lorecontent:[
-            "The Ancestor had been partaking in rituals involving blood sacrifice, which is difficult to master. To summon beings from beyond into our reality, an adequate physical vessel with the proper utterances at precise intervals is needed.",
-            "After failing  for a time, the Ancestor soon learned that the  condition of the host's meat was a critical factor, the best results coming from pigs, whose flesh is most like that of man.",
-            "In light of this discovery, the Ancestor at last succeeded to bring the Swine Prince into our reality, where it resided in the Warrens and required prodigious amounts of meat to sustain itself.",
-            "Thankfully, this was but a trifling concern thanks to the Ancestor having access to a village full of it in the form of the citizens of the Hamlet at the time.",
+            "The Ancestor had collected many rare and elusive volumes on ancient herbal properties and was set to enjoy several weeks immersed in comfortable study. His work was interrupted, however, by a singularly striking young woman who insisted on repeated calls to the house.",
+            "Her knowledge of horticulturalism and its role in various arcane practices impressed the Ancestor greatly and hislicentious impulse gave way to a genuine professional respect, and together, the two began to plant, harvest, and brew.",
+            "As time wore on, her wild policy of self-experimentation grew intolerable. She quaffed all manner of strange fungi, herbs, and concoctions, intent on gaining some insight into the horror they both knew to be growing beneath them.",
+            "The change in her was appalling, and no longer able to stomach it, the Ancestor sent the Hag to live in the weald, where her wildness would be welcomed. And there, she continues her alchemical experiemnts.",
         ]
     },
     {
         containerid: "brigand_pounder_lore_container",
         headertxt: " A Marvel Of Technology,  The Engine Of Destruction!",
         lorecontent:[
-            "The Ancestor had been partaking in rituals involving blood sacrifice, which is difficult to master. To summon beings from beyond into our reality, an adequate physical vessel with the proper utterances at precise intervals is needed.",
-            "After failing  for a time, the Ancestor soon learned that the  condition of the host's meat was a critical factor, the best results coming from pigs, whose flesh is most like that of man.",
-            "In light of this discovery, the Ancestor at last succeeded to bring the Swine Prince into our reality, where it resided in the Warrens and required prodigious amounts of meat to sustain itself.",
-            "Thankfully, this was but a trifling concern thanks to the Ancestor having access to a village full of it in the form of the citizens of the Hamlet at the time.",
+            "Rumors of the Ancestor's morbid genius and secretive excavations began to fill local legend but in the face of his increasingly egregious flaunting of public taboos, awe turned to ire, and demonstrations were held in the town square.",
+            "The wild whispers of heresy roused the rabble to violent action, with the general air of rebellion being so potentthat even the Ancestor's generous offer of gold to the local constabulary was rebuffed.", 
+            "To reassert his rule, the Ancestor sought out unscrupulous men skilled in the application of force. Tight-lipped and terrifying, these mercenaries brought with them a war machine of terrible implication.",
+            "Eager to end the tiresome domestic distraction, the Ancestor instructed his newly formed militia of hardened bandits, brigands, and killers to go forth and do their work. ",
+            "Compliance and order were restored, and the noisome population of the Hamlet was culled to more manageable numbers.",
+            "The Brigands and their imposing warmachine now lies in the Weald, terrorizing any who dares to go through the region.",
         ]
     },
     {
         containerid: "shrieker_lore_container",
         headertxt: " Once a Proud Raven,  Now Twisted Beyond Recognition.",
         lorecontent:[
-            "The Ancestor had been partaking in rituals involving blood sacrifice, which is difficult to master. To summon beings from beyond into our reality, an adequate physical vessel with the proper utterances at precise intervals is needed.",
-            "After failing  for a time, the Ancestor soon learned that the  condition of the host's meat was a critical factor, the best results coming from pigs, whose flesh is most like that of man.",
-            "In light of this discovery, the Ancestor at last succeeded to bring the Swine Prince into our reality, where it resided in the Warrens and required prodigious amounts of meat to sustain itself.",
-            "Thankfully, this was but a trifling concern thanks to the Ancestor having access to a village full of it in the form of the citizens of the Hamlet at the time.",
+            "The Shrieker dwells deep within the heart of the Weald, with its Nest hidden at the top of a gigantic tree, where its gnarled and twisted branches keep it concealed.",
+            "The avian has seen better days, as the corruption that plagues the estate has twisted this feathered bird into a feathered fiend.",
+            "Despite being corrupted, this feathered fiend is still a Raven at heart and has an eye for everything that glitters and shines, and its Nest is decorated with all the shiny and glittering Trinkets it has stolen from our Trinkets Chest or taken from the dead bodies of our fallen heroes. ",
+            "Reclaiming these items will not be easy, for the Shrieker will defend its Nest from any intruders. But if Shrieker feels that it is not worth its life to protect his hoard of treasures, it will abandon its nest and escape to live another day, free to steal more of our rare and valuable Trinkets.",
         ]
     },
     {
@@ -106,56 +108,62 @@ const BossLore = [
             "After failing  for a time, the Ancestor soon learned that the  condition of the host's meat was a critical factor, the best results coming from pigs, whose flesh is most like that of man.",
             "In light of this discovery, the Ancestor at last succeeded to bring the Swine Prince into our reality, where it resided in the Warrens and required prodigious amounts of meat to sustain itself.",
             "Thankfully, this was but a trifling concern thanks to the Ancestor having access to a village full of it in the form of the citizens of the Hamlet at the time.",
+            "Now, the Swine Prince dwells within the Warrens with a swinefolk with 2 flags now directs his actions.",
         ]
     },
     {
         containerid: "flesh_lore_container",
         headertxt: " Squirming, Contorting, and Ever Expanding. This Horror Must Be Unmade!",
         lorecontent:[
-            "The Ancestor had been partaking in rituals involving blood sacrifice, which is difficult to master. To summon beings from beyond into our reality, an adequate physical vessel with the proper utterances at precise intervals is needed.",
-            "After failing  for a time, the Ancestor soon learned that the  condition of the host's meat was a critical factor, the best results coming from pigs, whose flesh is most like that of man.",
-            "In light of this discovery, the Ancestor at last succeeded to bring the Swine Prince into our reality, where it resided in the Warrens and required prodigious amounts of meat to sustain itself.",
-            "Thankfully, this was but a trifling concern thanks to the Ancestor having access to a village full of it in the form of the citizens of the Hamlet at the time.",
+            "The Ancestor's zeal for blood rituals and summoning rites had begun to ebb, as each attempt invariably brought only failure and disappointment. Progress was halting, and the rapidly accumulating surplus of wasted flesh had become burdensome.",
+            "He was unable to store such a prodigious amount of offal, nor was it possible for him to rid of it easily due to it being possessed by unnameable things from outer spheres.",
+            "However, When excavations beneath the manor broke through into an ancient network of aqueducts and tunnels, the Ancestor realized he had found a solution to the problem of disposal. ",
+            "The spasmodically squirming, braying, and snorting half-corpses were heaped each upon the other, until at last the Ancestor was rid of them.", 
+            "However, due to this the Warrens had become a landfill of snout and hoof, gristle and bone - a mountainous, twitching mass of misshapen flesh, fusing itself together in the darkness..",
         ]
     },
     {
         containerid: "siren_lore_container",
         headertxt: "I Always Wondered What Became To the Unfortunate Little Waif.",
         lorecontent:[
-            "The Ancestor had been partaking in rituals involving blood sacrifice, which is difficult to master. To summon beings from beyond into our reality, an adequate physical vessel with the proper utterances at precise intervals is needed.",
-            "After failing  for a time, the Ancestor soon learned that the  condition of the host's meat was a critical factor, the best results coming from pigs, whose flesh is most like that of man.",
-            "In light of this discovery, the Ancestor at last succeeded to bring the Swine Prince into our reality, where it resided in the Warrens and required prodigious amounts of meat to sustain itself.",
-            "Thankfully, this was but a trifling concern thanks to the Ancestor having access to a village full of it in the form of the citizens of the Hamlet at the time.",
+            "It was during a time when the Ancestor could walk the streets or raise a glass in the tavern without concern for molestation.", 
+            "Faithful as the tide, one precocious village waif made it her hobby to shadow his every errand. It was charming then, troublesome later.",
+            "In financial desperation, the Ancestor struck a bargain with the ancient things that surfaced in search of sacrifice when the moon was right.", 
+            "Their price was the delivery of an obscure idol and one other item of more troubling portent. The pact struck, the Ancestor's new-found accomplices slipped silently beneath the brackish water and a fearful stirring at the edge of the torchlight betrayed a familiar witness and gifted him with malign inspiration.",
+            "Under the blood moon, the Ancestor lured his wide-eyed prey to the pier's edge, and before she could properly appreciate her position, he clamped down a manacle, chaining her to the leering idol.", 
+            "A small push was sufficient to send both into the icy waters. And, when at length the tide receded, jewels of the most magnificent grandeur lay scattered upon the shore.",
+            "The Siren now acts as the Cove's Queen, forced to do the Fisherfolk's bidding and lure any traveller in with her alluring song.",
         ]
     },
     {
         containerid: "drowned_crew_lore_container",
         headertxt: " The Poor Devils, Chained and Drowning, For Eternity...",
         lorecontent:[
-            "The Ancestor had been partaking in rituals involving blood sacrifice, which is difficult to master. To summon beings from beyond into our reality, an adequate physical vessel with the proper utterances at precise intervals is needed.",
-            "After failing  for a time, the Ancestor soon learned that the  condition of the host's meat was a critical factor, the best results coming from pigs, whose flesh is most like that of man.",
-            "In light of this discovery, the Ancestor at last succeeded to bring the Swine Prince into our reality, where it resided in the Warrens and required prodigious amounts of meat to sustain itself.",
-            "Thankfully, this was but a trifling concern thanks to the Ancestor having access to a village full of it in the form of the citizens of the Hamlet at the time.",
+            "Prying eyes had become a nuisance along the old road, and so the Ancestor undertook to receive his most curious deliveries by way of marine shipments.", 
+            "A sheltered jetty was accessible by a narrow stone stair off the back of the manor, and a discreet system of pulleys could hoist even the heaviest prizes up the rock face from a securely tied dinghy below.",
+            "The Ancestor employed a crew of particularly unsavory mariners, who for a time sailed the four corners at his behest, retrieving many valuable artifacts, relics and rare texts.", 
+            "Predictably, they increased their tariffs to counter the Ancestor's intense stipulations of secrecy. Such resources had long been exhausted, of course, and so he prepared an alternative payment.            ",
+            "While the greedy dogs slept off their revelry, the Ancestor hexed their anchor with every twisted incantation he could muster, imbuing it with the weight of his ambition and contempt for their crude extortion. ",
+            "At the witching hour, the anchor pulled with preternatural force, dragging craft and crew down into the depths. They must have cried out, but no sound escaped the swirling black waters.            ",
+            "The Drowned Crew seemingly having been reanimated through some sort of Unholy powers now dwells within the deeps of the Cove, waiting to have more sailors meet the same fate as they did.",
         ]
     },
     {
         containerid: "collector_lore_container",
         headertxt: " A Full Pack Often Attracts Unwanted Attention.",
         lorecontent:[
-            "The Ancestor had been partaking in rituals involving blood sacrifice, which is difficult to master. To summon beings from beyond into our reality, an adequate physical vessel with the proper utterances at precise intervals is needed.",
-            "After failing  for a time, the Ancestor soon learned that the  condition of the host's meat was a critical factor, the best results coming from pigs, whose flesh is most like that of man.",
-            "In light of this discovery, the Ancestor at last succeeded to bring the Swine Prince into our reality, where it resided in the Warrens and required prodigious amounts of meat to sustain itself.",
-            "Thankfully, this was but a trifling concern thanks to the Ancestor having access to a village full of it in the form of the citizens of the Hamlet at the time.",
+            "The Collector, the Baleful King donned in yellow roams the halls in seach of more victims to grow his endless collection of Heads and Riches.",
+            "He seems to be capable of reanimating corpses like the Necromancer, although his method of reanimation seems to differ, with Blue Eldritch light shining within the reainimated Heads.",
+            "Considering how you can find the Collector Head Trinkets and Puzzling Trapezohedrons from Secret Rooms, it is likely that the Secret Room stash is one of the many stashes of the Collector.",
         ]
     },
     {
         containerid: "shambler_lore_container",
         headertxt: "A Torch and an Altar, What Could Possibly Go Wrong?",
         lorecontent:[
-            "The Ancestor had been partaking in rituals involving blood sacrifice, which is difficult to master. To summon beings from beyond into our reality, an adequate physical vessel with the proper utterances at precise intervals is needed.",
-            "After failing  for a time, the Ancestor soon learned that the  condition of the host's meat was a critical factor, the best results coming from pigs, whose flesh is most like that of man.",
-            "In light of this discovery, the Ancestor at last succeeded to bring the Swine Prince into our reality, where it resided in the Warrens and required prodigious amounts of meat to sustain itself.",
-            "Thankfully, this was but a trifling concern thanks to the Ancestor having access to a village full of it in the form of the citizens of the Hamlet at the time.",
+            "The Shambler is a cosmic monstrosity of Eldritch origins who dwells within the Darkness and its own cosmic plane of existence, waiting to drag any who is foolish enough to activate its altar or stay in the Darkness.",
+            "The Shambler seems to be an entity that is worshipped by some, having altars dedicated to it.",
+            "The Shambler's mere presence seems to have a property or power that snuffs out all Light, with you being unable to raise the Torchlight above 0 as long as it is still alive.",
         ]
     },
 ]
@@ -190,51 +198,52 @@ function CreateBossLore() {
 }
 
 CreateBossLore()
-
 const BossStrategy = [
     {
         containerid: "necromancer_strategy_container",
         strategycontent:[
-            "1. Rallying Flare - Arbalest / Musketeer's Rallying Flare / Skeet Shot abilities are able to clear all Stuns and Marks on every hero BUT THEMSELVES, which effectively nullifies the boss' main gimmick as long as the Arbalest / Musketeer is kept safe from any Marks or Stuns, especially from Veteran Onwards where Wilbur gets a 2nd action to use to potentially Stun them, which is usually done by Guarding them and in the case of being Marked, using the Shieldbreaker's Camping Skill, Sandstorm to make them Unmarkable..",
-            "2. Mark and Kill - Since the Swine Prince isn't particularly weak to DoT damage due to the boss only having 1 action per turn for DoT Damage to do its thing, dishing out a lot of direct damage is your best bet for killing it quickly, especially since you are almost always going to bring the Arbalest, who is a Mark Based Damage Dealer.",
-            "Outside of this, it is good to keep in mind that non damaging shuffle skills like the Plague Doctor's Disorienting Blast and the Bounty Hunter's Flashbang can move Wilbur to the front while potentially Stunning him without triggering Enraged Destruction, forcing him to use Squeal to go back to the back positions, which stops him from Marking your heroes for the turn, and potentially 2 if the Stun goes through.",
-            "In addition, Debuff stacking with skills like Leper's Intimidate and Occultist's Weakening Curse can be used to make the boss hit like a wet noodle, especially if coupled with heroes with High PROT.",
+            "The Necromancer being the first Boss you will fight in an estate, he is not very challenging. Even so, it is best to know how to most effectively defeat him just in case.",
+            "The Necromancer starts at rank 1, and moves back with every action he takes. He relies on his summons to keep him safe & overwhelm your party with sheer numbers. Mind the fact that from Veteran onwards the Necromancer can summon Bone Defenders which can potentially Guard him and Bone Captains from Champion, which pack a punch and are very durable.",
+            "With the Necromancer's relatively low resistances outside of Stun, any form of damage will do at least decently against him, although Direct Damage will be more desirable considering the boss only takes 1 turn per round, with focusing him down with Mark Based Damage Dealers being the quickest way to finish him off.",
+            "If possible, it is good to try to Stun the Necromancer so he cannot hide himself at the back ranks and your frontline damage dealers can continue to dish out damage, although if he gets to the back ranks, his low move resist makes him very susceptible to Pulls to the front ranks",
+            "",
         ]
     },
     {
         containerid: "prophet_strategy_container",
         strategycontent:[
-            "1. Rallying Flare - Arbalest / Musketeer's Rallying Flare / Skeet Shot abilities are able to clear all Stuns and Marks on every hero BUT THEMSELVES, which effectively nullifies the boss' main gimmick as long as the Arbalest / Musketeer is kept safe from any Marks or Stuns, especially from Veteran Onwards where Wilbur gets a 2nd action to use to potentially Stun them, which is usually done by Guarding them and in the case of being Marked, using the Shieldbreaker's Camping Skill, Sandstorm to make them Unmarkable..",
-            "2. Mark and Kill - Since the Swine Prince isn't particularly weak to DoT damage due to the boss only having 1 action per turn for DoT Damage to do its thing, dishing out a lot of direct damage is your best bet for killing it quickly, especially since you are almost always going to bring the Arbalest, who is a Mark Based Damage Dealer.",
-            "Outside of this, it is good to keep in mind that non damaging shuffle skills like the Plague Doctor's Disorienting Blast and the Bounty Hunter's Flashbang can move Wilbur to the front while potentially Stunning him without triggering Enraged Destruction, forcing him to use Squeal to go back to the back positions, which stops him from Marking your heroes for the turn, and potentially 2 if the Stun goes through.",
-            "In addition, Debuff stacking with skills like Leper's Intimidate and Occultist's Weakening Curse can be used to make the boss hit like a wet noodle, especially if coupled with heroes with High PROT.",
+            "The Prophet is a boss who starts at position 4, with his 3 pews occupying the front 3 ranks to keep the boss away from harm's reach. He relies on landing several 'Rubble of Ruin' hits and gradually whittling you down via stress and minor DoT Damage.",
+            "Damage Away! - Since the only real danger factor of the fight is from the high damage of 'Rubble of Ruin' you simply debuff prophet's damage to the point where any threat he posed before is invalidated. Debuffs that lower damage like the Leper's Intimidate or the Occultists' Weakening Curse is great for this purpose",
+            "PROT & DODGE Stacking coupled with Guards serves as a good safety net in the very rare instances where things could go south, although they should not be your primary and only countermeasure for the fight",
+            "If you don't want to spend time destroying pews for the loot they drop, you can bring backline damage to the fight to end it more quickly, with Mark Based damage being desirable since the Arbalest/Musketeer(who has a decent debuff in Suppressing Fire/Smokescreen and a Off Heal for safety) and the Houndmaster(Who has a Guard) are good heroes to bring with the Occultist being able to Mark with Vulnerability Hex",
         ]
     },
     {
         containerid: "hag_strategy_container",
         strategycontent:[
-            "1. Rallying Flare - Arbalest / Musketeer's Rallying Flare / Skeet Shot abilities are able to clear all Stuns and Marks on every hero BUT THEMSELVES, which effectively nullifies the boss' main gimmick as long as the Arbalest / Musketeer is kept safe from any Marks or Stuns, especially from Veteran Onwards where Wilbur gets a 2nd action to use to potentially Stun them, which is usually done by Guarding them and in the case of being Marked, using the Shieldbreaker's Camping Skill, Sandstorm to make them Unmarkable..",
-            "2. Mark and Kill - Since the Swine Prince isn't particularly weak to DoT damage due to the boss only having 1 action per turn for DoT Damage to do its thing, dishing out a lot of direct damage is your best bet for killing it quickly, especially since you are almost always going to bring the Arbalest, who is a Mark Based Damage Dealer.",
-            "Outside of this, it is good to keep in mind that non damaging shuffle skills like the Plague Doctor's Disorienting Blast and the Bounty Hunter's Flashbang can move Wilbur to the front while potentially Stunning him without triggering Enraged Destruction, forcing him to use Squeal to go back to the back positions, which stops him from Marking your heroes for the turn, and potentially 2 if the Stun goes through.",
-            "In addition, Debuff stacking with skills like Leper's Intimidate and Occultist's Weakening Curse can be used to make the boss hit like a wet noodle, especially if coupled with heroes with High PROT.",
+            "The Hag is a boss who will stay in the back 2 ranks, and she relies on her Cauldron to get a hero to Death's Door to actually land a killing blow due to her poor damage output while she tries to last until then by limiting your party to 3 heroes and some minor self healing and debuffs.",
+            "Heroes in the Cauldron take 8.75% of their Max HP as damage every time a hero or the Hag takes an action, with the Hero being put at position 1 once they hit Death's Door or the enough damage is dealt to the Filled Cauldron.",
+            "Even though your first instinct may be to try to free the trapped hero ASAP, considering the fact that the Hag will simply grab another Hero soon after anyways and the boss having quite a small HP pool, it can be better to try to burst her down quickly with your 3 Heroes.",
+            "Due to all of these factors, high backline damage output with flexible positioning is greatly desirable with classes such as the Hellion, with being ready with Healing skills to get Heroes off of Death's Door.",
+            "Like many other Bosses, Mark Based Damage is the best way to slay the Hag. Riposte is also a good option due to the Hag using Meat Tenderizer often and there only being 3 heroes to target, making it likely for the boss to target a hero with Riposte active.",
         ]
     },
     {
         containerid: "brigand_pounder_strategy_container",
         strategycontent:[
-            "1. Rallying Flare - Arbalest / Musketeer's Rallying Flare / Skeet Shot abilities are able to clear all Stuns and Marks on every hero BUT THEMSELVES, which effectively nullifies the boss' main gimmick as long as the Arbalest / Musketeer is kept safe from any Marks or Stuns, especially from Veteran Onwards where Wilbur gets a 2nd action to use to potentially Stun them, which is usually done by Guarding them and in the case of being Marked, using the Shieldbreaker's Camping Skill, Sandstorm to make them Unmarkable..",
-            "2. Mark and Kill - Since the Swine Prince isn't particularly weak to DoT damage due to the boss only having 1 action per turn for DoT Damage to do its thing, dishing out a lot of direct damage is your best bet for killing it quickly, especially since you are almost always going to bring the Arbalest, who is a Mark Based Damage Dealer.",
-            "Outside of this, it is good to keep in mind that non damaging shuffle skills like the Plague Doctor's Disorienting Blast and the Bounty Hunter's Flashbang can move Wilbur to the front while potentially Stunning him without triggering Enraged Destruction, forcing him to use Squeal to go back to the back positions, which stops him from Marking your heroes for the turn, and potentially 2 if the Stun goes through.",
-            "In addition, Debuff stacking with skills like Leper's Intimidate and Occultist's Weakening Curse can be used to make the boss hit like a wet noodle, especially if coupled with heroes with High PROT.",
+            "The Brigand Pounder is a boss with potentially great damage output that mainly tries to wear your Heroes down with continuous Brigand Summons. The Pounder has innate Damage Resistance (25%) and some PROT.",
+            "The Pounder relies on the Matchman to survive until the end of the round without being Stunned to potentially nuke your entire party with 'BOOOOOOOM!'. ",
+            "Due to this, you want your party to have good backline reach with good waveclear and longevity (AKA a solid composition) to be able to kill or Stun the Matchman, keep the other Brigands under control while still dealing Damage to the Pounder",
+            "In terms of dealing damage to the Pounder itself, using Marked Based Damage is the best option with Armor Piercing skills like Pierce or Pick to the Face being decent.",
         ]
     },
     {
         containerid: "shrieker_strategy_container",
         strategycontent:[
-            "1. Rallying Flare - Arbalest / Musketeer's Rallying Flare / Skeet Shot abilities are able to clear all Stuns and Marks on every hero BUT THEMSELVES, which effectively nullifies the boss' main gimmick as long as the Arbalest / Musketeer is kept safe from any Marks or Stuns, especially from Veteran Onwards where Wilbur gets a 2nd action to use to potentially Stun them, which is usually done by Guarding them and in the case of being Marked, using the Shieldbreaker's Camping Skill, Sandstorm to make them Unmarkable..",
-            "2. Mark and Kill - Since the Swine Prince isn't particularly weak to DoT damage due to the boss only having 1 action per turn for DoT Damage to do its thing, dishing out a lot of direct damage is your best bet for killing it quickly, especially since you are almost always going to bring the Arbalest, who is a Mark Based Damage Dealer.",
-            "Outside of this, it is good to keep in mind that non damaging shuffle skills like the Plague Doctor's Disorienting Blast and the Bounty Hunter's Flashbang can move Wilbur to the front while potentially Stunning him without triggering Enraged Destruction, forcing him to use Squeal to go back to the back positions, which stops him from Marking your heroes for the turn, and potentially 2 if the Stun goes through.",
-            "In addition, Debuff stacking with skills like Leper's Intimidate and Occultist's Weakening Curse can be used to make the boss hit like a wet noodle, especially if coupled with heroes with High PROT.",
+            "The Shrieker is an Event Boss that is fought in the Weald at the Shrieker's Nest. The Shrieker is accompanied by his Nest which he uses to shuffle himself to the front or the back ranks.",
+            "The Nest can be destroyed for riches(See Icon to the Left of Related Enemies). And winning the encounter via surviving until the boss flees or killing it can grant unique Corvid's Quirks (See Icon to the Right of Stats)",
+            "In terms of actually slaying the boss, due to its sky-high DODGE Accuracy trinkets are highly recommended, with Heroes that can target both the front and back ranks with High Damage moves (Be it with Mark Synergy or not) due to the Shrieker moving to the front or back positions constantly..",
+            "In terms of surviving the encounter, the easiest/ most consistent way is to bring a Guarder with high PROT or DODGE with a Healer to Heal off any Damage the Guarder may take or using 1 Leper with PROT trinkets.",
         ]
     },
     {
@@ -249,49 +258,66 @@ const BossStrategy = [
     {
         containerid: "flesh_strategy_container",
         strategycontent:[
-            "1. Rallying Flare - Arbalest / Musketeer's Rallying Flare / Skeet Shot abilities are able to clear all Stuns and Marks on every hero BUT THEMSELVES, which effectively nullifies the boss' main gimmick as long as the Arbalest / Musketeer is kept safe from any Marks or Stuns, especially from Veteran Onwards where Wilbur gets a 2nd action to use to potentially Stun them, which is usually done by Guarding them and in the case of being Marked, using the Shieldbreaker's Camping Skill, Sandstorm to make them Unmarkable..",
-            "2. Mark and Kill - Since the Swine Prince isn't particularly weak to DoT damage due to the boss only having 1 action per turn for DoT Damage to do its thing, dishing out a lot of direct damage is your best bet for killing it quickly, especially since you are almost always going to bring the Arbalest, who is a Mark Based Damage Dealer.",
-            "Outside of this, it is good to keep in mind that non damaging shuffle skills like the Plague Doctor's Disorienting Blast and the Bounty Hunter's Flashbang can move Wilbur to the front while potentially Stunning him without triggering Enraged Destruction, forcing him to use Squeal to go back to the back positions, which stops him from Marking your heroes for the turn, and potentially 2 if the Stun goes through.",
-            "In addition, Debuff stacking with skills like Leper's Intimidate and Occultist's Weakening Curse can be used to make the boss hit like a wet noodle, especially if coupled with heroes with High PROT.",
+            "The Flesh is a boss comprised of 4 enemies that share a single HP pool, and have attacks that can pack a punch with Stuns and Damage Over Time which can prove to be deadly. They are also aided by having a good bit of RNG during the battle.",
+            "All Flesh Parts but the Heart are quite durable with the lowest PROT value being 30% and the highest reaching a whopping 90%.",
+            "At the start of every round, each part has a chance to change to a random body part with some restrictions (Heads must be at front, Butts at back)",
+            "One thing to note is that with the boss' main Damage Dealing skills, they can be played around due to 'Maws of Life' only hitting the front 2 ranks and 'Undulating Invasion' only being able to target the back positions.",
+            "Considering the fact that many of the Flesh Parts have hefty PROT numbers, Bleeds and Blights - preferrably Area of Effect are highly desirable, with Heroes such as the Plague Doctor and Flagellant.",
+            "The Shieldbreaker is also a good choice due to having Armor Piercing damage in 'Pierce' and a full cleave that can apply Blight.",
+            "Due to the Flesh having a tendency to focus down a Hero, Guards are preferrable as a safety measure with the Houndmaster being the more desirable of the 2 Guarders due to having 'Hound's Harry', a full cleave with Bleeds.",
+            "Mark Based Damage can be viable if you are lucky and the Flesh rolls many Flesh's Hearts, but due to it being RNG based there are better alternatives.",
         ]
     },
     {
         containerid: "siren_strategy_container",
         strategycontent:[
-            "1. Rallying Flare - Arbalest / Musketeer's Rallying Flare / Skeet Shot abilities are able to clear all Stuns and Marks on every hero BUT THEMSELVES, which effectively nullifies the boss' main gimmick as long as the Arbalest / Musketeer is kept safe from any Marks or Stuns, especially from Veteran Onwards where Wilbur gets a 2nd action to use to potentially Stun them, which is usually done by Guarding them and in the case of being Marked, using the Shieldbreaker's Camping Skill, Sandstorm to make them Unmarkable..",
-            "2. Mark and Kill - Since the Swine Prince isn't particularly weak to DoT damage due to the boss only having 1 action per turn for DoT Damage to do its thing, dishing out a lot of direct damage is your best bet for killing it quickly, especially since you are almost always going to bring the Arbalest, who is a Mark Based Damage Dealer.",
-            "Outside of this, it is good to keep in mind that non damaging shuffle skills like the Plague Doctor's Disorienting Blast and the Bounty Hunter's Flashbang can move Wilbur to the front while potentially Stunning him without triggering Enraged Destruction, forcing him to use Squeal to go back to the back positions, which stops him from Marking your heroes for the turn, and potentially 2 if the Stun goes through.",
-            "In addition, Debuff stacking with skills like Leper's Intimidate and Occultist's Weakening Curse can be used to make the boss hit like a wet noodle, especially if coupled with heroes with High PROT.",
+            "The Siren is a boss who relies on your own heroes to actually be a threat, having virtually no damage potential herself and using 'Song of Desire' to try to charm one of your Heroes and bring them to her side temporarily.",
+            "'Song of Desire' has a flat 70% chance to control a hero instead of depending on the Hero's Debuff Resist, but the Siren's AI is still more likely to target the Hero with the lowest Debuff Resist. In addition, Heroes Charmed by the boss can only use the skills they had equipped at the start of the combat.",
+            "She is also quite susceptible to DoT damage from Bleeds and Blights due to taking 2 actions per turn alongside a relatively low Stun Resist",
+            "Due to all of this, the most common tactic used by players is using the Antiquarian with her low Debuff Resist as 'bait' for the Siren to charm, since She won't be a threat when Charmed.",
+            "High Damage Heroes are discouraged since they could be a threat when Charmed whereas Heroes like the Plague Doctor or Occultist are encouraged due to the Siren being susceptible to Stuns and DoT damage.",
+            "While utilizing Riposte can sound appealing due to the Siren having 2 full party cleaves, they can be risky due to charmed heroes potentially targetting a Hero with Riposte active and taking a blow for it.",
+            "Mark Based Damage still remains as a viable strategy, although Heroes like the Bounty Hunter can do hefty damage to your Heroes if Charmed even without a Mark.",
         ]
     },
     {
         containerid: "drowned_crew_strategy_container",
         strategycontent:[
-            "1. Rallying Flare - Arbalest / Musketeer's Rallying Flare / Skeet Shot abilities are able to clear all Stuns and Marks on every hero BUT THEMSELVES, which effectively nullifies the boss' main gimmick as long as the Arbalest / Musketeer is kept safe from any Marks or Stuns, especially from Veteran Onwards where Wilbur gets a 2nd action to use to potentially Stun them, which is usually done by Guarding them and in the case of being Marked, using the Shieldbreaker's Camping Skill, Sandstorm to make them Unmarkable..",
-            "2. Mark and Kill - Since the Swine Prince isn't particularly weak to DoT damage due to the boss only having 1 action per turn for DoT Damage to do its thing, dishing out a lot of direct damage is your best bet for killing it quickly, especially since you are almost always going to bring the Arbalest, who is a Mark Based Damage Dealer.",
-            "Outside of this, it is good to keep in mind that non damaging shuffle skills like the Plague Doctor's Disorienting Blast and the Bounty Hunter's Flashbang can move Wilbur to the front while potentially Stunning him without triggering Enraged Destruction, forcing him to use Squeal to go back to the back positions, which stops him from Marking your heroes for the turn, and potentially 2 if the Stun goes through.",
-            "In addition, Debuff stacking with skills like Leper's Intimidate and Occultist's Weakening Curse can be used to make the boss hit like a wet noodle, especially if coupled with heroes with High PROT.",
+            "The Drowned Crew is a boss that tries to outlast you with passive healing if a Hero is Chained, but overall lacks any real threat to pose to your Heroes due to having ignorable damage potential.",
+            "The main gimmick of the boss is with the Anchorman's 'Heave to!' ability,where if the ability hits and a Hero is chained gives the Crew hefty buffs to its resistances and PROT and Heals the Crew whenever a Hero or the boss takes an action.",
+            "The first method to trivialising the fight is simply not letting the Anchorman use the ability at all by killing it before it can act (Do mind the anchorman has a hefty amount of PROT before landing 'Heave to!') or Stunning it. Shieldbreaker's Pierce skil is great for killing the Anchorman through its 50% PROT",
+            "The Second method is using high DODGE to simply dodge 'Heave to!' so the Crew cannot gain the buffs. This works well with the Houndmaster due to his Guard skill giving him more DODGE.",
+            "The third and most niche method is having a Virtued Hero at Position 1 (where 'Heave to!' will always target if used) since the skill will fail if used on a Virtued Hero, Stress Healing your Heroes instead.",
+            "If the Anchorman succeeds in chaining a Hero, just try to get rid of the Anchorman as quickly as possible to get rid of the Buff on the Crew",
+            "In terms of killing the Boss, as long as you can shut down the Anchorman, anything goes, with Bleeds and Blights being decent due to Crew taking 2 actions per Round or using Mark Based Damage Dealers to Mark and Kill the Boss with Pure Damage. ",
         ]
     },
     {
         containerid: "collector_strategy_container",
         strategycontent:[
-            "1. Rallying Flare - Arbalest / Musketeer's Rallying Flare / Skeet Shot abilities are able to clear all Stuns and Marks on every hero BUT THEMSELVES, which effectively nullifies the boss' main gimmick as long as the Arbalest / Musketeer is kept safe from any Marks or Stuns, especially from Veteran Onwards where Wilbur gets a 2nd action to use to potentially Stun them, which is usually done by Guarding them and in the case of being Marked, using the Shieldbreaker's Camping Skill, Sandstorm to make them Unmarkable..",
-            "2. Mark and Kill - Since the Swine Prince isn't particularly weak to DoT damage due to the boss only having 1 action per turn for DoT Damage to do its thing, dishing out a lot of direct damage is your best bet for killing it quickly, especially since you are almost always going to bring the Arbalest, who is a Mark Based Damage Dealer.",
-            "Outside of this, it is good to keep in mind that non damaging shuffle skills like the Plague Doctor's Disorienting Blast and the Bounty Hunter's Flashbang can move Wilbur to the front while potentially Stunning him without triggering Enraged Destruction, forcing him to use Squeal to go back to the back positions, which stops him from Marking your heroes for the turn, and potentially 2 if the Stun goes through.",
-            "In addition, Debuff stacking with skills like Leper's Intimidate and Occultist's Weakening Curse can be used to make the boss hit like a wet noodle, especially if coupled with heroes with High PROT.",
+            "The Collector is a Hallway MiniBoss which has a chance to replace a Hallway Battle if 13 or more of your inventory slots are filled.",
+            "Due to the Collector spawning randomly, you can't really prepare for it, although as long as your party composition is solid, you will probably be fine.",
+            "The Collector's main threat is the Collected Highwaymen he summons with 'Collect Call' which can deal hefty damage with a Bleed. The Collected Vestal is of minimal threat and  usually buffs and heals its teammates. The Collected Man-at-Arms does a bit of Damage but can potentially Guard Collector",
+            "That being said, the Collector has middling Stun Resist and Speed, so you can pretty consistently Stun him on Round 1, take off about Half of its HP, and then easily finish the fight on turns 2-4.",
+            "Do remember that you may simply retreat from the battle and try again if the turn 1 Stun fails, and if you lack the Damage to kill the Collector quickly, just try to keep the Collected Highwaymen under check and you should be fine.",
+            "In summary: Build a solid composition with good Damage, Accuracy, and Reach alongside Stuns AKA just build a solid composition you should be using anyways.",
         ]
     },
     {
         containerid: "shambler_strategy_container",
         strategycontent:[
-            "1. Rallying Flare - Arbalest / Musketeer's Rallying Flare / Skeet Shot abilities are able to clear all Stuns and Marks on every hero BUT THEMSELVES, which effectively nullifies the boss' main gimmick as long as the Arbalest / Musketeer is kept safe from any Marks or Stuns, especially from Veteran Onwards where Wilbur gets a 2nd action to use to potentially Stun them, which is usually done by Guarding them and in the case of being Marked, using the Shieldbreaker's Camping Skill, Sandstorm to make them Unmarkable..",
-            "2. Mark and Kill - Since the Swine Prince isn't particularly weak to DoT damage due to the boss only having 1 action per turn for DoT Damage to do its thing, dishing out a lot of direct damage is your best bet for killing it quickly, especially since you are almost always going to bring the Arbalest, who is a Mark Based Damage Dealer.",
-            "Outside of this, it is good to keep in mind that non damaging shuffle skills like the Plague Doctor's Disorienting Blast and the Bounty Hunter's Flashbang can move Wilbur to the front while potentially Stunning him without triggering Enraged Destruction, forcing him to use Squeal to go back to the back positions, which stops him from Marking your heroes for the turn, and potentially 2 if the Stun goes through.",
-            "In addition, Debuff stacking with skills like Leper's Intimidate and Occultist's Weakening Curse can be used to make the boss hit like a wet noodle, especially if coupled with heroes with High PROT.",
+            "The Shambler is a Hallway Miniboss which can be spawned deliberately at the Shambler's Altar or can be encountered as a random Hallway Fight if your light level is at 0, where there is a chance for the Shambler to replace an existing Hallway Battle. ",
+            "The Shambler is a force to be reckoned with, packing Area of Effect attacks with Bleeds, Blights, and Shuffles with a high chance to CRIT thanks to the light level being locked at 0 during the fight if the Shambler is alive.",
+            "The Shambler Summons 2 Shambler Tentacles with 2 of its skills, which give themselves a hefty buff every time they land a hit and can get out of hand if left unchecked. The Tentacles are quite frail with low HP but boast a high DODGE stat which can prove to be troublesome or even deadly.",
+            "You are guarenteed to be Surprised at the start of an Shambler encounter so make sure to preshuffle your team to get a beneficial reshuffle into more desirable positions and preferrably fight it with a position-flexible party.",
+            "You preferrably want to be able to consistently take out both Tentacles every turn and whittle down the Shambler. Stuns can be a risky but worthwhile gambit on turn 1 since it will delay the summons for 1 round and let you lay down important initial damage.",
+            "Riposte + DODGE stacking can be very potent thanks to Tentacles requiring their attacks to land to get their buffs and all of the Shambler's attacks being full party Area of Effect.",
+            "Mark Based Damage can be good for focusing down the Shambler quickly, but do mind how deadly the Shambler Tentacles can be if they are allowed to stack their buffs up.",
+            "Overall, you want a composition that can take care of the summons well with good Accuracy etc, and is quite position flexible. If you encounter an Shambler Altar during a medium/long dungeon, you may want to save it for Buffing your party up in preparation for the battle.",
         ]
     },
 ]
+
 const StrategyContainers = {};
 
 function CreateBossStrategy() {
