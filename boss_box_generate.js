@@ -75,7 +75,7 @@ const BossLore = [
             "The Ancestor had collected many rare and elusive volumes on ancient herbal properties and was set to enjoy several weeks immersed in comfortable study. His work was interrupted, however, by a singularly striking young woman who insisted on repeated calls to the house.",
             "Her knowledge of horticulturalism and its role in various arcane practices impressed the Ancestor greatly and hislicentious impulse gave way to a genuine professional respect, and together, the two began to plant, harvest, and brew.",
             "As time wore on, her wild policy of self-experimentation grew intolerable. She quaffed all manner of strange fungi, herbs, and concoctions, intent on gaining some insight into the horror they both knew to be growing beneath them.",
-            "The change in her was appalling, and no longer able to stomach it, the Ancestor sent the Hag to live in the weald, where her wildness would be welcomed. And there, she continues her alchemical experiemnts.",
+            "The change in her was appalling, and no longer able to stomach it, the Ancestor sent the Hag to live in the weald, where her wildness would be welcomed. And there, she continues her alchemical experiments.",
         ]
     },
     {
@@ -83,7 +83,7 @@ const BossLore = [
         headertxt: " A Marvel Of Technology,  The Engine Of Destruction!",
         lorecontent:[
             "Rumors of the Ancestor's morbid genius and secretive excavations began to fill local legend but in the face of his increasingly egregious flaunting of public taboos, awe turned to ire, and demonstrations were held in the town square.",
-            "The wild whispers of heresy roused the rabble to violent action, with the general air of rebellion being so potentthat even the Ancestor's generous offer of gold to the local constabulary was rebuffed.", 
+            "The wild whispers of heresy roused the rabble to violent action, with the general air of rebellion being so potent that even the Ancestor's generous offer of gold to the local constabulary was rebuffed.", 
             "To reassert his rule, the Ancestor sought out unscrupulous men skilled in the application of force. Tight-lipped and terrifying, these mercenaries brought with them a war machine of terrible implication.",
             "Eager to end the tiresome domestic distraction, the Ancestor instructed his newly formed militia of hardened bandits, brigands, and killers to go forth and do their work. ",
             "Compliance and order were restored, and the noisome population of the Hamlet was culled to more manageable numbers.",
@@ -105,8 +105,8 @@ const BossLore = [
         headertxt: " It is a Travesty. A Blundering Mountain Of Hatred and Rage.",
         lorecontent:[
             "The Ancestor had been partaking in rituals involving blood sacrifice, which is difficult to master. To summon beings from beyond into our reality, an adequate physical vessel with the proper utterances at precise intervals is needed.",
-            "After failing  for a time, the Ancestor soon learned that the  condition of the host's meat was a critical factor, the best results coming from pigs, whose flesh is most like that of man.",
-            "In light of this discovery, the Ancestor at last succeeded to bring the Swine Prince into our reality, where it resided in the Warrens and required prodigious amounts of meat to sustain itself.",
+            "After failing  for a time, the Ancestor soon learned that the condition of the host's meat was a critical factor, the best results coming from pigs, whose flesh is most like that of man.",
+            "In light of this discovery, the Ancestor at last succeeded in bringing the Swine Prince into our reality, where it resided in the Warrens and required prodigious amounts of meat to sustain itself.",
             "Thankfully, this was but a trifling concern thanks to the Ancestor having access to a village full of it in the form of the citizens of the Hamlet at the time.",
             "Now, the Swine Prince dwells within the Warrens with a swinefolk with 2 flags now directs his actions.",
         ]
@@ -202,7 +202,7 @@ const BossStrategy = [
     {
         containerid: "necromancer_strategy_container",
         strategycontent:[
-            "The Necromancer being the first Boss you will fight in an estate, he is not very challenging. Even so, it is best to know how to most effectively defeat him just in case.",
+            "The Necromancer likely being the first Boss you will fight in an estate, he is not very challenging. Even so, it is best to know how to most effectively defeat him just in case.",
             "The Necromancer starts at rank 1, and moves back with every action he takes. He relies on his summons to keep him safe & overwhelm your party with sheer numbers. Mind the fact that from Veteran onwards the Necromancer can summon Bone Defenders which can potentially Guard him and Bone Captains from Champion, which pack a punch and are very durable.",
             "With the Necromancer's relatively low resistances outside of Stun, any form of damage will do at least decently against him, although Direct Damage will be more desirable considering the boss only takes 1 turn per round, with focusing him down with Mark Based Damage Dealers being the quickest way to finish him off.",
             "If possible, it is good to try to Stun the Necromancer so he cannot hide himself at the back ranks and your frontline damage dealers can continue to dish out damage, although if he gets to the back ranks, his low move resist makes him very susceptible to Pulls to the front ranks.",
@@ -244,7 +244,7 @@ const BossStrategy = [
             "The Nest can be destroyed for riches(See Icon to the Left of Related Enemies). And winning the encounter via surviving until the boss flees or killing it can grant unique Corvid's Quirks (See Icon to the Right of Stats).",
             "In terms of actually slaying the boss, due to its sky-high DODGE Accuracy trinkets are highly recommended, with Heroes that can target both the front and back ranks with High Damage moves (Be it with Mark Synergy or not) due to the Shrieker moving to the front or back positions constantly.",
              "Riposte is also quite potent with the shrieker having a good few moves that target multiple Heroes. 1 or more Jesters can do well thanks to them being able to quickly charge up Finale and use it for good Damage with essentially no risk of Missing.",
-              "In terms of surviving the encounter, the easiest/ most consistent way is to bring a Guarder with high PROT or DODGE with a Healer to Heal off any Damage the Guarder may take or using 1 Leper with PROT trinkets.",
+              "In terms of surviving the encounter, the easiest/ most consistent way is to bring a Guarder with high PROT or DODGE with a Healer to Heal off any Damage the Guarder may take or using 1 Leper or Crusader with PROT trinkets alongside their personal PROT buffs.",
         ]
     },
     {
