@@ -1285,7 +1285,10 @@
                 Locating Boss Rooms <br>
                  1. Furthest Room Away (only count rooms not individual tiles) <br>
                  2. Downmost Room if there are  multiple  rooms tied for furthest <br>
-                 3. Rightmost room if there are  multiple  rooms tied for downmost 
+                 3. Rightmost room if there are  multiple  rooms tied for downmost <br>
+                 Hallway Bosses: <br>
+                 All Hallway Bosses can only spawn once per expedition outside of curio interactions
+
             </div>
 
             <div class = "general_desc scrollable" id = "can_scroll_desc"> Lore and Strategy text can be Scrolled Down </div>
@@ -1440,32 +1443,15 @@
             <div class = "general_desc shambler_info_txt" id = "shrieker_endless_info_desc">
                 The Shrieker has an Endless Harvest Variant with some of its Skills Tweaked.
              </div>
- 
 
+         <!--Minion Additional Info-->
 
-
-            <!--Skills and Descriptions-->
-
-            <div class = "boss_skill_desc_container"></div>
-            <div class = "boss_skill_desc_container minion_skill_desc" id = "app_squeal_desc">
-                <img src = "images/position_icons/1234cleaveally_1enemy.png" class= "position_icons"> <br>
-                <span class = "highres">Squeal </span><br>
-                <span class = "attack_type"> Ranged </span> <br>
-                <span class = move> Back </span>  3<br>
-                ACC : 102.5 / CRIT : 1% / DMG : 1<br>
-                <span class = stun>Stun</span> <span class = "chance">(100% Base)</span>
+            <div class = "general_desc minion_additional_info_txt" id = "small_pew_minion_more_info_desc">
+                This Enemy Cannot be Missed and does not leave a Corpse
             </div>
 
-            <div class = "boss_skill_desc_container minion_skill_desc" id = "app_end_this_one_desc">
-                sdadsaskdlksadmlkads
-            </div>
-
-            <div class = "boss_skill_desc_container minion_skill_desc" id = "app_end_those_two_desc">
-                sdadsaskdlksadmlkads
-            </div>
-
-            <div class = "boss_skill_desc_container minion_skill_desc" id = "app_bit_o_squeal_desc">
-                sdadsaskdlksadmlkads
+            <div class = "general_desc minion_additional_info_txt" id = "cauldron_empty_minion_more_info_desc">
+                This Enemy Cannot be Missed and is Immune to Damage
             </div>
 
 
@@ -1474,13 +1460,6 @@
 
     </div>
 
-
-
- 
-
-
-   
-       
 
     <!--Quirk/Glossary-->
     <div class = glossary_container id = glossarybox>
