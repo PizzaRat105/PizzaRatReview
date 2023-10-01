@@ -1389,6 +1389,32 @@ attachHoverListeners("[id='clapperclaw_champ_lvl']", "[id='champ_clapperclaw_des
 attachHoverListeners("[id='clapperclaw_darkest_lvl']", "[id='darkest_clapperclaw_desc']");
 
 
+//Additional Minion Info
+
+attachHoverListeners("[id='small_pew_minion_more_info_app']", "[id='small_pew_minion_more_info_desc']");
+attachHoverListeners("[id='small_pew_minion_more_info_vet']", "[id='small_pew_minion_more_info_desc']");
+attachHoverListeners("[id='small_pew_minion_more_info_champ']", "[id='small_pew_minion_more_info_desc']");
+
+attachHoverListeners("[id='medium_pew_minion_more_info_app']", "[id='small_pew_minion_more_info_desc']");
+attachHoverListeners("[id='medium_pew_minion_more_info_vet']", "[id='small_pew_minion_more_info_desc']");
+attachHoverListeners("[id='medium_pew_minion_more_info_champ']", "[id='small_pew_minion_more_info_desc']");
+
+attachHoverListeners("[id='large_pew_minion_more_info_app']", "[id='small_pew_minion_more_info_desc']");
+attachHoverListeners("[id='large_pew_minion_more_info_vet']", "[id='small_pew_minion_more_info_desc']");
+attachHoverListeners("[id='large_pew_minion_more_info_champ']", "[id='small_pew_minion_more_info_desc']");
+
+attachHoverListeners("[id='cauldron_full_minion_more_info_app']", "[id='small_pew_minion_more_info_desc']");
+attachHoverListeners("[id='cauldron_full_minion_more_info_vet']", "[id='small_pew_minion_more_info_desc']");
+attachHoverListeners("[id='cauldron_full_minion_more_info_champ']", "[id='small_pew_minion_more_info_desc']");
+
+attachHoverListeners("[id='shrieker\\'s_nest_minion_more_info_app']", "[id='small_pew_minion_more_info_desc']");
+attachHoverListeners("[id='shrieker\\'s_nest_minion_more_info_vet']", "[id='small_pew_minion_more_info_desc']");
+attachHoverListeners("[id='shrieker\\'s_nest_minion_more_info_champ']", "[id='small_pew_minion_more_info_desc']");
+
+attachHoverListeners("[id='cauldron_empty_minion_more_info_app']", "[id='cauldron_empty_minion_more_info_desc']");
+attachHoverListeners("[id='cauldron_empty_minion_more_info_vet']", "[id='cauldron_empty_minion_more_info_desc']");
+attachHoverListeners("[id='cauldron_empty_minion_more_info_champ']", "[id='cauldron_empty_minion_more_info_desc']");
+
 });
 
 function attachHoverListeners(triggerSelector, targetSelector) {
