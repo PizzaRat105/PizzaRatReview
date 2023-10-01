@@ -1579,17 +1579,17 @@ const MinionStatData = [
     {
         id: "shrieker's_nest",
         app_stat1:["Thatchery", "", "60 / !72", "0",],        
-        app_stat2:["2", "0", "0", "100%",], 
+        app_stat2:["2", "0", "0", "0%",], 
         app_resist1:["200%", "200%", "20%",],
         app_resist2:["200%", "200%", "Bypass X"],
 
         vet_stat1:["Thatchery", "", "90 / !108", "0",], 
-        vet_stat2:["2", "0", "0", "100%",], 
+        vet_stat2:["2", "0", "0", "0%",], 
         vet_resist1:["220%", "220%", "40%",],
         vet_resist2:["220%", "220%", "Bypass X"],
 
         champ_stat1:["Thatchery", "", "123 / !148", "0",], 
-        champ_stat2:["2", "0", "0", "100%",], 
+        champ_stat2:["2", "0", "0", "0%",], 
         champ_resist1:["240%", "240%", "60%",],
         champ_resist2:["240%", "240%", "Bypass X"],
 
