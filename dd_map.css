@@ -565,7 +565,7 @@ text-align: center;}
 
 /*Loot Box Styling*/
 
-.loot_container{position: absolute; top: 22vw;left: 2vw; width: 36vw; height: 18vw; 
+.loot_container{position: absolute; top: 23vw;left: 2vw; width: 36vw; height: 18vw; 
                background-image: url('images/loot/inventory_panel.png'); background-size: 36vw; display: none;}
 #lootclose{width: 1.5vw; position: absolute; right: 0.45vw; top: 0.45vw;}
 #lootclose:hover{filter: brightness(150%);}
