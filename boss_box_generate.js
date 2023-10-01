@@ -205,7 +205,7 @@ const BossStrategy = [
             "The Necromancer being the first Boss you will fight in an estate, he is not very challenging. Even so, it is best to know how to most effectively defeat him just in case.",
             "The Necromancer starts at rank 1, and moves back with every action he takes. He relies on his summons to keep him safe & overwhelm your party with sheer numbers. Mind the fact that from Veteran onwards the Necromancer can summon Bone Defenders which can potentially Guard him and Bone Captains from Champion, which pack a punch and are very durable.",
             "With the Necromancer's relatively low resistances outside of Stun, any form of damage will do at least decently against him, although Direct Damage will be more desirable considering the boss only takes 1 turn per round, with focusing him down with Mark Based Damage Dealers being the quickest way to finish him off.",
-            "If possible, it is good to try to Stun the Necromancer so he cannot hide himself at the back ranks and your frontline damage dealers can continue to dish out damage, although if he gets to the back ranks, his low move resist makes him very susceptible to Pulls to the front ranks",
+            "If possible, it is good to try to Stun the Necromancer so he cannot hide himself at the back ranks and your frontline damage dealers can continue to dish out damage, although if he gets to the back ranks, his low move resist makes him very susceptible to Pulls to the front ranks.",
             "",
         ]
     },
@@ -213,9 +213,9 @@ const BossStrategy = [
         containerid: "prophet_strategy_container",
         strategycontent:[
             "The Prophet is a boss who starts at position 4, with his 3 pews occupying the front 3 ranks to keep the boss away from harm's reach. He relies on landing several 'Rubble of Ruin' hits and gradually whittling you down via stress and minor DoT Damage.",
-            "Damage Away! - Since the only real danger factor of the fight is from the high damage of 'Rubble of Ruin' you simply debuff prophet's damage to the point where any threat he posed before is invalidated. Debuffs that lower damage like the Leper's Intimidate or the Occultists' Weakening Curse is great for this purpose",
-            "PROT & DODGE Stacking coupled with Guards serves as a good safety net in the very rare instances where things could go south, although they should not be your primary and only countermeasure for the fight",
-            "If you don't want to spend time destroying pews for the loot they drop, you can bring backline damage to the fight to end it more quickly, with Mark Based damage being desirable since the Arbalest/Musketeer(who has a decent debuff in Suppressing Fire/Smokescreen and a Off Heal for safety) and the Houndmaster(Who has a Guard) are good heroes to bring with the Occultist being able to Mark with Vulnerability Hex",
+            "Damage Away! - Since the only real danger factor of the fight is from the high damage of 'Rubble of Ruin' you simply debuff prophet's damage to the point where any threat he posed before is invalidated. Debuffs that lower damage like the Leper's Intimidate or the Occultists' Weakening Curse is great for this purpose.",
+            "PROT & DODGE Stacking coupled with Guards serves as a good safety net in the very rare instances where things could go south, although they should not be your primary and only countermeasure for the fight.",
+            "If you don't want to spend time destroying pews for the loot they drop, you can bring backline damage to the fight to end it more quickly, with Mark Based damage being desirable since the Arbalest/Musketeer(who has a decent debuff in Suppressing Fire/Smokescreen and a Off Heal for safety) and the Houndmaster(Who has a Guard) are good heroes to bring with the Occultist being able to Mark with Vulnerability Hex.",
         ]
     },
     {
@@ -233,7 +233,7 @@ const BossStrategy = [
         strategycontent:[
             "The Brigand Pounder is a boss with potentially great damage output that mainly tries to wear your Heroes down with continuous Brigand Summons. The Pounder has innate Damage Resistance (25%) and some PROT.",
             "The Pounder relies on the Matchman to survive until the end of the round without being Stunned to potentially nuke your entire party with 'BOOOOOOOM!'. ",
-            "Due to this, you want your party to have good backline reach with good waveclear and longevity (AKA a solid composition) to be able to kill or Stun the Matchman, keep the other Brigands under control while still dealing Damage to the Pounder",
+            "Due to this, you want your party to have good backline reach with good waveclear and longevity (AKA a solid composition) to be able to kill or Stun the Matchman, keep the other Brigands under control while still dealing Damage to the Pounder.",
             "In terms of dealing damage to the Pounder itself, using Marked Based Damage is the best option with Armor Piercing skills like Pierce or Pick to the Face being decent.",
         ]
     },
@@ -241,7 +241,7 @@ const BossStrategy = [
         containerid: "shrieker_strategy_container",
         strategycontent:[
             "The Shrieker is an Event Boss that is fought in the Weald at the Shrieker's Nest. The Shrieker is accompanied by his Nest which he uses to shuffle himself to the front or the back ranks.",
-            "The Nest can be destroyed for riches(See Icon to the Left of Related Enemies). And winning the encounter via surviving until the boss flees or killing it can grant unique Corvid's Quirks (See Icon to the Right of Stats)",
+            "The Nest can be destroyed for riches(See Icon to the Left of Related Enemies). And winning the encounter via surviving until the boss flees or killing it can grant unique Corvid's Quirks (See Icon to the Right of Stats).",
             "In terms of actually slaying the boss, due to its sky-high DODGE Accuracy trinkets are highly recommended, with Heroes that can target both the front and back ranks with High Damage moves (Be it with Mark Synergy or not) due to the Shrieker moving to the front or back positions constantly.",
              "Riposte is also quite potent with the shrieker having a good few moves that target multiple Heroes. 1 or more Jesters can do well thanks to them being able to quickly charge up Finale and use it for good Damage with essentially no risk of Missing.",
               "In terms of surviving the encounter, the easiest/ most consistent way is to bring a Guarder with high PROT or DODGE with a Healer to Heal off any Damage the Guarder may take or using 1 Leper with PROT trinkets.",
@@ -250,7 +250,7 @@ const BossStrategy = [
     {
         containerid: "swine_prince_strategy_container",
         strategycontent:[
-            "1. Rallying Flare - Arbalest / Musketeer's Rallying Flare / Skeet Shot abilities are able to clear all Stuns and Marks on every hero BUT THEMSELVES, which effectively nullifies the boss' main gimmick as long as the Arbalest / Musketeer is kept safe from any Marks or Stuns, especially from Veteran Onwards where Wilbur gets a 2nd action to use to potentially Stun them, which is usually done by Guarding them and in the case of being Marked, using the Shieldbreaker's Camping Skill, Sandstorm to make them Unmarkable..",
+            "1. Rallying Flare - Arbalest / Musketeer's Rallying Flare / Skeet Shot abilities are able to clear all Stuns and Marks on every hero BUT THEMSELVES, which effectively nullifies the boss' main gimmick as long as the Arbalest / Musketeer is kept safe from any Marks or Stuns, especially from Veteran Onwards where Wilbur gets a 2nd action to use to potentially Stun them, which is usually done by Guarding them and in the case of being Marked, using the Shieldbreaker's Camping Skill, Sandstorm to make them Unmarkable.",
             "2. Mark and Kill - Since the Swine Prince isn't particularly weak to DoT damage due to the boss only having 1 action per turn for DoT Damage to do its thing, dishing out a lot of direct damage is your best bet for killing it quickly, especially since you are almost always going to bring the Arbalest, who is a Mark Based Damage Dealer.",
             "Outside of this, it is good to keep in mind that non damaging shuffle skills like the Plague Doctor's Disorienting Blast and the Bounty Hunter's Flashbang can move Wilbur to the front while potentially Stunning him without triggering Enraged Destruction, forcing him to use Squeal to go back to the back positions, which stops him from Marking your heroes for the turn, and potentially 2 if the Stun goes through.",
             "In addition, Debuff stacking with skills like Leper's Intimidate and Occultist's Weakening Curse can be used to make the boss hit like a wet noodle, especially if coupled with heroes with High PROT.",
@@ -274,7 +274,7 @@ const BossStrategy = [
         strategycontent:[
             "The Siren is a boss who relies on your own heroes to actually be a threat, having virtually no damage potential herself and using 'Song of Desire' to try to charm one of your Heroes and bring them to her side temporarily.",
             "'Song of Desire' has a flat 70% chance to control a hero instead of depending on the Hero's Debuff Resist, but the Siren's AI is still more likely to target the Hero with the lowest Debuff Resist. In addition, Heroes Charmed by the boss can only use the skills they had equipped at the start of the combat.",
-            "She is also quite susceptible to DoT damage from Bleeds and Blights due to taking 2 actions per turn alongside a relatively low Stun Resist",
+            "She is also quite susceptible to DoT damage from Bleeds and Blights due to taking 2 actions per turn alongside a relatively low Stun Resist.",
             "Due to all of this, the most common tactic used by players is using the Antiquarian with her low Debuff Resist as 'bait' for the Siren to charm, since She won't be a threat when Charmed.",
             "High Damage Heroes are discouraged since they could be a threat when Charmed whereas Heroes like the Plague Doctor or Occultist are encouraged due to the Siren being susceptible to Stuns and DoT damage.",
             "While utilizing Riposte can sound appealing due to the Siren having 2 full party cleaves, they can be risky due to charmed heroes potentially targetting a Hero with Riposte active and taking a blow for it.",
@@ -286,10 +286,10 @@ const BossStrategy = [
         strategycontent:[
             "The Drowned Crew is a boss that tries to outlast you with passive healing if a Hero is Chained, but overall lacks any real threat to pose to your Heroes due to having ignorable damage potential.",
             "The main gimmick of the boss is with the Anchorman's 'Heave to!' ability,where if the ability hits and a Hero is chained gives the Crew hefty buffs to its resistances and PROT and Heals the Crew whenever a Hero or the boss takes an action.",
-            "The first method to trivialising the fight is simply not letting the Anchorman use the ability at all by killing it before it can act (Do mind the anchorman has a hefty amount of PROT before landing 'Heave to!') or Stunning it. Shieldbreaker's Pierce skil is great for killing the Anchorman through its 50% PROT",
+            "The first method to trivialising the fight is simply not letting the Anchorman use the ability at all by killing it before it can act (Do mind the anchorman has a hefty amount of PROT before landing 'Heave to!') or Stunning it. Shieldbreaker's Pierce skil is great for killing the Anchorman through its 50% PROT.",
             "The Second method is using high DODGE to simply dodge 'Heave to!' so the Crew cannot gain the buffs. This works well with the Houndmaster due to his Guard skill giving him more DODGE.",
             "The third and most niche method is having a Virtued Hero at Position 1 (where 'Heave to!' will always target if used) since the skill will fail if used on a Virtued Hero, Stress Healing your Heroes instead.",
-            "If the Anchorman succeeds in chaining a Hero, just try to get rid of the Anchorman as quickly as possible to get rid of the Buff on the Crew",
+            "If the Anchorman succeeds in chaining a Hero, just try to get rid of the Anchorman as quickly as possible to get rid of the Buff on the Crew.",
             "In terms of killing the Boss, as long as you can shut down the Anchorman, anything goes, with Bleeds and Blights being decent due to Crew taking 2 actions per Round or using Mark Based Damage Dealers to Mark and Kill the Boss with Pure Damage. ",
         ]
     },
@@ -298,7 +298,7 @@ const BossStrategy = [
         strategycontent:[
             "The Collector is a Hallway MiniBoss which has a chance to replace a Hallway Battle if 13 or more of your inventory slots are filled.",
             "Due to the Collector spawning randomly, you can't really prepare for it, although as long as your party composition is solid, you will probably be fine.",
-            "The Collector's main threat is the Collected Highwaymen he summons with 'Collect Call' which can deal hefty damage with a Bleed. The Collected Vestal is of minimal threat and  usually buffs and heals its teammates. The Collected Man-at-Arms does a bit of Damage but can potentially Guard Collector",
+            "The Collector's main threat is the Collected Highwaymen he summons with 'Collect Call' which can deal hefty damage with a Bleed. The Collected Vestal is of minimal threat and  usually buffs and heals its teammates. The Collected Man-at-Arms does a bit of Damage but can potentially Guard The Collector.",
             "That being said, the Collector has middling Stun Resist and Speed, so you can pretty consistently Stun him on Round 1, take off about Half of its HP, and then easily finish the fight on turns 2-4.",
             "Do remember that you may simply retreat from the battle and try again if the turn 1 Stun fails, and if you lack the Damage to kill the Collector quickly, just try to keep the Collected Highwaymen under check and you should be fine.",
             "In summary: Build a solid composition with good Damage, Accuracy, and Reach alongside Stuns AKA just build a solid composition you should be using anyways.",
@@ -1593,7 +1593,7 @@ const MinionStatData = [
         champ_resist1:["240%", "240%", "60%",],
         champ_resist2:["240%", "240%", "Bypass X"],
 
-        hasmoreminioninfo: false,
+        hasmoreminioninfo: true,
         hasdarkest:false,
 
     },
@@ -1910,17 +1910,20 @@ const MinionStatData = [
         minionVetContainer.appendChild(vetSkillsContainer);
         minionChampContainer.appendChild(champSkillsContainer);
 }
-
         if(minion.hasmoreminioninfo) {
+            minionAppContainer.appendChild(createExtraMinionInfo("app"));
+            minionVetContainer.appendChild(createExtraMinionInfo("vet"));
+            minionChampContainer.appendChild(createExtraMinionInfo("champ"));
+        }
+
+        function createExtraMinionInfo(difficulty) {
             const MinionMoreInfo = document.createElement("img");
             MinionMoreInfo.src = "images/Hero_boxes/more_info_icon.png";
             MinionMoreInfo.loading = "lazy";
             MinionMoreInfo.className = "info minion_additional_info";
-           MinionMoreInfo.id = `${minion.id}_minion_more_info`
-            minionAppContainer.appendChild(MinionMoreInfo.cloneNode(true));
-            minionVetContainer.appendChild(MinionMoreInfo.cloneNode(true));
-            minionChampContainer.appendChild(MinionMoreInfo.cloneNode(true));
-        }
+            MinionMoreInfo.id = `${minion.id}_minion_more_info_${difficulty}`
+            return MinionMoreInfo; 
+        };
 
         container.appendChild(minionAppContainer);
         container.appendChild(minionVetContainer);
@@ -1965,9 +1968,9 @@ const MinionStatData = [
             MinionMoreInfo.src = "images/Hero_boxes/more_info_icon.png";
             MinionMoreInfo.loading = "lazy";
             MinionMoreInfo.className = "info minion_additional_info";
-            MinionMoreInfo.id = `${minion.id}_additional_info`
+            MinionMoreInfo.id = `${minion.id}_minion_more_info`
             minionDarkestContainer.appendChild(MinionMoreInfo.cloneNode(true));
-
+                
             const minionCloseBtn = document.createElement("img");
             minionCloseBtn.src = "images/Hero_boxes/panel_close.png"
             minionCloseBtn.loading = "lazy";
