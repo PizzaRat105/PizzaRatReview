@@ -70,23 +70,29 @@ button{background: white; border: none; width:20px}
 
 /*Side/Bottom Button Styling*/
 
-.hero_button{width: 5vw;height: 5vw;left: 33.7vw; top: 40.4vw;}
+.hero_button{width: 5vw;height: 5vw;left: 33.5vw; top: 40.4vw;}
 .provision_btn{width:5vw; position: absolute; top: 40.4vw; left: 41vw;}
-.loot_btn{position: absolute; width: 5.5vw;height: 5.5vw;left: 2.9vw; top: 40vw;}
-.bc_button{left:2.8vw; position: absolute; top: 28vw; width: 5.5vw;}
-.mod_btn{width: 5vw; height: 4.5vw; position: absolute; top: 34.5vw; left: 3vw}
+.loot_btn{position: absolute; width: 5vw;height: 5vw;left: 26.6vw; top: 40.4vw;}
+.bc_button{left:3vw; position: absolute; top: 27.7vw; width: 5.5vw;}
+.sb_dlc_btn{width: 4.5vw; height: 4.5vw; position: absolute; top: 38vw; left: 3.7vw}
+.disease_btn{position: absolute; width: 5vw;height: 5vw;left: 19.5vw; top: 40.4vw;}
+.mod_btn{position: absolute; width: 5vw;height: 5vw;left: 12.5vw; top: 40.4vw;}
 
 
-.hero_btn_label{ font-size: 1.9vw; position: absolute; top: 45.7vw; left: 32.7vw;}
-.provision_btn_label{ font-size: 1.9vw; position: absolute; top: 45.7vw;left: 40.7vw;}
-.loot_btn_label{ font-size: 1.9vw;position: absolute; top: 45.7vw;left: 0.5vw;}
-.circus_btn_label{ font-size: 1.9vw;position: absolute; top: 27vw;left: 2vw;}
+.hero_btn_label{ font-size: 1.9vw; position: absolute; top: 45.7vw; left: 32.6vw;}
+.provision_btn_label{ font-size: 1.9vw; position: absolute; top: 45.7vw;left: 40.4vw;}
+.loot_btn_label{ font-size: 1.9vw;position: absolute; top: 45.7vw;left: 26vw;}
+.circus_btn_label{ font-size: 1.9vw;position: absolute; top: 33.2vw;left: 1.5vw;text-align: center;}
+.sb_dlc_btn_label{ font-size: 1.9vw;position: absolute; top: 43.4vw;left: 1.5vw;text-align: center;}
+.disease_btn_label{ font-size: 1.9vw;position: absolute; top: 45.7vw;left: 19.4vw;}
+.mod_btn_label{ font-size: 1.9vw;position: absolute; top: 45.7vw;left: 13.2vw;}
 
 .provision_btn:hover{filter: brightness(150%);}
 .loot_btn:hover{filter: brightness(150%);}
 .bc_button:hover{filter: brightness(150%);}
+.sb_dlc_btn:hover{filter: brightness(150%);}
+.disease_btn:hover{filter: brightness(150%);}
 .mod_btn:hover{filter: brightness(150%);}
-
 
 /*General Box, Button and Backdrop Styling*/
 
