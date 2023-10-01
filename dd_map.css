@@ -309,6 +309,7 @@ text-align: center;}
 
 /*Additional Minion info*/
 .minion_additional_info{width: 1.5vw; left:0.8vw; top: 1vw;}
+.minion_additional_info_txt{left:30.6vw; top: 23.5vw;}
 
 /*Minion Shared Lifelink info*/
 .lifelink_info{top: 17.3vw; left: 15vw; width: 1.5vw;}
