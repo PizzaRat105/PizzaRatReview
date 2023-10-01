@@ -1568,7 +1568,7 @@ const MinionStatData = [
         champ_resist1:["65%", "50%", "65%",],
         champ_resist2:["50%", "55%", "Bypass X"],
 
-        hasmoreminioninfo: true,
+        hasmoreminioninfo:false,
         hasdarkest:false,
 
         skills: ["Fire in the Hole!","Hot Shot"],
@@ -1617,7 +1617,7 @@ const MinionStatData = [
         champ_resist2:["40%", "40%", "Bypass X"],
 
         skills: ["Squeal", "End This One", "End These Two", "Bit'o Squeal"],
-        hasmoreminioninfo: true,
+        hasmoreminioninfo: false,
         hasdarkest:false,
 
     },
@@ -1640,7 +1640,7 @@ const MinionStatData = [
         champ_resist1:["65%", "60%", "240%",],
         champ_resist2:["100%", "60%", "Bypass X"],
 
-        hasmoreminioninfo: true,
+        hasmoreminioninfo: false,
         hasdarkest:false,
 
         skills: ["Heave to!","Innate Self Buff","Chained Passive",],
@@ -1665,7 +1665,7 @@ const MinionStatData = [
         champ_resist1:["65%", "80%", "50%",],
         champ_resist2:["80%", "55%", "Bypass X"],
 
-        hasmoreminioninfo: true,
+        hasmoreminioninfo: false,
         hasdarkest:false,
 
         skills: ["Headhunt"],
@@ -1690,7 +1690,7 @@ const MinionStatData = [
         champ_resist1:["65%", "80%", "50%",],
         champ_resist2:["80%", "55%", "Bypass X"],
 
-        hasmoreminioninfo: true,
+        hasmoreminioninfo: false,
         hasdarkest:false,
 
         skills: ["Head Games", "Head Knocker"],
@@ -1715,7 +1715,7 @@ const MinionStatData = [
         champ_resist1:["65%", "80%", "50%",],
         champ_resist2:["80%", "55%", "Bypass X"],
 
-        hasmoreminioninfo: true,
+        hasmoreminioninfo: false,
         hasdarkest:false,
 
         skills: ["Headstrong", "Headache", "Head Rush"],
@@ -1747,7 +1747,7 @@ const MinionStatData = [
 
 
         skills: ["Clapperclaw",],
-        hasmoreminioninfo: true,
+        hasmoreminioninfo: false,
         hasdarkest:true,
 
     },     
