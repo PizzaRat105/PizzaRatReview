@@ -11,7 +11,7 @@ const ruinsCurioTopData = [
     { name: "confession_booth", isCorridorCurio: true, title: "Confession Booth", type: "Worship Reflective", forcedtype: "Worship Reflective"},
     { name: "decorative_urn", isCorridorCurio: true, title: "Decorative Urn", type: "Haunted", forcedtype: "Haunted"},
     { name: "holy_fountain", isCorridorCurio: false, title: "Holy Fountain", type: "Fountain Worship", forcedtype: "Fountain Worship"},
-    { name: "iron_maiden", isCorridorCurio: true, title: "Iron Maiden", type: "Haunted", forcedtype: "Haunted"},
+    { name: "iron_maiden", isCorridorCurio: true, title: "Iron Maiden", type: "Haunted Torture", forcedtype: "Haunted Torture"},
     { name: "locked_display_cabinet", isCorridorCurio: true, title: "Locked Display Cabinet", type: "Treasure", forcedtype: "Treasure"},
     { name: "locked_sarcophagus", isCorridorCurio: false, title: "Locked Sarcophagus", type: "Haunted Reflective", forcedtype: "Haunted Reflective"},
     { name: "sarcophagus", isCorridorCurio: false, title: "Sarcophagus", type: "Haunted Reflective Body", forcedtype: "Haunted Reflective Body"},
