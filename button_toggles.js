@@ -23,6 +23,14 @@ DiseaseBtn.addEventListener('click' , function() {
   DiseaseBox.style.display = 'block';
 });
 
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && DiseaseBox.style.display === 'block') {
+    CloseAudio.currentTime = 0;
+    CloseAudio.play();
+    DiseaseBox.style.display = 'none';
+  }
+});
+
 /*Lootbox*/ 
 const LootBtn = document.getElementById('Loot');
 const LootBox = document.getElementById('lootbox');
