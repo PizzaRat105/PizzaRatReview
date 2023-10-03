@@ -36,8 +36,7 @@
 
         </div>
 
-       
-
+    
 
         <!--Left buttons-->
         
@@ -1826,6 +1825,80 @@
             
     </div>
 
+
+     <!--Disease Box-->
+
+    <div class = disease_container id = diseasebox>
+
+        <div class = "provision_backdrop"></div>
+
+        <img src = "images/Hero_boxes/more_info_icon.png" class = "info_med disease_universal" id = "disease_shared_info">
+        <div class = "ddlogo_text disease_shared_label ">Overview</div>
+        <img src = "images/diseases/sanitarium_icon.png" class = "info_med disease_enemy_source" id = "disease_enemy_info">
+        <div class = "ddlogo_text disease_enemy_label ">Enemies</div>
+        <img src = "images/diseases/sanitarium_icon.png" class = "info_med disease_curio_source" id = "disease_curio_info">
+        <div class = "ddlogo_text disease_curio_label ">Curios</div>
+        
+        <!--Container for disease names-->
+        <div id = "disease_names"></div>
+
+
+        <div class = "general_desc disease_universal_txt" id = "disease_shared_info_desc">
+            <span class = "disease">Diseases </span> can be contracted through some  <span class = "negative">Enemy Attacks</span>, <span class = "negative">Negative Curio Interactions</span>, and sometimes at the end of an expedition and stay on the Hero until removed or replaced.
+            <p><span class = "disease">Diseases </span> can be removed through the <span class = "stress"> Sanitarium </span>or certain <span class = "highres">Camping Skills </span> like the Grave Robber's <span class = "highres">'Snuff Box'</span> or the Plague Doctor's <span class = "highres">'Leeches'</span> Skill.</p>
+            <p>Each Hero may only have a maximum of 3 <span class = "disease">Diseases </span> at once, and new <span class = "disease">Diseases</span> that have been acquired at that point replace existing ones akin to Quirks. </p>
+            <p>The chance of contracting a <span class = "disease">Disease</span> at the end of a dungeon is 32% - (33% * <span class = "disease">Disease</span> Resist), with a minimum of 5%. 
+            You can only get <span class = "disease">Diseases </span> at the end of a dungeon if the Hero's Resolve Level is at least 2. </p>
+            Buffs to <span class = "disease">Disease</span> Resist such as <span class = "stress">Holy Water</span> or <span class = "buff">Camping Buffs </span>that boost it can be used before ending the expedition to lessen the chance of contracting a <span class = "disease">Disease</span> at the end of an expedition.
+        </div>
+
+        <div class = "general_desc disease_enemy_source_txt" id = "disease_enemy_info_desc">
+            Enemies that can inflict <span class = "disease">Diseases</span>  <br>
+            
+            Monsters that can inflict Any <span class = "disease">Disease</span> <br>
+            <span class = "attack_type">Maggot</span> - <span class = "disease"> Grave Nibble </span> (15%) // <span class = "attack_type">Swine Wretch</span> - <span class = "disease"> Vomit </span> (15%)  <br>
+            <span class = "attack_type">Carrion Eater</span> - <span class = "disease">Munch</span> - <span class = "veteran"> Veteran </span> (7%) // <span class = "champion"> Champion </span> (9%)<br>
+            <span class = "attack_type">Crone </span>- <span class = "disease">Fetid Censer</span> -  <span class = "veteran"> Veteran </span> (7%) // <span class = "champion"> Champion </span> (9%)<br>
+            <span class = "attack_type">Sea Maggot</span> - <span class = "disease"> Brine </span> (8%) // <span class = "attack_type">Fungal Artillery </span>- <span class = "disease"> Rain of Blight </span> (15%) <br>
+            <span class = "attack_type">Deep Stinger</span> - <span class = "disease"> Salty Gouge </span> (6%) //  <span class = "disease"> Shocker </span> (6%) <br>
+            <span class = "attack_type">The Shrieker</span> - <span class = "disease"> Regurgitate </span> (15%) <br><br>
+            
+            Monsters that inflict Specific <span class = "disease">Diseases</span> <br>
+            <span class = "attack_type">Ghoul</span> - <span class = "disease"> Howl </span> - <span class = "disease"> The Worries </span> (5%) <br>
+            <span class = "attack_type">Rabid Gnasher</span> - <span class = "disease"> Rabid Rush </span> - <span class = "disease"> Rabies </span> (10%) <br><br>
+
+            Town Facilities <br>
+            <span class = "attack_type">Brothel</span> - <span class = "disease"> Syphilis </span> (about 3%)
+
+        </div>
+
+        <div class = "general_desc disease_curio_source_txt" id = "disease_curio_info_desc">
+            Curios which can Inflict <span class = "disease">Diseases</span> if Interacted Without Supplies <br>
+            
+            Curios that can inflict Any <span class = "disease">Disease</span> <br>
+            <span class = "attack_type">Decorative Urn</span> (3.7%) // <span class = "attack_type">Iron Maiden</span> (6.7%) // <span class = "attack_type">Pile of Bones</span> (25%) <br>
+            <span class = "attack_type">Beast Carcass</span> (19.04%) // <span class = "attack_type">Shallow Grave </span>(50%) // <span class = "attack_type">Bas-Relief</span> (11.1%) <br>
+            <span class = "attack_type">Brackish Tide Pool</span> (25%) <br><br>
+
+            Curios that can inflict Specific <span class = "disease">Diseases</span> if Interacted Without Supplies <br>
+            <span class = "attack_type">Decorative Urn</span> - <span class = "disease"> Creeping Cough </span> (7.4%) <br> 
+            <span class = "attack_type">Iron Maiden</span> - <span class = "disease"> Tetanus </span> (13.3%) <br> 
+            <span class = "attack_type">Dinner Cart</span> - <span class = "disease"> The Black Plague </span> (12.5%) <br> 
+            <span class = "attack_type">Makeshift Dining Table </span> - <span class = "disease"> Tapeworm </span> (25%) <br> 
+            <span class = "attack_type">Beast Carcass </span> - <span class = "disease"> Rabies </span> (9.52%) <br> 
+            <span class = "attack_type">Fish Carcass </span> - <span class = "disease"> The Red Plague </span> (16.7%) <br> <br>
+
+            <span class = "crimson_court"> Crimson Court Curios</span> (If interacted without supplies) <br>
+            Disclaimer: Some Numbers may be inaccurate <br>
+            The <span class = "crimson_court"> Crimson Curse </span> itself is covered in the dedicated <span class = "crimson_court">Crimson Court</span> Page <br>
+            <span class = "attack_type">Hooded Shrew </span>(4.76%) // <span class = "attack_type">WIzened Shrew</span> (8.35%) // <br>
+            <span class = "attack_type">Bloodflowers</span> Any (2.56%) // <span class = disease>Tetanus </span>(5.12%) <br>
+            <span class = "attack_type">Forgotten Delicacies</span> (6.7%) 
+
+        </div>
+        <img src = "images/Hero_boxes/panel_close.png" class = "disease_close" id = "disease_close_btn">
+    </div>
+    
     <!--Loot Box-->
     <div class = "loot_container" id = lootbox>
         <img src = "images/Hero_boxes/panel_close.png" id = lootclose>
@@ -2032,19 +2105,20 @@
     <audio id = "candle_open" src ="sfx/candle_open.wav"></audio>
     <audio id = "candle_close" src ="sfx/candle_close.wav"></audio>
 
-    <!--Mission Box-->
+       <!--Mission Box-->
     <script src = "textbox_toggle.js"></script>
 
     <!--Links-->
     <script src = "btn_sound_toggle.js"></script>
+    <!--Handles Disease Box Generation-->
+    <script src = 'disease_generate.js'></script>
 
     <!--Lower right Buttons-->
     <script src = "button_toggles.js"></script>
 
+
     <!--Handles Quirk/Glossary-->
     <script src = "quirk_desc_generation.js"></script>
-
-
 
     <!--Handles Enemy Box Generation-->
     <script src = 'enemy_box_generate.js'></script>
@@ -2056,8 +2130,10 @@
     <!--Handles Boss Box Generation-->
     <script src = 'boss_box_generate.js'></script>
     <script src = "boss_box_toggle.js"></script>
+
     <!--Handles description box toggles-->
     <script src = "icon_toggle.js"></script>
+
 </body>
 
 </html>
