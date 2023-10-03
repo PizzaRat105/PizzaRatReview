@@ -1415,6 +1415,38 @@ attachHoverListeners("[id='cauldron_empty_minion_more_info_app']", "[id='cauldro
 attachHoverListeners("[id='cauldron_empty_minion_more_info_vet']", "[id='cauldron_empty_minion_more_info_desc']");
 attachHoverListeners("[id='cauldron_empty_minion_more_info_champ']", "[id='cauldron_empty_minion_more_info_desc']");
 
+//Disease Icons
+attachHoverListeners("[id='disease_shared_info']", "[id='disease_shared_info_desc']");
+attachHoverListeners("[id='disease_enemy_info']", "[id='disease_enemy_info_desc']");
+attachHoverListeners("[id='disease_curio_info']", "[id='disease_curio_info_desc']");
+
+//Disease Descs
+attachHoverListeners("[id='bad_humors']", "[id='bad_humors_desc']");
+attachHoverListeners("[id='the_black_plague']", "[id='the_black_plague_desc']");
+attachHoverListeners("[id='bullmic']", "[id='bullmic_desc']");
+attachHoverListeners("[id='creeping_cough']", "[id='creeping_cough_desc']");
+attachHoverListeners("[id='ennui']", "[id='ennui_desc']");
+attachHoverListeners("[id='grey_rot']", "[id='grey_rot_desc']");
+attachHoverListeners("[id='hemophilia']", "[id='hemophilia_desc']");
+attachHoverListeners("[id='hysterical_blindness']", "[id='hysterical_blindness_desc']");
+attachHoverListeners("[id='lethargy']", "[id='lethargy_desc']");
+attachHoverListeners("[id='rabies']", "[id='rabies_desc']");
+attachHoverListeners("[id='scurvy']", "[id='scurvy_desc']");
+attachHoverListeners("[id='spasm_of_the_entrails']", "[id='spasm_of_the_entrails_desc']");
+attachHoverListeners("[id='spotted_fever']", "[id='spotted_fever_desc']");
+attachHoverListeners("[id='syphilis']", "[id='syphilis_desc']");
+attachHoverListeners("[id='tapeworm']", "[id='tapeworm_desc']");
+attachHoverListeners("[id='tetanus']", "[id='tetanus_desc']");
+attachHoverListeners("[id='the_ague']", "[id='the_ague_desc']");
+attachHoverListeners("[id='the_fits']", "[id='the_fits_desc']");
+attachHoverListeners("[id='the_red_plague']", "[id='the_red_plague_desc']");
+attachHoverListeners("[id='the_runs']", "[id='the_runs_desc']");
+attachHoverListeners("[id='the_worries']", "[id='the_worries_desc']");
+attachHoverListeners("[id='vertigo']", "[id='vertigo_desc']");
+attachHoverListeners("[id='vampiric_spirits']", "[id='vampiric_spirits_desc']");
+attachHoverListeners("[id='wasting_sickness']", "[id='wasting_sickness_desc']");
+
+  
 });
 
 function attachHoverListeners(triggerSelector, targetSelector) {
