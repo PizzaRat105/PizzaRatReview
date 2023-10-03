@@ -544,7 +544,7 @@ text-align: center;}
 .disease_column{width: 17vw; height: 35vw; position: absolute; top: 1.5vw; font-family: 'Ubuntu', sans-serif; color:rgb(116, 125, 78); font-size: 1.7vw;font-weight: 500; line-height: 2.9vw; padding: 0.3vw;}
 .disease_1{right: 18vw; width: 18vw;}
 .disease_2{right: -0.5vw;} 
-.disease_desc{font-size: 1.3vw;line-height: 1.8vw;}
+.disease_desc{font-size: 1.3vw;line-height: 1.8vw;text-align: start;}
 
 .disease_row1_num1{position:absolute;left: 34vw; top: 4.7vw;}
 .disease_row1_num2{position:absolute;left: 34vw; top: 7.6vw;}
