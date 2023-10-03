@@ -8,7 +8,7 @@ const diseaseNames = [
         {
             diseaseName: "bad_humors",
             diseaseClass: "disease_row1_num1",
-            description: "-20% MAX HP <br> Hello"
+            description: "-20% MAX HP "
         },
         {
             diseaseName: "the_black_plague",
@@ -170,7 +170,7 @@ function replaceSpecificEffects(description) {
 
 function generateDiseaseDescription(disease) {
     const diseaseTextContainer = document.createElement("div");
-    diseaseTextContainer.classList = `general_desc ${disease.diseaseClass}`;
+    diseaseTextContainer.classList = `general_desc disease_desc ${disease.diseaseClass}`;
     diseaseTextContainer.id = `${disease.diseaseName}_desc`;
     diseaseTextContainer.textContent = disease.description;
     diseaseTextContainer.innerHTML = replaceSpecificEffects(disease.description);
