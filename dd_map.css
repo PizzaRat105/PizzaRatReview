@@ -45,6 +45,11 @@ button{background: white; border: none; width:20px}
 .boss_button{position: absolute; height: 3.2vw; display: none;}
 .boss_button:hover{filter: brightness(150%);}
 
+/*Universal info*/
+.info{position: absolute; left: 1.2vw; top: 1.2vw; width: 2vw;} 
+.info:hover{filter: brightness(150%);}
+.info_med{position: absolute; left: 1.2vw; top: 1.2vw; width: 2.5vw;} 
+.info_med:hover{filter: brightness(150%);}
 
 /*Map Styling*/
 .backdrop{
