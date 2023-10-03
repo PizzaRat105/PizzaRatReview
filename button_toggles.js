@@ -14,7 +14,14 @@ function PlayBtnPress() {
   BtnSelectAudio.play();
 }
 
+/*Disease Box*/
+const DiseaseBox = document.getElementById("diseasebox");
+const DiseaseBtn = document.getElementById("diseasebtn");
 
+DiseaseBtn.addEventListener('click' , function() {
+  PlayPageOpn();
+  DiseaseBox.style.display = 'block';
+});
 
 /*Lootbox*/ 
 const LootBtn = document.getElementById('Loot');
@@ -222,12 +229,17 @@ SettingIcon1.addEventListener('mouseleave', function() {SettingOverlay.style.dis
 SettingIcon2.addEventListener('mouseover' , function() {SettingOverlay.style.display = 'block'})
 SettingIcon2.addEventListener('mouseleave', function() {SettingOverlay.style.display = 'none'; });
 
-
 const CloseProvisions = document.getElementById('food_close')
 const CloseLoot = document.getElementById('lootclose');
+const DiseaseCloseBtn = document.getElementById("disease_close_btn"); 
 const CloseAudio = document.getElementById('page_close');
 CloseAudio.volume = 0.6;
 
+DiseaseCloseBtn.addEventListener('click', function() {
+  CloseAudio.currentTime = 0;
+  CloseAudio.play();
+  DiseaseBox.style.display = 'none';
+});
 CloseProvisions.addEventListener('click', function() {
   CloseAudio.currentTime = 0;
   CloseAudio.play();
@@ -238,5 +250,3 @@ CloseLoot.addEventListener('click', function() {
   CloseAudio.play();
   LootBox.style.display = 'none'
 })
-
-
