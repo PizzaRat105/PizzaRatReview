@@ -18,6 +18,11 @@ button{background: white; border: none; width:20px}
     font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1vw; line-height: 1.3vw; font-weight: 500;
     text-align: center; padding: 0.3vw 0.6vw 0.6vw 0.6vw;
 }
+.test_desc{position: absolute; width:max-content; 
+    border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.8);
+    font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1vw; line-height: 1.3vw; font-weight: 500;
+    text-align: center; padding: 0.3vw 0.6vw 0.6vw 0.6vw;
+}
 .bordered{border: 1px solid red;}
 .description{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1vw; line-height: 1.3vw;}
 .hoverable:hover{filter: brightness(150%);}
@@ -510,6 +515,57 @@ text-align: center;}
 .row2num12{top: 37.1vw; left:17.4vw;}
 
 
+/*Disease Box*/
+
+.disease_container{position: absolute; left: 8.5vw; top: 6.75vw; height: 38.7vw; width: 69.8vw; 
+    background-image: url("images/diseases/disease_bg.png"); background-size: 69.8vw; display: none;}
+
+.disease_close{position:absolute; right: 0.6vw; top:0.8vw; width: 1.6vw}
+.disease_close:hover{filter: brightness(150%);}
+
+.disease_universal{left: 2.5vw; top: 5.1vw;}
+.disease_shared_label{position: absolute; font-size: 1.5vw; left: 1.5vw; top: 7.5vw;}
+.disease_universal_txt{left: 1.5vw;top:8vw; max-width: 50vw; padding-top:0.5vw; font-size: 1.3vw; line-height: 1.8vw;}
+
+
+.disease_enemy_source{left: 22vw; top: 2.7vw;}
+.disease_enemy_label{position: absolute; font-size: 1.5vw; left: 21.2vw; top: 5.3vw;}
+.disease_enemy_source_txt{left: 25vw; top: 2.7vw;  max-width: 50vw; font-size: 1.3vw; line-height: 1.8vw; font-weight: 500;}
+
+.disease_curio_source{left: 27vw; top: 2.7vw;}
+.disease_curio_label{position: absolute; font-size: 1.5vw; left: 26.6vw; top: 5.3vw;}
+.disease_curio_source_txt{left: 30vw; top: 2.7vw;  max-width: 50vw; font-size: 1.3vw; line-height: 1.8vw; font-weight: 500;}
+
+.disease_column{width: 17vw; height: 35vw; position: absolute; top: 1.5vw; font-family: 'Ubuntu', sans-serif; color:rgb(116, 125, 78); font-size: 1.7vw;font-weight: 500; line-height: 2.9vw; padding: 0.3vw;}
+.disease_1{right: 18vw; width: 18vw;}
+.disease_2{right: -0.5vw;} 
+.disease_desc{font-size: 1.3vw;line-height: 1.8vw;}
+
+.disease_row1_num1{position:absolute;left: 34vw; top: 4.7vw;}
+.disease_row1_num2{position:absolute;left: 34vw; top: 7.6vw;}
+.disease_row1_num3{position:absolute;left: 34vw; top: 10.5vw;}
+.disease_row1_num4{position:absolute;left: 34vw; top: 13.4vw;}
+.disease_row1_num5{position:absolute;left: 34vw; top: 16.3vw;}
+.disease_row1_num6{position:absolute;left: 34vw; top: 19.2vw;}
+.disease_row1_num7{position:absolute;left: 34vw; top: 22.1vw;}
+.disease_row1_num8{position:absolute;left: 34vw; top: 25vw;}
+.disease_row1_num9{position:absolute;left: 34vw; top: 27.9vw;}
+.disease_row1_num10{position:absolute;left: 34vw; top: 30.8vw;}
+.disease_row1_num11{position:absolute;left: 34vw; top: 33.7vw;}
+.disease_row1_num12{position:absolute;left: 34vw; top: 36.6vw;}
+
+.disease_row2_num1{position:absolute;left: 53.5vw; top: 4.7vw;}
+.disease_row2_num2{position:absolute;left: 53.5vw; top: 7.6vw;}
+.disease_row2_num3{position:absolute;left: 53.5vw; top: 10.5vw;}
+.disease_row2_num4{position:absolute;left: 53.5vw; top: 13.4vw;}
+.disease_row2_num5{position:absolute;left: 53.5vw; top: 16.3vw;}
+.disease_row2_num6{position:absolute;left: 53.5vw; top: 19.2vw;}
+.disease_row2_num7{position:absolute;left: 53.5vw; top: 22.1vw;}
+.disease_row2_num8{position:absolute;left: 53.5vw; top: 25vw;}
+.disease_row2_num9{position:absolute;left: 53.5vw; top: 27.9vw;}
+.disease_row2_num10{position:absolute;left: 53.5vw; top: 30.8vw;}
+.disease_row2_num11{position:absolute;left: 53.5vw; top: 33.7vw;}
+.disease_row2_num12{position:absolute;left: 53.5vw; top: 36.6vw;}
 
 
 /*Provision Box Styling*/
