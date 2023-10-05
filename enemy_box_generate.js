@@ -149,7 +149,7 @@ SharedEnemyBox.appendChild(SharedenemySidenav);
 const RuinsEnemySpriteData = [
     { id: "bone_soldier", content: "Bone Soldier", useBigSprite: false,useTallSprite:false,useMediumSprite:false, useMedTallSprite: true,useSmallSprite: false, hasApprentice: true, hasVeteran: true, hasChampion:true, hasDarkest:false, hasShortName: false, hasMediumName:true, hasLongName: false, hasVeryShortName: false,},
     { id: "bone_defender", content: "Bone Defender",useBigSprite: false,useTallSprite:false,useMediumSprite:false, useMedTallSprite: true,useSmallSprite: false, hasApprentice: true, hasVeteran: true, hasChampion:true, hasDarkest:false, hasShortName: false, hasMediumName:true, hasLongName: false,  hasVeryShortName: false,},
-    { id: "bone_arbalest", content: "Bone Arbalest", useBigSprite: false,useTallSprite:false,useMediumSprite:false, useMedTallSprite: true,useSmallSprite: false, hasApprentice: true, hasVeteran: true, hasChampion:true, hasDarkest:false, hasShortName: false, hasMediumName:true, hasLongName: false, hasVeryShortName: false,},
+    { id: "bone_arbalest", content: "Bone Arbalist", useBigSprite: false,useTallSprite:false,useMediumSprite:false, useMedTallSprite: true,useSmallSprite: false, hasApprentice: true, hasVeteran: true, hasChampion:true, hasDarkest:false, hasShortName: false, hasMediumName:true, hasLongName: false, hasVeryShortName: false,},
     { id: "bone_courtier", content: "Bone Courtier", useBigSprite: false,useTallSprite:false,useMediumSprite:false, useMedTallSprite: true,useSmallSprite: false, hasApprentice: true, hasVeteran: true, hasChampion:true, hasDarkest:false, hasShortName: false, hasMediumName:true, hasLongName: false, hasVeryShortName: false,},
     { id: "bone_spearman", content: "Bone Spearman", useBigSprite: false, useTallSprite:false,useMediumSprite:false, useMedTallSprite: true,useSmallSprite: false,hasApprentice: false, hasVeteran: true, hasChampion:true, hasDarkest:false, hasShortName: false, hasMediumName:true, hasLongName: false, hasVeryShortName: false,}, 
     { id: "bone_captain", content: "Bone Captain", useBigSprite: false, useTallSprite:false,useMediumSprite:false, useMedTallSprite: true,useSmallSprite: false,hasApprentice: false, hasVeteran: true, hasChampion:true, hasDarkest:false, hasShortName: false, hasMediumName:true, hasLongName: false, hasVeryShortName: false,},     
@@ -5372,7 +5372,7 @@ const RuinsenemyStrategies = [
     {
         id: "bone_arbalest_strat",
         content: [
-            "The Bone Arbalest is your typical backline damage dealer with a minor damage bonus vs Marked heroes.",
+            "The Bone Arbalist is your typical backline damage dealer with a minor damage bonus vs Marked heroes.",
             "It can easily be shut down by moving it into the front 2 ranks, where it can only use Bayonet Jab.",
             "The fact that Quarrel cannot hit position 1 can be taken advantage of to ensure a hero's safety.",
         ],
