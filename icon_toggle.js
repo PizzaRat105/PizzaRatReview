@@ -159,6 +159,12 @@ document.addEventListener("DOMContentLoaded", function() {
   attachHoverListeners("[id^='deed_box']", "[id^='deed_desc']");
   attachHoverListeners("[id^='portrait_box']", "[id^='portrait_desc']");
 
+//Quirk Info
+
+attachHoverListeners("[id='prismatic_quirk_info']", "[id='prismatic_quirk_info_desc']");
+attachHoverListeners("[id='quirk_overview']", "[id='quirk_overview_desc']");
+
+
 //S Tier Positive
   attachHoverListeners("[id^='luminous']", "[id^='luminous_desc']");
   attachHoverListeners("[id^='corvid_grace']", "[id^='corvid_grace_desc']");
@@ -189,6 +195,7 @@ document.addEventListener("DOMContentLoaded", function() {
   attachHoverListeners("[id^='mankind_hater']", "[id^='mankind_hater_desc']");
   attachHoverListeners("[id^='beast_hater']", "[id^='beast_hater_desc']");
   attachHoverListeners("[id^='warrior_of_light']", "[id^='warrior_of_light_desc']");
+  attachHoverListeners("[id^='twilight_dreamer']", "[id^='twilight_dreamer_desc']");
 
   //B Tier Positive
 
@@ -346,7 +353,7 @@ document.addEventListener("DOMContentLoaded", function() {
   attachHoverListeners("[id^='ruminator']", "[id^='ruminator_desc']");
   attachHoverListeners("[id^='enlightened']", "[id^='enlightened_desc']");
   attachHoverListeners("[id^='god_fearing']", "[id^='god_fearing_desc']");
-  attachHoverListeners("[id^='flagellant']", "[id^='flagellant_desc']");
+  attachHoverListeners("[id='flagellant']", "[id='flagellant_desc']");
 
   //Tier 10
 
@@ -361,6 +368,21 @@ document.addEventListener("DOMContentLoaded", function() {
   attachHoverListeners("[id^='known_cheat']", "[id^='known_cheat_desc']");
   attachHoverListeners("[id^='deviant_tastes']", "[id^='deviant_tastes_desc']")
   attachHoverListeners("[id^='bad_gambler']", "[id^='bad_gambler_desc']");
+  attachHoverListeners("[id^='shard_mercenary']", "[id^='shard_mercenary_desc']");
+
+  //Prismatic
+  attachHoverListeners("[id^='prismatic_isolation']", "[id^='prismatic_isolation_desc']");
+  attachHoverListeners("[id^='prismatic_stability']", "[id^='prismatic_stability_desc']");
+  attachHoverListeners("[id^='prismatic_solidity']", "[id^='prismatic_solidity_desc']");
+  attachHoverListeners("[id^='prismatic_coagulation']", "[id^='prismatic_coagulation_desc']");
+  attachHoverListeners("[id^='prismatic_purity']", "[id^='prismatic_purity_desc']");
+  attachHoverListeners("[id^='prismatic_calm']", "[id^='prismatic_calm_desc']");
+  attachHoverListeners("[id^='prismatic_force']", "[id^='prismatic_force_desc']");
+  attachHoverListeners("[id^='prismatic_speed']", "[id^='prismatic_speed_desc']");
+  attachHoverListeners("[id^='prismatic_precision']", "[id^='prismatic_precision_desc']");
+  attachHoverListeners("[id^='prismatic_eye']", "[id^='prismatic_eye_desc']");
+  attachHoverListeners("[id^='husk_slayer']", "[id^='husk_slayer_desc']");
+  attachHoverListeners("[id^='scythemaster']", "[id^='scythemaster_desc']");
 
 
 //Ruins Skills
@@ -1388,7 +1410,6 @@ attachHoverListeners("[id='clapperclaw_vet_lvl']", "[id='vet_clapperclaw_desc']"
 attachHoverListeners("[id='clapperclaw_champ_lvl']", "[id='champ_clapperclaw_desc']");
 attachHoverListeners("[id='clapperclaw_darkest_lvl']", "[id='darkest_clapperclaw_desc']");
 
-
 //Additional Minion Info
 
 attachHoverListeners("[id='small_pew_minion_more_info_app']", "[id='small_pew_minion_more_info_desc']");
@@ -1446,7 +1467,413 @@ attachHoverListeners("[id='vertigo']", "[id='vertigo_desc']");
 attachHoverListeners("[id='vampiric_spirits']", "[id='vampiric_spirits_desc']");
 attachHoverListeners("[id='wasting_sickness']", "[id='wasting_sickness_desc']");
 
-  
+//Trinket Info
+
+attachHoverListeners("[id='trinket_overview']", "[id='trinket_overview_desc']");
+attachHoverListeners("[id='crimson_court_trinket_overview']", "[id='crimson_court_trinket_overview_desc']");
+attachHoverListeners("[id='color_of_madness_trinket_overview']", "[id='color_of_madness_trinket_overview_desc']");
+attachHoverListeners("[id='shieldbreaker_trinket_overview']", "[id='shieldbreaker_trinket_overview_desc']");
+
+
+//Trinket Descriptions
+
+//Very Common
+
+attachHoverListeners("[id='accuracy_stone_trinket']", "[id='accuracy_stone_trinket_desc']");
+attachHoverListeners("[id='bleed_charm_trinket']", "[id='bleed_charm_trinket_desc']");
+attachHoverListeners("[id='bleed_stone_trinket']", "[id='bleed_stone_trinket_desc']");
+attachHoverListeners("[id='blight_charm_trinket']", "[id='blight_charm_trinket_desc']");
+attachHoverListeners("[id='blight_stone_trinket']", "[id='blight_stone_trinket_desc']");
+attachHoverListeners("[id='critical_stone_trinket']", "[id='critical_stone_trinket_desc']");
+attachHoverListeners("[id='debuff_charm_trinket']", "[id='debuff_charm_trinket_desc']");
+attachHoverListeners("[id='debuff_stone_trinket']", "[id='debuff_stone_trinket_desc']");
+attachHoverListeners("[id='disease_charm_trinket']", "[id='disease_charm_trinket_desc']");
+attachHoverListeners("[id='dodge_stone_trinket']", "[id='dodge_stone_trinket_desc']");
+attachHoverListeners("[id='health_stone_trinket']", "[id='health_stone_trinket_desc']");
+attachHoverListeners("[id='move_charm_trinket']", "[id='move_charm_trinket_desc']");
+attachHoverListeners("[id='move_stone_trinket']", "[id='move_stone_trinket_desc']");
+attachHoverListeners("[id='protection_stone_trinket']", "[id='protection_stone_trinket_desc']");
+attachHoverListeners("[id='stun_charm_trinket']", "[id='stun_charm_trinket_desc']");
+attachHoverListeners("[id='stun_stone_trinket']", "[id='stun_stone_trinket_desc']");
+
+//Common
+
+attachHoverListeners("[id='archer\\'s_ring_trinket']", "[id='archer\\'s_ring_trinket_desc']");
+attachHoverListeners("[id='bloodied_fetish_trinket']", "[id='bloodied_fetish_trinket_desc']");
+attachHoverListeners("[id='book_of_intuition_trinket']", "[id='book_of_intuition_trinket_desc']");
+attachHoverListeners("[id='caution_cloak_trinket']", "[id='caution_cloak_trinket_desc']");
+attachHoverListeners("[id='damage_stone_trinket']", "[id='damage_stone_trinket_desc']");
+attachHoverListeners("[id='dazzling_charm_trinket']", "[id='dazzling_charm_trinket_desc']");
+attachHoverListeners("[id='deteriorating_bracer_trinket']", "[id='deteriorating_bracer_trinket_desc']");
+attachHoverListeners("[id='reckless_charm_trinket']", "[id='reckless_charm_trinket_desc']");
+attachHoverListeners("[id='slippery_boots_trinket']", "[id='slippery_boots_trinket_desc']");
+attachHoverListeners("[id='snake_oil_trinket']", "[id='snake_oil_trinket_desc']");
+attachHoverListeners("[id='speed_stone_trinket']", "[id='speed_stone_trinket_desc']");
+attachHoverListeners("[id='survival_guide_trinket']", "[id='survival_guide_trinket_desc']");
+attachHoverListeners("[id='warrior\\'s_bracer_trinket']", "[id='warrior\\'s_bracer_trinket_desc']");
+attachHoverListeners("[id='warrior\\'s_cap_trinket']", "[id='warrior\\'s_cap_trinket_desc']");
+
+//Uncommon
+
+attachHoverListeners("[id='bleed_amulet_trinket']", "[id='bleed_amulet_trinket_desc']");
+attachHoverListeners("[id='blight_amulet_trinket']", "[id='blight_amulet_trinket_desc']");
+attachHoverListeners("[id='blood_charm_trinket']", "[id='blood_charm_trinket_desc']");
+attachHoverListeners("[id='bloodthirst_ring_trinket']", "[id='bloodthirst_ring_trinket_desc']");
+attachHoverListeners("[id='book_of_constitution_trinket']", "[id='book_of_constitution_trinket_desc']");
+attachHoverListeners("[id='book_of_holiness_trinket']", "[id='book_of_holiness_trinket_desc']");
+attachHoverListeners("[id='book_of_rage_trinket']", "[id='book_of_rage_trinket_desc']");
+attachHoverListeners("[id='book_of_relaxation_trinket']", "[id='book_of_relaxation_trinket_desc']");
+attachHoverListeners("[id='camouflage_cloak_trinket']", "[id='camouflage_cloak_trinket_desc']");
+attachHoverListeners("[id='calming_crystal_trinket']", "[id='calming_crystal_trinket_desc']");
+attachHoverListeners("[id='chirurgeon\\'s_charm_trinket']", "[id='chirurgeon\\'s_charm_trinket_desc']");
+attachHoverListeners("[id='dark_bracer_trinket']", "[id='dark_bracer_trinket_desc']");
+attachHoverListeners("[id='debuff_amulet_trinket']", "[id='debuff_amulet_trinket_desc']");
+attachHoverListeners("[id='gambler\\'s_charm_trinket']", "[id='gambler\\'s_charm_trinket_desc']");
+attachHoverListeners("[id='heavy_boots_trinket']", "[id='heavy_boots_trinket_desc']");
+attachHoverListeners("[id='life_crystal_trinket']", "[id='life_crystal_trinket_desc']");
+attachHoverListeners("[id='move_amulet_trinket']", "[id='move_amulet_trinket_desc']");
+attachHoverListeners("[id='seer_stone_trinket']", "[id='seer_stone_trinket_desc']");
+attachHoverListeners("[id='shimmering_cloak_trinket']", "[id='shimmering_cloak_trinket_desc']");
+attachHoverListeners("[id='solar_bracer_trinket']", "[id='solar_bracer_trinket_desc']");
+attachHoverListeners("[id='steady_bracer_trinket']", "[id='steady_bracer_trinket_desc']");
+attachHoverListeners("[id='stun_amulet_trinket']", "[id='stun_amulet_trinket_desc']");
+attachHoverListeners("[id='surgical_gloves_trinket']", "[id='surgical_gloves_trinket_desc']");
+attachHoverListeners("[id='swift_cloak_trinket']", "[id='swift_cloak_trinket_desc']");
+attachHoverListeners("[id='tenacity_ring_trinket']", "[id='tenacity_ring_trinket_desc']");
+attachHoverListeners("[id='worrystone_trinket']", "[id='worrystone_trinket_desc']");
+
+//Rare
+
+attachHoverListeners("[id='beast_slayer\\'s_ring_trinket']", "[id='beast_slayer\\'s_ring_trinket_desc']");
+attachHoverListeners("[id='berserk_charm_trinket']", "[id='berserk_charm_trinket_desc']");
+attachHoverListeners("[id='brawler\\'s_gloves_trinket']", "[id='brawler\\'s_gloves_trinket_desc']");
+attachHoverListeners("[id='dark_crown_trinket']", "[id='dark_crown_trinket_desc']");
+attachHoverListeners("[id='eldritch_slayer\\'s_ring_trinket']", "[id='eldritch_slayer\\'s_ring_trinket_desc']");
+attachHoverListeners("[id='fasting_seal_trinket']", "[id='fasting_seal_trinket_desc']");
+attachHoverListeners("[id='feather_crystal_trinket']", "[id='feather_crystal_trinket_desc']");
+attachHoverListeners("[id='man_slayer\\'s_ring_trinket']", "[id='man_slayer\\'s_ring_trinket_desc']");
+attachHoverListeners("[id='moon_cloak_trinket']", "[id='moon_cloak_trinket_desc']");
+attachHoverListeners("[id='moon_ring_trinket']", "[id='moon_ring_trinket_desc']");
+attachHoverListeners("[id='quick_draw_charm_trinket']", "[id='quick_draw_charm_trinket_desc']");
+attachHoverListeners("[id='recovery_charm_trinket']", "[id='recovery_charm_trinket_desc']");
+attachHoverListeners("[id='sniper\\'s_ring_trinket']", "[id='sniper\\'s_ring_trinket_desc']");
+attachHoverListeners("[id='solar_crown_trinket']", "[id='solar_crown_trinket_desc']");
+attachHoverListeners("[id='sun_cloak_trinket']", "[id='sun_cloak_trinket_desc']");
+attachHoverListeners("[id='sun_ring_trinket']", "[id='sun_ring_trinket_desc']");
+attachHoverListeners("[id='unholy_slayer\\'s_ring_trinket']", "[id='unholy_slayer\\'s_ring_trinket_desc']");
+
+//Very Rare
+
+attachHoverListeners("[id='book_of_sanity_trinket']", "[id='book_of_sanity_trinket_desc']");
+attachHoverListeners("[id='cleansing_crystal_trinket']", "[id='cleansing_crystal_trinket_desc']");
+attachHoverListeners("[id='ethereal_crucifix_trinket']", "[id='ethereal_crucifix_trinket_desc']");
+attachHoverListeners("[id='focus_ring_trinket']", "[id='focus_ring_trinket_desc']");
+attachHoverListeners("[id='fortifying_garlic_trinket']", "[id='fortifying_garlic_trinket_desc']");
+attachHoverListeners("[id='hero\\'s_ring_trinket']", "[id='hero\\'s_ring_trinket_desc']");
+attachHoverListeners("[id='legendary_bracer_trinket']", "[id='legendary_bracer_trinket_desc']");
+attachHoverListeners("[id='martyr\\'s_seal_trinket']", "[id='martyr\\'s_seal_trinket_desc']");
+attachHoverListeners("[id='tough_ring_trinket']", "[id='tough_ring_trinket_desc']");
+
+//Ancestral
+
+attachHoverListeners("[id='ancestor\\'s_bottle_trinket']", "[id='ancestor\\'s_bottle_trinket_desc']");
+attachHoverListeners("[id='ancestor\\'s_candle_trinket']", "[id='ancestor\\'s_candle_trinket_desc']");
+attachHoverListeners("[id='ancestor\\'s_coat_trinket']", "[id='ancestor\\'s_coat_trinket_desc']");
+attachHoverListeners("[id='ancestor\\'s_handkerchief_trinket']", "[id='ancestor\\'s_handkerchief_trinket_desc']");
+attachHoverListeners("[id='ancestor\\'s_lantern_trinket']", "[id='ancestor\\'s_lantern_trinket_desc']");
+attachHoverListeners("[id='ancestor\\'s_map_trinket']", "[id='ancestor\\'s_map_trinket_desc']");
+attachHoverListeners("[id='ancestor\\'s_mustache_cream_trinket']", "[id='ancestor\\'s_mustache_cream_trinket_desc']");
+attachHoverListeners("[id='ancestor\\'s_musket_ball_trinket']", "[id='ancestor\\'s_musket_ball_trinket_desc']");
+attachHoverListeners("[id='ancestor\\'s_pen_trinket']", "[id='ancestor\\'s_pen_trinket_desc']");
+attachHoverListeners("[id='ancestor\\'s_pistol_trinket']", "[id='ancestor\\'s_pistol_trinket_desc']");
+attachHoverListeners("[id='ancestor\\'s_portrait_trinket']", "[id='ancestor\\'s_portrait_trinket_desc']");
+attachHoverListeners("[id='ancestor\\'s_scroll_trinket']", "[id='ancestor\\'s_scroll_trinket_desc']");
+attachHoverListeners("[id='ancestor\\'s_signet_ring_trinket']", "[id='ancestor\\'s_signet_ring_trinket_desc']");
+attachHoverListeners("[id='ancestor\\'s_tentacle_idol_trinket']", "[id='ancestor\\'s_tentacle_idol_trinket_desc']");
+attachHoverListeners("[id='talisman_of_the_flame_trinket']", "[id='talisman_of_the_flame_trinket_desc']");
+
+//Trophy
+
+attachHoverListeners("[id='necromancer\\'s_collar_trinket']", "[id='necromancer\\'s_collar_trinket_desc']");
+attachHoverListeners("[id='prophet\\'s_eye_trinket']", "[id='prophet\\'s_eye_trinket_desc']");
+attachHoverListeners("[id='hag\\'s_ladle_trinket']", "[id='hag\\'s_ladle_trinket_desc']");
+attachHoverListeners("[id='fuseman\\'s_matchstick_trinket']", "[id='fuseman\\'s_matchstick_trinket_desc']");
+attachHoverListeners("[id='wilbur\\'s_flag_trinket']", "[id='wilbur\\'s_flag_trinket_desc']");
+attachHoverListeners("[id='flesh\\'s_heart_trinket']", "[id='flesh\\'s_heart_trinket_desc']");
+attachHoverListeners("[id='siren\\'s_conch_trinket']", "[id='siren\\'s_conch_trinket_desc']");
+attachHoverListeners("[id='crew\\'s_bell_trinket']", "[id='crew\\'s_bell_trinket_desc']");
+attachHoverListeners("[id='vvulf\\'s_tassle_trinket']", "[id='vvulf\\'s_tassle_trinket_desc']");
+
+//Enemy Specific
+
+attachHoverListeners("[id='aria_box_trinket']", "[id='aria_box_trinket_desc']");
+attachHoverListeners("[id='crescendo_box_trinket']", "[id='crescendo_box_trinket_desc']");
+attachHoverListeners("[id='overture_box_trinket']", "[id='overture_box_trinket_desc']");
+attachHoverListeners("[id='barristan\\'s_head_trinket']", "[id='barristan\\'s_head_trinket_desc']");
+attachHoverListeners("[id='dismas\\'_head_trinket']", "[id='dismas\\'_head_trinket_desc']");
+attachHoverListeners("[id='junia\\'s_head_trinket']", "[id='junia\\'s_head_trinket_desc']");
+attachHoverListeners("[id='tempting_goblet_trinket']", "[id='tempting_goblet_trinket_desc']");
+attachHoverListeners("[id='callous_talon_trinket']", "[id='callous_talon_trinket_desc']");
+attachHoverListeners("[id='distended_crowseye_trinket']", "[id='distended_crowseye_trinket_desc']");
+attachHoverListeners("[id='molted_tailfeather_trinket']", "[id='molted_tailfeather_trinket_desc']");
+attachHoverListeners("[id='molted_wingfeather_trinket']", "[id='molted_wingfeather_trinket_desc']");
+
+//Crimson Court
+
+attachHoverListeners("[id='ancestor\\'s_vintage_trinket']", "[id='ancestor\\'s_vintage_trinket_desc']");
+attachHoverListeners("[id='coven_signet_trinket']", "[id='coven_signet_trinket_desc']");
+attachHoverListeners("[id='dazzling_mirror_trinket']", "[id='dazzling_mirror_trinket_desc']");
+attachHoverListeners("[id='mantra_of_fasting_trinket']", "[id='mantra_of_fasting_trinket_desc']");
+attachHoverListeners("[id='mercurial_salve_trinket']", "[id='mercurial_salve_trinket_desc']");
+attachHoverListeners("[id='pagan_talisman_trinket']", "[id='pagan_talisman_trinket_desc']");
+attachHoverListeners("[id='rat_carcass_trinket']", "[id='rat_carcass_trinket_desc']");
+attachHoverListeners("[id='sanguine_snuff_trinket']", "[id='sanguine_snuff_trinket_desc']");
+attachHoverListeners("[id='sculptor\\'s_tools_trinket']", "[id='sculptor\\'s_tools_trinket_desc']");
+
+attachHoverListeners("[id='baron\\'s_lash_trinket']", "[id='baron\\'s_lash_trinket_desc']");
+attachHoverListeners("[id='viscount\\'s_spices_trinket']", "[id='viscount\\'s_spices_trinket_desc']");
+attachHoverListeners("[id='countess\\'_fan_trinket']", "[id='countess\\'_fan_trinket_desc']");
+
+//Color of Madness
+
+attachHoverListeners("[id='lens_of_the_comet_trinket']", "[id='lens_of_the_comet_trinket_desc']");
+attachHoverListeners("[id='crystal_pendant_trinket']", "[id='crystal_pendant_trinket_desc']");
+attachHoverListeners("[id='cluster_pendant_trinket']", "[id='cluster_pendant_trinket_desc']");
+attachHoverListeners("[id='coat_of_many_colors_trinket']", "[id='coat_of_many_colors_trinket_desc']");
+attachHoverListeners("[id='miller\\'s_pipe_trinket']", "[id='miller\\'s_pipe_trinket_desc']");
+attachHoverListeners("[id='mildred\\'s_locket_trinket']", "[id='mildred\\'s_locket_trinket_desc']");
+
+attachHoverListeners("[id='thing\\'s_mesmerizing_eye_trinket']", "[id='thing\\'s_mesmerizing_eye_trinket_desc']");
+attachHoverListeners("[id='crystalline_fang_trinket']", "[id='crystalline_fang_trinket_desc']");
+attachHoverListeners("[id='phase_shifting_hide_trinket']", "[id='phase_shifting_hide_trinket_desc']");
+attachHoverListeners("[id='prismatic_heart_crystal_trinket']", "[id='prismatic_heart_crystal_trinket_desc']");
+
+//Abomination
+
+attachHoverListeners("[id='lock_of_patience_trinket']", "[id='lock_of_patience_trinket_desc']");
+attachHoverListeners("[id='padlock_of_transference_trinket']", "[id='padlock_of_transference_trinket_desc']");
+attachHoverListeners("[id='protective_padlock_trinket']", "[id='protective_padlock_trinket_desc']");
+attachHoverListeners("[id='lock_of_fury_trinket']", "[id='lock_of_fury_trinket_desc']");
+attachHoverListeners("[id='restraining_padlock_trinket']", "[id='restraining_padlock_trinket_desc']");
+
+//Antiquarian
+
+attachHoverListeners("[id='bag_of_marbles_trinket']", "[id='bag_of_marbles_trinket_desc']");
+attachHoverListeners("[id='carapace_idol_trinket']", "[id='carapace_idol_trinket_desc']");
+attachHoverListeners("[id='bloodcourse_medallion_trinket']", "[id='bloodcourse_medallion_trinket_desc']");
+attachHoverListeners("[id='fleet_florin_trinket']", "[id='fleet_florin_trinket_desc']");
+attachHoverListeners("[id='candle_of_life_trinket']", "[id='candle_of_life_trinket_desc']");
+
+//Arbalest
+
+attachHoverListeners("[id='sturdy_greaves_trinket']", "[id='sturdy_greaves_trinket_desc']");
+attachHoverListeners("[id='vengeful_greaves_trinket']", "[id='vengeful_greaves_trinket_desc']");
+attachHoverListeners("[id='medic\\'s_greaves_trinket']", "[id='medic\\'s_greaves_trinket_desc']");
+attachHoverListeners("[id='bull\\'s_eye_bandana_trinket']", "[id='bull\\'s_eye_bandana_trinket_desc']");
+attachHoverListeners("[id='wrathful_bandana_trinket']", "[id='wrathful_bandana_trinket_desc']");
+
+//Bounty Hunter
+
+attachHoverListeners("[id='agility_talon_trinket']", "[id='agility_talon_trinket_desc']");
+attachHoverListeners("[id='unmovable_helmet_trinket']", "[id='unmovable_helmet_trinket_desc']");
+attachHoverListeners("[id='camper\\'s_helmet_trinket']", "[id='camper\\'s_helmet_trinket_desc']");
+attachHoverListeners("[id='hunter\\'s_talons_trinket']", "[id='hunter\\'s_talons_trinket_desc']");
+attachHoverListeners("[id='wounding_helmet_trinket']", "[id='wounding_helmet_trinket_desc']");
+
+//Crusader
+
+attachHoverListeners("[id='defender\\'s_seal_trinket']", "[id='defender\\'s_seal_trinket_desc']");
+attachHoverListeners("[id='knight\\'s_crest_trinket']", "[id='knight\\'s_crest_trinket_desc']");
+attachHoverListeners("[id='swordsman\\'s_crest_trinket']", "[id='swordsman\\'s_crest_trinket_desc']");
+attachHoverListeners("[id='paralyzer\\'s_crest_trinket']", "[id='paralyzer\\'s_crest_trinket_desc']");
+attachHoverListeners("[id='commander\\'s_orders_trinket']", "[id='commander\\'s_orders_trinket_desc']");
+attachHoverListeners("[id='holy_orders_trinket']", "[id='holy_orders_trinket_desc']");
+
+//Grave Robber
+
+attachHoverListeners("[id='quickening_satchel_trinket']", "[id='quickening_satchel_trinket_desc']");
+attachHoverListeners("[id='sickening_satchel_trinket']", "[id='sickening_satchel_trinket_desc']");
+attachHoverListeners("[id='blighting_satchel_trinket']", "[id='blighting_satchel_trinket_desc']");
+attachHoverListeners("[id='lucky_talisman_trinket']", "[id='lucky_talisman_trinket_desc']");
+attachHoverListeners("[id='raider\\'s_talisman_trinket']", "[id='raider\\'s_talisman_trinket_desc']");
+
+//Hellion
+
+attachHoverListeners("[id='bleeding_pendant_trinket']", "[id='bleeding_pendant_trinket_desc']");
+attachHoverListeners("[id='selfish_pendant_trinket']", "[id='selfish_pendant_trinket_desc']");
+attachHoverListeners("[id='double_edged_pendant_trinket']", "[id='double_edged_pendant_trinket_desc']");
+attachHoverListeners("[id='heaven\\'s_hairpin_trinket']", "[id='heaven\\'s_hairpin_trinket_desc']");
+attachHoverListeners("[id='hell\\'s_hairpin_trinket']", "[id='hell\\'s_hairpin_trinket_desc']");
+
+//Highwayman
+
+attachHoverListeners("[id='drifter\\'s_buckle_trinket']", "[id='drifter\\'s_buckle_trinket_desc']");
+attachHoverListeners("[id='flashfire_gunpowder_trinket']", "[id='flashfire_gunpowder_trinket_desc']");
+attachHoverListeners("[id='stalwart_buckle_trinket']", "[id='stalwart_buckle_trinket_desc']");
+attachHoverListeners("[id='dodgy_sheath_trinket']", "[id='dodgy_sheath_trinket_desc']");
+attachHoverListeners("[id='sharpening_sheath_trinket']", "[id='sharpening_sheath_trinket_desc']");
+attachHoverListeners("[id='gunslinger\\'s_buckle_trinket']", "[id='gunslinger\\'s_buckle_trinket_desc']");
+
+//Houndmaster
+
+attachHoverListeners("[id='agility_whistle_trinket']", "[id='agility_whistle_trinket_desc']");
+attachHoverListeners("[id='scouting_whistle_trinket']", "[id='scouting_whistle_trinket_desc']");
+attachHoverListeners("[id='cudgel_weight_trinket']", "[id='cudgel_weight_trinket_desc']");
+attachHoverListeners("[id='protective_collar_trinket']", "[id='protective_collar_trinket_desc']");
+attachHoverListeners("[id='spiked_collar_trinket']", "[id='spiked_collar_trinket_desc']");
+
+//Jester
+
+attachHoverListeners("[id='bloody_dice_trinket']", "[id='bloody_dice_trinket_desc']");
+attachHoverListeners("[id='lucky_dice_trinket']", "[id='lucky_dice_trinket_desc']");
+attachHoverListeners("[id='critical_dice_trinket']", "[id='critical_dice_trinket_desc']");
+attachHoverListeners("[id='bright_tambourine_trinket']", "[id='bright_tambourine_trinket_desc']");
+attachHoverListeners("[id='dark_tambourine_trinket']", "[id='dark_tambourine_trinket_desc']");
+
+//Leper
+
+attachHoverListeners("[id='healing_armlet_trinket']", "[id='healing_armlet_trinket_desc']");
+attachHoverListeners("[id='redemption_armlet_trinket']", "[id='redemption_armlet_trinket_desc']");
+attachHoverListeners("[id='fortunate_armlet_trinket']", "[id='fortunate_armlet_trinket_desc']");
+attachHoverListeners("[id='immunity_mask_trinket']", "[id='immunity_mask_trinket_desc']");
+attachHoverListeners("[id='berserk_mask_trinket']", "[id='berserk_mask_trinket_desc']");
+
+//Man At Arms
+
+attachHoverListeners("[id='cleansing_eyepatch_trinket']", "[id='cleansing_eyepatch_trinket_desc']");
+attachHoverListeners("[id='sly_eyepatch_trinket']", "[id='sly_eyepatch_trinket_desc']");
+attachHoverListeners("[id='longevity_eyepatch_trinket']", "[id='longevity_eyepatch_trinket_desc']");
+attachHoverListeners("[id='rampart_shield_trinket']", "[id='rampart_shield_trinket_desc']");
+attachHoverListeners("[id='guardian\\'s_shield_trinket']", "[id='guardian\\'s_shield_trinket_desc']");
+
+//Musketeer
+
+attachHoverListeners("[id='sturdy_boots_trinket']", "[id='sturdy_boots_trinket_desc']");
+attachHoverListeners("[id='vengeful_boots_trinket']", "[id='vengeful_boots_trinket_desc']");
+attachHoverListeners("[id='medic\\'s_boots_trinket']", "[id='medic\\'s_boots_trinket_desc']");
+attachHoverListeners("[id='bull\\'s_eye_hat_trinket']", "[id='bull\\'s_eye_hat_trinket_desc']");
+attachHoverListeners("[id='wrathful_hat_trinket']", "[id='wrathful_hat_trinket_desc']");
+
+//Occultist
+
+attachHoverListeners("[id='eldritch_killing_incense_trinket']", "[id='eldritch_killing_incense_trinket_desc']");
+attachHoverListeners("[id='evasion_incense_trinket']", "[id='evasion_incense_trinket_desc']");
+attachHoverListeners("[id='cursed_incense_trinket']", "[id='cursed_incense_trinket_desc']");
+attachHoverListeners("[id='sacrificial_cauldron_trinket']", "[id='sacrificial_cauldron_trinket_desc']");
+attachHoverListeners("[id='demon\\'s_cauldron_trinket']", "[id='demon\\'s_cauldron_trinket_desc']");
+
+//Plague Doctor
+
+attachHoverListeners("[id='diseased_herb_trinket']", "[id='diseased_herb_trinket_desc']");
+attachHoverListeners("[id='poisoned_herb_trinket']", "[id='poisoned_herb_trinket_desc']");
+attachHoverListeners("[id='bloody_herb_trinket']", "[id='bloody_herb_trinket_desc']");
+attachHoverListeners("[id='witch\\'s_vial_trinket']", "[id='witch\\'s_vial_trinket_desc']");
+attachHoverListeners("[id='blasphemous_vial_trinket']", "[id='blasphemous_vial_trinket_desc']");
+attachHoverListeners("[id='rotgut_censer_trinket']", "[id='rotgut_censer_trinket_desc']");
+
+//Vestal
+
+attachHoverListeners("[id='virtuous_chalice_trinket']", "[id='virtuous_chalice_trinket_desc']");
+attachHoverListeners("[id='haste_chalice_trinket']", "[id='haste_chalice_trinket_desc']");
+attachHoverListeners("[id='youth_chalice_trinket']", "[id='youth_chalice_trinket_desc']");
+attachHoverListeners("[id='profane_scroll_trinket']", "[id='profane_scroll_trinket_desc']");
+attachHoverListeners("[id='sacred_scroll_trinket']", "[id='sacred_scroll_trinket_desc']");
+attachHoverListeners("[id='tome_of_holy_healing_trinket']", "[id='tome_of_holy_healing_trinket_desc']");
+
+//Flagellant
+
+attachHoverListeners("[id='heartburst_hood_trinket']", "[id='heartburst_hood_trinket_desc']");
+attachHoverListeners("[id='punishment\\'s_hood_trinket']", "[id='punishment\\'s_hood_trinket_desc']");
+attachHoverListeners("[id='resurrection\\'s_collar_trinket']", "[id='resurrection\\'s_collar_trinket_desc']");
+attachHoverListeners("[id='suffering\\'s_collar_trinket']", "[id='suffering\\'s_collar_trinket_desc']");
+attachHoverListeners("[id='eternity\\'s_collar_trinket']", "[id='eternity\\'s_collar_trinket_desc']");
+
+//Shieldbreaker
+
+attachHoverListeners("[id='venomous_vial_trinket']", "[id='venomous_vial_trinket_desc']");
+attachHoverListeners("[id='shimmering_scale_trinket']", "[id='shimmering_scale_trinket_desc']");
+attachHoverListeners("[id='dancer\\'s_footwraps_trinket']", "[id='dancer\\'s_footwraps_trinket_desc']");
+attachHoverListeners("[id='fanged_spear_tip_trinket']", "[id='fanged_spear_tip_trinket_desc']");
+attachHoverListeners("[id='cuirboilli_trinket']", "[id='cuirboilli_trinket_desc']");
+
+//Class CC Trinkets
+
+attachHoverListeners("[id='shameful_shroud_trinket']", "[id='shameful_shroud_trinket_desc']");
+attachHoverListeners("[id='osmond_chains_trinket']", "[id='osmond_chains_trinket_desc']");
+
+attachHoverListeners("[id='the_master\\'s_essence_trinket']", "[id='the_master\\'s_essence_trinket_desc']");
+attachHoverListeners("[id='two_of_three_trinket']", "[id='two_of_three_trinket_desc']");
+
+attachHoverListeners("[id='childhood_treasure_trinket']", "[id='childhood_treasure_trinket_desc']");
+attachHoverListeners("[id='bedtime_story_trinket']", "[id='bedtime_story_trinket_desc']");
+
+attachHoverListeners("[id='crime_lords\\'_molars_trinket']", "[id='crime_lords\\'_molars_trinket_desc']");
+attachHoverListeners("[id='vengeful_kill_list_trinket']", "[id='vengeful_kill_list_trinket_desc']");
+
+attachHoverListeners("[id='glittering_spaulders_trinket']", "[id='glittering_spaulders_trinket_desc']");
+attachHoverListeners("[id='signed_conscription_trinket']", "[id='signed_conscription_trinket_desc']");
+
+attachHoverListeners("[id='chipped_tooth_trinket']", "[id='chipped_tooth_trinket_desc']");
+attachHoverListeners("[id='shard_of_glass_trinket']", "[id='shard_of_glass_trinket_desc']");
+
+attachHoverListeners("[id='absinthe_trinket']", "[id='absinthe_trinket_desc']");
+attachHoverListeners("[id='sharpened_letter_opener_trinket']", "[id='sharpened_letter_opener_trinket_desc']");
+
+attachHoverListeners("[id='lioness_warpaint_trinket']", "[id='lioness_warpaint_trinket_desc']");
+attachHoverListeners("[id='mark_of_the_outcast_trinket']", "[id='mark_of_the_outcast_trinket_desc']");
+
+attachHoverListeners("[id='bloodied_neckerchief_trinket']", "[id='bloodied_neckerchief_trinket_desc']");
+attachHoverListeners("[id='shameful_locket_trinket']", "[id='shameful_locket_trinket_desc']");
+
+attachHoverListeners("[id='evidence_of_corruption_trinket']", "[id='evidence_of_corruption_trinket_desc']");
+attachHoverListeners("[id='battered_lawman\\'s_badge_trinket']", "[id='battered_lawman\\'s_badge_trinket_desc']");
+
+attachHoverListeners("[id='tyrant\\'s_tasting_cup_trinket']", "[id='tyrant\\'s_tasting_cup_trinket_desc']");
+attachHoverListeners("[id='tyrant\\'s_fingerbone_trinket']", "[id='tyrant\\'s_fingerbone_trinket_desc']");
+
+attachHoverListeners("[id='last_will_and_testament_trinket']", "[id='last_will_and_testament_trinket_desc']");
+attachHoverListeners("[id='tin_flute_trinket']", "[id='tin_flute_trinket_desc']");
+
+attachHoverListeners("[id='old_unit_standard_trinket']", "[id='old_unit_standard_trinket_desc']");
+attachHoverListeners("[id='toy_soldier_trinket']", "[id='toy_soldier_trinket_desc']");
+
+attachHoverListeners("[id='second_place_trophy_trinket']", "[id='second_place_trophy_trinket_desc']");
+attachHoverListeners("[id='silver_musket_ball_trinket']", "[id='silver_musket_ball_trinket_desc']");
+
+attachHoverListeners("[id='blood_pact_trinket']", "[id='blood_pact_trinket_desc']");
+attachHoverListeners("[id='vial_of_sand_trinket']", "[id='vial_of_sand_trinket_desc']");
+
+attachHoverListeners("[id='subject_#40_notes_trinket']", "[id='subject_#40_notes_trinket_desc']");
+attachHoverListeners("[id='dissection_kit_trinket']", "[id='dissection_kit_trinket_desc']");
+
+attachHoverListeners("[id='obsidian_dagger_trinket']", "[id='obsidian_dagger_trinket_desc']");
+attachHoverListeners("[id='severed_hand_trinket']", "[id='severed_hand_trinket_desc']");
+
+attachHoverListeners("[id='atonement_beads_trinket']", "[id='atonement_beads_trinket_desc']");
+attachHoverListeners("[id='salacious_diary_trinket']", "[id='salacious_diary_trinket_desc']");
+
+//Class CoM Trinkets
+
+attachHoverListeners("[id='petrified_skull_trinket']", "[id='petrified_skull_trinket_desc']");
+attachHoverListeners("[id='broken_key_trinket']", "[id='broken_key_trinket_desc']");
+attachHoverListeners("[id='smoking_skull_trinket']", "[id='smoking_skull_trinket_desc']");
+attachHoverListeners("[id='ashen_distillation_trinket']", "[id='ashen_distillation_trinket_desc']");
+attachHoverListeners("[id='dirge_for_the_devoured_trinket']", "[id='dirge_for_the_devoured_trinket_desc']");
+attachHoverListeners("[id='acidic_husk_ichor_trinket']", "[id='acidic_husk_ichor_trinket_desc']");
+attachHoverListeners("[id='spectral_speartip_trinket']", "[id='spectral_speartip_trinket_desc']");
+attachHoverListeners("[id='heretical_passage_trinket']", "[id='heretical_passage_trinket_desc']");
+attachHoverListeners("[id='huskfang_whistle_trinket']", "[id='huskfang_whistle_trinket_desc']");
+attachHoverListeners("[id='mask_of_the_timeless_trinket']", "[id='mask_of_the_timeless_trinket_desc']");
+attachHoverListeners("[id='mirror_shield_trinket']", "[id='mirror_shield_trinket_desc']");
+attachHoverListeners("[id='topshelf_tonic_trinket']", "[id='topshelf_tonic_trinket_desc']");
+attachHoverListeners("[id='petrified_amulet_trinket']", "[id='petrified_amulet_trinket_desc']");
+attachHoverListeners("[id='crystalline_gunpowder_trinket']", "[id='crystalline_gunpowder_trinket_desc']");
+attachHoverListeners("[id='thirsting_blade_trinket']", "[id='thirsting_blade_trinket_desc']");
+attachHoverListeners("[id='icosahedric_musket_balls_trinket']", "[id='icosahedric_musket_balls_trinket_desc']");
+attachHoverListeners("[id='keening_bolts_trinket']", "[id='keening_bolts_trinket_desc']");
+attachHoverListeners("[id='non_euclidean_hilt_trinket']", "[id='non_euclidean_hilt_trinket_desc']");
+
+
 });
 
 function attachHoverListeners(triggerSelector, targetSelector) {
@@ -1467,4 +1894,5 @@ function attachHoverListener(trigger, target) {
     target.style.display = "none";
   });
 }
+
 
