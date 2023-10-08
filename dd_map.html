@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Domain of the rat</title>
-    <link rel="icon" type="image/x-icon" href="POINTRAT.png">
+    <!--<link rel="icon" type="image/x-icon" href="POINTRAT.png">-->
     <link id="stylesheet" rel="stylesheet" type="text/css" href="dd_map.css">
      <script src="https://kit.fontawesome.com/0acaa7a2b0.js" crossorigin="anonymous"></script>
 </head>
@@ -36,10 +36,8 @@
 
         </div>
 
-    
-
         <!--Left buttons-->
-        
+
         <img src = "images/bg_elements/CC_infestation.png" class = crimson_banner>
         <img src = "images/estate_icons/circus_btn.png" class = " bc_button" id = "circus">
         <img src = "images/bg_elements/estate_title.png" class = estate_title>
@@ -1091,7 +1089,7 @@
 
 <!--Shared Element End-->
 
-         <div class = "boss_enemy_main_container flesh_main nondisplay" id = "flesh_app_info">
+          <div class = "boss_enemy_main_container flesh_main nondisplay" id = "flesh_app_info">
 
                 <div class = "flesh_parts_container" id = "flesh_app_port">
                     <img src = "images/Boss_monsters/flesh_butt_port.png" class = "flesh_port" id = flesh_butt_app_port>
@@ -1288,7 +1286,7 @@
 
         </div>
 
-        
+        <div>
             <!--General Info Descriptions-->           
 
             <div class = "general_desc find_boss" id = "boss_locate_desc">
@@ -1368,7 +1366,7 @@
                 Summonable Minion Table [Newly Summoned Minions cannot Act on Same Turn]<br>
                 Only 1 Collected Vestal or Man-at-Arms /Up to 2 Collected Highwaymen can be present at once. <br> 
                 Collected Highwayman (43%) Collected Man-at-Arms (28.5%) Collected Vestal (28.5%) per vacant position <br>
-                All Summons do not leave Corpses on Death and are Summoned in front of the Collector
+                All Summons do not leave Corpses on Death and are Summoned in front of the Collector<br>
             </div>
            
             <div class = "general_desc boss_minion_additional_info_txt" id = "shambler_minion_more_info_desc">
@@ -1441,7 +1439,7 @@
                Chance to replace a Hallway Battle in Pitch Black: <br>
                <span class = "apprentice">Apprentice:</span> 1% Chance <br>
                <span class = "veteran">Veteran:</span> 8% Chance<br>
-               <span class = "champion">Champion:</span>12% Chance
+               <span class = "champion">Champion:</span>12% Chance <br>
             </div>
 
             <div class = "general_desc shambler_info_txt" id = "shambler_endless_info_desc">
@@ -1454,7 +1452,7 @@
                 The Shrieker has an Endless Harvest Variant with some of its Skills Tweaked.
              </div>
 
-         <!--Minion Additional Info-->
+             <!--Minion Additional Info-->
 
             <div class = "general_desc minion_additional_info_txt" id = "small_pew_minion_more_info_desc">
                 This Enemy Cannot be Missed and does not leave a Corpse
@@ -1463,13 +1461,8 @@
             <div class = "general_desc minion_additional_info_txt" id = "cauldron_empty_minion_more_info_desc">
                 This Enemy Cannot be Missed and is Immune to Damage
             </div>
-
-
         </div>
-
-
     </div>
-
 
     <!--Quirk/Glossary-->
     <div class = glossary_container id = glossarybox>
@@ -1477,6 +1470,19 @@
         <img src = "images/Hero_boxes/panel_close.png" class = quirk_close id = quirk_close>
         <img src = "images/estate_icons/posquirk_btn.png" class = glossary_nav1 id = glossarynav1>
         <img src = "images/estate_icons/negquirk_btn.png" class = glossary_nav2 id = glossarynav2>
+        <img src = "images/estate_icons/crystalquirk_btn.png" class = glossary_nav3 id = glossarynav3>
+
+        <img src= "images/estate_icons/quirk_icon.png" class = "info quirk_overview" id = "quirk_overview">
+        <div class = "ddlogo_text quirk_overview_label"> Overview </div>
+        <div class = "general_desc quirk_general_info" id = "quirk_overview_desc">
+            <span class = "attack_type">Quirks</span> can be gained during expeditions by interacting with Curios, and after expeditions in the post-expedition screen. 
+            <span class = "attack_type">Quirks</span> may also occur as a result of partaking in <span class = "stress">Stress</span> relief buildings in the Hamlet via the <span class = common>Tavern</span> and <span class = common>Abbey</span>. <br><br>
+            You may remove <span class = "negative">Negative Quirks</span> or Reinforce <span class = "highres">Positive Quirks</span> (Which makes them permanent unless you remove the quirk yourself) in the <span class = common>Sanitarium</span>.
+            Untreated <span class = "negative">Negative Quirks</span> will become locked over time. <br><br>
+            Only up to 3 <span class = "highres">Positive Quirks</span> and 3 <span class = "negative">Negative Quirks</span> may be locked at one time, with Auto-Locked <span class = "attack_type">Quirks</span> introduced with the <span class = 'crystalline'>Color of Madness DLC</span> not counting towards the cap.<br><br>
+            You are more likely to gain a <span class = "highres">Positive Quirk</span> at the end of an Expeditionand less likely to gain a <span class = "negative">Negative Quirk</span> if you succeed in your expedition and the lower the Hero's Stress Levels are.
+            Your Heroes can gain special <span class = highres>Corvid Quirks</span> by surviving a <span class = 'shrieker'> Shrieker </span> Encounter.
+        </div>
     </div>
 
     <!--Provision Box-->
@@ -1683,152 +1689,130 @@
                 <div  id = cove_nav> <img src = 'images/estate_icons/cove_btn.png ' class= "provisions_navbtn"></div>
             </div>
 
-            <div class = supplybox>
                 <img src = "images/Provisions/Food.png" class = supply_item id = food_box>
-                <div class = "general_desc provision_desc" id = food_desc>
-                    <ul>
-                        <li class ="highres descbtm_space">Food (12 per Stack) </li>
-                        <li>Used to stave off Hunger Checks and Camping </li>
-                        <li>Heroes consume 1 Food per Hunger Check</li>
-                        <li>Heals 5% Max HP if manually consumed</li>
-                        <li>(4 food per hero, refreshes after battles)</li>
-                        <li class = "desctop_space attack_type"> [Short: 18 / Medium: 24 / Long: 36]  </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class = supplybox>
                 <img src = "images/Provisions/Shovel.png" class = supply_item id = shovel_box>
-                <div class = "general_desc provision_desc" id  = shovel_desc>
-                    <ul>
-                        <li class ="highres descbtm_space">Shovel (4 per Stack) </li>
-                        <li>Used to clear corridor obstacles </li>
-                        <li>Used in many curio interactions</li>
-                        <li class = "desctop_space attack_type"> [Short: 4 / Medium: 6 / Long: 8]  </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class = supplybox>
-                <img src = "images/Provisions/Antivenom.png" class = supply_item id = antivenom_box>
-                <div class = "general_desc provision_desc" id = antivenom_desc>
-                    <ul>
-                        <li class ="highres descbtm_space">Antivenom (6 per Stack) </li>
-                        <li>Used to cure <span class = blight>Blight</span> </li>
-                        <li>Used in many curio interactions</li>
-                        <li class = "desctop_space attack_type"> [Short: 6 / Medium: 9 / Long: 12]  </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class = supplybox>
+                <img src = "images/Provisions/Antivenom.png" class = supply_item id = antivenom_box>                
                 <img src = "images/Provisions/Bandage.png" class = supply_item id = bandage_box>
-                <div class = "general_desc provision_desc" id = bandage_desc>
-                    <ul>
-                        <li class ="highres descbtm_space"> Bandage (6 per Stack) </li>
-                        <li>Used to cure <span class = bleed>Bleed</span> </li>
-                        <li>Used in many curio interactions</li>
-                        <li class = "desctop_space attack_type"> [Short: 6 / Medium: 9 / Long: 12]  </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class = supplybox>
                 <img src = "images/Provisions/Medicinal_Herbs.png" class = supply_item id = herb_box>
-                <div class = "general_desc provision_desc" id = herb_desc>
-                    <ul>
-                        <li class = "highres descbtm_space">Medicinal Herbs (6 per Stack) </li>
-                        <li>Used to cure <span class = debuff>Debuffs</span> </li>
-                        <li>Used in many curio interactions</li>
-                        <li class = "desctop_space attack_type"> [Short: 6 / Medium: 9 / Long: 12]  </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class = supplybox>
                 <img src = "images/Provisions/Skeleton_Key.png" class = supply_item id = key_box>
-                <div class = "general_desc provision_desc" id = key_desc>
-                    <ul>
-                        <li class ="highres descbtm_space"> Skeleton Key (6 per Stack) </li>
-                        <li>Used in many curio interactions</li>
-                        <li class = "desctop_space attack_type"> [Short: 6 / Medium: 9 / Long: 12]  </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class = supplybox>
                 <img src = "images/Provisions/Holy_Water.png" class = supply_item id = holy_water_box>
-                <div class = "general_desc provision_desc" id = holy_water_desc>
-                    <ul>
-                        <li class ="highres descbtm_space"> Holy Water (6 per Stack) </li>
-                        <li>Used to buff a hero's resistances </li>
-                        <li class = buff>Buff Hero</li>
-                        <li> +33% <span class = bleed> Bleed</span> Resist (4 rds)</li>
-                        <li> +33% <span class = blight> Blight</span> Resist (4 rds)</li>
-                        <li> +33% <span class = debuff> Debuff</span> Resist (4 rds)</li>
-                        <li> +33% <span class = disease> Disease </span> Resist (4 rds)</li>
-                        <li>Used in many curio interactions</li>
-                        <li class = "desctop_space attack_type"> [Short: 6 / Medium: 9 / Long: 12]  </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class = supplybox>
                 <img src = "images/Provisions/Laudanum.png" class = supply_item id = laudanum_box>
-                <div class = "general_desc provision_desc" id = laudanum_desc>
-                    <ul>
-                        <li class ="highres descbtm_space">Laudanum (6 per Stack) </li>
-                        <li>Used to cure <span class = stress>Horror</span> </li>
-                        <li class = "desctop_space attack_type"> [Short: 6 / Medium: 9 / Long: 9]  </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class = supplybox>
                 <img src = "images/Provisions/Torch.png" class = supply_item id = torch_box>
-                <div class = "general_desc provision_desc" id = torch_desc>
-                    <ul>
-                        <li class ="highres descbtm_space"> Torch (8 per Stack) </li>
-                        <li>Used to raise Light Level  </li>
-                        <li>(+25 <span class = highres> Torch Light </span> per Torch)</li>
-                        <li>Used in a few curio interactions</li>
-                        <li class = "desctop_space attack_type"> [Short: 18 / Medium: 24 / Long: 36]  </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class = supplybox>
                 <img src = "images/Provisions/Dog_Treats.png" class = supply_item id = dog_treat_box>
-                <div class = "general_desc provision_desc" id = dog_treat_desc>
-                    <ul>
-                        <li class = "highres descbtm_space">Dog Treats (2 per Stack) </li>
-                        <li class = "attack_type">[Houndmaster Exclusive] </li>
-                        <li class = buff>Buff Hero</li>
-                        <li>+50% DMG</li>
-                        <li>+15 ACC</li>
-                        <li> Used in one notable curio interaction  </li>
-                    </ul>
-                </div>
+                <img src = "images/Provisions/Firewood.png" class = supply_item id = firewood_box>
+
+
+            <div class = "general_desc provision_desc" id = food_desc>
+                <ul>
+                    <li class ="highres descbtm_space">Food (12 per Stack) </li>
+                    <li>Used to stave off Hunger Checks and Camping </li>
+                    <li>Heroes consume 1 Food per Hunger Check</li>
+                    <li>Heals 5% Max HP if manually consumed</li>
+                    <li>(4 food per hero, refreshes after battles)</li>
+                    <li class = "desctop_space attack_type"> [Short: 18 / Medium: 24 / Long: 36]  </li>
+                </ul>
+            </div>
+            <div class = "general_desc provision_desc" id  = shovel_desc>
+                <ul>
+                    <li class ="highres descbtm_space">Shovel (4 per Stack) </li>
+                    <li>Used to clear corridor obstacles </li>
+                    <li>Used in many curio interactions</li>
+                    <li class = "desctop_space attack_type"> [Short: 4 / Medium: 6 / Long: 8]  </li>
+                </ul>
             </div>
 
-            <div class = supplybox>
-                <img src = "images/Provisions/Firewood.png" class = supply_item id = firewood_box>
-                <div class = "general_desc provision_desc" id = firewood_desc>
-                    <ul>
-                        <li class ="highres descbtm_space"> Firewood (1 per Stack) </li>
-                        <li>Used to initiate Camping </li>
-                        <li class = "desctop_space attack_type"> [Short: 0 / Medium: 1 / Long: 2]  </li>
-                    </ul>
-                </div>
+            <div class = "general_desc provision_desc" id = antivenom_desc>
+                <ul>
+                    <li class ="highres descbtm_space">Antivenom (6 per Stack) </li>
+                    <li>Used to cure <span class = blight>Blight</span> </li>
+                    <li>Used in many curio interactions</li>
+                    <li class = "desctop_space attack_type"> [Short: 6 / Medium: 9 / Long: 12]  </li>
+                </ul>
             </div>
+
+            <div class = "general_desc provision_desc" id = bandage_desc>
+                <ul>
+                    <li class ="highres descbtm_space"> Bandage (6 per Stack) </li>
+                    <li>Used to cure <span class = bleed>Bleed</span> </li>
+                    <li>Used in many curio interactions</li>
+                    <li class = "desctop_space attack_type"> [Short: 6 / Medium: 9 / Long: 12]  </li>
+                </ul>
+            </div>
+
+            <div class = "general_desc provision_desc" id = herb_desc>
+                <ul>
+                    <li class = "highres descbtm_space">Medicinal Herbs (6 per Stack) </li>
+                    <li>Used to cure <span class = debuff>Debuffs</span> </li>
+                    <li>Used in many curio interactions</li>
+                    <li class = "desctop_space attack_type"> [Short: 6 / Medium: 9 / Long: 12]  </li>
+                </ul>
+            </div>
+
+            <div class = "general_desc provision_desc" id = key_desc>
+                <ul>
+                    <li class ="highres descbtm_space"> Skeleton Key (6 per Stack) </li>
+                    <li>Used in many curio interactions</li>
+                    <li class = "desctop_space attack_type"> [Short: 6 / Medium: 9 / Long: 12]  </li>
+                </ul>
+            </div>
+
+            <div class = "general_desc provision_desc" id = holy_water_desc>
+                <ul>
+                    <li class ="highres descbtm_space"> Holy Water (6 per Stack) </li>
+                    <li>Used to buff a hero's resistances </li>
+                    <li class = buff>Buff Hero</li>
+                    <li> +33% <span class = bleed> Bleed</span> Resist (4 rds)</li>
+                    <li> +33% <span class = blight> Blight</span> Resist (4 rds)</li>
+                    <li> +33% <span class = debuff> Debuff</span> Resist (4 rds)</li>
+                    <li> +33% <span class = disease> Disease </span> Resist (4 rds)</li>
+                    <li>Used in many curio interactions</li>
+                    <li class = "desctop_space attack_type"> [Short: 6 / Medium: 9 / Long: 12]  </li>
+                </ul>
+            </div>
+
+            <div class = "general_desc provision_desc" id = laudanum_desc>
+                <ul>
+                    <li class ="highres descbtm_space">Laudanum (6 per Stack) </li>
+                    <li>Used to cure <span class = stress>Horror</span> </li>
+                    <li class = "desctop_space attack_type"> [Short: 6 / Medium: 9 / Long: 9]  </li>
+                </ul>
+            </div>
+
+            <div class = "general_desc provision_desc" id = torch_desc>
+                <ul>
+                    <li class ="highres descbtm_space"> Torch (8 per Stack) </li>
+                    <li>Used to raise Light Level  </li>
+                    <li>(+25 <span class = highres> Torch Light </span> per Torch)</li>
+                    <li>Used in a few curio interactions</li>
+                    <li class = "desctop_space attack_type"> [Short: 18 / Medium: 24 / Long: 36]  </li>
+                </ul>
+            </div>
+
+            <div class = "general_desc provision_desc" id = dog_treat_desc>
+                <ul>
+                    <li class = "highres descbtm_space">Dog Treats (2 per Stack) </li>
+                    <li class = "attack_type">[Houndmaster Exclusive] </li>
+                    <li class = buff>Buff Hero</li>
+                    <li>+50% DMG</li>
+                    <li>+15 ACC</li>
+                    <li> Used in one notable curio interaction  </li>
+                </ul>
+            </div>                
             
+            <div class = "general_desc provision_desc" id = firewood_desc>
+                <ul>
+                    <li class ="highres descbtm_space"> Firewood (1 per Stack) </li>
+                    <li>Used to initiate Camping </li>
+                    <li class = "desctop_space attack_type"> [Short: 0 / Medium: 1 / Long: 2]  </li>
+                </ul>
+            </div>
+
         </div>
             
             
     </div>
 
-
-     <!--Disease Box-->
+    <!--Disease Box-->
 
     <div class = disease_container id = diseasebox>
 
@@ -1854,7 +1838,7 @@
             Buffs to <span class = "disease">Disease</span> Resist such as <span class = "stress">Holy Water</span> or <span class = "buff">Camping Buffs </span>that boost it can be used before ending the expedition to lessen the chance of contracting a <span class = "disease">Disease</span> at the end of an expedition.
         </div>
 
-       <div class = "general_desc disease_enemy_source_txt" id = "disease_enemy_info_desc">
+        <div class = "general_desc disease_enemy_source_txt" id = "disease_enemy_info_desc">
             Enemies that can inflict <span class = "disease">Diseases</span>  <br>
             
             <span class = "attack_type">Monsters</span> that can inflict Any <span class = "disease">Disease</span> <br>
@@ -1900,11 +1884,20 @@
         </div>
         <img src = "images/Hero_boxes/panel_close.png" class = "disease_close" id = "disease_close_btn">
        
+
+        
     </div>
-    
+
+    <div class = "trinketbox_container" id = "trinketbox">
+        <div class = "trinketbox_backdrop"></div>
+
+        <img src = "images/Hero_boxes/panel_close.png" class = trinketbox_close_btn id = trinketbox_close_button>
+
+    </div>
+
     <!--Loot Box-->
-    <div class = "loot_container" id = lootbox>
-        <img src = "images/Hero_boxes/panel_close.png" id = lootclose>
+    <div class = "loot_container " id = lootbox>
+       
 
         <div class = lootflex>
 
@@ -2086,9 +2079,12 @@
                 </ul>
             </div>
         </div>
+    <img src = "images/Hero_boxes/panel_close.png" id = lootclose>
 
     </div>
-        
+
+    </div>
+
     </div>
 
     <audio id = "mission_select_sfx" src="sfx/btn_select.wav"></audio>
@@ -2108,17 +2104,16 @@
     <audio id = "candle_open" src ="sfx/candle_open.wav"></audio>
     <audio id = "candle_close" src ="sfx/candle_close.wav"></audio>
 
-       <!--Mission Box-->
+    <!--Mission Box-->
     <script src = "textbox_toggle.js"></script>
 
     <!--Links-->
     <script src = "btn_sound_toggle.js"></script>
-    
+
     <!--Handles Disease Box Generation-->
     <script src = 'disease_generate.js'></script>
 
-    <!--Lower right Buttons-->
-    <script src = "button_toggles.js"></script>
+ 
 
 
     <!--Handles Quirk/Glossary-->
@@ -2135,6 +2130,12 @@
     <script src = 'boss_box_generate.js'></script>
     <script src = "boss_box_toggle.js"></script>
 
+    <!--Handles Trinket Box Generation-->
+
+    <script src = 'trinket_generate.js'></script>   
+    <script src = "trinket_toggle.js"></script>
+   <!--Lower right Buttons-->
+    <script src = "button_toggles.js"></script>
     <!--Handles description box toggles-->
     <script src = "icon_toggle.js"></script>
 
