@@ -2677,7 +2677,7 @@ const MinionStatData = [
             id: "app_booooooom_desc",
             extrainfo:"Has a 65% Chance to be Used by the Pounder if 'Fire in the Hole!' is used",
             position: "1234cleaveally_1234enemy.png",
-            name: "BOOOOOOOM",
+            name: "BOOOOOOOM!",
             type: "Ranged",
             accuracy: 82.5,
             critRate: "Cannot CRIT",
@@ -2712,7 +2712,7 @@ const MinionStatData = [
             id: "vet_booooooom_desc",
             extrainfo:"Has a 70% Chance to be Used by the Pounder if 'Fire in the Hole!' is used",
             position: "1234cleaveally_1234enemy.png",
-            name: "BOOOOOOOM",
+            name: "BOOOOOOOM!",
             type: "Ranged",
             accuracy: 88.75,
             critRate: "Cannot CRIT",
@@ -2744,10 +2744,10 @@ const MinionStatData = [
 
         {
             class: "boss_skill_desc_container",
-            id: "chmap_booooooom_desc",
+            id: "champ_booooooom_desc",
             extrainfo:"Has a 75% Chance to be Used by the Pounder if 'Fire in the Hole!' is used",
             position: "1234cleaveally_1234enemy.png",
-            name: "BOOOOOOOM",
+            name: "BOOOOOOOM!",
             type: "Ranged",
             accuracy: 102.5,
             critRate: "Cannot CRIT",
@@ -3859,7 +3859,7 @@ const MinionStatData = [
             position: "1234enemy.png",
             name: "Fire In the Hole",
             type: "Support",
-            description:"Lets the Pounder use 'BOOOOOOOM!'(65% Chance) or 'MISFIRE!'(35% Chance)",
+            description:"Lets the Pounder use 'BOOOOOOOM!'(65% Chance) <br> or 'MISFIRE!'(35% Chance)",
         },
 
         {
@@ -3880,7 +3880,7 @@ const MinionStatData = [
             position: "1234enemy.png",
             name: "Fire In the Hole",
             type: "Support",
-            description:"Lets the Pounder use 'BOOOOOOOM!'(70% Chance) or 'MISFIRE!'(30% Chance)",
+            description:"Lets the Pounder use 'BOOOOOOOM!'(70% Chance) <br> or 'MISFIRE!'(30% Chance)",
         },
 
         {
@@ -3902,7 +3902,7 @@ const MinionStatData = [
             position: "1234enemy.png",
             name: "Fire In the Hole",
             type: "Support",
-            description:"Lets the Pounder use 'BOOOOOOOM!'(75% Chance) or 'MISFIRE!'(25% Chance)",
+            description:"Lets the Pounder use 'BOOOOOOOM!'(75% Chance) <br> or 'MISFIRE!'(25% Chance)",
         },
 
         {
