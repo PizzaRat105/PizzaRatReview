@@ -1,14 +1,17 @@
-function createTierContainer(id, id2, headerText, isNegative) {
+function createTierContainer(id, id2, headerText, isNegative, isPrismatic) {
     const tierContainer = document.createElement('div');
     tierContainer.className = 'quirk_tier_container nondisplay';
     tierContainer.id = id;
   
     const header = document.createElement('div');
-    header.className = 'ddlogo_text tier_header_txt' + (isNegative ? ' negative' : '');
+    header.className = 'ddlogo_text tier_header_txt' + (isNegative ? ' negative' : ''); 
     header.textContent = headerText;
+    if(isPrismatic) {
+      header.className = 'ddlogo_text tier_header_txt crystalline';
+    }
   
     const quirkContainer = document.createElement('div');
-    quirkContainer.className = 'quirk_container quirk_text' + (isNegative ? ' negative' : '');
+    quirkContainer.className = 'quirk_container quirk_text' + (isNegative ? ' negative' : '') 
     quirkContainer.id = id2 + '_names';
   
     tierContainer.appendChild(header);
@@ -44,16 +47,26 @@ function createTierContainer(id, id2, headerText, isNegative) {
       { id: 'negative_tier9', id2: 'tier9', headerText:  'Priority Lvl 9: Negatives with Minimal Impact' },
       { id: 'negative_tier10', id2: 'tier10', headerText: 'Priority Lvl 10: Unnoticable at Best' },
     ];
+
+    const prismaticTier =[
+      { id: 'prismatic_tier', id2: 'crystaltier', headerText: 'Prismatic Quirks'},
+    ]
   
     positiveTiers.forEach((tier) => {
-      const tierContainer = createTierContainer(tier.id,tier.id2, tier.headerText, false);
+      const tierContainer = createTierContainer(tier.id,tier.id2, tier.headerText, false, false);
       glossaryBox.appendChild(tierContainer);
     });
   
     negativeTiers.forEach((tier) => {
-      const tierContainer = createTierContainer(tier.id, tier.id2, tier.headerText, true);
+      const tierContainer = createTierContainer(tier.id, tier.id2, tier.headerText, true, false);
       glossaryBox.appendChild(tierContainer);
     });
+
+    prismaticTier.forEach((tier) => {
+      const tierContainer = createTierContainer(tier.id,tier.id2, tier.headerText, false, true);
+      glossaryBox.appendChild(tierContainer);
+    });
+  
   }
   
   appendTierContainers();
@@ -94,7 +107,6 @@ function createTierNav() {
   
 
   createTierNav();
-
 
 
 const BtnChooseAudio = document.getElementById('btn_press');
@@ -168,6 +180,8 @@ const PosNavBtns = document.getElementsByClassName('tier_btn_positive');
 const NegNavBtns = document.getElementsByClassName('tier_btn_negative');
 const PosQuirkBtn = document.getElementById('glossarynav1')
 const NegQuirkBtn = document.getElementById('glossarynav2')
+const PrismaticQuirkBtn = document.getElementById('glossarynav3')
+
 const NegQuirkNav = document.getElementById('neg_nav')
 const PosQuirkNav = document.getElementById('pos_nav')
 
@@ -176,6 +190,7 @@ PosQuirkBtn.addEventListener('click', function() {
   PlayPageOpn();
   HideAllNegativeContent()
   HideAllPositiveContent()
+  HideAllPrismaticContent()
   NegQuirkNav.style.display = 'none'
   PosQuirkNav.style.display = 'block'
   STierPositiveContent.style.display = 'block'
@@ -185,11 +200,22 @@ NegQuirkBtn.addEventListener('click', function() {
   PlayPageOpn();
   HideAllPositiveContent()
   HideAllNegativeContent()
+  HideAllPrismaticContent()
   PosQuirkNav.style.display = 'none'
   NegQuirkNav.style.display = 'block'
   Tier1NegativeContent.style.display = 'block'
   }
   )
+
+PrismaticQuirkBtn.addEventListener('click', function() {
+  PlayPageOpn();
+  HideAllNegativeContent()
+  HideAllPositiveContent()
+  HideAllPrismaticContent()
+  NegQuirkNav.style.display = 'none'
+  PosQuirkNav.style.display = 'none'
+  PrismaticContent.style.display = 'block'
+})
 
 for (const PosNavBtn of PosNavBtns) {
   PosNavBtn.addEventListener('click', function() {PlayBtnPress();})}
@@ -219,7 +245,19 @@ function HideAllPositiveContent() {
     positivecontent.style.display = 'none'
   })
 }
+function HideAllNegativeContent() {
+  const AllNegativeContent = [Tier1NegativeContent, Tier2NegativeContent, Tier3NegativeContent, Tier4NegativeContent, Tier5NegativeContent, Tier6NegativeContent, Tier7NegativeContent, Tier8NegativeContent, Tier9NegativeContent, Tier10NegativeContent]
+  AllNegativeContent.forEach(negativecontent =>{
+    negativecontent.style.display = 'none'
+  })
+}
 
+function HideAllPrismaticContent() {
+  const AllPrismaticContent = [PrismaticContent]
+  AllPrismaticContent.forEach(prismatic =>{
+    prismatic.style.display = 'none'
+  })
+}
 STierBtn.addEventListener('click', function() {HideAllPositiveContent(); STierPositiveContent.style.display = 'block'})
 ATierBtn.addEventListener('click', function() {HideAllPositiveContent(); ATierPositiveContent.style.display = 'block'})
 BTierBtn.addEventListener('click', function() {HideAllPositiveContent(); BTierPositiveContent.style.display = 'block'})
@@ -262,12 +300,11 @@ Tier8Btn.addEventListener('click', function() {HideAllNegativeContent(); Tier8Ne
 Tier9Btn.addEventListener('click', function() {HideAllNegativeContent(); Tier9NegativeContent.style.display = 'block'})
 Tier10Btn.addEventListener('click', function() {HideAllNegativeContent(); Tier10NegativeContent.style.display = 'block'})
 
-function HideAllNegativeContent() {
-  const AllNegativeContent = [Tier1NegativeContent, Tier2NegativeContent, Tier3NegativeContent, Tier4NegativeContent, Tier5NegativeContent, Tier6NegativeContent, Tier7NegativeContent, Tier8NegativeContent, Tier9NegativeContent, Tier10NegativeContent]
-  AllNegativeContent.forEach(negativecontent =>{
-    negativecontent.style.display = 'none'
-  })
-}
+const PrismaticContent = document.getElementById("prismatic_tier")
+
+PrismaticQuirkBtn.addEventListener('click', function() {PrismaticContent.style.display = 'block'})
+
+
 
 
 
@@ -303,6 +340,8 @@ const ATierquirkData = [
 { row: 2, num: 2, id: "mankind_hater_desc", content: "+15% DMG vs Human <br> -15% Stress vs Human" },
 { row: 2, num: 3, id: "beast_hater_desc", content: "+15% DMG vs Beast <br> -15% Stress vs Beast" },
 { row: 2, num: 4, id: "warrior_of_light_desc", content: "+10% DMG if  Torch  above 75" },
+{ row: 2, num: 5, id: "twilight_dreamer_desc", content: "Ignores <span class ='stealth'>Stealth</span> <br> (One per roster) <br> Auto-Locked <br> Additional Heroes with the Quirk can be obtained through Town Events <br> Color of Madness DLC" },
+
 ];
 
 const BTierquirkData = [
@@ -480,7 +519,7 @@ const Tier9quirkData = [
 
 const Tier10quirkData = [
 
-    { row: 1, num: 1, id: "winded_desc", content: "-1 SPD if HP below 50%" },
+    { row: 1, num: 12, id: "winded_desc", content: "-1 SPD if HP below 50%" },
     { row: 1, num: 2, id: "ascetic_desc", content: "Wyrd Reconstruction: <br> -20% Healing  Recieved" },
     { row: 1, num: 3, id: "scientific_desc", content: "Divine Grace, Divine Comfort: <br> -20%  Healing  Recieved " },
     { row: 1, num: 4, id: "unquiet_mind_desc", content: "In Town, will not meditate in the Cloister for stress relief " },
@@ -491,8 +530,24 @@ const Tier10quirkData = [
     { row: 1, num: 9, id: "known_cheat_desc", content: "Is not allowed to visit the Gambling Hall" },
     { row: 1, num: 10, id: "deviant_tastes_desc", content: "Is not allowed to visit the Brothel" },
     { row: 1, num: 11, id: "bad_gambler_desc", content: "+11.4% Chance of losing money while Gambling <br> +13.3% Chance of losing trinkets while Gambling	" },
+    { row: 1, num: 1, id: "shard_mercenary_desc", content: "10% Shard loot taken. <br> Hero will only undertake Endless Harvest quest in the Farmstead.  (Cannot be removed via Sanitarium) <br> Color of Madness DLC" },
 ];
 
+const PrismaticquirkData = [
+
+  { row: 1, num: 1, id: "prismatic_isolation_desc", content: "+25% Debuff Resist<br> Color of Madness DLC" },
+  { row: 1, num: 2, id: "prismatic_stability_desc", content: "+25% Move Resist<br> Color of Madness DLC" },
+  { row: 1, num: 3, id: "prismatic_solidity_desc", content: "+25% Stun Resist<br> Color of Madness DLC" },
+  { row: 1, num: 4, id: "prismatic_coagulation_desc", content: "+25% Bleed Resist<br> Color of Madness DLC" },
+  { row: 1, num: 5, id: "prismatic_purity_desc", content: "+25% Blight Resist<br> Color of Madness DLC" },
+  { row: 1, num: 6, id: "prismatic_calm_desc", content: "-30% Stress <br> Color of Madness DLC" },
+  { row: 1, num: 7, id: "prismatic_force_desc", content: "+15% DMG<br> Color of Madness DLC" },
+  { row: 1, num: 8, id: "prismatic_speed_desc", content: "+3 SPD<br> Color of Madness DLC" },
+  { row: 1, num: 9, id: "prismatic_precision_desc", content: "+4% CRIT<br> Color of Madness DLC" },
+  { row: 1, num: 10, id: "prismatic_eye_desc", content: "+8 ACC<br> Color of Madness DLC" },
+  { row: 1, num: 11, id: "husk_slayer_desc", content: "+10 ACC and +5% CRIT vs Husk<br> Color of Madness DLC" },
+  { row: 1, num: 12, id: "scythemaster_desc", content: "+15% DMG vs Husk<br> Color of Madness DLC" },
+];
 
 // Tier Containers
 const STierContainer = document.getElementById("positive_stier");
@@ -515,6 +570,9 @@ const Tier8Container = document.getElementById("negative_tier8");
 const Tier9Container = document.getElementById("negative_tier9");
 const Tier10Container = document.getElementById("negative_tier10");
 
+const PrismaticQuirkContainer = document.getElementById("prismatic_tier");
+
+
 function createAndAppendQuirkContainers(quirkData, container) {
     quirkData.forEach(quirk => {
       const quirkTxT = document.createElement("div");
@@ -535,6 +593,9 @@ function createAndAppendQuirkContainers(quirkData, container) {
       quirk.content = quirk.content.replace(/Ranged/g, '<span class="attack_type">Ranged</span>');
       quirk.content = quirk.content.replace(/Melee/g, '<span class="attack_type">Melee</span>');
       quirk.content = quirk.content.replace(/Disease/g, '<span class="disease">Disease</span>');
+      quirk.content = quirk.content.replace(/Debuff/g, '<span class="debuff">Debuff</span>');
+      quirk.content = quirk.content.replace(/Color of Madness DLC/g, '<span class="crystalline">Color of Madness DLC</span>');
+
 
       quirkTxT.innerHTML = quirk.content;
       
@@ -564,6 +625,7 @@ function createAndAppendQuirkContainers(quirkData, container) {
   createAndAppendQuirkContainers(Tier9quirkData, Tier9Container);
   createAndAppendQuirkContainers(Tier10quirkData, Tier10Container);
 
+createAndAppendQuirkContainers(PrismaticquirkData, PrismaticQuirkContainer);
 
 
 //Quirk Names
@@ -602,6 +664,8 @@ const ATierquirkNameData2 = [
     { id: "mankind_hater", content: "Mankind Hater" },
     { id: "beast_hater", content: "Beast Hater" },
     { id: "warrior_of_light", content: "Warrior of Light" },
+    { id: "twilight_dreamer", content: "Twilight Dreamer" },
+
 ];
 
 const BTierquirkNameData = [
@@ -768,7 +832,7 @@ const Tier9quirkNameData = [
 ];
 
 const Tier10quirkNameData = [
-    { id: "winded", content: "Winded" },
+    { id: "shard_mercenary", content: "Shard Mercenary" },
     { id: "ascetic", content: "Ascetic" },
     { id: "scientific", content: "Scientific" },
     { id: "unquiet_mind", content: "Unquiet Mind" },
@@ -779,6 +843,22 @@ const Tier10quirkNameData = [
     { id: "known_cheat", content: "Known Cheat" },
     { id: "deviant_tastes", content: "Deviant Tastes" },
     { id: "bad_gambler", content: "Bad Gambler" },
+    { id: "winded", content: "Winded" },
+];
+
+const PrismaticquirkNameData = [
+  { id: "prismatic_isolation", content: "Prismatic Isolation" },
+  { id: "prismatic_stability", content: "Prismatic Stability" },
+  { id: "prismatic_solidity", content: "Prismatic Solidity" },
+  { id: "prismatic_coagulation", content: "Prismatic Coagulation" },
+  { id: "prismatic_purity", content: "Prismatic Purity" },
+  { id: "prismatic_calm", content: "Prismatic Calm" },
+  { id: "prismatic_force", content: "Prismatic Force" },   
+  { id: "prismatic_speed", content: "Prismatic Speed" },
+  { id: "prismatic_precision", content: "Prismatic Precision" },
+  { id: "prismatic_eye", content: "Prismatic Eye" },
+  { id: "husk_slayer", content: "Husk Slayer" },
+  { id: "scythemaster", content: "Scythemaster" },
 ];
 
 // Quirk Name Container
@@ -801,7 +881,7 @@ const Tier7quirkContainer = document.getElementById("tier7_names");
 const Tier8quirkContainer = document.getElementById("tier8_names");
 const Tier9quirkContainer = document.getElementById("tier9_names");
 const Tier10quirkContainer = document.getElementById("tier10_names");
-
+const PrismaticQuirkNameContainer = document.getElementById("crystaltier_names");
 
 function createAndAppendQuirkNames(quirkNameData, container, className = '') {
     quirkNameData.forEach(quirk => {
@@ -836,3 +916,19 @@ function createAndAppendQuirkNames(quirkNameData, container, className = '') {
   createAndAppendQuirkNames(Tier8quirkNameData, Tier8quirkContainer);
   createAndAppendQuirkNames(Tier9quirkNameData, Tier9quirkContainer);
   createAndAppendQuirkNames(Tier10quirkNameData, Tier10quirkContainer);
+
+  createAndAppendQuirkNames(PrismaticquirkNameData, PrismaticQuirkNameContainer);
+
+const PrismaticInfoIcon = document.createElement("img")
+PrismaticInfoIcon.src = 'images/estate_icons/shard_icon.png'
+PrismaticInfoIcon.className = "prismatic_info"
+PrismaticInfoIcon.id = "prismatic_quirk_info"
+
+const PrismaticInfoDesc =  document.createElement("div")
+PrismaticInfoDesc.className = "general_desc prismatic_info_txt"
+PrismaticInfoDesc.id = "prismatic_quirk_info_desc"
+PrismaticInfoDesc.innerHTML = "<span class = 'crystalline'>Prismatic Quirks</span> are obtained via killing the <span class = 'thing'> Thing from the Stars</span> <br> These Quirks are Auto Locked & Only 1 of each quirk can be obtained per Estate <br> Auto Locked Quirks do not count towards the Quirk Locking Cap.<br> The Quirks are obtained in the order they have been listed below"
+
+  PrismaticQuirkNameContainer.appendChild(PrismaticInfoIcon)
+  PrismaticQuirkNameContainer.appendChild(PrismaticInfoDesc)
+
