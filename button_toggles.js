@@ -13,7 +13,6 @@ function PlayBtnPress() {
   BtnSelectAudio.currentTime = 0; 
   BtnSelectAudio.play();
 }
-
 /*Disease Box*/
 const DiseaseBox = document.getElementById("diseasebox");
 const DiseaseBtn = document.getElementById("diseasebtn");
@@ -30,6 +29,9 @@ document.addEventListener('keydown', event => {
     DiseaseBox.style.display = 'none';
   }
 });
+
+
+
 
 /*Lootbox*/ 
 const LootBtn = document.getElementById('Loot');
@@ -179,33 +181,64 @@ ActivityClosed.addEventListener('mouseover' , function() {ActivityOverlay.style.
 ActivityClosed.addEventListener('mouseleave', function() {ActivityOverlay.style.display = 'none'; });
 
 /*Trinket Inv */
+const TrinketBox = document.getElementById("trinketbox");
 const TrinketBoxOpen = document.getElementById('trinketsbox_open')
 const TrinketBoxClosed = document.getElementById('trinketsbox_closed')
 const TrinketBoxOpenAudio = document.getElementById('trinketbox_open')
 const TrinketBoxCloseAudio = document.getElementById('trinketbox_close')
 const TrinketBoxOverlay = document.getElementById('trinketsbox_overlay')
+const TrinketBoxCloseBtn = document.getElementById("trinketbox_close_button")
 TrinketBoxCloseAudio.volume = 0.3;
 TrinketBoxOpenAudio.volume = 0.3;
+
 
 TrinketBoxOpen.addEventListener('click' , function() {
   TrinketBoxCloseAudio.currentTime = 0;
   TrinketBoxCloseAudio.play();
   PlayBtnPress()
   TrinketBoxClosed.style.display = 'block'
-  TrinketBoxOpen.style.display = 'none'
+  TrinketBoxOpen.style.display = 'none';
+  TrinketBox.style.display = "none";
+
 })
 TrinketBoxClosed.addEventListener('click' , function() {
-  TrinketBoxOpenAudio.currentTime - 0;
+  TrinketBoxOpenAudio.currentTime = 0;
   TrinketBoxOpenAudio.play();
   PlayBtnPress()
   TrinketBoxClosed.style.display = 'none'
   TrinketBoxOpen.style.display = 'block'
+  TrinketBox.style.display = "block";
 })
+
+TrinketBoxCloseBtn.addEventListener('click' , function() {
+  TrinketBoxCloseAudio.currentTime = 0;
+  TrinketBoxCloseAudio.play();
+  PlayBtnPress()
+  TrinketBoxClosed.style.display = 'block'
+  TrinketBoxOpen.style.display = 'none';
+  TrinketBox.style.display = "none";
+
+})
+
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && TrinketBox.style.display === 'block') {
+    TrinketBoxCloseAudio.currentTime = 0;
+    TrinketBoxCloseAudio.play();
+    PlayBtnPress()
+    TrinketBoxClosed.style.display = 'block'
+    TrinketBoxOpen.style.display = 'none';
+    TrinketBox.style.display = "none";
+  }
+});
+
 
 TrinketBoxOpen.addEventListener('mouseover' , function() {TrinketBoxOverlay.style.display = 'block'})
 TrinketBoxOpen.addEventListener('mouseleave', function() {TrinketBoxOverlay.style.display = 'none'; });
 TrinketBoxClosed.addEventListener('mouseover' , function() {TrinketBoxOverlay.style.display = 'block'})
 TrinketBoxClosed.addEventListener('mouseleave', function() {TrinketBoxOverlay.style.display = 'none'; });
+
+
+
 
 
 /*Credits? */
@@ -258,3 +291,8 @@ CloseLoot.addEventListener('click', function() {
   CloseAudio.play();
   LootBox.style.display = 'none'
 })
+
+
+
+
+
