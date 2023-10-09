@@ -497,7 +497,7 @@ display: flex; flex-direction: row; flex-wrap: wrap; background-color: black; ju
 .back_hero2:hover{filter: brightness(150%);}
 
 /*Hero Panel Styling*/
-.hero_panel{ margin: 0; padding:0; margin-top: 4vw; display: none;}
+.hero_panel{ margin: 0; padding:0; margin-top: 4vw; display: block;}
 .char_panel{width: 94vw; height: 40vw; position: relative; margin-left: 3vw;}
 
 .empty_space{ height: 47vw; width: 30vw; position: absolute;}
