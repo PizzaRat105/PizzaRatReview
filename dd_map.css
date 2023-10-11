@@ -110,7 +110,8 @@ button{background: white; border: none; width:20px}
 .disease_btn:hover{filter: brightness(150%);}
 .mod_btn:hover{filter: brightness(150%);}
 
-
+.non_dlc_label{position: absolute; top: 38vw;left:23.8vw;
+    font-family: 'Ubuntu', sans-serif; color:rgb(93, 91, 79);font-size: 1.3vw; font-weight: 800;}
 /*General Box, Button and Backdrop Styling*/
 
 
@@ -534,7 +535,6 @@ text-align: center;}
 .quirk_overview{position: absolute;top:6.5vw }
 .quirk_overview_label{position: absolute; font-size: 1.7vw; left: 3.3vw; top: 6.6vw;}
 .quirk_general_info{max-width: 38vw; font-size: 1.2vw; line-height: 1.6vw;position: absolute; top: 9vw; left: -2vw;}
-
 /*Disease Box*/
 
 .disease_container{position: absolute; left: 8.5vw; top: 6.75vw; height: 38.7vw; width: 69.8vw; 
@@ -820,6 +820,13 @@ text-align: center;}
 .shieldbreaker_trinket_overview_label{position: absolute; top: 5.7vw; left: 36.5vw; font-size: 1.5vw;}
 
 
+/*Districts*/
+
+.district_container{ position: absolute; display: none;width: 38.3vw; height: 38.4vw; left: 9vw; top: 6.9vw;
+    background-image: url('images/Districts/district_background.png'); background-size: 38.3vw;}
+
+.district_sprite{position: absolute; top: 4vw; left: 2vw; width: 16vw;}
+
 /*Lower Right Button Styling*/
 .district_closed{position:absolute; top: 44.2vw; left: 69.3vw; width: 4vw; height: 4.7vw}
 .district_open{position:absolute; top: 44.2vw; left: 69.3vw; width: 4vw; height: 4.7vw; display: none;}
@@ -844,6 +851,9 @@ text-align: center;}
 
 .setting_icon{position: absolute; top: 44.2vw; left: 95.2vw; width: 3.1vw;height: 4.1vw}
 .setting_overlay{ top: 43.2vw; left: 94.3vw}
+
+.includes_dlc_label{position: absolute; top: 42vw;left:77vw;
+    font-family: 'Ubuntu', sans-serif; color:rgb(93, 91, 79);font-size: 1.3vw; font-weight: 800;}
 
 /*Background element Styling*/
 .back_arrow{position: absolute; top: 4.3vw; left: 11.8vw; height: 2vw;}
@@ -1091,7 +1101,4 @@ text-align: center;}
     font-family: 'Ubuntu', sans-serif; color: rgb(206, 58, 33); font-size: 1vw; line-height: 1.5vw; font-weight: 500;
     text-align: center; padding:0.2vw; display: none;
 }
-
-
-
 
