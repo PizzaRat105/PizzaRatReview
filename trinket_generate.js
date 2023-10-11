@@ -2118,7 +2118,7 @@ const trinketData = [
         row:2,
         num:1,
         category:"Color_Of_Madness",
-        extrainfo:"Obtained by killing a Thing From the Stars <br> (10% > Chance)",                         
+        extrainfo:"Obtained by killing a Thing From the Stars <br> (6.7% > Chance)",                         
         id: "Thing's Mesmerizing Eye",
         rarity: "Thing",        
         description: 
@@ -2132,7 +2132,7 @@ const trinketData = [
         row:2,
         num:2,
         category:"Color_Of_Madness",  
-        extrainfo:"Obtained by killing a Thing From the Stars <br> (10% > Chance)",                            
+        extrainfo:"Obtained by killing a Thing From the Stars <br> (6.7% > Chance)",                            
         id: "Crystalline Fang",
         rarity: "Thing",
         description: 
@@ -2146,7 +2146,7 @@ const trinketData = [
         row:2,
         num:3,
         category:"Color_Of_Madness",
-        extrainfo:"Obtained by killing a Thing From the Stars <br> (10% > Chance)",                              
+        extrainfo:"Obtained by killing a Thing From the Stars <br> (6.7% > Chance)",                              
         id: "Phase Shifting Hide",
         rarity: "Thing",
         description: 
@@ -2160,7 +2160,7 @@ const trinketData = [
         row:2,
         num:4,
         category:"Color_Of_Madness",
-        extrainfo:"Obtained by killing a Thing From the Stars <br> (10% > Chance)",                              
+        extrainfo:"Obtained by killing a Thing From the Stars <br> (6.7% > Chance)",                              
         id: "Prismatic Heart Crystal",
         rarity: "Thing",        
         description: 
