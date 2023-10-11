@@ -141,8 +141,7 @@ document.addEventListener("DOMContentLoaded", function() {
   attachHoverListeners("[id^='torch_box']", "[id^='torch_desc']");
   attachHoverListeners("[id^='dog_treat_box']", "[id^='dog_treat_desc']");
   attachHoverListeners("[id^='firewood_box']", "[id^='firewood_desc']");
-
-  attachHoverListeners("[id^='citrine_box']", "[id^='citrine_desc']");
+ attachHoverListeners("[id^='citrine_box']", "[id^='citrine_desc']");
   attachHoverListeners("[id^='jade_box']", "[id^='jade_desc']");
   attachHoverListeners("[id^='onyx_box']", "[id^='onyx_desc']");
   attachHoverListeners("[id^='emerald_box']", "[id^='emerald_desc']");
@@ -158,6 +157,14 @@ document.addEventListener("DOMContentLoaded", function() {
   attachHoverListeners("[id^='bust_box']", "[id^='bust_desc']");
   attachHoverListeners("[id^='deed_box']", "[id^='deed_desc']");
   attachHoverListeners("[id^='portrait_box']", "[id^='portrait_desc']");
+
+  attachHoverListeners("[id='blueprint_box']", "[id^='blueprint_desc']");
+  attachHoverListeners("[id='baron_invite_box']", "[id^='baron_invite_desc']");
+  attachHoverListeners("[id='viscount_invite_box']", "[id^='viscount_invite_desc']");
+  attachHoverListeners("[id='countess_invite_box']", "[id^='countess_invite_desc']");
+  attachHoverListeners("[id='shard_box']", "[id^='shard_desc']");
+  attachHoverListeners("[id='memory_box']", "[id^='memory_desc']");
+
 
 //Quirk Info
 
