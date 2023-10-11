@@ -638,7 +638,7 @@ text-align: center;}
 
 /*Loot Box Styling*/
 
-.loot_container{position: absolute; top: 23vw;left: 2vw; width: 36vw; height: 18vw; 
+.loot_container{position: absolute; top: 14vw;left: 2vw; width: 36vw; height: 25.8vw; 
                background-image: url('images/loot/inventory_panel.png'); background-size: 36vw; display: none;}
 #lootclose{width: 1.5vw; position: absolute; right: 0.45vw; top: 0.45vw;}
 #lootclose:hover{filter: brightness(150%);}
@@ -646,42 +646,61 @@ text-align: center;}
 .loot_item{position: absolute; width: 3.4vw; height: 7vw; }
 .loot_item:hover{filter: brightness(150%);}
 
-.slot1{ top: 0.9vw; left: 1vw}
-.slot2{top: 0.9vw; left: 5.1vw}
-.slot3{top: 0.9vw; left: 9.15vw}
-.slot4{top: 0.9vw; left: 13.2vw}
-.slot5{top: 0.9vw; left: 17.28vw}
-.slot6{top: 0.9vw; left: 21.35vw}
-.slot7{top: 0.9vw; left: 25.4vw}
-.slot8{top: 0.9vw; left: 29.4vw}
-.slot9{top: 9.2vw; left: 1vw}
-.slot10{top: 9.2vw; left: 5.1vw}
-.slot11{top: 9.2vw; left: 9.15vw}
-.slot12{top:9.2vw; left: 13.2vw}
-.slot13{top:9.2vw; left: 17.28vw}
-.slot14{top:9.2vw; left: 21.35vw}
-.slot15{top:9.2vw; left: 25.4vw}
-.slot16{top:9.2vw; left: 29.4vw}
+.slot1{ top: 0.9vw; left: 0.8vw}
+.slot2{top: 0.9vw; left: 4.85vw}
+.slot3{top: 0.9vw; left: 8.9vw}
+.slot4{top: 0.9vw; left: 12.95vw}
+.slot5{top: 0.9vw; left: 17vw}
+.slot6{top: 0.9vw; left: 21.05vw}
+.slot7{top: 0.9vw; left: 25.1vw}
+.slot8{top: 0.9vw; left: 29.15vw}
+.slot9{ top: 9.35vw; left: 0.8vw}
+.slot10{top: 9.35vw; left: 4.85vw}
+.slot11{top: 9.35vw; left: 8.9vw}
+.slot12{top: 9.35vw; left: 12.95vw}
+.slot13{top: 9.35vw; left: 17vw}
+.slot14{top: 9.35vw; left: 21.05vw}
+.slot15{top: 9.35vw; left: 25.1vw}
+.slot16{top: 9.35vw; left: 29.15vw}
+
+.slot17{top: 17.8vw; left: 0.8vw}
+.slot18{top: 17.8vw; left: 4.85vw}
+.slot19{top: 17.8vw; left: 8.9vw}
+.slot20{top: 17.8vw; left: 12.95vw}
+
+.slot22{top: 17.8vw; left: 21.05vw}
+.slot23{top: 17.8vw; left: 25.1vw}
 
 .loot_desc{ font-size: 1vw; line-height: 1.4vw; font-weight: 500;}
 
-#citrine_desc{top: 0.95vw; left: 5.1vw;}
-#jade_desc{top: 0.95vw; left: 9.15vw}
-#onyx_desc{top: 0.95vw; left: 13.2vw}
-#emerald_desc{top: 0.95vw; left: 17.28vw}
-#sapphire_desc{top: 0.95vw; left: 21.35vw}
-#ruby_desc{top: 0.95vw; left: 25.4vw}
-#trapezohedron_desc{top: 8.5vw; left: 18vw}
-#goldbag_desc{top: 8.5vw; left: 24vw}
-#pew_desc{top: 9.25vw; left: 5.1vw}
-#minor_antique_desc{top: 9.25vw; left: 9.15vw}
-#major_antique_desc{top: 9.25vw; left: 13.2vw}
-#tapestry_desc{top: 9.25vw; left: 17.28vw}
-#crest_desc{top: 17.5vw; left:11vw}
-#bust_desc{top: 17.5vw; left: 15vw}
-#deed_desc{top: 17.5vw; left: 19.2vw}
-#portrait_desc{top: 17.5vw; left:23.3vw}
+#citrine_desc{top: 0.95vw; left: 4.5vw;}
+#jade_desc{top: 0.95vw; left: 8.55vw}
+#onyx_desc{top: 0.95vw; left: 12.6vw}
+#emerald_desc{top: 0.95vw; left: 16.65vw}
+#sapphire_desc{top: 0.95vw; left: 20.7vw}
+#ruby_desc{top: 0.95vw; left: 24.75vw}
 
+#trapezohedron_desc{top: 8.1vw; left: 18vw}
+#goldbag_desc{top: 8.1vw; left: 24vw}
+
+#pew_desc{top: 9.25vw; left: 4.5vw}
+#minor_antique_desc{top: 9.25vw; left: 8.55vw}
+#major_antique_desc{top: 9.25vw; left: 12.6vw}
+#tapestry_desc{top: 9.25vw; left: 16.65vw}
+
+#crest_desc{top: 16.6vw; left:11vw}
+#bust_desc{top: 16.6vw; left: 15vw}
+#deed_desc{top: 16.6vw; left: 19.2vw}
+#portrait_desc{top: 16.6vw; left:23.3vw}
+
+#blueprint_desc{top: 17.55vw; left:4.5vw}
+
+#baron_invite_desc{top: 17.55vw; left:8.55vw}
+#viscount_invite_desc{top: 17.55vw; left: 12.6vw}
+#countess_invite_desc{top: 17.55vw; left: 16.65vw}
+
+#shard_desc{top: 17.55vw; left: 24.75vw}
+#memory_desc{top: 17.55vw; left: 28.8vw}
 
 
 .apprentice{color:rgb(108, 149, 85)}
