@@ -1436,10 +1436,16 @@ attachHoverListeners("[id='cauldron_empty_minion_more_info_app']", "[id='cauldro
 attachHoverListeners("[id='cauldron_empty_minion_more_info_vet']", "[id='cauldron_empty_minion_more_info_desc']");
 attachHoverListeners("[id='cauldron_empty_minion_more_info_champ']", "[id='cauldron_empty_minion_more_info_desc']");
 
+
 //Disease Icons
 attachHoverListeners("[id='disease_shared_info']", "[id='disease_shared_info_desc']");
 attachHoverListeners("[id='disease_enemy_info']", "[id='disease_enemy_info_desc']");
 attachHoverListeners("[id='disease_curio_info']", "[id='disease_curio_info_desc']");
+attachHoverListeners("[id='dlc_disease_enemy_info']", "[id='dlc_disease_enemy_info_desc']");
+attachHoverListeners("[id='dlc_disease_curio_info']", "[id='dlc_disease_curio_info_desc']");
+attachHoverListeners("[id='crimson_curse_cure_info']", "[id='crimson_curse_cure_info_desc']");
+attachHoverListeners("[id='crimson_curse_benefit_info']", "[id='crimson_curse_benefit_info_desc']");
+
 
 //Disease Descs
 attachHoverListeners("[id='bad_humors']", "[id='bad_humors_desc']");
@@ -1466,6 +1472,12 @@ attachHoverListeners("[id='the_worries']", "[id='the_worries_desc']");
 attachHoverListeners("[id='vertigo']", "[id='vertigo_desc']");
 attachHoverListeners("[id='vampiric_spirits']", "[id='vampiric_spirits_desc']");
 attachHoverListeners("[id='wasting_sickness']", "[id='wasting_sickness_desc']");
+
+attachHoverListeners("[id='crimson_curse_passive']", "[id='crimson_curse_passive_desc']");
+attachHoverListeners("[id='crimson_curse_craving']", "[id='crimson_curse_craving_desc']");
+attachHoverListeners("[id='crimson_curse_bloodlust']", "[id='crimson_curse_bloodlust_desc']");
+attachHoverListeners("[id='crimson_curse_wasting']", "[id='crimson_curse_wasting_desc']");
+attachHoverListeners("[id='sky_taint']", "[id='sky_taint_desc']");
 
 //Trinket Info
 
