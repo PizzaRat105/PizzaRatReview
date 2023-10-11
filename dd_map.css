@@ -34,6 +34,7 @@ button{background: white; border: none; width:20px}
 .align_end{text-align: end;}
 .wrap{flex-wrap: wrap;}
 .nowrap{flex-wrap: nowrap;}
+.center_align{text-align: center;}
 
 /*body {
     user-select: none;
@@ -533,6 +534,7 @@ text-align: center;}
 .quirk_overview{position: absolute;top:6.5vw }
 .quirk_overview_label{position: absolute; font-size: 1.7vw; left: 3.3vw; top: 6.6vw;}
 .quirk_general_info{max-width: 38vw; font-size: 1.2vw; line-height: 1.6vw;position: absolute; top: 9vw; left: -2vw;}
+
 /*Disease Box*/
 
 .disease_container{position: absolute; left: 8.5vw; top: 6.75vw; height: 38.7vw; width: 69.8vw; 
@@ -541,22 +543,42 @@ text-align: center;}
 .disease_close{position:absolute; right: 0.6vw; top:0.8vw; width: 1.6vw}
 .disease_close:hover{filter: brightness(150%);}
 
+.disease_banner{position:absolute; right: 20vw; top: -3.5vw; width: 12vw;}
+.dlc_disease_banner{position:absolute; right: 5vw; top:-3.5vw; width: 12vw;}
+
+.disease_banner:hover{filter: brightness(150%);}
+.dlc_disease_banner:hover{filter: brightness(150%);}
+
 .disease_universal{left: 2.5vw; top: 5.1vw;}
 .disease_shared_label{position: absolute; font-size: 1.5vw; left: 1.5vw; top: 7.5vw;}
-.disease_universal_txt{left: 1.5vw;top:8vw; max-width: 50vw; padding-top:0.5vw; font-size: 1.3vw; line-height: 1.8vw;}
+.disease_universal_txt{left: 1.5vw;top:8vw; max-width: 60vw; padding-top:0.5vw; font-size: 1.3vw; line-height: 1.8vw;}
 
 
 .disease_enemy_source{left: 22vw; top: 2.7vw;}
 .disease_enemy_label{position: absolute; font-size: 1.5vw; left: 21.2vw; top: 5.3vw;}
-.disease_enemy_source_txt{left: 25vw; top: 2.7vw;  max-width: 50vw; font-size: 1.3vw; line-height: 1.8vw; font-weight: 500;}
+.disease_enemy_source_txt{left: 25vw; top: 2.7vw;  max-width: 60vw; font-size: 1.3vw; line-height: 1.8vw; font-weight: 500;}
 
 .disease_curio_source{left: 27vw; top: 2.7vw;}
 .disease_curio_label{position: absolute; font-size: 1.5vw; left: 26.6vw; top: 5.3vw;}
 .disease_curio_source_txt{left: 30vw; top: 2.7vw;  max-width: 50vw; font-size: 1.3vw; line-height: 1.8vw; font-weight: 500;}
 
+.crimson_curse_cure{position: absolute; top: 9.5vw; left: 2.4vw;}
+.crimson_curse_cure_txt{position: absolute; top: 9.5vw; left: 5.3vw; font-size: 1.3vw; line-height: 1.8vw; max-width: 60vw;}
+
+.crimson_curse_benefit{position: absolute; top: 16.5vw; left: 2.4vw;}
+.crimson_curse_benefit_txt{position: absolute; top: 16.5vw; left: 5.3vw; font-size: 1.3vw; line-height: 1.8vw; max-width: 60vw;}
+
+
+.curse_cure{position: absolute; top: 12.2vw; left: 0vw; font-size: 1.5vw; text-align: center;}
+.curse_benefit{position: absolute; top: 19.2vw; left: 0vw; font-size: 1.5vw; text-align: center;}
+
+
 .disease_column{width: 17vw; height: 35vw; position: absolute; top: 1.5vw; font-family: 'Ubuntu', sans-serif; color:rgb(116, 125, 78); font-size: 1.7vw;font-weight: 500; line-height: 2.9vw; padding: 0.3vw;}
 .disease_1{right: 18vw; width: 18vw;}
 .disease_2{right: -0.5vw;} 
+.disease_3{right: 15vw; width: 21vw; color:rgb(162, 42, 23);} 
+.disease_4{right: 15vw; width: 21vw; top: 24.7vw;} 
+
 .disease_desc{font-size: 1.3vw;line-height: 1.8vw;text-align: start;}
 
 .disease_row1_num1{position:absolute;left: 34vw; top: 4.7vw;}
