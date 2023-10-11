@@ -285,7 +285,6 @@ function replaceSpecificEffects(description) {
     description = description.replace(/Healing/g, '<span class="heal">Healing</span>');
     description = description.replace(/Heal/g, '<span class="heal">Heal</span>');    
     description = description.replace(/Torch/g, '<span class="highres">Torch</span>');
-    description = description.replace(/Skill/g, '<span class="highres">Skill</span>');
     description = description.replace(/Blight/g, '<span class="blight">Blight</span>');
     description = description.replace(/Bleed/g, '<span class="bleed">Bleed</span>');
     description = description.replace(/Stun/g, '<span class="stun">Stun</span>');
