@@ -611,11 +611,11 @@ text-align: center;}
 
 .provision_backdrop{position:absolute; width: 104vw; height: 45vw; left:-12vw;}
 .provision_container{position: absolute; left: 8.5vw; top: 6.75vw; height: 38.5vw; width: 75.2vw; display: none; 
-                    background-image: url("images/estate_icons/provision.character_background_long.png"); background-size: 75.2vw;}
+                    background-image: url("images/Provisions/provision_character_background.png"); background-size: 75.2vw;}
 .provision_close{position:absolute; right: 0.8vw; top:0.8vw; width: 1.6vw}
 .provision_close:hover{filter: brightness(150%);}
-.provisions_itembox{display: flex; position: absolute; left: 43vw; top: 1.5vw; width: 30vw; height: 17.5vw; 
-                    flex-wrap: wrap; }
+.provisions_itembox{display: flex; position: absolute; left: 36.8vw; top: 1.5vw; width: 36.2vw; height: 17.5vw; 
+                    flex-wrap: wrap;}
 .supply_item{width: 3.9vw; height: 7.2vw; margin: 0.25vw 0.3vw 0.25vw 0.3vw; display: flex;}
 .supply_item:hover{filter: brightness(150%);}
 .provision_desc{font-size: 1vw; line-height: 1.3vw; font-weight: 500;}
@@ -627,36 +627,48 @@ text-align: center;}
 #antivenom_desc{left:3.4vw; top:7.8vw} 
 #bandage_desc{left:7.8vw; top:7.8vw} 
 #herb_desc{left:12.2vw; top:7.8vw} 
-#key_desc{left:17.3vw; top:7.8vw}
-#holy_water_desc{left:-5.3vw; top: 16.5vw} 
-#laudanum_desc{left:-0.9vw; top: 16.5vw} 
-#torch_desc{left:2.5vw; top: 16.5vw} 
-#dog_treat_desc{left:6.8vw; top: 16.5vw} 
-#firewood_desc{left:13vw; top: 16.5vw}
+#key_desc{left:17.1vw; top:7.8vw}
+#holy_water_desc{left:21.5vw; top: 7.8vw} 
+#laudanum_desc{left:26.3vw; top: 7.8vw} 
+#torch_desc{left:-7vw; top: 16.5vw} 
+#dog_treat_desc{left:-2.4vw; top: 16.5vw} 
+#firewood_desc{left:1.6vw; top: 16.5vw}
+#the_blood_desc{left:0vw; top: 16.5vw}
+#the_cure_desc{left:1.7vw; top: 16.5vw}
+#shard_dust_desc{left:7vw; top: 16.5vw}
+#aegis_scale_desc{left:14vw; top: 16.5vw}
+
 
 .provision_areabox{position: absolute; top: 19.3vw; right: 0.5vw;
                    height: 19vw; width: 38.5vw;}
 
-.provisions_navigation{position: absolute; top: 18.5vw; left: -11vw}
-.provisions_navbtn{width: 4vw;}
+.provisions_navigation{position: absolute; top: 18.2vw; left: 33vw}
+.provisions_navbtn{width: 3.2vw;}
 .provisions_navbtn:hover{filter: brightness(150%);}
 
-.areabox{position: absolute; width: 37.9vw; height:18.4vw; background-size: 38.5vw;  padding: 1vw;}
+.areabox{position: absolute; width: 37.9vw; height:18.4vw; background-size: 38.5vw;  padding: 0.8vw 1vw;}
 .area_provisions_text{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1vw; line-height: 1.3vw; font-weight: 300;}
 .ruins_provision{background-image: url("images/backgrounds/ruins_bg.webp"); }
 .weald_provision{ background-image: url("images/backgrounds/Weald.webp");}
 .warrens_provision{ background-image: url("images/backgrounds/Warrens.webp"); }
 .cove_provision{  background-image: url("images/backgrounds/Cove.webp");}
+.courtyard_provision{  background-image: url("images/backgrounds/Courtyard.webp");background-position: center;}
+.farmstead_provision{  background-image: url("images/backgrounds/Farmstead.webp");background-position: center;}
 
-.dungeon_category{width: 12.5vw; height: 16vw; padding-top: 1.8vw; }
+.dungeon_category{width: 12.5vw; height: 17vw; padding-top: 2vw; }
+.dungeon_main{width: 37vw; height: 17vw; padding-top: 2vw;}
+
 .provisions_title{font-size: 2vw; font-family: dd_logo; color: rgb(199, 179, 107); position: absolute; display: flex;justify-content: center; width: 36vw; height: 3vw;}
 .provisions_list{text-align: center; line-height: 1.5vw;}
+.general_provision_list{text-align: start; line-height: 1.7vw;}
 .dungeon_header{font-family: dd_logo; color: rgb(199, 179, 107); font-size: 1.5vw; margin-top: 0.5vw;}
 
 #ruins_area{display: flex;}
 #weald_area{display:none}
 #warrens_area{display:none}
 #cove_area{display: none;}
+#courtyard_area{display: none;}
+#farmstead_area{display: none;}
 
 /*Loot Box Styling*/
 
