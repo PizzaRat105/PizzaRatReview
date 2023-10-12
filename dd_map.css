@@ -670,6 +670,9 @@ text-align: center;}
 #courtyard_area{display: none;}
 #farmstead_area{display: none;}
 
+.trap_info{top: -0.6vw;}
+.trap_info_text{top: -1vw; left:3.5vw;}
+.trap_label{position:absolute; left:0.5vw; font-size: 1.2vw; top: 1.5vw;}
 /*Loot Box Styling*/
 
 .loot_container{position: absolute; top: 14vw;left: 2vw; width: 36vw; height: 25.8vw; 
