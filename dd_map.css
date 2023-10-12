@@ -611,10 +611,10 @@ text-align: center;}
 
 .provision_backdrop{position:absolute; width: 104vw; height: 45vw; left:-12vw;}
 .provision_container{position: absolute; left: 8.5vw; top: 6.75vw; height: 38.5vw; width: 75.2vw; display: none; 
-                    background-image: url("images/Provisions/provision_character_background.png"); background-size: 75.2vw;}
+                    background-image: url("images/Provisions/provision_character_background_edited.png"); background-size: 75.2vw;}
 .provision_close{position:absolute; right: 0.8vw; top:0.8vw; width: 1.6vw}
 .provision_close:hover{filter: brightness(150%);}
-.provisions_itembox{display: flex; position: absolute; left: 36.8vw; top: 1.5vw; width: 36.2vw; height: 17.5vw; 
+.provisions_itembox{display: flex; position: absolute; left: 36.8vw; top: 1.2vw; width: 36.2vw; height: 17.5vw; 
                     flex-wrap: wrap;}
 .supply_item{width: 3.9vw; height: 7.2vw; margin: 0.25vw 0.3vw 0.25vw 0.3vw; display: flex;}
 .supply_item:hover{filter: brightness(150%);}
