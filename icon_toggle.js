@@ -129,6 +129,7 @@ document.addEventListener("DOMContentLoaded", function() {
   attachHoverListeners("[id^='trinketves1']", "[id^='vestrinket1']");
   attachHoverListeners("[id^='trinketves2']", "[id^='vestrinket2']");
 
+ //Provisions
 
   attachHoverListeners("[id^='food_box']", "[id^='food_desc']");
   attachHoverListeners("[id^='shovel_box']", "[id^='shovel_desc']");
@@ -140,8 +141,23 @@ document.addEventListener("DOMContentLoaded", function() {
   attachHoverListeners("[id^='laudanum_box']", "[id^='laudanum_desc']");
   attachHoverListeners("[id^='torch_box']", "[id^='torch_desc']");
   attachHoverListeners("[id^='dog_treat_box']", "[id^='dog_treat_desc']");
-  attachHoverListeners("[id^='firewood_box']", "[id^='firewood_desc']");
- attachHoverListeners("[id^='citrine_box']", "[id^='citrine_desc']");
+  attachHoverListeners("[id='firewood_box']", "[id='firewood_desc']");
+  attachHoverListeners("[id='the_blood_box']", "[id='the_blood_desc']");
+  attachHoverListeners("[id='the_cure_box']", "[id='the_cure_desc']");
+  attachHoverListeners("[id='shard_dust_box']", "[id='shard_dust_desc']");
+  attachHoverListeners("[id='aegis_scale_box']", "[id='aegis_scale_desc']");
+
+  //Traps
+
+  attachHoverListeners("[id='ruins_trap_info']", "[id='ruins_trap_info_desc']");
+  attachHoverListeners("[id='weald_trap_info']", "[id='weald_trap_info_desc']");
+  attachHoverListeners("[id='warrens_trap_info']", "[id='warrens_trap_info_desc']");
+  attachHoverListeners("[id='cove_trap_info']", "[id='cove_trap_info_desc']");
+  attachHoverListeners("[id='courtyard_trap_info']", "[id='courtyard_trap_info_desc']");
+
+  //Loot
+
+  attachHoverListeners("[id^='citrine_box']", "[id^='citrine_desc']");
   attachHoverListeners("[id^='jade_box']", "[id^='jade_desc']");
   attachHoverListeners("[id^='onyx_box']", "[id^='onyx_desc']");
   attachHoverListeners("[id^='emerald_box']", "[id^='emerald_desc']");
