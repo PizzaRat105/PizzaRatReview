@@ -56,10 +56,16 @@ const RuinsNavigate = document.getElementById('ruins_nav')
 const WealdNavigate = document.getElementById('weald_nav')
 const WarrensNavigate = document.getElementById('warrens_nav')
 const CoveNavigate = document.getElementById('cove_nav')
+const CourtyardNavigate = document.getElementById('courtyard_nav')
+const FarmsteadNavigate = document.getElementById('farmstead_nav')
+
 const RuinsArea = document.getElementById('ruins_area')
 const WealdArea = document.getElementById('weald_area')
 const WarrensArea = document.getElementById('warrens_area')
 const CoveArea = document.getElementById('cove_area')
+const CourtyardArea = document.getElementById('courtyard_area')
+const FarmsteadArea = document.getElementById('farmstead_area')
+
 
 ProvisionerBtn.addEventListener('click' , function() {
   PlayPageOpn()
@@ -80,6 +86,8 @@ RuinsNavigate.addEventListener('click', function() {
   WealdArea.style.display = 'none'
   WarrensArea.style.display = 'none'
   CoveArea.style.display = 'none'
+  CourtyardArea.style.display = 'none'
+  FarmsteadArea.style.display = 'none'
 })
 WealdNavigate.addEventListener('click', function() {
   PlayPageOpn()
@@ -87,6 +95,8 @@ WealdNavigate.addEventListener('click', function() {
   WealdArea.style.display = 'flex'
   WarrensArea.style.display = 'none'
   CoveArea.style.display = 'none'
+  CourtyardArea.style.display = 'none'
+  FarmsteadArea.style.display = 'none'
 })
 WarrensNavigate.addEventListener('click', function() {
   PlayPageOpn()
@@ -94,6 +104,8 @@ WarrensNavigate.addEventListener('click', function() {
   WealdArea.style.display = 'none'
   WarrensArea.style.display = 'flex'
   CoveArea.style.display = 'none'
+  CourtyardArea.style.display = 'none'
+  FarmsteadArea.style.display = 'none'
 })
 CoveNavigate.addEventListener('click', function() {
   PlayPageOpn()
@@ -101,7 +113,28 @@ CoveNavigate.addEventListener('click', function() {
   WealdArea.style.display = 'none'
   WarrensArea.style.display = 'none'
   CoveArea.style.display = 'flex'
+  CourtyardArea.style.display = 'none'
+  FarmsteadArea.style.display = 'none'
 })
+CourtyardNavigate.addEventListener('click', function() {
+  PlayPageOpn()
+  RuinsArea.style.display = 'none'
+  WealdArea.style.display = 'none'
+  WarrensArea.style.display = 'none'
+  CoveArea.style.display = 'none'
+  CourtyardArea.style.display = 'flex'
+  FarmsteadArea.style.display = 'none'
+})
+FarmsteadNavigate.addEventListener('click', function() {
+  PlayPageOpn()
+  RuinsArea.style.display = 'none'
+  WealdArea.style.display = 'none'
+  WarrensArea.style.display = 'none'
+  CoveArea.style.display = 'none'
+  CourtyardArea.style.display = 'none'
+  FarmsteadArea.style.display = 'flex'
+})
+
 
 
 /*Districts*/
