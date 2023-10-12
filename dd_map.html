@@ -1487,7 +1487,7 @@
         </div>
     </div>
 
-    <!--Provision Box-->
+     <!--Provision Box-->
     <div class = provision_container id = provisionbox>
         <div class = "provision_backdrop"></div>
         <img src = "images/Hero_boxes/panel_close.png" class = provision_close id = food_close>
@@ -1538,6 +1538,8 @@
                         <li>24~28 <span class = highres>Torches</span></li>
                     </ul>
                 </div>
+                <img src = "images/Hero_boxes/more_info_icon.png" class = "info trap_info" id = "ruins_trap_info">
+                <div class = " ddlogo_text trap_label">Trap Info</div>
 
             </div>
 
@@ -1576,7 +1578,7 @@
                     <ul class = provisions_list>
                         <li class = "dungeon_header">Long</li> 
                         <li>36 <span class = heal>Food</span></li>
-                        <li>4 <span class = grey>Shovels</span></li>
+                        <li>4+ <span class = grey>Shovels</span></li>
                         <li>4~5 <span class = blight>Antivenom</span></li>
                         <li>3~4 <span class = bleed>Bandages</span></li>
                         <li>3 <span class = debuff>Medicinal Herbs</span></li>
@@ -1585,6 +1587,8 @@
                         <li>24~28 <span class = highres>Torches</span></li>
                     </ul>
                 </div>
+                <img src = "images/Hero_boxes/more_info_icon.png" class = "info trap_info" id = "weald_trap_info">
+                <div class = " ddlogo_text trap_label">Trap Info</div>
 
             </div>
 
@@ -1633,6 +1637,10 @@
                     </ul>
                 </div>
 
+                <img src = "images/Hero_boxes/more_info_icon.png" class = "info trap_info" id = "warrens_trap_info">
+                <div class = " ddlogo_text trap_label">Trap Info</div>
+
+
             </div>
 
             <div class = "cove_provision areabox area_provisions_text" id = cove_area>
@@ -1678,18 +1686,98 @@
                     </ul>
                 </div>
 
+                <img src = "images/Hero_boxes/more_info_icon.png" class = "info trap_info" id = "cove_trap_info">
+                <div class = " ddlogo_text trap_label">Trap Info</div>
+
+
             </div>
 
-        </div>
-        
-        <div class = provisions_itembox>
+            <div class = "courtyard_provision area_provisions_text areabox" id = courtyard_area>
+                <div class = " provisions_title"> The Courtyard</div>
+                
+                <div class = dungeon_main>
+                    <div class = general_provisions_list>
+                        <span class = heal>Food</span>: Get as Much as Possible<br>
+                        <span class = grey>Shovels</span>: Very Useful, will be used to get <span class = "veteran">Firewood</span> for <span class = "veteran">Camping</span>  <br>
+                        <span class = blight>Antivenom</span>:Can be nice to bring. <br>
+                        <span class = bleed>Bandages</span>: Quite Useful, with many Enemies in <span class = "crimson_court"> The Courtyard</span> inflicting <span class = "bleed">Bleeds</span><br>
+                        <span class = debuff>Medicinal Herbs</span>: Very useful for gaining large amounts of <span class = heal>Food</span> by using them on the <span class = "crimson_court">Forgotten Delicacies</span> <span class = "attack_type">Curio</span> </span><br>
+                        <span class = "attack_type">Keys</span>: DO NOT BRING<br>
+                        <span class = stress>Holy Water</span>: Pretty Useful for Resistance <span class = "buff">Buffs</span> and a beneficial <span class = "attack_type">Curio</span> Interaction that heals <span class = "stress">Stress</span> if used on the <span class = "crimson_court">Damned Fountain</span> <span class = "attack_type">Curio</span> <br>
+                        <span class = highres>Torches</span>: Used to clear some <span class = "rare">Obstacles</span>. ACC <span class = "buff">Buff</span> can be Useful<br>
+                        <span class = "stress">Laudanum</span>:Not worth Bringing for the few enemies that inflict <span class = "stress">Horror</span><br>
+                        <span class = "crimson_court">The Blood</span>:Unsurprisingly useful in <span class = "crimson_court"> The Courtyard</span> <br>
+                    </div>                
+                </div>
 
-            <div class = provisions_navigation>
+                <img src = "images/Hero_boxes/more_info_icon.png" class = "info trap_info" id = "courtyard_trap_info">
+                <div class = " ddlogo_text trap_label">Trap Info</div>
+
+
+            </div>
+
+            <div class = " farmstead_provision area_provisions_text areabox" id = farmstead_area>
+                <div class = " provisions_title"> The Farmstead</div>
+
+                <div class = dungeon_main>
+                    <div class = general_provisions_list>
+                        <span class = heal>Food</span>: Get as Much as Possible<br>
+                        <span class = grey>Shovels</span>: Useless<br>
+                        <span class = blight>Antivenom</span>: Quite Useful <br>
+                        <span class = bleed>Bandages</span>: Quite Useful<br>
+                        <span class = debuff>Medicinal Herbs</span>: Can be Useful for clearing <span class = "debuff">Debuffs</span><br>
+                        <span class = "attack_type">Keys</span>: Can be Useful thanks to Cabinets<br>
+                        <span class = stress>Holy Water</span>: Pretty Useful for resistance <span class = "buff">Buffs</span><br>
+                        <span class = highres>Torches</span>: Useless<br>
+                        <span class = "stress">Laudanum</span>: Can be Useful <br>
+                    </div>                
+                </div>
+
+            </div>
+
+                 
+        <div class = "general_desc trap_info_text" id = "ruins_trap_info_desc">
+            <span class = "apprentice">Apprentice</span> <br> Hero: Takes Damage Equal to 25% of Hero MAX HP <br> <span class = "stress">Stress</span> +15 <br><br>
+            <span class = "veteran">Veteran</span> <br> Hero: Takes Damage Equal to 28% of Hero MAX HP <br> <span class = "stress">Stress</span> +15 <br><br>
+            <span class = "champion">Champion</span> <br> Hero: Takes Damage Equal to 30% of Hero MAX HP <br> <span class = "stress">Stress</span> +15 
+        </div>
+
+        <div class = "general_desc trap_info_text" id = "weald_trap_info_desc">
+            <span class = "apprentice">Apprentice</span> <br> Hero: <span class = "stress">Stress</span> +15 <br> <span class = "blight">Blight</span> <span class = "chance">(100% Base)</span> 2pts/rd for 3 rds<br><br>
+            <span class = "veteran">Veteran</span> <br> Hero: <span class = "stress">Stress</span> +15 <br>  <span class = "blight">Blight</span> <span class = "chance">(110% Base)</span> 2pts/rd for 3 rds <br><br>
+            <span class = "champion">Champion</span> <br> Hero: <span class = "stress">Stress</span> +15 <br>  <span class = "blight">Blight</span> <span class = "chance">(120% Base)</span> 3pts/rd for 3 rds 
+        </div>
+
+        <div class = "general_desc trap_info_text" id = "warrens_trap_info_desc">
+            <span class = "apprentice">Apprentice</span> <br> Hero: Takes Damage Equal to 10% of Hero MAX HP <br> <span class = "stress">Stress</span> +15 <br> <span class = "bleed">Bleed</span> <span class = "chance">(100% Base)</span> 2pts/rd for 3 rds <br><br>
+            <span class = "veteran">Veteran</span> <br> Hero: Takes Damage Equal to 10% of Hero MAX HP <br> <span class = "stress">Stress</span> +15 <br> <span class = "bleed">Bleed</span> <span class = "chance">(110% Base)</span> 2pts/rd for 3 rds <br><br>
+            <span class = "champion">Champion</span> <br> Hero: Takes Damage Equal to 10% of Hero MAX HP <br> <span class = "stress">Stress</span> +15 <br> <span class = "bleed">Bleed</span> <span class = "chance">(120% Base)</span> 3pts/rd for 3 rds 
+        </div>
+
+        <div class = "general_desc trap_info_text" id = "cove_trap_info_desc">
+            <span class = "apprentice">Apprentice</span> <br> Hero: Takes Damage Equal to 10% of Hero MAX HP <br> <span class = "stress">Stress</span> +15 <br> <span class = "debuff">Debuff Hero</span> <br> -5 SPD (12 rds) // -20 DODGE (12 rds) <br><br>
+            <span class = "veteran">Veteran</span> <br> Hero: Takes Damage Equal to 10% of Hero MAX HP <br> <span class = "stress">Stress</span> +15 <br> <span class = "debuff">Debuff Hero</span> <br> -6 SPD (12 rds) // -25 DODGE (12 rds) <br><br> 
+            <span class = "champion">Champion</span> <br> Hero: Takes Damage Equal to 10% of Hero MAX HP <br> <span class = "stress">Stress</span> +15 <br> <span class = "debuff">Debuff Hero</span> <br> -8 SPD (12 rds) // -30 DODGE (12 rds)  
+        </div>
+
+        <div class = "general_desc trap_info_text" id = "courtyard_trap_info_desc">
+            <span class = "apprentice">Apprentice</span> <br> Hero: Takes 15 DMG <br> <span class = "stress">Stress</span> +15 <br> <span class = "bleed">Bleed</span> <span class = "chance">(100% Base)</span> 2pts/rd for 3 rds <br> <span class = "stealth">Summon</span> <span class = "crimson_court">Sycophants</span> and <span class = "crimson_court">Supplicants</span> (50% Chance)<br><br>
+            <span class = "veteran">Veteran</span> <br> Hero: Takes 18 DMG <br> <span class = "stress">Stress</span> +15 <br> <span class = "bleed">Bleed</span> <span class = "chance">(110% Base)</span> 2pts/rd for 3 rds <br> <span class = "stealth">Summon</span> <span class = "crimson_court">Sycophants</span>, <span class = "crimson_court">Supplicants</span>, <span class = "crimson_court">Chevaliers</span> (50% Chance)<br><br>
+            <span class = "champion">Champion</span> <br> Hero: Takes 18 DMG <br> <span class = "stress">Stress</span> +15 <br> <span class = "bleed">Bleed</span> <span class = "chance">(120% Base)</span> 3pts/rd for 3 rds <br> <span class = "stealth">Summon</span> <span class = "crimson_court">Sycophants</span>, <span class = "crimson_court">Supplicants</span>, <span class = "crimson_court">Chevaliers</span> (50% Chance)
+        </div>
+
+        </div>
+        <div class = provisions_navigation>
                 <div id = ruins_nav> <img src = 'images/estate_icons/ruins_btn.png ' class= "provisions_navbtn"></div>
                 <div  id = weald_nav> <img src = 'images/estate_icons/weald_btn.png ' class= "provisions_navbtn"> </div>
                 <div id = warrens_nav> <img src = 'images/estate_icons/warrens_btn.png ' class= "provisions_navbtn"> </div>
                 <div  id = cove_nav> <img src = 'images/estate_icons/cove_btn.png ' class= "provisions_navbtn"></div>
+                <div  id = courtyard_nav> <img src = 'images/estate_icons/courtyard_btn.png ' class= "provisions_navbtn"></div>
+                <div  id = farmstead_nav> <img src = 'images/estate_icons/farmstead_btn.png ' class= "provisions_navbtn"></div>
             </div>
+        <div class = provisions_itembox>
+
+            
 
                 <img src = "images/Provisions/Food.png" class = supply_item id = food_box>
                 <img src = "images/Provisions/Shovel.png" class = supply_item id = shovel_box>
@@ -1702,12 +1790,19 @@
                 <img src = "images/Provisions/Torch.png" class = supply_item id = torch_box>
                 <img src = "images/Provisions/Dog_Treats.png" class = supply_item id = dog_treat_box>
                 <img src = "images/Provisions/Firewood.png" class = supply_item id = firewood_box>
+                <img src = "images/Provisions/The_Blood.png" class = supply_item id = the_blood_box>
+                <img src = "images/Provisions/The_Cure.png" class = supply_item id = the_cure_box>
+                <img src = "images/Provisions/Shard_Dust.png" class = supply_item id = shard_dust_box>
+                <img src = "images/Provisions/Aegis_Scale.png" class = supply_item id = aegis_scale_box>
+
+
+                <img src = "" class = "supply_gold_cost">
 
 
             <div class = "general_desc provision_desc" id = food_desc>
                 <ul>
                     <li class ="highres descbtm_space">Food (12 per Stack) </li>
-                    <li>Used to stave off Hunger Checks and Camping </li>
+                    <li>Used to stave off Hunger Checks and <span class = "veteran">Camping</span> </li>
                     <li>Heroes consume 1 Food per Hunger Check</li>
                     <li>Heals 5% Max HP if manually consumed</li>
                     <li>(4 food per hero, refreshes after battles)</li>
@@ -1717,8 +1812,8 @@
             <div class = "general_desc provision_desc" id  = shovel_desc>
                 <ul>
                     <li class ="highres descbtm_space">Shovel (4 per Stack) </li>
-                    <li>Used to clear corridor obstacles </li>
-                    <li>Used in many curio interactions</li>
+                    <li>Used to clear Corridor <span class = "rare">Obstacles</span> </li>
+                    <li>Used in many <span class = "attack_type">Curio</span> Interactions</li>
                     <li class = "desctop_space attack_type"> [Short: 4 / Medium: 6 / Long: 8]  </li>
                 </ul>
             </div>
@@ -1727,7 +1822,7 @@
                 <ul>
                     <li class ="highres descbtm_space">Antivenom (6 per Stack) </li>
                     <li>Used to cure <span class = blight>Blight</span> </li>
-                    <li>Used in many curio interactions</li>
+                    <li>Used in many <span class = "attack_type">Curio</span> Interactions</li>
                     <li class = "desctop_space attack_type"> [Short: 6 / Medium: 9 / Long: 12]  </li>
                 </ul>
             </div>
@@ -1736,7 +1831,7 @@
                 <ul>
                     <li class ="highres descbtm_space"> Bandage (6 per Stack) </li>
                     <li>Used to cure <span class = bleed>Bleed</span> </li>
-                    <li>Used in many curio interactions</li>
+                    <li>Used in many <span class = "attack_type">Curio</span> Interactions</li>
                     <li class = "desctop_space attack_type"> [Short: 6 / Medium: 9 / Long: 12]  </li>
                 </ul>
             </div>
@@ -1745,7 +1840,7 @@
                 <ul>
                     <li class = "highres descbtm_space">Medicinal Herbs (6 per Stack) </li>
                     <li>Used to cure <span class = debuff>Debuffs</span> </li>
-                    <li>Used in many curio interactions</li>
+                    <li>Used in many <span class = "attack_type">Curio</span> Interactions</li>
                     <li class = "desctop_space attack_type"> [Short: 6 / Medium: 9 / Long: 12]  </li>
                 </ul>
             </div>
@@ -1753,7 +1848,7 @@
             <div class = "general_desc provision_desc" id = key_desc>
                 <ul>
                     <li class ="highres descbtm_space"> Skeleton Key (6 per Stack) </li>
-                    <li>Used in many curio interactions</li>
+                    <li>Used in many <span class = "attack_type">Curio</span> Interactions</li>
                     <li class = "desctop_space attack_type"> [Short: 6 / Medium: 9 / Long: 12]  </li>
                 </ul>
             </div>
@@ -1767,7 +1862,7 @@
                     <li> +33% <span class = blight> Blight</span> Resist (4 rds)</li>
                     <li> +33% <span class = debuff> Debuff</span> Resist (4 rds)</li>
                     <li> +33% <span class = disease> Disease </span> Resist (4 rds)</li>
-                    <li>Used in many curio interactions</li>
+                    <li>Used in many <span class = "attack_type">Curio</span> Interactions</li>
                     <li class = "desctop_space attack_type"> [Short: 6 / Medium: 9 / Long: 12]  </li>
                 </ul>
             </div>
@@ -1785,7 +1880,11 @@
                     <li class ="highres descbtm_space"> Torch (8 per Stack) </li>
                     <li>Used to raise Light Level  </li>
                     <li>(+25 <span class = highres> Torch Light </span> per Torch)</li>
-                    <li>Used in a few curio interactions</li>
+                    <li>Used in a few <span class = "attack_type">Curio</span> Interactions</li>
+                    <li class = "desctop_space">Within the <span class = "crimson_court">Courtyard</span></li>
+                    <li class = "buff">Buff Party</li>
+                    <li>+3 ACC (1 Battle)</li>
+                    <li>Used to Clear an <span class = "rare">Obstacle</span> (Shifting Mist)</li>
                     <li class = "desctop_space attack_type"> [Short: 18 / Medium: 24 / Long: 36]  </li>
                 </ul>
             </div>
@@ -1795,30 +1894,93 @@
                     <li class = "highres descbtm_space">Dog Treats (2 per Stack) </li>
                     <li class = "attack_type">[Houndmaster Exclusive] </li>
                     <li class = buff>Buff Hero</li>
-                    <li>+50% DMG</li>
-                    <li>+15 ACC</li>
-                    <li> Used in one notable curio interaction  </li>
+                    <li>+50% DMG (3 rds)</li>
+                    <li>+15 ACC (3 rds)</li>
+                    <li> Used in one notable <span class = "attack_type">Curio</span> Interaction:  </li>
+                    <li class = "highres">Giant Oyster</li>
                 </ul>
             </div>                
             
             <div class = "general_desc provision_desc" id = firewood_desc>
                 <ul>
                     <li class ="highres descbtm_space"> Firewood (1 per Stack) </li>
-                    <li>Used to initiate Camping </li>
-                    <li class = "desctop_space attack_type"> [Short: 0 / Medium: 1 / Long: 2]  </li>
+                    <li>Used to initiate <span class = "veteran">Camping</span> </li>
+                    <li class = "desctop_space">Within the <span class = "crimson_court">Courtyard</span></li>
+                    <li>Can be obtained by using a <span class = "grey">Shovel</span> on the </li>
+                    <li><span class = "crimson_court">Wine Crate</span> <span class = "attack_type">Curio</span></li>                    
+                    <li class = "desctop_space attack_type"> [Short: 0 / Medium: 1 / Long: 2 / Epic: 0]  </li>
+
                 </ul>
             </div>
 
+            <div class = "general_desc provision_desc" id = the_blood_desc>
+                <ul>
+                    <li class ="highres descbtm_space"> The Blood (6 per Stack) </li>
+                    <li>Used to Control the <span class = "crimson_court">Crimson Curse</span> </li>
+                    <li>Used in a few <span class = "attack_type">Curio</span> Interactions within the <span class = "crimson_court">Courtyard</span></li>
+                    <li class = "desctop_space">If used on a Hero without the <span class = "crimson_court">Crimson Curse</span>:</li>
+                    <li>Target Hero: Take Damage Equal to 33% of MAX HP // <span class = "stress">Stress</span> +20</li>
+                    <li class = "debuff">Debuff Hero</li>
+                    <li>-8 SPD (3 rds) // -10 DODGE(3 rds) </li>
+                    <li>Hidden: Cannot Drink <span class = "crimson_court">The Blood</span> (3 rds)</li>                     
+                    <li class = "desctop_space">Recommended <span class = "crimson_court">Blood</span> Amount for each Hero with the <span class = "crimson_court">Crimson Curse</span> </li>
+                    <li class = "attack_type"> [Short: 1 / Medium: 1.5 / Long: 2 / Epic: 2+]  </li>
+                    <li class = "crimson_court desctop_space"> Crimson Court DLC </li>
+                </ul>
+            </div>
+
+            <div class = "general_desc provision_desc" id = the_cure_desc>
+                <ul>
+                    <li class ="highres descbtm_space"> The Cure (6 per Stack) </li>
+                    <li>Only Dropped by the <span class = "crimson_court"> Fanatic</span> (Gives 2 Cures as Loot) </li>
+                    <li>Can be used on a Hero with the <span class = "crimson_court">Crimson Curse</span> during an expedition to Cure them</li>
+                    <li class = "crimson_court desctop_space"> Crimson Court DLC </li>
+                </ul>
+            </div>
+
+
+            <div class = "general_desc provision_desc" id = shard_dust_desc>
+                <ul>
+                    <li class ="highres descbtm_space"> Shard Dust (6 per Stack) </li>
+                    <li>Cannot be Used if Hero is <span class = "stress">Virtued</span></li>
+                    <li><span class = "crystalline">Refreshes</span> Limited Use Skills (All Uses)</li>
+                    <li class = "desctop_space">First Use: <span class = buff>Buff Hero</span> (1 Battle) +2 SPD // +15% DMG </li>
+                    <li><span class = "debuff">Debuff Hero (Incurable w/ Herbs)</span> (Until Camp) +10% <span class = "stress">Stress</span> // -10% <span class = "stress">Virtue</span> Chance</li>
+                    <li>Target Hero:  <span class = "stress">Stress</span> +10 </li>
+                    <li class = "desctop_space"> Second Use: <span class = buff>Buff Hero</span> (10 rds) +2 SPD // +15% DMG </li>
+                    <li><span class = "debuff">Debuff Hero (Incurable w/ Herbs)</span> (Until Camp) +20% <span class = "stress">Stress</span> // -10% <span class = "stress">Virtue</span> Chance</li>
+                    <li>Target Hero:  <span class = "stress">Stress</span> +20 </li>
+                    <li class = "desctop_space">Third Use and Onwards: </li>
+                    <li class = "desctop_space"><span class = buff>Buff Hero</span> (5 rds) +2 SPD // +15% DMG // +9% CRIT </li>
+                    <li>Target Hero:  <span class = "stress">Stress</span> +40 </li>
+                    <li class = "desctop_space attack_type"> [Short: 6 / Medium: 9 / Long: 12]  </li>
+                    <li class = "crystalline desctop_space"> Color of Madness DLC  </li>
+                </ul>
+            </div>
+
+
+            <div class = "general_desc provision_desc" id = aegis_scale_desc>
+                <ul>
+                    <li class ="highres descbtm_space"> Aegis Scale (4 per Stack) </li>
+                    <li>Grants a Hero 1 <span class = "block">Block</span> (2 <span class = "block">Blocks</span> Max per Hero) </li>
+                    <li>Each <span class = "block">Block</span> Negates 1 instance of Direct Damage inflicted on a Hero</li>
+                    <li class = "desctop_space"> Dropped by the 3 Snake Enemies introduced with the   </li>
+                    <li><span class = "block">Shieldbreaker DLC</span> (Pilskin(50%), Rattler(50%), and Adder(100%))</li>
+                    <li class = "desctop_space block"> Shieldbreaker DLC  </li>
+                </ul>
+            </div>
+
+
         </div>
             
-            
+       
     </div>
 
     <!--Disease Box-->
 
     <div class = disease_container id = diseasebox>
-        <img src= "images/estate_icons/posquirk_btn.png" class = "disease_banner" id = "disease_banner">
-        <img src= "images/estate_icons/negquirk_btn.png" class = "dlc_disease_banner" id = "dlc_disease_banner">
+        <img src= "images/estate_icons/vanilla_content_button.png" class = "disease_banner" id = "disease_banner">
+        <img src= "images/estate_icons/dlc_content_button.png" class = "dlc_disease_banner" id = "dlc_disease_banner">
 
         <div class = "provision_backdrop"></div>
 
