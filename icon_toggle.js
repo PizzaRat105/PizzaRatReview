@@ -1034,6 +1034,7 @@ attachHoverListeners("[id='brigand_pounder_additional_info_champ']", "[id='briga
 attachHoverListeners("[id='shrieker_additional_info_app']", "[id='shrieker_additional_info_desc']");
 attachHoverListeners("[id='shrieker_additional_info_vet']", "[id='shrieker_additional_info_desc']");
 attachHoverListeners("[id='shrieker_additional_info_champ']", "[id='shrieker_additional_info_desc']");
+attachHoverListeners("[id='shrieker_additional_info']", "[id='shrieker_additional_info_desc']");
 
 attachHoverListeners("[id='swine_prince_additional_info_app']", "[id='swine_prince_additional_info_desc']");
 attachHoverListeners("[id='swine_prince_additional_info_vet']", "[id='swine_prince_additional_info_desc']");
@@ -1103,7 +1104,8 @@ attachHoverListeners("[id='collector_minion_more_info_champ']", "[id='collector_
 attachHoverListeners("[id='shambler_minion_more_info_app']", "[id='shambler_minion_more_info_desc']");
 attachHoverListeners("[id='shambler_minion_more_info_vet']", "[id='shambler_minion_more_info_desc']");
 attachHoverListeners("[id='shambler_minion_more_info_champ']", "[id='shambler_minion_more_info_desc']");
-
+  
+attachHoverListeners("[id='shrieker_minion_more_info']", "[id='shrieker_minion_more_info_desc']");
 attachHoverListeners("[id='shambler_minion_more_info']", "[id='shambler_minion_more_info_desc']");
 
 //Trophies
