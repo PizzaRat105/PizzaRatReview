@@ -647,7 +647,7 @@ text-align: center;}
 .provisions_navbtn:hover{filter: brightness(150%);}
 
 .areabox{position: absolute; width: 37.9vw; height:18.4vw; background-size: 38.5vw;  padding: 0.8vw 1vw;}
-.area_provisions_text{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1vw; line-height: 1.3vw; font-weight: 300;}
+.area_provisions_text{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1vw; line-height: 1.3vw; font-weight: 400;}
 .ruins_provision{background-image: url("images/backgrounds/ruins_bg.webp"); }
 .weald_provision{ background-image: url("images/backgrounds/Weald.webp");}
 .warrens_provision{ background-image: url("images/backgrounds/Warrens.webp"); }
@@ -673,7 +673,6 @@ text-align: center;}
 .trap_info{top: -0.6vw; left:1.8vw;}
 .trap_info_text{top: -1vw; left:4.1vw;}
 .trap_label{position:absolute; left:1.1vw; font-size: 1.2vw; top: 1.5vw;}
-
 /*Loot Box Styling*/
 
 .loot_container{position: absolute; top: 14vw;left: 2vw; width: 36vw; height: 25.8vw; 
