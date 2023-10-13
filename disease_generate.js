@@ -141,6 +141,7 @@ const dlcDiseaseData = [
         -10% MAX HP //  +1 SPD <br>
         Duration: 31-75 rounds - Evolves into Craving on Next Blood Check <br>
         Drinking The Blood - Empower Self (3 rds): +7 DODGE +4 SPD <br>
+        Hidden: Cannot Drink The Blood (3 rds)
          `
     },
     {
@@ -153,9 +154,9 @@ const dlcDiseaseData = [
         Duration: 31-46 rounds - Evolves into Wasting on Next Blood Check <br>
         Drinking The Blood - Evolve into Bloodlust <br> <br>
         Possible Actouts <br>
-        Deal Stress to Party // Pass Turns // Move Randomly <br>
-        Attack Teammates // Deny Being Moved // Deal Stress to Attacked Teammates <br>
-        Deal Stress to Heroes interacting with Curios // Deny Healing <br>
+        Deal Stress to Party (Stress +6) // Pass Turns // Move Randomly <br>
+        Attack Teammates // Deny Being Moved // Deal Stress to Attacked Teammates (Stress +6) <br>
+        Deal Stress to Heroes interacting with Curios (Stress +6)// Deny Healing <br>
         Sometimes refuse to Eat While Camping & Recieve High HP and Stress Damage 
          `
     },
@@ -167,12 +168,14 @@ const dlcDiseaseData = [
         +25% DMG // +4 SPD <br>
         Duration: 22-30 rounds - Evolves into Passive on Next Blood Check <br>
         Drinking The Blood - Self: Stress +33 <br>
-        Empower Self (3 rds) +50% DMG +4 SPD <br><br>
+        Empower Self (3 rds) +50% DMG +4 SPD <br>
+        Hidden: Cannot Drink The Blood (3 rds)<br><br>
         Possible Actouts <br>
-        Self Stress - 15 // Deal Stress to Party // Move Forwards <br>
+        Self Stress - 15 // Deal Stress to Party (Stress +6) // Move Forwards <br>
         Randomly Attack Teammates with Added Effects <br>
         (Same as Affliction Act Out Attacks) <br>
-        Deny Buffs // Deal Stress to Attacked Teammates // Use Random Skill 
+        Deny Buffs // Deal Stress to Attacked Teammates (Stress +6)// <br>
+        Use Random Skill (Uses up Turn) 
          `
     },
     {
@@ -185,8 +188,8 @@ const dlcDiseaseData = [
         Duration: 31-46 rounds - On Next Blood Check: Death <br>
         Drinking The Blood - Evolve into Passive <br> <br>
         Possible Actouts <br>
-        Deal Stress to Party // Pass Turns // Attack Self <br>
-         Deal Stress to Heroes interacting with Curios // Deny Healing <br>
+        Deal Stress to Party (Stress +6) // Pass Turns // Attack Self <br>
+         Deal Stress to Heroes interacting with Curios (Stress +6) // Deny Healing <br>
          Refuse to Eat While Camping & Recieve High HP and Stress Damage 
          `
     },
