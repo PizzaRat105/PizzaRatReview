@@ -188,7 +188,7 @@ const dlcDiseaseData = [
         Duration: 31-46 rounds - On Next Blood Check: Death <br>
         Drinking The Blood - Evolve into Passive <br> <br>
         Possible Actouts <br>
-        Deal Stress to Party (Stress +6) // Pass Turns // Attack Self <br>
+        Deal Stress to Party (Stress +6) // Pass Turns // Attack Self (10% of MAX HP) <br>
          Deal Stress to Heroes interacting with Curios (Stress +6) // Deny Healing <br>
          Refuse to Eat While Camping & Recieve High HP and Stress Damage 
          `
