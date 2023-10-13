@@ -174,7 +174,7 @@ const dlcDiseaseData = [
         Self Stress - 15 // Deal Stress to Party (Stress +6) // Move Forwards <br>
         Randomly Attack Teammates with Added Effects <br>
         (Same as Affliction Act Out Attacks) <br>
-        Deny Buffs // Deal Stress to Attacked Teammates (Stress +6)// <br>
+        Deny Buffs // Deal Stress to Attacked Teammates (Stress +6) <br>
         Use Random Skill (Uses up Turn) 
          `
     },
