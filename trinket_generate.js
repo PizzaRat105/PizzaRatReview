@@ -4767,91 +4767,180 @@ trinketData.forEach(trinket => {
 
 
 TrinketMainBox.innerHTML += trinketHTML;
-function createHTMLElement(tag, classes, id, text) {
-    const element = document.createElement(tag);
-    if (classes) element.className = classes;
-    if (id) element.id = id;
-    if (text) element.innerText = text;
-    return element;
-}
 
-const trinketOverviewContainer = createHTMLElement("div", "container");
+const TrinketInfoDescData = [
+    //Overview
+    {    
+  
+      icon_src:"images/Hero_boxes/more_info_icon.png",
+      icon_class: "info trinket_overview",
+      icon_id:"trinket_overview",
+  
+      label_class:"ddlogo_text trinket_overview_label",
+      labeltext:"Overview",
+  
+      class: "general_desc trinket_general_info",
+      id:"trinket_overview_desc",
+  
+      description: [
+        "Trinkets! are obtained through Battle & Curio Loot during expeditions or bought from the Nomad Wagon. Some Trinkets are Region Exclusive, they only appear as loot or as a Quest reward in that Region.<br>",
+        "A Hero can equip up to 2 Trinkets! at once. and 2 of the same Trinket! cannot be equipped at the same time. Identical Trinkets! do not stack in your Inventory.<br>",
+        "Enemy Specific, Ancestral, Trophy, all DLC Trinkets! (With the exception of Rat Carcass), and some Very Rare Trinkets! are limited to 1 per Estate.<br>",
+        `Non Shambler Ancestral Trinkets! only appear as Quest Rewards in Normal Dungeons if they are Champion Level Long Dungeons. 
+        They can also be randomly dropped in Veteran and Champion Difficulties <br>`,
+        `Trinkets! that have been lost are collected by the Shrieker, and a Quest to reclaim them by confronting the bird appears once 8 or more has been lost.
+        The difficulty of the battle is determined by the Highest Rarity Trinket! that has been lost.
+        Trophy Trinkets! return to your Trinket! Inventory even if lost during an expedition.<br>`,
+        "Trinket! Selling Prices (In Gold):",
+        "Very Common: 750 // Common: 1125 // Uncommon: 1500 // Rare: 2250",
+        "Very Rare: 3750 // Enemy Specific Very Rare: 2250 // Shrieker: 1",
+        "Ancestral: 7500 // Crimson Court: 7500",
+        "Darkest Dungeon, Trophy, Crystalline, Keepsake, Thing, and all Shieldbreaker Trinkets! cannot be sold",
+      ]
+    },
 
-const trinketOverviewImg = createHTMLElement("img", "info trinket_overview");
-trinketOverviewImg.src = "images/Hero_boxes/more_info_icon.png";
-trinketOverviewImg.id = "trinket_overview";
+    //Crimson Court
+    {
+  
+      icon_src:"images/estate_icons/crimson_court_icon.png",
+      icon_class: "info crimson_court_trinket_overview",
+      icon_id:"crimson_court_trinket_overview",
 
-const trinketOverviewLabel = createHTMLElement("div", "ddlogo_text trinket_overview_label", null, "Overview");
+      label_class:"ddlogo_text crimson_court_trinket_overview_label crimson_court",
+      labeltext:"Crimson Court",
+  
+      class: "general_desc trinket_general_info",
+      id:"crimson_court_trinket_overview_desc",
+  
+  
+      description: [
+        "Crimson Court Rarity Trinkets! are primarily found within The Courtyard",
+      ]
+    
+    },
 
-const trinketOverviewDesc = createHTMLElement("div", "general_desc trinket_general_info", "trinket_overview_desc");
-trinketOverviewDesc.innerHTML = `
-    <span class="attack_type">Trinkets</span> are obtained through Battle & Curio Loot during Expeditions or bought from the Nomad Wagon. <br><br>
-    A Hero can equip up to 2 <span class="attack_type">Trinkets</span> at once. and 2 of the same <span class="attack_type">Trinket</span> cannot be equipped at the same time. Identical <span class="attack_type">Trinkets</span> do not Stack in your Inventory. <br><br>
-    Some <span class="attack_type">Trinkets</span> are Region Exclusive, they only appear as loot or as a quest reward in that Region. 
-    <span class="very_rare">Enemy Specific</span>, <span class="ancestral">Ancestral</span>, <span class="trophy">Trophy</span>, all DLC <span class="attack_type">Trinkets</span> (with the exception of <span class="highres">Rat Carcass</span>), and some <span class="very_rare">Very Rare</span> <span class="attack_type">Trinkets</span> are limited to 1 per Estate.<br><br>
-    Non Shambler <span class="ancestral">Ancestral</span> <span class="attack_type">Trinkets</span> only appear as Quest Rewards in Normal Dungeons if they are <span class="champion">Champion</span> Level Long Dungeons. 
-     They can also be randomly dropped in <span class="veteran">Veteran</span> and <span class="champion">Champion</span> Difficulties <br><br>
-    <span class="attack_type">Trinkets</span> that have been Lost are collected by the <span class="shrieker">Shrieker</span>, and a quest to reclaim them by confronting the bird appears once 8 of them have been lost.
-    The difficulty of the battle is determined by the highest rarity <span class="attack_type">Trinket</span> that has been lost.
-    <span class="trophy">Trophy</span> <span class="attack_type">Trinkets</span> return to your <span class="attack_type">Trinket</span> Inventory even if lost during an Expedition.<br><br>
-    <span class="attack_type">Trinket</span> Selling Prices(In Gold): <br>
-    <span class="common">Very Common</span>: 750 // <span class="common">Common</span>: 1125 // <span class="uncommon">Uncommon</span>: 1500 // <span class="rare">Rare</span>: 2250 <br>
-    <span class="very_rare">Very Rare</span>: 3750 // <span class="very_rare">Collector/Madman Very Rares</span>: 2250 // <span class="shrieker">Shrieker</span>: 1  <br>
-    <span class="ancestral">Ancestral</span>: 7500 // <span class="crimson_court">Crimson Court</span>: 7500 //<br>
-    <span class="ancestral">Darkest Dungeon</span>, <span class="trophy">Trophy</span>, <span class="crystalline">Crystalline</span>, <span class="crystalline">Keepsake</span>, <span class="thing">Thing</span>, and all <span class="block">Shieldbreaker</span> trinkets cannot be sold
-`;
+    //Color Of Madness
+    {
+  
+        icon_src:"images/estate_icons/shard_icon.png",
+        icon_class: "info color_of_madness_trinket_overview",
+        icon_id:"color_of_madness_trinket_overview",
+
+        label_class:"ddlogo_text color_of_madness_trinket_overview_label crystalline",
+        labeltext:"Crystalline",
+    
+        class: "general_desc trinket_general_info",
+        id:"color_of_madness_trinket_overview_desc",
+    
+    
+        description: [
+          "All Crystalline Trinkets! are obtained through buying them from the Jeweler found in the Nomad Wagon using Shards found within The Farmstead and cannot be sold",
+        ]
+      
+    },
+
+    //Shieldbreaker
+     {
+  
+      icon_src:"images/estate_icons/aegis_icon.png",
+      icon_class: "info shieldbreaker_trinket_overview",
+      icon_id:"shieldbreaker_trinket_overview",
+
+      label_class:"ddlogo_text shieldbreaker_trinket_overview_label block",
+      labeltext:"Shieldbreaker",
+  
+      class: "general_desc trinket_general_info",
+      id:"shieldbreaker_trinket_overview_desc",
+  
+  
+      description: [
+        "Shieldbreaker Trinkets! that have been obtained after Nighmares cannot be sold or lost and will appear in your Trinket! Inventory at the Hamlet even if you don't pick them up.",
+      ]
+    
+    },
+
+      
+  ]
+  
+  
+  TrinketInfoDescData.forEach((trinketdesc) => {
+    const TrinketIconImg = document.createElement("img");
+    TrinketIconImg.src = trinketdesc.icon_src
+    TrinketIconImg.loading = "lazy"
+    TrinketIconImg.className = trinketdesc.icon_class
+    TrinketIconImg.id = trinketdesc.icon_id
+
+      const TrinketIconLabel = document.createElement("div");
+      TrinketIconLabel.className = trinketdesc.label_class;
+      TrinketIconLabel.innerHTML = trinketdesc.labeltext;
+
+      TrinketMainBox.appendChild(TrinketIconImg);
+      TrinketMainBox.appendChild(TrinketIconLabel);
 
 
-const crimsonCourtContainer = createHTMLElement("div", "container");
+    
+})
+TrinketInfoDescData.forEach((trinketdesc) => {
+const TrinketIconDescContainer = document.createElement("div");
+TrinketIconDescContainer.id = trinketdesc.id;
+TrinketIconDescContainer.className = trinketdesc.class;
 
-const crimsonCourtImg = createHTMLElement("img", "info crimson_court_trinket_overview");
-crimsonCourtImg.src = "images/estate_icons/crimson_court_icon.png";
-crimsonCourtImg.id = "crimson_court_trinket_overview";
+trinketdesc.description.forEach((text, index) => {
+    const StyledText = replaceSpecificTrinketDescriptionWords(text);
+    TrinketIconDescContainer.innerHTML += StyledText;
 
-const crimsonCourtLabel = createHTMLElement("div", "ddlogo_text crimson_court_trinket_overview_label crimson_court", null, "Crimson Court");
+    if (index < trinketdesc.description.length - 1) {
+      const linebreak = document.createElement("br");
+      TrinketIconDescContainer.appendChild(linebreak);
+    }
 
-const crimsonCourtDesc = createHTMLElement("div", "general_desc trinket_general_info", "crimson_court_trinket_overview_desc");
-crimsonCourtDesc.innerHTML = "<span class = crimson_court>Crimson Court</span> Rarity Trinkets are primarily found within the <span class = crimson_court>Courtyard</span>";
+  }); 
+  TrinketMainBox.appendChild(TrinketIconDescContainer);
+})
+  
+    function replaceSpecificTrinketDescriptionWords(description) {
 
+      description = description.replace(/Apprentice/g, '<span class="apprentice">Apprentice</span>');
+      description = description.replace(/Veteran/g, '<span class="veteran">Veteran</span>');
+      description = description.replace(/Champion/g, '<span class="champion">Champion</span>');
 
-const colorOfMadnessContainer = createHTMLElement("div", "container");
+      description = description.replace(/Very Common/g, '<span class="common">Very Common</span>');
+      description = description.replace(/Common/g, '<span class="common">Common</span>');
+      description = description.replace(/Uncommon/g, '<span class="uncommon">Uncommon</span>');
+      description = description.replace(/Rare/g, '<span class="rare">Rare</span>');
+      description = description.replace(/Very Rare/g, '<span class="very_rare">Very Rare</span>');
+      description = description.replace(/Enemy Specific/g, '<span class="very_rare">Enemy Specific</span>');
+      description = description.replace(/Ancestral/g, '<span class="ancestral">Ancestral</span>');
+      description = description.replace(/Trophy/g, '<span class="trophy">Trophy</span>');
+      description = description.replace(/Shrieker/g, '<span class="shrieker">Shrieker</span>');
+      description = description.replace(/Shambler/g, '<span class="ancestral">Shambler</span>');
+      description = description.replace(/Darkest Dungeon/g, '<span class="ancestral">Darkest Dungeon</span>');
 
-const colorOfMadnessImg = createHTMLElement("img", "info color_of_madness_trinket_overview");
-colorOfMadnessImg.src = "images/estate_icons/shard_icon.png";
-colorOfMadnessImg.id = "color_of_madness_trinket_overview";
+      description = description.replace(/Crimson Court/g, '<span class="crimson_court">Crimson Court</span>');
+      description = description.replace(/The Courtyard/g, '<span class="crimson_court">The Courtyard</span>');
 
-const colorOfMadnessLabel = createHTMLElement("div", "ddlogo_text color_of_madness_trinket_overview_label crystalline", null, "Crystalline");
+      description = description.replace(/Jeweler/g, '<span class="crystalline">Jeweler</span>');
+      description = description.replace(/Crystalline/g, '<span class="crystalline">Crystalline</span>');
+      description = description.replace(/Keepsake/g, '<span class="crystalline">Keepsake</span>');
+      description = description.replace(/Shards/g, '<span class="crystalline">Shards</span>');
+      description = description.replace(/The Farmstead/g, '<span class="crystalline">The Farmstead</span>');
+      description = description.replace(/Thing/g, '<span class="thing">Thing</span>');
 
-const colorOfMadnessDesc = createHTMLElement("div", "general_desc trinket_general_info", "color_of_madness_trinket_overview_desc");
-colorOfMadnessDesc.innerHTML = "All <span class = crystalline>Crystalline</span> Trinkets are obtained through buying them from the Jeweler found in the Nomad Wagon using <span class = crystalline>Shards</span> found within the <span class = crystalline>Farmstead</span> and cannot be Sold";
+      description = description.replace(/Shieldbreaker/g, '<span class="block">Shieldbreaker</span>');
+  
+      description = description.replace(/Nomad Wagon/g, '<span class="stress">Nomad Wagon</span>');
+      description = description.replace(/Abbey/g, '<span class="stress">Abbey</span>');
+      description = description.replace(/Tavern/g, '<span class="stress">Tavern</span>');
+      description = description.replace(/Gold/g, '<span class="highres">Gold</span>');
+      description = description.replace(/Rat Carcass/g, '<span class="highres">Rat Carcass</span>');
 
+      description = description.replace(/Trinkets!/g, '<span class="attack_type">Trinkets</span>');
+      description = description.replace(/Trinket!/g, '<span class="attack_type">Trinket</span>');
+  
+      description = description.replace(/Region Exclusive/g, '<span class="buff">Region Exclusive</span>');
 
-const shieldbreakerContainer = createHTMLElement("div", "container");
-
-const shieldbreakerImg = createHTMLElement("img", "info shieldbreaker_trinket_overview");
-shieldbreakerImg.src = "images/estate_icons/aegis_icon.png";
-shieldbreakerImg.id = "shieldbreaker_trinket_overview";
-
-const shieldbreakerLabel = createHTMLElement("div", "ddlogo_text shieldbreaker_trinket_overview_label block", null, "Shieldbreaker");
-
-const shieldbreakerDesc = createHTMLElement("div", "general_desc trinket_general_info", "shieldbreaker_trinket_overview_desc");
-shieldbreakerDesc.innerHTML = "<span class = 'block'>Shieldbreaker Trinkets</span> that have been obtained after Nighmares cannot be Sold or Lost and will appear in your Trinket Inventory at the Hamlet even if you don't pick them up.";
-
-
-
-TrinketMainBox.appendChild(trinketOverviewLabel);
-TrinketMainBox.appendChild(crimsonCourtLabel);
-TrinketMainBox.appendChild(colorOfMadnessLabel);
-TrinketMainBox.appendChild(shieldbreakerLabel);
-
-
-TrinketMainBox.appendChild(trinketOverviewImg);
-TrinketMainBox.appendChild(crimsonCourtImg);
-TrinketMainBox.appendChild(colorOfMadnessImg);
-TrinketMainBox.appendChild(shieldbreakerImg);
-
-
-TrinketMainBox.appendChild(trinketOverviewDesc);
-TrinketMainBox.appendChild(crimsonCourtDesc);
-TrinketMainBox.appendChild(colorOfMadnessDesc);
-TrinketMainBox.appendChild(shieldbreakerDesc);
+      description = description.replace(/Curios/g, '<span class="attack_type">Curios</span>');
+      description = description.replace(/Curio/g, '<span class="attack_type">Curio</span>');
+  
+      return description;
+  }
