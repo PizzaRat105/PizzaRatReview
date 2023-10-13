@@ -533,7 +533,7 @@ text-align: center;}
 .prismatic_info:hover{filter: brightness(150%);}
 .prismatic_info_txt{position:absolute; top: -3.7vw; left: -0.5vw; font-size: 1.1vw; line-height: 1.4vw;}
 .quirk_overview{position: absolute;top:6.5vw }
-.quirk_overview_label{position: absolute; font-size: 1.7vw; left: 3.3vw; top: 6.6vw;}
+.quirk_overview_label{position: absolute; font-size: 1.7vw; left: 3.5vw; top: 6.6vw;}
 .quirk_general_info{max-width: 38vw; font-size: 1.2vw; line-height: 1.6vw;position: absolute; top: 9vw; left: -2vw;}
 /*Disease Box*/
 
