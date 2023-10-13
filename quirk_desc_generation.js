@@ -919,16 +919,138 @@ function createAndAppendQuirkNames(quirkNameData, container, className = '') {
 
   createAndAppendQuirkNames(PrismaticquirkNameData, PrismaticQuirkNameContainer);
 
-const PrismaticInfoIcon = document.createElement("img")
-PrismaticInfoIcon.src = 'images/estate_icons/shard_icon.png'
-PrismaticInfoIcon.className = "prismatic_info"
-PrismaticInfoIcon.id = "prismatic_quirk_info"
 
-const PrismaticInfoDesc =  document.createElement("div")
-PrismaticInfoDesc.className = "general_desc prismatic_info_txt"
-PrismaticInfoDesc.id = "prismatic_quirk_info_desc"
-PrismaticInfoDesc.innerHTML = "<span class = 'crystalline'>Prismatic Quirks</span> are obtained via killing the <span class = 'thing'> Thing from the Stars</span> <br> These Quirks are Auto Locked & Only 1 of each quirk can be obtained per Estate <br> Auto Locked Quirks do not count towards the Quirk Locking Cap.<br> The Quirks are obtained in the order they have been listed below"
 
-  PrismaticQuirkNameContainer.appendChild(PrismaticInfoIcon)
-  PrismaticQuirkNameContainer.appendChild(PrismaticInfoDesc)
+const QuirkInfoDescData = [
+  {    
+    container: "glossarybox",
 
+    icon_src:"images/estate_icons/quirk_icon.png",
+    icon_class: "info quirk_overview",
+    icon_id:"quirk_overview",
+
+    label_class:"ddlogo_text quirk_overview_label",
+    labeltext:"Overview",
+
+    class: "general_desc quirk_general_info",
+    id:"quirk_overview_desc",
+    isdoublebreak:true,
+
+    description: [
+      `Quirks! can be gained during expeditions by interacting with Curios, and after expeditions in the post-expedition screen. 
+      Quirks! may also occur as a result of partaking in Stress Relief buildings in the Hamlet via the Tavern and Abbey.`,
+      `You may Remove Negative Quirks or Reinforce Positive Quirks (Which makes those Positive Quirks Permanent unless you remove the Quirk! yourself) in the Sanitarium.
+      Untreated Negative Quirks will become locked over time.`,
+      "Only up to 3 Positive Quirks and 3 Negative Quirks may be locked at one time, with Auto Locked Quirks! introduced with the Color of Madness DLC not counting towards the cap.",
+      "You are more likely to gain a Positive Quirk at the end of an expedition and less likely to gain a Negative Quirk if you succeed in your expedition and the lower the Hero's Stress Levels are."
+    ]
+  },
+  {
+    container: "prismatic",
+
+    icon_src:"images/estate_icons/shard_icon.png",
+    icon_class: "prismatic_info",
+    icon_id:"prismatic_quirk_info",
+
+    class: "general_desc prismatic_info_txt",
+    id:"prismatic_quirk_info_desc",
+    isdoublebreak:false,
+
+
+    description: [
+      "Prismatic Quirks are obtained via killing the Thing from the Stars",
+      "These Quirks! are Auto Locked & Only 1 of each Quirk! can be obtained per Estate",
+      "Auto Locked Quirks! do not count towards the Quirk! Locking Cap",
+      "The Quirks! are obtained in the order they have been listed below"
+    ]
+  
+  }
+]
+
+
+  QuirkInfoDescData.forEach((quirkdesc) => {
+    const QuirkIconImg = document.createElement("img");
+    QuirkIconImg.src = quirkdesc.icon_src
+    QuirkIconImg.loading = "lazy"
+    QuirkIconImg.className = quirkdesc.icon_class
+    QuirkIconImg.id = quirkdesc.icon_id
+
+   
+   
+    const QuirkIconDescContainer = document.createElement("div");
+    QuirkIconDescContainer.id = quirkdesc.id;
+    QuirkIconDescContainer.className = quirkdesc.class;
+
+    quirkdesc.description.forEach((text, index) => {
+        const StyledText = replaceSpecificQuirkDescriptionWords(text);
+        QuirkIconDescContainer.innerHTML += StyledText;
+
+        if (quirkdesc.isdoublebreak === true && index < quirkdesc.description.length - 1) {
+            const linebreak1 = document.createElement("br");
+            const linebreak2 = document.createElement("br");
+            const space = document.createTextNode("\u00A0");
+
+            QuirkIconDescContainer.appendChild(linebreak1);
+            QuirkIconDescContainer.appendChild(space);
+            QuirkIconDescContainer.appendChild(linebreak2);
+        }
+
+        if (quirkdesc.isdoublebreak === false && index < quirkdesc.description.length - 1) {
+          const linebreak = document.createElement("br");
+          QuirkIconDescContainer.appendChild(linebreak);
+        }
+
+      }); 
+
+      if (quirkdesc.container === "glossarybox") {
+      GlossaryBox.appendChild(QuirkIconImg);
+    } 
+    
+    if (quirkdesc.label_class) {
+      const QuirkIconLabel = document.createElement("div");
+      QuirkIconLabel.className = quirkdesc.label_class;
+      QuirkIconLabel.innerHTML = quirkdesc.labeltext;
+
+      if (quirkdesc.container === "glossarybox") {
+        GlossaryBox.appendChild(QuirkIconLabel);
+      } 
+
+    }      
+    if (quirkdesc.container === "glossarybox") {
+    GlossaryBox.appendChild(QuirkIconDescContainer);
+    }
+    if (quirkdesc.container === "prismatic") {
+      PrismaticQuirkNameContainer.appendChild(QuirkIconImg);
+      PrismaticQuirkNameContainer.appendChild(QuirkIconDescContainer);
+    }
+    })
+
+  
+
+  function replaceSpecificQuirkDescriptionWords(description) {
+    description = description.replace(/Stress/g, '<span class="stress">Stress</span>');
+
+    description = description.replace(/Negative Quirks/g, '<span class="negative">Negative Quirks</span>');
+    description = description.replace(/Negative Quirk/g, '<span class="negative">Negative Quirk</span>');
+
+    description = description.replace(/Positive Quirks/g, '<span class="highres">Positive Quirks</span>');
+    description = description.replace(/Positive Quirk/g, '<span class="highres">Positive Quirk</span>');
+
+    description = description.replace(/Prismatic Quirks/g, '<span class="crystalline">Prismatic Quirks</span>');
+    description = description.replace(/Color of Madness DLC/g, '<span class="crystalline">Color of Madness DLC</span>');
+    description = description.replace(/Color of Madness/g, '<span class="crystalline">Color of Madness</span>');
+    description = description.replace(/Thing from the Stars/g, '<span class="thing">Thing from the Stars</span>');
+
+
+    description = description.replace(/Sanitarium/g, '<span class="stress">Sanitarium</span>');
+    description = description.replace(/Abbey/g, '<span class="stress">Abbey</span>');
+    description = description.replace(/Tavern/g, '<span class="stress">Tavern</span>');
+
+    description = description.replace(/Quirks!/g, '<span class="attack_type">Quirks</span>');
+    description = description.replace(/Quirk!/g, '<span class="attack_type">Quirk</span>');
+
+    description = description.replace(/Curios/g, '<span class="attack_type">Curios</span>');
+    description = description.replace(/Curio/g, '<span class="attack_type">Curio</span>');
+
+    return description;
+}
