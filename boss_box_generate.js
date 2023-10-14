@@ -4443,6 +4443,7 @@ const MinionStatData = [
     })
 
 
+
     const BossIconDescData = [
         //Boss Locating
         {    
@@ -4456,7 +4457,7 @@ const MinionStatData = [
             "2. Downmost Room if there are  multiple  rooms tied for furthest",
             "3. Rightmost room if there are  multiple  rooms tied for downmost <br>",
             "Hallway Bosses:",
-            "All Hallway Bosses can only spawn once per expedition outside of Curio interactions",
+            "All Hallway Bosses can only spawn once per expedition outside of Curio! interactions",
         ]
         },
     
@@ -4685,7 +4686,7 @@ const MinionStatData = [
            "Negative Quirks",
            "Corvid's Blindness: -10 ACC if  Torch  above 50",
            "Corvid's Appetite: +100% Food Consumed, 33% Chance to Interact with Body Curios!",
-           "Corvid's Curiosity: 27.5% Chance to Interact with All Curios",
+           "Corvid's Curiosity: 27.5% Chance to Interact with All Curios!",
           ]
         
         },
@@ -4902,7 +4903,7 @@ const MinionStatData = [
         description = description.replace(/Curios!/g, '<span class="attack_type">Curios</span>');
         description = description.replace(/Trinkets/g, '<span class="attack_type">Trinkets</span>');
         description = description.replace(/Trinket/g, '<span class="attack_type">Trinket</span>');
-        description = description.replace(/Curio/g, '<span class="attack_type">Curio</span>');
+        description = description.replace(/Curio!/g, '<span class="attack_type">Curio!</span>');
         description = description.replace(/Town Event/g, '<span class="attack_type">Town Event</span>');
     
         description = description.replace(/Move/g, '<span class="move">Move</span>');
