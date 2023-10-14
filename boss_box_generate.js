@@ -4441,3 +4441,485 @@ const MinionStatData = [
         const skillHTML = generateBossSkillDescription(skill);
         MainBossBox.innerHTML += skillHTML;
     })
+
+
+    const BossIconDescData = [
+        //Boss Locating
+        {    
+
+          class: "general_desc find_boss",
+          id: "boss_locate_desc",
+      
+          description: [
+            "Locating Boss Rooms",
+            "1. Furthest Room Away (only count rooms not individual tiles)",
+            "2. Downmost Room if there are  multiple  rooms tied for furthest",
+            "3. Rightmost room if there are  multiple  rooms tied for downmost <br>",
+            "Hallway Bosses:",
+            "All Hallway Bosses can only spawn once per expedition outside of Curio interactions",
+        ]
+        },
+    
+         //Scrollable
+         {
+            class: "general_desc scrollable",
+            id:"can_scroll_desc",
+        
+        
+            description: [
+                "Lore and Strategy text can be Scrolled Down",
+              ]
+          
+        },
+    
+        //Trophy Info
+        {
+            class: "general_desc trophy_info_txt",
+            id:"trophy_info_desc",
+        
+        
+            description: [
+                "Trophies cannot be lost in any circumstance and will always return to your Trinket Inventory",
+                "All Signature Trinkets are unique - only 1 of each can be obtained in an estate",
+              ]
+            
+          
+        },
+    
+        //Boss Minion Lifelink
+        {
+          class: "general_desc lifelink_info_txt",
+          id: "lifelink_info_desc",
+          
+          description: [
+           "All Boss Summons and Minions are Lifelinked to the Boss outside of Shambler Tentacles and Wilbur",
+           "In addition, all Skills that Summon Monsters will successfully Summon even if the attack misses",
+           "All Summons will be successful unless necessary space is already occupied by non-corpses",
+        ]
+        
+        },
+     //Necromancer Minion
+        {  
+          class: "general_desc boss_minion_additional_info_txt",
+          id: "necromancer_minion_more_info_desc",
+      
+          description: [
+           "Summonable Minion Table [Newly Summoned Minions cannot Act on Same Turn]<br>",
+           "Apprentice: Bone Rabble (33.3%) Bone Soldier (66.7%)",
+           "Veteran: Bone Rabble (20%) Bone Soldier (60%) Bone Defender (20%)",
+           "Champion: Bone Soldier (57%) Bone Defender (29%) Bone Captain (14%)",
+           "Minions are Summoned in Front of the Necromancer",
+          ]
+        
+        
+        },
+    
+        //Prophet Minion
+        {
+            class: "general_desc boss_minion_additional_info_txt",
+            id: "prophet_minion_more_info_desc",
+        
+        
+            description: [
+                "Destroying the Prophet's Pews will each grant you 1 Consecrated Pew [2500 Gold] once the Battle is Over",
+              ]
+            
+          
+        },
+    
+       
+        //Brigand Pounder Minion
+        {    
+          class: "general_desc boss_minion_additional_info_txt",
+          id: "brigand_pounder_minion_more_info_desc",
+      
+          description: [
+           "Summonable Minion Table [Newly Summoned Minions can Act until Next Turn]",
+           "[Only 1 of each Brigand can be present at any time & Multiple Brigands may be Summoned at a time]",
+           "Disclaimer: Numbers are not exact depending on circumstances<br>",
+           "Apprentice: Matchman (100%) // Cutthroat (27.5%)  Fusilier (27.5%)",
+           "Veteran:  Matchman (100%) //  Bloodletter (6%)  Cutthroat (30%)  Fusilier (30%)",
+           "Champion:  Matchman (100%) //  Bloodletter (10.05%)  Cutthroat (33.5%)  Fusilier (33.5%)",
+          ]
+        
+        },
+
+         //Shrieker Minion
+         {    
+            class: "general_desc boss_minion_additional_info_txt",
+            id: "shrieker_minion_more_info_desc",
+        
+            description: [
+              "Destroying the Shrieker's Nest will Grant you:",
+              "Apprentice: 1 Puzzling Trapezohedron",
+              "Veteran: 1-3 Puzzling Trapezohedrons",
+              "Champion: 3-5 Puzzling Trapezohedrons",
+            ]
+          
+          },
+
+        //Swine Prince Minion
+        {    
+          class: "general_desc boss_minion_additional_info_txt",
+          id: "swine_prince_minion_more_info_desc",
+      
+          description: [
+            "It is not required to kill Wilbur in order to complete the quest to slay the Swine Prince",
+            "So if things are looking dire after killing the Swine Prince, you may retreat from the battle before any",
+            "losses occur and still get a Quest Victory",
+          ]
+        
+        },
+
+         //Siren Minion
+        {    
+          class: "general_desc boss_minion_additional_info_txt",
+          id: "siren_minion_more_info_desc",
+      
+          description: [
+           "Summonable Minion Table [Newly Summoned Minions cannot Act on Same Turn]",
+           "Deep Stinger (25%) Pelagic Grouper (25%) Pelagic Guardian (50%)",
+           "Minions are summoned in front of the Siren",
+          ]
+        
+        },
+
+         //Drowned Crew Minion
+        {    
+          class: "general_desc boss_minion_additional_info_txt",
+          id: "drowned_crew_minion_more_info_desc",
+      
+          description: [
+           "The Drowned Anchorman is Summoned in Front of the Crew and is able to Act on the Same Round",
+           "It also does not Leave a Corpse on Death",
+          ]
+        
+        },
+
+         //Collector Minion
+        {    
+          class: "general_desc boss_minion_additional_info_txt",
+          id: "collector_minion_more_info_desc",
+      
+          description: [
+            "Summonable Minion Table [Newly Summoned Minions cannot Act on Same Turn]",
+            "Only 1 Collected Vestal or Man-at-Arms /Up to 2 Collected Highwaymen can be present at once <br>",
+            "Collected Highwayman (43%) Collected Man-at-Arms (28.5%) Collected Vestal (28.5%) per vacant position",
+            "All Summons do not leave Corpses on Death and are Summoned in front of the Collector",
+          ]
+        
+        },
+
+         //Shambler Minion
+        {    
+          class: "general_desc boss_minion_additional_info_txt",
+          id: "shambler_minion_more_info_desc",
+      
+          description: [
+            "The Shambler Tentacles are Summoned in Front of the Shambler and are Not able to Act on the Same Turn",
+            "They also do not Leave a Corpse on Death",
+          ]
+        
+        },
+
+         //Prophet Info
+        {    
+          class: "general_desc boss_additional_info_txt",
+          id: "prophet_additional_info_desc",
+      
+          description: [
+            "The Prophet uses Prognostication at the start of Every Round where he  Marks a Position and Rubble of Ruin, which triggers an attack on  all Heroes on Marked Positions at the end of the Round as an Auto Action",
+          ]
+        
+        },
+
+         //Pounder Info
+         {    
+            class: "general_desc boss_additional_info_txt",
+            id: "brigand_pounder_additional_info_desc",
+        
+            description: [
+              "Reinforcements! is used at the start of the round as an auto action unless", 
+              "all ranks are occupied by living Brigands",
+              "BOOOOOOOM! or MISFIRE! can be used if the Matchman uses Fire in the Hole!", 
+              "on the Pounder, giving it an action",
+            ]
+          
+          },
+
+        // Shrieker Info
+        {    
+          class: "general_desc boss_additional_info_txt",
+          id: "shrieker_additional_info_desc",
+      
+          description: [
+            "Although the Shrieker normally uses Shrieking Flight to flee the battle at the end of Round 4, if you manage to Stun it, Shrieking Flight will be postponed to during Round 5",
+          ]
+        
+        },
+
+         //Siren Info
+        {    
+          class: "general_desc boss_additional_info_txt",
+          id: "siren_additional_info_desc",
+      
+          description: [
+            "Despite Song of Desire having a fixed 70% Chance to take control of a Hero,",
+            "The Siren's AI is more likely to target the Hero with the Lowest Debuff Resist",
+            "Controlled Heroes can only use Skills that had equipped at the start of the Battle",
+          ]
+        
+        },
+
+         //Shrieker Quirk
+        {    
+          class: "general_desc boss_quirk_info_txt",
+          id: "shrieker_quirk_info_desc",
+      
+          description: [
+           "Obtainable Corvid Quirks:",
+           "Positive Quirks",
+           "Corvid's Eye: +8 ACC, +8% Scouting Chance",
+           "Corvid's Grace: +6 DODGE, +25% Move  Resist",
+           "Corvid's Resilience: +33% Disease Resist <br>",
+           "Negative Quirks",
+           "Corvid's Blindness: -10 ACC if  Torch  above 50",
+           "Corvid's Appetite: +100% Food Consumed, 33% Chance to Interact with Body Curios!",
+           "Corvid's Curiosity: 27.5% Chance to Interact with All Curios",
+          ]
+        
+        },
+
+
+         //Swine Prince Info
+        {    
+          class: "general_desc boss_additional_info_txt",
+          id: "swine_prince_additional_info_desc",
+      
+          description: [
+            "If Wilbur is Hit with Direct Damage outside of Riposte or Damage Reflection, Enraged Destruction will be used as an Auto Action, which will also be used every Round if Wilbur is dead",
+          ]
+        
+        },
+
+         //Flesh Info
+         {    
+            class: "general_desc boss_additional_info_txt",
+            id: "flesh_additional_info_desc",
+        
+            description: [
+             "Each Part of the Flesh has a chance to morph into any Part at the start of the round albeit with some restrictions such as the front 2 ranks being unable to morph into a Butt & the back 2 ranks being unable to morph into a Head",
+             "Apart from those restrictions, there can be Multiple Copies of each Part",
+            ]
+          
+          },
+
+           //Drowned Crew Info
+        {    
+          class: "general_desc boss_additional_info_txt",
+          id: "drowned_crew_additional_info_desc",
+      
+          description: [
+           "The Drowned Crew uses All Hands on Deck! as an Auto Action at the start of every round on top of the 2 standard actions it performs every round",
+          ]
+        
+        },
+
+         //Collector Info
+        {    
+          class: "general_desc boss_additional_info_txt",
+          id: "collector_additional_info_desc",
+      
+          description: [
+            "Drop Chances",
+            "Head Trinkets Not Collected: Puzzling Trapezohedron (75%) Head Trinket(25%)",
+            "Head Trinkets All Collected: Puzzling Trapezohedron(100%) <br>",
+            "Chance to replace a Hallway Battle if 13 or more Inventory Slots are Filled:",
+            "Apprentice: 3% Chance ",
+            "Veteran: 4% Chance",
+            "Champion: 5% Chance",
+          ]
+        
+        },
+
+         //Shambler Info
+        {    
+          class: "general_desc boss_additional_info_txt",
+          id: "shambler_additional_info_desc",
+      
+          description: [
+            "Chance to replace a Hallway Battle in Pitch Black:",
+            "Apprentice: 1% Chance ",
+            "Veteran: 8% Chance",
+            "Champion: 12% Chance",
+          ]
+        
+        },
+
+         //Shambler Endless
+        {    
+          class: "general_desc shambler_info_txt",
+          id: "shambler_endless_info_desc",
+      
+          description: [
+            "The Shambler has a buffed Endless Harvest Variant to",
+            "Compensate for the absence of the Shuffle at the start of the battle",
+            "And the Light Level not being at 0.",
+          ]
+        
+        },
+
+         //Shrieker Endless
+        {    
+          class: "general_desc shambler_info_txt",
+          id: "shrieker_endless_info_desc",
+      
+          description: [
+            "The Shrieker has an Endless Harvest Variant with some of its Skills tweaked."
+          ]
+        
+        },
+
+         //Small Pew Info
+        {    
+          class: "general_desc minion_additional_info_txt",
+          id: "small_pew_minion_more_info_desc",
+      
+          description: [
+            "This Enemy Cannot be Missed and does not leave a Corpse"
+          ]
+        
+        },
+
+         //Empty Cauldron Info
+        {    
+          class: "general_desc minion_additional_info_txt",
+          id: "cauldron_empty_minion_more_info_desc",
+      
+          description: [
+           "This Enemy Cannot be Missed and is Immune to Damage"
+          ]
+        
+        },
+          
+      ]
+
+    const  BossIconTextContainer = document.getElementById("boss_icon_desc_container")
+      
+    BossIconDescData.forEach((bossinfo) => {
+    const BossIconDescContainer = document.createElement("div");
+    BossIconDescContainer.id = bossinfo.id;
+    BossIconDescContainer.className = bossinfo.class;
+    
+    bossinfo.description.forEach((text, index) => {
+        const StyledText = replaceSpecificBossIconDesc(text);
+        BossIconDescContainer.innerHTML += StyledText;
+    
+        if (index < bossinfo.description.length - 1) {
+          const linebreak = document.createElement("br");
+          BossIconDescContainer.appendChild(linebreak);
+        }
+    
+      }); 
+      BossIconTextContainer.appendChild(BossIconDescContainer);
+    })
+      
+        function replaceSpecificBossIconDesc(description) {
+    
+        description = description.replace(/Apprentice/g, '<span class="apprentice">Apprentice</span>');
+        description = description.replace(/Veteran/g, '<span class="veteran">Veteran</span>');
+        description = description.replace(/Champion/g, '<span class="champion">Champion</span>');
+    
+        description = description.replace(/Shrieker/g, '<span class="shrieker">Shrieker</span>');
+    
+        description = description.replace(/Crimson Court/g, '<span class="crimson_court">Crimson Court</span>');
+        description = description.replace(/Crimson Curse/g, '<span class="crimson_court">Crimson Curse</span>');
+        description = description.replace(/The Courtyard/g, '<span class="crimson_court">The Courtyard</span>');
+
+
+        description = description.replace(/Trophies/g, '<span class="trophy">Trophies</span>');
+    
+        description = description.replace(/Summonable/g, '<span class="stealth">Summonable</span>');
+        description = description.replace(/Summoned/g, '<span class="stealth">Summoned</span>');
+        description = description.replace(/Summons/g, '<span class="stealth">Summons</span>');
+        description = description.replace(/Summon/g, '<span class="stealth">Summon</span>');
+        description = description.replace(/Lifelinked/g, '<span class="stealth">Lifelinked</span>');
+
+    
+        description = description.replace(/Color of Madness DLC/g, '<span class="crystalline">Color of Madness DLC</span>');
+        description = description.replace(/Shards/g, '<span class="crystalline">Shards</span>');
+        description = description.replace(/Thing from the Stars/g, '<span class="thing">Thing from the Stars</span>');
+        description = description.replace(/Endless Harvest/g, '<span class="crystalline">Endless Harvest</span>');
+
+    
+        description = description.replace(/Sanitarium/g, '<span class="stress">Sanitarium</span>');
+        description = description.replace(/Brothel/g, '<span class="stress">Brothel</span>');
+        description = description.replace(/Holy Water/g, '<span class="stress">Holy Water</span>');
+    
+    
+        description = description.replace(/Snuff Box/g, '<span class="highres">Snuff Box</span>');
+        description = description.replace(/Leeches/g, '<span class="highres">Leeches</span>');
+        description = description.replace(/Cures/g, '<span class="highres">Cures</span>');
+    
+        description = description.replace(/Marked/g, '<span class="mark">Marked</span>');
+        description = description.replace(/Marks/g, '<span class="mark">Marks</span>');
+        description = description.replace(/Mark/g, '<span class="mark">Mark</span>');
+
+    
+        description = description.replace(/Gold/g, '<span class="highres">Gold</span>');
+
+        description = description.replace(/Positive Quirks/g, '<span class="highres">Positive Quirks</span>');
+        description = description.replace(/Corvid's Eye/g, `<span class="highres">Corvid's Eye</span>`);
+        description = description.replace(/Corvid's Grace/g, `<span class="highres">Corvid's Grace</span>`);
+        description = description.replace(/Corvid's Resilience/g, `<span class="highres">Corvid's Resilience</span>`);
+
+        description = description.replace(/Negative Quirks/g, '<span class="negative">Negative Quirks</span>');
+        description = description.replace(/Corvid's Blindness/g, `<span class="negative">Corvid's Blindness</span>`);
+        description = description.replace(/Corvid's Appetite/g, `<span class="negative">Corvid's Appetite</span>`);
+        description = description.replace(/Corvid's Curiosity/g, `<span class="negative">Corvid's Curiosity</span>`);
+
+
+
+        description = description.replace(/Prognostication/g, '<span class="negative">Prognostication</span>');
+        description = description.replace(/Rubble of Ruin/g, '<span class="negative">Rubble of Ruin</span>');
+        description = description.replace(/Reinforcements!/g, '<span class="negative">Reinforcements!</span>');
+        description = description.replace(/BOOOOOOOM!/g, '<span class="negative">BOOOOOOOM!</span>');
+        description = description.replace(/MISFIRE!/g, '<span class="negative">MISFIRE!</span>');
+        description = description.replace(/Fire in the Hole!/g, '<span class="negative">Fire in the Hole!</span>');
+        description = description.replace(/Shrieking Flight/g, '<span class="negative">Shrieking Flight</span>');
+        description = description.replace(/Enraged Destruction/g, '<span class="negative">Enraged Destruction</span>');
+        description = description.replace(/All Hands on Deck!/g, '<span class="negative">All Hands on Deck!</span>');
+        description = description.replace(/Song of Desire/g, '<span class="negative">Song of Desire</span>');
+
+
+    
+        description = description.replace(/Auto Action/g, '<span class="buff">Auto Action</span>');
+        description = description.replace(/auto action/g, '<span class="buff">Auto Action</span>');
+
+        description = description.replace(/Buffs/g, '<span class="buff">Buffs</span>');
+        description = description.replace(/Buff/g, '<span class="buff">Buff</span>');
+    
+        description = description.replace(/Curios!/g, '<span class="attack_type">Curios</span>');
+        description = description.replace(/Trinkets/g, '<span class="attack_type">Trinkets</span>');
+        description = description.replace(/Trinket/g, '<span class="attack_type">Trinket</span>');
+        description = description.replace(/Curio/g, '<span class="attack_type">Curio</span>');
+        description = description.replace(/Town Event/g, '<span class="attack_type">Town Event</span>');
+    
+        description = description.replace(/Move/g, '<span class="move">Move</span>');
+    
+        description = description.replace(/Torch/g, '<span class="highres">Torch</span>');
+        description = description.replace(/Blight/g, '<span class="blight">Blight</span>');
+        description = description.replace(/Bleed/g, '<span class="bleed">Bleed</span>');
+        description = description.replace(/Stun/g, '<span class="stun">Stun</span>');
+        description = description.replace(/Shuffle/g, '<span class="move">Shuffle</span>');
+        description = description.replace(/Disease/g, '<span class="disease">Disease</span>');
+        description = description.replace(/Riposte/g, '<span class="debuff">Riposte</span>');
+        description = description.replace(/Damage Reflection/g, '<span class="debuff">Damage Reflection</span>');
+        description = description.replace(/Debuff/g, '<span class="debuff">Debuff</span>');
+        description = description.replace(/Scouting/g, '<span class="scouting">Scouting</span>');
+
+    
+    
+    
+        return description;
+    }
