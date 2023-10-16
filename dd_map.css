@@ -807,6 +807,7 @@ text-align: center;}
 
 .trinket_overview{position: absolute; width: 3vw; top: 2.7vw; left: 19.9vw;}
 .trinket_overview_label{position: absolute; top: 5.7vw; left: 19vw; font-size: 1.5vw; }
+.trinket_overview_info{position: absolute; top: 6vw;left: 0.5vw; max-width: 55vw; font-size: 1.2vw; line-height: 1.6vw;}
 .trinket_general_info{position: absolute; top: 6vw;left: 18vw; max-width: 40vw; font-size: 1.2vw; line-height: 1.4vw;}
 
 .crimson_court_trinket_overview{position: absolute; width: 3vw; top: 2.7vw; left: 25.5vw;}
