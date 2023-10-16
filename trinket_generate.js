@@ -4779,7 +4779,7 @@ const TrinketInfoDescData = [
       label_class:"ddlogo_text trinket_overview_label",
       labeltext:"Overview",
   
-      class: "general_desc trinket_general_info",
+      class: "general_desc trinket_overview_info",
       id:"trinket_overview_desc",
   
       description: [
