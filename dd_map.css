@@ -623,21 +623,21 @@ text-align: center;}
 .provision_desc{font-size: 1vw; line-height: 1.3vw; font-weight: 500;}
 
 .desc_margin{line-height: 1.8vw;}
-#food_desc{left:-8.7vw; top:7.8vw} 
-#shovel_desc{left:-2.2vw; top:7.8vw} 
-#antivenom_desc{left:-2.4vw; top:7.8vw} 
+#food_desc{left:-9.25vw; top:7.8vw} 
+#shovel_desc{left:-2.3vw; top:7.8vw} 
+#antivenom_desc{left:-2.3vw; top:7.8vw} 
 #bandage_desc{left:6.3vw; top:7.8vw} 
 #medicinal_herbs_desc{left:6.8vw; top:7.8vw} 
-#skeleton_key_desc{left:15.3vw; top:7.8vw}
-#holy_water_desc{left:17vw; top: 7.8vw} 
-#laudanum_desc{left:22.7vw; top: 7.8vw} 
-#torch_desc{left:-7.35vw; top: 16.5vw} 
-#dog_treats_desc{left:-2.4vw; top: 16.5vw} 
+#skeleton_key_desc{left:15.4vw; top:7.8vw}
+#holy_water_desc{left:16.7vw; top: 7.8vw} 
+#laudanum_desc{left:21.25vw; top: 7.8vw} 
+#torch_desc{left:-7.65vw; top: 16.5vw} 
+#dog_treats_desc{left:-2.5vw; top: 16.5vw} 
 #firewood_desc{left:1.5vw; top: 16.5vw}
 #the_blood_desc{left:0vw; top: 16.5vw}
-#the_cure_desc{left:1.7vw; top: 16.5vw}
-#shard_dust_desc{left:7vw; top: 16.5vw}
-#aegis_scale_desc{left:14vw; top: 16.5vw}
+#the_cure_desc{left:1.65vw; top: 16.5vw}
+#shard_dust_desc{left:5.6vw; top: 16.5vw}
+#aegis_scale_desc{left:13.5vw; top: 16.5vw}
 
 
 .provision_areabox{position: absolute; top: 19.3vw; right: 0.6vw;
