@@ -4809,7 +4809,7 @@ const TrinketInfoDescData = [
       label_class:"ddlogo_text crimson_court_trinket_overview_label crimson_court",
       labeltext:"Crimson Court",
   
-      class: "general_desc trinket_general_info",
+      class: "general_desc trinket_overview_info",
       id:"crimson_court_trinket_overview_desc",
   
   
