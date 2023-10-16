@@ -466,7 +466,7 @@ text-align: center;}
 /*Quirk Glossary Styling*/
 
 .glossary_container{position:absolute; left: 8.5vw; top: 6.75vw; width: 75.2vw; height: 39vw; 
-    background-image: url("images/estate_icons/glossary_background2.png"); background-size: 75.2vw 39vw; display: none; }
+    background-image: url("images/Glossary/glossary_background2.png"); background-size: 75.2vw 39vw; display: none; }
 .glossary_backdrop{position:absolute; width: 99vw; height: 37vw; left: -8vw;}
 .quirk_close{position:absolute; right: 0.8vw; top:0.8vw; width: 1.8vw}
 .quirk_close:hover{filter: brightness(150%);}
@@ -535,6 +535,8 @@ text-align: center;}
 .quirk_overview{position: absolute;top:6.5vw }
 .quirk_overview_label{position: absolute; font-size: 1.7vw; left: 3.5vw; top: 6.6vw;}
 .quirk_general_info{max-width: 38vw; font-size: 1.2vw; line-height: 1.6vw;position: absolute; top: 9vw; left: -2vw;}
+
+
 /*Disease Box*/
 
 .disease_container{position: absolute; left: 8.5vw; top: 6.75vw; height: 38.7vw; width: 69.8vw; 
@@ -620,33 +622,32 @@ text-align: center;}
 .supply_item:hover{filter: brightness(150%);}
 .provision_desc{font-size: 1vw; line-height: 1.3vw; font-weight: 500;}
 
-.desctop_space{margin-top: 0.3vw;} 
-.descbtm_space{margin-bottom: 0.2vw;}
+.desc_margin{line-height: 1.8vw;}
 #food_desc{left:-8.7vw; top:7.8vw} 
-#shovel_desc{left:-1vw; top:7.8vw} 
-#antivenom_desc{left:3.4vw; top:7.8vw} 
-#bandage_desc{left:7.8vw; top:7.8vw} 
-#herb_desc{left:12.2vw; top:7.8vw} 
-#key_desc{left:17.1vw; top:7.8vw}
-#holy_water_desc{left:21.5vw; top: 7.8vw} 
-#laudanum_desc{left:26.3vw; top: 7.8vw} 
-#torch_desc{left:-7vw; top: 16.5vw} 
-#dog_treat_desc{left:-2.4vw; top: 16.5vw} 
-#firewood_desc{left:1.6vw; top: 16.5vw}
+#shovel_desc{left:-2.2vw; top:7.8vw} 
+#antivenom_desc{left:-2.4vw; top:7.8vw} 
+#bandage_desc{left:6.3vw; top:7.8vw} 
+#medicinal_herbs_desc{left:6.8vw; top:7.8vw} 
+#skeleton_key_desc{left:15.3vw; top:7.8vw}
+#holy_water_desc{left:17vw; top: 7.8vw} 
+#laudanum_desc{left:22.7vw; top: 7.8vw} 
+#torch_desc{left:-7.35vw; top: 16.5vw} 
+#dog_treats_desc{left:-2.4vw; top: 16.5vw} 
+#firewood_desc{left:1.5vw; top: 16.5vw}
 #the_blood_desc{left:0vw; top: 16.5vw}
 #the_cure_desc{left:1.7vw; top: 16.5vw}
 #shard_dust_desc{left:7vw; top: 16.5vw}
 #aegis_scale_desc{left:14vw; top: 16.5vw}
 
 
-.provision_areabox{position: absolute; top: 19.3vw; right: 0.5vw;
-                   height: 19vw; width: 38.5vw;}
+.provision_areabox{position: absolute; top: 19.3vw; right: 0.6vw;
+                   height: 19vw; width: 38.2vw;}
 
-.provisions_navigation{position: absolute; top: 18.2vw; left: 33vw}
+.provisions_navigation{position: absolute; top: 18.2vw; left: 32.7vw}
 .provisions_navbtn{width: 3.2vw;}
 .provisions_navbtn:hover{filter: brightness(150%);}
 
-.areabox{position: absolute; width: 37.9vw; height:18.4vw; background-size: 38.5vw;  padding: 0.8vw 1vw;}
+.areabox{position: absolute; width: 38.2vw; height:18.4vw; background-size: 38.2vw;  padding: 0.8vw 0vw;}
 .area_provisions_text{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1vw; line-height: 1.3vw; font-weight: 400;}
 .ruins_provision{background-image: url("images/backgrounds/ruins_bg.webp"); }
 .weald_provision{ background-image: url("images/backgrounds/Weald.webp");}
@@ -655,13 +656,13 @@ text-align: center;}
 .courtyard_provision{  background-image: url("images/backgrounds/Courtyard.webp");background-position: center;}
 .farmstead_provision{  background-image: url("images/backgrounds/Farmstead.webp");background-position: center;}
 
-.dungeon_category{width: 12.5vw; height: 17vw; padding-top: 2vw; }
-.dungeon_main{width: 37vw; height: 17vw; padding-top: 2vw;}
+.dungeon_category{min-width: 12.7vw; max-width: 37vw; height: 17vw; padding-top: 2vw;  }
+.provision_list{text-align: center;font-size: 1vw; line-height: 1.5vw;}
+.general_provision_list{text-align: start; font-size: 1vw; line-height: 1.45vw;}
 
-.provisions_title{font-size: 2vw; font-family: dd_logo; color: rgb(199, 179, 107); position: absolute; display: flex;justify-content: center; width: 36vw; height: 3vw;}
-.provisions_list{text-align: center; line-height: 1.5vw;}
-.general_provision_list{text-align: start; line-height: 1.7vw;}
-.dungeon_header{font-family: dd_logo; color: rgb(199, 179, 107); font-size: 1.5vw; margin-top: 0.5vw;}
+.provisions_title{font-size: 2vw; font-family: dd_logo; color: rgb(199, 179, 107); position: absolute; display: flex;justify-content: center; width: 38.1vw; height: 3vw; margin-top:-0.2vw;}
+
+.dungeon_header{font-family: dd_logo; color: rgb(199, 179, 107); font-size: 1.5vw; line-height: 2.2vw;}
 
 #ruins_area{display: flex;}
 #weald_area{display:none}
@@ -670,80 +671,63 @@ text-align: center;}
 #courtyard_area{display: none;}
 #farmstead_area{display: none;}
 
-.trap_info{top: -0.6vw; left:1.8vw;}
-.trap_info_text{top: -1vw; left:4.1vw;}
-.trap_label{position:absolute; left:1.1vw; font-size: 1.2vw; top: 1.5vw;}
+.trap_info{top: 0vw; left:0.2vw;}
+.trap_info_text{top: -0.5vw; left:2.5vw; line-height: 1.25vw;}
+.trap_label{position:absolute; left:2.7vw; font-size: 1.4vw; top: 0.4vw; }
 /*Loot Box Styling*/
 
 .loot_container{position: absolute; top: 14vw;left: 2vw; width: 36vw; height: 25.8vw; 
                background-image: url('images/loot/inventory_panel.png'); background-size: 36vw; display: none;}
 #lootclose{width: 1.5vw; position: absolute; right: 0.45vw; top: 0.45vw;}
 #lootclose:hover{filter: brightness(150%);}
-.lootflex{width: 36vw; height: 16.7vw;  margin: 0.3vw 0 0 0.3vw; display:flex;flex-wrap: wrap; }
+.loot_itembox{width: 36vw; height: 16.7vw;  margin: 0.3vw 0 0 0.3vw; }
 .loot_item{position: absolute; width: 3.4vw; height: 7vw; }
 .loot_item:hover{filter: brightness(150%);}
 
-.slot1{ top: 0.9vw; left: 0.8vw}
-.slot2{top: 0.9vw; left: 4.85vw}
-.slot3{top: 0.9vw; left: 8.9vw}
-.slot4{top: 0.9vw; left: 12.95vw}
-.slot5{top: 0.9vw; left: 17vw}
-.slot6{top: 0.9vw; left: 21.05vw}
-.slot7{top: 0.9vw; left: 25.1vw}
-.slot8{top: 0.9vw; left: 29.15vw}
-.slot9{ top: 9.35vw; left: 0.8vw}
-.slot10{top: 9.35vw; left: 4.85vw}
-.slot11{top: 9.35vw; left: 8.9vw}
-.slot12{top: 9.35vw; left: 12.95vw}
-.slot13{top: 9.35vw; left: 17vw}
-.slot14{top: 9.35vw; left: 21.05vw}
-.slot15{top: 9.35vw; left: 25.1vw}
-.slot16{top: 9.35vw; left: 29.15vw}
 
-.slot17{top: 17.8vw; left: 0.8vw}
-.slot18{top: 17.8vw; left: 4.85vw}
-.slot19{top: 17.8vw; left: 8.9vw}
-.slot20{top: 17.8vw; left: 12.95vw}
+.loot_item_row1{top: 0.9vw;}
+.loot_item_row2{top: 9.35vw;}
+.loot_item_row3{top: 17.8vw;}
 
-.slot22{top: 17.8vw; left: 21.05vw}
-.slot23{top: 17.8vw; left: 25.1vw}
+.loot_item_num1{left: 0.8vw}
+.loot_item_num2{left:4.85vw;}
+.loot_item_num3{left: 8.9vw}
+.loot_item_num4{left: 12.95vw}
+.loot_item_num5{left: 17vw}
+.loot_item_num6{left: 21.05vw}
+.loot_item_num7{left: 25.1vw}
+.loot_item_num8{left: 29.15vw}
 
-.loot_desc{ font-size: 1vw; line-height: 1.4vw; font-weight: 500;}
+.loot_desc_row1{top: 0.95vw;}
+.loot_desc_row2{top: 9.4vw;}
+.loot_desc_row3{top: 17.85vw;}
 
-#citrine_desc{top: 0.95vw; left: 4.5vw;}
-#jade_desc{top: 0.95vw; left: 8.55vw}
-#onyx_desc{top: 0.95vw; left: 12.6vw}
-#emerald_desc{top: 0.95vw; left: 16.65vw}
-#sapphire_desc{top: 0.95vw; left: 20.7vw}
-#ruby_desc{top: 0.95vw; left: 24.75vw}
+.loot_desc_num1{left: 4.5vw}
+.loot_desc_num2{left:8.55vw;}
+.loot_desc_num3{left: 12.6vw}
+.loot_desc_num4{left: 16.65vw}
+.loot_desc_num5{left: 20.7vw}
+.loot_desc_num6{left: 24.75vw}
+.loot_desc_num7{left: 28.8vw}
+.loot_desc_num8{left: 32.85vw}
 
-#trapezohedron_desc{top: 8.1vw; left: 18vw}
-#goldbag_desc{top: 8.1vw; left: 24vw}
 
-#pew_desc{top: 9.25vw; left: 4.5vw}
-#minor_antique_desc{top: 9.25vw; left: 8.55vw}
-#major_antique_desc{top: 9.25vw; left: 12.6vw}
-#tapestry_desc{top: 9.25vw; left: 16.65vw}
+.loot_desc{ font-size: 1vw; line-height: 1.5vw; font-weight: 500;}
 
-#crest_desc{top: 16.6vw; left:11vw}
-#bust_desc{top: 16.6vw; left: 15vw}
-#deed_desc{top: 16.6vw; left: 19.2vw}
-#portrait_desc{top: 16.6vw; left:23.3vw}
 
-#blueprint_desc{top: 17.55vw; left:4.5vw}
-
-#baron_invite_desc{top: 17.55vw; left:8.55vw}
-#viscount_invite_desc{top: 17.55vw; left: 12.6vw}
-#countess_invite_desc{top: 17.55vw; left: 16.65vw}
-
-#shard_desc{top: 17.55vw; left: 24.75vw}
-#memory_desc{top: 17.55vw; left: 28.8vw}
 
 
 .apprentice{color:rgb(108, 149, 85)}
 .veteran{color:rgb(209, 136, 46)}
 .champion{color: rgb(149, 48, 48)}
 
+#heirloom_trade{width: 2.1vw; position: absolute; left: 30.1vw; top: 18.1vw;}
+.heirloom_trade_desc{top: 17.9vw; left:32.5vw;}
+.heirloom_label{position:absolute; top:20.4vw; left: 29.3vw; font-size: 1.2vw;}
+
+#gem_info{width: 2.1vw; position: absolute; left: 30vw; top: 22vw;}
+.gem_info_desc{top: 21.8vw; left:32.5vw;}
+.gem_label{position:absolute; top:24.2vw; left: 29.8vw; font-size: 1.3vw;}
 
 /*Trinketbox Styling*/
 
@@ -1116,4 +1100,6 @@ text-align: center;}
     font-family: 'Ubuntu', sans-serif; color: rgb(206, 58, 33); font-size: 1vw; line-height: 1.5vw; font-weight: 500;
     text-align: center; padding:0.2vw; display: none;
 }
+
+
 
