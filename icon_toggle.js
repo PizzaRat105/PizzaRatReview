@@ -129,18 +129,19 @@ document.addEventListener("DOMContentLoaded", function() {
   attachHoverListeners("[id^='trinketves1']", "[id^='vestrinket1']");
   attachHoverListeners("[id^='trinketves2']", "[id^='vestrinket2']");
 
- //Provisions
+
+  //Provisions
 
   attachHoverListeners("[id^='food_box']", "[id^='food_desc']");
   attachHoverListeners("[id^='shovel_box']", "[id^='shovel_desc']");
   attachHoverListeners("[id^='antivenom_box']", "[id^='antivenom_desc']");
   attachHoverListeners("[id^='bandage_box']", "[id^='bandage_desc']");
-  attachHoverListeners("[id^='herb_box']", "[id^='herb_desc']");
-  attachHoverListeners("[id^='key_box']", "[id^='key_desc']");
+  attachHoverListeners("[id^='medicinal_herbs_box']", "[id^='medicinal_herbs_desc']");
+  attachHoverListeners("[id='skeleton_key_box']", "[id='skeleton_key_desc']");
   attachHoverListeners("[id^='holy_water_box']", "[id^='holy_water_desc']");
   attachHoverListeners("[id^='laudanum_box']", "[id^='laudanum_desc']");
   attachHoverListeners("[id^='torch_box']", "[id^='torch_desc']");
-  attachHoverListeners("[id^='dog_treat_box']", "[id^='dog_treat_desc']");
+  attachHoverListeners("[id^='dog_treats_box']", "[id^='dog_treats_desc']");
   attachHoverListeners("[id='firewood_box']", "[id='firewood_desc']");
   attachHoverListeners("[id='the_blood_box']", "[id='the_blood_desc']");
   attachHoverListeners("[id='the_cure_box']", "[id='the_cure_desc']");
@@ -156,6 +157,9 @@ document.addEventListener("DOMContentLoaded", function() {
   attachHoverListeners("[id='courtyard_trap_info']", "[id='courtyard_trap_info_desc']");
 
   //Loot
+
+  attachHoverListeners("[id='gem_info']", "[id='gem_info_desc']");
+  attachHoverListeners("[id='heirloom_trade']", "[id='heirloom_trade_desc']");
 
   attachHoverListeners("[id^='citrine_box']", "[id^='citrine_desc']");
   attachHoverListeners("[id^='jade_box']", "[id^='jade_desc']");
@@ -1077,6 +1081,7 @@ attachHoverListeners("[id='shambler_additional_info_vet']", "[id='shambler_addit
 attachHoverListeners("[id='shambler_additional_info_champ']", "[id='shambler_additional_info_desc']");
 
 
+
 attachHoverListeners("[id='shambler_additional_info']", "[id='shambler_additional_info_desc']");
 attachHoverListeners("[id='shambler_endless_info']", "[id='shambler_endless_info_desc']");
 attachHoverListeners("[id='shrieker_endless_info']", "[id='shrieker_endless_info_desc']");
@@ -1120,7 +1125,7 @@ attachHoverListeners("[id='collector_minion_more_info_champ']", "[id='collector_
 attachHoverListeners("[id='shambler_minion_more_info_app']", "[id='shambler_minion_more_info_desc']");
 attachHoverListeners("[id='shambler_minion_more_info_vet']", "[id='shambler_minion_more_info_desc']");
 attachHoverListeners("[id='shambler_minion_more_info_champ']", "[id='shambler_minion_more_info_desc']");
-  
+
 attachHoverListeners("[id='shrieker_minion_more_info']", "[id='shrieker_minion_more_info_desc']");
 attachHoverListeners("[id='shambler_minion_more_info']", "[id='shambler_minion_more_info_desc']");
 
@@ -1461,7 +1466,6 @@ attachHoverListeners("[id='cauldron_empty_minion_more_info_app']", "[id='cauldro
 attachHoverListeners("[id='cauldron_empty_minion_more_info_vet']", "[id='cauldron_empty_minion_more_info_desc']");
 attachHoverListeners("[id='cauldron_empty_minion_more_info_champ']", "[id='cauldron_empty_minion_more_info_desc']");
 
-
 //Disease Icons
 attachHoverListeners("[id='disease_shared_info']", "[id='disease_shared_info_desc']");
 attachHoverListeners("[id='disease_enemy_info']", "[id='disease_enemy_info_desc']");
@@ -1503,6 +1507,7 @@ attachHoverListeners("[id='crimson_curse_craving']", "[id='crimson_curse_craving
 attachHoverListeners("[id='crimson_curse_bloodlust']", "[id='crimson_curse_bloodlust_desc']");
 attachHoverListeners("[id='crimson_curse_wasting']", "[id='crimson_curse_wasting_desc']");
 attachHoverListeners("[id='sky_taint']", "[id='sky_taint_desc']");
+
 
 //Trinket Info
 
@@ -1931,5 +1936,6 @@ function attachHoverListener(trigger, target) {
     target.style.display = "none";
   });
 }
+
 
 
