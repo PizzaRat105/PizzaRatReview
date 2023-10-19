@@ -30,8 +30,29 @@ document.addEventListener('keydown', event => {
   }
 });
 
+/*Disease Box*/
+const ResolveBox = document.getElementById("resolve_box");
+const AfflictionBtn = document.getElementById("affliction_btn");
+const VirtueBtn = document.getElementById("virtue_btn");
+
+AfflictionBtn.addEventListener('click' , function() {
+  PlayPageOpn();
+  ResolveBox.style.display = 'block';
+});
+
+VirtueBtn.addEventListener('click' , function() {
+  PlayPageOpn();
+  ResolveBox.style.display = 'block';
+});
 
 
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && ResolveBox.style.display === 'block') {
+    CloseAudio.currentTime = 0;
+    CloseAudio.play();
+    ResolveBox.style.display = 'none';
+  }
+})
 
 /*Lootbox*/ 
 const LootBtn = document.getElementById('Loot');
@@ -218,6 +239,7 @@ SettingIcon2.addEventListener('mouseover' , function() {SettingOverlay.style.dis
 SettingIcon2.addEventListener('mouseleave', function() {SettingOverlay.style.display = 'none'; });
 
 const CloseLoot = document.getElementById('lootclose');
+const CloseResolve = document.getElementById('resolve_close');
 const DiseaseCloseBtn = document.getElementById("disease_close_btn"); 
 const CloseAudio = document.getElementById('page_close');
 CloseAudio.volume = 0.6;
@@ -233,6 +255,13 @@ CloseLoot.addEventListener('click', function() {
   CloseAudio.play();
   LootBox.style.display = 'none'
 })
+
+CloseResolve.addEventListener('click', function() {
+  CloseAudio.currentTime = 0;
+  CloseAudio.play();
+  ResolveBox.style.display = 'none'
+})
+
 
 
 
