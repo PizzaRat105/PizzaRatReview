@@ -9,7 +9,9 @@ body{margin: 0; padding: 0; background-color: black; cursor: url(images/dd_curso
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 100vh;}
+    min-height: 100vh;    
+    user-select: none;
+}
 a{text-decoration: none; color: black;}
 ul{list-style-type: none; margin:0; padding: 0;}
 button{background: white; border: none; width:20px}
@@ -35,9 +37,8 @@ button{background: white; border: none; width:20px}
 .wrap{flex-wrap: wrap;}
 .nowrap{flex-wrap: nowrap;}
 .center_align{text-align: center;}
-
+.text_style{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); }
 /*body {
-    user-select: none;
 }*/
 
 /*General Button Styling*/
@@ -85,30 +86,33 @@ button{background: white; border: none; width:20px}
 .hamlet_label{top: 34.5vw; left: 79vw}
 
 /*Side/Bottom Button Styling*/
+.hero_button{ position: absolute;width:5vw;height: 5vw; top: 40.4vw; left: 41.3vw;}
+.provision_btn{position: absolute; width: 5vw;height: 5vw; top: 40.4vw;left: 34.8vw;}
+.loot_btn{position: absolute; width: 5vw;height: 5vw; top: 40.4vw;left: 28.3vw;}
+.disease_btn{position: absolute; width: 5vw;height: 5vw; top: 40.4vw;left: 21.8vw;}
+.torch_btn{position: absolute; width: 5vw;height: 5vw; top: 40.4vw;left: 15.3vw;}
+.virtue_affliction_btn2{position: absolute;width: 5vw; height: 5vw;  top: 40.4vw; left: 8.6vw}
+.virtue_affliction_btn1{position: absolute;width: 5vw; height: 5vw;  top: 40.4vw; left: 1.8vw}
 
-.hero_button{width: 5vw;height: 5vw;left: 33.5vw; top: 40.4vw;}
-.provision_btn{width:5vw; position: absolute; top: 40.4vw; left: 41vw;}
-.loot_btn{position: absolute; width: 5vw;height: 5vw;left: 26.6vw; top: 40.4vw;}
-.bc_button{left:3vw; position: absolute; top: 27.7vw; width: 5.5vw;}
-.sb_dlc_btn{width: 4.5vw; height: 4.5vw; position: absolute; top: 38vw; left: 3.7vw}
-.disease_btn{position: absolute; width: 5vw;height: 5vw;left: 19.5vw; top: 40.4vw;}
-.mod_btn{position: absolute; width: 5vw;height: 5vw;left: 12.5vw; top: 40.4vw;}
+.bc_button{ position: absolute;width: 5.5vw; top: 29.5vw;left:5vw; }
+.circus_btn_label{ font-size: 1.8vw;position: absolute; top: 35vw;left: 3.5vw;text-align: center;}
 
 
-.hero_btn_label{ font-size: 1.9vw; position: absolute; top: 45.7vw; left: 32.6vw;}
-.provision_btn_label{ font-size: 1.9vw; position: absolute; top: 45.7vw;left: 40.4vw;}
-.loot_btn_label{ font-size: 1.9vw;position: absolute; top: 45.7vw;left: 26vw;}
-.circus_btn_label{ font-size: 1.9vw;position: absolute; top: 33.2vw;left: 1.5vw;text-align: center;}
-.sb_dlc_btn_label{ font-size: 1.9vw;position: absolute; top: 43.4vw;left: 1.5vw;text-align: center;}
-.disease_btn_label{ font-size: 1.9vw;position: absolute; top: 45.7vw;left: 19.4vw;}
-.mod_btn_label{ font-size: 1.9vw;position: absolute; top: 45.7vw;left: 13.2vw;}
+.hero_btn_label{ font-size: 1.8vw; position: absolute; top: 45.8vw;left: 41.8vw;}
+.provision_btn_label{ font-size: 1.8vw; position: absolute; top: 45.8vw; left: 33.9vw;}
+.loot_btn_label{ font-size: 1.8vw;position: absolute; top: 45.8vw;left: 29.3vw;}
+.disease_btn_label{ font-size: 1.8vw;position: absolute; top: 45.8vw;left: 21.8vw;}
+.torch_btn_label{ font-size: 1.8vw;position: absolute; top: 45.8vw;left: 14.6vw;}
+.virtue_affliction_btn_label{ font-size: 1.8vw;position: absolute; top: 45.8vw;left:1.8vw;text-align: center;}
+
 
 .provision_btn:hover{filter: brightness(150%);}
 .loot_btn:hover{filter: brightness(150%);}
 .bc_button:hover{filter: brightness(150%);}
-.sb_dlc_btn:hover{filter: brightness(150%);}
+.virtue_affliction_btn1:hover{filter: brightness(150%);}
+.virtue_affliction_btn2:hover{filter: brightness(150%);}
 .disease_btn:hover{filter: brightness(150%);}
-.mod_btn:hover{filter: brightness(150%);}
+.torch_btn:hover{filter: brightness(150%);}
 
 .non_dlc_label{position: absolute; top: 38vw;left:23.8vw;
     font-family: 'Ubuntu', sans-serif; color:rgb(93, 91, 79);font-size: 1.3vw; font-weight: 800;}
@@ -724,8 +728,10 @@ text-align: center;}
 #heirloom_trade{width: 2.1vw; position: absolute; left: 30.1vw; top: 18.1vw;}
 .heirloom_trade_desc{top: 17.9vw; left:32.5vw;}
 .heirloom_label{position:absolute; top:20.4vw; left: 29.3vw; font-size: 1.2vw;}
+#heirloom_trade:hover{filter: brightness(150%);}
 
 #gem_info{width: 2.1vw; position: absolute; left: 30vw; top: 22vw;}
+#gem_info:hover{filter: brightness(150%);}
 .gem_info_desc{top: 21.8vw; left:32.5vw;}
 .gem_label{position:absolute; top:24.2vw; left: 29.8vw; font-size: 1.3vw;}
 
@@ -754,8 +760,6 @@ text-align: center;}
 .trinket_row2{top:18.2vw;}
 .trinket_row3{top:27.4vw;}
 
-
-
 .trinket_num1{left: 2.3vw;}
 .trinket_num2{left: 6.85vw;}
 .trinket_num3{left: 11.4vw;}
@@ -766,15 +770,11 @@ text-align: center;}
 .trinket_num8{left: 34.15vw;}
 .trinket_num9{left: 38.7vw;}
 
-.trinket_row2_num1{top:18.2vw; left: 2.3vw;}
-.trinket_row3_num1{top: 27.4vw; left: 2.3vw;}
 
 .trinket_desc_row1{top: 9vw;}
 .trinket_desc_row2{top:18.2vw;}
 .trinket_desc_row3{top: 27.4vw;}
-
 .trinket_desc_num1{left: 6.5vw;}
-
 .trinket_desc_num2{left: 11.05vw;}
 .trinket_desc_num3{left: 15.6vw;}
 .trinket_desc_num4{left: 20.15vw;}
@@ -808,6 +808,7 @@ text-align: center;}
 .trinket_overview{position: absolute; width: 3vw; top: 2.7vw; left: 19.9vw;}
 .trinket_overview_label{position: absolute; top: 5.7vw; left: 19vw; font-size: 1.5vw; }
 .trinket_overview_info{position: absolute; top: 6vw;left: 0.5vw; max-width: 55vw; font-size: 1.2vw; line-height: 1.6vw;}
+
 .trinket_general_info{position: absolute; top: 6vw;left: 18vw; max-width: 40vw; font-size: 1.2vw; line-height: 1.4vw;}
 
 .crimson_court_trinket_overview{position: absolute; width: 3vw; top: 2.7vw; left: 25.5vw;}
@@ -826,6 +827,37 @@ text-align: center;}
     background-image: url('images/Districts/district_background.png'); background-size: 38.3vw;}
 
 .district_sprite{position: absolute; top: 4vw; left: 2vw; width: 16vw;}
+
+/*Virtues and Afflictions*/
+.resolve_container{position:absolute; left: 8.5vw; top: 6.75vw; width: 75.2vw; height: 39vw; background-size: 75.2vw 39vw; background-image: url("images/Virtue_Affliction/resolve_check_bg.png");display: none;}
+.resolve_column{width: max-content; height: 29.5vw; position: absolute; top: 6.5vw; font-family: 'Ubuntu', sans-serif;  font-size: 2vw;font-weight: 500; line-height: 3.4vw; padding: 0.3vw; }
+.resolve1{left: 2vw; color: rgb(199, 179, 107); }
+.resolve2{left: 19.5vw; color: rgb(160, 43, 32);} 
+.resolve_name:hover{filter: brightness(150%); cursor:pointer;}
+
+.resolve_desc{font-size: 1.1vw;line-height: 1.5vw; left: 35vw;top:0.7vw; position: absolute; width:37vw;
+    font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167);font-weight: 500; display: none;
+    text-align: center; padding: 0.3vw 0.6vw 0.6vw 0.6vw;}
+.resolve_title{font-size: 1.5vw;}
+.resolve_desc_margin{line-height: 2.2vw;}
+
+.resolve_overview {top: 1vw; left: 34.4vw; width:2.1vw;}
+.affliction_overview{top: 3.4vw; left: 34.4vw;width:2.1vw;}
+.virtue_overview{top: 5.8vw; left: 34.4vw;width:2.1vw;}
+.actout_overview {top: 24vw;left: 1.5vw; width:2.3vw;}
+.circus_resolve_overview{top: 27.2vw; left:1.5vw; width:2.3vw;}
+
+.resolve_overview_label {position: absolute;top: 1.15vw; left: 36.9vw; font-size: 1.5vw;}
+.affliction_overview_label{position: absolute;top: 3.6vw; left: 36.9vw; font-size: 1.5vw;}
+.virtue_overview_label{position: absolute;top: 6vw; left: 36.9vw; font-size: 1.5vw; }
+.actout_overview_label {position: absolute;top: 24.25vw; left: 4.2vw; font-size: 1.6vw; }
+.circus_resolve_overview_label{position: absolute;top: 27.5vw; left:4.2vw; font-size: 1.6vw;}
+
+.resolve_overview_info{position: absolute;top: 3.3vw; left: 32vw;max-width: 50vw; font-size: 1.1vw; line-height: 1.4vw;}
+.affliction_info {position: absolute;top: 5.7vw; left: 32vw; max-width: 50vw;  font-size: 1.1vw; line-height: 1.4vw;}
+.virtue_info{position: absolute;top: 8.1vw; left: 32vw;max-width: 50vw;  font-size: 1.1vw; line-height: 1.4vw;}
+.actout_general_info {position: absolute;top: 26.8vw; left: 0vw; max-width: 115vw;  font-size: 1.1vw; line-height: 1.8vw; text-align: center;}
+.circus_resolve_overview_info{position: absolute;top: 30vw; left: 1.5vw;max-width: 35vw;  font-size: 1.1vw; line-height: 1.4vw;}
 
 /*Lower Right Button Styling*/
 .district_closed{position:absolute; top: 44.2vw; left: 69.3vw; width: 4vw; height: 4.7vw}
@@ -860,6 +892,7 @@ text-align: center;}
 .back_arrow:hover{filter: brightness(150%);}
 .crimson_banner{width: 9.5vw; position: absolute; top: 5vw; left: 1.2vw;}
 .estate_title{height: 15vw; position: absolute;  width: 48vw;}
+.infestation{position: absolute;width:9vw; top:7vw; left: 1.3vw;}
 
 /*Embark Button Styling*/
 #embark_button{height: 3vw; position: absolute; top: 44.7vw; left: 49.7vw; display: none;}
