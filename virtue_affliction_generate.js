@@ -528,7 +528,7 @@ const ResolveIconData = [
             "When a hero gets an Affliction, they suffer severe Stat Penalties which vary depending on their Affliction, with a nerf to most of their resistences and a loss of MAX HP being shared between all Afflictions but Rapturous.<br>",
             "Afflicted heroes have a chance to perform negative act-outs(which cannot trigger twice in a row). Act-outs outside of passing turns or using a random skill will not use up the hero's turn.<br>",
             "Afflicted heros also have a chance to refuse to use or benefit from a Camping skill, notably, this still uses the Respite points of the Skill.<br>",
-            "Afflicted heroes will continue to gain Stress, and if their Stress levels hit 200, they will take a Heart Attack, dropping their HP to 0 and setting thei Stress down to 170.<br>",
+            "Afflicted heroes will continue to gain Stress, and if their Stress levels hit 200, they will take a Heart Attack, dropping their HP to 0 and setting their Stress down to 170.<br>",
             "Unlike Virtues, Afflictions remain on the hero after entering the Hamlet, and the Hero's Stress is reset to 100 if they had more than 100 Stress at the end of the expedition.<br>", 
             "Partaking in any Stress relief activity within the Hamlet will remove the Affliction. During expeditions, a hero will lose their Affliction if their Stress levels hit 0.<br>",
             "All Afflictions (except Rapturous) lower Stun, Blight, Bleed, Disease, Debuff, Move, and Trap Resist by 15%, and reduce MAX HP by 10%.",
