@@ -1,9 +1,3 @@
-const CurioPorts = document.getElementsByClassName('curio_port')
-for (const CurioPort of CurioPorts) {
-   CurioPort.addEventListener('click', function() {
-    PlayBtnPress();  })
-   }
-
 const ruinsCurioTopData = [
     { name: "alchemy_table", isCorridorCurio: true, title: "Alchemy Table", type: "Knowledge", forcedtype: "Knowledge"},
     { name: "altar_of_light", isCorridorCurio: true, title: "Altar of Light", type: "Worship", forcedtype: "Worship"},
