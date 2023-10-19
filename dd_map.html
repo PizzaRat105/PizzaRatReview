@@ -37,22 +37,18 @@
         </div>
 
         <!--Left buttons-->
+        <img src = "images/Virtue_Affliction/virtue_header_icon.png" class = "virtue_affliction_btn1" id = "virtue_btn"> 
+        <img src = "images/Virtue_Affliction/affliction_header_icon.png" class = "virtue_affliction_btn2"  id = "affliction_btn"> 
+        <div class = "ddlogo_text virtue_affliction_btn_label"> Virtues & Afflictions </div>
 
-
-        <img src = "images/estate_icons/circus_btn.png" class = " bc_button" id = "circus">
-        <img src = "images/bg_elements/estate_title.png" class = estate_title>
-        <a href = "index.html" id = "back_arrow"> <img src ="images/estate_icons/back_arrow.png" class = "back_arrow"></a>
-        
-        <div class = "ddlogo_text circus_btn_label">The Butcher's <br> Circus </div>
-
-        <img src = "images/estate_icons/mod_box.png" class = "mod_btn mission_btn"> 
-        <div class = "ddlogo_text mod_btn_label"> Mods </div>
-
-        <img src = "images/estate_icons/shieldbreaker_dlc.png" class = "sb_dlc_btn mission_btn"> 
-        <div class = "ddlogo_text sb_dlc_btn_label"> Shieldbreaker<br> DLC </div>
+        <img src = "images/estate_icons/mod_box.png" class = "torch_btn mission_btn"> 
+        <div class = "ddlogo_text torch_btn_label"> The Torch </div>
 
         <img src = "images/estate_icons/disease_btn.png" class = disease_btn id = diseasebtn>
         <div class = "ddlogo_text disease_btn_label">Diseases</div>
+
+        <img src = "images/estate_icons/gold.icon.png" class = loot_btn id = Loot>
+        <div class = "ddlogo_text loot_btn_label">Loot</div>
 
         <img src = "images/estate_icons/provision.icon.png" class = provision_btn id = provisioner>
         <div class = "ddlogo_text provision_btn_label">Provisions </div>
@@ -60,15 +56,11 @@
         <a href = "dd_hero.html" id = "herolink"> 
             <img src = "images/mission_icons/hero_btn.png" class = "button_long hero_button" id = "hero_btn">
         </a>
-        <div class = "ddlogo_text hero_btn_label">The Heroes</div>
+        <div class = "ddlogo_text hero_btn_label">Heroes</div>
 
-
-        <img src = "images/estate_icons/gold.icon.png" class = loot_btn id = Loot>
-        <div class = "ddlogo_text loot_btn_label">Lootables</div>
-        
+        <img src = "images/estate_icons/circus_btn.png" class = " bc_button" id = "circus">
+        <div class = "ddlogo_text circus_btn_label">The Butcher's <br> Circus </div>
         <img src = "images/Boxes/bc_textbox.png" class = "quest_box" id = "circusbox">
-        <!--<div class = "non_dlc_label">Non-DLC Section</div>-->
-
 
            <!--Lower right buttons-->
     <img src  = "images/estate_icons/estate_overlay.png" class = "estate_overlay district_overlay" id = district_overlay>
@@ -95,8 +87,6 @@
     <img src = "images/estate_icons/settingsicon.png" class = "button_long setting_icon" id = setting1>
     <img src = "images/estate_icons/settingsicon.png" class = "button_long setting_icon nondisplay" id = setting2>
 
-    <!--<div class = "includes_dlc_label">Includes DLC Content</div>-->
-
     
         <!--Mission Boxes-->
     <div class = map_nav_container id = map_navigate>
@@ -113,6 +103,9 @@
         <div class = mission_btn> <img src = "images/mission_icons/dd_questbg.png" class = "gauntlet_btn button_short" id = "gauntletbtn"> </div>
         <img src = "images/Boxes/dds_box.png" class= "quest_box" id = "gauntlet_txtbox">
 
+        <!--<img src = "images/bg_elements/CC_infestation.png" class = "infestation">-->
+        <img src = "images/bg_elements/estate_title.png" class = estate_title>
+        <a href = "index.html" id = "back_arrow"> <img src ="images/estate_icons/back_arrow.png" class = "back_arrow"></a>
 
         <div class = "backdrop ruins_enemy_backdrop"></div>
         <div class = "mission_btn"> <img src = "images/mission_icons/ruins_enemy.png" class = "ruins_enemy_btn button_medium" id = "ruins1"> </div>
@@ -1284,6 +1277,7 @@
 
                 <img src = "images/Hero_boxes/more_info_icon.png" class = "info boss_additional_info" id = "flesh_additional_info_champ">
 
+
             </div>
 
         </div>
@@ -1309,7 +1303,6 @@
     </div>
 
     <!--Disease Box-->
-
     <div class = disease_container id = diseasebox>
         <div class = "provision_backdrop"></div>
         <!--Container for disease names-->
@@ -1328,10 +1321,18 @@
     <!--Loot Box-->
     <div class = "loot_container " id = lootbox>
         <div class = "loot_itembox" id = "loot_container"></div>
-    <img src = "images/Hero_boxes/panel_close.png" id = lootclose>
-    </div>
-</div>
+    <img src = "images/Hero_boxes/panel_close.png" id = lootclose></div>
 
+    <!--Districts-->
+
+
+    <div class = "resolve_container" id = "resolve_box">
+        <div class = "provision_backdrop"></div>
+        <img src = "images/Hero_boxes/panel_close.png" class = "quirk_close" id = "resolve_close">
+
+    </div>
+
+</div>
 
     <audio id = "mission_select_sfx" src="sfx/btn_select.wav"></audio>
     <audio id = "back_button_sfx" src = "sfx/btn_back.wav"></audio>
@@ -1360,7 +1361,6 @@
     <script src = 'disease_generate.js'></script>
     <script src = 'disease_toggle.js'></script>
 
-
     <script src = "loot_generate.js"></script>
 
     <!--Handles Quirk/Glossary-->
@@ -1368,6 +1368,10 @@
 
     <!--Handles Enemy Box Generation-->
     <script src = 'enemy_box_generate.js'></script>
+
+    <!--Handles Resolve Box Generation-->
+    <script src = 'virtue_affliction_generate.js'></script>
+    
 
     <!--Handles Curio Box Generation-->
     <script src = 'curio_box_generate.js'></script>
