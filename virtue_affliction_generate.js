@@ -506,7 +506,7 @@ const ResolveIconData = [
         "In the case of heroes who have gone into a higher level dungeon, they lose 5% Virtue Chance per level gap (Capping at -33% if a Resolve level 0 hero goes into a level 6 dungeon).<br>",
         "Although a hero's Virtue chance is always at least 1% (and capped at 95%) there are 2 cases where a hero cannot Virtue.<br>",
         "The first case is with the Flagellant hero, who cannot Virtue, and the second case is with any Shieldbreakers during a Nighmare encounter. <br>",
-        "Heroes gain a increased tendency to get Virtues or Afflictions the more they have gotten them in the past.",
+        "Heroes gain a increased tendency to get certain Virtues or Afflictions the more they have gotten them in the past.",
       ]
     },
 
