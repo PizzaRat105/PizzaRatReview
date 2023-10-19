@@ -1,4 +1,8 @@
-
+const CurioPorts = document.getElementsByClassName('curio_port')
+for (const CurioPort of CurioPorts) {
+   CurioPort.addEventListener('click', function() {
+    PlayBtnPress();  })
+   }
 function toggleElementDisplay(trigger, target, interactTarget) {
    trigger.addEventListener('click', function() {
 
