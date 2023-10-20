@@ -90,7 +90,7 @@ button{background: white; border: none; width:20px}
 .provision_btn{position: absolute; width: 5vw;height: 5vw; top: 40.4vw;left: 34.8vw;}
 .loot_btn{position: absolute; width: 5vw;height: 5vw; top: 40.4vw;left: 28.3vw;}
 .disease_btn{position: absolute; width: 5vw;height: 5vw; top: 40.4vw;left: 21.8vw;}
-.torch_btn{position: absolute; width: 5vw;height: 5vw; top: 40.4vw;left: 15.3vw;}
+.torchlight_btn{position: absolute; width: 5vw;height: 5vw; top: 40.4vw;left: 15.3vw;}
 .virtue_affliction_btn2{position: absolute;width: 5vw; height: 5vw;  top: 40.4vw; left: 8.6vw}
 .virtue_affliction_btn1{position: absolute;width: 5vw; height: 5vw;  top: 40.4vw; left: 1.8vw}
 
@@ -102,7 +102,7 @@ button{background: white; border: none; width:20px}
 .provision_btn_label{ font-size: 1.8vw; position: absolute; top: 45.8vw; left: 33.9vw;}
 .loot_btn_label{ font-size: 1.8vw;position: absolute; top: 45.8vw;left: 29.3vw;}
 .disease_btn_label{ font-size: 1.8vw;position: absolute; top: 45.8vw;left: 21.8vw;}
-.torch_btn_label{ font-size: 1.8vw;position: absolute; top: 45.8vw;left: 14.6vw;}
+.torchlight_btn_label{ font-size: 1.8vw;position: absolute; top: 45.8vw;left: 14.6vw;}
 .virtue_affliction_btn_label{ font-size: 1.8vw;position: absolute; top: 45.8vw;left:1.8vw;text-align: center;}
 
 
@@ -112,7 +112,7 @@ button{background: white; border: none; width:20px}
 .virtue_affliction_btn1:hover{filter: brightness(150%);}
 .virtue_affliction_btn2:hover{filter: brightness(150%);}
 .disease_btn:hover{filter: brightness(150%);}
-.torch_btn:hover{filter: brightness(150%);}
+.torchlight_btn:hover{filter: brightness(150%);}
 
 .non_dlc_label{position: absolute; top: 38vw;left:23.8vw;
     font-family: 'Ubuntu', sans-serif; color:rgb(93, 91, 79);font-size: 1.3vw; font-weight: 800;}
@@ -858,6 +858,26 @@ text-align: center;}
 .virtue_info{position: absolute;top: 8.1vw; left: 32vw;max-width: 50vw;  font-size: 1.1vw; line-height: 1.4vw;}
 .actout_general_info {position: absolute;top: 26.8vw; left: 0vw; max-width: 115vw;  font-size: 1.1vw; line-height: 1.8vw; text-align: center;}
 .circus_resolve_overview_info{position: absolute;top: 30vw; left: 1.5vw;max-width: 35vw;  font-size: 1.1vw; line-height: 1.4vw;}
+
+/*Torch*/
+.torchlight_container{position:absolute; left: 8.5vw; top: 6.75vw; width: 75.2vw; height: 39vw; background-size: 75.2vw 39vw; background-image: url("images/Torch/torch_bg.png");display: none;}
+.torchlight_column{width: max-content; height: 29.5vw; position: absolute; top: 6.5vw; font-family: 'Ubuntu', sans-serif;  font-size: 1.7vw;font-weight: 500; line-height: 2.8vw; padding: 0.3vw; }
+.torchlight1{left: 2vw; color: rgb(199, 179, 107); }
+.torchlight2{left: 20vw;} 
+.torchlight_name:hover{filter: brightness(150%); cursor:pointer;}
+
+.gleaming{color:rgb(229, 68, 59);}
+.haunting{color:rgb(175, 249, 163)}
+
+.torchlight_desc{font-size: 1.2vw;line-height: 1.8vw; left: 40vw;top:0.7vw; position: absolute; width:32vw;
+    font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167);font-weight: 500; display: none;
+    text-align: center; padding: 0.3vw 0.6vw 0.6vw 0.6vw; }
+.torchlight_title{font-size: 2vw;line-height: 3vw;}
+.torchlight_desc_margin{line-height: 2.5vw;}
+
+.reflection_info {top: 24.15vw; left: 37vw; width:2vw;}
+.reflection_info_desc{position: absolute;top: 26.5vw; left: 12vw;max-width: 50vw; font-size: 1.1vw; line-height: 1.4vw;}
+
 
 /*Lower Right Button Styling*/
 .district_closed{position:absolute; top: 44.2vw; left: 69.3vw; width: 4vw; height: 4.7vw}
