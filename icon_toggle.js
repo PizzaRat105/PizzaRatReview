@@ -1939,6 +1939,29 @@ attachClickListeners("[id='hopeless']", "[id='hopeless_desc']", "resolve_desc");
 attachClickListeners("[id='irrational']", "[id='irrational_desc']", "resolve_desc");
 attachClickListeners("[id='rapturous']", "[id='rapturous_desc']", "resolve_desc");
 
+ //Torch
+attachHoverListeners("[id='reflection_info']", "[id='reflection_info_desc']");
+attachClickListeners("[id='radiant_light']", "[id='radiant_light_desc']", "torchlight_desc");
+attachClickListeners("[id='dim_light']", "[id='dim_light_desc']", "torchlight_desc");
+attachClickListeners("[id='shadowy']", "[id='shadowy_desc']", "torchlight_desc");
+attachClickListeners("[id='dark']", "[id='dark_desc']", "torchlight_desc");
+attachClickListeners("[id='black_as_pitch']", "[id='black_as_pitch_desc']", "torchlight_desc");
+attachClickListeners("[id='radiant_light_cartographer']", "[id='radiant_light_cartographer_desc']", "torchlight_desc");
+attachClickListeners("[id='dim_light_cartographer']", "[id='dim_light_cartographer_desc']", "torchlight_desc");
+attachClickListeners("[id='shadowy_cartographer']", "[id='shadowy_cartographer_desc']", "torchlight_desc");
+attachClickListeners("[id='dark_cartographer']", "[id='dark_cartographer_desc']", "torchlight_desc");
+attachClickListeners("[id='black_as_pitch_cartographer']", "[id='black_as_pitch_cartographer_desc']", "torchlight_desc");
+attachClickListeners("[id='bloodlight']", "[id='bloodlight_desc']", "torchlight_desc");
+attachClickListeners("[id='farmstead_miasma']", "[id='farmstead_miasma_desc']", "torchlight_desc");
+attachClickListeners("[id='blazing']", "[id='blazing_desc']", "torchlight_desc");
+attachClickListeners("[id='haunting']", "[id='haunting_desc']", "torchlight_desc");
+attachClickListeners("[id='gleaming']", "[id='gleaming_desc']", "torchlight_desc");
+attachClickListeners("[id='splendorous']", "[id='splendorous_desc']", "torchlight_desc");
+attachClickListeners("[id='unbearable_reflection']", "[id='unbearable_reflection_desc']", "torchlight_desc");
+attachClickListeners("[id='reflection_of_decay']", "[id='reflection_of_decay_desc']", "torchlight_desc");
+attachClickListeners("[id='sanguine_reflection']", "[id='sanguine_reflection_desc']", "torchlight_desc");
+attachClickListeners("[id='reflection_obscura']", "[id='reflection_obscura_desc']", "torchlight_desc");
+
 });
 
 function attachHoverListeners(triggerSelector, targetSelector) {
