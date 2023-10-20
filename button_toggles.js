@@ -30,7 +30,7 @@ document.addEventListener('keydown', event => {
   }
 });
 
-/*Disease Box*/
+/*Resolve Box*/
 const ResolveBox = document.getElementById("resolve_box");
 const AfflictionBtn = document.getElementById("affliction_btn");
 const VirtueBtn = document.getElementById("virtue_btn");
@@ -51,6 +51,26 @@ document.addEventListener('keydown', event => {
     CloseAudio.currentTime = 0;
     CloseAudio.play();
     ResolveBox.style.display = 'none';
+  }
+})
+
+/*Torch Box*/
+const TorchBox = document.getElementById("torchlight_box");
+const TorchBtn = document.getElementById("torchlight_btn");
+
+TorchBtn.addEventListener('click' , function() {
+  PlayPageOpn();
+  TorchBox.style.display = 'block';
+});
+
+
+
+
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && TorchBox.style.display === 'block') {
+    CloseAudio.currentTime = 0;
+    CloseAudio.play();
+    TorchBox.style.display = 'none';
   }
 })
 
@@ -240,6 +260,7 @@ SettingIcon2.addEventListener('mouseleave', function() {SettingOverlay.style.dis
 
 const CloseLoot = document.getElementById('lootclose');
 const CloseResolve = document.getElementById('resolve_close');
+const CloseTorch = document.getElementById('torchlight_close');
 const DiseaseCloseBtn = document.getElementById("disease_close_btn"); 
 const CloseAudio = document.getElementById('page_close');
 CloseAudio.volume = 0.6;
@@ -261,7 +282,11 @@ CloseResolve.addEventListener('click', function() {
   CloseAudio.play();
   ResolveBox.style.display = 'none'
 })
-
+CloseTorch.addEventListener('click', function() {
+  CloseAudio.currentTime = 0;
+  CloseAudio.play();
+  TorchBox.style.display = 'none'
+})
 
 
 
