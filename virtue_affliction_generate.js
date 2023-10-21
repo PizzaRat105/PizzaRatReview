@@ -304,34 +304,6 @@ const VirtueAfflictionData = [
 ]
 
   
-const resolveColumn1 = document.createElement("div");
-resolveColumn1.className = "resolve_column resolve1";
-const resolveColumn2 = document.createElement("div");
-resolveColumn2.className = "resolve_column resolve2";
-
-VirtueAfflictionData.forEach((resolve) => {
-
-    const resolveElement = document.createElement("span");
-    const resolveIDName = resolve.name.toLowerCase().replace(/\s/g, '_');
-    const linebreak = document.createElement("br");
-    resolveElement.textContent = resolve.name
-
-        resolveElement.id = resolveIDName;
-        if(resolve.column === "1") {
-            resolveElement.className = "resolve_name"
-            resolveColumn1.appendChild(resolveElement);        
-            resolveColumn1.appendChild(linebreak);
-        }
-        if(resolve.column === "2") {
-            resolveElement.className = "resolve_name"
-            resolveColumn2.appendChild(resolveElement);        
-            resolveColumn2.appendChild(linebreak);
-        }
-});
-    
-ResolveMainContainer.appendChild(resolveColumn1);
-ResolveMainContainer.appendChild(resolveColumn2);
-
 function generateResolveStates(resolve) {
     const resolveIDName = resolve.name.toLowerCase().replace(/\s/g, '_');
     const resolveID = `${resolveIDName}_desc`;
