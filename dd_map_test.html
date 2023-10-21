@@ -7262,9 +7262,347 @@
       </div>
     <img src="images/Hero_boxes/panel_close.png" id="lootclose"><div id="gem_info_desc" class="general_desc gem_info_desc"><span class="buff">Gems</span> gain +1 Stack Limit if the <span class="highres">Geological Studyhall</span> <span class="crystalline">Color of Madness DLC</span> <span class="scouting">District</span> is built</div><div id="heirloom_trade_desc" class="general_desc heirloom_trade_desc"><span class="stealth">Heirloom Trading</span> <br>3 Crests - 1 Bust/Deed // 6 Crests - 1 Portrait <br>2 Busts/Deeds - 3 Crests // 3 Busts - 2 Deeds // 3 Deeds - 2 Busts<br>1 Portrait - 3 Crests // 2 Portraits - 3 Busts/Deeds <br>3 <span class="crystalline">Comet Shards</span> - 2 Crests/1 Deed/1 Bust // 6 <span class="crystalline">Comet Shards</span> - 1 Portrait </div></div>
 
-    <!--Districts-->
-    <div class="district_container" id="district_box">
-        <img src="images/Districts/Cartographer's_Camp.png" class="district_sprite">
+       <!--Districts-->
+    <div class = "district_container" id = "district_box">
+        <div class = "glossary_backdrop"></div>
+        <img src = "images/Hero_boxes/panel_close.png" class = "quirk_close" id = "district_closed">
+        <div class="district_sidenav">
+            <img src="images/Districts/the_red_hook_port.png" class="district_port" id="the_red_hook_port" loading="lazy">
+            <img src="images/Districts/bank_port.png" class="district_port" id="bank_port" loading="lazy">
+            <img src="images/Districts/cartographer's_camp_port.png" class="district_port" id="cartographer's_camp_port" loading="lazy">
+            <img src="images/Districts/granary_port.png" class="district_port" id="granary_port" loading="lazy">
+            <img src="images/Districts/puppet_theater_port.png" class="district_port" id="puppet_theater_port" loading="lazy">
+            <img src="images/Districts/sanguine_vintners_port.png" class="district_port" id="sanguine_vintners_port" loading="lazy">
+            <img src="images/Districts/house_of_the_yellow_hand_port.png" class="district_port" id="house_of_the_yellow_hand_port" loading="lazy">
+            <img src="images/Districts/altar_of_light_port.png" class="district_port" id="altar_of_light_port" loading="lazy">
+            <img src="images/Districts/training_ring_port.png" class="district_port" id="training_ring_port" loading="lazy">
+            <img src="images/Districts/athenaeum_port.png" class="district_port" id="athenaeum_port" loading="lazy">
+            <img src="images/Districts/performance_hall_port.png" class="district_port" id="performance_hall_port" loading="lazy">
+            <img src="images/Districts/outsiders_bonfire_port.png" class="district_port" id="outsiders_bonfire_port" loading="lazy">
+            <img src="images/Districts/the_mill_port.png" class="district_port" id="the_mill_port" loading="lazy">
+            <img src="images/Districts/geological_studyhall_port.png" class="district_port" id="geological_studyhall_port" loading="lazy">
+            <img src="images/Districts/tainted_well_port.png" class="district_port" id="tainted_well_port" loading="lazy">
+            <img src="images/Districts/miasmal_orchard_port.png" class="district_port" id="miasmal_orchard_port" loading="lazy">
+        </div>
+        <!--<div class = "ddlogo_text district_dlc_title_container crystalline">Color of Madness DLC</div>-->
+
+        <div class = "district_subcontainer" id = "the_red_hook">
+            <div class = "ddlogo_text district_dlc_title_container crimson_court">Crimson Court DLC</div>
+            <div class = "district_sprite_container" ><img src = "images/Districts/The_Red_Hook.png" class = "district_sprite"></div>
+            <div class = "ddlogo_text district_title_container ">The Red Hook</div>
+            <div class = "district_price_container">
+                <div class = "currency_container">
+                    <img src = "images/Districts/money_icon.png" class = "currency_icon"> <br>50000<br><span class = "highres">(25000)</span>
+                </div>
+                <div class = "currency_container">
+                    <img src = "images/Districts/crest_icon.png" class = "currency_icon"><br> 750
+                </div>
+                <div class = "currency_container">
+                    <img src = "images/Districts/currency.blueprint.icon.png" class = "currency_icon"><br>1
+                </div>
+            </div>
+            <div class = "district_information_container">
+                A monument, with no purpose except proclamation of one's dedication. <br> (Gives no benefits)
+            </div>
+            <div class = "district_notes_container">
+               <span class = "crimson_court">The Red Hook</span> is named after the development team behind <span class = "highres">Darkest Dungeon</span>. <br> There is an Achievement tied to building this District <br> <span class = "highres">"The Red Hook"</span>
+            </div>
+        </div>
+
+        <div class = "district_subcontainer" id = "bank">
+            <div class = "ddlogo_text district_dlc_title_container crimson_court">Crimson Court DLC</div>
+            <div class = "district_sprite_container" ><img src = "images/Districts/Bank.png" class = "district_sprite"></div>
+            <div class = "ddlogo_text district_title_container ">Bank</div>
+            <div class = "district_price_container">
+                <div class = "currency_container">
+                    <img src = "images/Districts/money_icon.png" class = "currency_icon"> <br>15000<br><span class = "highres">(0)</span>
+                </div>
+                <div class = "currency_container">
+                    <img src = "images/Districts/portrait_icon.png" class = "currency_icon"><br> 50
+                </div>
+                <div class = "currency_container">
+                    <img src = "images/Districts/currency.blueprint.icon.png" class = "currency_icon"><br>1
+                </div>
+            </div>
+            <div class = "district_information_container">
+                Interest gained on saved <span class = "highres">Gold</span>: 5% per week.
+            </div>
+        </div>
+
+        <div class = "district_subcontainer" id = "cartographer's_camp">
+            <div class = "ddlogo_text district_dlc_title_container crimson_court">Crimson Court DLC</div>
+            <div class = "district_sprite_container" ><img src = "images/Districts/Cartographer's_Camp.png" class = "district_sprite"></div>
+            <div class = "ddlogo_text district_title_container">Cartographer's Camp</div>
+            <div class = "district_price_container">
+                <div class = "currency_container">
+                    <img src = "images/Districts/money_icon.png" class = "currency_icon"> <br>5000<br><span class = "highres">(1000)</span>
+                </div>
+                <div class = "currency_container">
+                    <img src = "images/Districts/crest_icon.png" class = "currency_icon"><br> 300
+                </div>
+                <div class = "currency_container">
+                    <img src = "images/Districts/currency.blueprint.icon.png" class = "currency_icon"><br>1
+                </div>
+            </div>
+            <div class = "district_information_container">
+                All levels of <span class = "highres">Torchlight</span> are more beneficial:<br>
+                +50% <span class = "highres">Loot</span> Chance <br> +1% CRIT <br> +2.5% <span class = "scouting">Scouting</span> Chance <br>
+                +5% Chance <span class = "negative">Monsters</span> <span class = "scouting">Surprised</span> <br> -5% Chance Party <span class = "scouting">Surprised</span>
+            </div>
+        </div>
+
+        <div class = "district_subcontainer" id = "granary">
+            <div class = "ddlogo_text district_dlc_title_container crimson_court">Crimson Court DLC</div>
+            <div class = "district_sprite_container" ><img src = "images/Districts/Granary.png" class = "district_sprite"></div>
+            <div class = "ddlogo_text district_title_container">Granary</div>
+            <div class = "district_price_container">
+                <div class = "currency_container">
+                    <img src = "images/Districts/money_icon.png" class = "currency_icon"> <br>2500<br><span class = "highres">(0)</span>
+                </div>
+                <div class = "currency_container">
+                    <img src = "images/Districts/bust_icon.png" class = "currency_icon"><br> 60
+                </div>
+                <div class = "currency_container">
+                    <img src = "images/Districts/currency.blueprint.icon.png" class = "currency_icon"><br>1
+                </div>
+            </div>
+            <div class = "district_information_container">
+                +15% <span class = "heal">Healing</span> when Eating<br>Receive a small amount of Free <span class = "heal">Food</span> every week(4~10).
+            </div>
+            <div class = "district_notes_container">
+                The amount of Free <span class = "heal">Food</span> can be rerolled by exiting to the title screen and going back to the estate.
+            </div>
+        </div>
+        <div class = "district_subcontainer" id = "puppet_theater">
+            <div class = "ddlogo_text district_dlc_title_container crimson_court">Crimson Court DLC</div>
+            <div class = "district_sprite_container" ><img src = "images/Districts/Puppet_Theater.png" class = "district_sprite"></div>
+            <div class = "ddlogo_text district_title_container">Puppet Theater</div>
+            <div class = "district_price_container">
+                <div class = "currency_container">
+                    <img src = "images/Districts/money_icon.png" class = "currency_icon"> <br>5000<br><span class = "highres">(1000)</span>
+                </div>
+                <div class = "currency_container">
+                    <img src = "images/Districts/crest_icon.png" class = "currency_icon"><br> 200
+                </div>
+                <div class = "currency_container">
+                    <img src = "images/Districts/currency.blueprint.icon.png" class = "currency_icon"><br>1
+                </div>
+            </div>
+            <div class = "district_information_container">
+                Idle <span class = "stress">Stress relief</span> in town increased by 10 per week. <br>
+                (Default Idle <span class = "stress">Stress relief</span> is 5) 
+            </div>
+        </div>
+        <div class = "district_subcontainer" id = "sanguine_vintners">
+            <div class = "ddlogo_text district_dlc_title_container crimson_court">Crimson Court DLC</div>
+            <div class = "district_sprite_container" ><img src = "images/Districts/Sanguine_Vintners.png" class = "district_sprite"></div>
+            <div class = "ddlogo_text district_title_container">Sanguine Vintners</div>
+            <div class = "district_price_container">
+                <div class = "currency_container">
+                    <img src = "images/Districts/bust_icon.png" class = "currency_icon"><br> 80
+                </div>
+                <div class = "currency_container">
+                    <img src = "images/Districts/currency.blueprint.icon.png" class = "currency_icon"><br>1
+                </div>
+            </div>
+            <div class = "district_information_container">
+                2 bottles of <span class = "crimson_court">The Blood</span> brewed each week.
+            </div>
+            <div class = "district_notes_container">
+                Only buildable if the <span class="crimson_court">Crimson Court DLC</span> is enabled
+            </div>
+        </div>
+        <div class = "district_subcontainer" id = "house_of_the_yellow_hand">
+            <div class = "ddlogo_text district_dlc_title_container crimson_court">Crimson Court DLC</div>
+            <div class = "district_sprite_container" ><img src = "images/Districts/House_of_the_Yellow_Hand.png" class = "district_sprite"></div>
+            <div class = "ddlogo_text district_title_container">House of the Yellow Hand</div>
+            <div class = "district_price_container">
+                <div class = "currency_container">
+                    <img src = "images/Districts/money_icon.png" class = "currency_icon"> <br>5000<br><span class = "highres">(1000)</span>
+                </div>
+                <div class = "currency_container">
+                    <img src = "images/Districts/portrait_icon.png" class = "currency_icon"><br> 100
+                </div>
+                <div class = "currency_container">
+                    <img src = "images/Districts/currency.blueprint.icon.png" class = "currency_icon"><br>1
+                </div>
+            </div>
+            <div class = "district_information_container">
+                <span class = "highres">Bounty Hunter</span>, <span class = "highres">Grave Robber</span>, <span class = "highres">Highwayman</span>: <br>
+                +4% CRIT <br>
+                +5% <span class = "scouting">Scouting</span> Chance
+            </div>
+        </div>
+        <div class = "district_subcontainer" id = "altar_of_light">
+            <div class = "ddlogo_text district_dlc_title_container crimson_court">Crimson Court DLC</div>
+            <div class = "district_sprite_container" ><img src = "images/Districts/Altar_of_Light.png" class = "district_sprite"></div>
+            <div class = "ddlogo_text district_title_container">Altar of Light</div>
+            <div class = "district_price_container">
+                <div class = "currency_container">
+                    <img src = "images/Districts/money_icon.png" class = "currency_icon"> <br>5000<br><span class = "highres">(100)</span>
+                </div>
+                <div class = "currency_container">
+                    <img src = "images/Districts/deed_icon.png" class = "currency_icon"><br> 200
+                </div>
+                <div class = "currency_container">
+                    <img src = "images/Districts/currency.blueprint.icon.png" class = "currency_icon"><br>1
+                </div>
+            </div>
+            <div class = "district_information_container">
+                <span class = "highres">Crusader</span>, <span class = "highres">Vestal</span>, <span class = "highres">Flagellant</span>: <br>
+                +10% <span class = "stun">Stun</span> Resist<br>
+                +10% <span class = "heal">Healing</span> Skills
+            </div>
+        </div>
+        <div class = "district_subcontainer" id = "training_ring">
+            <div class = "ddlogo_text district_dlc_title_container crimson_court">Crimson Court DLC</div>
+            <div class = "district_sprite_container" ><img src = "images/Districts/Training_Ring.png" class = "district_sprite"></div>
+            <div class = "ddlogo_text district_title_container">Training Ring</div>
+            <div class = "district_price_container">
+                <div class = "currency_container">
+                    <img src = "images/Districts/money_icon.png" class = "currency_icon"> <br>5000<br><span class = "highres">(1000)</span>
+                </div>
+                <div class = "currency_container">
+                    <img src = "images/Districts/crest_icon.png" class = "currency_icon"><br> 300
+                </div>
+                <div class = "currency_container">
+                    <img src = "images/Districts/currency.blueprint.icon.png" class = "currency_icon"><br>1
+                </div>
+            </div>
+            <div class = "district_information_container">
+                <span class = "highres">Arbalest/Musketeer</span>, <span class = "highres">Man-at-Arms</span>, <span class = "highres">Houndmaster</span>: <br>
+                +4 ACC <br> +10% MAX HP
+            </div>
+        </div>
+        <div class = "district_subcontainer" id = "athenaeum">
+            <div class = "ddlogo_text district_dlc_title_container crimson_court">Crimson Court DLC</div>
+            <div class = "district_sprite_container" ><img src = "images/Districts/Athenaeum.png" class = "district_sprite"></div>
+            <div class = "ddlogo_text district_title_container">Athenaeum</div>
+            <div class = "district_price_container">
+                <div class = "currency_container">
+                    <img src = "images/Districts/money_icon.png" class = "currency_icon"> <br>2500<br><span class = "highres">(1000)</span>
+                </div>
+                <div class = "currency_container">
+                    <img src = "images/Districts/deed_icon.png" class = "currency_icon"><br> 110
+                </div>
+                <div class = "currency_container">
+                    <img src = "images/Districts/currency.blueprint.icon.png" class = "currency_icon"><br>1
+                </div>
+            </div>
+            <div class = "district_information_container">
+                <span class = "highres">Antiquarian</span>, <span class = "highres">Occultist</span>, <span class = "highres">Plague Doctor</span>: <br>
+                +15% <span class="blight">Blight</span> Skill Chance <br>
+                +15% <span class="debuff">Debuff</span> Skill Chance <br>
+                Interacting with <span class = "highres">Knowledge</span> <span class = "attack_type">Curios</span> Heals 15 <span class = "stress">Stress</span>.
+            </div>
+            <div class = "district_notes_container">
+                The  <span class = "stress">Stress Heal</span> from  <span class = "highres">Knowledge</span> <span class = "attack_type">Curios</span> only works if 1 of the 3 affected Heroes interact with the <span class = "attack_type">Curio</span>
+            </div>
+        </div>
+        <div class = "district_subcontainer" id = "performance_hall">
+            <div class = "ddlogo_text district_dlc_title_container crimson_court">Crimson Court DLC</div>
+            <div class = "district_sprite_container" ><img src = "images/Districts/Performance_Hall.png" class = "district_sprite"></div>
+            <div class = "ddlogo_text district_title_container">Performance Hall</div>
+            <div class = "district_price_container">
+                <div class = "currency_container">
+                    <img src = "images/Districts/money_icon.png" class = "currency_icon"> <br>2500<br><span class = "highres">(1000)</span>
+                </div>
+                <div class = "currency_container">
+                    <img src = "images/Districts/crest_icon.png" class = "currency_icon"><br> 75
+                </div>
+                <div class = "currency_container">
+                    <img src = "images/Districts/currency.blueprint.icon.png" class = "currency_icon"><br>1
+                </div>
+            </div>
+            <div class = "district_information_container">
+                All <span class = "highres">Jesters:</span> <br>
+                -10%  <span class = "stress">Stress</span> // +2 SPD <br> <span class = "highres">Finale</span>: +20% DMG
+            </div>
+        </div>
+        <div class = "district_subcontainer" id = "outsiders_bonfire">
+            <div class = "ddlogo_text district_dlc_title_container crimson_court">Crimson Court DLC</div>
+            <div class = "district_sprite_container" ><img src = "images/Districts/Outsiders_Bonfire.png" class = "district_sprite"></div>
+            <div class = "ddlogo_text district_title_container">Outsiders Bonfire</div>
+            <div class = "district_price_container">
+                <div class = "currency_container">
+                    <img src = "images/Districts/money_icon.png" class = "currency_icon"> <br>1000<br><span class = "highres">(1000)</span>
+                </div>
+                <div class = "currency_container">
+                    <img src = "images/Districts/crest_icon.png" class = "currency_icon"><br> 300
+                </div>
+                <div class = "currency_container">
+                    <img src = "images/Districts/currency.blueprint.icon.png" class = "currency_icon"><br>1
+                </div>
+            </div>
+            <div class = "district_information_container">
+                2 additional <span class = "highres">Respite Points</span> if you have at least one <span class = "highres">Abomination</span>, <span class = "highres">Hellion</span>, or <span class = "highres">Leper</span> in your party.
+            </div>
+            <div class = "district_notes_container">
+                Multiple of the affected Heroes do not increase the <span class = "highres">Respite Point</span> gain.
+            </div>
+        </div>
+        <div class = "district_subcontainer" id = "the_mill">
+            <div class = "ddlogo_text district_dlc_title_container crystalline">Color of Madness DLC</div>
+            <div class = "district_sprite_container" ><img src = "images/Districts/The_Mill.png" class = "district_sprite"></div>
+            <div class = "ddlogo_text district_title_container">The Mill</div>
+            <div class = "district_price_container">
+                <div class = "currency_container">
+                    <img src = "images/Districts/currency.memory.icon.png" class = "currency_icon"> <br>10
+                </div>
+            </div>
+            <div class = "district_information_container">
+                Heroes will no longer suffer from random hunger checks <br>
+                (<span class="crystalline">Memories</span> can be found in the <span class="crystalline">Endless Harvest</span> Quest.)	
+            </div>
+        </div>
+
+        <div class = "district_subcontainer" id = "geological_studyhall">
+            <div class = "ddlogo_text district_dlc_title_container crystalline">Color of Madness DLC</div>
+            <div class = "district_sprite_container" ><img src = "images/Districts/Geological_Studyhall.png" class = "district_sprite"></div>
+            <div class = "ddlogo_text district_title_container">Geological Studyhall</div>
+            <div class = "district_price_container">
+                <div class = "currency_container">
+                    <img src = "images/Districts/currency.shard.icon.png" class = "currency_icon"> <br>125
+                </div>
+            </div>
+            <div class = "district_information_container">
+                <span class = "buff">Gem</span> inventory stacking increased by 1 <br>
+                Affects Citrine, Jade, Onyx, Emerald, Sapphire, Ruby, Puzzling Trapezohedron
+            </div>
+        </div>
+        <div class = "district_subcontainer" id = "tainted_well">
+            <div class = "ddlogo_text district_dlc_title_container crystalline">Color of Madness DLC</div>
+            <div class = "district_sprite_container" ><img src = "images/Districts/Tainted_Well.png" class = "district_sprite"></div>
+            <div class = "ddlogo_text district_title_container">Tainted Well</div>
+            <div class = "district_price_container">
+                <div class = "currency_container">
+                    <img src = "images/Districts/currency.shard.icon.png" class = "currency_icon"> <br>99
+                </div>
+            </div>
+            <div class = "district_information_container">
+                <span class = "stress">Holy Water</span> <br> Increases <span class = "buff">Buff</span> amount from +33% to +45% <br>
+                <span class = "stress">Laudanum</span> <br> Adds a -40% <span class = "stress">Stress</span> <span class = "buff">Buff</span> (3 rds)
+            </div>
+        </div>
+        <div class = "district_subcontainer" id = "miasmal_orchard">
+            <div class = "ddlogo_text district_dlc_title_container crystalline">Color of Madness DLC</div>
+            <div class = "district_sprite_container" ><img src = "images/Districts/Miasmal_Orchard.png" class = "district_sprite"></div>
+            <div class = "ddlogo_text district_title_container">Miasmal Orchard</div>
+            <div class = "district_price_container">
+                <div class = "currency_container">
+                    <img src = "images/Districts/currency.shard.icon.png" class = "currency_icon"> <br>99
+                </div>
+            </div>
+            <div class = "district_information_container">
+                <span class="debuff">Medicinal Herbs</span><br> Adds a +25% <span class="disease">Disease</span> Resist <span class = "buff">Buff</span> <br>
+                <span class="blight">Antivenom</span><br> Adds a +33% <span class="blight">Blight</span> Resist <span class = "buff">Buff</span>
+            </div>
+        </div>
+        <img src="images/Hero_boxes/more_info_icon.png" class="info district_radiant_info" id="district_radiant_info" loading="lazy">
+        <div class="general_desc district_radiant_info_desc" id="district_radiant_info_desc">
+            The <span class = "highres">Gold</span> cost of most <span class = "scouting">Districts</span> in <span class = "highres">Radiant</span> mode is significantly reduced. The price in <span class = "highres">Radiant</span> mode is shown in parentheses.
+        </div>
+
     </div>
 
     <div class="resolve_container" id="resolve_box">
