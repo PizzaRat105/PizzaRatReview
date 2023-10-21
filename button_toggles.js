@@ -98,6 +98,8 @@ const DistrictClosed = document.getElementById('district_btn_closed')
 const DistrictOpenAudio = document.getElementById('district_open')
 const DistrictCloseAudio = document.getElementById('district_close')
 const DistrictOverlay = document.getElementById('district_overlay')
+const DistrictBox = document.getElementById('district_box');
+const CloseDistrict = document.getElementById('district_closed');
 DistrictCloseAudio.volume = 0.4;
 DistrictOpenAudio.volume = 0.4;
 
@@ -108,6 +110,7 @@ DistrictOpen.addEventListener('click' , function() {
   PlayBtnPress()
   DistrictClosed.style.display = 'block'
   DistrictOpen.style.display = 'none'
+  DistrictBox.style.display = 'none'
 })
 DistrictClosed.addEventListener('click' , function() {
   DistrictOpenAudio.currentTime - 0;
@@ -115,7 +118,27 @@ DistrictClosed.addEventListener('click' , function() {
   PlayBtnPress()
   DistrictClosed.style.display = 'none'
   DistrictOpen.style.display = 'block'
+  DistrictBox.style.display = 'block'
 })
+
+CloseDistrict.addEventListener('click' , function() {
+  CloseAudio.currentTime = 0;
+  CloseAudio.play();
+  DistrictClosed.style.display = 'block'
+  DistrictOpen.style.display = 'none'
+  DistrictBox.style.display = 'none'
+})
+
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && DistrictBox.style.display === 'block') {
+    DistrictCloseAudio.currentTime = 0;
+    DistrictCloseAudio.play();
+    PlayBtnPress()
+    DistrictClosed.style.display = 'block'
+    DistrictOpen.style.display = 'none'
+    DistrictBox.style.display = 'none';
+  }
+});
 
 DistrictOpen.addEventListener('mouseover' , function() {DistrictOverlay.style.display = 'block'})
 DistrictOpen.addEventListener('mouseleave', function() {DistrictOverlay.style.display = 'none'; });
@@ -287,6 +310,11 @@ CloseTorch.addEventListener('click', function() {
   CloseAudio.play();
   TorchBox.style.display = 'none'
 })
+
+
+
+
+
 
 
 
