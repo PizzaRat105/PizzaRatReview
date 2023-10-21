@@ -594,7 +594,7 @@ ReflectionIcon.id = "reflection_info"
 const ReflectionDesc = document.createElement("div");
 ReflectionDesc.className = "general_desc reflection_info_desc"
 ReflectionDesc.id = "reflection_info_desc"
-ReflectionDesc.innerHTML = `<span class = "crystalline">Reflections</span> are<span class = "thing"> Endgame Conditions</span> for the <span class = "crystalline">Endless Harvest</span> in <span class = "crystalline">The Farmstead</span> which take effect <br> once the player has progressed beyond 200 Kills. These effects stack on top of any other light conditions that are present.`;
+ReflectionDesc.innerHTML = `<span class = "crystalline">Reflections</span> are<span class = "thing"> Endgame Conditions</span> for the <span class = "crystalline">Endless Harvest</span> in <span class = "crystalline">The Farmstead</span> which take effect  once the player has progressed beyond 200 Kills. These effects stack on top of any other <span class = "highres">light conditions</span> that are present.`;
 
 
   TorchMainContainer.appendChild(ReflectionIcon);
