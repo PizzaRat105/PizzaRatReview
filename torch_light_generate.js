@@ -599,3 +599,25 @@ ReflectionDesc.innerHTML = `<span class = "crystalline">Reflections</span> are<s
 
   TorchMainContainer.appendChild(ReflectionIcon);
   TorchMainContainer.appendChild(ReflectionDesc);
+
+const TorchOverviewIcon = document.createElement("img");
+TorchOverviewIcon.src = "images/Hero_boxes/more_info_icon.png"
+TorchOverviewIcon.loading = "lazy"
+TorchOverviewIcon.className = "info torch_overview"
+TorchOverviewIcon.id = "torch_info"
+
+const TorchOverviewLabel = document.createElement("div");
+TorchOverviewLabel.className = "ddlogo_text torch_overview_label"
+TorchOverviewLabel.innerHTML = `Base Chances`
+const TorchOverviewDesc = document.createElement("div");
+TorchOverviewDesc.className = "general_desc torch_overview_desc"
+TorchOverviewDesc.id = "torch_info_desc"
+TorchOverviewDesc.innerHTML = `<span class="negative">Monsters</span> <span class="scouting">Surprised</span> Base Chance: 10% <br> <span class="highres">Heroes</span> <span class="scouting">Surprised</span> Base Chance: 10% <br> Base <span class="scouting">Scouting</span> Chance: 25%`;
+
+
+  TorchMainContainer.appendChild(ReflectionIcon);
+  TorchMainContainer.appendChild(ReflectionDesc);
+
+  TorchMainContainer.appendChild(TorchOverviewIcon);
+  TorchMainContainer.appendChild(TorchOverviewLabel);
+  TorchMainContainer.appendChild(TorchOverviewDesc);
