@@ -1941,6 +1941,8 @@ attachClickListeners("[id='rapturous']", "[id='rapturous_desc']", "resolve_desc"
 
  //Torch
 attachHoverListeners("[id='reflection_info']", "[id='reflection_info_desc']");
+ attachHoverListeners("[id='torch_info']", "[id='torch_info_desc']");
+
 attachClickListeners("[id='radiant_light']", "[id='radiant_light_desc']", "torchlight_desc");
 attachClickListeners("[id='dim_light']", "[id='dim_light_desc']", "torchlight_desc");
 attachClickListeners("[id='shadowy']", "[id='shadowy_desc']", "torchlight_desc");
