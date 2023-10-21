@@ -821,12 +821,40 @@ text-align: center;}
 .shieldbreaker_trinket_overview_label{position: absolute; top: 5.7vw; left: 36.5vw; font-size: 1.5vw;}
 
 
+
 /*Districts*/
 
-.district_container{ position: absolute; display: none;width: 38.3vw; height: 38.4vw; left: 9vw; top: 6.9vw;
-    background-image: url('images/Districts/district_background.png'); background-size: 38.3vw;}
+.district_container{ position: absolute; display: none;width:37.5vw; height: 38.4vw; left: 9vw; top: 6.9vw;
+    background-image: url('images/Districts/district_background.png');background-size: 37.5vw;}
+.district_port{display: flex; height: 5vw; margin: 0.3vw}
+.district_port:hover{filter: brightness(150%);}
+.district_sidenav{position: absolute; left: 37vw; top:0vw; width: 23vw;height:22.7vw; 
+display: flex; flex-direction: row; flex-wrap: wrap; background-color: black; justify-content: center;}
+.district_subcontainer{display: none;}
 
-.district_sprite{position: absolute; top: 4vw; left: 2vw; width: 16vw;}
+.district_dlc_title_container{position: absolute; top: 33.6vw; left: 1.4vw; width: 19vw; text-align: center; font-size: 2vw;}
+
+.district_sprite{max-width: 16vw; max-height: 16.2vw; display: flex;}
+.district_sprite_container{position: absolute; top: 6.5vw; left: 1.35vw; width: 19vw; height: 16.2vw; display: flex; justify-content: center;}
+.district_title_container{position: absolute; top: 23.5vw; left: 1.4vw; width: 19vw; text-align: center; font-size: 2vw;}
+
+.district_price_container{
+    position: absolute; top: 26.2vw; left: 1.85vw; width: 18.2vw; height:17vw; font-size: 1.5vw; font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167);
+    display: flex; justify-content: space-evenly;
+}
+.currency_container{ text-align:center;padding:0.5vw; height: 8vw;min-width: 6vw;}
+.currency_icon{width: 2vw; height:2vw;}
+
+.district_information_container{
+    position: absolute; top: 22.2vw; left: 20.3vw;height:16vw; width: 17vw; text-align: center; padding: 0.3vw;
+    font-size: 1.1vw; font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); line-height: 1.6vw;
+}
+.district_notes_container{
+    position: absolute; top: 9.7vw; left: 21vw;height:9.5vw; width: 16vw; text-align: center; padding: 0.3vw; 
+    font-size: 1.1vw; font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); line-height: 1.5vw;
+}
+.district_radiant_info{top: 23.5vw; left: 1.5vw; width:2.2vw;}
+.district_radiant_info_desc{position: absolute;top: 23.5vw; left: 4vw;max-width: 50vw; font-size: 1.1vw; line-height: 1.4vw;}
 
 /*Virtues and Afflictions*/
 .resolve_container{position:absolute; left: 8.5vw; top: 6.75vw; width: 75.2vw; height: 39vw; background-size: 75.2vw 39vw; background-image: url("images/Virtue_Affliction/resolve_check_bg.png");display: none;}
