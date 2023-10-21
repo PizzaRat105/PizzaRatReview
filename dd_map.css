@@ -876,8 +876,10 @@ text-align: center;}
 .torchlight_desc_margin{line-height: 2.5vw;}
 
 .reflection_info {top: 24.15vw; left: 37vw; width:2vw;}
-.reflection_info_desc{position: absolute;top: 26.5vw; left: 12vw;max-width: 50vw; font-size: 1.1vw; line-height: 1.4vw;}
-
+.reflection_info_desc{position: absolute;top: 24.2vw; left: 39.5vw;max-width: 40vw; font-size: 1.1vw; line-height: 1.4vw;}
+.torch_overview{top: 2.5vw; left: 20vw; width:2.2vw;}
+.torch_overview_label{position: absolute;top: 2.7vw; left: 22.5vw;font-size: 1.6vw; }
+.torch_overview_desc{position: absolute;top: 5vw; left: 20vw;max-width: 50vw; font-size: 1.1vw; line-height: 1.4vw;}
 
 /*Lower Right Button Styling*/
 .district_closed{position:absolute; top: 44.2vw; left: 69.3vw; width: 4vw; height: 4.7vw}
