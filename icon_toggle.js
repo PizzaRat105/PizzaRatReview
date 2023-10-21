@@ -1964,6 +1964,27 @@ attachClickListeners("[id='reflection_of_decay']", "[id='reflection_of_decay_des
 attachClickListeners("[id='sanguine_reflection']", "[id='sanguine_reflection_desc']", "torchlight_desc");
 attachClickListeners("[id='reflection_obscura']", "[id='reflection_obscura_desc']", "torchlight_desc");
 
+ 
+//DIstricts
+attachHoverListeners("[id='district_radiant_info']", "[id='district_radiant_info_desc']");
+
+attachClickListeners("[id='the_red_hook_port']", "[id='the_red_hook']", "district_subcontainer");
+attachClickListeners("[id='bank_port']", "[id='bank']", "district_subcontainer");
+attachClickListeners("[id='cartographer\\'s_camp_port']", "[id='cartographer\\'s_camp']", "district_subcontainer");
+attachClickListeners("[id='granary_port']", "[id='granary']", "district_subcontainer");
+attachClickListeners("[id='puppet_theater_port']", "[id='puppet_theater']", "district_subcontainer");
+attachClickListeners("[id='sanguine_vintners_port']", "[id='sanguine_vintners']", "district_subcontainer");
+attachClickListeners("[id='house_of_the_yellow_hand_port']", "[id='house_of_the_yellow_hand']", "district_subcontainer");
+attachClickListeners("[id='altar_of_light_port']", "[id='altar_of_light']", "district_subcontainer");
+attachClickListeners("[id='training_ring_port']", "[id='training_ring']", "district_subcontainer");
+attachClickListeners("[id='athenaeum_port']", "[id='athenaeum']", "district_subcontainer");
+attachClickListeners("[id='performance_hall_port']", "[id='performance_hall']", "district_subcontainer");
+attachClickListeners("[id='outsiders_bonfire_port']", "[id='outsiders_bonfire']", "district_subcontainer");
+attachClickListeners("[id='the_mill_port']", "[id='the_mill']", "district_subcontainer");
+attachClickListeners("[id='geological_studyhall_port']", "[id='geological_studyhall']", "district_subcontainer");
+attachClickListeners("[id='tainted_well_port']", "[id='tainted_well']", "district_subcontainer");
+attachClickListeners("[id='miasmal_orchard_port']", "[id='miasmal_orchard']", "district_subcontainer");
+
 });
 
 function attachHoverListeners(triggerSelector, targetSelector) {
