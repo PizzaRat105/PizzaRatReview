@@ -565,7 +565,7 @@ const SupplyItemData = [
             "(4 Food per hero, refreshes after battles) <br>",
             "With the Granary Crimson Court DLC District:",
             "4~10 additional Food given for every expedition",
-            "Heals! 10% MAX HP if manually consumed",
+            "+15% Healing from Food",
         ], 
         amount: "[Short: 18 / Medium: 24 / Long & Epic: 36]",
     },
@@ -827,6 +827,7 @@ function replaceSpecificSupplyItemDesc(description) {
     description = description.replace(/Debuff/g, '<span class="debuff">Debuff</span>');
 
     description = description.replace(/Shovel/g, '<span class="grey">Shovel</span>');
+    description = description.replace(/Healing/g, '<span class="heal">Healing</span>');
 
 
     description = description.replace(/Buffs/g, '<span class="buff">Buffs</span>');
