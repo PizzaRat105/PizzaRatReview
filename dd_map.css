@@ -908,6 +908,35 @@ display: flex; flex-direction: row; flex-wrap: wrap; background-color: black; ju
 .torch_overview_label{position: absolute;top: 2.7vw; left: 22.5vw;font-size: 1.6vw; }
 .torch_overview_desc{position: absolute;top: 5vw; left: 20vw;max-width: 50vw; font-size: 1.1vw; line-height: 1.4vw;}
 
+/*Town Events*/
+
+
+.town_event_container{ position: absolute; left: 8.5vw; top: 6.75vw; height: 38.7vw; width: 69.8vw; 
+    background-image: url("images/Town_Events/town_event_bg.png"); background-size: 69.8vw; display: none;}
+.town_event_container{ position:absolute; left: 8.5vw; top: 6.75vw; width: 75.2vw; height: 39vw; background-size: 75.2vw 39vw; background-image: url("images/Town_Events/town_event_bgalt.png");display: none;}
+
+.town_event_column{width: max-content; height: fit-content; position: absolute; top: 0.9vw; left: 32.5vw; font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1.4vw;font-weight: 500; line-height: 2.3vw; padding: 0.3vw; }
+.event_nav{position: absolute; left:74.8vw; top:3.5vw; text-align: start;}
+.event_banner{height:3vw;margin-bottom:3.5vw;}
+.event_banner:hover{filter: brightness(150%);}
+
+
+.event_info_container{font-size: 1.2vw;line-height: 1.8vw; left: 50vw;top:3vw; position: absolute; width:24.5vw;
+    font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167);font-weight: 500; display: block;
+    text-align: center; padding: 0.3vw 0.6vw 0.6vw 0.6vw; height:36vw}
+
+.event_img{width: 15vw;margin-bottom: 0.7vw;}
+.town_event_title{font-size: 2.2vw;margin-bottom: 1vw;}
+.town_event_subtitle{font-size: 1.6vw;margin-bottom: 1vw; }
+.event_origin{margin-top: 0.7vw; font-size: 2vw; }
+
+.town_event_sidenav{position: absolute; left: 37vw; top:0vw; width: 23vw;height:22.7vw; 
+display: flex; flex-direction: row; flex-wrap: wrap; background-color: black; justify-content: center;}
+.town_event_subcontainer{display: none;}
+
+.town_event_dlc_title_container{position: absolute; top: 33.6vw; left: 1.4vw; width: 19vw; text-align: center; font-size: 2vw;}
+.event_name:hover{filter: brightness(150%); cursor:pointer;}
+
 /*Lower Right Button Styling*/
 .district_closed{position:absolute; top: 44.2vw; left: 69.3vw; width: 4vw; height: 4.7vw}
 .district_open{position:absolute; top: 44.2vw; left: 69.3vw; width: 4vw; height: 4.7vw; display: none;}
