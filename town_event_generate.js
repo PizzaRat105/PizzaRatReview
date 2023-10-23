@@ -727,6 +727,7 @@ function generateTownEvents(event) {
 
   function replaceSpecificEventDesc(description) {
     description = description.replace(/Stress Relief/g, '<span class="stress">Stress Relief</span>');
+    description = description.replace(/Healing/g, '<span class="stress">Healing</span>');
     description = description.replace(/Heals/g, '<span class="stress">Heals</span>');
     description = description.replace(/Heal/g, '<span class="stress">Heal</span>');
     description = description.replace(/Stress/g, '<span class="stress">Stress</span>');
