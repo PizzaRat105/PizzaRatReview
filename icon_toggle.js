@@ -1985,6 +1985,80 @@ attachClickListeners("[id='geological_studyhall_port']", "[id='geological_studyh
 attachClickListeners("[id='tainted_well_port']", "[id='tainted_well']", "district_subcontainer");
 attachClickListeners("[id='miasmal_orchard_port']", "[id='miasmal_orchard']", "district_subcontainer");
 
+//Town Event
+
+attachClickListeners("[id='general_event_banner']", "[id='general_town_event_names']", "town_event_column", );
+attachClickListeners("[id='quest_event_banner']", "[id='quest_town_event_names']", "town_event_column", );
+attachClickListeners("[id='facility_event_banner']", "[id='facility_town_event_names']", "town_event_column", );
+attachClickListeners("[id='hero_event_banner']", "[id='hero_town_event_names']", "town_event_column", );
+attachClickListeners("[id='dlc_event_banner']", "[id='dlc_town_event_names']", "town_event_column", );
+
+attachClickListeners("[id='helping_hand']", "[id='helping_hand_box']", "event_info_container");
+attachClickListeners("[id='supply_run']", "[id='supply_run_box']", "event_info_container");
+attachClickListeners("[id='valiant_spirit']", "[id='valiant_spirit_box']", "event_info_container");
+attachClickListeners("[id='a_job_well_done']", "[id='a_job_well_done_box']", "event_info_container");
+attachClickListeners("[id='a_ray_of_sunlight']", "[id='a_ray_of_sunlight_box']", "event_info_container");
+attachClickListeners("[id='one_good_week']", "[id='one_good_week_box']", "event_info_container");
+attachClickListeners("[id='a_day_long_awaited']", "[id='a_day_long_awaited_box']", "event_info_container");
+attachClickListeners("[id='from_beyond']", "[id='from_beyond_box']", "event_info_container");
+attachClickListeners("[id='lost_shipment']", "[id='lost_shipment_box']", "event_info_container");
+attachClickListeners("[id='the_dark_is_rising']", "[id='the_dark_is_rising_box']", "event_info_container");
+attachClickListeners("[id='the_miserable_dark']", "[id='the_miserable_dark_box']", "event_info_container");
+attachClickListeners("[id='all_saints_day']", "[id='all_saints_day_box']", "event_info_container");
+attachClickListeners("[id='silence_in_the_crypts']", "[id='silence_in_the_crypts_box']", "event_info_container");
+attachClickListeners("[id='caregivers_convention']", "[id='caregivers_convention_box']", "event_info_container");
+attachClickListeners("[id='sunshine_in_the_thicket']", "[id='sunshine_in_the_thicket_box']", "event_info_container");
+attachClickListeners("[id='bumper_crop']", "[id='bumper_crop_box']", "event_info_container");
+attachClickListeners("[id='fresh_air_in_the_tunnels']", "[id='fresh_air_in_the_tunnels_box']", "event_info_container");
+attachClickListeners("[id='lost_and_found']", "[id='lost_and_found_box']", "event_info_container");
+attachClickListeners("[id='a_thief_in_the_night']", "[id='a_thief_in_the_night_box']", "event_info_container");
+attachClickListeners("[id='shrieker\\'s_prize']", "[id='shrieker\\'s_prize_box']", "event_info_container");
+attachClickListeners("[id='brigand_incursion']", "[id='brigand_incursion_box']", "event_info_container");
+attachClickListeners("[id='absent_abbot']", "[id='absent_abbot_box']", "event_info_container");
+attachClickListeners("[id='cell_cleaning']", "[id='cell_cleaning_box']", "event_info_container");
+attachClickListeners("[id='daylight_robbery']", "[id='daylight_robbery_box']", "event_info_container");
+attachClickListeners("[id='empty_kegs']", "[id='empty_kegs_box']", "event_info_container");
+attachClickListeners("[id='labour_force']", "[id='labour_force_box']", "event_info_container");
+attachClickListeners("[id='laundry_day']", "[id='laundry_day_box']", "event_info_container");
+attachClickListeners("[id='mardis_gras']", "[id='mardis_gras_box']", "event_info_container");
+attachClickListeners("[id='medical_breakthrough']", "[id='medical_breakthrough_box']", "event_info_container");
+attachClickListeners("[id='noisy_repairs']", "[id='noisy_repairs_box']", "event_info_container");
+attachClickListeners("[id='nomad_new_year']", "[id='nomad_new_year_box']", "event_info_container");
+attachClickListeners("[id='town_fair']", "[id='town_fair_box']", "event_info_container");
+
+attachClickListeners("[id='a_gibbous_moon']", "[id='a_gibbous_moon_box']", "event_info_container");
+attachClickListeners("[id='antique_roadshow']", "[id='antique_roadshow_box']", "event_info_container");
+attachClickListeners("[id='archery_tournament']", "[id='archery_tournament_box']", "event_info_container");
+attachClickListeners("[id='call_of_the_crusade']", "[id='call_of_the_crusade_box']", "event_info_container");
+attachClickListeners("[id='eat_the_rich']", "[id='eat_the_rich_box']", "event_info_container");
+attachClickListeners("[id='holy_gathering']", "[id='holy_gathering_box']", "event_info_container");
+attachClickListeners("[id='idle_busking']", "[id='idle_busking_box']", "event_info_container");
+attachClickListeners("[id='laying_low']", "[id='laying_low_box']", "event_info_container");
+attachClickListeners("[id='leper_colony']", "[id='leper_colony_box']", "event_info_container");
+attachClickListeners("[id='militia_training']", "[id='militia_training_box']", "event_info_container");
+attachClickListeners("[id='rats_among_us']", "[id='rats_among_us_box']", "event_info_container");
+attachClickListeners("[id='revelry']", "[id='revelry_box']", "event_info_container");
+attachClickListeners("[id='rumour_of_riches']", "[id='rumour_of_riches_box']", "event_info_container");
+attachClickListeners("[id='the_plague']", "[id='the_plague_box']", "event_info_container");
+attachClickListeners("[id='wyrd_council']", "[id='wyrd_council_box']", "event_info_container");
+attachClickListeners("[id='cornerstone']", "[id='cornerstone_box']", "event_info_container");
+attachClickListeners("[id='blood_pilgrimage']", "[id='blood_pilgrimage_box']", "event_info_container");
+attachClickListeners("[id='blood_scourge']", "[id='blood_scourge_box']", "event_info_container");
+attachClickListeners("[id='a_maddening_whine']", "[id='a_maddening_whine_box']", "event_info_container");
+attachClickListeners("[id='a_veil_lifted']", "[id='a_veil_lifted_box']", "event_info_container");
+attachClickListeners("[id='heresy_in_the_blood']", "[id='heresy_in_the_blood_box']", "event_info_container");
+attachClickListeners("[id='the_town_is_abuzz']", "[id='the_town_is_abuzz_box']", "event_info_container");
+attachClickListeners("[id='the_lights']", "[id='the_lights_box']", "event_info_container");
+attachClickListeners("[id='experienced_hero_for_hire']", "[id='experienced_hero_for_hire_box']", "event_info_container");
+attachClickListeners("[id='crystaline_focii']", "[id='crystaline_focii_box']", "event_info_container");
+attachClickListeners("[id='shard_harvest']", "[id='shard_harvest_box']", "event_info_container");
+attachClickListeners("[id='they_made_a_tonic']", "[id='they_made_a_tonic_box']", "event_info_container");
+attachClickListeners("[id='a_desert_wind']", "[id='a_desert_wind_box']", "event_info_container");
+attachClickListeners("[id='the_adder\\'s_kiss']", "[id='the_adder\\'s_kiss_box']", "event_info_container");
+attachClickListeners("[id='the_butcher\\'s_circus']", "[id='the_butcher\\'s_circus_box']", "event_info_container");
+attachClickListeners("[id='bloodthirsty_crowds']", "[id='bloodthirsty_crowds_box']", "event_info_container");
+
+
 });
 
 function attachHoverListeners(triggerSelector, targetSelector) {
