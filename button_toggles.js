@@ -151,6 +151,11 @@ const EventClosed = document.getElementById('town_event_closed')
 const EventOverlay = document.getElementById('event_overlay')
 const EventBox = document.getElementById('town_event_box');
 const ClosedEvent = document.getElementById('town_event_close');
+const TownEventGeneralBanner = document.getElementById('general_event_banner');
+const TownEventQuestBanner = document.getElementById('quest_event_banner');
+const TownEventFacilityBanner = document.getElementById('facility_event_banner');
+const TownEventHeroBanner = document.getElementById('hero_event_banner');
+const TownEventDLCBanner = document.getElementById('dlc_event_banner');
 
 EventOpen.addEventListener('click' , function() {
   PlayBtnPress()
@@ -169,6 +174,47 @@ EventClosed.addEventListener('click' , function() {
         container.style.display = 'none';
     });
 })
+
+TownEventGeneralBanner.addEventListener('click' , function() {
+ 
+const eventInfoContainers = document.querySelectorAll('.event_info_container');
+eventInfoContainers.forEach(function(container) {
+    container.style.display = 'none';
+});
+})
+TownEventQuestBanner.addEventListener('click' , function() {
+ 
+  const eventInfoContainers = document.querySelectorAll('.event_info_container');
+  eventInfoContainers.forEach(function(container) {
+      container.style.display = 'none';
+  });
+  })
+
+TownEventFacilityBanner.addEventListener('click' , function() {
+ 
+const eventInfoContainers = document.querySelectorAll('.event_info_container');
+eventInfoContainers.forEach(function(container) {
+    container.style.display = 'none';
+});
+})
+
+TownEventHeroBanner.addEventListener('click' , function() {
+ 
+const eventInfoContainers = document.querySelectorAll('.event_info_container');
+eventInfoContainers.forEach(function(container) {
+    container.style.display = 'none';
+});
+})
+
+TownEventDLCBanner.addEventListener('click' , function() {
+ 
+const eventInfoContainers = document.querySelectorAll('.event_info_container');
+eventInfoContainers.forEach(function(container) {
+    container.style.display = 'none';
+});
+})
+
+
 
 document.addEventListener('keydown', event => {
   if (event.key === 'Escape' && EventBox.style.display === 'block') {
