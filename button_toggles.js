@@ -149,16 +149,42 @@ DistrictClosed.addEventListener('mouseleave', function() {DistrictOverlay.style.
 const EventOpen = document.getElementById('town_event_open')
 const EventClosed = document.getElementById('town_event_closed')
 const EventOverlay = document.getElementById('event_overlay')
+const EventBox = document.getElementById('town_event_box');
+const ClosedEvent = document.getElementById('town_event_close');
 
 EventOpen.addEventListener('click' , function() {
   PlayBtnPress()
   EventClosed.style.display = 'block'
   EventOpen.style.display = 'none'
+  EventBox.style.display = 'none'
 })
 EventClosed.addEventListener('click' , function() {
   PlayBtnPress()
   EventClosed.style.display = 'none'
   EventOpen.style.display = 'block'
+  EventBox.style.display = 'block'
+  const eventInfoContainers = document.querySelectorAll('.event_info_container');
+
+    eventInfoContainers.forEach(function(container) {
+        container.style.display = 'none';
+    });
+})
+
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && EventBox.style.display === 'block') {
+    PlayBtnPress()
+    EventClosed.style.display = 'block'
+    EventOpen.style.display = 'none'
+    EventBox.style.display = 'none';
+  }
+});
+
+ClosedEvent.addEventListener('click' , function() {
+  CloseAudio.currentTime = 0;
+  CloseAudio.play();
+  EventClosed.style.display = 'block'
+  EventOpen.style.display = 'none'
+  EventBox.style.display = 'none'
 })
 
 EventOpen.addEventListener('mouseover' , function() {EventOverlay.style.display = 'block'})
