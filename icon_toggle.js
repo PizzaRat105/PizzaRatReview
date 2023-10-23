@@ -2047,7 +2047,7 @@ attachClickListeners("[id='blood_scourge']", "[id='blood_scourge_box']", "event_
 attachClickListeners("[id='a_maddening_whine']", "[id='a_maddening_whine_box']", "event_info_container");
 attachClickListeners("[id='a_veil_lifted']", "[id='a_veil_lifted_box']", "event_info_container");
 attachClickListeners("[id='heresy_in_the_blood']", "[id='heresy_in_the_blood_box']", "event_info_container");
-attachClickListeners("[id='the_town_is_abuzz']", "[id='the_town_is_abuzz_box']", "event_info_container");
+attachClickListeners("[id='the_town_is_abuzz!']", "[id='the_town_is_abuzz!_box']", "event_info_container");
 attachClickListeners("[id='the_lights']", "[id='the_lights_box']", "event_info_container");
 attachClickListeners("[id='experienced_hero_for_hire']", "[id='experienced_hero_for_hire_box']", "event_info_container");
 attachClickListeners("[id='crystaline_focii']", "[id='crystaline_focii_box']", "event_info_container");
