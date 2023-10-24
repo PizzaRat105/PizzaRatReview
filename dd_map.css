@@ -2,6 +2,7 @@
 @font-face {font-family:dd_logo ;src: url(fonts/DwarvenAxe\ BB\ W00\ Regular.ttf);}
 
 
+
 /*Blanket Styling*/
 *{box-sizing: border-box; background-repeat: no-repeat;position: relative;}
 body{margin: 0; padding: 0; background-color: black; cursor: url(images/dd_cursor.png), auto; overflow: hidden;
@@ -118,14 +119,46 @@ button{background: white; border: none; width:20px}
 /*General Box, Button and Backdrop Styling*/
 
 
-.crimson_backdrop{top: 16vw; left: 34vw;display: none;}
-.crimson_btn{top: 17.2vw; left: 35.4vw;}
+.crimson_backdrop{top: 20.2vw; left: 34vw;display: none;}
+.crimson_btn{top: 21.4vw; left: 35.4vw;}
 
-.madness_backdrop{top: 28.3vw; left: 32.9vw;display: none;}
-.madness_btn{top: 29.4vw; left: 34.2vw;}
+.crimson_enemy_backdrop{top: 16vw; left: 34vw;display: none;}
+.crimson_enemy_btn{top: 17.2vw; left: 35.8vw;}
 
-.gauntlet_backdrop{top: 5.7vw; left: 76.5vw; display: none;}
-.gauntlet_btn{top: 7.6vw; left: 78.2vw; }
+.crimson_curio_backdrop{top: 16vw; left: 38.2vw;display: none;}
+.crimson_curio_btn{top: 17.2vw; left: 40vw;}
+
+.crimson_boss_backdrop{top: 16vw; left: 42.4vw;display: none;}
+.crimson_boss_btn{top: 17.2vw; left: 44.2vw;}
+
+
+
+.madness_backdrop{top: 32.5vw; left: 32.7vw;display: none;}
+.madness_btn{top: 33.6vw; left: 34vw;}
+
+.madness_enemy_backdrop{top: 28.3vw; left: 32.9vw;display: none;}
+.madness_enemy_btn{top: 29.4vw; left: 34.7vw;}
+
+.madness_curio_backdrop{top: 28.3vw; left: 37.1vw;display: none;}
+.madness_curio_btn{top: 29.4vw; left: 38.9vw;}
+
+.madness_boss_backdrop{top: 28.3vw; left: 41.3vw;display: none;}
+.madness_boss_btn{top: 29.4vw; left: 43.1vw;}
+
+
+.gauntlet1_backdrop{top: 5.7vw; left: 76.5vw; display: none;}
+.gauntlet1_btn{top: 7.6vw; left: 78.2vw; }
+
+.gauntlet2_backdrop{top: 5.7vw; left: 80.5vw; display: none;}
+.gauntlet2_btn{top: 7.6vw; left: 82.2vw; }
+
+.gauntlet3_backdrop{top: 5.7vw; left: 84.5vw; display: none;}
+.gauntlet3_btn{top: 7.6vw; left: 86.2vw; }
+
+.gauntlet4_backdrop{top: 5.7vw; left: 88.5vw; display: none;}
+.gauntlet4_btn{top: 7.6vw; left: 90.2vw; }
+
+
 
 
 .ruins_enemy_backdrop{top: 11.4vw; left: 56.2vw; display: none;}
@@ -177,6 +210,9 @@ button{background: white; border: none; width:20px}
 .shared_boss_backdrop{top: 36.6vw; left: 85.6vw; display: none;}
 .shared_boss_btn{top: 37.8vw; left: 87.4vw;}
 
+.shared_spoiler_backdrop{top: 36.6vw; left: 89.8vw; display: none;}
+.shared_spoiler_btn{top: 38.5vw; left: 91.5vw;}
+
 
 .quest_box{width: 24vw;height: 38.4vw; position: absolute; display: none; left: 9vw; top: 6.9vw; padding-left:1vw;
     background-image: url('images/Boxes/quest_textbox.png'); background-size: 24vw;}
@@ -223,10 +259,7 @@ button{background: white; border: none; width:20px}
 .content_sidenav{position: absolute; left: 23vw; top:0vw; width: 10vw;height:20vw; 
 display: flex; flex-direction: row; flex-wrap: wrap; background-color: black; justify-content: center;}
 
-.sidenav9_long{height: 15.3vw; width: 14.6vw}
-.sidenav9{height: 24.3vw}
-.sidenav13{height: 24.7vw; width: 14.6vw}
-.sidenav10{height: 19.5vw; width: 14.6vw}
+
 
 .enemy_port{display: flex; height: 4vw; margin: 0.3vw}
 .enemy_port:hover{filter: brightness(150%);}
@@ -274,7 +307,10 @@ text-align: center;}
 
 .curio_port{display: flex; height: 4vw; margin: 0.3vw}
 .curio_port:hover{filter: brightness(150%);}
-
+.sidenav9_long{height: 14vw; width: 14.6vw}
+.sidenav9{height: 24.3vw}
+.sidenav13{height: 23.2vw; width: 14.6vw}
+.sidenav10{height: 18.6vw; width: 14.6vw}
 /*Boss Monster info*/
 .boss_box{width: 75vw; height: 40vw; position: absolute; left: 11vw; top: 6vw; display: none; font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167);
     background-image: url(images/Boss_monsters/boss_panel_template.png);background-size: 75vw;}
@@ -820,7 +856,6 @@ text-align: center;}
 .shieldbreaker_trinket_overview_label{position: absolute; top: 5.7vw; left: 36.5vw; font-size: 1.5vw;}
 
 
-
 /*Districts*/
 
 .district_container{ position: absolute; display: none;width:37.5vw; height: 38.4vw; left: 9vw; top: 6.9vw;
@@ -936,6 +971,10 @@ display: flex; flex-direction: row; flex-wrap: wrap; background-color: black; ju
 
 .town_event_dlc_title_container{position: absolute; top: 33.6vw; left: 1.4vw; width: 19vw; text-align: center; font-size: 2vw;}
 .event_name:hover{filter: brightness(150%); cursor:pointer;}
+
+
+
+
 
 /*Lower Right Button Styling*/
 .district_closed{position:absolute; top: 44.2vw; left: 69.3vw; width: 4vw; height: 4.7vw}
@@ -1212,6 +1251,4 @@ display: flex; flex-direction: row; flex-wrap: wrap; background-color: black; ju
     font-family: 'Ubuntu', sans-serif; color: rgb(206, 58, 33); font-size: 1vw; line-height: 1.5vw; font-weight: 500;
     text-align: center; padding:0.2vw; display: none;
 }
-
-
 
