@@ -341,7 +341,11 @@ function toggleElementDisplay(trigger, target, interactTarget) {
       targetId: "ancient_artifact_container",
       interactTargetId: "ancient_artifact_interact_container"
     },
-
+ {
+      triggerId: "ancestor's_knapsack_nav",
+      targetId: "ancestor's_knapsack_container",
+      interactTargetId: "ancestor's_knapsack_interact_container"
+    },
  ];
  
  elementMappings.forEach(mapping => {
