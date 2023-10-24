@@ -50,11 +50,12 @@ document.addEventListener('keydown', event => {
     if (event.key === 'Escape') {
       handleEscape(CrimsonBox, CrimsonBackdrop, EmbarkCrimson);
       handleEscape(MadnessBox, MadnessBackdrop, EmbarkMadness);
-      handleEscape(GauntletBox, GauntletBackdrop, EmbarkGauntlet);
+      handleEscape(GauntletBox, GauntletBackdrop1, EmbarkGauntlet, GauntletBackdrop2, GauntletBackdrop3, GauntletBackdrop4);
       handleEscape(RuinsBox1, Ruins1Backdrop, EmbarkDefault);
       handleEscape(RuinsBox2, Ruins2Backdrop, EmbarkDefault);
 
       handleEscape(BossBoxHub, Ruins3Backdrop, EmbarkDefault, Weald3Backdrop, Warrens3Backdrop, Cove3Backdrop, Hamlet3Backdrop);      
+      handleEscape(CrimsonBox, CrimsonBackdrop, EmbarkCrimson,Crimson1Backdrop,Crimson2Backdrop,Crimson3Backdrop);
 
 
       handleEscape(WealdBox1, Weald1Backdrop, EmbarkDefault);
@@ -67,6 +68,9 @@ document.addEventListener('keydown', event => {
       handleEscape(CoveBox2, Cove2Backdrop, EmbarkDefault);
       handleEscape(HamletBox1, Hamlet1Backdrop, EmbarkDefault);
       handleEscape(HamletBox2, Hamlet2Backdrop, EmbarkDefault);
+      handleEscape(BossBoxHub, Hamlet3Backdrop, EmbarkDefault);
+      handleEscape(BossBoxHub, Hamlet4Backdrop, EmbarkDefault);
+
 
       handleEscape(CircusBox);
       
@@ -95,6 +99,7 @@ document.addEventListener('keydown', event => {
         embarkElement.style.display = 'none';
     }
   }
+  HideBackdrops() 
 }
 
 const EmbarkDefault = document.getElementById('embark_button');
@@ -134,12 +139,15 @@ function toggleEmbarkBtnDDs() {
 
 function toggleBackdropVisibility(selectedBackdrop) {
   const allBackdrops = [
-    CrimsonBackdrop, MadnessBackdrop, GauntletBackdrop, 
+    CrimsonBackdrop, MadnessBackdrop,
+    GauntletBackdrop1, GauntletBackdrop2, GauntletBackdrop3, GauntletBackdrop4, 
     Ruins1Backdrop, Ruins2Backdrop, Ruins3Backdrop, 
     Weald1Backdrop, Weald2Backdrop, Weald3Backdrop, 
     Warrens1Backdrop, Warrens2Backdrop, Warrens3Backdrop, 
     Cove1Backdrop, Cove2Backdrop, Cove3Backdrop, 
-    Hamlet1Backdrop, Hamlet2Backdrop, Hamlet3Backdrop];
+    Hamlet1Backdrop, Hamlet2Backdrop, Hamlet3Backdrop,Hamlet4Backdrop,
+    Crimson1Backdrop, Crimson2Backdrop, Crimson3Backdrop,
+    Madness1Backdrop, Madness2Backdrop, Madness3Backdrop];
 
   allBackdrops.forEach(backdrop => {
       backdrop.style.display = 'none';
@@ -148,14 +156,42 @@ function toggleBackdropVisibility(selectedBackdrop) {
   selectedBackdrop.style.display = 'block';
 }
 
+function HideBackdrops() {
+  const allBackdrops = [
+    CrimsonBackdrop, MadnessBackdrop, 
+    GauntletBackdrop1, GauntletBackdrop2, GauntletBackdrop3, GauntletBackdrop4, 
+    Ruins1Backdrop, Ruins2Backdrop, Ruins3Backdrop, 
+    Weald1Backdrop, Weald2Backdrop, Weald3Backdrop, 
+    Warrens1Backdrop, Warrens2Backdrop, Warrens3Backdrop, 
+    Cove1Backdrop, Cove2Backdrop, Cove3Backdrop, 
+    Hamlet1Backdrop, Hamlet2Backdrop, Hamlet3Backdrop,Hamlet4Backdrop,
+    Crimson1Backdrop, Crimson2Backdrop, Crimson3Backdrop,
+    Madness1Backdrop, Madness2Backdrop, Madness3Backdrop];
+
+  allBackdrops.forEach(backdrop => {
+      backdrop.style.display = 'none';
+  });
+}
+
   const CircusBtn = document.getElementById('circus');
   const CircusBox = document.getElementById("circusbox");
   CircusBtn.addEventListener('click', () => toggleMissionBox(CircusBox));
 
 
   const CrimsonButton = document.getElementById('crimsonbutton');
+  const CrimsonBtn1 = document.getElementById('crimson1');
+  const CrimsonBtn2 = document.getElementById('crimson2');
+  const CrimsonBtn3 = document.getElementById('crimson3');
+
   const MadnessButton = document.getElementById('madnessbtn');
-  const GauntletButton = document.getElementById('gauntletbtn');
+  const MadnessBtn1 = document.getElementById('madness1');
+  const MadnessBtn2 = document.getElementById('madness2');
+  const MadnessBtn3 = document.getElementById('madness3');
+
+  const GauntletBtn1 = document.getElementById('gauntlet1');
+  const GauntletBtn2 = document.getElementById('gauntlet2');
+  const GauntletBtn3 = document.getElementById('gauntlet3');
+  const GauntletBtn4 = document.getElementById('gauntlet4');
 
   const RuinsBtn1 = document.getElementById('ruins1');
   const RuinsBtn2 = document.getElementById('ruins2');
@@ -176,11 +212,23 @@ function toggleBackdropVisibility(selectedBackdrop) {
   const HamletBtn1 = document.getElementById('shared1');
   const HamletBtn2 = document.getElementById('shared2');
   const HamletBtn3 = document.getElementById('shared3');
+  const HamletBtn4 = document.getElementById('shared4');
 
 
   const CrimsonBackdrop = document.querySelector('.crimson_backdrop');
+  const Crimson1Backdrop = document.querySelector('.crimson_enemy_backdrop')
+  const Crimson2Backdrop = document.querySelector('.crimson_curio_backdrop')
+  const Crimson3Backdrop = document.querySelector('.crimson_boss_backdrop')
+
   const MadnessBackdrop = document.querySelector('.madness_backdrop');
-  const GauntletBackdrop = document.querySelector('.gauntlet_backdrop');
+  const Madness1Backdrop = document.querySelector('.madness_enemy_backdrop')
+  const Madness2Backdrop = document.querySelector('.madness_curio_backdrop')
+  const Madness3Backdrop = document.querySelector('.madness_boss_backdrop')
+
+  const GauntletBackdrop1 = document.querySelector('.gauntlet1_backdrop');
+  const GauntletBackdrop2 = document.querySelector('.gauntlet2_backdrop');
+  const GauntletBackdrop3 = document.querySelector('.gauntlet3_backdrop');
+  const GauntletBackdrop4 = document.querySelector('.gauntlet4_backdrop');
 
   const Ruins1Backdrop = document.querySelector('.ruins_enemy_backdrop')
   const Ruins2Backdrop = document.querySelector('.ruins_curio_backdrop')
@@ -201,14 +249,14 @@ function toggleBackdropVisibility(selectedBackdrop) {
   const Hamlet1Backdrop = document.querySelector('.shared_enemy_backdrop');
   const Hamlet2Backdrop = document.querySelector('.shared_curio_backdrop');
   const Hamlet3Backdrop = document.querySelector('.shared_boss_backdrop');
-  
+  const Hamlet4Backdrop = document.querySelector('.shared_spoiler_backdrop');
 
 
 
   const CrimsonBox = document.getElementById('crimson_txtbox');
   const MadnessBox = document.getElementById('madness_txtbox');
   const GauntletBox = document.getElementById('gauntlet_txtbox');
-  const BossBoxHub= document.getElementById('boss_box_hub');
+  const BossBoxHub = document.getElementById('boss_box_hub');
 
   const RuinsBox1 = document.getElementById('ruinsbox1');
   const RuinsBox2 = document.getElementById('ruinsbox2');
@@ -242,8 +290,20 @@ function attachClickListener(button, box, embarkFunction, backdrop) {
 }
 
 attachClickListener(CrimsonButton, CrimsonBox, toggleEmbarkBtnCC, CrimsonBackdrop);
-attachClickListener(GauntletButton, GauntletBox, toggleEmbarkBtnDDs, GauntletBackdrop);
+attachClickListener(CrimsonBtn1, CrimsonBox, toggleEmbarkBtnCC, Crimson1Backdrop);
+attachClickListener(CrimsonBtn2, CrimsonBox, toggleEmbarkBtnCC, Crimson2Backdrop);
+attachClickListener(CrimsonBtn3, CrimsonBox, toggleEmbarkBtnCC, Crimson3Backdrop);
+
 attachClickListener(MadnessButton, MadnessBox, toggleEmbarkBtnCoM, MadnessBackdrop);
+attachClickListener(MadnessBtn1, MadnessBox, toggleEmbarkBtnCoM, Madness1Backdrop);
+attachClickListener(MadnessBtn2, MadnessBox, toggleEmbarkBtnCoM, Madness2Backdrop);
+attachClickListener(MadnessBtn3, MadnessBox, toggleEmbarkBtnCoM, Madness3Backdrop);
+
+attachClickListener(GauntletBtn1, GauntletBox, toggleEmbarkBtnDDs, GauntletBackdrop1);
+attachClickListener(GauntletBtn2, GauntletBox, toggleEmbarkBtnDDs, GauntletBackdrop2);
+attachClickListener(GauntletBtn3, GauntletBox, toggleEmbarkBtnDDs, GauntletBackdrop3);
+attachClickListener(GauntletBtn4, GauntletBox, toggleEmbarkBtnDDs, GauntletBackdrop4);
+
 
 attachClickListener(RuinsBtn1, RuinsBox1, toggleEmbarkBtn, Ruins1Backdrop);
 attachClickListener(RuinsBtn2, RuinsBox2, toggleEmbarkBtn, Ruins2Backdrop);
@@ -264,6 +324,9 @@ attachClickListener(CoveBtn3, BossBoxHub, toggleEmbarkBtn, Cove3Backdrop);
 attachClickListener(HamletBtn1, HamletBox1, toggleEmbarkBtn, Hamlet1Backdrop);
 attachClickListener(HamletBtn2, HamletBox2, toggleEmbarkBtn, Hamlet2Backdrop);
 attachClickListener(HamletBtn3, BossBoxHub, toggleEmbarkBtn, Hamlet3Backdrop);
+attachClickListener(HamletBtn4, BossBoxHub, toggleEmbarkBtn, Hamlet4Backdrop);
+
+
 
 
 
