@@ -1,3 +1,6 @@
+
+
+
 const ruinsCurioTopData = [
     { name: "alchemy_table", isCorridorCurio: true, title: "Alchemy Table", type: "Knowledge", forcedtype: "Knowledge"},
     { name: "altar_of_light", isCorridorCurio: true, title: "Altar of Light", type: "Worship", forcedtype: "Worship"},
@@ -65,6 +68,7 @@ const sharedCurioTopData = [
     { name: "stack_of_books", isCorridorCurio: true, title: "Stack of Books", type: "Knowledge", forcedtype: "Knowledge", isNotSharedCurio: true},
     { name: "unlocked_strongbox", isCorridorCurio: false, title: "Unlocked Strongbox", type: "Treasure", forcedtype: "Treasure"},
     { name: "ancient_artifact", isCorridorCurio: false, title: "Ancient Artifact", type: "Treasure", forcedtype: "Treasure", isSecretRoomCurio: true},
+    { name: "ancestor's_knapsack", isCorridorCurio: false, title: "Ancestor's Knapsack", type: "Treasure Haunted", forcedtype: "Treasure Haunted"},
 ]
 
 const RuinsCurioBox = document.getElementById("ruinsbox2")
@@ -104,7 +108,9 @@ areaCurioData.forEach(curio => {
         "Corvid's Curiosity (27.5%)",
         "Compulsive (20%)",
         "Curious (20%)",
-        "Irrational (7.5%)"
+        "Irrational (7.5%)",
+        "Crimson Curse - Craving (10%)",
+        "Crimson Curse - Wasting (25%)",
     ];
     
     interactions.forEach(interaction => {
@@ -157,6 +163,7 @@ areaCurioData.forEach(curio => {
     const worshipCurioTxt = document.createTextNode("Worship");
     const typelessCurioTxt = document.createTextNode("None");
     const knowledgeCurioTxt = document.createTextNode("Knowledge");
+    const knapsackCurioTxt = document.createTextNode("Can only be found in certain Darkest Level Dungeons");
 
     if (curio.isCorridorCurio) {
         curioTopContainer.appendChild(corridorCurioTxt);
@@ -172,6 +179,10 @@ areaCurioData.forEach(curio => {
     } 
     if (curio.isNotSharedCurio) {
         curioTopContainer.appendChild(isNotSharedCurioTxt);
+        curioTopContainer.appendChild(document.createElement("br"));
+    } 
+    if (curio.name ==="ancestor's_knapsack") {
+        curioTopContainer.appendChild(knapsackCurioTxt);
         curioTopContainer.appendChild(document.createElement("br"));
     } 
 
@@ -302,6 +313,12 @@ areaCurioData.forEach(curio => {
         curioTopContainer.appendChild(document.createElement("br"));
     }
     if (curio.type === "Treasure") {curioTopContainer.appendChild(treasureCurioTxt);
+        curioTopContainer.appendChild(document.createElement("br"));
+    }
+    if (curio.type === "Treasure Haunted") {
+        curioTopContainer.appendChild(treasureCurioTxt);
+        curioTopContainer.appendChild(document.createTextNode(" "));
+        curioTopContainer.appendChild(hauntedCurioTxt);
         curioTopContainer.appendChild(document.createElement("br"));
     }
     if (curio.type === "Unholy") {curioTopContainer.appendChild(unholyCurioTxt);
@@ -581,11 +598,16 @@ const curioContainer = document.createElement("div");
 curioContainer.id = `${curio.name}_container`
 curioContainer.style.display = "none"
 
-curioContainer.appendChild(curioTopContainer)
+curioContainer.appendChild(curioTopContainer) 
 curiobox.appendChild(curioContainer)
 
 });
 }
+
+
+
+
+
 
 
 
