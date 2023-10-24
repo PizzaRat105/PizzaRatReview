@@ -1034,6 +1034,8 @@ attachHoverListeners("[id='unlocked_strongbox_touch']", "[id='unlocked_strongbox
 
 attachHoverListeners("[id='ancient_artifact_key']", "[id='ancient_artifact_key_result']");
 attachHoverListeners("[id='ancient_artifact_touch']", "[id='ancient_artifact_touch_result']");
+ 
+attachHoverListeners("[id='ancestor\\'s_knapsack_touch']", "[id='ancestor\\'s_knapsack_touch_result']");
 
 
 
