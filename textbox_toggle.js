@@ -25,7 +25,9 @@ for (const mission_btn of mission_btns) {
 
 function toggleMissionBox(selectedQuestBox){
     const allQuestBox = 
-    [CrimsonBox, MadnessBox, GauntletBox, BossBoxHub, 
+    [CrimsonBox1, CrimsonBox2,
+      MadnessBox1, MadnessBox2, 
+      GauntletBox, BossBoxHub, 
       RuinsBox1, RuinsBox2, 
       WealdBox1, WealdBox2, 
       WarrensBox1, WarrensBox2, 
@@ -44,20 +46,22 @@ function toggleMissionBox(selectedQuestBox){
 const HideAudio = document.getElementById('page_close');
 HideAudio.volume = 0.6;
 
-
+const UniversalForcedInteractionExtraInfoSign = document.getElementById("universal_forced_interaction")
 
 document.addEventListener('keydown', event => {
     if (event.key === 'Escape') {
-      handleEscape(CrimsonBox, CrimsonBackdrop, EmbarkCrimson);
-      handleEscape(MadnessBox, MadnessBackdrop, EmbarkMadness);
-      handleEscape(GauntletBox, GauntletBackdrop1, EmbarkGauntlet, GauntletBackdrop2, GauntletBackdrop3, GauntletBackdrop4);
+      handleEscape(CrimsonBox1, CrimsonBackdrop, EmbarkCrimson);
+      handleEscape(MadnessBox1, MadnessBackdrop, EmbarkMadness);
+      handleEscape(MadnessBox1, MadnessBackdrop, EmbarkMadness,Madness1Backdrop,Madness2Backdrop,Madness3Backdrop);
+      handleEscape(MadnessBox2, MadnessBackdrop, EmbarkMadness,Madness1Backdrop,Madness2Backdrop,Madness3Backdrop);
       handleEscape(RuinsBox1, Ruins1Backdrop, EmbarkDefault);
       handleEscape(RuinsBox2, Ruins2Backdrop, EmbarkDefault);
 
       handleEscape(BossBoxHub, Ruins3Backdrop, EmbarkDefault, Weald3Backdrop, Warrens3Backdrop, Cove3Backdrop, Hamlet3Backdrop);      
-      handleEscape(CrimsonBox, CrimsonBackdrop, EmbarkCrimson,Crimson1Backdrop,Crimson2Backdrop,Crimson3Backdrop);
+      handleEscape(CrimsonBox1, CrimsonBackdrop, EmbarkCrimson,Crimson1Backdrop,Crimson2Backdrop,Crimson3Backdrop);
+      handleEscape(CrimsonBox2, CrimsonBackdrop, EmbarkCrimson,Crimson1Backdrop,Crimson2Backdrop,Crimson3Backdrop);
 
-
+      UniversalForcedInteractionExtraInfoSign.style.display = "none"
       handleEscape(WealdBox1, Weald1Backdrop, EmbarkDefault);
       handleEscape(WealdBox2, Weald2Backdrop, EmbarkDefault);
 
@@ -253,8 +257,12 @@ function HideBackdrops() {
 
 
 
-  const CrimsonBox = document.getElementById('crimson_txtbox');
-  const MadnessBox = document.getElementById('madness_txtbox');
+  const CrimsonBox1 = document.getElementById('crimsonbox1');
+  const CrimsonBox2 = document.getElementById('crimsonbox2');
+
+  const MadnessBox1 = document.getElementById('madnessbox1');
+  const MadnessBox2= document.getElementById('madnessbox2');
+
   const GauntletBox = document.getElementById('gauntlet_txtbox');
   const BossBoxHub = document.getElementById('boss_box_hub');
 
@@ -289,15 +297,15 @@ function attachClickListener(button, box, embarkFunction, backdrop) {
   });
 }
 
-attachClickListener(CrimsonButton, CrimsonBox, toggleEmbarkBtnCC, CrimsonBackdrop);
-attachClickListener(CrimsonBtn1, CrimsonBox, toggleEmbarkBtnCC, Crimson1Backdrop);
-attachClickListener(CrimsonBtn2, CrimsonBox, toggleEmbarkBtnCC, Crimson2Backdrop);
-attachClickListener(CrimsonBtn3, CrimsonBox, toggleEmbarkBtnCC, Crimson3Backdrop);
+attachClickListener(CrimsonButton, CrimsonBox1, toggleEmbarkBtnCC, CrimsonBackdrop);
+attachClickListener(CrimsonBtn1, CrimsonBox1, toggleEmbarkBtnCC, Crimson1Backdrop);
+attachClickListener(CrimsonBtn2, CrimsonBox2, toggleEmbarkBtnCC, Crimson2Backdrop);
+attachClickListener(CrimsonBtn3, CrimsonBox1, toggleEmbarkBtnCC, Crimson3Backdrop);
 
-attachClickListener(MadnessButton, MadnessBox, toggleEmbarkBtnCoM, MadnessBackdrop);
-attachClickListener(MadnessBtn1, MadnessBox, toggleEmbarkBtnCoM, Madness1Backdrop);
-attachClickListener(MadnessBtn2, MadnessBox, toggleEmbarkBtnCoM, Madness2Backdrop);
-attachClickListener(MadnessBtn3, MadnessBox, toggleEmbarkBtnCoM, Madness3Backdrop);
+attachClickListener(MadnessButton, MadnessBox1, toggleEmbarkBtnCoM, MadnessBackdrop);
+attachClickListener(MadnessBtn1, MadnessBox1, toggleEmbarkBtnCoM, Madness1Backdrop);
+attachClickListener(MadnessBtn2, MadnessBox2, toggleEmbarkBtnCoM, Madness2Backdrop);
+attachClickListener(MadnessBtn3, MadnessBox1, toggleEmbarkBtnCoM, Madness3Backdrop);
 
 attachClickListener(GauntletBtn1, GauntletBox, toggleEmbarkBtnDDs, GauntletBackdrop1);
 attachClickListener(GauntletBtn2, GauntletBox, toggleEmbarkBtnDDs, GauntletBackdrop2);
@@ -329,4 +337,54 @@ attachClickListener(HamletBtn4, BossBoxHub, toggleEmbarkBtn, Hamlet4Backdrop);
 
 
 
+// Function to check if any of the specified elements have display property set to 'block'
+function checkAllElementsHidden() {
+  var elementsToCheck = [
+      document.getElementById('warrensbox2'),
+      document.getElementById('ruinsbox2'),
+      document.getElementById('wealdbox2'),
+      document.getElementById('covebox2'),
+      document.getElementById('sharedbox2'),
+      document.getElementById('madnessbox2'),
+      document.getElementById('crimsonbox2')
+  ];
+
+  var allElementsHidden = true;
+
+  for (var i = 0; i < elementsToCheck.length; i++) {
+      if (window.getComputedStyle(elementsToCheck[i]).display !== 'none') {
+          allElementsHidden = false;
+          break; 
+      }
+  }
+
+  if (allElementsHidden) {
+UniversalForcedInteractionExtraInfoSign.style.display = "none"  }
+}
+
+document.body.addEventListener('click', function(event) {
+  checkAllElementsHidden();
+});
+
+RuinsBtn2.addEventListener('click', function() {
+  UniversalForcedInteractionExtraInfoSign.style.display = "block"
+});
+WealdBtn2.addEventListener('click', function() {
+  UniversalForcedInteractionExtraInfoSign.style.display = "block"
+});
+WarrensBtn2.addEventListener('click', function() {
+  UniversalForcedInteractionExtraInfoSign.style.display = "block"
+});
+CoveBtn2.addEventListener('click', function() {
+  UniversalForcedInteractionExtraInfoSign.style.display = "block"
+});
+HamletBtn2.addEventListener('click', function() {
+  UniversalForcedInteractionExtraInfoSign.style.display = "block"
+});
+CrimsonBtn2.addEventListener('click', function() {
+  UniversalForcedInteractionExtraInfoSign.style.display = "block"
+});
+MadnessBtn2.addEventListener('click', function() {
+  UniversalForcedInteractionExtraInfoSign.style.display = "block"
+});
 
