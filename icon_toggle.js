@@ -872,8 +872,6 @@ attachHoverListeners("[id='darkest_rushed_shot']", "[id='darkest_rushed_shot_des
 
 //Curios
 
-attachHoverListeners("[id='universal_forced_interaction']", "[id='universal_forced_interaction_desc']");
-
 //Ruins 
 
 attachHoverListeners("[id='alchemy_table_torch']", "[id='alchemy_table_torch_result']");
@@ -1036,6 +1034,61 @@ attachHoverListeners("[id='ancient_artifact_key']", "[id='ancient_artifact_key_r
 attachHoverListeners("[id='ancient_artifact_touch']", "[id='ancient_artifact_touch_result']");
  
 attachHoverListeners("[id='ancestor\\'s_knapsack_touch']", "[id='ancestor\\'s_knapsack_touch_result']");
+
+ //Court
+
+attachHoverListeners("[id='bloodflowers_blood']", "[id='bloodflowers_blood_result']");
+attachHoverListeners("[id='bloodflowers_holy_water']", "[id='bloodflowers_holy_water_result']");
+attachHoverListeners("[id='bloodflowers_shovel']", "[id='bloodflowers_shovel_result']");
+attachHoverListeners("[id='bloodflowers_touch']", "[id='bloodflowers_touch_result']");
+
+attachHoverListeners("[id='damned_fountain_holy_water']", "[id='damned_fountain_holy_water_result']");
+attachHoverListeners("[id='damned_fountain_torch']", "[id='damned_fountain_torch_result']");
+attachHoverListeners("[id='damned_fountain_touch']", "[id='damned_fountain_touch_result']");
+
+attachHoverListeners("[id='disturbing_diversion_shovel']", "[id='disturbing_diversion_shovel_result']");
+attachHoverListeners("[id='disturbing_diversion_touch']", "[id='disturbing_diversion_touch_result']");
+
+attachHoverListeners("[id='forgotten_delicacies_medicinal_herbs']", "[id='forgotten_delicacies_medicinal_herbs_result']");
+attachHoverListeners("[id='forgotten_delicacies_touch']", "[id='forgotten_delicacies_touch_result']");
+
+attachHoverListeners("[id='hooded_shrew_blood']", "[id='hooded_shrew_blood_result']");
+attachHoverListeners("[id='hooded_shrew_touch']", "[id='hooded_shrew_touch_result']");
+
+attachHoverListeners("[id='wizened_shrew_blood']", "[id='wizened_shrew_blood_result']");
+attachHoverListeners("[id='wizened_shrew_touch']", "[id='wizened_shrew_touch_result']");
+
+attachHoverListeners("[id='pile_of_strange_bones_bandage']", "[id='pile_of_strange_bones_bandage_result']");
+attachHoverListeners("[id='pile_of_strange_bones_blood']", "[id='pile_of_strange_bones_blood_result']");
+attachHoverListeners("[id='pile_of_strange_bones_touch']", "[id='pile_of_strange_bones_touch_result']");
+
+attachHoverListeners("[id='throbbing_coccoons_torch']", "[id='throbbing_coccoons_torch_result']");
+attachHoverListeners("[id='throbbing_coccoons_touch']", "[id='throbbing_coccoons_touch_result']");
+
+attachHoverListeners("[id='thronging_hive_torch']", "[id='thronging_hive_torch_result']");
+attachHoverListeners("[id='thronging_hive_touch']", "[id='thronging_hive_touch_result']");
+
+attachHoverListeners("[id='wine_crate_antivenom']", "[id='wine_crate_antivenom_result']");
+attachHoverListeners("[id='wine_crate_shovel']", "[id='wine_crate_shovel_result']");
+attachHoverListeners("[id='wine_crate_touch']", "[id='wine_crate_touch_result']");
+
+
+attachHoverListeners("[id='winemaker\\'s_reserve_touch']", "[id='winemaker\\'s_reserve_touch_result']");
+attachHoverListeners("[id='throbbing_coccoons_shared_touch']", "[id='throbbing_coccoons_shared_touch_result']");
+attachHoverListeners("[id='trinket_chest_touch']", "[id='trinket_chest_touch_result']");
+
+//Farmstead
+
+attachHoverListeners("[id='gleaming_shards_touch']", "[id='gleaming_shards_touch_result']");
+attachHoverListeners("[id='fresh_harvest_touch']", "[id='fresh_harvest_touch_result']");
+attachHoverListeners("[id='stockpile_touch']", "[id='stockpile_touch_result']");
+attachHoverListeners("[id='stockpile_key']", "[id='stockpile_key_result']");
+
+attachHoverListeners("[id='rotted_fare_touch']", "[id='rotted_fare_touch_result']");
+attachHoverListeners("[id='miller\\'s_hearth_touch']", "[id='miller\\'s_hearth_touch_result']");
+attachHoverListeners("[id='corrupted_harvest_touch']", "[id='corrupted_harvest_touch_result']");
+attachHoverListeners("[id='plentiful_bounty_touch']", "[id='plentiful_bounty_touch_result']");
+attachHoverListeners("[id='mildred_touch']", "[id='mildred_touch_result']");
 
 
 
