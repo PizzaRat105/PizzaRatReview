@@ -71,19 +71,51 @@ const sharedCurioTopData = [
     { name: "ancestor's_knapsack", isCorridorCurio: false, title: "Ancestor's Knapsack", type: "Treasure Haunted", forcedtype: "Treasure Haunted"},
 ]
 
+const CrimsonCourtCurioTopData = [
+    { name: "bloodflowers",  isbothcurio:true, title: "Bloodflowers", type: "Knowledge", forcedtype: "Knowledge"},
+    { name: "damned_fountain",  isbothcurio:true, title: "Damned Fountain", type: "Haunted Unholy Drink Fountain CCrave", forcedtype: "Haunted Unholy Drink Fountain"},
+    { name: "disturbing_diversion",  isbothcurio:true, title: "Disturbing Diversion", type: "Haunted Unholy Torture Reflective", forcedtype: "Haunted Unholy Torture Reflective"},
+    { name: "forgotten_delicacies",  isbothcurio:true, title: "Forgotten Delicacies", type: "Haunted Unholy Body Food CCrave", forcedtype: "Haunted Unholy Body Food"},
+    { name: "hooded_shrew",  isbothcurio:true, title: "Hooded Shrew", type: "Haunted Unholy", forcedtype: "Haunted Unholy"},
+    { name: "wizened_shrew",  isbothcurio:true, title: "Wizened Shrew", type: "Haunted Unholy", forcedtype: "Haunted Unholy"},
+    { name: "pile_of_strange_bones", isCorridorCurio: true,  title: "Pile of Strange Bones", type: "Haunted Unholy Knowledge", forcedtype: "Haunted Unholy Knowledge"},
+    { name: "throbbing_coccoons",  isbothcurio:true, title: "Throbbing Coccoons", type: "Knowledge CCrave", forcedtype: "Knowledge"},
+    { name: "thronging_hive",  isbothcurio:true, title: "Thronging Hive", type: "Knowledge CCrave", forcedtype: "Knowledge",},
+    { name: "wine_crate",  isbothcurio:true, title: "Wine Crate", type: "Drink Treasure CCrave", forcedtype: "Drink Treasure"},
+    { name: "winemaker's_reserve",  isbothcurio:true, title: "Winemaker's Reserve", type: "None", forcedtype: "None", isQuestCurio: true},
+    { name: "throbbing_coccoons_shared",isCorridorCurio:true,  title: "Throbbing Coccoons(Shared)", type: "None", forcedtype: "None",},
+    { name: "trinket_chest", isCorridorCurio: false, title: "Trinket Chest", type: "None", forcedtype: "None"},
+]
+
+const ColorOfMadnessCurioTopData = [
+    { name: "gleaming_shards", isCorridorCurio: false, title: "Gleaming Shards", type: "None", forcedtype: "None"},
+    { name: "fresh_harvest", isCorridorCurio: false, title: "Fresh Harvest", type: "None", forcedtype: "None"},
+    { name: "stockpile", isCorridorCurio: false, title: "Stockpile", type: "None", forcedtype: "None"},
+    { name: "rotted_fare", isCorridorCurio: false, title: "Rotted Fare", type: "None", forcedtype: "None"},
+    { name: "miller's_hearth", isCorridorCurio: false, title: "Miller's Hearth", type: "None", forcedtype: "None"},
+    { name: "corrupted_harvest", isCorridorCurio: false, title: "Corrupted Harvest", type: "None", forcedtype: "None"},
+    { name: "plentiful_bounty",isCorridorCurio: false, title: "Plentiful Bounty", type: "None", forcedtype: "None"},
+    { name: "mildred", isCorridorCurio: false, title: "Mildred", type: "None", forcedtype: "None", isMildred:true},
+]
+
+
 const RuinsCurioBox = document.getElementById("ruinsbox2")
 const WealdCurioBox = document.getElementById("wealdbox2")
 const WarrensCurioBox = document.getElementById("warrensbox2")
 const CoveCurioBox = document.getElementById("covebox2")
 const SharedCurioBox = document.getElementById("sharedbox2")
 
+const CrimsonCurioBox = document.getElementById("crimsonbox2")
+const MadnessCurioBox = document.getElementById("madnessbox2")
+
+
 CreateCurioTop(ruinsCurioTopData, RuinsCurioBox)
 CreateCurioTop(wealdCurioTopData, WealdCurioBox)
 CreateCurioTop(warrensCurioTopData, WarrensCurioBox)
 CreateCurioTop(coveCurioTopData, CoveCurioBox)
 CreateCurioTop(sharedCurioTopData, SharedCurioBox)
- 
-
+CreateCurioTop(CrimsonCourtCurioTopData, CrimsonCurioBox)
+CreateCurioTop(ColorOfMadnessCurioTopData, MadnessCurioBox)
 
 function CreateCurioTop(areaCurioData, curiobox) {
 areaCurioData.forEach(curio => {    
@@ -92,51 +124,46 @@ areaCurioData.forEach(curio => {
     curioTopContainer.id = `${curio.name}_top_container`;
 
 
-    const universalInteractionContainer = document.createElement("div");
-    universalInteractionContainer.className = "interaction_desc forced_universal"
-    universalInteractionContainer.id = `universal_forced_interaction_desc`;
 
-    const mainDescription = document.createTextNode("Universal Forced Interactions");
-    const subDescription = document.createTextNode("(Does not apply to Room Curios)");
-    universalInteractionContainer.appendChild(mainDescription);
-    universalInteractionContainer.appendChild(document.createElement("br"));
-    universalInteractionContainer.appendChild(subDescription);
-    universalInteractionContainer.appendChild(document.createElement("br"));
+const roomcuriospritebox = document.createElement("div")
+roomcuriospritebox.className = "room_curio_sprite_container"
 
 
-    const interactions = [
-        "Corvid's Curiosity (27.5%)",
-        "Compulsive (20%)",
-        "Curious (20%)",
-        "Irrational (7.5%)",
-        "Crimson Curse - Craving (10%)",
-        "Crimson Curse - Wasting (25%)",
-    ];
-    
-    interactions.forEach(interaction => {
-        const forcedContent = document.createElement("span");
-        forcedContent.className = "negative";
-        forcedContent.textContent = interaction;
-        const lineBreak = document.createElement("br");
-        universalInteractionContainer.appendChild(forcedContent);
-        universalInteractionContainer.appendChild(lineBreak);
-    });
-
-    curioTopContainer.appendChild(universalInteractionContainer)
+const corridorcuriospritebox = document.createElement("div")
+corridorcuriospritebox.className = "corridor_curio_sprite_container"
 
     const curioSpriteImg = document.createElement("img")
     curioSpriteImg.src = `images/curios/${curio.name}.png`
     curioSpriteImg.loading = "lazy"; 
 
+
+    if (curio.isbothcurio === true) {
+        curioSpriteImg.className = "curio_sprite";
+        const bothcuriospritebox = document.createElement("div")
+       bothcuriospritebox.className = "corridor_curio_sprite_container"
+       bothcuriospritebox.appendChild(curioSpriteImg)
+        curioTopContainer.appendChild(bothcuriospritebox);
+    } 
+    else if (curio.isCorridorCurio === true) {
+        curioSpriteImg.className = "curio_sprite";
+        const corridorcuriospritebox = document.createElement("div")
+        corridorcuriospritebox.className = "corridor_curio_sprite_container"
+        corridorcuriospritebox.appendChild(curioSpriteImg)
+        curioTopContainer.appendChild(corridorcuriospritebox);
+    }   
+    if (curio.isCorridorCurio === false) {
+        curioSpriteImg.className = "curio_sprite room_sprite";
+        const roomcuriospritebox = document.createElement("div")
+        roomcuriospritebox.className = "room_curio_sprite_container"
+        roomcuriospritebox.appendChild(curioSpriteImg)
+        curioTopContainer.appendChild(roomcuriospritebox);
+
+    } 
+
     
 
-    if (curio.isCorridorCurio) {curioSpriteImg.className = "curio_sprite";} 
-    else {curioSpriteImg.className = "curio_sprite room_sprite";}   
 
-    curioTopContainer.appendChild(curioSpriteImg);
     
-    curioTopContainer.appendChild(document.createElement("br"));
-
 
     const curioNameContainer = document.createElement("div");
     curioNameContainer.className = "curio_name ddlogo_text";
@@ -145,10 +172,13 @@ areaCurioData.forEach(curio => {
 
 
     const roomCurioTxt = document.createTextNode("Room Curio");
+    const questCurioTxt = document.createTextNode("Quest Curio");
     const secretRoomCurioTxt = document.createTextNode("Secret Room Curio");
     const corridorCurioTxt = document.createTextNode("Corridor Curio");
     const oldRoadCurioTxt = document.createTextNode("Old Road Curio");
     const isNotSharedCurioTxt = document.createTextNode("Appears in Ruins and Warrens");
+    const bothCurioTxt = document.createTextNode("Appears in Corridors and Rooms");
+    const cocoonSharedTxt = document.createTextNode("Appears in the 4 Main Regions when Infestation Levels are High.");
 
 
     const bodyCurioTxt = document.createTextNode("Body");
@@ -163,18 +193,30 @@ areaCurioData.forEach(curio => {
     const worshipCurioTxt = document.createTextNode("Worship");
     const typelessCurioTxt = document.createTextNode("None");
     const knowledgeCurioTxt = document.createTextNode("Knowledge");
+    const ccraveCurioTxt = document.createTextNode("CCrave");
     const knapsackCurioTxt = document.createTextNode("Can only be found in certain Darkest Level Dungeons");
 
-    if (curio.isCorridorCurio) {
+    if (curio.isCorridorCurio === true) {
         curioTopContainer.appendChild(corridorCurioTxt);
         curioTopContainer.appendChild(document.createElement("br"));
     } 
-    else {curioTopContainer.appendChild(roomCurioTxt);
+    else if (curio.isCorridorCurio === false){
+        curioTopContainer.appendChild(roomCurioTxt);
         curioTopContainer.appendChild(document.createElement("br"));
     }
 
+    if (curio.isbothcurio) {
+        curioTopContainer.appendChild(bothCurioTxt);
+        curioTopContainer.appendChild(document.createElement("br"));
+    } 
+
     if (curio.isOldRoadCurio) {
         curioTopContainer.appendChild(oldRoadCurioTxt);
+        curioTopContainer.appendChild(document.createElement("br"));
+    } 
+    
+    if (curio.isQuestCurio) {
+        curioTopContainer.appendChild(questCurioTxt);
         curioTopContainer.appendChild(document.createElement("br"));
     } 
     if (curio.isNotSharedCurio) {
@@ -183,6 +225,10 @@ areaCurioData.forEach(curio => {
     } 
     if (curio.name ==="ancestor's_knapsack") {
         curioTopContainer.appendChild(knapsackCurioTxt);
+        curioTopContainer.appendChild(document.createElement("br"));
+    } 
+    if (curio.name ==="throbbing_coccoons_shared") {
+        curioTopContainer.appendChild(cocoonSharedTxt);
         curioTopContainer.appendChild(document.createElement("br"));
     } 
 
@@ -206,6 +252,14 @@ areaCurioData.forEach(curio => {
         curioTopContainer.appendChild(hauntedCurioTxt);
         curioTopContainer.appendChild(document.createTextNode(" ")); 
         curioTopContainer.appendChild(unholyCurioTxt);
+        curioTopContainer.appendChild(document.createElement("br"));
+    } 
+    if (curio.type === "Haunted Unholy Knowledge") {
+        curioTopContainer.appendChild(hauntedCurioTxt);
+        curioTopContainer.appendChild(document.createTextNode(" ")); 
+        curioTopContainer.appendChild(unholyCurioTxt);        
+        curioTopContainer.appendChild(document.createTextNode(" ")); 
+        curioTopContainer.appendChild(knowledgeCurioTxt);
         curioTopContainer.appendChild(document.createElement("br"));
     } 
     if (curio.type === "Haunted Torture") {
@@ -291,6 +345,15 @@ areaCurioData.forEach(curio => {
         curioTopContainer.appendChild(document.createElement("br"));
     }
 
+    if (curio.type === "Drink Treasure CCrave") {
+        curioTopContainer.appendChild(drinkCurioTxt);
+        curioTopContainer.appendChild(document.createTextNode(" "));
+        curioTopContainer.appendChild(treasureCurioTxt);
+        curioTopContainer.appendChild(document.createTextNode(" "));
+        curioTopContainer.appendChild(ccraveCurioTxt);
+        curioTopContainer.appendChild(document.createElement("br"));
+    }
+
     if (curio.type === "Food") {curioTopContainer.appendChild(foodCurioTxt);
         curioTopContainer.appendChild(document.createElement("br"));
     }
@@ -312,7 +375,8 @@ areaCurioData.forEach(curio => {
     if (curio.type === "Torture") {curioTopContainer.appendChild(tortureCurioTxt);
         curioTopContainer.appendChild(document.createElement("br"));
     }
-    if (curio.type === "Treasure") {curioTopContainer.appendChild(treasureCurioTxt);
+    if (curio.type === "Treasure") {
+        curioTopContainer.appendChild(treasureCurioTxt);
         curioTopContainer.appendChild(document.createElement("br"));
     }
     if (curio.type === "Treasure Haunted") {
@@ -360,6 +424,56 @@ areaCurioData.forEach(curio => {
         curioTopContainer.appendChild(worshipCurioTxt);
         curioTopContainer.appendChild(document.createElement("br"));
     }
+
+    if (curio.type === "Knowledge Treasure") {
+        curioTopContainer.appendChild(knowledgeCurioTxt);
+        curioTopContainer.appendChild(document.createTextNode(" "));
+        curioTopContainer.appendChild(treasureCurioTxt);
+        curioTopContainer.appendChild(document.createElement("br"));
+    }
+    if (curio.type === "Knowledge CCrave") {
+        curioTopContainer.appendChild(knowledgeCurioTxt);
+        curioTopContainer.appendChild(document.createTextNode(" "));
+        curioTopContainer.appendChild(ccraveCurioTxt);
+        curioTopContainer.appendChild(document.createElement("br"));
+    }
+
+    if (curio.type === "Haunted Unholy Drink Fountain CCrave") {
+        curioTopContainer.appendChild(hauntedCurioTxt);
+        curioTopContainer.appendChild(document.createTextNode(" "));
+        curioTopContainer.appendChild(unholyCurioTxt);
+        curioTopContainer.appendChild(document.createTextNode(" "));
+        curioTopContainer.appendChild(drinkCurioTxt);
+        curioTopContainer.appendChild(document.createTextNode(" "));
+        curioTopContainer.appendChild(fountainCurioTxt);
+        curioTopContainer.appendChild(document.createTextNode(" "));
+        curioTopContainer.appendChild(ccraveCurioTxt);
+        curioTopContainer.appendChild(document.createElement("br"));
+    } 
+
+    if (curio.type === "Haunted Unholy Torture Reflective") {
+        curioTopContainer.appendChild(hauntedCurioTxt);
+        curioTopContainer.appendChild(document.createTextNode(" "));
+        curioTopContainer.appendChild(unholyCurioTxt);
+        curioTopContainer.appendChild(document.createTextNode(" "));
+        curioTopContainer.appendChild(tortureCurioTxt);
+        curioTopContainer.appendChild(document.createTextNode(" "));
+        curioTopContainer.appendChild(reflectiveCurioTxt);
+        curioTopContainer.appendChild(document.createElement("br"));
+    } 
+
+    if (curio.type === "Haunted Unholy Body Food CCrave") {
+        curioTopContainer.appendChild(hauntedCurioTxt);
+        curioTopContainer.appendChild(document.createTextNode(" "));
+        curioTopContainer.appendChild(unholyCurioTxt);
+        curioTopContainer.appendChild(document.createTextNode(" "));
+        curioTopContainer.appendChild(bodyCurioTxt);
+        curioTopContainer.appendChild(document.createTextNode(" "));
+        curioTopContainer.appendChild(foodCurioTxt);
+        curioTopContainer.appendChild(document.createTextNode(" "));
+        curioTopContainer.appendChild(ccraveCurioTxt);
+        curioTopContainer.appendChild(document.createElement("br"));
+    } 
 
 
     const bodyCurioQuirks = document.createElement("div")
@@ -504,6 +618,11 @@ if (curio.forcedtype === "Haunted Unholy" && curio.isCorridorCurio) {
     curioTopContainer.appendChild(hauntedCurioQuirks);
     curioTopContainer.appendChild(unholyCurioQuirks);
 } 
+
+if (curio.forcedtype === "Haunted Unholy" && curio.isbothcurio) {
+    curioTopContainer.appendChild(hauntedCurioQuirks);
+    curioTopContainer.appendChild(unholyCurioQuirks);
+} 
 if (curio.forcedtype === "Haunted Torture" && curio.isCorridorCurio) {
     curioTopContainer.appendChild(hauntedCurioQuirks);
     curioTopContainer.appendChild(tortureCurioQuirks);
@@ -560,6 +679,11 @@ if (curio.forcedtype === "Drink Treasure" && curio.isCorridorCurio) {
     curioTopContainer.appendChild(treasureCurioQuirks);
 }
 
+if (curio.forcedtype === "Drink Treasure" && curio.isbothcurio) {
+    curioTopContainer.appendChild(drinkCurioQuirks);
+    curioTopContainer.appendChild(treasureCurioQuirks);
+}
+
 if (curio.forcedtype === "Food" && curio.isCorridorCurio) {curioTopContainer.appendChild(foodCurioQuirks);}
 if (curio.forcedtype === "Fountain" && curio.isCorridorCurio) {curioTopContainer.appendChild(fountainCurioQuirks);}
 
@@ -578,7 +702,29 @@ if (curio.forcedtype === "Unholy Worship" && curio.isCorridorCurio) {
     curioTopContainer.appendChild(worshipCurioQuirks);
 }
 
+if (curio.forcedtype === "Haunted Unholy Drink Fountain" && curio.isbothcurio) {
+    curioTopContainer.appendChild(hauntedCurioQuirks);
+    curioTopContainer.appendChild(unholyCurioQuirks);
+    curioTopContainer.appendChild(drinkCurioQuirks);
+    curioTopContainer.appendChild(fountainCurioQuirks);
+}
+if (curio.forcedtype === "Haunted Unholy Torture Reflective" && curio.isbothcurio) {
+    curioTopContainer.appendChild(hauntedCurioQuirks);
+    curioTopContainer.appendChild(unholyCurioQuirks);
+    curioTopContainer.appendChild(tortureCurioQuirks);
+    curioTopContainer.appendChild(reflectiveCurioQuirks);
+}
+if (curio.forcedtype === "Haunted Unholy Body Food" && curio.isbothcurio) {
+    curioTopContainer.appendChild(hauntedCurioQuirks);
+    curioTopContainer.appendChild(unholyCurioQuirks);
+    curioTopContainer.appendChild(bodyCurioQuirks);
+    curioTopContainer.appendChild(foodCurioQuirks);
+}
 
+if (curio.forcedtype === "Haunted Unholy Knowledge" && curio.isCorridorCurio) {
+    curioTopContainer.appendChild(hauntedCurioQuirks);
+    curioTopContainer.appendChild(unholyCurioQuirks);
+}
 
 if (curio.forcedtype === "Worship" && curio.isCorridorCurio) {curioTopContainer.appendChild(worshipCurioQuirks);}
 if (curio.forcedtype === "Worship Reflective" && curio.isCorridorCurio) {
@@ -587,12 +733,7 @@ if (curio.forcedtype === "Worship Reflective" && curio.isCorridorCurio) {
 }
 
 
-const moreInfoImg = document.createElement("img")
-moreInfoImg.src = 'images/Hero_boxes/more_info_icon.png'
-moreInfoImg.className = "curio_info"
-moreInfoImg.id = "universal_forced_interaction"
 
-curioTopContainer.appendChild(moreInfoImg);
 
 const curioContainer = document.createElement("div");
 curioContainer.id = `${curio.name}_container`
@@ -603,9 +744,6 @@ curiobox.appendChild(curioContainer)
 
 });
 }
-
-
-
 
 
 
