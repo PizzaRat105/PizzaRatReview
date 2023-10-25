@@ -1,4 +1,14 @@
 const CurioPorts = document.getElementsByClassName('curio_port')
+const UniversalForcedInteractionExtraInfoIcon = document.getElementById("universal_forced_interaction")
+const UniversalForcedInteractionExtraInfoIconDesc = document.getElementById("universal_forced_interaction_desc")
+
+UniversalForcedInteractionExtraInfoIcon.addEventListener("mouseover", function() {
+   UniversalForcedInteractionExtraInfoIconDesc.style.display = "block"
+})
+UniversalForcedInteractionExtraInfoIcon.addEventListener("mouseleave", function() {
+   UniversalForcedInteractionExtraInfoIconDesc.style.display = "none"
+})
+
 for (const CurioPort of CurioPorts) {
    CurioPort.addEventListener('click', function() {
     PlayBtnPress();  })
@@ -11,6 +21,7 @@ function toggleElementDisplay(trigger, target, interactTarget) {
      if (interactTarget) {
        interactTarget.style.display = "block";
      }
+   UniversalForcedInteractionExtraInfoIcon.style.display = "block"
    });
  }
 
@@ -341,11 +352,141 @@ function toggleElementDisplay(trigger, target, interactTarget) {
       targetId: "ancient_artifact_container",
       interactTargetId: "ancient_artifact_interact_container"
     },
- {
+
+    {
       triggerId: "ancestor's_knapsack_nav",
       targetId: "ancestor's_knapsack_container",
       interactTargetId: "ancestor's_knapsack_interact_container"
     },
+    {
+      triggerId: "bloodflowers_nav",
+      targetId: "bloodflowers_container",
+      interactTargetId: "bloodflowers_interact_container"
+   },
+
+    {
+      triggerId: "damned_fountain_nav",
+      targetId: "damned_fountain_container",
+      interactTargetId: "damned_fountain_interact_container"
+   },
+
+    {
+      triggerId: "disturbing_diversion_nav",
+      targetId: "disturbing_diversion_container",
+      interactTargetId: "disturbing_diversion_interact_container"
+   },
+
+
+ {
+      triggerId: "forgotten_delicacies_nav",
+      targetId: "forgotten_delicacies_container",
+      interactTargetId: "forgotten_delicacies_interact_container"
+   },
+
+    {
+      triggerId: "hooded_shrew_nav",
+      targetId: "hooded_shrew_container",
+      interactTargetId: "hooded_shrew_interact_container"
+   },
+
+    {
+      triggerId: "wizened_shrew_nav",
+      targetId: "wizened_shrew_container",
+      interactTargetId: "wizened_shrew_interact_container"
+   },
+
+    {
+      triggerId: "pile_of_strange_bones_nav",
+      targetId: "pile_of_strange_bones_container",
+      interactTargetId: "pile_of_strange_bones_interact_container"
+   },
+
+    {
+      triggerId: "throbbing_coccoons_nav",
+      targetId: "throbbing_coccoons_container",
+      interactTargetId: "throbbing_coccoons_interact_container"
+   },
+
+    {
+      triggerId: "thronging_hive_nav",
+      targetId: "thronging_hive_container",
+      interactTargetId: "thronging_hive_interact_container"
+   },
+
+ {
+      triggerId: "wine_crate_nav",
+      targetId: "wine_crate_container",
+      interactTargetId: "wine_crate_interact_container"
+   },
+
+    {
+      triggerId: "winemaker's_reserve_nav",
+      targetId: "winemaker's_reserve_container",
+      interactTargetId: "winemaker's_reserve_interact_container"
+   },
+
+    {
+      triggerId: "throbbing_coccoons_shared_nav",
+      targetId: "throbbing_coccoons_shared_container",
+      interactTargetId: "throbbing_coccoons_shared_interact_container"
+   },
+
+    {
+      triggerId: "trinket_chest_nav",
+      targetId: "trinket_chest_container",
+      interactTargetId: "trinket_chest_interact_container"
+   },
+
+    {
+      triggerId: "gleaming_shards_nav",
+      targetId: "gleaming_shards_container",
+      interactTargetId: "gleaming_shards_interact_container"
+   },
+
+ {
+      triggerId: "fresh_harvest_nav",
+      targetId: "fresh_harvest_container",
+      interactTargetId: "fresh_harvest_interact_container"
+   },
+
+
+    {
+      triggerId: "stockpile_nav",
+      targetId: "stockpile_container",
+      interactTargetId: "stockpile_interact_container"
+   },
+
+     {
+      triggerId: "rotted_fare_nav",
+      targetId: "rotted_fare_container",
+      interactTargetId: "rotted_fare_interact_container"
+   },
+
+   {
+      triggerId: "miller's_hearth_nav",
+      targetId: "miller's_hearth_container",
+      interactTargetId: "miller's_hearth_interact_container"
+   },
+   
+    {
+      triggerId: "corrupted_harvest_nav",
+      targetId: "corrupted_harvest_container",
+      interactTargetId: "corrupted_harvest_interact_container"
+   },
+
+   {
+      triggerId: "plentiful_bounty_nav",
+      targetId: "plentiful_bounty_container",
+      interactTargetId: "plentiful_bounty_interact_container"
+   },
+
+   {
+      triggerId: "mildred_nav",
+      targetId: "mildred_container",
+      interactTargetId: "mildred_interact_container"
+   },
+
+
  ];
  
  elementMappings.forEach(mapping => {
@@ -355,6 +496,8 @@ function toggleElementDisplay(trigger, target, interactTarget) {
  
    toggleElementDisplay(trigger, target, interactTarget);
  });
+
+
 
 
 
