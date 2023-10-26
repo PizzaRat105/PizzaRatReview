@@ -557,7 +557,7 @@ text-align: center;}
 .negative{color: rgb(160, 43, 32);}
 
 .quirk_desc{position: absolute;  display: none;
-    border: 0.15vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.8);
+    border: 0.15vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.9);
     font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167);padding: 0.2vw 0.6vw 0.2vw 0.3vw; font-size: 1.3vw; line-height: 1.8vw; font-weight: 500;}
 
 .row1num1{top: 8.5vw; left:0.9vw;}
