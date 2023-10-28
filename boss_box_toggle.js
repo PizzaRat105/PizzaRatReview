@@ -56,6 +56,8 @@ for (const minionCloseBtn of minionCloseBtns){
 
 //Portrait Event Listeners
 
+const vanillaBossNav = document.getElementById("base_boss_nav")
+const dlcBossNav = document.getElementById("dlc_boss_nav")
 
 
 
@@ -164,8 +166,9 @@ RuinsBossButton.addEventListener('click', function() {
     bossLoreTitle.style.display = 'block';
     bossStrategyTitle.style.display = 'none';
 
+    vanillaBossNav.style.display = 'flex'
+    dlcBossNav.style.display = 'none'
 
-    
     NecromancerShared.style.display = 'block';
     NecromancerLore.style.display = 'block';
     NecromancerAppInfo.style.display = 'block';
@@ -293,6 +296,9 @@ WealdBossButton.addEventListener('click', function() {
     hideAllBossInfo()
     bossLoreTitle.style.display = 'block';
     bossStrategyTitle.style.display = 'none';
+
+    vanillaBossNav.style.display = 'flex'
+    dlcBossNav.style.display = 'none'
 
     
     HagShared.style.display = 'block';
@@ -493,6 +499,9 @@ WarrensBossButton.addEventListener('click', function() {
     bossLoreTitle.style.display = 'block';
     bossStrategyTitle.style.display = 'none';
 
+    vanillaBossNav.style.display = 'flex'
+    dlcBossNav.style.display = 'none'
+
     
     SwinePrinceShared.style.display = 'block';
     SwinePrinceLore.style.display = 'block';
@@ -592,9 +601,11 @@ const FleshChampInfo = document.getElementById("flesh_champ_info")
 FleshPortrait.addEventListener('click', function() {
     FleshShared.style.display = 'block';
     FleshLore.style.display = 'block';
-    FleshAppInfo.style.display = 'block';
     FleshVetInfo.style.display = 'none';
-    FleshChampInfo.style.display = 'none'
+    FleshChampInfo.style.display = 'none'    
+    FleshAppInfo.style.display = 'block';
+    FleshHeadAppStats.style.display = 'block'
+
 }) 
 
 FleshAppBtn.addEventListener('click', function() {
@@ -765,6 +776,9 @@ CoveBossButton.addEventListener('click', function() {
     bossLoreTitle.style.display = 'block';
     bossStrategyTitle.style.display = 'none';
 
+    vanillaBossNav.style.display = 'flex'
+    dlcBossNav.style.display = 'none'
+
     
     SirenShared.style.display = 'block';
     SirenLore.style.display = 'block';
@@ -892,6 +906,9 @@ SharedBossButton.addEventListener('click', function() {
     hideAllBossInfo()
     bossLoreTitle.style.display = 'block';
     bossStrategyTitle.style.display = 'none';
+
+    vanillaBossNav.style.display = 'flex'
+    dlcBossNav.style.display = 'none'
 
     
     CollectorShared.style.display = 'block';
