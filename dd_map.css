@@ -334,12 +334,13 @@ text-align: center;}
 .boss_box{width: 75vw; height: 40vw; position: absolute; left: 11vw; top: 6vw; display: none; font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167);
     background-image: url(images/Boss_monsters/boss_panel_template.png);background-size: 75vw;}
 /*Boss Sprite Styling*/
-.boss_sprite{position:absolute;top: 2vw; left: 2.1vw; max-width: 16vw; max-height:14.5vw;}
-.tall_boss{max-width: 15vw; max-height: 18vw;}
-.med_short_boss{top: 3vw}
-.short_boss{top:4.5vw}
-.thin_boss{left: 6vw;}
-.medium_boss{left: 3.5vw}
+
+.boss_sprite_container{
+    position:absolute;top: 1.5vw; left: 2.1vw; width: 16vw; height:15vw;
+    display: flex; text-align: center; justify-content: center; align-items: center; 
+}
+.boss_sprite{ max-width: 16vw; max-height:14.5vw; display: flex;}
+
 
 /*Flesh Sprite*/
 .flesh_sprite_container{position:absolute; left:1.5vw; top:3vw; height: 10vw; width: 19vw; }
@@ -387,12 +388,12 @@ text-align: center;}
 .boss_minion_additional_info_txt{top: 23.1vw; left: 14.9vw; line-height: 1.6vw;}
 
 /*Additional Minion info*/
-.minion_additional_info{width: 1.5vw; left:0.8vw; top: 1vw;}
-.minion_additional_info_txt{left:30.6vw; top: 23.5vw;}
+.minion_additional_info{width: 1.6vw; left:0.8vw; top: 1vw;}
+.minion_additional_info_txt{left:29.1vw; top: 19.6vw;}
 
 /*Minion Shared Lifelink info*/
-.lifelink_info{top: 17.3vw; left: 15vw; width: 1.5vw;}
-.lifelink_info_txt{top: 23.1vw; left: 28vw;}
+.lifelink_info{top: 17.3vw; left: 15.5vw; width: 1.5vw;}
+.lifelink_info_txt{top: 23.1vw; left: 28.5vw;}
 
 /*Trophy Info*/
 .trophy_info{top: 25.8vw; left: 17vw; width: 1.5vw;}
@@ -432,7 +433,7 @@ text-align: center;}
 .stat_header1{position: absolute; left: 0.5vw; width: 10.5vw; top: 0vw; height: 10vw; }
 .stat_header2{position: absolute; left: 13vw; width: 10.5vw; top: 0vw; height: 10vw; }
 .statline1{position: absolute; left: 5.5vw; width: 10vw; top: 0vw; height: 10vw; }
-.statline2{position: absolute; left: 19vw; width: 10vw; top: 0vw; height: 10vw; }
+.statline2{position: absolute; left: 19vw; width: 6vw; top: 0vw; height: 10vw; }
 
 /*Boss Minions*/
 .boss_minion_port_container{position: absolute; top: 19.4vw; left: 2vw; width:15vw; height:6vw;
@@ -450,7 +451,7 @@ text-align: center;}
 .boss_trinket:hover{filter: brightness(150%);}
 
 
-.boss_trinket_desc{position: absolute; top: 29.55vw; left: 12.85vw; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.8); padding:0.3vw 0.4vw 0.3vw 0.4vw;
+.boss_trinket_desc{position: absolute; top: 29.55vw; left: 12.85vw; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.9); padding:0.3vw 0.4vw 0.3vw 0.4vw;
     text-align: center; width:max-content; font-size: 1vw; line-height: 1.5vw; display: none;font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167);}
 
 .shrieker1{left:7vw;}
@@ -467,8 +468,8 @@ text-align: center;}
     font-size: 1.3vw; line-height: 2vw; font-weight: 500;}
 .boss_skills_header{position: absolute; left: 21.1vw; width: 20vw; top: 25.8vw;  text-align: center; font-size: 1.5vw;  }
 
-.boss_skill_desc_container{position: absolute; top: 28vw; left: 40vw; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.8); padding:0.3vw 0.4vw 0.3vw 0.4vw;
-    text-align: center; width:max-content;font-size: 0.9vw; line-height: 1.4vw; display: none; font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167);}
+.boss_skill_desc_container{position: absolute; top: 27.7vw; left: 37vw; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.9); padding:0.3vw 0.4vw 0.3vw 0.4vw;
+    text-align: center; width:max-content;font-size: 1vw; line-height: 1.5vw; display: none; font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167);}
 
 
 /*Boss Lore/Strategy Toggle*/
@@ -488,36 +489,43 @@ text-align: center;}
 
 
 /*Boss Minion Info*/
-.minion_stats{position:absolute;font-size: 1.4vw; line-height: 2.2vw; font-weight: 500; padding: 0.2vw; top: 1.4vw}
 .boss_minion_infobox{
-    position:absolute;top: 16.8vw; left:17vw; width: 39vw; height: 22vw;
-    background-image: url(images/Boss_monsters/minion_infobox_bg.png); background-size: contain;
+    position:absolute;top: 13vw; left:15.5vw; width: 47.5vw; height: 26vw;
+    background-image: url(images/Boss_monsters/minion_infobox_bg.png); background-size: contain; 
 }
-.boss_minion_infobox_shared{position:absolute;top: 16.8vw; left:17vw; width: 39vw; height: 22vw; }
+.boss_minion_infobox_shared{position:absolute;top: 13vw; left:15.5vw; width: 47.5vw; height: 26vw; }
 
-.minion_close{position: absolute; top:0.7vw; right: 0.6vw; width: 1.3vw;}
+.minion_close{position: absolute; top:0.7vw; right: 1.5vw; width: 1.5vw;}
 .minion_close:hover{filter: brightness(150%);}
 
-.boss_minion_sprite{position:absolute; top: 1vw; left: 1.5vw;  max-width: 8.5vw; max-height: 9vw; }
-.thin_minion{left: 3vw;}
-.small_thin_minion{left: 3vw; top: 1.5vw;}
 
-.boss_minion_name{position: absolute; top: 10.5vw;left:2vw; font-size: 2vw; line-height: 3vw; }
 
-.boss_minion_skill_container{position:absolute; top: 11.5vw; left: 23.5vw; }
-.minion_skill_desc{top: 28.6vw; left: 55.9vw;}
+.boss_minion_sprite_container{
+     width: 11vw; height:10.5vw;
+    display: flex; text-align: center; justify-content: center; align-items: center; top: 1.2vw; left: 1.5vw;
+}
+.boss_minion_sprite{ max-width: 9.5vw; max-height:10vw; display: flex; }
 
-.boss_minion_stat_header_container1{left: 11vw;}
-.boss_minion_stat_number_container1{left: 17.8vw;}
 
-.boss_minion_stat_header_container2{left: 25vw;}
-.boss_minion_stat_number_container2{left: 31.8vw;}
 
-.boss_minion_resist_header_container1{top: 13.7vw; left: 1vw;}
-.boss_minion_resist_header_container2{top: 13.7vw; left: 11vw;}
 
-.boss_minion_resist_number_container1{top: 13.7vw; left: 6vw;}
-.boss_minion_resist_number_container2{top: 13.7vw; left: 16.8vw;}
+.boss_minion_name{position: absolute; top: 12.1vw;left:1.5vw; font-size: 2vw; line-height: 2.4vw; width: 11vw; text-align: center; }
+.minion_stats{position:absolute;font-size: 1.6vw; line-height: 2.5vw; font-weight: 500; padding: 0.2vw; top: 1vw}
+
+.boss_minion_skill_container{position:absolute; top: 12.5vw; left: 28.5vw; line-height: 2.5vw;}
+.minion_skill_desc{top: 26vw; left: 57.5vw; max-width: 31vw;}
+
+.boss_minion_stat_header_container1{left: 13.5vw;}
+.boss_minion_stat_number_container1{left: 20.3vw;}
+
+.boss_minion_stat_header_container2{left: 28.5vw;}
+.boss_minion_stat_number_container2{left: 35.5vw;}
+
+.boss_minion_resist_header_container1{top: 17vw; left: 2vw;}
+.boss_minion_resist_header_container2{top: 17vw; left: 13.5vw;}
+
+.boss_minion_resist_number_container1{top: 17vw; left: 7.5vw;}
+.boss_minion_resist_number_container2{top: 17vw; left: 20.3vw;}
 
 
 
