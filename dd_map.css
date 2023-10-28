@@ -451,17 +451,17 @@ text-align: center;}
 .boss_trinket:hover{filter: brightness(150%);}
 
 
-.boss_trinket_desc{position: absolute; top: 29.55vw; left: 11.85vw; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.9); padding:0.3vw 0.4vw 0.3vw 0.4vw;
+.boss_trinket_desc{position: absolute; top: 31.5vw; left: 10.9vw; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.9); padding:0.3vw 0.4vw 0.3vw 0.4vw;
     text-align: center; width:max-content; font-size: 1vw; line-height: 1.5vw; display: none;font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167);}
 
-.shrieker1{left:7vw;}
-.shrieker2{left:10.87vw;}
-.shrieker3{left:14.8vw;}
-.shrieker4{left:18.7vw;}
-.bosstrinket1{left:5.05vw;}
-.bosstrinket2{left:9vw;}
-.bosstrinket4{left:16.8vw;}
-.bosstrinket5{left:20.7vw;}
+.shrieker1{left:6.1vw;}
+.shrieker2{left:9.3vw;}
+.shrieker3{left:12.5vw;}
+.shrieker4{left:15.7vw;}
+.bosstrinket1{left:4.5vw;}
+.bosstrinket2{left:7.7vw;}
+.bosstrinket4{left:14.1vw;}
+.bosstrinket5{left:17.3vw;}
 /*Boss Skills*/
 
 .boss_skill_container{position: absolute; top: 27.9vw; left: 20.5vw; width:22vw; height:10vw; 
