@@ -1099,46 +1099,27 @@ attachHoverListeners("[id='lifelink_info']", "[id='lifelink_info_desc']");
 attachHoverListeners("[id='trophy_info']", "[id='trophy_info_desc']");
 
 //Boss Specific Info
-attachHoverListeners("[id='prophet_additional_info_app']", "[id='prophet_additional_info_desc']");
-attachHoverListeners("[id='prophet_additional_info_vet']", "[id='prophet_additional_info_desc']");
-attachHoverListeners("[id='prophet_additional_info_champ']", "[id='prophet_additional_info_desc']");
 
-attachHoverListeners("[id='brigand_pounder_additional_info_app']", "[id='brigand_pounder_additional_info_desc']");
-attachHoverListeners("[id='brigand_pounder_additional_info_vet']", "[id='brigand_pounder_additional_info_desc']");
-attachHoverListeners("[id='brigand_pounder_additional_info_champ']", "[id='brigand_pounder_additional_info_desc']");
+attachHoverListeners("[id='prophet_additional_info']", "[id='prophet_additional_info_desc']");
 
-attachHoverListeners("[id='shrieker_additional_info_app']", "[id='shrieker_additional_info_desc']");
-attachHoverListeners("[id='shrieker_additional_info_vet']", "[id='shrieker_additional_info_desc']");
-attachHoverListeners("[id='shrieker_additional_info_champ']", "[id='shrieker_additional_info_desc']");
+attachHoverListeners("[id='brigand_pounder_additional_info']", "[id='brigand_pounder_additional_info_desc']");
+
+
 attachHoverListeners("[id='shrieker_additional_info']", "[id='shrieker_additional_info_desc']");
 
-attachHoverListeners("[id='swine_prince_additional_info_app']", "[id='swine_prince_additional_info_desc']");
-attachHoverListeners("[id='swine_prince_additional_info_vet']", "[id='swine_prince_additional_info_desc']");
-attachHoverListeners("[id='swine_prince_additional_info_champ']", "[id='swine_prince_additional_info_desc']");
-
-attachHoverListeners("[id='flesh_additional_info_app']", "[id='flesh_additional_info_desc']");
-attachHoverListeners("[id='flesh_additional_info_vet']", "[id='flesh_additional_info_desc']");
-attachHoverListeners("[id='flesh_additional_info_champ']", "[id='flesh_additional_info_desc']");
-
-attachHoverListeners("[id='siren_additional_info_app']", "[id='siren_additional_info_desc']");
-attachHoverListeners("[id='siren_additional_info_vet']", "[id='siren_additional_info_desc']");
-attachHoverListeners("[id='siren_additional_info_champ']", "[id='siren_additional_info_desc']");
-
-attachHoverListeners("[id='drowned_crew_additional_info_app']", "[id='drowned_crew_additional_info_desc']");
-attachHoverListeners("[id='drowned_crew_additional_info_vet']", "[id='drowned_crew_additional_info_desc']");
-attachHoverListeners("[id='drowned_crew_additional_info_champ']", "[id='drowned_crew_additional_info_desc']");
-
-attachHoverListeners("[id='collector_additional_info_app']", "[id='collector_additional_info_desc']");
-attachHoverListeners("[id='collector_additional_info_vet']", "[id='collector_additional_info_desc']");
-attachHoverListeners("[id='collector_additional_info_champ']", "[id='collector_additional_info_desc']");
-
-attachHoverListeners("[id='shambler_additional_info_app']", "[id='shambler_additional_info_desc']");
-attachHoverListeners("[id='shambler_additional_info_vet']", "[id='shambler_additional_info_desc']");
-attachHoverListeners("[id='shambler_additional_info_champ']", "[id='shambler_additional_info_desc']");
+attachHoverListeners("[id='swine_prince_additional_info']", "[id='swine_prince_additional_info_desc']");
 
 
+attachHoverListeners("[id='flesh_additional_info']", "[id='flesh_additional_info_desc']");
+
+attachHoverListeners("[id='siren_additional_info']", "[id='siren_additional_info_desc']");
 
 attachHoverListeners("[id='shambler_additional_info']", "[id='shambler_additional_info_desc']");
+
+attachHoverListeners("[id='drowned_crew_additional_info']", "[id='drowned_crew_additional_info_desc']");
+
+attachHoverListeners("[id='collector_additional_info']", "[id='collector_additional_info_desc']");
+
 attachHoverListeners("[id='shambler_endless_info']", "[id='shambler_endless_info_desc']");
 attachHoverListeners("[id='shrieker_endless_info']", "[id='shrieker_endless_info_desc']");
 attachHoverListeners("[id='shrieker_quirk_info']", "[id='shrieker_quirk_info_desc']");
@@ -1146,45 +1127,23 @@ attachHoverListeners("[id='shrieker_quirk_info']", "[id='shrieker_quirk_info_des
 
 
 //Boss Minion Info
-attachHoverListeners("[id='necromancer_minion_more_info_app']", "[id='necromancer_minion_more_info_desc']");
-attachHoverListeners("[id='necromancer_minion_more_info_vet']", "[id='necromancer_minion_more_info_desc']");
-attachHoverListeners("[id='necromancer_minion_more_info_champ']", "[id='necromancer_minion_more_info_desc']");
+attachHoverListeners("[id='necromancer_minion_more_info']", "[id='necromancer_minion_more_info_desc']");
 
-attachHoverListeners("[id='prophet_minion_more_info_app']", "[id='prophet_minion_more_info_desc']");
-attachHoverListeners("[id='prophet_minion_more_info_vet']", "[id='prophet_minion_more_info_desc']");
-attachHoverListeners("[id='prophet_minion_more_info_champ']", "[id='prophet_minion_more_info_desc']");
+attachHoverListeners("[id='prophet_minion_more_info']", "[id='prophet_minion_more_info_desc']");
 
-attachHoverListeners("[id='brigand_pounder_minion_more_info_app']", "[id='brigand_pounder_minion_more_info_desc']");
-attachHoverListeners("[id='brigand_pounder_minion_more_info_vet']", "[id='brigand_pounder_minion_more_info_desc']");
-attachHoverListeners("[id='brigand_pounder_minion_more_info_champ']", "[id='brigand_pounder_minion_more_info_desc']");
+attachHoverListeners("[id='brigand_pounder_minion_more_info']", "[id='brigand_pounder_minion_more_info_desc']");
 
-attachHoverListeners("[id='shrieker_minion_more_info_app']", "[id='shrieker_minion_more_info_desc']");
-attachHoverListeners("[id='shrieker_minion_more_info_vet']", "[id='shrieker_minion_more_info_desc']");
-attachHoverListeners("[id='shrieker_minion_more_info_champ']", "[id='shrieker_minion_more_info_desc']");
+attachHoverListeners("[id='swine_prince_minion_more_info']", "[id='swine_prince_minion_more_info_desc']");
 
-attachHoverListeners("[id='swine_prince_minion_more_info_app']", "[id='swine_prince_minion_more_info_desc']");
-attachHoverListeners("[id='swine_prince_minion_more_info_vet']", "[id='swine_prince_minion_more_info_desc']");
-attachHoverListeners("[id='swine_prince_minion_more_info_champ']", "[id='swine_prince_minion_more_info_desc']");
+attachHoverListeners("[id='siren_minion_more_info']", "[id='siren_minion_more_info_desc']");
 
-attachHoverListeners("[id='siren_minion_more_info_app']", "[id='siren_minion_more_info_desc']");
-attachHoverListeners("[id='siren_minion_more_info_vet']", "[id='siren_minion_more_info_desc']");
-attachHoverListeners("[id='siren_minion_more_info_champ']", "[id='siren_minion_more_info_desc']");
+attachHoverListeners("[id='drowned_crew_minion_more_info']", "[id='drowned_crew_minion_more_info_desc']");
 
-attachHoverListeners("[id='drowned_crew_minion_more_info_app']", "[id='drowned_crew_minion_more_info_desc']");
-attachHoverListeners("[id='drowned_crew_minion_more_info_vet']", "[id='drowned_crew_minion_more_info_desc']");
-attachHoverListeners("[id='drowned_crew_minion_more_info_champ']", "[id='drowned_crew_minion_more_info_desc']");
+attachHoverListeners("[id='collector_minion_more_info']", "[id='collector_minion_more_info_desc']");
 
-attachHoverListeners("[id='collector_minion_more_info_app']", "[id='collector_minion_more_info_desc']");
-attachHoverListeners("[id='collector_minion_more_info_vet']", "[id='collector_minion_more_info_desc']");
-attachHoverListeners("[id='collector_minion_more_info_champ']", "[id='collector_minion_more_info_desc']");
-
-attachHoverListeners("[id='shambler_minion_more_info_app']", "[id='shambler_minion_more_info_desc']");
-attachHoverListeners("[id='shambler_minion_more_info_vet']", "[id='shambler_minion_more_info_desc']");
-attachHoverListeners("[id='shambler_minion_more_info_champ']", "[id='shambler_minion_more_info_desc']");
 
 attachHoverListeners("[id='shrieker_minion_more_info']", "[id='shrieker_minion_more_info_desc']");
 attachHoverListeners("[id='shambler_minion_more_info']", "[id='shambler_minion_more_info_desc']");
-
 //Trophies
 attachHoverListeners("[id='necromancer\\'s_collar']", "[id='necromancer\\'s_collar_desc']");
 attachHoverListeners("[id='prophet\\'s_eye']", "[id='prophet\\'s_eye_desc']");
