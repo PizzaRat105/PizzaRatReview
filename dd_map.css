@@ -5,11 +5,16 @@
 
 /*Blanket Styling*/
 *{box-sizing: border-box; background-repeat: no-repeat;position: relative;}
-body{margin: 0; padding: 0; background-color: black; cursor: url(images/dd_cursor.png), auto; overflow: hidden;
+body {
+    margin: -0.1vw 0 0 0; /* Adjust the top margin as needed */
+    padding: 0;
+    background-color: black;
+    cursor: url(images/dd_cursor.png), auto;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 100vh;    
+    min-height: 100vh;
     user-select: none;
 }
 a{text-decoration: none; color: black;}
