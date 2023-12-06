@@ -25,7 +25,7 @@ button{background: white; border: none; width:20px}
     text-align: center; padding: 0.3vw 0.6vw 0.6vw 0.6vw;
 }
 .test_desc{position: absolute; width:max-content; 
-    border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.8);
+    border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.9);
     font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1vw; line-height: 1.3vw; font-weight: 500;
     text-align: center; padding: 0.3vw 0.6vw 0.6vw 0.6vw;
 }
@@ -38,6 +38,7 @@ button{background: white; border: none; width:20px}
 .nowrap{flex-wrap: nowrap;}
 .center_align{text-align: center;}
 .text_style{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); }
+.vertical_spacing{line-height: 2vw;}
 /*body {
 }*/
 
@@ -119,8 +120,8 @@ button{background: white; border: none; width:20px}
 /*General Box, Button and Backdrop Styling*/
 
 
-.crimson_backdrop{top: 20.2vw; left: 34vw;display: none;}
-.crimson_btn{top: 21.4vw; left: 35.4vw;}
+.crimson_backdrop{top: 20.2vw; left: 34.2vw;display: none;}
+.crimson_btn{top: 21.4vw; left: 35.6vw;}
 
 .crimson_enemy_backdrop{top: 16vw; left: 34vw;display: none;}
 .crimson_enemy_btn{top: 17.2vw; left: 35.8vw;}
@@ -133,8 +134,8 @@ button{background: white; border: none; width:20px}
 
 
 
-.madness_backdrop{top: 32.5vw; left: 32.7vw;display: none;}
-.madness_btn{top: 33.6vw; left: 34vw;}
+.madness_backdrop{top: 32.5vw; left: 32.9vw;display: none;}
+.madness_btn{top: 33.6vw; left: 34.2vw;}
 
 .madness_enemy_backdrop{top: 28.3vw; left: 32.9vw;display: none;}
 .madness_enemy_btn{top: 29.4vw; left: 34.7vw;}
@@ -146,17 +147,26 @@ button{background: white; border: none; width:20px}
 .madness_boss_btn{top: 29.4vw; left: 43.1vw;}
 
 
-.gauntlet1_backdrop{top: 5.7vw; left: 76.5vw; display: none;}
-.gauntlet1_btn{top: 7.6vw; left: 78.2vw; }
+.gauntlet1a_backdrop{top: 6vw; left: 76.5vw; display: none;}
+.gauntlet1a_btn{top: 7.2vw; left: 78.2vw; }
 
-.gauntlet2_backdrop{top: 5.7vw; left: 80.5vw; display: none;}
-.gauntlet2_btn{top: 7.6vw; left: 82.2vw; }
+.gauntlet1b_backdrop{top: 6vw; left: 80.6vw; display: none;}
+.gauntlet1b_btn{top: 7.2vw; left: 82.3vw; }
 
-.gauntlet3_backdrop{top: 5.7vw; left: 84.5vw; display: none;}
-.gauntlet3_btn{top: 7.6vw; left: 86.2vw; }
+/*.gauntlet1a_backdrop{top: 10.4vw; left: 76.5vw; display: none;}
+.gauntlet1a_btn{top: 11.6vw; left: 78.2vw; }
 
-.gauntlet4_backdrop{top: 5.7vw; left: 88.5vw; display: none;}
-.gauntlet4_btn{top: 7.6vw; left: 90.2vw; }
+.gauntlet1b_backdrop{top: 10.4vw; left: 80.5vw; display: none;}
+.gauntlet1b_btn{top: 11.6vw; left: 82.2vw; }*/
+
+
+
+
+
+.gauntlet3_backdrop{top: 6vw; left: 84.6vw; display: none;}
+.gauntlet3_btn{top: 7.2vw; left: 86.4vw; }
+
+
 
 
 
@@ -204,6 +214,9 @@ button{background: white; border: none; width:20px}
 .shared_enemy_backdrop{top: 36.6vw; left: 77.2vw; display: none;}
 .shared_enemy_btn{top: 37.8vw; left: 79vw;}
 
+.shieldbreaker_enemy_backdrop{top: 36.6vw; left: 94vw; display: none;}
+.shieldbreaker_enemy_btn{top: 37.8vw; left: 95.7vw;}
+
 .shared_curio_backdrop{top: 36.6vw; left: 81.4vw; display: none;}
 .shared_curio_btn{top: 37.8vw; left: 83.2vw;}
 
@@ -214,79 +227,181 @@ button{background: white; border: none; width:20px}
 .shared_spoiler_btn{top: 38.5vw; left: 91.5vw;}
 
 
-.quest_box{width: 24vw;height: 38.4vw; position: absolute; display: none; left: 9vw; top: 6.9vw; padding-left:1vw;
-    background-image: url('images/Boxes/quest_textbox.png'); background-size: 24vw;}
+.quest_box{width: 25vw;height: 39.2vw; position: absolute; display: none; left: 10vw; top: 6.1vw; padding-left:1vw;
+    background-image: url('images/Boxes/quest_textbox2.png'); background-size: 25vw;}
 
 
-/*Enemy Monster info*/
-.enemy{background-image: url('images/Boxes/quest_textbox_enemy.png'); background-size: 24vw;
-    font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167);font-size: 1.3vw; line-height: 1.8vw; font-weight: 500;}
+/*Boss Monster info*/
+.enemy_main_box{width: 75vw; height: 40vw; position: absolute; left: 10vw; top: 5.6vw; display: none; font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167);
+    background-image: url(images/Boss_monsters/enemy_panel_template.png);background-size: 75vw;}
+/*Boss Sprite Styling*/
 
-.enemy_sprite{position: absolute; top: 1.2vw ;max-width: 12vw;max-height: 14vw; left:1vw;}
-.enemy_small_sprite{position: absolute; top: 4vw ;max-width: 10vw;max-height: 10vw; left:1.3vw;}
-.enemy_tall_sprite{position: absolute; top: -1.2vw; max-width: 12vw; max-height: 15vw; left: 2.2vw}
-.enemy_medtall_sprite{position: absolute; top: 0vw; max-width: 12vw; max-height: 13.5vw; left: 1.4vw}
-.enemy_size2_sprite{position: absolute; top: 0.2vw; max-width: 16vw;max-height: 14vw; left: 0vw}
+.enemy_sprite_container{
+    position:absolute;top: 2vw; left: 1.3vw; width: 16vw; height:11.25vw; 
+    display: flex; text-align: center; justify-content: center; align-items: center; 
+}
+.enemy_sprite{ max-width: 12vw; max-height:11vw; display: flex;}
 
-.monster_name_veryshort{font-size: 2.1vw;  margin:0.3vw 0; position: absolute; top: 11.3vw; right:4.5vw }
-.monster_name_short{font-size: 2.1vw;  margin:0.3vw 0; position: absolute; top: 11.3vw; right:3vw ;}
-.monster_name_medium{font-size: 2.1vw;  margin:0.3vw 0; position: absolute; top: 11.3vw; right:2vw }
+.enemy_header_container{position:absolute; top: 13.5vw; left: 1.3vw; width: 16vw; height: 3vw;  text-align: center; 
+    font-family: dd_logo; color:rgb(199, 179, 107);font-size: 1.8vw; line-height: 3vw; }
 
-.enemy_sprite_container{ display: none}
-.enemy_stats_container{position: absolute; top:14vw;  width: 23.7vw; height:15vw; left: -0.2vw; padding-left: 1vw;}
+.main_enemy_header{font-size: 2vw;}
+
+.enemy_lvl_btn{position: absolute; left: 1.3vw; height:2.5vw; }
+.app_enemy{top:20vw;}
+.vet_enemy{top:23.5vw;}
+.champ_enemy{top:27vw;}
+
+.enemy_close{position: absolute; top:1vw; right: 1vw; width: 1.5vw;}
+.enemy_close:hover{filter: brightness(150%);}
+
+/*category banner*/
+.vanilla_enemy_banner{position:absolute; right: 21vw; top: -2.7vw; width: 8vw;}
+.dlc_enemy_banner{position:absolute; right: 12vw; top:-2.7vw; width: 8vw;}
+.spoiler_enemy_banner{position:absolute; right: 3vw; top:-2.7vw; width: 8vw;}
+
+.vanilla_enemy_banner:hover{filter: brightness(150%);}
+.dlc_enemy_banner:hover{filter: brightness(150%);}
+.spoiler_enemy_banner:hover{filter: brightness(150%);}
+
+
+.enemy_stats_header{position: absolute; left: 20vw; width: 20vw; top: 6.6vw;  text-align: center; font-size: 1.5vw;}
+.enemy_resists_header{position: absolute; left: 20vw; width: 20vw; top: 17.3vw;  text-align: center; font-size: 1.5vw;}
+.enemy_area_header{position: absolute; left: 1vw; width: 16.2vw; top: 27.15vw;  text-align: center; font-size: 1.5vw; }
+.enemy_minions_header{position: absolute; left: 1.5vw; width: 15.6vw; top: 17.35vw;  text-align: center; font-size: 1.5vw;}
+.enemy_skills_header{position: absolute; left: 20vw; width: 20vw; top: 24.3vw;  text-align: center; font-size: 1.5vw;  }
+.enemy_lore_header{position: absolute; left: 44.25vw; width: 28.5vw; top: 9.25vw;  text-align: center; font-size: 1.5vw; }
+
+.enemy_nav_container{position:absolute; top: 1.2vw; left: 45vw; width: 27.4vw; max-height: 7.4vw;  text-align: center;
+    font-family: dd_logo; color:rgb(199, 179, 107);font-size: 1.5vw; line-height: 2.3vw; 
+    display: flex; justify-content: center;  align-items: center; flex-wrap: wrap; overflow-y: overlay;}
     
-.desc_toggle{width: 9vw; margin-right: 2.5vw; margin-left: 0vw;}
-.enemy_strat {position: absolute; top:17.7vw;  width: 23.7vw; height:20.5vw; left: -0.3vw; background-color: black; 
-     display: none; font-size: 1.15vw; padding:0 0.2vw; text-align: center;}
-.sentence_margin{margin-bottom: 13vw;}
-.enemy_skill_container{position:absolute; width: 23.7vw; top: 29.2vw; left: 1vw;line-height: 2.2vw; display: none}
-.enemy_skill_desc_container{position: absolute; top: 26.4vw; left: 23.8vw; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.8); padding:0.3vw 0.4vw 0.3vw 0.4vw;
-                            text-align: center; width:max-content; font-size: 1vw; line-height: 1.5vw; display: none;}
-
-.enemy_toggle_btn1{width: 8vw; position: absolute; left: 2vw; top:0.5vw; display: none}
-.enemy_toggle_btn2{width: 8vw; position: absolute; left: 13.5vw; top:0.5vw; display: none;}
-.enemy_toggle_btn1:hover{filter: brightness(150%);}
-.enemy_toggle_btn2:hover{filter: brightness(150%);}
-
-
-.position_icons{max-width: 10vw; height: 1vw;}
-
-.enemy_numbers1{position: absolute; top:3.45vw; left: 6.7vw; }
-.enemy_numbers2{position: absolute; top:3.53vw; left: 19.5vw; }
-.enemy_numbers3{position: absolute; top:9.15vw; left: 6.7vw; line-height: 1.9vw; }
-.enemy_numbers4{position: absolute; top:9.15vw; left: 19.5vw; line-height: 1.9vw; }
-
-.content_sidenav{position: absolute; left: 23vw; top:0vw; width: 10vw;height:20vw; 
-display: flex; flex-direction: row; flex-wrap: wrap; background-color: black; justify-content: center;}
-
-.sidenav9_long{height: 20.5vw; width: 21vw}
-.sidenav9{height: 20.5vw; width: 21vw}
-.sidenav13{height: 20.5vw; width: 21vw}
-.sidenav10{height: 20.5vw; width: 21vw}
-
-.enemy_port{display: flex; height: 4vw; margin: 0.3vw}
+.enemy_port{display: flex; height: 3vw; width: 3vw; margin: 0.35vw 0.6vw; }
 .enemy_port:hover{filter: brightness(150%);}
 
-.lvl_btn{height: 2vw; position: absolute; left: 17vw; display: none;}
-.lvl_btn:hover{filter: brightness(150%);}
-.app_lvl{top: 1vw; left:18vw}
-.vet_lvl{top: 3.5vw;left:18vw}
-.champ_lvl{top: 6vw; left: 16.6vw;}
-.darkest_lvl{top: 1vw; left: 16vw;}
+#shared_enemy_nav::-webkit-scrollbar {width: 1.5vw;}
+#shared_enemy_nav::-webkit-scrollbar-button:vertical:increment
+{background-image: url("images/scrollbar_downarrow.png");background-size: 1.5vw 0.95vw;background-repeat: no-repeat; margin: 0; padding: 0;width:1.7vw; height: 1.03vw;}
+#shared_enemy_nav::-webkit-scrollbar-button:vertical:decrement
+{background-image: url("images/scrollbar_uparrow.png"); background-size: 1.5vw  0.95vw;background-repeat: no-repeat; margin: 0; padding: 0;width:1.7vw; height: 1.03vw; }
 
-.statskill_icon{width: 2vw;}
 
-.hide_headers{position: absolute; top: 15vw; left: -0.3vw;  width: 24vw; height: 23vw; background-color: black;}
+#shared_enemy_nav::-webkit-scrollbar-button:start:increment,
+#shared_enemy_nav::-webkit-scrollbar-button:end:decrement {display: none;}
+#shared_enemy_nav::-webkit-scrollbar-thumb {background-image: url(images/scrollbar1.png);background-size: 1.5vw 4.5vw; width: 1.5vw; height: 4.5vw;  margin:0; padding: 0;}
+
+.enemy_vet_btn_app{position:absolute; top: 1.1vw; left: 42vw; ;}
+.enemy_darkest_btn_app{position:absolute; top: 1.1vw; left: 40.2vw; ;}
+.enemy_endless_btn_app{position:absolute; top: 1.1vw; left: 40.8vw; ;}
+.enemy_champ_btn_app{position:absolute; top: 1.1vw; left: 41vw; ;}
+
+.enemy_champ_btn_vet{position:absolute; top: 2.95vw; left: 41vw; ;}
+
+.enemy_endless_btn_champ{position:absolute; top: 4.8vw; left: 40.8vw; ;}
+
+.enemy_app_btn{position:absolute; top: 1.1vw; left: 42vw; ;}
+.enemy_vet_btn{position:absolute; top: 2.95vw; left: 42vw; ;}
+
+
+.enemy_champ_btn{position:absolute; top: 4.8vw; left: 41vw; ;}
+.enemy_darkest_btn{position:absolute; top: 6.65vw; left: 40.2vw; ;}
+.enemy_endless_btn{position:absolute; top: 6.65vw; left: 40.8vw; ;}
+
+.enemy_diff_btn{position:absolute; height: 1.55vw;}
+.enemy_diff_btn:hover{filter: brightness(150%);}
+
+/*Boss Stats*/
+.enemy_stat_container{position: absolute; left: 20vw; width: 21.5vw; top: 8.7vw; height: 22vw; 
+    font-size: 1.3vw; line-height: 2.2vw;  }
+
+.enemy_stat_header1{position: absolute; left: -0.4vw; width: 10.5vw; top: 0vw; }
+.enemy_stat_header2{position: absolute; left: 11.2vw; width: 10.5vw; top: 0vw;   }
+.enemy_statline1{position: absolute; left: 3.2vw; width: 10vw; top: 0vw; }
+.enemy_statline2{position: absolute; left: 16.6vw; width:8vw; top: 0vw;  }
+
+/*Boss Resists*/
+
+.enemy_resist_container{position: absolute; left: 20vw; width: 21.5vw; top:17.7vw; height: 20vw; 
+    font-size: 1.3vw; line-height: 1.9vw; font-weight: 500;}
+
+.enemy_resist_header1{position: absolute; left: 1.2vw; top: -0.1vw; }
+.enemy_resist_header2{position: absolute; left: 12vw; top: -0.1vw; }
+
+.enemy_resist_icon{width:1.6vw; height: 1.6vw; margin:0; padding: 0; line-height: auto;}
+.enemy_resist_icon_smaller{width:1.5vw; height: 1.5vw; margin:0; padding: 0; line-height: auto;}
+
+.enemy_resist_icon_container1{position: absolute; left: 19.3vw; width: 2vw; top: 17.85vw; line-height: 1.5vw;}
+.enemy_resist_icon_container2{position: absolute; left: 30.1vw; width: 2vw; top: 17.85vw; line-height: 1.5vw;}
+
+.enemy_resistline1{position: absolute; left: 5.6vw; top: -0.1vw;}
+.enemy_resistline2{position: absolute; left: 17.15vw; top: -0.1vw;}
+
+/*Boss Minions*/
+.enemy_region_container{position: absolute; top: 19.6vw; left: 1.2vw; width:16vw;height:auto; font-size: 1.3vw;  display: flex; text-align: center; justify-content: center; align-items: center;}
+.enemy_region_text{display: flex; vertical-align: middle;text-align: center;}
+
+.minion_port_img{height: 3.8vw; width: 3.8vw;display: flex; margin: 0.3vw }
+.minion_port_img:hover{filter: brightness(150%);}
+
+/*Boss Trinkets*/
+
+.enemy_trinket_container{position: absolute; top: 29vw; left: 1.2vw; width:16vw; height:9vw; 
+    display: flex; justify-content: center;  align-items: center; }
+.enemy_trinket{height: 7vw; width: 3.5vw;display: flex; vertical-align: middle; margin: 0 0.2vw;}
+.enemy_trinket:hover{filter: brightness(150%);}
+
+.enemy_trinket_desc{position: absolute; top: 30vw; left: 11.1vw; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.9); padding:0.3vw 0.4vw 0.3vw 0.4vw;
+    text-align: center; width:max-content; font-size: 1vw; line-height: 1.5vw; display: none;font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167);}
+
+
+.enemytrinket1{left:7.1vw;}
+.enemytrinket3{left:15vw;}
+
+
+
+
+/*Boss Skills*/
+
+.enemy_skill_container{position: absolute; top: 26.5vw; left: 20.2vw; width:20vw; height:fit-content; 
+    font-size: 1.3vw; line-height: 2.2vw; font-weight: 500;}
+
+.enemy_skill_desc_container{position: absolute; top: 23.75vw; left: 41.2vw; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.9); padding:0.25vw 0.4vw;
+    text-align: center; width:max-content;font-size: 1vw; line-height: 1.5vw; display: none; font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); max-width: 42vw;}
+
+.enemy_side_text_container{
+    position:absolute; left: 43.25vw; top: 11.5vw; width: 30.5vw; height: 26.2vw;
+    font-size: 1.1vw; line-height: 2vw; font-weight: 500; padding: 0 0.3vw; text-align: center; overflow: auto; 
+    
+}
+
+.enemy_side_text_container::-webkit-scrollbar {width: 0vw;}
+
+.lore_headertxt{font-size: 1.6vw; text-align: center;  line-height: 2.2vw;padding-top: 0.7vw; }
+.enemy_strategy{display: block; font-size: 1vw; line-height: 1.6vw;}
+.strat_header{font-size: 1.5vw; line-height: 3vw; padding: 1vw 0 0.8vw 0; font-family: dd_logo; color: rgb(199, 179, 107); font-weight: 400;}
+
+.enemy_header_strat{padding: 0.3vw 0;}
+
+
+.content_sidenav{position: absolute; left: 25vw; top:0vw; width: 10vw;height:20vw; 
+    display: flex; flex-direction: row; flex-wrap: wrap; background-color: black; justify-content: center;}
+    
+    .sidenav9_long{height: 20.5vw; width: 21vw}
+    .sidenav9{height: 20.5vw; width: 21vw}
+    .sidenav13{height: 20.5vw; width: 21vw}
+    .sidenav10{height: 20.5vw; width: 21vw}
 
 /*Curio info*/
 
-.curio{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167);font-size: 1.2vw; line-height: 1.7vw; font-weight: 500;}
+.curio{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167);font-size: 1.2vw; line-height: 1.7vw; font-weight: 500; left: 10vw;}
 
-.curio_top_container{position: absolute; top: 0.6vw; left: 0vw;width: 23.7vw; height: 20vw; /*border: 1px solid red;*/
+.curio_top_container{position: absolute; top: 0.6vw; left: 0vw;width: 25vw; height: 20vw; /*border: 1px solid red;*/
 text-align: center;}
-.curio_info{position: absolute; left: 30vw; top:7vw; width: 2vw; } 
-.forced_universal{left: 32.5vw; top: 7vw;}
-.interaction_desc{position: absolute; left: 23w; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.9); padding:0.3vw 0.5vw 0.3vw 0.4vw;
+
+.curio_info{position: absolute; left: 33vw; top:6.2vw; width: 2vw; } 
+.forced_universal{left: 35.5vw; top: 6.2vw;}
+
+.interaction_desc{position: absolute; left: 23vw; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.9); padding:0.3vw 0.5vw 0.3vw 0.4vw;
      width:max-content; font-size: 1.1vw; line-height: 1.8vw; display: none;}
 .universal_desc{position: absolute;  border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.9); padding:0.3vw 0.5vw 0.3vw 0.4vw;
      width:max-content; font-size: 1.1vw; line-height: 1.8vw;font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); }
@@ -295,13 +410,13 @@ text-align: center;}
 .provision_inter_icon{max-width: 1.4vw; max-height: 2vw;  position: absolute; padding-top: 0.3vw; left: 0.7vw}
 .result_desc{margin-left: 2vw;}
 
-.curio_result{ left: 23vw; top: 27.7vw; text-align:start; padding-bottom:0.4vw; line-height: 2vw}
+.curio_result{ left: 24vw; top: 27.7vw; text-align:start; padding-bottom:0.4vw; line-height: 2vw}
 .room_interact{top: 24.7vw;}
 
 
 
 
-.curio_interaction_container{position: absolute; top: 27vw; left: -0.8vw;width: 23.7vw; height: 10vw;
+.curio_interaction_container{position: absolute; top: 27vw; left: -0.8vw;width: 25vw; height: 10vw;
                              display: flex; justify-content: center;}
 .room_curio{top: 24vw;}
 .curio_sprite{max-height: 9vw; max-width: 14.5vw;}
@@ -331,12 +446,12 @@ text-align: center;}
 .curio_nav_10{height: 17.1vw; width: 23vw}
 
 /*Boss Monster info*/
-.boss_box{width: 75vw; height: 40vw; position: absolute; left: 11vw; top: 6vw; display: none; font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167);
+.boss_box{width: 75vw; height: 40vw; position: absolute; left: 10vw; top: 5.6vw; display: none; font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167);
     background-image: url(images/Boss_monsters/boss_panel_template.png);background-size: 75vw;}
 /*Boss Sprite Styling*/
 
 .boss_sprite_container{
-    position:absolute;top: 1.5vw; left: 2.1vw; width: 16vw; height:15vw;
+    position:absolute;top: 1.5vw; left: 1.2vw; width: 16vw; height:15vw;
     display: flex; text-align: center; justify-content: center; align-items: center; 
 }
 .boss_sprite{ max-width: 16vw; max-height:14.5vw; display: flex;}
@@ -360,93 +475,162 @@ text-align: center;}
 .vet_boss{top:23.5vw;}
 .champ_boss{top:27vw;}
 
-.boss_close{position: absolute; top:0.8vw; right: 0.8vw; width: 1.5vw;}
+.boss_close{position: absolute; top:1vw; right: 1vw; width: 1.5vw;}
 .boss_close:hover{filter: brightness(150%);}
+
+/*category banner*/
+.vanilla_boss_banner{position:absolute; right: 21vw; top: -2.7vw; width: 8vw;}
+.dlc_boss_banner{position:absolute; right: 12vw; top:-2.7vw; width: 8vw;}
+
+.spoiler_boss_banner{position:absolute; right: 3vw; top:-2.7vw; width: 8vw;}
+
+
+.vanilla_boss_banner:hover{filter: brightness(150%);}
+.dlc_boss_banner:hover{filter: brightness(150%);}
+.spoiler_boss_banner:hover{filter: brightness(150%);}
 
 /*Info Icons*/
 
+.spoiler_warning_info{top:6vw;left: 45.6vw; width: 1.7vw;}
+.spoiler_warning_info_txt{top:11.2vw;left: 57.6vw;}
 
-/*Shambler info*/
-.shambler_info{top:7vw;left: 46.5vw; width: 1.5vw;}
-.shambler_info_txt{top:13vw;left: 59.4vw;}
-.boss_quirk_info{top: 6.6vw; left: 38vw; width: 1.6vw;}
-.boss_quirk_info_txt{top: 12.5vw; left: 51vw; line-height: 1.5vw; max-width: 45vw;}
+/*Quirk info*/
+
+.boss_quirk_info{top: 6.6vw; left: 38.2vw; width: 1.6vw;}
+.boss_quirk_info_txt{top: 12.2vw; left: 50.2vw; line-height: 1.5vw; max-width: 45vw;}
 
 /*Scrolling info*/
 .scroll_info{top: 9.3vw; left: 45vw;width: 1.5vw;} 
-.scrollable{top:14.77vw; left: 57.8vw; }
+.scrollable{top:14.47vw; left: 56.8vw; }
+.scrollable2{top:8.8vw; left: 46.8vw; }
+
 
 /*Boss Locating info*/
-.find_boss{ left: 14.5vw; top: 6.9vw; line-height:1.5vw;}
+.find_boss{ left: 13.5vw; top: 6.6vw; line-height:1.5vw;}
 
 /*Additional Boss info*/
-.boss_additional_info{top: 6.6vw; left: 20vw; width: 1.6vw;}
-.boss_additional_info_txt{top: 12.5vw; left: 33vw; line-height: 1.5vw; max-width: 45vw;}
+.boss_additional_info{top: 6.65vw; left: 20vw; width: 1.5vw;}
+.boss_additional_info_txt{top: 12vw; left: 31.9vw; line-height: 1.5vw; max-width: 45vw;}
 
 /*Additional Boss Minion info*/
-.boss_minion_additional_info{top: 17.25vw; left: 2vw; width: 1.6vw;}
-.boss_minion_additional_info_txt{top: 23.1vw; left: 14.9vw; line-height: 1.6vw;}
+.boss_minion_additional_info{top: 17.3vw; left: 2vw; width: 1.5vw;}
+.boss_minion_additional_info_txt{top: 22.4vw; left: 13.8vw; line-height: 1.6vw;}
 
 /*Additional Minion info*/
-.minion_additional_info{width: 1.6vw; left:0.8vw; top: 1vw;}
-.minion_additional_info_txt{left:29.1vw; top: 19.6vw;}
+.minion_additional_info{width: 1.6vw; left:1vw; top: 1vw;}
+.minion_additional_info_txt{left:28.3vw; top: 19.3vw;}
 
 /*Minion Shared Lifelink info*/
-.lifelink_info{top: 17.3vw; left: 15.5vw; width: 1.5vw;}
-.lifelink_info_txt{top: 23.1vw; left: 28.4vw;}
+.lifelink_info{top: 16vw; left: 13.4vw; width: 1.5vw;}
+.lifelink_info_txt{top: 34.25vw; left: 40.7vw;}
+.lifelink_label{position: absolute; top: 16vw; left: 15.3vw; font-size: 1.5vw;}
 
 /*Trophy Info*/
-.trophy_info{top: 28.8vw; left: 15.5vw; width: 1.5vw;}
-.trophy_info_txt{top: 34.6vw; left: 28.4vw;}
+.trophy_info{top: 28.8vw; left: 2vw; width: 1.5vw;}
+.trophy_info_txt{top: 34.3vw; left: 13.8vw;}
 
 /*Boss Header*/
-.boss_header_container{position:absolute; top: 1.3vw; left: 20vw; width: 20vw; height: 5.1vw;  text-align: center;
-                        font-family: dd_logo; color:rgb(199, 179, 107);font-size: 1.5vw; line-height: 2.3vw;}
-.main_boss_header{font-size:2vw;}
+.boss_header_container{position:absolute; top: 1.3vw; left: 19.8vw; width: 20.4vw; height: 5.1vw;  text-align: center;
+                        font-family: dd_logo; color:rgb(199, 179, 107);font-size: 1.5vw; line-height: 2.3vw; text-wrap: nowrap;}
+.base_boss_header{font-size:2vw;}
+.dlc_boss_header{font-size:2vw;margin-left:1.65vw;}
 .foretext{color:rgb(93, 90, 78);}
+.boss_sign{height:1.5vw; vertical-align: middle; margin-left: 0.2vw;}
+
+.boss_stats_header{position: absolute; left: 20vw; width: 20vw; top: 6.6vw;  text-align: center; font-size: 1.5vw;}
+.boss_resists_header{position: absolute; left: 20vw; width: 20vw; top: 17.3vw;  text-align: center; font-size: 1.5vw;}
+.boss_trinkets_header{position: absolute; left: 1vw; width: 16.2vw; top: 28.85vw;  text-align: center; font-size: 1.5vw; }
+.boss_minions_header{position: absolute; left: 2vw; width: 15vw; top: 17.35vw;  text-align: center; font-size: 1.5vw;}
+.boss_skills_header{position: absolute; left: 20vw; width: 20vw; top: 25.9vw;  text-align: center; font-size: 1.5vw;  }
+.boss_lore_header{position: absolute; left: 44.25vw; width: 28.5vw; top: 9.25vw;  text-align: center; font-size: 1.5vw; }
 
 /*Boss Nav*/
 
-.boss_nav_container{position:absolute; top: 1.3vw; left: 44.6vw; width: 28.8vw; height: 7.1vw;  text-align: center;
+.boss_nav_container{position:absolute; top: 1.2vw; left: 45vw; width: 27.4vw; max-height: 7.4vw;  text-align: center;
     font-family: dd_logo; color:rgb(199, 179, 107);font-size: 1.5vw; line-height: 2.3vw; 
-    display: flex; justify-content: center;  align-items: center; flex-wrap: wrap;}
-.boss_port{display: flex; height: 3vw; width: 3vw; margin: 0.2vw 0.6vw;}
+    display: flex; justify-content: center;  align-items: center; flex-wrap: wrap; overflow-y: overlay;}
+.boss_port{display: flex; height: 3vw; width: 3vw; margin: 0.35vw 0.6vw; }
 .boss_port:hover{filter: brightness(150%);}
+
+.spoiler_bar{display: flex; width: 25vw; height: 3vw; margin: 0.35vw 0;}
+
+#necromancer_portrait{margin-left: 1.2vw}
+#crew_portrait{padding-right: 6vw}
+#flesh_portrait{margin-left:1.2vw}
+
+#crocodilian_portrait{margin-left: 1.6vw}
+#thing_from_the_stars_portrait{margin-left: 9.1vw}
+#miller_portrait{margin-right: 8vw}
+
+
+#countess_portrait{margin-left: 1.6vw}
+
+#shuffling_horror_portrait{margin-left:1.5vw}
+#templar_impaler_portrait{margin-left:1.5vw}
+#mammoth_cyst_portrait{margin-left:1.5vw}
+#ancestor_portrait{margin-left:1.5vw}
+
 
 /*Boss Difficulty Toggle*/
 
-.boss_app_btn{position:absolute; top: 1.3vw; left: 43.1vw; height: 2vw;}
-.boss_vet_btn{position:absolute; top: 3.2vw; left: 43.1vw; height: 2vw;}
-.boss_champ_btn{position:absolute; top: 5.1vw; left: 42.1vw; height: 2vw;}
-.boss_darkest_btn{position:absolute; top: 7vw; left: 41.3vw; height: 2vw;}
-.boss_diff_btn{position:absolute; height: 1.5vw;}
+.boss_app_btn{position:absolute; top: 1.1vw; left: 41.7vw; ;}
+.boss_vet_btn{position:absolute; top: 2.95vw; left: 41.7vw; ;}
+.boss_champ_btn{position:absolute; top: 4.8vw; left: 40.7vw; ;}
+.boss_darkest_btn{position:absolute; top: 6.65vw; left: 39.9vw; ;}
+.boss_endless_btn{position:absolute; top: 6.65vw; left: 40.5vw; ;}
+
+
+.boss_darkest_btn_app{position:absolute; top: 1.1vw; left: 39.9vw; ;}
+.boss_vet_btn_app{position:absolute; top: 1.1vw; left: 41.7vw; ;}
+.boss_champ_btn_app{position:absolute; top: 1.1vw; left: 40.7vw; ;}
+.boss_endless_btn_app{position:absolute; top: 1.1vw; left: 40.5vw; ;}
+
+.boss_champ_btn_vet{position:absolute; top: 2.95vw; left: 40.7vw; ;}
+.boss_darkest_btn_champ{position:absolute; top: 4.8vw; left: 39.9vw; ;}
+
+.boss_endless_btn_vet{position:absolute; top: 1.1vw; left: 40.5vw; ;}
+
+
+
+.boss_diff_btn{position:absolute; height: 1.55vw;}
 .boss_diff_btn:hover{filter: brightness(150%);}
 
 /*Boss Stats*/
-.boss_stat_container{position: absolute; left: 20vw; width: 21.5vw; top: 9vw; height: 20vw; 
-    font-size: 1.4vw; line-height: 1.8vw; }
-.boss_resist_container{position: absolute; left: 20vw; width: 21.5vw; top:19.5vw; height: 20vw; 
-    font-size: 1.4vw; line-height: 1.8vw; font-weight: 500;}
-.boss_stats_header{position: absolute; left: 20vw; width: 20vw; top: 6.6vw;  text-align: center; font-size: 1.5vw;}
-.boss_resists_header{position: absolute; left: 20vw; width: 20vw; top: 17.3vw;  text-align: center; font-size: 1.5vw;}
+.boss_stat_container{position: absolute; left: 20vw; width: 21.5vw; top: 8.7vw; height: 20vw; 
+    font-size: 1.3vw; line-height: 2vw; }
 
-.stat_header1{position: absolute; left: 0.5vw; width: 10.5vw; top: 0vw; height: 10vw; }
-.stat_header2{position: absolute; left: 13vw; width: 10.5vw; top: 0vw; height: 10vw; }
-.statline1{position: absolute; left: 5.5vw; width: 10vw; top: 0vw; height: 10vw; }
-.statline2{position: absolute; left: 19vw; width: 6vw; top: 0vw; height: 10vw; }
+.boss_stat_header1{position: absolute; left: -0.4vw; width: 10.5vw; top: 0vw; }
+.boss_stat_header2{position: absolute; left: 11.2vw; width: 10.5vw; top: 0vw;  }
+.boss_statline1{position: absolute; left: 3.2vw; width: 10vw; top: 0vw; }
+.boss_statline2{position: absolute; left: 16.6vw; width:8vw; top: 0vw;  }
+
+/*Boss Resists*/
+
+.boss_resist_container{position: absolute; left: 20vw; width: 21.5vw; top:19.5vw; height: 20vw; 
+    font-size: 1.3vw; line-height: 1.9vw; font-weight: 500;}
+
+.boss_resist_header1{position: absolute; left: 1.2vw; top: -0.1vw; }
+.boss_resist_header2{position: absolute; left: 12vw; top: -0.1vw; }
+
+.boss_resist_icon{width:1.6vw; height: 1.6vw; margin:0; padding: 0; line-height: auto;}
+.boss_resist_icon_smaller{width:1.5vw; height: 1.5vw; margin:0; padding: 0; line-height: auto;}
+
+.boss_resist_icon_container1{position: absolute; left: 19.3vw; width: 2vw; top: 19.65vw; line-height: 1.5vw;}
+.boss_resist_icon_container2{position: absolute; left: 30.1vw; width: 2vw; top: 19.65vw; line-height: 1.5vw;}
+
+.boss_resistline1{position: absolute; left: 5.6vw; top: -0.1vw;}
+.boss_resistline2{position: absolute; left: 17.15vw; top: -0.1vw;}
 
 /*Boss Minions*/
 .boss_minion_port_container{position: absolute; top: 19.4vw; left: 1.2vw; width:16vw; max-height: 8.9vw;
     display: flex; justify-content: center;  align-items: center; flex-wrap: wrap;  }
-.boss_minions_header{position: absolute; left: 2vw; width: 15vw; top: 17.35vw;  text-align: center; font-size: 1.5vw;}
-.minion_port_img{height: 4vw; width: 3.8vw;display: flex; margin: 0.3vw 0.2vw }
+.minion_port_img{height: 3.8vw; width: 3.8vw;display: flex; margin: 0.3vw }
 .minion_port_img:hover{filter: brightness(150%);}
 
 /*Boss Trinkets*/
 
 .boss_trinket_container{position: absolute; top: 31vw; left: 1.2vw; width:16vw; height:7vw; 
     display: flex; justify-content: center;  align-items: center;}
-.boss_trinkets_header{position: absolute; left: 1vw; width: 16.2vw; top: 28.7vw;  text-align: center; font-size: 1.5vw; }
 .boss_trinket{height: 6vw; width: 3vw;display: flex; vertical-align: middle; margin: 0 0.1vw;}
 .boss_trinket:hover{filter: brightness(150%);}
 
@@ -462,14 +646,100 @@ text-align: center;}
 .bosstrinket2{left:7.7vw;}
 .bosstrinket4{left:14.1vw;}
 .bosstrinket5{left:17.3vw;}
+
 /*Boss Skills*/
 
-.boss_skill_container{position: absolute; top: 27.9vw; left: 20.5vw; width:22vw; height:10vw; 
-    font-size: 1.3vw; line-height: 2vw; font-weight: 500;}
-.boss_skills_header{position: absolute; left: 21.1vw; width: 20vw; top: 25.8vw;  text-align: center; font-size: 1.5vw;  }
+.boss_skill_container{position: absolute; top: 28vw; left: 20.5vw; width:20vw; height:10.1vw; 
+    font-size: 1.3vw; line-height: 2vw; font-weight: 500; overflow: auto;}
 
-.boss_skill_desc_container{position: absolute; top: 27.7vw; left: 36.2vw; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.9); padding:0.3vw 0.4vw 0.3vw 0.4vw;
-    text-align: center; width:max-content;font-size: 1vw; line-height: 1.5vw; display: none; font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167);}
+.boss_skill_desc_container{position: absolute; top: 25.4vw; left: 41.2vw; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.9); padding:0.25vw 0.4vw;
+    text-align: center; width:max-content;font-size: 1vw; line-height: 1.5vw; display: none; font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); max-width: 42vw;}
+
+
+
+
+::-webkit-scrollbar {background-color: transparent; }
+::-webkit-scrollbar-thumb{background-repeat: no-repeat; }
+
+.boss_side_text_container::-webkit-scrollbar {width: 0;}
+
+.boss_skill_container::-webkit-scrollbar {width: 1.7vw; }
+.boss_skill_container::-webkit-scrollbar-button:vertical:increment
+{background-image: url("images/scrollbar_downarrow.png");background-size: 1.7vw 1.03vw;background-repeat: no-repeat; margin: 0; padding: 0;width:1.7vw; height: 1.03vw;}
+.boss_skill_container::-webkit-scrollbar-button:vertical:decrement
+{background-image: url("images/scrollbar_uparrow.png"); background-size: 1.7vw  1.03vw;background-repeat: no-repeat; margin: 0; padding: 0;width:1.7vw; height: 1.03vw; }
+
+
+
+#dlc_boss_nav::-webkit-scrollbar {width: 1.5vw;}
+
+
+#dlc_boss_nav::-webkit-scrollbar-button:vertical:increment
+{background-image: url("images/scrollbar_downarrow.png");background-size: 1.5vw 0.95vw;background-repeat: no-repeat; margin: 0; padding: 0;width:1.7vw; height: 1.03vw;}
+
+#dlc_boss_nav::-webkit-scrollbar-button:vertical:decrement
+{background-image: url("images/scrollbar_uparrow.png"); background-size: 1.5vw  0.95vw;background-repeat: no-repeat; margin: 0; padding: 0;width:1.7vw; height: 1.03vw; }
+
+
+#dlc_boss_nav::-webkit-scrollbar-button:start:increment,
+#dlc_boss_nav::-webkit-scrollbar-button:end:decrement {display: none;}
+
+
+
+#base_boss_nav::-webkit-scrollbar {width: 1.5vw;}
+
+
+#base_boss_nav::-webkit-scrollbar-button:vertical:increment
+{background-image: url("images/scrollbar_downarrow.png");background-size: 1.5vw 0.95vw;background-repeat: no-repeat; margin: 0; padding: 0;width:1.7vw; height: 1.03vw;}
+
+#base_boss_nav::-webkit-scrollbar-button:vertical:decrement
+{background-image: url("images/scrollbar_uparrow.png"); background-size: 1.5vw  0.95vw;background-repeat: no-repeat; margin: 0; padding: 0;width:1.7vw; height: 1.03vw; }
+
+
+#base_boss_nav::-webkit-scrollbar-button:start:increment,
+#base_boss_nav::-webkit-scrollbar-button:end:decrement {display: none;}
+
+#spoiler_boss_nav::-webkit-scrollbar {width: 1.5vw;}
+
+#spoiler_boss_nav::-webkit-scrollbar-button:vertical:increment
+{background-image: url("images/scrollbar_downarrow.png");background-size: 1.5vw 0.95vw;background-repeat: no-repeat; margin: 0; padding: 0;width:1.7vw; height: 1.03vw;}
+
+#spoiler_boss_nav::-webkit-scrollbar-button:vertical:decrement
+{background-image: url("images/scrollbar_uparrow.png"); background-size: 1.5vw  0.95vw;background-repeat: no-repeat; margin: 0; padding: 0;width:1.7vw; height: 1.03vw; }
+
+
+#spoiler_boss_nav::-webkit-scrollbar-button:start:increment,
+#spoiler_boss_nav::-webkit-scrollbar-button:end:decrement {display: none;}
+
+
+
+.boss_minion_skill_container::-webkit-scrollbar {width: 1.7vw;}
+.boss_minion_skill_container::-webkit-scrollbar-button:vertical:increment
+{background-image: url("images/scrollbar_downarrow.png");background-size: 1.7vw 1.03vw;background-repeat: no-repeat; margin: 0; padding: 0;width:1.7vw; height: 1.03vw;}
+.boss_minion_skill_container::-webkit-scrollbar-button:vertical:decrement
+{background-image: url("images/scrollbar_uparrow.png"); background-size: 1.7vw  1.03vw;background-repeat: no-repeat; margin: 0; padding: 0;width:1.7vw; height: 1.03vw; }
+
+
+
+
+
+#fanatic_app_skills::-webkit-scrollbar-thumb {background-image: url(images/scrollpip_8.png);background-size: 1.7vw 7vw;width:1.7vw; height: 7vw;}
+#fanatic_vet_skills::-webkit-scrollbar-thumb {background-image: url(images/scrollpip_8.png);background-size: 1.7vw 7vw;width:1.7vw; height: 7vw;}
+#fanatic_champ_skills::-webkit-scrollbar-thumb {background-image: url(images/scrollpip_8.png);background-size: 1.7vw 7vw;width:1.7vw; height: 7vw;}
+#baron_vet_skills::-webkit-scrollbar-thumb {background-image: url(images/scrollpip_8.png);background-size: 1.7vw 5.2vw; width:1.7vw; height: 5.2vw;}
+#sycophant_vet_skills::-webkit-scrollbar-thumb {background-image: url(images/scrollpip_8.png); background-size: 1.7vw 5.9vw; width:1.7vw; height: 5.9vw;}
+#esquire_vet_skills::-webkit-scrollbar-thumb {background-image: url(images/scrollpip_8.png); background-size: 1.7vw 5.9vw; width:1.7vw; height: 5.9vw;}
+#viscount_champ_skills::-webkit-scrollbar-thumb {background-image: url(images/scrollpip_8.png); background-size: 1.7vw 5.9vw; width:1.7vw; height: 5.9vw;}
+#countess_flushed_darkest_skills::-webkit-scrollbar-thumb {background-image: url(images/scrollpip_8.png);background-size: 1.7vw 7vw;width:1.7vw; height: 7vw;}
+#thing_from_the_stars_app_skills::-webkit-scrollbar-thumb {background-image: url(images/scrollpip_8.png);  background-size: 1.7vw 5.9vw; width:1.7vw; height: 5.9vw;}
+#thing_from_the_stars_vet_skills::-webkit-scrollbar-thumb {background-image: url(images/scrollpip_8.png); background-size: 1.7vw 5.9vw; width:1.7vw; height: 5.9vw;}
+#thing_from_the_stars_champ_skills::-webkit-scrollbar-thumb {background-image: url(images/scrollpip_8.png); background-size: 1.7vw 5.9vw; width:1.7vw; height: 5.9vw;}
+#fracture_endless_skills::-webkit-scrollbar-thumb {background-image: url(images/scrollpip_6.png);background-size: 1.7vw 7vw;width:1.7vw; height: 7vw;}
+
+
+#dlc_boss_nav::-webkit-scrollbar-thumb {background-image: url(images/scrollbar1.png);background-size: 1.5vw 4.5vw; width: 1.5vw; height: 4.5vw;  margin:0; padding: 0;}
+#base_boss_nav::-webkit-scrollbar-thumb {background-image: url(images/scrollbar1.png);background-size: 1.5vw 4.5vw; width: 1.5vw; height: 4.5vw;  margin:0; padding: 0;}
+#spoiler_boss_nav::-webkit-scrollbar-thumb {background-image: url(images/scrollbar1.png);background-size: 1.5vw 2.2vw; width: 1.5vw; height: 2.2vw;  margin:0; padding: 0;}
 
 
 /*Boss Lore/Strategy Toggle*/
@@ -478,13 +748,15 @@ text-align: center;}
 .boss_strategy_btn{position: absolute; left: 74.3vw; top: 18vw; width: 3vw}
 .boss_lore_btn:hover{filter: brightness(150%);}
 .boss_strategy_btn:hover{filter: brightness(150%);}
+
 /*Boss Lore and Strategy*/
 
-.boss_lore_header{position: absolute; left: 45.3vw; width: 28.5vw; top: 9.25vw;  text-align: center; font-size: 1.5vw; }
-.boss_side_text_container{position:absolute; left: 45vw; top: 11.3vw; width: 28.9vw; height: 26vw; font-size: 1.1vw; line-height: 1.6vw; font-weight: 500; padding: 0 0.3vw; text-align: center; overflow: auto;}
-.lore_headertxt{font-size: 1.6vw; text-align: center;  line-height: 2.2vw;padding-top: 0.7vw; }
-
-.boss_side_text_container::-webkit-scrollbar {width: 5px;}
+.boss_side_text_container{
+    position:absolute; left: 44.25vw; top: 11.5vw; width: 28.5vw; height: 26.4vw; 
+    font-size: 1.1vw; line-height: 1.6vw; font-weight: 500; padding: 0 0.3vw; text-align: center; overflow: auto; 
+    
+}
+.lore_headertxt{font-size: 1.6vw; text-align: center;  line-height: 2.2vw;padding:0.6vw 0; margin:0; }
 .boss_strategy{display: block; font-size: 1vw; line-height: 1.6vw;}
 
 
@@ -493,46 +765,57 @@ text-align: center;}
     position:absolute;top: 13vw; left:15.5vw; width: 47.5vw; height: 26vw;
     background-image: url(images/Boss_monsters/minion_infobox_bg.png); background-size: contain; 
 }
-.boss_minion_infobox_shared{position:absolute;top: 13vw; left:15.5vw; width: 47.5vw; height: 26vw; }
 
 .minion_close{position: absolute; top:0.7vw; right: 1.5vw; width: 1.5vw;}
 .minion_close:hover{filter: brightness(150%);}
 
+.crimson_sprite_banner{height:2vw; position:absolute; left: -5.6vw; top: 2.5vw}
 
+.crimson_sprite_banner:hover{filter: brightness(150%);}
 
 .boss_minion_sprite_container{
      width: 11vw; height:10.5vw;
     display: flex; text-align: center; justify-content: center; align-items: center; top: 1.2vw; left: 1.5vw;
 }
 .boss_minion_sprite{ max-width: 9.5vw; max-height:10vw; display: flex; }
-
+.minion_sprite_main{width:fit-content; display: none;}
 
 
 
 .boss_minion_name{position: absolute; top: 12.1vw;left:1.5vw; font-size: 2vw; line-height: 2.4vw; width: 11vw; text-align: center; }
-.minion_stats{position:absolute;font-size: 1.6vw; line-height: 2.5vw; font-weight: 500; padding: 0.2vw; top: 1vw}
+.minion_stats{position:absolute;font-size: 1.6vw; line-height: 2.5vw; font-weight: 500; padding: 0.2vw; top: 0.7vw}
 
-.boss_minion_skill_container{position:absolute; top: 12.5vw; left: 28.5vw; line-height: 2.5vw;}
-.minion_skill_desc{top: 26vw; left: 57.5vw; max-width: 31vw;}
+.boss_minion_skill_container{
+    position:absolute; top: 27.2vw; left: 41.4vw; line-height: 2.1vw; 
+    max-height:10.5vw; width: 19.8vw; overflow: auto; font-size: 1.4vw;
+}
+.minion_skill_desc{top: 23.5vw; left: 62.1vw; max-width: 27vw;}
 
 .boss_minion_stat_header_container1{left: 13.5vw;}
-.boss_minion_stat_number_container1{left: 20.3vw;}
+.boss_minion_stat_number_container1{top: 13.7vw;left: 35.6vw;}
 
-.boss_minion_stat_header_container2{left: 28.5vw;}
-.boss_minion_stat_number_container2{left: 35.5vw;}
+.boss_minion_stat_header_container2{left: 30vw;}
+.boss_minion_stat_number_container2{top: 13.7vw;left: 52.5vw;}
 
-.boss_minion_resist_header_container1{top: 17vw; left: 2vw;}
-.boss_minion_resist_header_container2{top: 17vw; left: 13.5vw;}
+.boss_minion_resist_header_container1{top: 17.3vw; left: 1.8vw;}
+.boss_minion_resist_header_container2{top: 17.3vw; left: 13.3vw;}
 
-.boss_minion_resist_number_container1{top: 17vw; left: 7.5vw;}
-.boss_minion_resist_number_container2{top: 17vw; left: 20.3vw;}
+.boss_minion_resist_number_container1{top: 30.3vw; left: 22.8vw;}
+.boss_minion_resist_number_container2{top: 30.3vw; left: 35.1vw;}
+
+.traumatic{color:rgb(144, 134, 133)}
+.temporal{color:rgb(96, 95, 134)}
+.unstable{color:rgb(178, 81, 94)}
+.pestilential{color:rgb(152, 175, 127)}
+.adamantite{color:rgb(104, 128, 145)}
+.extra_text{color: rgb(235, 224, 180); }
 
 
 
 /*Quirk Glossary Styling*/
 
-.glossary_container{position:absolute; left: 8.5vw; top: 6.75vw; width: 75.2vw; height: 39vw; 
-    background-image: url("images/Glossary/glossary_background2.png"); background-size: 75.2vw 39vw; display: none; }
+.glossary_container{position:absolute; left: 8.5vw; top: 5.8vw; width: 76vw; height: 39.6vw; 
+    background-image: url("images/Glossary/glossary_background2.png"); background-size: 76vw 39.6vw; display: none; }
 .glossary_backdrop{position:absolute; width: 99vw; height: 37vw; left: -8vw;}
 .quirk_close{position:absolute; right: 0.8vw; top:0.8vw; width: 1.8vw}
 .quirk_close:hover{filter: brightness(150%);}
@@ -545,9 +828,9 @@ text-align: center;}
 .glossary_nav2:hover{filter: brightness(150%);}
 .glossary_nav3:hover{filter: brightness(150%);}
 
-.tier_nav{position: absolute; left: 74.8vw;top: 0.5vw; width: 3vw; height: 39vw;  display: flex; flex-direction: column; justify-content: center;}
+.tier_nav{position: absolute; left: 75.6vw;top: 1.3vw; width: 3vw; height: 39vw;  display: flex; flex-direction: column; justify-content: center;}
 
-.tier_btn_positive{width: 4vw; margin: 1vw 0vw}
+.tier_btn_positive{width: 4vw; margin: 0.95vw 0vw}
 .tier_btn_positive:hover{filter: brightness(150%);}
 .tier_btn_negative{width: 3.5vw; margin: 0.3vw 0vw}
 .tier_btn_negative:hover{filter: brightness(150%);}
@@ -600,19 +883,19 @@ text-align: center;}
 .prismatic_info_txt{position:absolute; top: -3.7vw; left: -0.5vw; font-size: 1.1vw; line-height: 1.4vw;}
 .quirk_overview{position: absolute;top:6.5vw }
 .quirk_overview_label{position: absolute; font-size: 1.7vw; left: 3.5vw; top: 6.6vw;}
-.quirk_general_info{max-width: 38vw; font-size: 1.2vw; line-height: 1.6vw;position: absolute; top: 9vw; left: -2vw;}
+.quirk_general_info{max-width: 38vw; font-size: 1.2vw; line-height: 1.6vw;position: absolute; top: 9vw; left: 0vw;}
 
 
 /*Disease Box*/
 
-.disease_container{position: absolute; left: 8.5vw; top: 6.75vw; height: 38.7vw; width: 69.8vw; 
-    background-image: url("images/diseases/disease_bg.png"); background-size: 69.8vw; display: none;}
+.disease_container{position: absolute; left: 8.5vw; top: 5.95vw; width: 76vw; height: 39.6vw; 
+    background-image: url("images/diseases/disease_bg.png"); background-size: 76vw 39.6vw; display: none; }
 
 .disease_close{position:absolute; right: 0.6vw; top:0.8vw; width: 1.6vw}
 .disease_close:hover{filter: brightness(150%);}
 
-.disease_banner{position:absolute; right: 20vw; top: -3.5vw; width: 12vw;}
-.dlc_disease_banner{position:absolute; right: 5vw; top:-3.5vw; width: 12vw;}
+.disease_banner{position:absolute; right: 21.5vw; top: -3.5vw; width: 12vw;}
+.dlc_disease_banner{position:absolute; right: 6.5vw; top:-3.5vw; width: 12vw;}
 
 .disease_banner:hover{filter: brightness(150%);}
 .dlc_disease_banner:hover{filter: brightness(150%);}
@@ -642,44 +925,44 @@ text-align: center;}
 
 
 .disease_column{width: 17vw; height: 35vw; position: absolute; top: 1.5vw; font-family: 'Ubuntu', sans-serif; color:rgb(116, 125, 78); font-size: 1.7vw;font-weight: 500; line-height: 2.9vw; padding: 0.3vw;}
-.disease_1{right: 18vw; width: 18vw;}
-.disease_2{right: -0.5vw;} 
-.disease_3{right: 15vw; width: 21vw; color:rgb(162, 42, 23);} 
-.disease_4{right: 15vw; width: 21vw; top: 24.7vw;} 
+.disease_1{right: 21vw; width: 18vw;}
+.disease_2{right: 2.5vw;} 
+.disease_3{right: 18vw; width: 21vw; color:rgb(162, 42, 23);} 
+.disease_4{right: 18vw; width: 21vw; top: 24.7vw;} 
 
 .disease_desc{font-size: 1.3vw;line-height: 1.8vw;text-align: start;}
 
-.disease_row1_num1{position:absolute;left: 34vw; top: 4.7vw;}
-.disease_row1_num2{position:absolute;left: 34vw; top: 7.6vw;}
-.disease_row1_num3{position:absolute;left: 34vw; top: 10.5vw;}
-.disease_row1_num4{position:absolute;left: 34vw; top: 13.4vw;}
-.disease_row1_num5{position:absolute;left: 34vw; top: 16.3vw;}
-.disease_row1_num6{position:absolute;left: 34vw; top: 19.2vw;}
-.disease_row1_num7{position:absolute;left: 34vw; top: 22.1vw;}
-.disease_row1_num8{position:absolute;left: 34vw; top: 25vw;}
-.disease_row1_num9{position:absolute;left: 34vw; top: 27.9vw;}
-.disease_row1_num10{position:absolute;left: 34vw; top: 30.8vw;}
-.disease_row1_num11{position:absolute;left: 34vw; top: 33.7vw;}
-.disease_row1_num12{position:absolute;left: 34vw; top: 36.6vw;}
+.disease_row1_num1{position:absolute;left: 37.2vw; top: 4.7vw;}
+.disease_row1_num2{position:absolute;left: 37.2vw; top: 7.6vw;}
+.disease_row1_num3{position:absolute;left: 37.2vw; top: 10.5vw;}
+.disease_row1_num4{position:absolute;left: 37.2vw; top: 13.4vw;}
+.disease_row1_num5{position:absolute;left: 37.2vw; top: 16.3vw;}
+.disease_row1_num6{position:absolute;left: 37.2vw; top: 19.2vw;}
+.disease_row1_num7{position:absolute;left: 37.2vw; top: 22.1vw;}
+.disease_row1_num8{position:absolute;left: 37.2vw; top: 25vw;}
+.disease_row1_num9{position:absolute;left: 37.2vw; top: 27.9vw;}
+.disease_row1_num10{position:absolute;left: 37.2vw; top: 30.8vw;}
+.disease_row1_num11{position:absolute;left: 37.2vw; top: 33.7vw;}
+.disease_row1_num12{position:absolute;left: 37.2vw; top: 36.6vw;}
 
-.disease_row2_num1{position:absolute;left: 53.5vw; top: 4.7vw;}
-.disease_row2_num2{position:absolute;left: 53.5vw; top: 7.6vw;}
-.disease_row2_num3{position:absolute;left: 53.5vw; top: 10.5vw;}
-.disease_row2_num4{position:absolute;left: 53.5vw; top: 13.4vw;}
-.disease_row2_num5{position:absolute;left: 53.5vw; top: 16.3vw;}
-.disease_row2_num6{position:absolute;left: 53.5vw; top: 19.2vw;}
-.disease_row2_num7{position:absolute;left: 53.5vw; top: 22.1vw;}
-.disease_row2_num8{position:absolute;left: 53.5vw; top: 25vw;}
-.disease_row2_num9{position:absolute;left: 53.5vw; top: 27.9vw;}
-.disease_row2_num10{position:absolute;left: 53.5vw; top: 30.8vw;}
-.disease_row2_num11{position:absolute;left: 53.5vw; top: 33.7vw;}
-.disease_row2_num12{position:absolute;left: 53.5vw; top: 36.6vw;}
+.disease_row2_num1{position:absolute;left: 56.7vw; top: 4.7vw;}
+.disease_row2_num2{position:absolute;left:  56.7vw; top: 7.6vw;}
+.disease_row2_num3{position:absolute;left:  56.7vw; top: 10.5vw;}
+.disease_row2_num4{position:absolute;left:  56.7vw; top: 13.4vw;}
+.disease_row2_num5{position:absolute;left: 56.7vw; top: 16.3vw;}
+.disease_row2_num6{position:absolute;left: 56.7vw; top: 19.2vw;}
+.disease_row2_num7{position:absolute;left: 56.7vw; top: 22.1vw;}
+.disease_row2_num8{position:absolute;left: 56.7vw; top: 25vw;}
+.disease_row2_num9{position:absolute;left: 56.7vw; top: 27.9vw;}
+.disease_row2_num10{position:absolute;left: 56.7vw; top: 30.8vw;}
+.disease_row2_num11{position:absolute;left: 56.7vw; top: 33.7vw;}
+.disease_row2_num12{position:absolute;left: 56.7vw; top: 36.6vw;}
 
 /*Provision Box Styling*/
 
 .provision_backdrop{position:absolute; width: 104vw; height: 45vw; left:-12vw;}
-.provision_container{position: absolute; left: 8.5vw; top: 6.75vw; height: 38.5vw; width: 75.2vw; display: none; 
-                    background-image: url("images/Provisions/provision_character_background_edited.png"); background-size: 75.2vw;}
+.provision_container{position: absolute; left: 8.5vw; top: 5.95vw;  width: 76vw; height: 39.6vw; 
+    background-image: url("images/Provisions/provision_character_background_edited.png"); background-size: 76vw 39.6vw; display: none; }
 .provision_close{position:absolute; right: 0.8vw; top:0.8vw; width: 1.6vw}
 .provision_close:hover{filter: brightness(150%);}
 .provisions_itembox{display: flex; position: absolute; left: 36.8vw; top: 1.2vw; width: 36.2vw; height: 17.5vw; 
@@ -706,8 +989,8 @@ text-align: center;}
 #aegis_scale_desc{left:13.5vw; top: 16.5vw}
 
 
-.provision_areabox{position: absolute; top: 19.3vw; right: 0.6vw;
-                   height: 19vw; width: 38.2vw;}
+.provision_areabox{position: absolute; top: 19.3vw; right: 1.6vw;
+                   height: 19vw; width: 38.5vw; }
 
 .provisions_navigation{position: absolute; top: 18.2vw; left: 32.7vw}
 .provisions_navbtn{width: 3.2vw;}
@@ -722,8 +1005,8 @@ text-align: center;}
 .courtyard_provision{  background-image: url("images/backgrounds/Courtyard.webp");background-position: center;}
 .farmstead_provision{  background-image: url("images/backgrounds/Farmstead.webp");background-position: center;}
 
-.dungeon_category{min-width: 12.7vw; max-width: 37vw; height: 17vw; padding-top: 2vw;  }
-.provision_list{text-align: center;font-size: 1vw; line-height: 1.5vw;}
+.dungeon_category{min-width: 13vw; max-width: 37vw; height: 17vw; padding-top: 2vw;  }
+.provision_list{text-align: center;font-size: 1vw; line-height: 1.5vw; }
 .general_provision_list{text-align: start; font-size: 1vw; line-height: 1.45vw;}
 
 .provisions_title{font-size: 2vw; font-family: dd_logo; color: rgb(199, 179, 107); position: absolute; display: flex;justify-content: center; width: 38.1vw; height: 3vw; margin-top:-0.2vw;}
@@ -885,46 +1168,47 @@ text-align: center;}
 
 /*Districts*/
 
-.district_container{ position: absolute; display: none;width:37.5vw; height: 38.4vw; left: 9vw; top: 6.9vw;
-    background-image: url('images/Districts/district_background.png');background-size: 37.5vw;}
+.district_container{ position: absolute; display: none;width:37.5vw; height: 40vw; left: 9vw; top: 5.95vw;
+    background-image: url('images/Districts/district_background.png');background-size: 37.5vw 40vw}
 .district_port{display: flex; height: 5vw; margin: 0.3vw}
 .district_port:hover{filter: brightness(150%);}
 .district_sidenav{position: absolute; left: 37vw; top:0vw; width: 23vw;height:22.7vw; 
 display: flex; flex-direction: row; flex-wrap: wrap; background-color: black; justify-content: center;}
 .district_subcontainer{display: none;}
 
-.district_dlc_title_container{position: absolute; top: 33.6vw; left: 1.4vw; width: 19vw; text-align: center; font-size: 2vw;}
+.district_dlc_title_container{position: absolute; top: 34.2vw; left: 1.4vw; width: 19vw; text-align: center; font-size: 2vw;}
 
 .district_sprite{max-width: 16vw; max-height: 16.2vw; display: flex;}
-.district_sprite_container{position: absolute; top: 6.5vw; left: 1.35vw; width: 19vw; height: 16.2vw; display: flex; justify-content: center;}
-.district_title_container{position: absolute; top: 23.5vw; left: 1.4vw; width: 19vw; text-align: center; font-size: 2vw;}
+.district_sprite_container{position: absolute; top: 7.4vw; left: 1.35vw; width: 19vw; height: 16.2vw; display: flex; justify-content: center;}
+.district_title_container{position: absolute; top: 24.3vw; left: 1.4vw; width: 19vw; text-align: center; font-size: 2vw;}
 
 .district_price_container{
-    position: absolute; top: 26.2vw; left: 1.85vw; width: 18.2vw; height:17vw; font-size: 1.5vw; font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167);
+    position: absolute; top: 26.9vw; left: 1.85vw; width: 18.2vw; height:17vw; font-size: 1.5vw; font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167);
     display: flex; justify-content: space-evenly;
 }
 .currency_container{ text-align:center;padding:0.5vw; height: 8vw;min-width: 6vw;}
 .currency_icon{width: 2vw; height:2vw;}
 
 .district_information_container{
-    position: absolute; top: 22.2vw; left: 20.3vw;height:16vw; width: 17vw; text-align: center; padding: 0.3vw;
+    position: absolute; top: 22.7vw; left: 20.3vw;height:16vw; width: 17vw; text-align: center; padding: 0.3vw;
     font-size: 1.1vw; font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); line-height: 1.6vw;
 }
 .district_notes_container{
-    position: absolute; top: 9.7vw; left: 21vw;height:9.5vw; width: 16vw; text-align: center; padding: 0.3vw; 
+    position: absolute; top: 9.9vw; left: 21vw;height:9.5vw; width: 16vw; text-align: center; padding: 0.3vw; 
     font-size: 1.1vw; font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); line-height: 1.5vw;
 }
 .district_radiant_info{top: 7.5vw; left: 1.5vw; width:2.2vw;}
 .district_radiant_info_desc{position: absolute;top: 7.5vw; left: 4vw;max-width: 50vw; font-size: 1.1vw; line-height: 1.4vw;}
 
 /*Virtues and Afflictions*/
-.resolve_container{position:absolute; left: 8.5vw; top: 6.75vw; width: 75.2vw; height: 39vw; background-size: 75.2vw 39vw; background-image: url("images/Virtue_Affliction/resolve_check_bg.png");display: none;}
+.resolve_container{position: absolute; left: 8.5vw; top: 5.95vw; width: 76vw; height: 39.6vw; 
+    background-image: url("images/Virtue_Affliction/resolve_check_bg.png"); background-size: 76vw 39.6vw; display: none; }
 .resolve_column{width: max-content; height: 29.5vw; position: absolute; top: 6.5vw; font-family: 'Ubuntu', sans-serif;  font-size: 2vw;font-weight: 500; line-height: 3.4vw; padding: 0.3vw; }
 .resolve1{left: 2vw; color: rgb(199, 179, 107); }
 .resolve2{left: 19.5vw; color: rgb(160, 43, 32);} 
 .resolve_name:hover{filter: brightness(150%); cursor:pointer;}
 
-.resolve_desc{font-size: 1.1vw;line-height: 1.5vw; left: 35vw;top:0.7vw; position: absolute; width:37vw;
+.resolve_desc{font-size: 1.1vw;line-height: 1.5vw; left: 35vw;top:0.7vw; position: absolute; width:38.2vw;
     font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167);font-weight: 500; display: none;
     text-align: center; padding: 0.3vw 0.6vw 0.6vw 0.6vw;}
 .resolve_title{font-size: 1.5vw;}
@@ -942,14 +1226,15 @@ display: flex; flex-direction: row; flex-wrap: wrap; background-color: black; ju
 .actout_overview_label {position: absolute;top: 24.25vw; left: 4.2vw; font-size: 1.6vw; }
 .circus_resolve_overview_label{position: absolute;top: 27.5vw; left:4.2vw; font-size: 1.6vw;}
 
-.resolve_overview_info{position: absolute;top: 3.3vw; left: 32vw;max-width: 50vw; font-size: 1.1vw; line-height: 1.4vw;}
-.affliction_info {position: absolute;top: 5.7vw; left: 32vw; max-width: 50vw;  font-size: 1.1vw; line-height: 1.4vw;}
-.virtue_info{position: absolute;top: 8.1vw; left: 32vw;max-width: 50vw;  font-size: 1.1vw; line-height: 1.4vw;}
-.actout_general_info {position: absolute;top: 26.8vw; left: 0vw; max-width: 115vw;  font-size: 1.1vw; line-height: 1.8vw; text-align: center;}
+.resolve_overview_info{position: absolute;top: 3.3vw; left: 33.2vw;max-width: 50vw; font-size: 1.1vw; line-height: 1.4vw;}
+.affliction_info {position: absolute;top: 5.7vw; left: 33.2vw; max-width: 50vw;  font-size: 1.1vw; line-height: 1.4vw;}
+.virtue_info{position: absolute;top: 8.1vw; left: 33.2vw;max-width: 50vw;  font-size: 1.1vw; line-height: 1.4vw;}
+.actout_general_info {position: absolute;top: 26.8vw; left: 1.2vw; max-width: 115vw;  font-size: 1.1vw; line-height: 1.8vw; text-align: center;}
 .circus_resolve_overview_info{position: absolute;top: 30vw; left: 1.5vw;max-width: 35vw;  font-size: 1.1vw; line-height: 1.4vw;}
 
 /*Torch*/
-.torchlight_container{position:absolute; left: 8.5vw; top: 6.75vw; width: 75.2vw; height: 39vw; background-size: 75.2vw 39vw; background-image: url("images/Torch/torch_bg.png");display: none;}
+.torchlight_container{position: absolute; left: 8.5vw; top: 5.95vw; width: 76vw; height: 39.6vw; 
+    background-image: url("images/Torch/torch_bg.png"); background-size: 76vw 39.6vw; display: none; }
 .torchlight_column{width: max-content; height: 29.5vw; position: absolute; top: 6.5vw; font-family: 'Ubuntu', sans-serif;  font-size: 1.7vw;font-weight: 500; line-height: 2.8vw; padding: 0.3vw; }
 .torchlight1{left: 2vw; color: rgb(199, 179, 107); }
 .torchlight2{left: 20vw;} 
@@ -958,7 +1243,7 @@ display: flex; flex-direction: row; flex-wrap: wrap; background-color: black; ju
 .gleaming{color:rgb(229, 68, 59);}
 .haunting{color:rgb(175, 249, 163)}
 
-.torchlight_desc{font-size: 1.2vw;line-height: 1.8vw; left: 40vw;top:0.7vw; position: absolute; width:32vw;
+.torchlight_desc{font-size: 1.2vw;line-height: 1.8vw; left: 40vw;top:0.7vw; position: absolute; width:33.2vw;
     font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167);font-weight: 500; display: none;
     text-align: center; padding: 0.3vw 0.6vw 0.6vw 0.6vw; }
 .torchlight_title{font-size: 2vw;line-height: 3vw;}
@@ -973,12 +1258,10 @@ display: flex; flex-direction: row; flex-wrap: wrap; background-color: black; ju
 /*Town Events*/
 
 
-.town_event_container{ position: absolute; left: 8.5vw; top: 6.75vw; height: 38.7vw; width: 69.8vw; 
-    background-image: url("images/Town_Events/town_event_bg.png"); background-size: 69.8vw; display: none;}
-.town_event_container{ position:absolute; left: 8.5vw; top: 6.75vw; width: 75.2vw; height: 39vw; background-size: 75.2vw 39vw; background-image: url("images/Town_Events/town_event_bgalt.png");display: none;}
+.town_event_container{ position:absolute; left: 8.5vw; top: 5.95vw; width: 76.6vw; height: 39.8vw; background-size: 76.6vw 39.8vw; background-image: url("images/Town_Events/town_event_bgalt.png");display: none;}
 
 .town_event_column{width: max-content; height: fit-content; position: absolute; top: 0.9vw; left: 32.5vw; font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1.4vw;font-weight: 500; line-height: 2.3vw; padding: 0.3vw; }
-.event_nav{position: absolute; left:74.8vw; top:3.5vw; text-align: start;}
+.event_nav{position: absolute; left:76.2vw; top:3.5vw; text-align: start;}
 .event_banner{height:3vw;margin-bottom:3.5vw;}
 .event_banner:hover{filter: brightness(150%);}
 
@@ -1032,14 +1315,14 @@ display: flex; flex-direction: row; flex-wrap: wrap; background-color: black; ju
     font-family: 'Ubuntu', sans-serif; color:rgb(93, 91, 79);font-size: 1.3vw; font-weight: 800;}
 
 /*Background element Styling*/
-.back_arrow{position: absolute; top: 4.3vw; left: 11.8vw; height: 2vw;}
+.back_arrow{position: absolute; top: 3.5vw; left: 11.8vw; height: 2vw;}
 .back_arrow:hover{filter: brightness(150%);}
 .crimson_banner{width: 9.5vw; position: absolute; top: 5vw; left: 1.2vw;}
-.estate_title{height: 15vw; position: absolute;  width: 48vw;}
+.estate_title{height: 15vw; position: absolute;  width: 48vw;top:-0.8vw}
 .infestation{position: absolute;width:9vw; top:7vw; left: 1.3vw;}
 
 /*Embark Button Styling*/
-#embark_button{height: 3vw; position: absolute; top: 44.7vw; left: 49.7vw; display: none;}
+#embark_button{height: 3vw; position: absolute; top: 44.7vw; left: 49.7vw; display: block;}
 #embark_button:hover{filter: brightness(170%);}
 .embark_btn{height: 5vw; position: absolute; top: 45vw; left: 49.7vw; display: none;}
 .embark_btn:hover{filter: brightness(170%);}
@@ -1056,7 +1339,6 @@ display: flex; flex-direction: row; flex-wrap: wrap; background-color: black; ju
     position: absolute; top: 39.8vw; left:46.3vw}
 
 .opinion_bg{width:5vw; height: 5vw; display: flex; padding: 0.5vw 0.2vw 0.2vw 0.4vw;}
-.opinion_bg:hover{filter: brightness(150%);}
 .padding{height:10vw; width: 100vw; background-color: black;}
 
 /*Hero Portion Styling*/
@@ -1112,7 +1394,7 @@ display: flex; flex-direction: row; flex-wrap: wrap; background-color: black; ju
     
 .infodesc{position: absolute;top: 87.5vw ; left: 83.3vw; padding: 0.1vw 0.2vw; display: none;
     font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 0.8vw; line-height: 1.4vw;
-    height: fit-content; width:max-content; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.8);}
+    height: fit-content; width:max-content; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.9);}
 
 .box2{top: 81.9vw; left: 17.4vw;}
 .desc2{top: 81.8vw; left: 19.5vw;}
@@ -1264,7 +1546,7 @@ display: flex; flex-direction: row; flex-wrap: wrap; background-color: black; ju
 
 
 .desc_box{position: absolute; top: 4.4vw; left: -3vw;
-         height: fit-content; width:max-content; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.8);
+         height: fit-content; width:max-content; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.9);
          font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 0.9vw; line-height: 1.1vw; font-weight: 500;
          text-align: center; padding: 0 0.6vw 0.3vw 0.6vw; display: none;
 }
@@ -1274,7 +1556,7 @@ display: flex; flex-direction: row; flex-wrap: wrap; background-color: black; ju
 
 
 .equip_desc{position: absolute; top: -2.6vw;
-    height: fit-content; width:max-content; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.8);
+    height: fit-content; width:max-content; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.9);
     font-family: 'Ubuntu', sans-serif; color: rgb(206, 58, 33); font-size: 1vw; line-height: 1.5vw; font-weight: 500;
     text-align: center; padding:0.2vw; display: none;
 }
