@@ -1321,10 +1321,10 @@ display: flex; flex-direction: row; flex-wrap: wrap; background-color: black; ju
     font-family: 'Ubuntu', sans-serif; color:rgb(93, 91, 79);font-size: 1.3vw; font-weight: 800;}
 
 /*Background element Styling*/
-.back_arrow{position: absolute; top: 3.4vw; left: 9.5vw; height: 1.9vw;}
+.back_arrow{position: absolute; top: 3.4vw; left: 9.8vw; height: 1.9vw;}
 .back_arrow:hover{filter: brightness(150%);}
 .crimson_banner{width: 9.5vw; position: absolute; top: 5vw; left: 1.2vw;}
-.estate_title{height: 12.5w; position: absolute;  width: 40vw;top:0vw}
+.estate_title{height: 12.5w; position: absolute;  width: 40vw;top:0vw; left: 0.3vw;}
 .infestation{position: absolute;width:9vw; top:7vw; left: 1.3vw;}
 
 /*Embark Button Styling*/
