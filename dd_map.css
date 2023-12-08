@@ -1013,7 +1013,7 @@ text-align: center;}
 
 .dungeon_category{min-width: 13vw; max-width: 37vw; height: 17vw; padding-top: 2vw;  }
 .provision_list{text-align: center;font-size: 1vw; line-height: 1.5vw; }
-.general_provision_list{text-align: start; font-size: 1vw; line-height: 1.45vw;}
+.general_provision_list{text-align: start; font-size: 1vw; line-height: 1.45vw;padding-left: 0.3vw;}
 
 .provisions_title{font-size: 2vw; font-family: dd_logo; color: rgb(199, 179, 107); position: absolute; display: flex;justify-content: center; width: 38.1vw; height: 3vw; margin-top:-0.2vw;}
 
