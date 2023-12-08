@@ -425,8 +425,8 @@ attachHoverListeners("[id='tempting_goblet_enemy']", "[id='tempting_goblet_enemy
 //Bone Soldier Skills
 
 attachHoverListeners("[id='app_graveyard_slash']", "[id='app_graveyard_slash_desc']");
-attachHoverListeners("[id='vet_graveyard_slash']", "[id='app_graveyard_slash_desc']");
-attachHoverListeners("[id='champ_graveyard_slash']", "[id='app_graveyard_slash_desc']");
+attachHoverListeners("[id='vet_graveyard_slash']", "[id='vet_graveyard_slash_desc']");
+attachHoverListeners("[id='champ_graveyard_slash']", "[id='champ_graveyard_slash_desc']");
 
 attachHoverListeners("[id='app_graveyard_stumble']", "[id='app_graveyard_stumble_desc']");
 attachHoverListeners("[id='vet_graveyard_stumble']", "[id='vet_graveyard_stumble_desc']");
