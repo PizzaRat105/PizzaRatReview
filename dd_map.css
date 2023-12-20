@@ -6,7 +6,7 @@
 /*Blanket Styling*/
 *{box-sizing: border-box; background-repeat: no-repeat;position: relative;}
 body {
-    margin: -0.8vw 0 0 0; /* Adjust the top margin as needed */
+    margin: -0.1vw 0 0 0; /* Adjust the top margin as needed */
     padding: 0;
     background-color: black;
     cursor: url(images/dd_cursor.png), auto;
@@ -378,6 +378,9 @@ button{background: white; border: none; width:20px}
     font-size: 1.1vw; line-height: 2vw; font-weight: 500; padding: 0 0.3vw; text-align: center; overflow: auto; 
     
 }
+
+.difficulty_spacing{line-height: 2vw; font-size: 1.05vw; font-weight: 550;}
+
 
 .enemy_side_text_container::-webkit-scrollbar {width: 0vw;}
 
