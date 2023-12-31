@@ -1423,31 +1423,22 @@ attachHoverListeners("[id='spoiler_warning_info']", "[id='spoiler_warning_desc']
 
 //Boss Specific Info
 
-attachHoverListeners("[id='prophet_additional_info']", "[id='prophet_additional_info_desc']");
-attachHoverListeners("[id='brigand_pounder_additional_info']", "[id='brigand_pounder_additional_info_desc']");
-attachHoverListeners("[id='shrieker_additional_info']", "[id='shrieker_additional_info_desc']");
-attachHoverListeners("[id='swine_prince_additional_info']", "[id='swine_prince_additional_info_desc']");
 attachHoverListeners("[id='flesh_additional_info']", "[id='flesh_additional_info_desc']");
-attachHoverListeners("[id='siren_additional_info']", "[id='siren_additional_info_desc']");
 attachHoverListeners("[id='shambler_additional_info']", "[id='shambler_additional_info_desc']");
-attachHoverListeners("[id='drowned_crew_additional_info']", "[id='drowned_crew_additional_info_desc']");
 attachHoverListeners("[id='collector_additional_info']", "[id='collector_additional_info_desc']");
-attachHoverListeners("[id='shambler_endless_diff_info']", "[id='shambler_endless_diff_info_desc']");
-attachHoverListeners("[id='shrieker_endless_diff_info']", "[id='shrieker_endless_diff_info_desc']");
 attachHoverListeners("[id='shrieker_quirk_info']", "[id='shrieker_quirk_info_desc']");
+attachHoverListeners("[id='fanatic_additional_info']", "[id='fanatic_additional_info_desc']");
+attachHoverListeners("[id='thing_from_the_stars_additional_info']", "[id='thing_from_the_stars_additional_info_desc']");
+attachHoverListeners("[id='thing_from_the_stars_quirk_info']", "[id='thing_from_the_stars_quirk_info_desc']");
 
 
 
 //Boss Minion Info
 attachHoverListeners("[id='necromancer_minion_more_info']", "[id='necromancer_minion_more_info_desc']");
-attachHoverListeners("[id='prophet_minion_more_info']", "[id='prophet_minion_more_info_desc']");
 attachHoverListeners("[id='brigand_pounder_minion_more_info']", "[id='brigand_pounder_minion_more_info_desc']");
-attachHoverListeners("[id='swine_prince_minion_more_info']", "[id='swine_prince_minion_more_info_desc']");
-attachHoverListeners("[id='siren_minion_more_info']", "[id='siren_minion_more_info_desc']");
-attachHoverListeners("[id='drowned_crew_minion_more_info']", "[id='drowned_crew_minion_more_info_desc']");
 attachHoverListeners("[id='collector_minion_more_info']", "[id='collector_minion_more_info_desc']");
 attachHoverListeners("[id='shrieker_minion_more_info']", "[id='shrieker_minion_more_info_desc']");
-attachHoverListeners("[id='shambler_minion_more_info']", "[id='shambler_minion_more_info_desc']");
+attachHoverListeners("[id='baron_minion_more_info']", "[id='baron_minion_more_info_desc']");
 
 //Trophies
 attachHoverListeners("[id='necromancer\\'s_collar']", "[id='necromancer\\'s_collar_desc']");
