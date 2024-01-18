@@ -7,7 +7,7 @@
 
 
 /*Blanket Styling*/
-*{box-sizing: border-box; background-repeat: no-repeat;}
+*{box-sizing: border-box; background-repeat: no-repeat;border: 1px solid red;}
 
 
 
@@ -354,7 +354,7 @@ button{background: white; border: none; width:20px}
 .skill_no{height: 4vw; width: 4vw; margin: 0 0.25vw; position: relative; transform: scaleX(1.1);}
 
 .skill_desc_align {
-    height: 35vw;
+    height: 28vw;
     width: 40vw;
     position: absolute;
     top: 14.15vw;
