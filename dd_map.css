@@ -6,7 +6,7 @@
 /*Blanket Styling*/
 *{box-sizing: border-box; background-repeat: no-repeat;position: relative;}
 body {
-    margin: -0.6vw 0 0 0; /* Adjust the top margin as needed */
+    margin: -0.1vw 0 0 0; /* Adjust the top margin as needed */
     padding: 0;
     background-color: black;
     cursor: url(images/dd_cursor.png), auto;
@@ -25,12 +25,12 @@ button{background: white; border: none; width:20px}
 .nondisplay{display: none;}
 .ddlogo_text{font-family: dd_logo; color: rgb(199, 179, 107); font-weight: 400;}
 .general_desc{position: absolute; width:max-content; display:none;
-    border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.9);
+    border: 0.15vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.9);
     font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1vw; line-height: 1.3vw; font-weight: 500;
     text-align: center; padding: 0.3vw 0.6vw 0.6vw 0.6vw;
 }
 .test_desc{position: absolute; width:max-content; 
-    border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.9);
+    border: 0.15vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.9);
     font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1vw; line-height: 1.3vw; font-weight: 500;
     text-align: center; padding: 0.3vw 0.6vw 0.6vw 0.6vw;
 }
@@ -355,8 +355,8 @@ button{background: white; border: none; width:20px}
 .enemy_trinket{height: 7vw; width: 3.5vw;display: flex; vertical-align: middle; margin: 0 0.2vw;}
 .enemy_trinket:hover{filter: brightness(150%);}
 
-.enemy_trinket_desc{position: absolute; top: 30vw; left: 11.1vw; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.9); padding:0.3vw 0.4vw 0.3vw 0.4vw;
-    text-align: center; width:max-content; font-size: 1vw; line-height: 1.5vw; display: none;font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167);}
+.enemy_trinket_desc{position: absolute; top: 30vw; left: 11.1vw; border: 0.15vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.9); padding:0.3vw 0.4vw 0.3vw 0.4vw;
+    text-align: center; width:max-content; font-size: 1vw; line-height: 1.4vw; display: none;font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167);}
 
 
 .enemytrinket1{left:7.1vw;}
@@ -366,12 +366,12 @@ button{background: white; border: none; width:20px}
 
 
 /*Boss Skills*/
-
+.position_icons{height:0.85vw; line-height: 1.1vw;}
 .enemy_skill_container{position: absolute; top: 26.5vw; left: 20.2vw; width:20vw; height:fit-content; 
     font-size: 1.3vw; line-height: 2.2vw; font-weight: 500;}
 
-.enemy_skill_desc_container{position: absolute; top: 23.75vw; left: 41.2vw; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.9); padding:0.25vw 0.4vw;
-    text-align: center; width:max-content;font-size: 1vw; line-height: 1.5vw; display: none; font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); max-width: 42vw;}
+.enemy_skill_desc_container{position: absolute; top: 23.75vw; left: 41.2vw; border: 0.15vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.9); padding:0.25vw 0.4vw;
+    text-align: center; width:max-content;font-size: 1vw; line-height: 1.4vw; display: none; font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); max-width: 42vw;}
 
 .enemy_side_text_container{
     position:absolute; left: 43.25vw; top: 11.5vw; width: 30.5vw; height: 26.2vw;
@@ -410,9 +410,9 @@ text-align: center;}
 .curio_info{position: absolute; left: 33vw; top:6.2vw; width: 2vw; } 
 .forced_universal{left: 35vw; top: 6.2vw;}
 
-.interaction_desc{position: absolute; left: 22.5vw; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.9); padding:0.3vw 0.5vw 0.3vw 0.4vw;
+.interaction_desc{position: absolute; left: 22.5vw; border: 0.15vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.9); padding:0.3vw 0.5vw 0.3vw 0.4vw;
      width:max-content; font-size: 1.1vw; line-height: 1.8vw; display: none;}
-.universal_desc{position: absolute;  border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.9); padding:0.3vw 0.5vw 0.3vw 0.4vw;
+.universal_desc{position: absolute;  border: 0.15vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.9); padding:0.3vw 0.5vw 0.3vw 0.4vw;
      width:max-content; font-size: 1.1vw; line-height: 1.8vw;font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); }
 .curio_info:hover{filter: brightness(150%);}
 .result_icon{width: 1.4vw; position: absolute; padding-top: 0.2vw;}
@@ -644,8 +644,8 @@ text-align: center;}
 .boss_trinket:hover{filter: brightness(150%);}
 
 
-.boss_trinket_desc{position: absolute; top: 31.5vw; left: 10.9vw; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.9); padding:0.3vw 0.4vw 0.3vw 0.4vw;
-    text-align: center; width:max-content; font-size: 1vw; line-height: 1.5vw; display: none;font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167);}
+.boss_trinket_desc{position: absolute; top: 31.5vw; left: 10.9vw; border: 0.15vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.9); padding:0.3vw 0.4vw 0.3vw 0.4vw;
+    text-align: center; width:max-content; font-size: 1vw; line-height: 1.4vw; display: none;font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167);}
 
 .shrieker1{left:6.1vw;}
 .shrieker2{left:9.3vw;}
@@ -661,8 +661,8 @@ text-align: center;}
 .boss_skill_container{position: absolute; top: 28vw; left: 20.5vw; width:20vw; height:10.1vw; 
     font-size: 1.3vw; line-height: 2vw; font-weight: 500; overflow: auto;}
 
-.boss_skill_desc_container{position: absolute; top: 25.4vw; left: 41.2vw; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.9); padding:0.25vw 0.4vw;
-    text-align: center; width:max-content;font-size: 1vw; line-height: 1.5vw; display: none; font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); max-width: 42vw;}
+.boss_skill_desc_container{position: absolute; top: 25.4vw; left: 41.2vw; border: 0.15vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.9); padding:0.25vw 0.4vw;
+    text-align: center; width:max-content;font-size: 1vw; line-height: 1.4vw; display: none; font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); max-width: 42vw;}
 
 
 
@@ -1404,7 +1404,7 @@ display: flex; flex-direction: row; flex-wrap: wrap; background-color: black; ju
     
 .infodesc{position: absolute;top: 87.5vw ; left: 83.3vw; padding: 0.1vw 0.2vw; display: none;
     font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 0.8vw; line-height: 1.4vw;
-    height: fit-content; width:max-content; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.9);}
+    height: fit-content; width:max-content; border: 0.15vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.9);}
 
 .box2{top: 81.9vw; left: 17.4vw;}
 .desc2{top: 81.8vw; left: 19.5vw;}
@@ -1556,7 +1556,7 @@ display: flex; flex-direction: row; flex-wrap: wrap; background-color: black; ju
 
 
 .desc_box{position: absolute; top: 4.4vw; left: -3vw;
-         height: fit-content; width:max-content; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.9);
+         height: fit-content; width:max-content; border: 0.15vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.9);
          font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 0.9vw; line-height: 1.1vw; font-weight: 500;
          text-align: center; padding: 0 0.6vw 0.3vw 0.6vw; display: none;
 }
@@ -1566,7 +1566,7 @@ display: flex; flex-direction: row; flex-wrap: wrap; background-color: black; ju
 
 
 .equip_desc{position: absolute; top: -2.6vw;
-    height: fit-content; width:max-content; border: 0.2vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.9);
+    height: fit-content; width:max-content; border: 0.15vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.9);
     font-family: 'Ubuntu', sans-serif; color: rgb(206, 58, 33); font-size: 1vw; line-height: 1.5vw; font-weight: 500;
     text-align: center; padding:0.2vw; display: none;
 }
