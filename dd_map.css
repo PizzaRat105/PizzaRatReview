@@ -6,7 +6,7 @@
 /*Blanket Styling*/
 *{box-sizing: border-box; background-repeat: no-repeat;position: relative;}
 body {
-    margin: -0.5vw 0 0 0; /* Adjust the top margin as needed */
+    margin: -0.8vw 0 0 0; /* Adjust the top margin as needed */
     padding: 0;
     background-color: black;
     cursor: url(images/dd_cursor.png), auto;
