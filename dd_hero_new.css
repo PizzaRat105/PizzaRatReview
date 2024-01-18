@@ -1,0 +1,621 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Roboto|Lobster|Oswald|Raleway|Inter|Open+Sans|Inconsolata|Shadows+Into+Light|Josefin+Sans:ital,wght@0,100;0,200;0,400;0,500;1,100;1,400;1,500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@font-face {font-family: bitter; src: url(fonts/Bitter-Regular.otf);}
+@font-face {font-family:concord ;src: url(fonts/Concord\ W00\ Light.ttf);}
+@font-face {font-family:dd_logo ;src: url(fonts/DwarvenAxe\ BB\ W00\ Regular.ttf);}
+
+
+
+/*Blanket Styling*/
+*{box-sizing: border-box; background-repeat: no-repeat;}
+
+
+
+body{
+    margin: 0; 
+    padding: 0; 
+    background-color: black; 
+    cursor: url(images/dd_cursor.png), auto;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+a{text-decoration: none; color: black;}
+ul{list-style-type: none; margin:0; padding: 0;}
+button{background: white; border: none; width:20px}
+.hidden{visibility: hidden;}
+.visible{display: block;}
+.nondisplay{display: none;}
+.ddlogo_text{font-family: dd_logo; color: rgb(199, 179, 107); font-weight: 400;}
+.general_desc{position: absolute; width:max-content; display: none;
+    border: 0.15vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.9);
+    font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1vw; line-height: 1.3vw; font-weight: 500;
+    text-align: center; padding: 0.3vw 0.6vw 0.6vw 0.4vw;
+}
+.nondisplay{display: none;}
+
+.description{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1vw; line-height: 1.3vw;}
+.hoverable:hover{filter: brightness(150%);}
+.fit_width{width:fit-content}
+.align_center{text-align: center;}
+
+.ubuntu_desc{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); }
+.smaller_text{font-size: 1vw; line-height: 1.5vw;}
+.usual_text{font-size: 1.1vw; line-height: 1.6vw;}
+
+
+
+.heroes_bg{
+    height: 50vw; background-image: url(images/backgrounds/circus.png); 
+    background-size: 100vw; background-clip: content-box; display: flex;
+    justify-content: center; background-position: center; 
+}
+
+
+.heroes_main{width: 80vw; height: 44vw; position: absolute;  margin-top: 4.8vw; display:none;
+    background-image: url(images/Hero_boxes/character_panel_template_noborder.png);background-size: 80vw; background-position: center;}
+
+
+
+.back_to_main{position: absolute; width:7.5vw; height: auto; right:1.4vw; margin-top:5.4vw}
+.back_to_main:hover{filter: brightness(150%);}
+.back_to_main_label{position: absolute; right:1.9vw; margin-top:11.3vw; font-size: 1.8vw;}
+
+/*Hero Panel Styling*/
+.hero_shared_content{ margin: 0; padding:0; 
+    display: none;
+    justify-content: center; 
+    align-items: center; 
+
+}
+
+.hero_port_container{
+    display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap; 
+   width: 100%; height: 5vw
+}
+
+.hero_port{width: 4.3vw; display: flex; margin: 0.3vw; }
+.hero_port:hover{filter: brightness(150%);}
+
+
+
+/*Hero Panel Category Styling*/
+
+.title_header{
+    position: absolute; 
+    text-align: center;
+    font-family: dd_logo; 
+    color: rgb(199, 179, 107); 
+    font-size: 1.4vw; 
+    transform: scaleY(1.3);
+    width: 29.8vw;
+    height: 2.3vw;
+}
+.quirk_header{top: 7.4vw; left: 12.2vw} 
+.stat_header{top: 20.6vw;left: 12.2vw;}
+.equip_header{ top: 29.1vw; left: 12.2vw;}
+.skill_header{top: 2.9vw; left: 46.4vw; }
+.camp_header{top: 16.4vw; left: 46.4vw;}
+.resist_header{top: 25.95vw; left: 46.4vw; }
+.misc_stat_header{top: 35.5vw; left: 46.4vw; }
+    
+
+
+/*Hero Header Styling*/
+.hero_header{color: rgb(199, 179, 107); font-family: dd_logo ; font-size: 2.6vw;
+             position: absolute; top: 0.9vw; left: 3.6vw; transform: scaleY(1.1);}
+.quotebox{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1.3vw; font-weight: bolder;
+         position: absolute; top: 3.9vw; left: 3.6vw;} 
+.hero_shared_info{display:none;}
+
+
+
+
+
+
+.header_bg{position: absolute; left: 0.4vw; top: 0.5vw;  width: 42vw; height: 6.2vw;}
+
+#abom_banner{background-image: url(images/Hero_boxes/abom_header.png); background-size: 42vw;}
+#anti_banner{background-image: url(images/Hero_boxes/anti_header.png); background-size: 42vw;}
+#arb_banner{background-image: url(images/Hero_boxes/arb_header.png); background-size: 42vw;}
+#bh_banner{background-image: url(images/Hero_boxes/bh_header.png); background-size: 42vw;}
+#crus_banner{background-image: url(images/Hero_boxes/crus_header.png); background-size: 42vw;}
+#flag_banner{background-image: url(images/Hero_Boxes/flag_header.png); background-size:42vw; }
+#gr_banner{background-image: url(images/Hero_boxes/gr_header.png); background-size: 42vw;}
+#hell_banner{background-image: url(images/Hero_boxes/hell_header.png); background-size: 42vw;}
+#hwm_banner{background-image: url(images/Hero_boxes/hwm_header.png); background-size: 42vw;}
+#hm_banner{background-image: url(images/Hero_boxes/hm_header.png); background-size: 42vw;}
+#jes_banner{background-image: url(images/Hero_boxes/jes_header.png); background-size: 42vw;}
+#lep_banner{background-image: url(images/Hero_boxes/lep_header.png); background-size: 42vw;}
+#maa_banner{background-image: url(images/Hero_boxes/maa_header.png); background-size: 42vw;}
+#musk_banner{background-image: url(images/Hero_boxes/musk_header.png); background-size: 42vw;}
+#occ_banner{background-image: url(images/Hero_boxes/occ_header.png); background-size: 42vw;}
+#pd_banner{background-image: url(images/Hero_boxes/pd_header.png); background-size: 42vw;}
+#sb_banner{background-image: url(images/Hero_boxes/sb_header.png); background-size: 42vw;}
+#ves_banner{background-image: url(images/Hero_boxes/ves_header.png); background-size: 42vw;}
+
+
+/*Resolve and name Styling*/
+.resolve_lvl{position:absolute; top: 6.5vw; left: 5.35vw; width:3.5vw; display: none; }
+
+.canon_name{color: rgb(199, 179, 107); font-family:  dd_logo; font-size: 1.5vw; 
+    position:absolute; top: 12.9vw; left: 3.9vw; 
+    width: 6.3vw; height: 2.2vw; ; text-align: center;}
+
+    
+/*Hero Sprite Styling*/
+.sprite_abom{position: absolute; top: 23.8vw; left: 3.6vw; width: 7.3vw;  display:none;}
+.sprite_anti{position: absolute; top: 24vw; left: 3.4vw; width: 7.9vw;  display:none;}
+.sprite_bh{position: absolute; top: 22.9vw; left: 2.6vw;  width: 9.3vw; display: none;}
+.sprite_arb{position: absolute; top: 22.4vw; left: 1vw;  width: 10vw; display: none;}
+.sprite_crus{position: absolute; top: 21.2vw; left: 2.4vw;  width: 9.8vw; display: none;}
+.sprite_flag{position: absolute; top: 23.7vw; left: 1.9vw; width:11.7vw;  display: none;} 
+.sprite_gr{position: absolute; top: 22.2vw; left: 3.1vw; width: 7.7vw;  display:none;}
+.sprite_hell{position: absolute; top: 18.9vw; left: 3.5vw;  width: 10.3vw; display: none;}
+.sprite_hwm{position: absolute; top: 23.3vw; left: 2.9vw;  width: 10.5vw; display: none;}
+.sprite_hm{position: absolute; top: 24vw; left: 0.5vw;  width: 13.7vw; display: none;}
+.sprite_jes{position: absolute; top: 23vw; left: 2.2vw;  width: 12.2vw; display: none;}
+.sprite_lep{position: absolute; top: 22vw; left: 2.4vw; width: 8.7vw;  display:none;}
+.sprite_maa{position: absolute; top: 24vw; left: 2vw;  width: 11.5vw; display: none;}
+.sprite_musk{position: absolute; top: 21.5vw; left: 3.4vw; width: 7.8vw;  display:none;}
+.sprite_occ{position: absolute; top: 23.5vw; left: 3.4vw;  width: 9.3vw; display: none;}
+.sprite_pd{position: absolute; top: 23.7vw; left: 1.5vw; width:11.3vw;  display: none;}
+.sprite_sb{position: absolute; top: 22.2vw; left: 3.1vw; width: 8vw;  display:none;}
+.sprite_ves{position: absolute; top: 23.3vw; left: 1.9vw;  width: 10.5vw; display: none;}
+
+
+.shadow{position: absolute; top: 39.1vw; left: 1.7vw;  width:10.8vw; height:2.8vw; } 
+
+/*Hero Panel Button Styling*/
+.rename_button{position: absolute; top: 1.5vw; left: 1.3vw; width: 1.8vw;} 
+
+.dismiss_btn{position: absolute; top: 3.8vw; left: 1.3vw; width: 1.8vw;} 
+.rename_button:hover{filter: brightness(150%);}
+.dismiss_btn:hover{filter: brightness(150%);}
+.close_btn{position: absolute; top: 0.5vw; right: 0.6vw; width: 1.8vw;} 
+.swapskin_btn{position:absolute; left: 0.9vw; top: 41.2vw; width: 1.8vw;}
+.close_btn:hover{filter: brightness(150%);}
+.swapskin_btn:hover{filter: brightness(150%);}
+
+.skin_num{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1.2vw; font-weight: bolder;
+    position:absolute; left: 2.9vw; top: 41.2vw;}
+
+
+
+/*Info Button Styling*/
+.info{position: absolute; width: 1.8vw;} 
+.info:hover{filter: brightness(150%);}
+
+.district_more_info{margin-left:20vw;}
+.district_info2{top:25.75vw;left:46.6vw;}
+
+    
+.infodesc{position: absolute;top: 20.15vw ; left: 14.7vw; padding:  0.2vw; display: none;
+    font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1vw; line-height: 1.5vw; font-weight: 500;
+    height: fit-content; width:max-content; border: 0.15vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.9);}
+
+.infodesc2{top: 25.4vw; left: 48.6vw;}
+
+
+/*Preferred Target Styling*/
+
+.pref_position_container{position:absolute; top: 6.9vw; left: 47.55vw;  
+    height: 2vw; width: 10.5vw; display: flex;  } 
+
+.pref_target_container{position:absolute; top: 6.9vw; left: 65.38vw; 
+    height: 2.9vw; width: 13.3vw; display: flex;  } 
+
+.pref_position_pip{width: 1.8vw; height:1.8vw; }
+
+.first_pip{margin:0 0.48vw 0 0.3vw}
+.middle_pip{margin:0 0.46vw;}
+.last_pip{margin:0 0 0 0.52vw;}
+
+
+.pref_pos_header{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); 
+    font-size: 1.2vw; line-height: 1.5vw;
+    position: absolute; top: 5vw; left: 36.3vw;
+   height: 2vw; width: 25vw; text-align: center;} 
+
+.pref_target_header{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); 
+    font-size: 1.2vw; line-height: 1.5vw;
+    position: absolute; top: 5vw; left: 61.95vw;
+   height: 2vw; width: 25vw; text-align: center;} 
+
+
+
+
+/*Quirk Category Styling*/
+
+.posquirk_text{ color: rgb(199, 179, 107); font-family:  'Ubuntu', sans-serif; font-size: 1.1vw; font-weight: 500; line-height: 1.7vw;
+            position:absolute; top: 10.2vw; left: 13.3vw;  transform: scaleX(1.1);
+}
+
+.negquirk_text{ color: rgb(160, 43, 32); font-family:  'Ubuntu', sans-serif; font-size: 1.1vw; font-weight: 500; line-height: 1.7vw;
+    position:absolute; top: 10.2vw; left: 27.5vw;  transform: scaleX(1.1); 
+    display: flex;  width: 13vw; height: 18vw;  direction: rtl;
+}
+.negflex {display: flex;}
+
+
+
+
+/*Resist Styling*/
+
+.res_icon {width: 1.5vw}
+
+.resist_text{position: absolute; top: 28.2vw; left: 46.05vw; 
+             width: 33vw; height: 6.5vw; display: flex; 
+             font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1.2vw; line-height: 1.5vw;}
+
+.resist_title{position: absolute; top: 28.2vw; left: 46.7vw; 
+             width: 30vw; height: 6.5vw; display: flex;
+             font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1.2vw; line-height: 1.5vw;}
+
+.resist1{height: 6.5vw; width: 14.5vw; display: flex; direction: rtl; flex-direction: column; }
+.resist2{height: 6.5vw; width: 16.5vw;  display: flex; direction: rtl; flex-direction: column;}
+
+.resist_title1{height: 6.5vw; width: 21vw; display: flex;  flex-direction: column;}
+.resist_title2{height: 6.5vw; width: 16vw;  display: flex; flex-direction: column;}
+
+/*General Tooltip Colorcoding*/
+
+.highres{color: rgb(199, 179, 107); }
+.highest{filter: brightness(150%); color: yellow;}
+.lowres {color: rgb(160, 43, 32);}
+.lowest {filter: brightness(70%);}
+.normal {color: rgb(173, 172, 167)}
+.stun {color:rgb(221, 175, 62)}
+.blight{color:rgb(185, 191, 65)}
+.heal{color:rgb(133, 189, 62)}
+.stress{color:white}
+.chance {color: rgb(94, 95, 94)}
+.debuff{color:rgb(177, 108, 49)}
+.exhaust{color: rgb(185, 76, 37)}
+
+.buff{color:rgb(117, 190, 197)}
+.bleed{color:rgb(141, 14, 16)}
+.move{color:rgb(92, 129, 145)}
+.disease{color:rgb(116, 125, 78)}
+.mark{color:rgb(141, 15, 26)}
+.stealth{color: rgb(79, 71, 124)}
+.scouting {color: rgb(69, 123, 112)}
+.block{color: rgb(93, 83, 43)}
+.aegis{width: 1.5vw; margin: 0;  margin-top:-0.25vw; padding:0; position: absolute;}
+.grey{color:grey}
+.attack_type{color:rgb(140, 123, 95)}
+.negative{color: rgb(160, 43, 32);}
+/*Statline Styling*/
+.statline_container{position: absolute; top: 22.85vw; left: 7.9vw;
+    height:7.2vw; width:40vw;
+    display: flex; justify-content: start; flex-direction: row;}
+
+
+.stat_box{position: absolute; top: 22.85vw; left: 0vw;
+             height:7.2vw; width:40vw; 
+             display: flex; justify-content: start; flex-direction: row;}
+
+.stats_box1{position: absolute; left: 9.2vw; }
+.stats_box2{position: absolute; left: 21vw}
+
+.numbers_container{position:absolute; width: 40vw;}
+.numbers_box1{height:7vw; position:absolute; left: 24.2vw; top: 0vw; width: 8vw; }
+.numbers_box2{height: 7vw;position: absolute; left: 36vw; top: 0vw; width:8vw}
+
+.statline{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1.2vw;
+     line-height: 1.3vw; text-align: start;}
+
+
+
+
+/*Misc Stats Styling*/
+.misc_container {position: absolute; top: 37.7vw; left: 41.9vw;
+    height:7.2vw; width:40vw; 
+    display: flex; justify-content: start; flex-direction: row;}
+
+
+.misc_box1{position: absolute; left: 4.5vw;}
+
+.misc_box2{position: absolute; left: 22vw}
+
+
+.misc{top: 37.8vw; left: 34vw}
+.misc_numbers_box1{height:7vw; position:absolute; left: 19vw; top: -0.1vw; width: 35vw}
+.misc_numbers_box2{height: 7vw;position: absolute; left: 37vw; top: -0.1vw; width:15vw}
+
+.misc_statline{line-height: 1.7vw;}
+
+/*Camping and Combat Styling*/
+
+.camp_title{font-size: 1vw; line-height: 1.2vw;}
+.skill_title{font-size: 1vw; font-weight: 400;}
+
+
+.combat_skill_container{position: absolute; top: 9.8vw; left: 43.9vw;
+                        width: 35vw; height: 5vw;
+                        display: flex; justify-content: center;}
+
+.camping_skill_container{position: absolute; top: 19.7vw; left: 43.9vw;
+                         width: 35vw; height: 5vw;
+                         display: flex; justify-content: center;}
+
+
+
+
+
+.skill_lvl_container{position: absolute; top: 14vw; left: 45.7vw;
+    width: 35vw; height: 3vw; 
+    display: flex; justify-content: center;
+    font-family: 'Ubuntu', sans-serif; color: rgb(199, 179, 107); font-size: 1.2vw;
+    line-height: 1.3vw;}
+.skill_no{height: 4vw; width: 4vw; margin: 0 0.25vw; position: relative; transform: scaleX(1.1);}
+
+.skill_desc_align {
+    height: 35vw;
+    width: 40vw;
+    position: absolute;
+    top: 14.15vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+}
+
+.desc_box {
+    align-self: center; /* Center horizontally within .skill_desc_align */
+    margin-bottom: auto; /* Push to the top of .skill_desc_align */
+    height: fit-content;
+    width: max-content;
+    border: 0.15vw rgb(54, 54, 55) solid;
+    background-color: rgba(0, 0, 0, 0.9);
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(173, 172, 167);
+    font-size: 1.0vw;
+    line-height: 1.3vw;
+    text-align: center;
+    padding:0.1vw 0.6vw 0.3vw 0.6vw;
+    
+}
+.camping_skill_box{
+    padding-top: 0.15vw;
+}
+.camping_skill{top:24.25vw;}
+
+.combatskill1{left: 27.9vw;}
+.combatskill2{left: 32.4vw;}
+.combatskill3{left: 36.9vw;}
+.combatskill4{left: 41.4vw;}
+.combatskill5{left: 45.9vw;}
+.combatskill6{left: 50.4vw;}
+.combatskill7{left: 54.9vw;}
+
+.flagcampskill1{left: 34.7vw;}
+.flagcampskill2{left: 39.2vw;}
+.flagcampskill3{left: 43.7vw;}
+.flagcampskill4{left: 48.2vw;}
+
+
+
+
+.position_icons_top{height:0.72vw; margin-top: 0.3vw;}
+.position_icons{height:0.72vw; margin-top: 0.3vw;}
+.position_icons_single{height:0.75vw; line-height: 0.7vw;}
+.position_icons_double {height:1.75vw;margin-top: 0.39vw;}
+
+.skill_icon{height: 4vw; width: 4vw; margin: 0 0.25vw; position: relative}
+.skill_icon:hover  {filter: brightness(150%);}
+.uses_text{color: rgb(199, 179, 107);padding-top: 0.2vw;}
+
+/*Positioning*/
+
+
+.blank_space{width: 1.5vw}
+.desc_text{line-height: 1vw; font-size: 0.8vw;}
+
+/*Equipment and Trinket Styling*/
+
+
+.hero_gear{height: 8.7vw; margin-right: 0.9vw; padding: 0;}
+.hero_gear:hover{filter: brightness(150%);}
+
+.equip_box{position: absolute; top: 34.2vw; left:15.9vw; display: flex; }
+
+.hero_provision{position:absolute; top:34.2vw; left:31.42vw;} 
+.hero_provision_box{position:absolute; top:34.3vw; left:36vw;
+    border: 0.15vw rgb(54, 54, 55) solid;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: rgb(173, 172, 167);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1vw;
+    line-height: 1.35vw;
+    text-align: center;
+    padding: 0.2vw 0.6vw 0.3vw 0.6vw; 
+    display: none;
+} 
+
+/*Tooltip Colorcoding*/
+
+
+.default_color{color: rgb(173, 172, 167);}
+
+.very_common{color: grey}
+.common{color: grey}
+.uncommon{color:rgb(108, 149, 85)}
+.rare{color: rgb(68, 97, 163)}
+.very_rare{color: rgb(180, 78, 31)}
+.crystalline{color: rgb(184, 253, 238)}
+.keepsake{color: rgb(184, 253, 238)}
+.crimson_court{color:rgb(162, 42, 23)}
+.cc_text{color:rgb(92, 50, 58)}
+.set_bonus{color:rgb(128, 191, 116)}
+.trophy{color:rgb(217, 185, 116)}
+.ancestral{color:rgb(207, 59, 33);}
+.darkest_dungeon{color:rgb(207, 59, 33);}
+.shrieker{color:rgb(207, 59, 33);}
+.thing{color:rgb(93, 144, 155);}
+
+
+.equip_desc_align {
+    height: 5vw;
+    width: 19vw;
+    top: -2.7vw;    
+    position: absolute;
+
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.equip_desc {
+    align-self: center; /* Center horizontally within .skill_desc_align */
+    margin-bottom: auto; /* Push to the top of .skill_desc_align */
+    height: fit-content;
+    width: max-content;
+    border: 0.15vw rgb(54, 54, 55) solid;
+    background-color: rgba(0, 0, 0, 0.9);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.05vw;
+    line-height: 1.5vw;
+    text-align: center;
+    padding: 0.2vw 0.6vw 0.3vw 0.6vw;
+    
+}
+.equipment_lvl_num1{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1.2vw; font-weight: 600;
+    position:absolute; left: 19.3vw; top: 32vw;transform: scaleY(1.05);}
+.equipment_lvl_num2{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1.2vw; font-weight: 600;
+    position:absolute; left: 24.8vw; top: 32vw;transform: scaleY(1.05);}
+
+/*Equipment Positioning */
+
+
+.weapon_desc{left:-7.35vw;} 
+.armor_desc{left:-2.05vw;}
+
+
+
+.hero_lvl_navigate{position: absolute; left: -2.8vw;top:6.5vw; width: 3vw; height: fit-content;  display: flex; flex-direction: column; justify-content: center;}
+
+.hero_lvl_btn{width: 3vw; margin: 0.35vw 0vw;  transform: scaleX(-1);}
+.hero_lvl_btn:hover{filter: brightness(150%);}
+
+.hero_info_navigate{position: absolute; left: -2.8vw;top:23vw; width: 3vw; height: fit-content;  display: flex; flex-direction: column; justify-content: center;}
+.hero_more_info_btn{width: 3vw; margin: 0.35vw 0vw;  transform: scaleX(-1);}
+.hero_more_info_btn:hover{filter: brightness(150%);}
+
+.more_info_panel{position: absolute; right:0.48vw; bottom:0.6vw;width: 34.6vw; height: 18.2vw}
+.more_info_panel2{position: absolute; right:0.48vw; bottom:9.2vw;width: 34.6vw; height: 9.5vw}
+
+
+
+
+.hero_passive_panel1{
+    position: absolute; right:0.48vw; bottom:0.6vw;
+    width: 34.6vw; height: 18.2vw; 
+    background-image: url(images/Hero_boxes/character_info_panel.png); background-size: 34.6vw 18.2vw;
+    font-size: 1.1vw; line-height: 1.6vw;
+
+}
+.passive_textbox{margin-top:2.9vw;margin-left: 1.5vw;
+    width: 30vw; height: 15.5vw; }
+
+.hero_passive_toggle{
+    position: absolute; right:-10vw; bottom:8.7vw; 
+    width:11vw; height: 8vw;
+    background-image: url(images/tooltip_background.png); background-size: 11vw 8vw;
+    font-size: 1.6vw;
+    display: flex; align-items: center; justify-content: center; padding-top: 1.4vw;
+}
+
+.passive_toggle_header{display: flex ; align-self: center; 
+    margin-bottom: auto;}
+.passive_toggle_btn1{position: absolute; width:3.5vw; margin-left: -4vw; margin-bottom: -0.7vw;}
+.passive_toggle_btn2{position: absolute; width:3.5vw; margin-left: 4vw; margin-bottom: -0.7vw;}
+.passive_toggle_btn1:hover{filter: brightness(150%);}
+.passive_toggle_btn2:hover{filter: brightness(150%);}
+.hero_passive_panel2{
+    position: absolute; right:0.48vw; bottom:9.2vw;
+    width: 34.6vw; height: 9.5vw; 
+    background-image: url(images/Hero_boxes/character_info_panel2.png); background-size: 34.6vw 9.5vw;
+    font-size: 1vw; line-height: 1.4vw;
+}
+
+
+/*.hero_trinket_panel{
+    position: absolute;  top: 28.5vw; left:12.5vw;
+    width: 29.5vw; height: 14.5vw; 
+    background-image: url(images/Hero_boxes/character_trinket_panel.png); background-size: 29.5vw 14.5vw;
+    font-size: 1.1vw; line-height: 1.6vw;
+
+}*/
+
+.hero_trinkets{height: 8.8vw; }
+.hero_trinkets:hover{filter: brightness(150%);}
+
+.hero_trinket_box{margin-top:4.1vw;height: 9.1vw; display: flex; justify-content: space-evenly;}
+
+.trinket_description{margin-top:29.34vw;  font-size: 1vw; line-height: 1.31vw; position: absolute;}
+
+.trinket_page_btn{display: flex ; align-self: center; max-height: 2.5vw;}
+
+.trinket_page_toggle_box{
+    display: flex; align-items: center; justify-content: center; 
+    height:4vw;width: 30vw; margin-left: 1.5vw; margin-top: 0.4vw;
+}
+
+.hidden_flex_center_align{display: none; justify-content: space-evenly;width:30vw}
+
+.flex_center_align{display: flex; justify-content: space-evenly;width:30vw}
+.hero_trinket_toggle{position: absolute; right:-10vw; bottom:1vw; }
+
+.trinketpage1{margin-left:0vw}
+.trinketpage2{margin-left:4vw}
+.trinketpage2:hover{filter: brightness(150%);}
+.trinketpage1:hover{filter: brightness(150%);}
+
+
+.trinket1a{margin-left:51.7vw;}
+.trinket2a{margin-left:56.6vw;}
+.trinket3a{margin-left:61.5vw;}
+.trinket4a{margin-left:66.4vw;}
+.trinket5a{margin-left:71.3vw;}
+.trinket6a{margin-left:76.2vw;} /*4.9*/
+
+.trinket1b{margin-left:52.5vw;}
+.trinket2b{margin-left:58.2vw;}
+.trinket3b{margin-left:63.95vw;}
+.trinket4b{margin-left:69.65vw;}
+.trinket5b{margin-left:75.35vw;}/*5.7*/
+
+
+
+.trinket1c{margin-left:56.5vw;}
+.trinket2c{margin-left:61.55vw;}
+
+.trinket3c{margin-left:71.45vw;}
+
+
+
+.hero_district_toggle{ position: absolute; right:-10vw; bottom:16.4vw; 
+    width:11vw; height: 8vw;
+    background-image: url(images/tooltip_background.png); background-size: 11vw 8vw;
+    font-size: 1.6vw;
+    display: flex; align-items: center; justify-content: center; padding-top: 1.4vw;}
+
+.hero_district_panel{
+    position: absolute; right:0.48vw; bottom:0.6vw;
+    width: 34.6vw; height: 8.5vw; 
+    background-image: url(images/Hero_boxes/smallestpanel.png); background-size: 34.6vw 8.5vw;
+    font-size: 1.1vw; line-height: 1.6vw;
+    
+
+}
+
+.district_textbox{margin-top: 2.75vw;height: 5.75vw;}
