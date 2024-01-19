@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Roboto|Lobster|Oswald|Raleway|Inter|Open+Sans|Inconsolata|Shadows+Into+Light|Josefin+Sans:ital,wght@0,100;0,200;0,400;0,500;1,100;1,400;1,500&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 @font-face {font-family: bitter; src: url(fonts/Bitter-Regular.otf);}
 @font-face {font-family:concord ;src: url(fonts/Concord\ W00\ Light.ttf);}
 @font-face {font-family:dd_logo ;src: url(fonts/DwarvenAxe\ BB\ W00\ Regular.ttf);}
@@ -25,24 +26,23 @@ body{
 
 a{text-decoration: none; color: black;}
 ul{list-style-type: none; margin:0; padding: 0;}
-button{background: white; border: none; width:20px}
 .hidden{visibility: hidden;}
 .visible{display: block;}
 .nondisplay{display: none;}
-.ddlogo_text{font-family: dd_logo; color: rgb(199, 179, 107); font-weight: 400;}
+.ddlogo_text{font-family: dd_logo; color: rgba(200, 180, 110, 255);  font-weight: 400;}
 .general_desc{position: absolute; width:max-content; display: none;
     border: 0.15vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.9);
-    font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1vw; line-height: 1.3vw; font-weight: 500;
+    font-family: 'Ubuntu', sans-serif; color: rgba(174, 172, 162, 255); font-size: 1vw; line-height: 1.3vw; font-weight: 500;
     text-align: center; padding: 0.3vw 0.6vw 0.6vw 0.4vw;
 }
 .nondisplay{display: none;}
 
-.description{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1vw; line-height: 1.3vw;}
+.description{font-family: 'Ubuntu', sans-serif; color: rgba(174, 172, 162, 255); font-size: 1vw; line-height: 1.3vw;}
 .hoverable:hover{filter: brightness(150%);}
 .fit_width{width:fit-content}
 .align_center{text-align: center;}
 
-.ubuntu_desc{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); }
+.ubuntu_desc{font-family: 'Ubuntu', sans-serif; color: rgba(174, 172, 162, 255); }
 .smaller_text{font-size: 1vw; line-height: 1.5vw;}
 .usual_text{font-size: 1.1vw; line-height: 1.6vw;}
 
@@ -88,7 +88,7 @@ button{background: white; border: none; width:20px}
     position: absolute; 
     text-align: center;
     font-family: dd_logo; 
-    color: rgb(199, 179, 107); 
+    color: rgba(200, 180, 110, 255);  
     font-size: 1.4vw; 
     transform: scaleY(1.3);
     width: 29.8vw;
@@ -105,9 +105,9 @@ button{background: white; border: none; width:20px}
 
 
 /*Hero Header Styling*/
-.hero_header{color: rgb(199, 179, 107); font-family: dd_logo ; font-size: 2.6vw;
+.hero_header{color: rgba(200, 180, 110, 255);  font-family: dd_logo ; font-size: 2.6vw;
              position: absolute; top: 0.9vw; left: 3.6vw; transform: scaleY(1.1);}
-.quotebox{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1.3vw; font-weight: bolder;
+.quotebox{font-family: 'Ubuntu', sans-serif; color: rgba(174, 172, 162, 255); font-size: 1.3vw; font-weight: bolder;
          position: absolute; top: 3.9vw; left: 3.6vw;} 
 .hero_shared_info{display:none;}
 
@@ -141,7 +141,7 @@ button{background: white; border: none; width:20px}
 /*Resolve and name Styling*/
 .resolve_lvl{position:absolute; top: 6.5vw; left: 5.35vw; width:3.5vw; display: none; }
 
-.canon_name{color: rgb(199, 179, 107); font-family:  dd_logo; font-size: 1.5vw; 
+.canon_name{color: rgba(200, 180, 110, 255);  font-family:  dd_logo; font-size: 1.5vw; 
     position:absolute; top: 12.9vw; left: 3.9vw; 
     width: 6.3vw; height: 2.2vw; ; text-align: center;}
 
@@ -180,7 +180,7 @@ button{background: white; border: none; width:20px}
 .close_btn:hover{filter: brightness(150%);}
 .swapskin_btn:hover{filter: brightness(150%);}
 
-.skin_num{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1.2vw; font-weight: bolder;
+.skin_num{font-family: 'Ubuntu', sans-serif; color: rgba(174, 172, 162, 255); font-size: 1.2vw; font-weight: bolder;
     position:absolute; left: 2.9vw; top: 41.2vw;}
 
 
@@ -194,7 +194,7 @@ button{background: white; border: none; width:20px}
 
     
 .infodesc{position: absolute;top: 20.15vw ; left: 14.7vw; padding:  0.2vw; display: none;
-    font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1vw; line-height: 1.5vw; font-weight: 500;
+    font-family: 'Ubuntu', sans-serif; color: rgba(174, 172, 162, 255); font-size: 1vw; line-height: 1.5vw; font-weight: 500;
     height: fit-content; width:max-content; border: 0.15vw rgb(54, 54, 55) solid;background-color:rgba(0, 0, 0, 0.9);}
 
 .infodesc2{top: 25.4vw; left: 48.6vw;}
@@ -215,12 +215,12 @@ button{background: white; border: none; width:20px}
 .last_pip{margin:0 0 0 0.52vw;}
 
 
-.pref_pos_header{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); 
+.pref_pos_header{font-family: 'Ubuntu', sans-serif; color: rgba(174, 172, 162, 255); 
     font-size: 1.2vw; line-height: 1.5vw;
     position: absolute; top: 5vw; left: 36.3vw;
    height: 2vw; width: 25vw; text-align: center;} 
 
-.pref_target_header{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); 
+.pref_target_header{font-family: 'Ubuntu', sans-serif; color: rgba(174, 172, 162, 255); 
     font-size: 1.2vw; line-height: 1.5vw;
     position: absolute; top: 5vw; left: 61.95vw;
    height: 2vw; width: 25vw; text-align: center;} 
@@ -230,11 +230,11 @@ button{background: white; border: none; width:20px}
 
 /*Quirk Category Styling*/
 
-.posquirk_text{ color: rgb(199, 179, 107); font-family:  'Ubuntu', sans-serif; font-size: 1.1vw; font-weight: 500; line-height: 1.7vw;
+.posquirk_text{ color: rgba(200, 180, 110, 255);  font-family:  'Ubuntu', sans-serif; font-size: 1.1vw; font-weight: 500; line-height: 1.7vw;
             position:absolute; top: 10.2vw; left: 13.3vw;  transform: scaleX(1.1);
 }
 
-.negquirk_text{ color: rgb(160, 43, 32); font-family:  'Ubuntu', sans-serif; font-size: 1.1vw; font-weight: 500; line-height: 1.7vw;
+.negquirk_text{ color:rgb(141, 15, 26);font-family:  'Ubuntu', sans-serif; font-size: 1.1vw; font-weight: 500; line-height: 1.7vw;
     position:absolute; top: 10.2vw; left: 27.5vw;  transform: scaleX(1.1); 
     display: flex;  width: 13vw; height: 18vw;  direction: rtl;
 }
@@ -249,11 +249,11 @@ button{background: white; border: none; width:20px}
 
 .resist_text{position: absolute; top: 28.2vw; left: 46.05vw; 
              width: 33vw; height: 6.5vw; display: flex; 
-             font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1.2vw; line-height: 1.5vw;}
+             font-family: 'Ubuntu', sans-serif; color: rgba(174, 172, 162, 255); font-size: 1.2vw; line-height: 1.5vw;}
 
 .resist_title{position: absolute; top: 28.2vw; left: 46.7vw; 
              width: 30vw; height: 6.5vw; display: flex;
-             font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1.2vw; line-height: 1.5vw;}
+             font-family: 'Ubuntu', sans-serif; color: rgba(174, 172, 162, 255); font-size: 1.2vw; line-height: 1.5vw;}
 
 .resist1{height: 6.5vw; width: 14.5vw; display: flex; direction: rtl; flex-direction: column; }
 .resist2{height: 6.5vw; width: 16.5vw;  display: flex; direction: rtl; flex-direction: column;}
@@ -263,31 +263,66 @@ button{background: white; border: none; width:20px}
 
 /*General Tooltip Colorcoding*/
 
-.highres{color: rgb(199, 179, 107); }
-.highest{filter: brightness(150%); color: yellow;}
-.lowres {color: rgb(160, 43, 32);}
-.lowest {filter: brightness(70%);}
-.normal {color: rgb(173, 172, 167)}
-.stun {color:rgb(221, 175, 62)}
-.blight{color:rgb(185, 191, 65)}
-.heal{color:rgb(133, 189, 62)}
-.stress{color:white}
-.chance {color: rgb(94, 95, 94)}
-.debuff{color:rgb(177, 108, 49)}
+.highres{color: rgba(200, 180, 110, 255); }
+.lowres {color: rgba(177, 25, 0, 255);}
+.normal {color: rgba(174. 172. 162, 255)}
+
+.negative{color: rgba(177, 25, 0, 255);}
+
+
+.stress{color:#e0ddce}
+.virtue{color:#e0ddce}
+.affliction{color:rgba(141, 15, 26, 255)}
+
+.heal{color: #87c241}
+
+.bleed{color: rgba(177, 25, 0, 255);}
+.blight{color:#bdc241}
+.stun {color:#c99c45}
+.disease{color:#798d45}
+
+
+.debuff{color:#c3630f}
+.riposte{color:#c3630f}
 .exhaust{color: rgb(185, 76, 37)}
 
-.buff{color:rgb(117, 190, 197)}
-.bleed{color:rgb(141, 14, 16)}
-.move{color:rgb(92, 129, 145)}
-.disease{color:rgb(116, 125, 78)}
-.mark{color:rgb(141, 15, 26)}
-.stealth{color: rgb(79, 71, 124)}
-.scouting {color: rgb(69, 123, 112)}
-.block{color: rgb(93, 83, 43)}
-.aegis{width: 1.5vw; margin: 0;  margin-top:-0.25vw; padding:0; position: absolute;}
+.buff{color:#5ec9d6}
+.move{color:#4c8ba2}
+.mark{color:rgba(141, 15, 26, 255)}
+.stealth{color: #443f86}
+.block{color: rgb(113, 103, 63)}
+
+.attack_type{color:#8d7b5f}
+.trap{color:#8860b2}
+.scouting {color: #55998b}
 .grey{color:grey}
-.attack_type{color:rgb(140, 123, 95)}
-.negative{color: rgb(160, 43, 32);}
+.chance {color: rgb(94, 95, 94)}
+
+.default_color{color: rgba(174, 172, 162, 255);}
+.very_common{color: rgba(168, 168, 168, 255)}
+.common{color: rgba(168, 168, 168, 255)}
+.uncommon{color:rgba(96, 149, 75, 255)}
+.rare{color: rgba(59, 97, 167, 255)}
+.very_rare{color: rgba(194, 69, 0, 255)}
+.ancestral{color:rgba(224, 39, 0, 255);}
+.trophy{color:rgba(222, 182, 105, 255)}
+.darkest_dungeon{color:rgba(224, 39, 0, 255);}
+.shrieker{color:rgba(224, 39, 0, 255);}
+
+.crimson_court{color:rgb(162, 42, 23)}
+.cc_text{color:#84182d}
+.set_bonus{color:#00ff00}
+
+.crystalline{color: #a3ffee}
+.keepsake{color: #a3ffee}
+.thing{color:#4a929c;}
+
+/*Dungeon Difficulties*/
+.apprentice{color:rgba(169, 217, 102, 255)}
+.veteran{color:rgba(233, 170, 98, 255)}
+.champion{color:rgba(255, 87, 49, 255)}
+
+
 /*Statline Styling*/
 .statline_container{position: absolute; top: 22.85vw; left: 7.9vw;
     height:7.2vw; width:40vw;
@@ -305,7 +340,7 @@ button{background: white; border: none; width:20px}
 .numbers_box1{height:7vw; position:absolute; left: 24.2vw; top: 0vw; width: 8vw; }
 .numbers_box2{height: 7vw;position: absolute; left: 36vw; top: 0vw; width:8vw}
 
-.statline{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1.2vw;
+.statline{font-family: 'Ubuntu', sans-serif; color: rgba(174, 172, 162, 255); font-size: 1.2vw;
      line-height: 1.3vw; text-align: start;}
 
 
@@ -349,7 +384,7 @@ button{background: white; border: none; width:20px}
 .skill_lvl_container{position: absolute; top: 14vw; left: 45.7vw;
     width: 35vw; height: 3vw; 
     display: flex; justify-content: center;
-    font-family: 'Ubuntu', sans-serif; color: rgb(199, 179, 107); font-size: 1.2vw;
+    font-family: 'Ubuntu', sans-serif; color: rgba(200, 180, 110, 255);  font-size: 1.2vw;
     line-height: 1.3vw;}
 .skill_no{height: 4vw; width: 4vw; margin: 0 0.25vw; position: relative; transform: scaleX(1.1);}
 
@@ -375,7 +410,7 @@ button{background: white; border: none; width:20px}
     border: 0.15vw rgb(54, 54, 55) solid;
     background-color: rgba(0, 0, 0, 0.9);
     font-family: 'Ubuntu', sans-serif;
-    color: rgb(173, 172, 167);
+    color: rgba(174, 172, 162, 255);
     font-size: 1.0vw;
     line-height: 1.3vw;
     text-align: center;
@@ -410,7 +445,7 @@ button{background: white; border: none; width:20px}
 
 .skill_icon{height: 4vw; width: 4vw; margin: 0 0.25vw; position: relative}
 .skill_icon:hover  {filter: brightness(150%);}
-.uses_text{color: rgb(199, 179, 107);padding-top: 0.2vw;}
+.uses_text{color: rgba(200, 180, 110, 255); padding-top: 0.2vw;}
 
 /*Positioning*/
 
@@ -430,7 +465,7 @@ button{background: white; border: none; width:20px}
 .hero_provision_box{position:absolute; top:34.3vw; left:36vw;
     border: 0.15vw rgb(54, 54, 55) solid;
     background-color: rgba(0, 0, 0, 0.9);
-    color: rgb(173, 172, 167);
+    color: rgba(174, 172, 162, 255);
     font-family: 'Ubuntu', sans-serif;
     font-size: 1vw;
     line-height: 1.35vw;
@@ -442,23 +477,6 @@ button{background: white; border: none; width:20px}
 /*Tooltip Colorcoding*/
 
 
-.default_color{color: rgb(173, 172, 167);}
-
-.very_common{color: grey}
-.common{color: grey}
-.uncommon{color:rgb(108, 149, 85)}
-.rare{color: rgb(68, 97, 163)}
-.very_rare{color: rgb(180, 78, 31)}
-.crystalline{color: rgb(184, 253, 238)}
-.keepsake{color: rgb(184, 253, 238)}
-.crimson_court{color:rgb(162, 42, 23)}
-.cc_text{color:rgb(92, 50, 58)}
-.set_bonus{color:rgb(128, 191, 116)}
-.trophy{color:rgb(217, 185, 116)}
-.ancestral{color:rgb(207, 59, 33);}
-.darkest_dungeon{color:rgb(207, 59, 33);}
-.shrieker{color:rgb(207, 59, 33);}
-.thing{color:rgb(93, 144, 155);}
 
 
 .equip_desc_align {
@@ -488,9 +506,9 @@ button{background: white; border: none; width:20px}
     padding: 0.2vw 0.6vw 0.3vw 0.6vw;
     
 }
-.equipment_lvl_num1{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1.2vw; font-weight: 600;
+.equipment_lvl_num1{font-family: 'Ubuntu', sans-serif; color: rgba(174, 172, 162, 255); font-size: 1.2vw; font-weight: 600;
     position:absolute; left: 19.3vw; top: 32vw;transform: scaleY(1.05);}
-.equipment_lvl_num2{font-family: 'Ubuntu', sans-serif; color: rgb(173, 172, 167); font-size: 1.2vw; font-weight: 600;
+.equipment_lvl_num2{font-family: 'Ubuntu', sans-serif; color: rgba(174, 172, 162, 255); font-size: 1.2vw; font-weight: 600;
     position:absolute; left: 24.8vw; top: 32vw;transform: scaleY(1.05);}
 
 /*Equipment Positioning */
@@ -611,8 +629,8 @@ button{background: white; border: none; width:20px}
 
 .hero_district_panel{
     position: absolute; right:0.48vw; bottom:0.6vw;
-    width: 34.6vw; height: 8.5vw; 
-    background-image: url(images/Hero_boxes/smallestpanel.png); background-size: 34.6vw 8.5vw;
+    width: 34.6vw; height: 8.6vw; 
+    background-image: url(images/Hero_boxes/smallestpanel.png); background-size: 34.6vw 8.6vw;
     font-size: 1.1vw; line-height: 1.6vw;
     
 
