@@ -118,24 +118,24 @@ button{background: white; border: none; width:20px}
 
 .header_bg{position: absolute; left: 0.4vw; top: 0.5vw;  width: 42vw; height: 6.2vw;}
 
-#abom_banner{background-image: url(images/Hero_boxes/abom_header.png); background-size: 42vw;}
-#anti_banner{background-image: url(images/Hero_boxes/anti_header.png); background-size: 42vw;}
-#arb_banner{background-image: url(images/Hero_boxes/arb_header.png); background-size: 42vw;}
-#bh_banner{background-image: url(images/Hero_boxes/bh_header.png); background-size: 42vw;}
-#crus_banner{background-image: url(images/Hero_boxes/crus_header.png); background-size: 42vw;}
-#flag_banner{background-image: url(images/Hero_Boxes/flag_header.png); background-size:42vw; }
-#gr_banner{background-image: url(images/Hero_boxes/gr_header.png); background-size: 42vw;}
-#hell_banner{background-image: url(images/Hero_boxes/hell_header.png); background-size: 42vw;}
-#hwm_banner{background-image: url(images/Hero_boxes/hwm_header.png); background-size: 42vw;}
-#hm_banner{background-image: url(images/Hero_boxes/hm_header.png); background-size: 42vw;}
-#jes_banner{background-image: url(images/Hero_boxes/jes_header.png); background-size: 42vw;}
-#lep_banner{background-image: url(images/Hero_boxes/lep_header.png); background-size: 42vw;}
-#maa_banner{background-image: url(images/Hero_boxes/maa_header.png); background-size: 42vw;}
-#musk_banner{background-image: url(images/Hero_boxes/musk_header.png); background-size: 42vw;}
-#occ_banner{background-image: url(images/Hero_boxes/occ_header.png); background-size: 42vw;}
-#pd_banner{background-image: url(images/Hero_boxes/pd_header.png); background-size: 42vw;}
-#sb_banner{background-image: url(images/Hero_boxes/sb_header.png); background-size: 42vw;}
-#ves_banner{background-image: url(images/Hero_boxes/ves_header.png); background-size: 42vw;}
+#abom_banner{background-image: url(images/Hero_boxes/guild_header_abom.png); background-size: 42vw;}
+#anti_banner{background-image: url(images/Hero_boxes/guild_header_anti.png); background-size: 42vw;}
+#arb_banner{background-image: url(images/Hero_boxes/guild_header_arb.png); background-size: 42vw;}
+#bh_banner{background-image: url(images/Hero_boxes/guild_header_bh.png); background-size: 42vw;}
+#crus_banner{background-image: url(images/Hero_boxes/guild_header_crus.png); background-size: 42vw;}
+#flag_banner{background-image: url(images/Hero_boxes/guild_header_flag.png); background-size:42vw; }
+#gr_banner{background-image: url(images/Hero_boxes/guild_header_gr.png); background-size: 42vw;}
+#hell_banner{background-image: url(images/Hero_boxes/guild_header_hell.png); background-size: 42vw;}
+#hwm_banner{background-image: url(images/Hero_boxes/guild_header_hwm.png); background-size: 42vw;}
+#hm_banner{background-image: url(images/Hero_boxes/guild_header_hm.png); background-size: 42vw;}
+#jes_banner{background-image: url(images/Hero_boxes/guild_header_jes.png); background-size: 42vw;}
+#lep_banner{background-image: url(images/Hero_boxes/guild_header_lep.png); background-size: 42vw;}
+#maa_banner{background-image: url(images/Hero_boxes/guild_header_maa.png); background-size: 42vw;}
+#musk_banner{background-image: url(images/Hero_boxes/guild_header_musk.png); background-size: 42vw;}
+#occ_banner{background-image: url(images/Hero_boxes/guild_header_occ.png); background-size: 42vw;}
+#pd_banner{background-image: url(images/Hero_boxes/guild_header_pd.png); background-size: 42vw;}
+#sb_banner{background-image: url(images/Hero_boxes/guild_header_sb.png); background-size: 42vw;}
+#ves_banner{background-image: url(images/Hero_boxes/guild_header_ves.png); background-size: 42vw;}
 
 
 /*Resolve and name Styling*/
