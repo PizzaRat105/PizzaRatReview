@@ -298,6 +298,12 @@ ul{list-style-type: none; margin:0; padding: 0;}
 .grey{color:grey}
 .chance {color: rgb(94, 95, 94)}
 
+
+.gear1{color: rgba(215, 213, 205, 255)}
+.gear3{color: rgba(105, 190, 75, 255)}
+.gear4{color: rgba(62, 114, 212, 255)}
+.gear5{color: rgba(224, 39, 0, 255);}
+
 .default_color{color: rgba(174, 172, 162, 255);}
 .very_common{color: rgba(168, 168, 168, 255)}
 .common{color: rgba(168, 168, 168, 255)}
