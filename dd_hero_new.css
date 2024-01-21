@@ -236,9 +236,8 @@ ul{list-style-type: none; margin:0; padding: 0;}
 
 .negquirk_text{ color:rgb(141, 15, 26);font-family:  'Ubuntu', sans-serif; font-size: 1.1vw; font-weight: 500; line-height: 1.7vw;
     position:absolute; top: 10.2vw; left: 27.5vw;  transform: scaleX(1.1); 
-    display: flex;  width: 13vw; height: 18vw;  direction: rtl;
+    display: flex; flex-direction: column; width: 13vw; height: 18vw;  direction: rtl;
 }
-.negflex {display: flex;}
 
 
 
