@@ -2715,6 +2715,8 @@ attachClickListeners("[id='sunshine_in_the_thicket']", "[id='sunshine_in_the_thi
 attachClickListeners("[id='bumper_crop']", "[id='bumper_crop_box']", "event_info_container");
 attachClickListeners("[id='fresh_air_in_the_tunnels']", "[id='fresh_air_in_the_tunnels_box']", "event_info_container");
 attachClickListeners("[id='lost_and_found']", "[id='lost_and_found_box']", "event_info_container");
+  attachClickListeners("[id='gentle_tide']", "[id='gentle_tide_box']", "event_info_container");
+
 attachClickListeners("[id='a_thief_in_the_night']", "[id='a_thief_in_the_night_box']", "event_info_container");
 attachClickListeners("[id='shrieker\\'s_prize']", "[id='shrieker\\'s_prize_box']", "event_info_container");
 attachClickListeners("[id='brigand_incursion']", "[id='brigand_incursion_box']", "event_info_container");
