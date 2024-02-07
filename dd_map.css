@@ -12,7 +12,7 @@ div{box-sizing: border-box;}
 img{box-sizing: border-box;}
 
 body {
-    margin: 0.5vw 0 0 0; /* Adjust the top margin as needed */
+    margin: -0.5vw 0 0 0; /* Adjust the top margin as needed */
     padding: 0;
     background-color: black;
     cursor: url(images/dd_cursor.png), auto;
