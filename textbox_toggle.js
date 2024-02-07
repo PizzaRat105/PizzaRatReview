@@ -25,16 +25,7 @@ for (const mission_btn of mission_btns) {
 
 function toggleMissionBox(selectedQuestBox){
     const allQuestBox = 
-    [CrimsonBox1, CrimsonBox2,
-      MadnessBox1, MadnessBox2, 
-      GauntletBox, BossBoxHub, 
-      RuinsBox1, RuinsBox2, 
-      WealdBox1, WealdBox2, 
-      WarrensBox1, WarrensBox2, 
-      CoveBox1, CoveBox2,
-      HamletBox1, HamletBox2, 
-      CircusBox, EnemyBoxHub
-    ];
+    [RuinsBox2, WealdBox2, WarrensBox2,CoveBox2, HamletBox2,GauntletBox, CrimsonBox2, MadnessBox2, BossBoxHub, CircusBox, EnemyBoxHub];
     allQuestBox.forEach(questbox => {
         questbox.style.display = 'none'
     });
@@ -50,29 +41,24 @@ const UniversalForcedInteractionExtraInfoSign = document.getElementById("univers
 
 document.addEventListener('keydown', event => {
     if (event.key === 'Escape') {
-      handleEscape(CrimsonBox1, CrimsonBackdrop, EmbarkCrimson);
-      handleEscape(MadnessBox1, MadnessBackdrop, EmbarkMadness);
-      handleEscape(MadnessBox1, MadnessBackdrop, EmbarkMadness,Madness1Backdrop,Madness2Backdrop,Madness3Backdrop);
+
       handleEscape(MadnessBox2, MadnessBackdrop, EmbarkMadness,Madness1Backdrop,Madness2Backdrop,Madness3Backdrop);
-      handleEscape(RuinsBox1, Ruins1Backdrop, EmbarkDefault);
+      handleEscape(MadnessBox1, MadnessBackdrop, EmbarkMadness,Madness1Backdrop,Madness2Backdrop,Madness3Backdrop);
+
       handleEscape(RuinsBox2, Ruins2Backdrop, EmbarkDefault);
 
       handleEscape(BossBoxHub, Ruins3Backdrop, EmbarkDefault, Weald3Backdrop, Warrens3Backdrop, Cove3Backdrop, Hamlet3Backdrop);      
       handleEscape(EnemyBoxHub, Ruins1Backdrop, EmbarkDefault, Weald1Backdrop, Warrens1Backdrop, Cove1Backdrop, Hamlet1Backdrop,);      
 
-      handleEscape(CrimsonBox1, CrimsonBackdrop, EmbarkCrimson,Crimson1Backdrop,Crimson2Backdrop,Crimson3Backdrop);
       handleEscape(CrimsonBox2, CrimsonBackdrop, EmbarkCrimson,Crimson1Backdrop,Crimson2Backdrop,Crimson3Backdrop);
+      handleEscape(CrimsonBox1, CrimsonBackdrop, EmbarkCrimson,Crimson1Backdrop,Crimson2Backdrop,Crimson3Backdrop);
 
       UniversalForcedInteractionExtraInfoSign.style.display = "none"
-      handleEscape(WealdBox1, Weald1Backdrop, EmbarkDefault);
       handleEscape(WealdBox2, Weald2Backdrop, EmbarkDefault);
 
-      handleEscape(WarrensBox1, Warrens1Backdrop, EmbarkDefault);
       handleEscape(WarrensBox2, Warrens2Backdrop, EmbarkDefault);
       handleEscape(BossBoxHub, Warrens3Backdrop, EmbarkDefault);
-      handleEscape(CoveBox1, Cove1Backdrop, EmbarkDefault);
       handleEscape(CoveBox2, Cove2Backdrop, EmbarkDefault);
-      handleEscape(HamletBox1, Hamlet1Backdrop, EmbarkDefault);
       handleEscape(HamletBox2, Hamlet2Backdrop, EmbarkDefault);
       handleEscape(BossBoxHub, Hamlet3Backdrop, EmbarkDefault);
       handleEscape(BossBoxHub, Hamlet4Backdrop, EmbarkDefault);
@@ -280,23 +266,10 @@ function HideBackdrops() {
   const BossBoxHub = document.getElementById('boss_box_hub');
   const EnemyBoxHub = document.getElementById('enemy_box_hub');
 
-  const RuinsBox1 = document.getElementById('ruinsbox1');
   const RuinsBox2 = document.getElementById('ruinsbox2');
-
-
-  const WealdBox1 = document.getElementById('wealdbox1');
   const WealdBox2 = document.getElementById('wealdbox2');
-
-
-  const WarrensBox1 = document.getElementById('warrensbox1');
   const WarrensBox2 = document.getElementById('warrensbox2');
-
-
-  const CoveBox1 = document.getElementById('covebox1');
   const CoveBox2 = document.getElementById('covebox2');
-
-  
-  const HamletBox1 = document.getElementById('sharedbox1');
   const HamletBox2 = document.getElementById('sharedbox2');
   
 
