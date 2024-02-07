@@ -1467,7 +1467,7 @@ display: flex; flex-direction: row; flex-wrap: wrap; background-color: black; ju
 
 .event_nav{position: absolute; left:-7vw; top:9vw; 
     width:13.5vw; height: 21vw; display: flex; align-items: center; flex-direction: column;
-    background-image: url(images/tooltip_background_alt2.png);background-size: 13.5vw 21vw; margin: 0;padding:0.7vw 0; border: 1px solid red;
+    background-image: url(images/tooltip_background_alt2.png);background-size: 13.5vw 21vw; margin: 0;padding:0.7vw 0; 
 }
 
 .event_nav_header{position: absolute; font-size: 1.9vw;top:0.8vw}
