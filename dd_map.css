@@ -1467,13 +1467,21 @@ display: flex; flex-direction: row; flex-wrap: wrap; background-color: black; ju
 
 .event_nav{position: absolute; left:-7vw; top:9vw; 
     width:13.5vw; height: 21vw; display: flex; align-items: center; flex-direction: column;
-    background-image: url(images/tooltip_background_alt2.png);background-size: 13.5vw 21vw; margin: 0;padding:0.7vw 0;
+    background-image: url(images/tooltip_background_alt2.png);background-size: 13.5vw 21vw; margin: 0;padding:0.7vw 0; border: 1px solid red;
 }
 
-.event_nav_header{font-size: 2vw;}
+.event_nav_header{position: absolute; font-size: 1.9vw;top:0.8vw}
 
-.event_btn{height:3.9vw; margin:0.3vw 0; padding:0;}
+.event_btn{height:2.5vw; position: absolute;}
+.event_btn1{top:3.8vw;}
+.event_btn2{top:7.1vw;}
+.event_btn3{top:10.4vw;}
+.event_btn4{top:13.7vw;}
+.event_btn5{top:17vw;}
+
 .event_btn:hover{filter: brightness(150%);}
+
+
 .event_category_title{text-align: center; font-family: dd_logo; font-size: 2vw; padding-bottom: 0.4vw; font-weight: 400;}
 .event_name{padding-left: 1.5vw;}
 .event_name:hover{filter: brightness(150%);}
